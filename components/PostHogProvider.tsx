@@ -5,17 +5,35 @@ import { useEffect } from "react";
 
 export default function PostHogProvider() {
   useEffect(() => {
-    posthog.init("phc_ALRnDPcuJmXLj9cdid2fGJgLX8t5Buqeu6hfg5aGyuEU", {
-      api_host: "https://eu.i.posthog.com",
+    // Clé publique PostHog — NEXT_PUBLIC_ = exposée au navigateur par design
+    const key  = process.env.NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN
+                 ?? "phc_yseG7ZZT4GQPyMUGdNhaVCaTSNyAexgSdKLX3haiqSN6";
+    const host = process.env.NEXT_PUBLIC_POSTHOG_HOST ?? "https://eu.i.posthog.com";
+
+    posthog.init(key, {
+      api_host: host,
       defaults: "2026-01-30",
-      // Désactivé par défaut : s'active uniquement si l'utilisateur accepte les cookies
+      capture_pageview: true,
+      capture_pageleave: true,
+      session_recording: { maskAllInputs: true },
+      // RGPD : tracking désactivé par défaut, activé si l'utilisateur a accepté les cookies
       opt_out_capturing_by_default: true,
-      // Charge le script PostHog de manière différée pour ne pas bloquer le rendu
       loaded: (ph) => {
         const consent = localStorage.getItem("ellipsys_cookie_consent");
         if (consent === "accepted") ph.opt_in_capturing();
       },
     });
+
+    // Réactive le tracking si l'utilisateur accepte plus tard
+    const handleConsent = (e: StorageEvent) => {
+      if (e.key === "ellipsys_cookie_consent") {
+        if (e.newValue === "accepted") posthog.opt_in_capturing();
+        else posthog.opt_out_capturing();
+      }
+    };
+    window.addEventListener("storage", handleConsent);
+    return () => window.removeEventListener("storage", handleConsent);
   }, []);
+
   return null;
 }
