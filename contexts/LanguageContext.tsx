@@ -1,33 +1,36 @@
 "use client";
 
-import { createContext, useContext, useState, ReactNode } from 'react';
-import { translations } from '../lib/translations';
+import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 
-type Language = 'fr' | 'en';
+export type Lang = 'fr' | 'en';
 
 interface LanguageContextType {
-  language: Language;
-  setLanguage: (lang: Language) => void;
-  t: (key: string) => string;
+  language: Lang;
+  setLanguage: (lang: Lang) => void;
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
-export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [language, setLanguage] = useState<Language>('fr');
+function getCookieLang(): Lang {
+  if (typeof document === 'undefined') return 'fr';
+  const match = document.cookie.match(/(?:^|;\s*)lang=([^;]*)/);
+  return match?.[1] === 'en' ? 'en' : 'fr';
+}
 
-  const t = (key: string): string => {
-    const keys = key.split('.');
-    let value: any = translations[language];
-    for (const k of keys) {
-      if (value === undefined) return key;
-      value = value[k];
-    }
-    return typeof value === 'string' ? value : key;
+export function LanguageProvider({ children }: { children: ReactNode }) {
+  const [language, setLangState] = useState<Lang>('fr');
+
+  useEffect(() => {
+    setLangState(getCookieLang());
+  }, []);
+
+  const setLanguage = (lang: Lang) => {
+    document.cookie = `lang=${lang}; path=/; max-age=31536000; SameSite=Lax`;
+    window.location.reload();
   };
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t }}>
+    <LanguageContext.Provider value={{ language, setLanguage }}>
       {children}
     </LanguageContext.Provider>
   );

@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://ellipsys-solutions.netlify.app/sitemap.xml
+
+# Disallow private/utility paths
+Disallow: /api/
+Disallow: /_next/

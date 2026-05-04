@@ -22,10 +22,10 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ['Manrope', 'sans-serif'],
-        display: ['Space Grotesk', 'sans-serif'],
+        sans: ['var(--font-manrope)', 'sans-serif'],
+        display: ['var(--font-space-grotesk)', 'sans-serif'],
       },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 };
