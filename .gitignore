@@ -38,3 +38,9 @@ next-env.d.ts
 
 # Local Netlify folder
 .netlify
+
+# Server & tunnel logs
+*.log
+srv.log
+nextserver.log
+tunnel*.log

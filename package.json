@@ -15,7 +15,8 @@
     "next": "^15.3.9",
     "posthog-js": "^1.240.4",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "resend": "^6.12.2"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.19",

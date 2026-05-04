@@ -6,6 +6,7 @@ import { HeroContent } from "../components/HeroContent";
 import { NewsTickerBanner } from "../components/NewsTickerBanner";
 import { FadeUp } from "../components/motion/FadeUp";
 import { StaggerContainer, StaggerItem } from "../components/motion/Stagger";
+import { LeadMagnetBanner } from "../components/LeadMagnetBanner";
 import {
   ChevronRight, Sun, Home, Building2,
   ThermometerSun, Bug, Video, ChevronDown
@@ -466,6 +467,21 @@ export default async function HomePage() {
             ))}
           </StaggerContainer>
 
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════
+          LEAD MAGNET — guide gratuit + code promo
+      ══════════════════════════════════════════ */}
+      <section className="py-16 bg-[#060c18] px-4">
+        <div className="container mx-auto max-w-3xl">
+          <FadeUp>
+            <LeadMagnetBanner
+              language={isEn ? "en" : "fr"}
+              variant="banner"
+              pdfSlug="guide-ellipsys"
+            />
+          </FadeUp>
         </div>
       </section>
 
