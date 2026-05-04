@@ -267,18 +267,13 @@ export default function NewsletterSection() {
                     </p>
                   </form>
 
-                  {/* Stats divider */}
-                  <div className="mt-8 pt-6 border-t border-white/[0.12] grid grid-cols-3 gap-4 text-center">
-                    {[
-                      { value: "850+", label: language === "fr" ? "Abonnés" : "Subscribers" },
-                      { value: "4.9★", label: language === "fr" ? "Satisfaction" : "Rating" },
-                      { value: "1×", label: language === "fr" ? "Par mois" : "Per month" },
-                    ].map(({ value, label }) => (
-                      <div key={label}>
-                        <p className="text-white font-black text-lg">{value}</p>
-                        <p className="text-slate-500 text-xs">{label}</p>
-                      </div>
-                    ))}
+                  {/* Frequency reassurance */}
+                  <div className="mt-6 pt-5 border-t border-white/[0.10] text-center">
+                    <p className="text-slate-500 text-xs">
+                      {language === "fr"
+                        ? "📬 1 email par mois maximum · Désabonnement en 1 clic · Zéro spam"
+                        : "📬 Max 1 email/month · Unsubscribe in 1 click · Zero spam"}
+                    </p>
                   </div>
                 </>
               )}

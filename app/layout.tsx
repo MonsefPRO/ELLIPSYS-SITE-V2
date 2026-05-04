@@ -24,8 +24,41 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://ellipsys-solutions.netlify.app"),
   title: "Nettoyage, Inspection et Maintenance par Drone et Robot en Europe | Ellipsys",
   description: "Ellipsys Solutions : ingénierie robotique pour l'entretien de vos infrastructures. Nettoyage de panneaux solaires, démoussage, façades, thermographie et destruction de nids de frelons. Drones certifiés, robots terrestres, partout en France.",
+  openGraph: {
+    type: "website",
+    locale: "fr_FR",
+    url: "https://ellipsys-solutions.netlify.app",
+    siteName: "Ellipsys Solutions",
+    title: "Nettoyage, Inspection et Maintenance par Drone et Robot | Ellipsys",
+    description: "Ellipsys Solutions : drones et robots pour la maintenance de vos infrastructures. Panneaux solaires, toitures, façades, thermographie, nids de frelons — sans échafaudage, partout en France.",
+    images: [
+      {
+        url: "/images/accueil.png",
+        width: 1200,
+        height: 630,
+        alt: "Ellipsys Solutions — Maintenance par drone et robotique",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Nettoyage, Inspection et Maintenance par Drone et Robot | Ellipsys",
+    description: "Drones et robots pour la maintenance de vos infrastructures — panneaux solaires, toitures, façades, thermographie. Partout en France.",
+    images: ["/images/accueil.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 const jsonLd = {
