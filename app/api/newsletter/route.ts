@@ -1,5 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
+import { upsertContact } from "@/lib/hubspot";
+
+export const runtime = "nodejs";
 
 function isValidEmail(email: string): boolean {
   return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email) && email.length <= 254;
@@ -37,26 +40,53 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Adresse email invalide." }, { status: 422 });
     }
 
+    const nowIso = new Date().toISOString();
+
+    // ── 1) Backup Supabase ──────────────────────────────────────────────
     const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
     const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY ?? process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
-    if (!supabaseUrl || !supabaseKey) {
-      return NextResponse.json({ error: "Service indisponible." }, { status: 503 });
+    if (supabaseUrl && supabaseKey) {
+      try {
+        const supabase = createClient(supabaseUrl, supabaseKey);
+        const { error } = await supabase.from("newsletter_subscriptions").insert([{
+          email,
+          lang,
+          subscribed_at: nowIso,
+        }]);
+        // 23505 = doublon → on continue quand même (succès silencieux + on tente HubSpot)
+        if (error && error.code !== "23505") {
+          console.error("[newsletter] Supabase error:", error);
+        }
+      } catch (err) {
+        console.warn("[newsletter] Supabase failed:", err);
+      }
     }
 
-    const supabase = createClient(supabaseUrl, supabaseKey);
-
-    const { error } = await supabase.from("newsletter_subscriptions").insert([{
-      email,
-      lang,
-      subscribed_at: new Date().toISOString(),
-    }]);
-
-    if (error) {
-      // Doublon → succès silencieux (ne pas révéler si l'email existe)
-      if (error.code === "23505") return NextResponse.json({ ok: true });
-      console.error("[newsletter] Supabase error:", error);
-      return NextResponse.json({ error: "Erreur d'enregistrement." }, { status: 500 });
+    // ── 2) Push HubSpot (Contact avec date d'inscription) ──────────────
+    const hsToken = process.env.HUBSPOT_ACCESS_TOKEN;
+    if (hsToken) {
+      try {
+        // Date au format YYYY-MM-DD (HubSpot date property)
+        const today = nowIso.slice(0, 10);
+        // hs_lead_status existe par défaut, hs_email_optin trace l'opt-in
+        // On utilise la propriété custom "newsletter_signup_date" si elle existe,
+        // sinon HubSpot ignorera silencieusement la propriété inconnue (en pratique elle retourne une erreur,
+        // d'où le try/catch). On utilise aussi `hs_lifecyclestage` = "subscriber".
+        await upsertContact(
+          {
+            email,
+            custom: {
+              lifecyclestage: "subscriber",
+              newsletter_signup_date: today,
+              hs_language: lang,
+            },
+          },
+          hsToken
+        );
+      } catch (err) {
+        console.warn("[newsletter] HubSpot push failed:", err);
+      }
     }
 
     return NextResponse.json({ ok: true });

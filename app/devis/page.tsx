@@ -35,6 +35,7 @@ export default function DevisPage() {
   const [service, setService]       = useState<ServiceKey>("facade");
   const [submitted, setSubmitted]   = useState(false);
   const [loading, setLoading]       = useState(false);
+  const [errorMsg, setErrorMsg]     = useState<string | null>(null);
 
   const [base, setBase] = useState({ name: "", email: "", phone: "", city: "", siret: "", message: "" });
   const [facade, setFacade]           = useState({ typeBat: "", surface: "", hauteur: "", revetement: "", vitrages: "Non", nbFenetres: "", env: "", urgence: "" });
@@ -59,75 +60,92 @@ export default function DevisPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-
-    const portalId = "147434121";
-    const formId   = "b126bf45-2c42-44c0-b3ae-f7008d200b12";
+    setErrorMsg(null);
 
     const svcLabel = SERVICES.find(s => s.key === service)?.label ?? service;
-    const details: string[] = [];
+    const details: Record<string, string> = {};
 
     if (service === "facade") {
-      if (facade.typeBat)    details.push(`Type bâtiment: ${facade.typeBat}`);
-      if (facade.surface)    details.push(`Surface: ${facade.surface} m²`);
-      if (facade.hauteur)    details.push(`Hauteur: ${facade.hauteur} m`);
-      if (facade.revetement) details.push(`Revêtement: ${facade.revetement}`);
-      details.push(`Vitrages: ${facade.vitrages}`);
-      if (facade.vitrages === "Oui" && facade.nbFenetres) details.push(`Nb fenêtres: ${facade.nbFenetres}`);
-      if (facade.env)        details.push(`Environnement: ${facade.env}`);
-      if (facade.urgence)    details.push(`Délai: ${facade.urgence}`);
+      if (facade.typeBat)    details["Type bâtiment"] = facade.typeBat;
+      if (facade.surface)    details["Surface (m²)"] = facade.surface;
+      if (facade.hauteur)    details["Hauteur"] = facade.hauteur;
+      if (facade.revetement) details["Revêtement"] = facade.revetement;
+      details["Vitrages"] = facade.vitrages;
+      if (facade.vitrages === "Oui" && facade.nbFenetres) details["Nb fenêtres"] = facade.nbFenetres;
+      if (facade.env)        details["Environnement"] = facade.env;
+      if (facade.urgence)    details["Délai"] = facade.urgence;
     } else if (service === "solaire") {
-      if (solaire.nbPanneaux)     details.push(`Panneaux: ${solaire.nbPanneaux}`);
-      if (solaire.typeInstall)    details.push(`Installation: ${solaire.typeInstall}`);
-      if (solaire.pente)          details.push(`Inclinaison: ${solaire.pente}`);
-      if (solaire.hauteurSupport) details.push(`Hauteur support: ${solaire.hauteurSupport} m`);
-      if (solaire.acces)          details.push(`Accès: ${solaire.acces}`);
-      if (solaire.dernier)        details.push(`Dernier nettoyage: ${solaire.dernier}`);
+      if (solaire.nbPanneaux)     details["Nombre de panneaux"] = solaire.nbPanneaux;
+      if (solaire.typeInstall)    details["Type installation"] = solaire.typeInstall;
+      if (solaire.pente)          details["Inclinaison"] = solaire.pente;
+      if (solaire.hauteurSupport) details["Hauteur support (m)"] = solaire.hauteurSupport;
+      if (solaire.acces)          details["Accès"] = solaire.acces;
+      if (solaire.dernier)        details["Dernier nettoyage"] = solaire.dernier;
     } else if (service === "toiture") {
-      if (toiture.couverture) details.push(`Couverture: ${toiture.couverture}`);
-      if (toiture.surface)    details.push(`Surface: ${toiture.surface} m²`);
-      if (toiture.pente)      details.push(`Pente: ${toiture.pente}`);
-      details.push(`Zone ABF: ${toiture.abf}`);
-      if (toiture.prestation) details.push(`Prestation: ${toiture.prestation}`);
+      if (toiture.couverture) details["Couverture"] = toiture.couverture;
+      if (toiture.surface)    details["Surface (m²)"] = toiture.surface;
+      if (toiture.pente)      details["Pente"] = toiture.pente;
+      details["Zone ABF"] = toiture.abf;
+      if (toiture.prestation) details["Prestation"] = toiture.prestation;
     } else if (service === "thermographie") {
-      if (thermo.typeSite) details.push(`Type site: ${thermo.typeSite}`);
-      if (thermo.surface)  details.push(`Surface: ${thermo.surface} m²`);
-      if (thermo.objectif) details.push(`Objectif: ${thermo.objectif}`);
-      if (thermo.delai)    details.push(`Délai: ${thermo.delai}`);
+      if (thermo.typeSite) details["Type site"] = thermo.typeSite;
+      if (thermo.surface)  details["Surface"] = thermo.surface;
+      if (thermo.objectif) details["Objectif"] = thermo.objectif;
+      if (thermo.delai)    details["Délai"] = thermo.delai;
     } else if (service === "nuisibles") {
-      if (nuisibles.type)          details.push(`Nuisible: ${nuisibles.type}`);
-      if (nuisibles.hauteur)       details.push(`Hauteur nid: ${nuisibles.hauteur} m`);
-      if (nuisibles.localisation)  details.push(`Localisation: ${nuisibles.localisation}`);
-      if (nuisibles.urgence)       details.push(`Urgence: ${nuisibles.urgence}`);
+      if (nuisibles.type)          details["Type nuisible"] = nuisibles.type;
+      if (nuisibles.hauteur)       details["Hauteur nid (m)"] = nuisibles.hauteur;
+      if (nuisibles.localisation)  details["Localisation"] = nuisibles.localisation;
+      if (nuisibles.urgence)       details["Urgence"] = nuisibles.urgence;
     } else if (service === "imagerie") {
-      if (imagerie.typeBien) details.push(`Type de bien: ${imagerie.typeBien}`);
-      if (imagerie.objectif) details.push(`Objectif: ${imagerie.objectif}`);
-      if (imagerie.format)   details.push(`Format: ${imagerie.format}`);
-      if (imagerie.date)     details.push(`Date souhaitée: ${imagerie.date}`);
+      if (imagerie.typeBien) details["Type de bien"] = imagerie.typeBien;
+      if (imagerie.objectif) details["Objectif"] = imagerie.objectif;
+      if (imagerie.format)   details["Format"] = imagerie.format;
+      if (imagerie.date)     details["Date souhaitée"] = imagerie.date;
     }
 
-    if (clientType === "pro" && base.siret) details.push(`SIRET: ${base.siret}`);
-
-    const fullMessage = `[${clientType.toUpperCase()}] ${svcLabel}\n${details.join(" | ")}\n\nInformations complémentaires: ${base.message}`;
+    const detailLines = Object.entries(details).map(([k, v]) => `• ${k}: ${v}`).join("\n");
+    const fullDescription = [
+      `Type client : ${clientType === "pro" ? "Professionnel" : "Particulier"}`,
+      `Service : ${svcLabel}`,
+      clientType === "pro" && base.siret ? `SIRET : ${base.siret}` : "",
+      "",
+      detailLines || "(aucun détail spécifique renseigné)",
+      "",
+      base.message ? `Commentaire :\n${base.message}` : "",
+    ].filter(Boolean).join("\n");
 
     const payload = {
-      fields: [
-        { name: "firstname", value: base.name },
-        { name: "email",     value: base.email },
-        { name: "phone",     value: base.phone },
-        { name: "city",      value: base.city },
-        { name: "message",   value: fullMessage },
-      ],
-      context: { pageUri: window.location.href, pageName: "Devis - Ellipsys Solutions" },
+      clientType,
+      service,
+      serviceLabel: svcLabel,
+      name: base.name,
+      email: base.email,
+      phone: base.phone,
+      city: base.city,
+      siret: base.siret,
+      message: base.message,
+      details,
+      fullDescription,
+      pageUri: typeof window !== "undefined" ? window.location.href : "",
     };
 
     try {
-      await fetch(
-        `https://api.hsforms.com/submissions/v3/integration/submit/${portalId}/${formId}`,
-        { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) }
-      );
+      const res = await fetch("/api/devis", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) {
+        setErrorMsg(data?.error || "Erreur lors de l'envoi. Veuillez réessayer ou nous contacter au 04 67 20 97 09.");
+        setLoading(false);
+        return;
+      }
       setSubmitted(true);
     } catch (err) {
-      console.error("Erreur HubSpot", err);
+      console.error("Erreur envoi devis", err);
+      setErrorMsg("Connexion impossible. Veuillez réessayer ou nous contacter au 04 67 20 97 09.");
     } finally {
       setLoading(false);
     }
@@ -592,6 +610,12 @@ export default function DevisPage() {
                     </div>
                   </div>
                 </div>
+
+                {errorMsg && (
+                  <div className="bg-red-50 border border-red-200 text-red-700 rounded-2xl p-4 text-sm">
+                    {errorMsg}
+                  </div>
+                )}
 
                 <button
                   type="submit"
