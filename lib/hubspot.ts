@@ -10,6 +10,7 @@ export interface HubspotContactInput {
   phone?: string;
   city?: string;
   company?: string;
+  ownerId?: string;        // hubspot_owner_id — propriétaire du contact
   // Propriétés custom (créées en amont dans HubSpot si besoin)
   custom?: Record<string, string>;
 }
@@ -20,6 +21,7 @@ export interface HubspotDealInput {
   pipeline?: string;       // ID du pipeline (default: "default")
   stage?: string;          // ID de l'étape (default: "appointmentscheduled" sur free CRM)
   contactId?: string;      // ID HubSpot du contact à associer
+  ownerId?: string;        // hubspot_owner_id — propriétaire du deal
   custom?: Record<string, string>;
 }
 
@@ -71,6 +73,7 @@ export async function upsertContact(
     ...(input.phone && { phone: input.phone }),
     ...(input.city && { city: input.city }),
     ...(input.company && { company: input.company }),
+    ...(input.ownerId && { hubspot_owner_id: input.ownerId }),
     ...(input.custom ?? {}),
   };
 
@@ -123,6 +126,7 @@ export async function createDeal(
     pipeline: input.pipeline ?? "default",
     dealstage: input.stage ?? "appointmentscheduled",
     ...(input.amount && { amount: input.amount }),
+    ...(input.ownerId && { hubspot_owner_id: input.ownerId }),
     ...(input.custom ?? {}),
   };
 

@@ -95,6 +95,9 @@ export async function POST(req: NextRequest) {
       const firstname = clientType === "pro" ? name : (nameParts[0] ?? name);
       const lastname = clientType === "pro" ? "" : nameParts.slice(1).join(" ");
 
+      // Owner ID — propriétaire HubSpot à qui assigner le lead (par défaut : Monsef)
+      const defaultOwnerId = process.env.HUBSPOT_DEFAULT_OWNER_ID;
+
       const contactRes = await upsertContact(
         {
           email,
@@ -103,6 +106,7 @@ export async function POST(req: NextRequest) {
           phone: phone || undefined,
           city: city || undefined,
           company: clientType === "pro" ? name : undefined,
+          ownerId: defaultOwnerId,
         },
         hsToken
       );
@@ -115,6 +119,7 @@ export async function POST(req: NextRequest) {
         {
           name: dealName,
           contactId: hubspotContactId ?? undefined,
+          ownerId: defaultOwnerId,
           // pipeline et stage par défaut HubSpot free : "default" + "appointmentscheduled"
         },
         hsToken
