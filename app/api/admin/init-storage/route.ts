@@ -52,6 +52,35 @@ export async function GET(req: NextRequest) {
   // 4) Vérifie le résultat final
   const finalGet = await supabase.storage.getBucket(BUCKET);
 
+  // 4b) Diagnostic réseau direct (fetch sans supabase-js)
+  let directRest: { url: string; ok: boolean; status?: number; body?: string; error?: string } = { url: "", ok: false };
+  try {
+    const restUrl = `${url}/storage/v1/bucket`;
+    directRest.url = restUrl;
+    const r = await fetch(restUrl, {
+      method: "GET",
+      headers: { Authorization: `Bearer ${key}`, apikey: key },
+    });
+    directRest.status = r.status;
+    directRest.ok = r.ok;
+    const txt = await r.text();
+    directRest.body = txt.slice(0, 500);
+  } catch (err) {
+    directRest.error = err instanceof Error ? `${err.name}: ${err.message}` : String(err);
+  }
+
+  // Test connectivité Supabase tout court (REST API standard, pas Storage)
+  let directDb: { url: string; ok: boolean; status?: number; error?: string } = { url: "", ok: false };
+  try {
+    const dbUrl = `${url}/rest/v1/`;
+    directDb.url = dbUrl;
+    const r = await fetch(dbUrl, { headers: { apikey: key, Authorization: `Bearer ${key}` } });
+    directDb.status = r.status;
+    directDb.ok = r.ok;
+  } catch (err) {
+    directDb.error = err instanceof Error ? `${err.name}: ${err.message}` : String(err);
+  }
+
   // 5) Test d'upload d'un petit fichier
   let testUpload: { ok: boolean; error?: string; url?: string } = { ok: false };
   if (finalGet.data) {
@@ -77,6 +106,8 @@ export async function GET(req: NextRequest) {
 
   return NextResponse.json({
     supabase_url: url,
+    directRestStorage: directRest,
+    directRestDb: directDb,
     listBuckets: {
       ok: !list.error,
       count: existingBuckets.length,
