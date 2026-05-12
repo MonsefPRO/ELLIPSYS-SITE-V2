@@ -39,6 +39,7 @@ export default function DevisPage() {
   const [errorMsg, setErrorMsg]     = useState<string | null>(null);
 
   const [base, setBase] = useState({ name: "", email: "", phone: "", city: "", siret: "", message: "" });
+  const [attachments, setAttachments] = useState<File[]>([]);
   const [facade, setFacade]           = useState({ typeBat: "", surface: "", hauteur: "", revetement: "", vitrages: "Non", nbFenetres: "", env: "", urgence: "" });
   const [solaire, setSolaire]         = useState({ nbPanneaux: "", typeInstall: "", pente: "", hauteurSupport: "", acces: "", dernier: "" });
   const [toiture, setToiture]         = useState({ couverture: "", surface: "", pente: "", abf: "Non", prestation: "" });
@@ -132,26 +133,29 @@ export default function DevisPage() {
       base.message ? `Commentaire :\n${base.message}` : "",
     ].filter(Boolean).join("\n");
 
-    const payload = {
-      clientType,
-      service,
-      serviceLabel: svcLabel,
-      name: base.name,
-      email: base.email,
-      phone: base.phone,
-      city: base.city,
-      siret: base.siret,
-      message: base.message,
-      details,
-      fullDescription,
-      pageUri: typeof window !== "undefined" ? window.location.href : "",
-    };
+    // Construction du FormData — supporte les fichiers attachés
+    const fd = new FormData();
+    fd.append("clientType", clientType);
+    fd.append("service", service);
+    fd.append("serviceLabel", svcLabel);
+    fd.append("name", base.name);
+    fd.append("email", base.email);
+    fd.append("phone", base.phone);
+    fd.append("city", base.city);
+    fd.append("siret", base.siret);
+    fd.append("message", base.message);
+    fd.append("details", JSON.stringify(details));
+    fd.append("fullDescription", fullDescription);
+    fd.append("pageUri", typeof window !== "undefined" ? window.location.href : "");
+    // Pièces jointes (limité à 5 × 10MB côté serveur)
+    for (const file of attachments.slice(0, 5)) {
+      fd.append("files", file);
+    }
 
     try {
       const res = await fetch("/api/devis", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
+        body: fd, // multipart auto, ne PAS définir Content-Type manuellement
       });
       const data = await res.json().catch(() => ({}));
       if (!res.ok) {
@@ -647,10 +651,65 @@ export default function DevisPage() {
                         placeholder={isEn ? "Describe any additional elements here: access constraints, special materials, building history, mandatory date…" : "Décrivez ici tout élément complémentaire : contraintes d'accès, matériaux spéciaux, historique du bâtiment, date impérative…"}
                       />
                     </div>
-                    <div className="p-5 bg-slate-50 border-2 border-dashed border-slate-200 rounded-2xl text-center">
-                      <Camera className="w-7 h-7 text-slate-400 mx-auto mb-2" />
-                      <p className="text-sm text-slate-500 mb-3">{isEn ? "Add photos of the site (plans, façades, roof) to facilitate the feasibility study" : "Ajouter des photos du site (plans, façades, toiture) pour faciliter l'étude de faisabilité"}</p>
-                      <input type="file" className="text-xs mx-auto" multiple accept="image/*,.pdf" />
+                    <div className="p-5 bg-slate-50 border-2 border-dashed border-slate-200 rounded-2xl">
+                      <div className="text-center mb-3">
+                        <Camera className="w-7 h-7 text-slate-400 mx-auto mb-2" />
+                        <p className="text-sm text-slate-500">
+                          {isEn
+                            ? "Add photos of the site (plans, façades, roof) to facilitate the feasibility study"
+                            : "Ajouter des photos du site (plans, façades, toiture) pour faciliter l'étude de faisabilité"}
+                        </p>
+                        <p className="text-xs text-slate-400 mt-1">
+                          {isEn ? "Up to 5 files · 10 MB max per file · JPG, PNG, WebP, HEIC, PDF" : "Jusqu'à 5 fichiers · 10 Mo max par fichier · JPG, PNG, WebP, HEIC, PDF"}
+                        </p>
+                      </div>
+
+                      <label className="flex items-center justify-center gap-2 cursor-pointer bg-white hover:bg-slate-100 border border-slate-300 rounded-xl py-2.5 px-4 text-sm font-semibold text-slate-700 transition-colors">
+                        <Camera className="w-4 h-4" />
+                        {isEn ? "Choose files…" : "Sélectionner des fichiers…"}
+                        <input
+                          type="file"
+                          className="hidden"
+                          multiple
+                          accept="image/jpeg,image/png,image/webp,image/heic,image/heif,.pdf"
+                          onChange={(e) => {
+                            const newFiles = Array.from(e.target.files ?? []);
+                            // Filtre fichiers > 10MB côté client (feedback immédiat)
+                            const valid = newFiles.filter(f => f.size <= 10 * 1024 * 1024);
+                            const tooBig = newFiles.length - valid.length;
+                            if (tooBig > 0) {
+                              alert(isEn
+                                ? `${tooBig} file(s) exceed 10 MB and were ignored.`
+                                : `${tooBig} fichier(s) dépassent 10 Mo et ont été ignorés.`);
+                            }
+                            setAttachments(prev => [...prev, ...valid].slice(0, 5));
+                            // Reset input pour permettre re-sélection du même fichier
+                            e.target.value = "";
+                          }}
+                        />
+                      </label>
+
+                      {attachments.length > 0 && (
+                        <div className="mt-3 space-y-2">
+                          {attachments.map((file, i) => (
+                            <div key={`${file.name}-${i}`} className="flex items-center justify-between gap-2 bg-white border border-slate-200 rounded-lg px-3 py-2 text-sm">
+                              <div className="flex items-center gap-2 min-w-0">
+                                <span className="text-base">{file.type.startsWith("image/") ? "🖼️" : "📄"}</span>
+                                <span className="truncate text-slate-700">{file.name}</span>
+                                <span className="text-xs text-slate-400 shrink-0">({(file.size / 1024 / 1024).toFixed(1)} MB)</span>
+                              </div>
+                              <button
+                                type="button"
+                                onClick={() => setAttachments(prev => prev.filter((_, idx) => idx !== i))}
+                                className="text-red-500 hover:text-red-700 text-xs font-bold shrink-0"
+                                aria-label={isEn ? "Remove" : "Retirer"}
+                              >
+                                ✕
+                              </button>
+                            </div>
+                          ))}
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>

@@ -22,6 +22,8 @@ export interface HubspotDealInput {
   stage?: string;          // ID de l'étape (default: "appointmentscheduled" sur free CRM)
   contactId?: string;      // ID HubSpot du contact à associer
   ownerId?: string;        // hubspot_owner_id — propriétaire du deal
+  description?: string;    // Description longue (multi-lignes) — affichée dans la fiche Deal
+  closeDate?: string;      // Date de clôture estimée (ISO)
   custom?: Record<string, string>;
 }
 
@@ -127,6 +129,8 @@ export async function createDeal(
     dealstage: input.stage ?? "appointmentscheduled",
     ...(input.amount && { amount: input.amount }),
     ...(input.ownerId && { hubspot_owner_id: input.ownerId }),
+    ...(input.description && { description: input.description }),
+    ...(input.closeDate && { closedate: input.closeDate }),
     ...(input.custom ?? {}),
   };
 
