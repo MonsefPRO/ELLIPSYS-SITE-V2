@@ -62,6 +62,46 @@ export default function DevisPage() {
   // Analytics — page view (1 seule fois au mount)
   useEffect(() => { track(Events.DEVIS_PAGE_VIEWED, { lang: isEn ? "en" : "fr" }); }, [isEn]);
 
+  // ── URL params : pré-sélection automatique du service + type client ──
+  // Permet d'avoir des LP du type /devis?service=solaire&clientType=pro
+  // → service déjà coché, type Pro/Particulier déjà sélectionné
+  // → boost conversion sur traffic payant (Google Ads, Meta, LinkedIn, etc.)
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const params = new URLSearchParams(window.location.search);
+    const serviceParam = params.get("service");
+    const clientTypeParam = params.get("clientType");
+
+    const validServices: ServiceKey[] = ["facade", "solaire", "toiture", "thermographie", "nuisibles", "imagerie", "autre"];
+    let preFilled = false;
+    let preFilledService: ServiceKey | undefined;
+    let preFilledClientType: "pro" | "particulier" | undefined;
+
+    if (serviceParam && (validServices as string[]).includes(serviceParam)) {
+      preFilledService = serviceParam as ServiceKey;
+      setService(preFilledService);
+      preFilled = true;
+    }
+
+    if (clientTypeParam === "pro" || clientTypeParam === "particulier") {
+      preFilledClientType = clientTypeParam;
+      setClientType(preFilledClientType);
+      preFilled = true;
+    }
+
+    if (preFilled) {
+      // Event analytics : on sait que l'utilisateur arrive avec un service pré-sélectionné (donc canal payant qualifié)
+      track("devis_prefilled_from_url", {
+        service: preFilledService,
+        client_type: preFilledClientType,
+        utm_source: params.get("utm_source") ?? undefined,
+        utm_medium: params.get("utm_medium") ?? undefined,
+        utm_campaign: params.get("utm_campaign") ?? undefined,
+      });
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   // Analytics — changement type client
   const handleClientType = (t: "pro" | "particulier") => {
     setClientType(t);

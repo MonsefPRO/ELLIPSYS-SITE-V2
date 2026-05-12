@@ -58,6 +58,7 @@ export const Events = {
   DEVIS_PAGE_VIEWED: "devis_page_viewed",
   DEVIS_CLIENT_TYPE_SELECTED: "devis_client_type_selected", // pro / particulier
   DEVIS_SERVICE_SELECTED: "devis_service_selected",
+  DEVIS_PREFILLED_FROM_URL: "devis_prefilled_from_url",    // arrivée depuis ADS / cold outreach avec params
   DEVIS_FORM_STARTED: "devis_form_started",      // 1er focus sur le formulaire
   DEVIS_SUBMITTED: "devis_submitted",            // succès envoi
   DEVIS_SUBMIT_FAILED: "devis_submit_failed",
