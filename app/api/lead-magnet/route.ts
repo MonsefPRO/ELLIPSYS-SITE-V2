@@ -21,7 +21,7 @@ function checkRateLimit(ip: string): boolean {
 }
 
 /* ─── Email HTML template ─── */
-function buildEmailHtml(firstName: string, pdfUrl: string, promoCode: string, lang: string): string {
+function buildEmailHtml(firstName: string, pdfUrl: string, promoCode: string, lang: string, siteUrl: string): string {
   const isFr = lang !== "en";
   return `<!DOCTYPE html>
 <html lang="${isFr ? "fr" : "en"}">
@@ -94,7 +94,7 @@ function buildEmailHtml(firstName: string, pdfUrl: string, promoCode: string, la
               <table cellpadding="0" cellspacing="0" style="margin:0 auto 32px;">
                 <tr>
                   <td align="center" style="background:#0f1f3d;border:1px solid #1e3a5f;border-radius:10px;">
-                    <a href="https://ellipsys-solutions.netlify.app/devis"
+                    <a href="${siteUrl}/devis"
                        style="display:inline-block;padding:14px 32px;color:#60a5fa;font-size:15px;font-weight:600;text-decoration:none;">
                       ${isFr ? "Demander un devis gratuit →" : "Request a free quote →"}
                     </a>
@@ -155,7 +155,7 @@ export async function POST(req: NextRequest) {
     }
 
     /* PDF public URL — fichiers dans /public/documents/ */
-    const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellipsys-solutions.netlify.app";
+    const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellipsys-solutions.com";
     const pdfUrl  = `${baseUrl}/documents/${pdfSlug}.pdf`;
 
     /* Code promo fixe (à personnaliser plus tard) */
@@ -191,7 +191,7 @@ export async function POST(req: NextRequest) {
       subject: isFr
         ? `📄 Votre guide + code ${promoCode} — Ellipsys Solutions`
         : `📄 Your guide + code ${promoCode} — Ellipsys Solutions`,
-      html: buildEmailHtml(firstName, pdfUrl, promoCode, lang),
+      html: buildEmailHtml(firstName, pdfUrl, promoCode, lang, baseUrl),
     });
 
     if (mailError) {
