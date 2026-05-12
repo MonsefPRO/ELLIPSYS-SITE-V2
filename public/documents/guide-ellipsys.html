@@ -4,491 +4,505 @@
 <meta charset="UTF-8">
 <title>Guide 2026 — Récupérez jusqu'à 30% de production solaire | Ellipsys</title>
 <style>
-  @page { size: A4; margin: 18mm 14mm; }
-  * { box-sizing: border-box; }
-  body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #0f172a; line-height: 1.55; font-size: 11pt; margin: 0; }
-  h1 { font-size: 32pt; font-weight: 900; line-height: 1.1; margin: 0 0 10pt; color: #0e2f52; letter-spacing: -1px; }
-  h2 { font-size: 20pt; font-weight: 800; margin: 28pt 0 12pt; color: #0e2f52; line-height: 1.2; }
-  h3 { font-size: 13pt; font-weight: 700; margin: 18pt 0 6pt; color: #1e293b; }
-  p { margin: 6pt 0 10pt; }
-  ul, ol { margin: 6pt 0 12pt; padding-left: 18pt; }
-  li { margin-bottom: 4pt; }
+  @page { size: A4; margin: 16mm 14mm; }
+  * { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #0f172a; line-height: 1.5; font-size: 10.5pt; margin: 0; }
+  h1 { font-size: 30pt; font-weight: 900; line-height: 1.1; margin: 0 0 10pt; color: #0e2f52; letter-spacing: -1px; }
+  h2 { font-size: 18pt; font-weight: 800; margin: 0 0 12pt; color: #0e2f52; line-height: 1.2; }
+  h3 { font-size: 12pt; font-weight: 700; margin: 14pt 0 5pt; color: #1e293b; }
+  p { margin: 5pt 0 8pt; }
+  ul, ol { margin: 5pt 0 8pt; padding-left: 16pt; }
+  li { margin-bottom: 3pt; }
   strong { color: #ea580c; }
   .label { display: inline-block; font-size: 9pt; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #ea580c; padding: 4pt 9pt; background: #fff7ed; border: 1px solid #fed7aa; border-radius: 4pt; }
   .accent { color: #ea580c; }
   .navy { color: #0e2f52; }
-  .pagebreak { page-break-after: always; break-after: page; }
-  .cover { min-height: 250mm; display: flex; flex-direction: column; justify-content: space-between; padding: 6mm 0; }
-  .cover-header { font-size: 11pt; letter-spacing: 4px; text-transform: uppercase; color: #64748b; font-weight: 700; }
-  .cover-meta { font-size: 10pt; color: #64748b; }
-  table { width: 100%; border-collapse: collapse; margin: 10pt 0 14pt; font-size: 10pt; }
+  .page { page-break-after: always; break-after: page; min-height: 248mm; display: flex; flex-direction: column; }
+  .page:last-child { page-break-after: auto; }
+  .page-content { flex: 1; }
+  .cover { background: linear-gradient(135deg, #0e2f52 0%, #1e3a5f 100%); color: white; margin: -16mm -14mm; padding: 16mm 14mm; min-height: 277mm; display: flex; flex-direction: column; justify-content: space-between; }
+  .cover h1 { color: white; }
+  .cover .label { background: rgba(234, 88, 12, 0.15); color: #fb923c; border-color: rgba(234, 88, 12, 0.4); }
+  .cover-hero-img { width: 100%; height: 80mm; object-fit: cover; border-radius: 6pt; margin: 8pt 0 16pt; opacity: 0.85; }
+  .cover-header { font-size: 11pt; letter-spacing: 4px; text-transform: uppercase; color: #cbd5e1; font-weight: 700; }
+  .cover-meta { font-size: 10pt; color: #94a3b8; border-top: 1px solid rgba(255,255,255,0.15); padding-top: 12pt; }
+  table { width: 100%; border-collapse: collapse; margin: 8pt 0 10pt; font-size: 10pt; }
   th { background: #0e2f52; color: white; text-align: left; padding: 8pt 10pt; font-weight: 700; font-size: 9.5pt; }
   td { padding: 7pt 10pt; border-bottom: 1px solid #e2e8f0; vertical-align: top; }
   tr:nth-child(even) td { background: #f8fafc; }
-  .callout { background: #fff7ed; border-left: 4px solid #ea580c; padding: 12pt 16pt; margin: 14pt 0; border-radius: 0 6pt 6pt 0; }
+  .callout { background: #fff7ed; border-left: 4px solid #ea580c; padding: 10pt 14pt; margin: 10pt 0; border-radius: 0 6pt 6pt 0; font-size: 10pt; }
   .callout-warning { background: #fef2f2; border-left-color: #dc2626; }
   .callout-warning strong { color: #dc2626; }
   .callout-success { background: #f0fdf4; border-left-color: #16a34a; }
   .callout-success strong { color: #16a34a; }
-  .stat { display: inline-block; min-width: 80pt; padding: 12pt; background: #0e2f52; color: white; border-radius: 8pt; text-align: center; margin: 5pt; }
-  .stat-number { font-size: 28pt; font-weight: 900; line-height: 1; display: block; color: #fb923c; }
-  .stat-label { font-size: 9pt; text-transform: uppercase; letter-spacing: 1px; opacity: 0.9; margin-top: 4pt; display: block; }
-  .stat-row { display: flex; gap: 6pt; justify-content: space-between; margin: 14pt 0; }
-  .promo-box { background: linear-gradient(135deg, #0e2f52 0%, #1e3a5f 100%); color: white; padding: 24pt; border-radius: 12pt; text-align: center; margin: 20pt 0; }
-  .promo-code { display: inline-block; font-family: 'Courier New', monospace; font-size: 28pt; font-weight: 900; letter-spacing: 8pt; padding: 10pt 20pt; background: white; color: #0e2f52; border-radius: 6pt; margin: 10pt 0; }
-  .footer-page { text-align: center; font-size: 9pt; color: #94a3b8; border-top: 1px solid #e2e8f0; padding-top: 8pt; margin-top: 16pt; }
+  .stat-row { display: flex; gap: 8pt; margin: 12pt 0; }
+  .stat { flex: 1; padding: 12pt; background: #0e2f52; color: white; border-radius: 8pt; text-align: center; }
+  .stat-number { font-size: 22pt; font-weight: 900; line-height: 1; display: block; color: #fb923c; }
+  .stat-label { font-size: 8.5pt; text-transform: uppercase; letter-spacing: 1px; opacity: 0.9; margin-top: 4pt; display: block; }
+  .promo-page { display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 248mm; text-align: center; padding: 20mm 0; }
+  .promo-box { background: linear-gradient(135deg, #0e2f52 0%, #1e3a5f 100%); color: white; padding: 32pt; border-radius: 14pt; margin: 20pt 0; width: 100%; max-width: 140mm; }
+  .promo-code { display: inline-block; font-family: 'Courier New', monospace; font-size: 36pt; font-weight: 900; letter-spacing: 10pt; padding: 16pt 28pt; background: white; color: #0e2f52; border-radius: 8pt; margin: 14pt 0; }
   .compare-good { color: #16a34a; font-weight: 700; }
   .compare-bad { color: #dc2626; font-weight: 700; }
   .compare-neutral { color: #ea580c; font-weight: 700; }
-  .toc-item { display: flex; justify-content: space-between; padding: 8pt 0; border-bottom: 1px dotted #cbd5e1; font-size: 10.5pt; }
+  .toc-item { display: flex; justify-content: space-between; padding: 9pt 0; border-bottom: 1px dotted #cbd5e1; font-size: 10.5pt; }
   .toc-item-num { color: #ea580c; font-weight: 700; margin-right: 8pt; }
+  .image-block { width: 100%; margin: 8pt 0 10pt; border-radius: 8pt; overflow: hidden; box-shadow: 0 2px 8px rgba(15, 23, 42, 0.1); }
+  .image-block img { width: 100%; height: auto; display: block; }
+  .image-block.h60 img { height: 60mm; object-fit: cover; }
+  .image-block.h45 img { height: 45mm; object-fit: cover; }
+  .image-block.h35 img { height: 35mm; object-fit: cover; }
+  .image-caption { font-size: 9pt; color: #64748b; text-align: center; margin-top: 4pt; font-style: italic; }
+  .ennemi-block { background: #f8fafc; border-left: 4px solid #ea580c; padding: 9pt 12pt; margin: 7pt 0; border-radius: 0 6pt 6pt 0; }
+  .ennemi-title { font-weight: 700; color: #0e2f52; font-size: 11pt; margin: 0 0 3pt; }
+  .ennemi-block p { margin: 2pt 0; font-size: 9.5pt; line-height: 1.4; }
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10pt; margin: 8pt 0; }
+  .grid-2 .ennemi-block { margin: 0; }
+  .footer-meta { font-size: 8.5pt; color: #94a3b8; border-top: 1px solid #e2e8f0; padding-top: 6pt; margin-top: 10pt; text-align: center; }
+  .badge-method { display: inline-block; padding: 3pt 9pt; border-radius: 99pt; font-size: 9pt; font-weight: 700; }
+  .badge-good { background: #f0fdf4; color: #16a34a; border: 1px solid #bbf7d0; }
+  .badge-bad { background: #fef2f2; color: #dc2626; border: 1px solid #fecaca; }
+  .badge-mid { background: #fff7ed; color: #ea580c; border: 1px solid #fed7aa; }
+  .method-row { padding: 10pt 0; border-bottom: 1px solid #e2e8f0; }
+  .method-row:last-child { border-bottom: none; }
+  .method-title { font-weight: 700; color: #0e2f52; margin: 0 0 4pt; font-size: 11pt; }
+  .method-desc { color: #475569; font-size: 9.5pt; margin: 4pt 0 0; line-height: 1.45; }
+  .question-num { display: inline-block; width: 20pt; height: 20pt; border-radius: 99pt; background: #ea580c; color: white; text-align: center; font-weight: 900; line-height: 20pt; font-size: 11pt; margin-right: 8pt; }
+  .question-block { margin-bottom: 9pt; }
+  .question-block strong { color: #0e2f52; display: block; margin-bottom: 2pt; font-size: 10.5pt; }
+  .question-block p { color: #475569; font-size: 9.5pt; margin: 2pt 0 0; line-height: 1.4; padding-left: 28pt; }
+  .check-row { display: flex; align-items: flex-start; gap: 7pt; margin-bottom: 5pt; font-size: 10pt; line-height: 1.4; }
+  .check-box { display: inline-block; width: 12pt; height: 12pt; border: 1.5pt solid #94a3b8; border-radius: 2pt; flex-shrink: 0; margin-top: 1pt; }
+  .check-section-title { font-weight: 700; color: #0e2f52; margin: 12pt 0 4pt; font-size: 10.5pt; }
+  .url-base { color: #ea580c; font-weight: 700; }
 </style>
 </head>
 <body>
 
-<!-- ════════════ COVER ════════════ -->
-<section class="cover">
-  <div>
-    <div class="cover-header">ELLIPSYS SOLUTIONS · GUIDE EXPERT 2026</div>
-  </div>
-  <div>
-    <span class="label">Guide gratuit</span>
-    <h1>Récupérez jusqu'à <span class="accent">30%</span><br>de production solaire<br>en 2026</h1>
-    <p style="font-size: 13pt; color: #475569; margin-top: 16pt; max-width: 130mm; line-height: 1.5;">
-      Ce que les installateurs ne vous disent jamais sur l'entretien de vos panneaux photovoltaïques —
-      et comment éviter de perdre <strong>1 200 € par an</strong> sans le savoir.
-    </p>
-  </div>
-  <div class="cover-meta">
-    <p><strong>Édition 2026 — France métropolitaine</strong></p>
-    <p>Par Monsef El Aidi · Ellipsys Solutions</p>
-    <p>ellipsys-solutions.com</p>
+<!-- ════════════════════════════════════════ PAGE 1 — COVER ════════════════════════════════════════ -->
+<section class="page">
+  <div class="cover">
+    <div>
+      <div class="cover-header">ELLIPSYS SOLUTIONS · GUIDE EXPERT 2026</div>
+    </div>
+    <div>
+      <span class="label">Guide gratuit</span>
+      <h1 style="margin-top: 12pt;">Récupérez jusqu'à <span style="color: #fb923c;">30%</span><br>de production solaire</h1>
+      <p style="font-size: 12pt; color: #cbd5e1; margin-top: 14pt; max-width: 130mm; line-height: 1.5;">
+        Ce que les installateurs ne vous disent jamais sur l'entretien de vos panneaux photovoltaïques — et comment éviter de perdre <strong style="color: #fb923c;">1 200 € par an</strong> sans le savoir.
+      </p>
+      <div class="image-block" style="margin-top: 16pt;">
+        <img src="../images/avant-apres-solaire.png" alt="Avant/après nettoyage panneaux solaires Ellipsys" style="height: 95mm; width: 100%; object-fit: cover; opacity: 0.95;" />
+      </div>
+    </div>
+    <div class="cover-meta">
+      <p style="margin: 0;"><strong style="color: #fb923c;">Édition 2026 — France métropolitaine</strong></p>
+      <p style="margin: 4pt 0 0;">Par Monsef El Aidi · Ellipsys Solutions</p>
+      <p style="margin: 4pt 0 0;">ellipsys-solutions.com</p>
+    </div>
   </div>
 </section>
 
-<div class="pagebreak"></div>
+<!-- ════════════════════════════════════════ PAGE 2 — INTRO HOOK ════════════════════════════════════════ -->
+<section class="page">
+  <div class="page-content">
+    <h2>L'erreur à 1 200 € que font 80% des propriétaires</h2>
 
-<!-- ════════════ INTRO / HOOK ════════════ -->
-<section>
-  <h2>L'erreur à 1 200 € que font 80% des propriétaires</h2>
+    <p>Vous avez investi 12 000, 18 000, peut-être 25 000 € dans votre installation photovoltaïque. Vous avez fait le bon choix : transition énergétique, autoconsommation, revente du surplus.</p>
 
-  <p>Vous avez investi 12 000, 18 000, peut-être 25 000 € dans votre installation photovoltaïque. Vous avez fait le bon choix : transition énergétique, autoconsommation, revente du surplus.</p>
+    <p>Mais voilà ce qu'on ne vous a probablement pas dit lors de la vente : <strong>dès la première année</strong>, votre installation va perdre entre 5 et 30% de production. Pas à cause d'un défaut. Pas à cause du vieillissement.</p>
 
-  <p>Mais voilà ce qu'on ne vous a probablement pas dit lors de la vente : <strong>dès la première année</strong>, votre installation va perdre entre 5 et 30% de production. Pas à cause d'un défaut. Pas à cause du vieillissement.</p>
+    <p style="font-size: 13pt; font-weight: 700; color: #0e2f52; margin-top: 14pt;">À cause de la saleté.</p>
 
-  <p style="font-size: 14pt; font-weight: 700; color: #0e2f52; margin-top: 18pt;">À cause de la saleté.</p>
+    <div class="callout">
+      <strong>Calcul rapide.</strong> Sur une installation moyenne de 6 kWc en Occitanie :
+      <ul style="margin-top: 6pt;">
+        <li>Production annuelle théorique : ~8 400 kWh</li>
+        <li>Perte moyenne due à l'encrassement : <strong>15% = 1 260 kWh</strong></li>
+        <li>Valeur perdue (autoconsommation + revente) : <strong>~240 € la première année</strong></li>
+        <li>Sur 10 ans, sans nettoyage : <strong>plus de 2 400 €</strong> de production gaspillée</li>
+      </ul>
+      Et c'est une fourchette basse. En zone méditerranéenne avec épisodes saharien, on observe régulièrement <strong>30% de perte</strong>.
+    </div>
 
-  <div class="callout">
-    <strong>Calcul rapide.</strong> Sur une installation moyenne de 6 kWc en Occitanie :
-    <ul style="margin-top: 8pt;">
-      <li>Production annuelle théorique : ~8 400 kWh</li>
-      <li>Perte moyenne due à l'encrassement : <strong>15% = 1 260 kWh</strong></li>
-      <li>Valeur perdue (autoconsommation + revente) : <strong>~240 € la première année</strong></li>
-      <li>Sur 10 ans, sans nettoyage : <strong>plus de 2 400 €</strong> de production gaspillée</li>
+    <p>Ce guide vous explique pourquoi, comment éviter ces pertes, et surtout : comment ne pas tomber dans le panneau (jeu de mots) des prestataires qui vendent du nettoyage qui détruit vos cellules.</p>
+
+    <div class="stat-row">
+      <div class="stat"><span class="stat-number">15-30%</span><span class="stat-label">perte typique</span></div>
+      <div class="stat"><span class="stat-number">240 €</span><span class="stat-label">manque à gagner / an</span></div>
+      <div class="stat"><span class="stat-number">10 min</span><span class="stat-label">de lecture</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════ PAGE 3 — SOMMAIRE ════════════════════════════════════════ -->
+<section class="page">
+  <div class="page-content">
+    <h2>Sommaire</h2>
+    <div class="toc-item"><span><span class="toc-item-num">1</span> Pourquoi vos panneaux perdent de la production</span><span>p. 4</span></div>
+    <div class="toc-item"><span><span class="toc-item-num">2</span> Les 4 ennemis silencieux</span><span>p. 5</span></div>
+    <div class="toc-item"><span><span class="toc-item-num">3</span> À quelle fréquence nettoyer vos panneaux</span><span>p. 6</span></div>
+    <div class="toc-item"><span><span class="toc-item-num">4</span> Les 5 méthodes de nettoyage comparées</span><span>p. 7</span></div>
+    <div class="toc-item"><span><span class="toc-item-num">5</span> Les 7 erreurs qui ruinent vos panneaux</span><span>p. 8</span></div>
+    <div class="toc-item"><span><span class="toc-item-num">6</span> Quand faire appel à un pro — checklist</span><span>p. 9</span></div>
+    <div class="toc-item"><span><span class="toc-item-num">7</span> 10 questions à poser à votre prestataire</span><span>p. 10</span></div>
+    <div class="toc-item"><span><span class="toc-item-num">8</span> Notre méthode Ellipsys</span><span>p. 11</span></div>
+    <div class="toc-item"><span><span class="toc-item-num">9</span> Votre code promo exclusif</span><span>p. 12</span></div>
+
+    <div class="image-block h60" style="margin-top: 24pt;">
+      <img src="../images/Solaiire.png" alt="Panneaux solaires" />
+    </div>
+    <p class="image-caption">Ferme photovoltaïque en Occitanie — un terrain typique où l'entretien fait toute la différence.</p>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════ PAGE 4 — 1. POURQUOI ════════════════════════════════════════ -->
+<section class="page">
+  <div class="page-content">
+    <h2>1. Pourquoi vos panneaux perdent de la production</h2>
+
+    <p>Un panneau photovoltaïque transforme la lumière en électricité grâce à ses cellules de silicium. Pour fonctionner à 100%, ces cellules doivent recevoir un maximum de photons. Tout ce qui s'interpose entre le soleil et la cellule réduit le rendement.</p>
+
+    <p>Et contrairement à une idée reçue tenace : <strong>la pluie n'est pas suffisante</strong>.</p>
+
+    <h3>L'effet "tâche" : pire qu'une couche uniforme</h3>
+
+    <p>Une cellule partiellement ombragée crée un phénomène appelé <strong>"hot spot"</strong> : la cellule devient résistive et chauffe localement. Trois conséquences :</p>
+
+    <ul>
+      <li><strong>Baisse de production</strong> du panneau entier (pas seulement de la cellule sale)</li>
+      <li><strong>Vieillissement accéléré</strong> des cellules adjacentes</li>
+      <li><strong>Risque incendie</strong> sur très long terme (rare, mais documenté)</li>
     </ul>
-    Et c'est une fourchette basse. En zone méditerranéenne avec épisodes saharien, on observe régulièrement <strong>30% de perte</strong>.
-  </div>
 
-  <p>Ce guide vous explique pourquoi, comment éviter ces pertes, et surtout : comment ne pas tomber dans le panneau (jeu de mots) des prestataires qui vendent du nettoyage qui détruit vos cellules.</p>
+    <h3>Pourquoi la pluie ne suffit pas</h3>
 
-  <div class="stat-row">
-    <div class="stat"><span class="stat-number">15-30%</span><span class="stat-label">perte de production typique</span></div>
-    <div class="stat"><span class="stat-number">240 €</span><span class="stat-label">manque à gagner / an</span></div>
-    <div class="stat"><span class="stat-number">10 min</span><span class="stat-label">de lecture qui changent tout</span></div>
-  </div>
-</section>
+    <ul>
+      <li>Elle laisse des <strong>traces de calcaire</strong> en séchant</li>
+      <li>Elle <strong>déplace les saletés</strong> vers les bordures où elles s'accumulent en croûtes</li>
+      <li>Elle est <strong>inefficace</strong> contre les fientes, le pollen et le sable saharien</li>
+    </ul>
 
-<div class="pagebreak"></div>
+    <div class="image-block h45">
+      <img src="../images/avant-apres-solaire.png" alt="Comparaison avant/après nettoyage" />
+    </div>
 
-<!-- ════════════ SOMMAIRE ════════════ -->
-<section>
-  <h2>Sommaire</h2>
-  <div class="toc-item"><span><span class="toc-item-num">1</span> Pourquoi vos panneaux perdent de la production</span><span>p. 4</span></div>
-  <div class="toc-item"><span><span class="toc-item-num">2</span> Les 4 ennemis silencieux</span><span>p. 5</span></div>
-  <div class="toc-item"><span><span class="toc-item-num">3</span> À quelle fréquence nettoyer vos panneaux</span><span>p. 6</span></div>
-  <div class="toc-item"><span><span class="toc-item-num">4</span> Les 5 méthodes de nettoyage comparées</span><span>p. 7</span></div>
-  <div class="toc-item"><span><span class="toc-item-num">5</span> Les 7 erreurs qui ruinent vos panneaux</span><span>p. 9</span></div>
-  <div class="toc-item"><span><span class="toc-item-num">6</span> Quand faire appel à un pro — checklist</span><span>p. 10</span></div>
-  <div class="toc-item"><span><span class="toc-item-num">7</span> 10 questions à poser à votre prestataire</span><span>p. 11</span></div>
-  <div class="toc-item"><span><span class="toc-item-num">8</span> Notre méthode Ellipsys</span><span>p. 12</span></div>
-  <div class="toc-item"><span><span class="toc-item-num">9</span> Votre code promo — 15%</span><span>p. 13</span></div>
-</section>
-
-<div class="pagebreak"></div>
-
-<!-- ════════════ 1. POURQUOI ════════════ -->
-<section>
-  <h2>1. Pourquoi vos panneaux perdent de la production</h2>
-
-  <p>Un panneau photovoltaïque transforme la lumière en électricité grâce à ses cellules de silicium. Pour fonctionner à 100%, ces cellules doivent recevoir un maximum de photons. Tout ce qui s'interpose entre le soleil et la cellule réduit le rendement — proportionnellement à la zone d'ombre créée.</p>
-
-  <p>Et contrairement à une idée reçue tenace : <strong>la pluie n'est pas suffisante</strong>.</p>
-
-  <h3>L'effet "tâche" : pire qu'une couche uniforme</h3>
-
-  <p>Une cellule partiellement ombragée crée un phénomène appelé <strong>"hot spot"</strong> : la cellule devient résistive et chauffe localement. Trois conséquences :</p>
-
-  <ul>
-    <li><strong>Baisse de production</strong> du panneau entier (pas seulement de la cellule sale)</li>
-    <li><strong>Vieillissement accéléré</strong> des cellules adjacentes</li>
-    <li><strong>Risque incendie</strong> sur très long terme (rare, mais documenté)</li>
-  </ul>
-
-  <h3>Pourquoi la pluie ne suffit pas</h3>
-
-  <p>La pluie nettoie le dessus, mais :</p>
-  <ul>
-    <li>Elle laisse des <strong>traces de calcaire</strong> en séchant</li>
-    <li>Elle <strong>déplace les saletés</strong> vers les bordures (cadres en aluminium) où elles s'accumulent en croûtes</li>
-    <li>Elle est <strong>inefficace</strong> contre les fientes (résine adhérente), le pollen (lipidique), et le sable saharien (incrustant)</li>
-  </ul>
-
-  <div class="callout-warning callout">
-    <strong>Mythe à combattre.</strong> "Mes panneaux sont auto-nettoyants." Aucun panneau résidentiel sur le marché français en 2026 n'est réellement auto-nettoyant. Cette mention commerciale exploite un revêtement hydrophobe qui ralentit l'encrassement de 10-20% maximum. Pas plus.
+    <div class="callout-warning callout">
+      <strong>⚠️ Mythe à combattre.</strong> "Mes panneaux sont auto-nettoyants." Aucun panneau résidentiel sur le marché français en 2026 n'est réellement auto-nettoyant. Cette mention commerciale exploite un revêtement hydrophobe qui ralentit l'encrassement de 10-20% maximum.
+    </div>
   </div>
 </section>
 
-<div class="pagebreak"></div>
+<!-- ════════════════════════════════════════ PAGE 5 — 2. ENNEMIS ════════════════════════════════════════ -->
+<section class="page">
+  <div class="page-content">
+    <h2>2. Les 4 ennemis silencieux de vos panneaux</h2>
 
-<!-- ════════════ 2. LES 4 ENNEMIS ════════════ -->
-<section>
-  <h2>2. Les 4 ennemis silencieux de vos panneaux</h2>
+    <div class="grid-2">
+      <div class="ennemi-block">
+        <p class="ennemi-title">🟡 Le pollen (mars → juin)</p>
+        <p>Particules adhésives, couche jaunâtre uniforme. Lipidique : <strong>repoussé par l'eau pure</strong> mais accroché par les surfaces.</p>
+        <p>Pic en France : <strong>avril-mai</strong>.</p>
+        <p>Impact production : <strong>-8 à -15%</strong> non traité.</p>
+      </div>
 
-  <h3>🟡 Le pollen (mars → juin)</h3>
-  <p>Particules adhésives qui forment une couche jaunâtre uniforme. Lipidique : <strong>repoussé par l'eau pure</strong> mais accroché par les surfaces. Période de pic en France : <strong>avril-mai</strong>.</p>
-  <p>Impact moyen sur production : <strong>-8 à -15%</strong> non traité.</p>
+      <div class="ennemi-block">
+        <p class="ennemi-title">🟤 Le sable saharien</p>
+        <p>Tempêtes ponctuelles mais dévastatrices, surtout sur le sud. Le sable fin <strong>s'incruste dans le verre</strong> et durcit à la première pluie.</p>
+        <p>Régions : Occitanie, PACA, Corse, Sud Aquitaine. <strong>2 à 4 épisodes / an</strong>.</p>
+        <p>Impact : <strong>-15 à -30%</strong> si non traité.</p>
+      </div>
 
-  <h3>🟤 Le sable saharien (épisodes ponctuels)</h3>
-  <p>Tempêtes occasionnelles mais dévastatrices, surtout sur le sud de la France. Le sable très fin <strong>s'incruste dans les micro-rugosités du verre</strong>, et durcit avec la première pluie. Si non nettoyé : devient quasi-impossible à enlever sans abrasif.</p>
-  <p>Régions les plus touchées : Occitanie, PACA, Corse, Sud Aquitaine. <strong>2 à 4 épisodes majeurs / an</strong>.</p>
-  <p>Impact : <strong>-15 à -30%</strong> en cas de non-traitement après épisode.</p>
+      <div class="ennemi-block">
+        <p class="ennemi-title">⚫ Les fientes d'oiseaux</p>
+        <p>Champions de la nuisance : <strong>résineuses, acides, opaques</strong>. Une fiente de 2 cm² peut faire chuter la production d'un panneau de 6%.</p>
+        <p>Pire : leur acidité <strong>attaque le revêtement antireflet</strong> du verre si elles restent plus de 6 mois.</p>
+      </div>
 
-  <h3>⚫ Les fientes d'oiseaux (toute l'année)</h3>
-  <p>Champions de la nuisance : <strong>résineuses, acides, opaques</strong>. Une fiente de 2 cm² peut faire chuter la production d'un panneau de 6%. Et contrairement aux autres saletés, elles ne partent pas avec la pluie.</p>
-  <p>Pire : leur acidité <strong>attaque le revêtement antireflet</strong> du verre si elles restent plus de 6 mois.</p>
+      <div class="ennemi-block">
+        <p class="ennemi-title">🌫️ Pollution urbaine</p>
+        <p>Particules fines, suies, hydrocarbures. Forme une <strong>pellicule grasse</strong> qui retient les autres saletés et résiste à l'eau seule.</p>
+        <p>Plus intense en zones urbaines denses, près autoroutes, et zones industrielles.</p>
+        <p>Impact : <strong>-5 à -12%</strong>, croissance lente mais constante.</p>
+      </div>
+    </div>
 
-  <h3>🌫️ La pollution urbaine et industrielle (continue)</h3>
-  <p>Particules fines, suies, hydrocarbures imbrûlés. Forme une <strong>pellicule grasse</strong> qui retient les autres saletés et résiste à l'eau seule. Plus intense en zones urbaines denses, près des autoroutes, et zones industrielles.</p>
-  <p>Impact : <strong>-5 à -12%</strong>, croissance lente mais constante.</p>
+    <div class="image-block h35">
+      <img src="../images/apres solaire.jpg" alt="Panneaux solaires nettoyés Ellipsys" />
+    </div>
+    <p class="image-caption">Après notre passage : surface optique restaurée, rendement maximal.</p>
 
-  <div class="callout-success callout">
-    <strong>Bonne nouvelle.</strong> 90% de ces salissures partent avec un nettoyage à l'<strong>eau osmosée pure</strong>, sans détergent, sans frottement abrasif. Le reste (fientes anciennes, sable saharien) nécessite un nettoyage spécifique mais reste accessible.
+    <div class="callout-success callout">
+      <strong>Bonne nouvelle.</strong> 90% de ces salissures partent avec un nettoyage à l'<strong>eau osmosée pure</strong>, sans détergent, sans frottement abrasif. Le reste (fientes anciennes, sable saharien) nécessite une méthode spécifique mais reste accessible.
+    </div>
   </div>
 </section>
 
-<div class="pagebreak"></div>
+<!-- ════════════════════════════════════════ PAGE 6 — 3. FRÉQUENCE ════════════════════════════════════════ -->
+<section class="page">
+  <div class="page-content">
+    <h2>3. À quelle fréquence nettoyer vos panneaux</h2>
 
-<!-- ════════════ 3. FRÉQUENCE ════════════ -->
-<section>
-  <h2>3. À quelle fréquence nettoyer vos panneaux</h2>
+    <p>Il n'existe pas de "fréquence universelle". Elle dépend de votre région et de votre environnement immédiat.</p>
 
-  <p>Il n'existe pas de "fréquence universelle". Elle dépend de votre région et de votre environnement immédiat.</p>
+    <table>
+      <thead>
+        <tr><th>Votre situation</th><th style="width: 40%">Fréquence recommandée</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Rural, Nord de la France, peu de pollution</td><td><strong>1 fois / 2 ans</strong></td></tr>
+        <tr><td>Périurbain, climat tempéré</td><td><strong>1 fois / an</strong></td></tr>
+        <tr><td>Sud (Occitanie, PACA), sable saharien</td><td><strong>1 à 2 / an</strong> + 1 après gros épisode</td></tr>
+        <tr><td>Zone côtière (sel marin) &lt; 10 km</td><td><strong>2 fois / an minimum</strong></td></tr>
+        <tr><td>Urbain dense / industries / autoroute</td><td><strong>2 fois / an</strong></td></tr>
+        <tr><td>Proximité agricole</td><td><strong>2 à 3 fois / an</strong></td></tr>
+        <tr><td>Fort passage d'oiseaux</td><td>+1 intervention spécifique / 6 mois</td></tr>
+      </tbody>
+    </table>
 
-  <table>
-    <thead>
-      <tr><th>Votre situation</th><th>Fréquence recommandée</th></tr>
-    </thead>
-    <tbody>
-      <tr><td>Rural, Nord de la France, peu de pollution</td><td><strong>1 fois / 2 ans</strong></td></tr>
-      <tr><td>Périurbain, climat tempéré</td><td><strong>1 fois / an</strong></td></tr>
-      <tr><td>Sud (Occitanie, PACA), sable saharien</td><td><strong>1 à 2 fois / an</strong> + 1 après chaque gros épisode saharien</td></tr>
-      <tr><td>Zone côtière (sel marin) à moins de 10 km</td><td><strong>2 fois / an minimum</strong></td></tr>
-      <tr><td>Urbain dense / proximité d'industries / autoroute</td><td><strong>2 fois / an</strong></td></tr>
-      <tr><td>Proximité agricole (poussières, élevage)</td><td><strong>2 à 3 fois / an</strong></td></tr>
-      <tr><td>Fort passage d'oiseaux (arbres, mât, antenne à proximité)</td><td>+1 intervention spécifique tous les 6 mois</td></tr>
-    </tbody>
-  </table>
+    <h3>Le moment optimal : avant l'été</h3>
 
-  <h3>Le moment optimal : avant l'été</h3>
+    <p>La meilleure période en France pour le nettoyage annuel est <strong>fin mars à mi-mai</strong> :</p>
 
-  <p>La meilleure période en France pour le nettoyage annuel est <strong>fin mars à mi-mai</strong> :</p>
+    <ul>
+      <li>Vous bénéficiez du <strong>pic de production estival</strong> sur des panneaux propres</li>
+      <li>Le pollen de printemps n'a pas encore eu le temps de s'incruster</li>
+      <li>Le sable saharien (souvent en mars) a été déposé : un nettoyage post-saharien fait gagner 20-30% sur la saison</li>
+      <li>Températures clémentes : moins de risque pour les techniciens</li>
+    </ul>
 
-  <ul>
-    <li>Vous bénéficiez du <strong>pic de production estival</strong> (juin-août) sur des panneaux propres</li>
-    <li>Le pollen de printemps n'a pas encore eu le temps de s'incruster</li>
-    <li>Le sable saharien (souvent en mars) a été déposé : un nettoyage post-saharien fait gagner 20-30% sur la saison</li>
-    <li>Les températures sont clémentes : moins de risque pour les techniciens (et pour les cellules en cas de DIY)</li>
-  </ul>
-
-  <div class="callout">
-    <strong>Astuce pro.</strong> Si vous habitez en zone saharien-sensible (Sud), ne planifiez PAS un nettoyage en janvier ou février : vous aurez probablement un épisode entre mars et mai qui annulera tout le bénéfice.
+    <div class="callout">
+      <strong>Astuce pro.</strong> Si vous habitez en zone saharien-sensible (Sud), ne planifiez pas un nettoyage en janvier-février : vous aurez probablement un épisode entre mars et mai qui annulera tout le bénéfice.
+    </div>
   </div>
 </section>
 
-<div class="pagebreak"></div>
+<!-- ════════════════════════════════════════ PAGE 7 — 4. MÉTHODES (SANS PRIX) ════════════════════════════════════════ -->
+<section class="page">
+  <div class="page-content">
+    <h2>4. Les 5 méthodes de nettoyage comparées</h2>
 
-<!-- ════════════ 4. MÉTHODES COMPARÉES ════════════ -->
-<section>
-  <h2>4. Les 5 méthodes de nettoyage comparées</h2>
+    <p>Voici un comparatif <strong>objectif et qualitatif</strong> des 5 méthodes les plus courantes. <strong>3 sont à éviter absolument.</strong></p>
 
-  <p>Voici un comparatif objectif des 5 méthodes les plus courantes. Spoiler : <strong>3 sont à éviter absolument</strong>.</p>
+    <div class="method-row">
+      <p class="method-title">1. Eau du robinet + balai télescopique (DIY) <span class="badge-method badge-bad">À éviter</span></p>
+      <p class="method-desc">Efficacité faible — laisse calcaire et traces. Risque élevé : chute de toiture, micro-rayures, dépôts qui empirent l'encrassement. Économie illusoire car le résultat justifie de tout refaire.</p>
+    </div>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Méthode</th>
-        <th style="width: 18%">Coût</th>
-        <th style="width: 18%">Efficacité</th>
-        <th style="width: 32%">Risques</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><strong>Eau du robinet + balai télescopique (DIY)</strong></td>
-        <td>Gratuit</td>
-        <td><span class="compare-bad">Faible</span> — laisse calcaire + traces</td>
-        <td><span class="compare-bad">Élevé</span> : chute toiture, rayures, calcaire</td>
-      </tr>
-      <tr>
-        <td><strong>Kärcher haute pression</strong></td>
-        <td>30-60 €</td>
-        <td><span class="compare-bad">Inadapté</span></td>
-        <td><span class="compare-bad">Critique</span> : peut <strong>déceller les joints</strong>, créer micro-fissures invisibles, faire annuler garantie installateur</td>
-      </tr>
-      <tr>
-        <td><strong>Société "lavage de vitres" classique</strong></td>
-        <td>80-200 €</td>
-        <td><span class="compare-neutral">Moyenne</span></td>
-        <td><span class="compare-neutral">Modéré</span> : détergent agressif, eau calcaire, mais surtout : <strong>aucune connaissance PV</strong> (risque de marcher sur les panneaux)</td>
-      </tr>
-      <tr>
-        <td><strong>Pro à l'<span class="accent">eau osmosée pure</span></strong></td>
-        <td>150-400 €</td>
-        <td><span class="compare-good">Excellente</span></td>
-        <td><span class="compare-good">Très faible</span> : eau totalement déminéralisée, brosse à fibre nylon, technicien formé PV</td>
-      </tr>
-      <tr>
-        <td><strong>Drone + robot avec eau osmosée</strong></td>
-        <td>200-500 €</td>
-        <td><span class="compare-good">Excellente</span></td>
-        <td><span class="compare-good">Quasi-nul</span> : zéro intervention humaine sur la toiture, sécurité maximale, accès difficiles facilités</td>
-      </tr>
-    </tbody>
-  </table>
+    <div class="method-row">
+      <p class="method-title">2. Kärcher / haute pression <span class="badge-method badge-bad">Interdit</span></p>
+      <p class="method-desc">La pression (jusqu'à 150 bar) peut <strong>déceller les joints</strong> et créer des micro-fissures invisibles. Peut faire <strong>annuler la garantie installateur</strong>. À ne jamais utiliser, même par un pro.</p>
+    </div>
 
-  <h3>Pourquoi l'eau osmosée pure change tout</h3>
+    <div class="method-row">
+      <p class="method-title">3. Société "lavage de vitres" non spécialisée <span class="badge-method badge-mid">Risqué</span></p>
+      <p class="method-desc">Efficacité moyenne. Risques modérés : détergents agressifs, eau calcaire, et surtout <strong>aucune formation PV</strong> (les techniciens marchent souvent sur les panneaux).</p>
+    </div>
 
-  <p>L'eau du robinet contient des minéraux (calcium, magnésium, fer). En séchant, ils laissent des dépôts blanchâtres — pire qu'avant le nettoyage pour la production. L'eau osmosée, elle, est passée à travers un système qui retire 99,9% de ces minéraux.</p>
+    <div class="method-row">
+      <p class="method-title">4. Pro à l'<span class="accent">eau osmosée pure</span> + brosse PV <span class="badge-method badge-good">Recommandé</span></p>
+      <p class="method-desc">Excellente efficacité. Eau totalement déminéralisée → séchage sans aucune trace. Brosse fibre nylon, technicien formé PV, ne monte pas sur les panneaux. Standard du marché qualitatif.</p>
+    </div>
 
-  <p>Résultat : <strong>séchage sans aucune trace</strong>, pas besoin de détergent, pas de raclette qui pourrait micro-rayer.</p>
+    <div class="method-row">
+      <p class="method-title">5. Drone + robot avec eau osmosée pure <span class="badge-method badge-good">Idéal</span></p>
+      <p class="method-desc">Excellente efficacité, risque quasi-nul. <strong>Zéro intervention humaine sur la toiture</strong>, sécurité maximale, accès difficiles facilités (toitures pentues, hauteurs, ABF, ombrières). La méthode du futur, déjà mature.</p>
+    </div>
 
-  <h3>Pourquoi pas le karcher (à retenir)</h3>
+    <div class="image-block h35">
+      <img src="../images/Dji matrice.jpg" alt="Drone professionnel Ellipsys" />
+    </div>
+    <p class="image-caption">Notre drone DJI Matrice équipé d'un système d'aspersion à eau osmosée.</p>
 
-  <div class="callout-warning callout">
-    <strong>⚠️ N'utilisez JAMAIS un karcher haute pression sur vos panneaux.</strong> Voici pourquoi en 3 points :
-    <ol style="margin-top: 8pt;">
-      <li>La pression (jusqu'à 150 bar) peut <strong>fissurer le revêtement antireflet</strong> de manière invisible</li>
-      <li>L'eau peut s'infiltrer dans les <strong>joints d'étanchéité des connexions</strong> électriques en arrière de panneau</li>
-      <li>Vous <strong>annulez automatiquement la garantie</strong> de la plupart des installateurs (vérifiez la vôtre)</li>
-    </ol>
+    <div class="callout-warning callout" style="margin-top: 12pt;">
+      <strong>⚠️ Pourquoi pas le karcher ?</strong> Il peut fissurer le revêtement antireflet, faire entrer de l'eau dans les connexions électriques arrière, et annuler votre garantie. <strong>Même un karcher "doux" est trop puissant pour un panneau PV.</strong>
+    </div>
   </div>
 </section>
 
-<div class="pagebreak"></div>
+<!-- ════════════════════════════════════════ PAGE 8 — 5. 7 ERREURS ════════════════════════════════════════ -->
+<section class="page">
+  <div class="page-content">
+    <h2>5. Les 7 erreurs qui ruinent vos panneaux</h2>
 
-<!-- ════════════ 5. 7 ERREURS ════════════ -->
-<section>
-  <h2>5. Les 7 erreurs qui ruinent vos panneaux</h2>
+    <div class="question-block">
+      <strong>1. Monter sur les panneaux pour les nettoyer</strong>
+      <p>Le verre supporte un poids ponctuel limité. Un homme de 80 kg sur 100 cm² peut créer des micro-fissures invisibles qui réduisent durablement la production.</p>
+    </div>
 
-  <ol>
-    <li>
-      <strong>Monter sur les panneaux pour les nettoyer.</strong>
-      Le verre du panneau supporte un poids ponctuel limité. Un homme de 80 kg sur une zone de 100 cm² peut <strong>créer des micro-fissures</strong> sur les cellules — invisibles mais qui réduisent durablement la production.
-    </li>
-    <li>
-      <strong>Utiliser un produit "spécial vitres" du commerce.</strong>
-      Tous ces produits contiennent du <strong>tensioactif</strong>. Bon pour vos fenêtres, désastreux pour le revêtement antireflet d'un panneau PV. L'efficacité optique peut baisser de 2-3% de manière irréversible.
-    </li>
-    <li>
-      <strong>Nettoyer à midi en plein soleil.</strong>
-      Quand les panneaux sont chauds (45-60°C en surface l'été), un <strong>choc thermique</strong> avec de l'eau froide peut fissurer le verre. Toujours nettoyer tôt le matin ou en fin de journée.
-    </li>
-    <li>
-      <strong>Utiliser une éponge / chiffon abrasif.</strong>
-      Le verre antireflet est plus fragile qu'un verre ordinaire. Une éponge "côté vert", un grattoir, ou même un essuie-tout peuvent rayer la surface optique. Seules les <strong>brosses à fibre nylon spécifiques</strong> sont sûres.
-    </li>
-    <li>
-      <strong>Reporter le nettoyage post-saharien.</strong>
-      Le sable saharien durcit dans la première semaine après dépôt, surtout si suivie de pluie. Au-delà de 2 mois, il faut souvent <strong>2 passages</strong> au lieu d'un seul. Coût doublé, et risque de cellules endommagées.
-    </li>
-    <li>
-      <strong>Faire faire le travail par n'importe quel laveur de vitres.</strong>
-      90% des sociétés de nettoyage vitres n'ont <strong>aucune formation PV</strong>. Ils peuvent appliquer leurs habitudes (détergent, raclette caoutchouc, marche sur le panneau). Toujours vérifier la <strong>certification PV</strong> du prestataire.
-    </li>
-    <li>
-      <strong>Ne pas demander de photos avant/après.</strong>
-      Un pro sérieux fournit un rapport photographique horodaté. Sans ce rapport, vous n'avez aucune preuve du travail réalisé — utile en cas de litige, mais surtout pour <strong>mesurer le gain de production</strong> dans les semaines qui suivent.
-    </li>
-  </ol>
-</section>
+    <div class="question-block">
+      <strong>2. Utiliser un produit "spécial vitres" du commerce</strong>
+      <p>Tous contiennent du tensioactif. Bon pour vos fenêtres, désastreux pour le revêtement antireflet : l'efficacité optique peut baisser de 2-3% de manière irréversible.</p>
+    </div>
 
-<div class="pagebreak"></div>
+    <div class="question-block">
+      <strong>3. Nettoyer à midi en plein soleil</strong>
+      <p>Quand les panneaux sont chauds (45-60°C l'été), un choc thermique avec de l'eau froide peut fissurer le verre. Toujours nettoyer tôt le matin ou en fin de journée.</p>
+    </div>
 
-<!-- ════════════ 6. QUAND FAIRE APPEL À UN PRO ════════════ -->
-<section>
-  <h2>6. Quand faire appel à un pro — checklist auto-diagnostic</h2>
+    <div class="question-block">
+      <strong>4. Utiliser une éponge / chiffon abrasif</strong>
+      <p>Le verre antireflet est plus fragile qu'un verre ordinaire. Éponge "côté vert", grattoir, ou même essuie-tout peuvent rayer la surface optique. Seules les brosses à fibre nylon spécifiques sont sûres.</p>
+    </div>
 
-  <p>Cochez mentalement les cases qui s'appliquent à votre situation. <strong>3 cases ou plus = appelez un pro.</strong></p>
+    <div class="question-block">
+      <strong>5. Reporter le nettoyage post-saharien</strong>
+      <p>Le sable saharien durcit dans la première semaine après dépôt. Au-delà de 2 mois, il faut souvent 2 passages au lieu d'un, et le risque d'abîmer les cellules augmente.</p>
+    </div>
 
-  <h3>🏠 Votre installation</h3>
-  <ul>
-    <li>☐ Toiture pentue (>20°) — risque de chute</li>
-    <li>☐ Hauteur supérieure à 4 mètres — au-delà, c'est zone IRP (intervention en hauteur réglementée)</li>
-    <li>☐ Plus de 12 panneaux à nettoyer</li>
-    <li>☐ Accès difficile (tuiles fragiles, terrain pentu, peu d'espace pour matériel)</li>
-  </ul>
+    <div class="question-block">
+      <strong>6. Faire faire le travail par n'importe quel laveur de vitres</strong>
+      <p>90% des sociétés de nettoyage vitres n'ont aucune formation PV. Ils peuvent appliquer leurs habitudes (détergent, raclette, marche sur le panneau). Toujours vérifier la spécialisation.</p>
+    </div>
 
-  <h3>📍 Votre environnement</h3>
-  <ul>
-    <li>☐ Vous habitez en zone saharien-sensible (Sud)</li>
-    <li>☐ Vous êtes à moins de 5 km du littoral (sel marin)</li>
-    <li>☐ Forte présence d'oiseaux (arbres au-dessus, mât, antenne)</li>
-    <li>☐ Vos panneaux n'ont jamais été nettoyés depuis l'installation</li>
-  </ul>
-
-  <h3>📉 Votre production</h3>
-  <ul>
-    <li>☐ Vous avez constaté une baisse de production récente (suivi appli onduleur)</li>
-    <li>☐ Vous tirez moins du surplus que prévu sur le contrat de revente</li>
-    <li>☐ Cela fait plus de 18 mois que vos panneaux n'ont pas été nettoyés</li>
-  </ul>
-
-  <h3>🛡️ Votre garantie</h3>
-  <ul>
-    <li>☐ Vous êtes encore sous garantie installateur (5-25 ans) et un nettoyage non-pro pourrait l'annuler</li>
-    <li>☐ Vous voulez un rapport thermique pour détecter les cellules défaillantes en bonus</li>
-  </ul>
-
-  <div class="callout">
-    <strong>Bonus pro.</strong> Un nettoyage professionnel inclut souvent une <strong>inspection thermographique</strong> par drone (caméra IR) qui détecte les cellules défaillantes, les "hot spots", et les défauts d'onduleur. Ça vaut 200-400 € si vous le demandez seul, c'est souvent inclus si vous prenez le pack nettoyage chez un pro spécialisé.
+    <div class="question-block">
+      <strong>7. Ne pas demander de photos avant/après</strong>
+      <p>Un pro sérieux fournit un rapport photographique horodaté. Sans ce rapport, vous n'avez aucune preuve du travail réalisé — utile en cas de litige, et surtout pour mesurer le gain de production dans les semaines qui suivent.</p>
+    </div>
   </div>
 </section>
 
-<div class="pagebreak"></div>
+<!-- ════════════════════════════════════════ PAGE 9 — 6. CHECKLIST ════════════════════════════════════════ -->
+<section class="page">
+  <div class="page-content">
+    <h2>6. Quand faire appel à un pro — auto-diagnostic</h2>
 
-<!-- ════════════ 7. 10 QUESTIONS PROSPECT ════════════ -->
-<section>
-  <h2>7. Les 10 questions à poser à votre prestataire avant de signer</h2>
+    <p>Cochez mentalement les cases qui s'appliquent. <strong>3 cases ou plus = appelez un pro.</strong></p>
 
-  <p>Imprimez cette page. Posez ces 10 questions au téléphone ou par email. Si le prestataire ne répond pas clairement à 2 ou plus, <strong>passez votre chemin</strong>.</p>
+    <p class="check-section-title">🏠 Votre installation</p>
+    <div class="check-row"><span class="check-box"></span><span>Toiture pentue (&gt;20°) — risque de chute</span></div>
+    <div class="check-row"><span class="check-box"></span><span>Hauteur supérieure à 4 mètres — au-delà, zone d'intervention en hauteur réglementée</span></div>
+    <div class="check-row"><span class="check-box"></span><span>Plus de 12 panneaux à nettoyer</span></div>
+    <div class="check-row"><span class="check-box"></span><span>Accès difficile (tuiles fragiles, terrain pentu, peu d'espace)</span></div>
 
-  <ol>
-    <li>
-      <strong>"Utilisez-vous de l'eau osmosée pure ou de l'eau du robinet avec détergent ?"</strong>
-      Bonne réponse : eau osmosée pure, sans détergent.
-    </li>
-    <li>
-      <strong>"Vos techniciens montent-ils sur les panneaux ?"</strong>
-      Bonne réponse : Non. Soit lance télescopique depuis le sol, soit drone / robot pour les installations en hauteur ou pentues.
-    </li>
-    <li>
-      <strong>"Êtes-vous assurés en RC Pro et avez-vous des certifications ?"</strong>
-      Bonne réponse : RC Pro à jour (attestation à envoyer), idéalement DGAC/EASA pour les drones, Qualibat ou équivalent.
-    </li>
-    <li>
-      <strong>"Fournissez-vous un rapport photo avant/après ?"</strong>
-      Bonne réponse : Oui, dans les 48h, photos horodatées.
-    </li>
-    <li>
-      <strong>"Avez-vous un avis sur l'état des cellules après nettoyage (hot spots, cellules défaillantes) ?"</strong>
-      Bonne réponse : Oui, soit visuellement, soit en option avec thermographie.
-    </li>
-    <li>
-      <strong>"Le devis inclut-il le déplacement ? Y a-t-il des frais cachés ?"</strong>
-      Bonne réponse : Devis tout compris signé avant intervention.
-    </li>
-    <li>
-      <strong>"Quelle est votre méthode pour les fientes anciennes / sable saharien incrusté ?"</strong>
-      Bonne réponse : Brosse douce nylon + pré-trempage, JAMAIS karcher haute pression.
-    </li>
-    <li>
-      <strong>"Combien d'installations PV avez-vous nettoyées dans ma région cette année ?"</strong>
-      Réponse de qualité : un chiffre concret. Méfiez-vous des "des centaines" trop vagues.
-    </li>
-    <li>
-      <strong>"Le nettoyage annule-t-il ma garantie installateur ?"</strong>
-      Bonne réponse : Notre méthode est compatible avec toutes les garanties standards. Nous pouvons fournir un certificat d'intervention pour votre installateur.
-    </li>
-    <li>
-      <strong>"Quel délai d'intervention proposez-vous ?"</strong>
-      Bonne réponse : <strong>Sous 2 à 4 semaines</strong> sauf urgence. Plus rapide = bon signe de disponibilité. Plus long = équipe saturée, qualité variable.
-    </li>
-  </ol>
-</section>
+    <p class="check-section-title">📍 Votre environnement</p>
+    <div class="check-row"><span class="check-box"></span><span>Vous habitez en zone saharien-sensible (Sud)</span></div>
+    <div class="check-row"><span class="check-box"></span><span>Vous êtes à moins de 5 km du littoral (sel marin)</span></div>
+    <div class="check-row"><span class="check-box"></span><span>Forte présence d'oiseaux (arbres, mât, antenne)</span></div>
+    <div class="check-row"><span class="check-box"></span><span>Vos panneaux n'ont jamais été nettoyés depuis l'installation</span></div>
 
-<div class="pagebreak"></div>
+    <p class="check-section-title">📉 Votre production</p>
+    <div class="check-row"><span class="check-box"></span><span>Vous avez constaté une baisse récente (suivi appli onduleur)</span></div>
+    <div class="check-row"><span class="check-box"></span><span>Vous tirez moins du surplus que prévu sur le contrat de revente</span></div>
+    <div class="check-row"><span class="check-box"></span><span>Cela fait plus de 18 mois sans nettoyage</span></div>
 
-<!-- ════════════ 8. NOTRE MÉTHODE ════════════ -->
-<section>
-  <h2>8. Notre méthode chez Ellipsys</h2>
+    <p class="check-section-title">🛡️ Votre garantie</p>
+    <div class="check-row"><span class="check-box"></span><span>Vous êtes encore sous garantie installateur (un nettoyage non-pro pourrait l'annuler)</span></div>
+    <div class="check-row"><span class="check-box"></span><span>Vous voulez un rapport thermique pour détecter les cellules défaillantes</span></div>
 
-  <p style="color: #64748b; font-size: 10pt;">Section honnête : voici comment nous travaillons. Vous êtes libre d'utiliser ce guide même si vous ne nous choisissez pas. L'objectif est que vos panneaux fonctionnent au mieux, peu importe le prestataire.</p>
-
-  <h3>1. Diagnostic préliminaire (gratuit, à distance)</h3>
-  <p>Vous nous envoyez 3-5 photos de votre installation (ou nous nous déplaçons gratuitement à Montpellier et alentours). On vous donne un avis sur l'état apparent et la méthode adaptée. Pas de pression commerciale.</p>
-
-  <h3>2. Intervention (1 à 3 heures selon la taille)</h3>
-  <ul>
-    <li><strong>Drone</strong> équipé d'un système d'aspersion d'eau osmosée pure (production sur place via osmoseur portatif)</li>
-    <li><strong>Robot</strong> spécialisé pour les grandes surfaces (centrales >50 panneaux)</li>
-    <li>Lance télescopique pour les installations basses (R+1) si plus efficace</li>
-    <li>Toujours <strong>sans détergent, sans marcher sur les panneaux, sans karcher</strong></li>
-  </ul>
-
-  <h3>3. Rapport d'intervention sous 48h</h3>
-  <ul>
-    <li>Photos avant / après (horodatées, géolocalisées)</li>
-    <li>État apparent des cellules</li>
-    <li>Recommandations pour les 12 prochains mois (anticipation des prochains nettoyages selon votre exposition)</li>
-    <li>En option : <strong>rapport thermographique</strong> par drone qui détecte les cellules défaillantes</li>
-  </ul>
-
-  <h3>4. Garantie satisfaction</h3>
-  <p>Si vous constatez la même salissure dans les 15 jours qui suivent (sauf événement météo majeur), nous repassons gratuitement. Notre objectif : un partenariat durable, pas une intervention one-shot.</p>
-
-  <div class="callout-success callout">
-    <strong>Notre engagement.</strong> Devis gratuit sous 24h. Réponse personnelle (pas de robot, pas de standard). Si on ne peut pas vous aider (zone trop éloignée, installation trop petite, etc.), on vous oriente vers un confrère qualifié sans frais.
+    <div class="callout">
+      <strong>💡 Bonus pro.</strong> Un bon nettoyage professionnel peut inclure une <strong>inspection thermographique</strong> par drone (caméra IR) qui détecte les cellules défaillantes, "hot spots", et défauts d'onduleur. Demandez-la lors du devis.
+    </div>
   </div>
 </section>
 
-<div class="pagebreak"></div>
+<!-- ════════════════════════════════════════ PAGE 10 — 7. 10 QUESTIONS ════════════════════════════════════════ -->
+<section class="page">
+  <div class="page-content">
+    <h2>7. Les 10 questions à poser avant de signer</h2>
 
-<!-- ════════════ 9. CODE PROMO ════════════ -->
-<section>
-  <h2>9. Votre code promo exclusif</h2>
+    <p style="font-size: 9.5pt; color: #64748b; margin-bottom: 12pt;">Imprimez cette page. Posez ces questions au prestataire au téléphone ou par email. <strong>Si 2 réponses ou plus ne sont pas claires : passez votre chemin.</strong></p>
 
-  <p>Merci d'avoir lu ce guide jusqu'au bout. C'est rare. La majorité des gens téléchargent un guide et ne l'ouvrent jamais.</p>
+    <div class="question-block"><span class="question-num">1</span><strong>Utilisez-vous de l'eau osmosée pure ou de l'eau du robinet avec détergent ?</strong><p>✓ Bonne réponse : eau osmosée pure, sans détergent.</p></div>
 
-  <p>En guise de remerciement (et parce qu'on préfère récompenser les gens qui font l'effort de s'informer), voici votre code promo :</p>
+    <div class="question-block"><span class="question-num">2</span><strong>Vos techniciens montent-ils sur les panneaux ?</strong><p>✓ Bonne réponse : Non. Lance télescopique au sol ou drone/robot.</p></div>
 
-  <div class="promo-box">
-    <p style="margin: 0; font-size: 11pt; letter-spacing: 3px; text-transform: uppercase; color: #fb923c; font-weight: 700;">Code promo · valable 30 jours</p>
-    <div class="promo-code">ELLIPSYS15</div>
-    <p style="margin: 6pt 0 0; color: #cbd5e1; font-size: 11pt;">-15% sur votre devis Ellipsys</p>
+    <div class="question-block"><span class="question-num">3</span><strong>Êtes-vous assurés RC Pro et certifiés ?</strong><p>✓ Bonne réponse : RC Pro à jour, idéalement DGAC/EASA pour drone, Qualibat ou équivalent.</p></div>
+
+    <div class="question-block"><span class="question-num">4</span><strong>Fournissez-vous un rapport photo avant/après ?</strong><p>✓ Bonne réponse : Oui, sous 48h, photos horodatées.</p></div>
+
+    <div class="question-block"><span class="question-num">5</span><strong>Avez-vous un avis sur l'état des cellules (hot spots, défaillances) ?</strong><p>✓ Bonne réponse : Oui, visuellement ou en option avec thermographie.</p></div>
+
+    <div class="question-block"><span class="question-num">6</span><strong>Le devis est-il tout compris (déplacement inclus) ?</strong><p>✓ Bonne réponse : Devis tout compris signé avant intervention, sans frais cachés.</p></div>
+
+    <div class="question-block"><span class="question-num">7</span><strong>Quelle méthode pour fientes anciennes et sable saharien incrusté ?</strong><p>✓ Bonne réponse : Brosse douce nylon + pré-trempage, jamais karcher.</p></div>
+
+    <div class="question-block"><span class="question-num">8</span><strong>Combien d'installations PV avez-vous nettoyé cette année dans ma région ?</strong><p>✓ Méfiance des "centaines" vagues. Un pro sérieux donne un chiffre concret.</p></div>
+
+    <div class="question-block"><span class="question-num">9</span><strong>Le nettoyage annule-t-il ma garantie installateur ?</strong><p>✓ Bonne réponse : Notre méthode est compatible. Certificat fourni si demandé.</p></div>
+
+    <div class="question-block"><span class="question-num">10</span><strong>Quel délai d'intervention proposez-vous ?</strong><p>✓ Sous 2-4 semaines. Plus rapide = bonne disponibilité. Plus long = équipe saturée.</p></div>
   </div>
+</section>
 
-  <h3>Comment l'utiliser</h3>
+<!-- ════════════════════════════════════════ PAGE 11 — 8. MÉTHODE ELLIPSYS ════════════════════════════════════════ -->
+<section class="page">
+  <div class="page-content">
+    <h2>8. Notre méthode chez Ellipsys</h2>
 
-  <ol>
-    <li>Allez sur <strong>ellipsys-solutions.com/devis</strong></li>
-    <li>Remplissez le formulaire (3 minutes max)</li>
-    <li>Dans le champ "Informations complémentaires", mentionnez <strong>code ELLIPSYS15</strong></li>
-    <li>On vous renvoie un devis personnalisé sous 24h, remise déjà appliquée</li>
-  </ol>
+    <p style="color: #64748b; font-size: 9.5pt; font-style: italic;">Section honnête : voici comment nous travaillons. Vous êtes libre d'utiliser ce guide même si vous ne nous choisissez pas. L'objectif est que vos panneaux fonctionnent au mieux, peu importe le prestataire.</p>
 
-  <p style="margin-top: 18pt;">Et si vous avez la moindre question, vous pouvez répondre directement à l'email que vous avez reçu — c'est Monsef (le fondateur) qui répond, pas un service client.</p>
+    <h3>1. Diagnostic préliminaire (gratuit)</h3>
+    <p>Vous nous envoyez 3-5 photos de votre installation (ou nous nous déplaçons gratuitement à Montpellier et alentours). On vous donne un avis sur l'état apparent et la méthode adaptée. Pas de pression commerciale.</p>
 
-  <h3 style="margin-top: 28pt;">📞 Vous préférez parler de vive voix ?</h3>
+    <h3>2. Intervention (1 à 3h selon la taille)</h3>
+    <ul>
+      <li><strong>Drone</strong> équipé d'un système d'aspersion d'eau osmosée pure (production sur place via osmoseur portatif)</li>
+      <li><strong>Robot terrestre</strong> pour les grandes surfaces (centrales &gt;50 panneaux, ombrières)</li>
+      <li>Lance télescopique pour installations basses si plus efficace</li>
+      <li>Toujours <strong>sans détergent, sans marcher sur les panneaux, sans karcher</strong></li>
+    </ul>
 
-  <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8pt; padding: 16pt; margin-top: 10pt;">
-    <p style="margin: 0;"><strong>04 67 20 97 09</strong> — du lundi au vendredi, 9h-18h</p>
-    <p style="margin: 6pt 0 0; font-size: 10pt; color: #64748b;">Pas de standard. Pas de robot. Pas de musique d'attente.<br>Vous tombez directement sur Monsef ou Ayoub.</p>
+    <div class="image-block h35">
+      <img src="../images/rony.png" alt="Robot Ellipsys en intervention" />
+    </div>
+    <p class="image-caption">Notre robot d'intervention sur centrale photovoltaïque.</p>
+
+    <h3>3. Rapport d'intervention sous 48h</h3>
+    <ul>
+      <li>Photos avant/après horodatées et géolocalisées</li>
+      <li>État apparent des cellules</li>
+      <li>Recommandations pour les 12 prochains mois selon votre exposition</li>
+      <li>En option : <strong>rapport thermographique</strong> par drone</li>
+    </ul>
+
+    <div class="callout-success callout">
+      <strong>Notre engagement.</strong> Devis gratuit sous 24h. Réponse personnelle (pas de robot, pas de standard). Si on ne peut pas vous aider (zone trop éloignée, installation trop petite), on vous oriente vers un confrère qualifié sans frais.
+    </div>
   </div>
+</section>
 
-  <div class="footer-page">
-    Ellipsys Solutions · 159 rue de Thor, 34000 Montpellier · 42 place de la Lucque, 30470 Aimargues<br>
-    ellipsys-solutions.com · contact@ellipsys-group.com · Certifiés DGAC / EASA / RC Pro<br>
-    Guide rédigé en mai 2026 · Données valables France métropolitaine
+<!-- ════════════════════════════════════════ PAGE 12 — 9. CODE PROMO (PAGE DÉDIÉE) ════════════════════════════════════════ -->
+<section class="page">
+  <div class="promo-page">
+    <div style="text-align: center;">
+      <p style="font-size: 11pt; letter-spacing: 3px; text-transform: uppercase; color: #ea580c; font-weight: 700; margin: 0;">Votre récompense</p>
+      <h2 style="font-size: 26pt; margin: 12pt 0 8pt; color: #0e2f52;">Merci d'avoir lu jusqu'au bout 🙏</h2>
+      <p style="font-size: 12pt; color: #475569; max-width: 130mm; margin: 0 auto 4pt; line-height: 1.5;">
+        C'est rare. La majorité des gens téléchargent un guide et ne l'ouvrent jamais.
+      </p>
+      <p style="font-size: 11pt; color: #64748b; max-width: 130mm; margin: 0 auto;">
+        En guise de remerciement, voici votre code promo exclusif.
+      </p>
+    </div>
+
+    <div class="promo-box">
+      <p style="margin: 0; font-size: 11pt; letter-spacing: 3px; text-transform: uppercase; color: #fb923c; font-weight: 700;">Code promo · valable 30 jours</p>
+      <div class="promo-code">ELLIPSYS15</div>
+      <p style="margin: 6pt 0 0; color: #cbd5e1; font-size: 13pt;"><strong style="color: #fb923c;">-15%</strong> sur votre devis Ellipsys</p>
+    </div>
+
+    <div style="width: 100%; max-width: 140mm;">
+      <h3 style="text-align: left; margin-top: 12pt;">Comment l'utiliser</h3>
+      <ol style="text-align: left; font-size: 11pt; line-height: 1.7;">
+        <li>Allez sur <span class="url-base">ellipsys-solutions.com/devis</span></li>
+        <li>Remplissez le formulaire (3 minutes max)</li>
+        <li>Dans <strong>"Informations complémentaires"</strong>, mentionnez le code <strong>ELLIPSYS15</strong></li>
+        <li>On vous renvoie un devis personnalisé sous 24h, remise déjà appliquée</li>
+      </ol>
+
+      <div class="callout" style="margin-top: 16pt;">
+        <p style="margin: 0; font-size: 10.5pt;"><strong>📞 Vous préférez parler de vive voix ?</strong></p>
+        <p style="margin: 6pt 0 0; font-size: 13pt; color: #0e2f52;"><strong>04 67 20 97 09</strong></p>
+        <p style="margin: 4pt 0 0; font-size: 9.5pt; color: #64748b;">Du lundi au vendredi, 9h-18h. Pas de standard. Pas de robot.<br>Vous tombez directement sur Monsef ou Ayoub.</p>
+      </div>
+    </div>
+
+    <div class="footer-meta" style="width: 100%; max-width: 140mm;">
+      Ellipsys Solutions · 159 rue de Thor, 34000 Montpellier · 42 place de la Lucque, 30470 Aimargues<br>
+      ellipsys-solutions.com · contact@ellipsys-group.com · Certifiés DGAC / EASA / RC Pro<br>
+      Édition 2026 — Données valables France métropolitaine
+    </div>
   </div>
 </section>
 
