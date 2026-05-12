@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Building2, User, Send, Camera, MapPin, Phone, Mail, CheckCircle2 } from "lucide-react";
+import { track, identify, Events } from "@/lib/analytics";
 
 type ServiceKey = "facade" | "solaire" | "toiture" | "thermographie" | "nuisibles" | "imagerie" | "autre";
 
@@ -56,6 +57,22 @@ export default function DevisPage() {
   // Detect lang from cookie client-side
   const isEn = typeof document !== "undefined" && document.cookie.includes("lang=en");
   const SERVICES = isEn ? SERVICES_EN : SERVICES_FR;
+
+  // Analytics — page view (1 seule fois au mount)
+  useEffect(() => { track(Events.DEVIS_PAGE_VIEWED, { lang: isEn ? "en" : "fr" }); }, [isEn]);
+
+  // Analytics — changement type client
+  const handleClientType = (t: "pro" | "particulier") => {
+    setClientType(t);
+    track(Events.DEVIS_CLIENT_TYPE_SELECTED, { client_type: t });
+  };
+
+  // Analytics — sélection service
+  const handleService = (s: ServiceKey) => {
+    setService(s);
+    const label = SERVICES.find((x) => x.key === s)?.label ?? s;
+    track(Events.DEVIS_SERVICE_SELECTED, { service: s, service_label: label, client_type: clientType });
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -139,13 +156,40 @@ export default function DevisPage() {
       const data = await res.json().catch(() => ({}));
       if (!res.ok) {
         setErrorMsg(data?.error || "Erreur lors de l'envoi. Veuillez réessayer ou nous contacter au 04 67 20 97 09.");
+        track(Events.DEVIS_SUBMIT_FAILED, {
+          status: res.status,
+          error: data?.error,
+          service,
+          client_type: clientType,
+        });
         setLoading(false);
         return;
       }
+      // Identifie le lead et capture l'event succès
+      identify(base.email, {
+        email: base.email,
+        name: base.name,
+        phone: base.phone,
+        city: base.city,
+        client_type: clientType,
+        siret: base.siret || undefined,
+      });
+      track(Events.DEVIS_SUBMITTED, {
+        service,
+        service_label: svcLabel,
+        client_type: clientType,
+        city: base.city,
+        has_phone: !!base.phone,
+        has_siret: !!base.siret,
+        has_message: !!base.message,
+        hubspot_contact_id: data?.hubspotContactId,
+        hubspot_deal_id: data?.hubspotDealId,
+      });
       setSubmitted(true);
     } catch (err) {
       console.error("Erreur envoi devis", err);
       setErrorMsg("Connexion impossible. Veuillez réessayer ou nous contacter au 04 67 20 97 09.");
+      track(Events.DEVIS_SUBMIT_FAILED, { error: String(err), network: true });
     } finally {
       setLoading(false);
     }
@@ -180,7 +224,7 @@ export default function DevisPage() {
               {(["pro", "particulier"] as const).map((t) => (
                 <button
                   key={t}
-                  onClick={() => setClientType(t)}
+                  onClick={() => handleClientType(t)}
                   className={`flex-1 flex items-center justify-center gap-2 py-3 rounded-xl font-bold transition-all ${clientType === t ? "bg-white text-slate-900 shadow-sm" : "text-slate-500 hover:text-slate-700"}`}
                 >
                   {t === "pro"
@@ -250,7 +294,7 @@ export default function DevisPage() {
                       <button
                         key={s.key}
                         type="button"
-                        onClick={() => setService(s.key)}
+                        onClick={() => handleService(s.key)}
                         className={`p-4 rounded-2xl border-2 text-left transition-all ${service === s.key ? "border-brand-orange-500 bg-brand-orange-50" : "border-slate-200 bg-white hover:border-slate-300"}`}
                       >
                         <span className="text-2xl block mb-2">{s.emoji}</span>

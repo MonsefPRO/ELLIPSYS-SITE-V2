@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
 import { Resend } from "resend";
 import { upsertContact, createDeal } from "@/lib/hubspot";
+import { captureServer, identifyServer } from "@/lib/posthog-server";
 
 export const runtime = "nodejs";
 
@@ -208,6 +209,32 @@ export async function POST(req: NextRequest) {
         console.warn("[devis] Resend email failed:", err);
       }
     }
+
+    // ── 4) PostHog server-side capture (fiable, indep du JS browser) ───
+    await identifyServer(email, {
+      email,
+      name,
+      phone: phone || undefined,
+      city,
+      client_type: clientType,
+      siret: siret || undefined,
+      lifecycle_stage: "lead",
+    });
+    await captureServer({
+      distinctId: email,
+      event: "devis_submitted_server",
+      properties: {
+        service,
+        service_label: serviceLabel,
+        client_type: clientType,
+        city,
+        has_phone: !!phone,
+        has_siret: !!siret,
+        hubspot_contact_id: hubspotContactId ?? undefined,
+        hubspot_deal_id: hubspotDealId ?? undefined,
+        page_uri: pageUri,
+      },
+    });
 
     return NextResponse.json({
       ok: true,

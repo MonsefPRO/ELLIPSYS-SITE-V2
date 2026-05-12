@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
 import { upsertContact } from "@/lib/hubspot";
+import { captureServer, identifyServer } from "@/lib/posthog-server";
 
 export const runtime = "nodejs";
 
@@ -88,6 +89,19 @@ export async function POST(req: NextRequest) {
         console.warn("[newsletter] HubSpot push failed:", err);
       }
     }
+
+    // ── 3) PostHog server-side capture ─────────────────────────────────
+    await identifyServer(email, {
+      email,
+      lang,
+      newsletter_subscribed: true,
+      newsletter_subscribed_at: nowIso,
+    });
+    await captureServer({
+      distinctId: email,
+      event: "newsletter_signup_server",
+      properties: { lang, source: "site_newsletter_form" },
+    });
 
     return NextResponse.json({ ok: true });
   } catch (err) {
