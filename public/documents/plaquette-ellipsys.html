@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Plaquette commerciale — Ellipsys Solutions</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; margin: 0; padding: 0; }
+  body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #0f172a; line-height: 1.55; font-size: 10.5pt; }
+
+  /* PAGE STRUCTURE — full-bleed A4 */
+  .page { width: 210mm; height: 297mm; page-break-after: always; break-after: page; position: relative; overflow: hidden; }
+  .page:last-child { page-break-after: auto; }
+  .page-inner { padding: 18mm 16mm; height: 100%; display: flex; flex-direction: column; }
+  .page-corner { position: absolute; top: 12mm; right: 16mm; font-size: 8.5pt; letter-spacing: 3px; color: #94a3b8; text-transform: uppercase; font-weight: 700; }
+  .page-num { position: absolute; bottom: 12mm; right: 16mm; font-size: 9pt; color: #94a3b8; font-weight: 700; }
+
+  /* TYPO */
+  h1 { font-size: 32pt; font-weight: 900; line-height: 1.05; color: #0e2f52; letter-spacing: -1px; }
+  h2 { font-size: 22pt; font-weight: 900; line-height: 1.1; color: #0e2f52; margin-bottom: 10pt; letter-spacing: -0.5px; }
+  h3 { font-size: 12pt; font-weight: 800; color: #0e2f52; margin: 14pt 0 5pt; }
+  p { font-size: 10.5pt; line-height: 1.55; color: #334155; }
+  .lead { font-size: 13pt; line-height: 1.55; color: #1e293b; }
+  strong { color: #ea580c; font-weight: 700; }
+  em { font-style: normal; color: #ea580c; font-weight: 700; }
+
+  /* LABELS */
+  .label { display: inline-block; font-size: 9pt; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: #ea580c; padding: 4pt 10pt; background: #fff7ed; border: 1px solid #fed7aa; border-radius: 99pt; }
+  .label-on-dark { background: rgba(251,146,60,0.15); color: #fb923c; border-color: rgba(251,146,60,0.35); }
+
+  /* COVER — pleine page */
+  .cover { background: linear-gradient(135deg, #0e2f52 0%, #1e3a5f 60%, #0e2f52 100%); color: white; height: 297mm; position: relative; overflow: hidden; }
+  .cover::before { content: ""; position: absolute; top: -100mm; right: -80mm; width: 200mm; height: 200mm; background: radial-gradient(circle, rgba(234,88,12,0.15) 0%, transparent 70%); }
+  .cover-inner { padding: 22mm 18mm; height: 100%; display: flex; flex-direction: column; justify-content: space-between; position: relative; z-index: 1; }
+  .cover-brand { font-size: 11pt; letter-spacing: 6px; text-transform: uppercase; color: #cbd5e1; font-weight: 800; }
+  .cover h1 { color: white; font-size: 44pt; letter-spacing: -1.5px; line-height: 1.02; margin-bottom: 14pt; }
+  .cover h1 .accent { color: #fb923c; }
+  .cover-lead { font-size: 14pt; color: #cbd5e1; line-height: 1.5; max-width: 130mm; font-weight: 300; }
+  .cover-meta { font-size: 10pt; color: #94a3b8; padding-top: 14pt; border-top: 1px solid rgba(255,255,255,0.15); }
+  .cover-meta strong { color: #fb923c; }
+  .cover-image { width: 100%; height: 90mm; object-fit: cover; border-radius: 8pt; margin: 12pt 0 18pt; opacity: 0.92; box-shadow: 0 4px 20px rgba(0,0,0,0.3); }
+
+  /* SECTION HEAD */
+  .section-head { margin-bottom: 18pt; }
+  .section-num { display: inline-block; font-size: 11pt; color: #ea580c; font-weight: 800; letter-spacing: 4px; margin-bottom: 6pt; }
+
+  /* STATS */
+  .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10pt; margin: 14pt 0; }
+  .stat-card { background: linear-gradient(135deg, #0e2f52 0%, #1e3a5f 100%); color: white; padding: 18pt 16pt; border-radius: 10pt; }
+  .stat-num { font-size: 36pt; font-weight: 900; color: #fb923c; line-height: 1; letter-spacing: -1px; }
+  .stat-text { font-size: 11pt; font-weight: 600; color: white; margin-top: 6pt; line-height: 1.35; }
+  .stat-sub { font-size: 9pt; color: #94a3b8; margin-top: 2pt; }
+
+  .quick-stat { display: flex; align-items: center; gap: 10pt; padding: 10pt 0; border-bottom: 1px solid #e2e8f0; }
+  .quick-stat:last-child { border-bottom: none; }
+  .quick-stat-icon { font-size: 18pt; width: 26pt; text-align: center; }
+  .quick-stat-num { font-size: 14pt; font-weight: 800; color: #0e2f52; min-width: 60pt; }
+  .quick-stat-label { font-size: 10pt; color: #475569; flex: 1; }
+
+  /* SERVICE GRID */
+  .services-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10pt; margin-top: 14pt; }
+  .service-card { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10pt; padding: 14pt; position: relative; overflow: hidden; }
+  .service-card::before { content: ""; position: absolute; left: 0; top: 0; width: 4pt; height: 100%; background: #ea580c; }
+  .service-icon { font-size: 20pt; line-height: 1; margin-bottom: 8pt; }
+  .service-title { font-size: 11.5pt; font-weight: 800; color: #0e2f52; margin-bottom: 4pt; }
+  .service-desc { font-size: 9.5pt; color: #475569; line-height: 1.45; }
+
+  /* METHOD */
+  .method-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8pt; margin: 14pt 0; }
+  .method-card { background: white; border: 1px solid #e2e8f0; border-radius: 10pt; padding: 14pt; text-align: center; }
+  .method-icon { font-size: 28pt; margin-bottom: 8pt; }
+  .method-title { font-size: 11pt; font-weight: 800; color: #0e2f52; margin-bottom: 6pt; }
+  .method-desc { font-size: 9pt; color: #64748b; line-height: 1.45; }
+
+  /* IMAGES */
+  .image-block { width: 100%; border-radius: 10pt; overflow: hidden; margin: 8pt 0; box-shadow: 0 2px 8px rgba(15,23,42,0.08); }
+  .image-block img { width: 100%; height: auto; display: block; }
+  .image-block.full { height: 110mm; }
+  .image-block.full img { height: 100%; object-fit: cover; }
+  .image-block.med { height: 60mm; }
+  .image-block.med img { height: 100%; object-fit: cover; }
+  .image-block.short { height: 40mm; }
+  .image-block.short img { height: 100%; object-fit: cover; }
+
+  /* REALISATIONS */
+  .realisation-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10pt; margin-top: 12pt; }
+  .realisation-card { border-radius: 10pt; overflow: hidden; border: 1px solid #e2e8f0; }
+  .realisation-card img { width: 100%; height: 75mm; object-fit: cover; display: block; }
+  .realisation-meta { padding: 10pt 12pt; background: #f8fafc; }
+  .realisation-title { font-size: 10.5pt; font-weight: 800; color: #0e2f52; margin-bottom: 2pt; }
+  .realisation-desc { font-size: 9pt; color: #64748b; line-height: 1.4; }
+
+  /* CERTIF BADGES */
+  .certif-row { display: flex; gap: 8pt; margin: 12pt 0; flex-wrap: wrap; }
+  .certif-badge { padding: 8pt 14pt; background: white; border: 1.5pt solid #0e2f52; border-radius: 99pt; font-size: 10pt; font-weight: 800; color: #0e2f52; }
+
+  /* SECTOR LIST */
+  .sector-row { display: flex; gap: 6pt; flex-wrap: wrap; margin: 8pt 0; }
+  .sector-chip { padding: 6pt 12pt; background: #0e2f52; color: white; border-radius: 99pt; font-size: 9.5pt; font-weight: 600; }
+
+  /* CONTACT */
+  .contact-card { background: linear-gradient(135deg, #0e2f52 0%, #1e3a5f 100%); color: white; padding: 28pt 28pt 24pt; border-radius: 14pt; margin-top: 14pt; }
+  .contact-card h2 { color: white; }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24pt; margin-top: 16pt; }
+  .contact-block .contact-label { font-size: 9pt; letter-spacing: 2px; text-transform: uppercase; color: #fb923c; font-weight: 700; margin-bottom: 6pt; }
+  .contact-block .contact-value { font-size: 13pt; color: white; font-weight: 700; line-height: 1.45; }
+  .contact-block .contact-sub { font-size: 9.5pt; color: #cbd5e1; line-height: 1.5; margin-top: 4pt; }
+  .founders { display: grid; grid-template-columns: 1fr 1fr; gap: 14pt; margin-top: 18pt; }
+  .founder-block { padding: 12pt; background: white; border: 1px solid #e2e8f0; border-radius: 10pt; }
+  .founder-name { font-size: 12pt; font-weight: 800; color: #0e2f52; }
+  .founder-role { font-size: 9pt; color: #ea580c; letter-spacing: 1px; text-transform: uppercase; font-weight: 700; margin: 2pt 0; }
+  .founder-tel { font-size: 11pt; color: #334155; margin-top: 4pt; }
+
+  .footer-thin { font-size: 8.5pt; color: #94a3b8; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 10pt; margin-top: 20pt; text-align: center; }
+
+  .callout { background: #fff7ed; border-left: 4px solid #ea580c; padding: 12pt 14pt; margin: 12pt 0; border-radius: 0 8pt 8pt 0; font-size: 10pt; }
+  .callout strong { display: block; margin-bottom: 4pt; }
+</style>
+</head>
+<body>
+
+<!-- ════════════════════ PAGE 1 — COVER ════════════════════ -->
+<section class="page cover">
+  <div class="cover-inner">
+    <div>
+      <div class="cover-brand">Ellipsys Solutions</div>
+      <p style="color: #94a3b8; font-size: 9.5pt; margin-top: 6pt;">Plaquette de présentation · 2026</p>
+    </div>
+
+    <div>
+      <span class="label label-on-dark">Drone &amp; Robotique</span>
+      <h1 style="margin-top: 14pt;">
+        L'ingénierie robotique<br>
+        au service de la <span class="accent">maintenance extérieure</span>
+      </h1>
+      <img src="../images/avant-apres-solaire.png" alt="Avant/après nettoyage panneaux solaires" class="cover-image" />
+      <p class="cover-lead">
+        Nettoyage de panneaux solaires, démoussage de toiture, façades, thermographie, destruction de nuisibles, imagerie aérienne — par drone et robot, partout en France.
+      </p>
+    </div>
+
+    <div class="cover-meta">
+      <p><strong>ellipsys-solutions.com</strong> · contact@ellipsys-group.com · 04 67 20 97 09</p>
+      <p style="margin-top: 4pt;">Certifiés DGAC · EASA · RC Pro · Sièges à Montpellier &amp; Aimargues</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════ PAGE 2 — L'ESSENTIEL ════════════════════ -->
+<section class="page">
+  <div class="page-corner">Présentation</div>
+  <div class="page-inner">
+    <div class="section-head">
+      <span class="section-num">— 01</span>
+      <h2>L'essentiel<br>en quelques chiffres</h2>
+    </div>
+
+    <p class="lead" style="margin-bottom: 18pt;">
+      Fondée en Occitanie, Ellipsys Solutions est une jeune société d'ingénierie robotique spécialisée dans la maintenance d'infrastructures par drone et robot, sans échafaudage. Nous intervenons aussi bien pour des particuliers que pour des professionnels, exploitants d'énergie ou bailleurs.
+    </p>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-num">4,9<span style="font-size: 16pt; color: #cbd5e1;">/5</span></div>
+        <div class="stat-text">Note moyenne clients</div>
+        <div class="stat-sub">Basée sur 27 avis Google vérifiés</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">+500</div>
+        <div class="stat-text">Interventions réalisées</div>
+        <div class="stat-sub">Particuliers, syndics, industriels, énergie</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">6</div>
+        <div class="stat-text">Métiers maîtrisés</div>
+        <div class="stat-sub">De la maintenance PV à l'imagerie aérienne</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">100%</div>
+        <div class="stat-text">Sans échafaudage</div>
+        <div class="stat-sub">Drone, robot, lance télescopique osmosée</div>
+      </div>
+    </div>
+
+    <h3 style="margin-top: 22pt;">Notre conviction</h3>
+    <p>
+      Pendant que d'autres montent à la nacelle, nous laissons les machines faire ce qu'elles font mieux que les humains : accéder à l'inaccessible, sans risque, sans rayure, sans perte de temps. Notre rôle : préparer, piloter, garantir le résultat.
+    </p>
+
+    <div class="certif-row">
+      <span class="certif-badge">🛡️ DGAC</span>
+      <span class="certif-badge">🇪🇺 EASA</span>
+      <span class="certif-badge">📋 RC Pro</span>
+      <span class="certif-badge">🇫🇷 Made in France</span>
+    </div>
+  </div>
+  <div class="page-num">02</div>
+</section>
+
+<!-- ════════════════════ PAGE 3 — NOS 6 SERVICES ════════════════════ -->
+<section class="page">
+  <div class="page-corner">Services</div>
+  <div class="page-inner">
+    <div class="section-head">
+      <span class="section-num">— 02</span>
+      <h2>Nos 6 métiers,<br>un seul interlocuteur</h2>
+    </div>
+
+    <p class="lead" style="margin-bottom: 14pt;">
+      Une équipe intégrée, des certifications mutualisées, une méthode commune. Vos clients ont un seul contact pour 6 prestations techniques.
+    </p>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">☀️</div>
+        <div class="service-title">Nettoyage panneaux solaires</div>
+        <div class="service-desc">Drone à eau osmosée pure. Résidentiel, industriel, centrales au sol, ombrières. Restauration de production jusqu'à 30%.</div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🏠</div>
+        <div class="service-title">Démoussage &amp; hydrofuge toiture</div>
+        <div class="service-desc">Tuiles, ardoises, zinc, bac acier. Traitement curatif + préventif longue durée. Zones ABF possibles.</div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🏢</div>
+        <div class="service-title">Nettoyage façades &amp; bardages</div>
+        <div class="service-desc">Immeubles résidentiels, tertiaires, industriels. Drone aspirant + lance osmosée. Sans échafaudage, sans interruption d'activité.</div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🌡️</div>
+        <div class="service-title">Thermographie infrarouge</div>
+        <div class="service-desc">Audit énergétique (Décret Tertiaire), inspection PV (hot spots), détection ponts thermiques. Caméra IR drone.</div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🐝</div>
+        <div class="service-title">Destruction de nuisibles</div>
+        <div class="service-desc">Frelons asiatiques, guêpes, abeilles sauvages. Drone autonome pour nids inaccessibles. Intervention rapide, certifiée.</div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🎬</div>
+        <div class="service-title">Imagerie aérienne</div>
+        <div class="service-desc">Captation audiovisuelle pour l'immobilier prestige, événementiel, communication corporate. Photo 8K + vidéo cinématique.</div>
+      </div>
+    </div>
+  </div>
+  <div class="page-num">03</div>
+</section>
+
+<!-- ════════════════════ PAGE 4 — NOTRE MÉTHODE ════════════════════ -->
+<section class="page">
+  <div class="page-corner">Méthode</div>
+  <div class="page-inner">
+    <div class="section-head">
+      <span class="section-num">— 03</span>
+      <h2>Une méthode<br>trois technologies</h2>
+    </div>
+
+    <p class="lead">
+      Nous combinons trois leviers technologiques pour intervenir là où les méthodes traditionnelles atteignent leurs limites — coût, accessibilité, sécurité.
+    </p>
+
+    <div class="method-grid">
+      <div class="method-card">
+        <div class="method-icon">🚁</div>
+        <div class="method-title">Drone professionnel</div>
+        <div class="method-desc">Flotte DJI Matrice + Air 3S. Aspersion eau osmosée, caméra thermique, captation 8K. Pilotes certifiés DGAC.</div>
+      </div>
+      <div class="method-card">
+        <div class="method-icon">🤖</div>
+        <div class="method-title">Robot terrestre</div>
+        <div class="method-desc">Robot Rony pour grandes surfaces PV au sol et ombrières. Cadence constante, traçabilité GPS, zéro intervention humaine en hauteur.</div>
+      </div>
+      <div class="method-card">
+        <div class="method-icon">💧</div>
+        <div class="method-title">Eau osmosée pure</div>
+        <div class="method-desc">99,9% de minéraux retirés. Aucune trace, aucun détergent. Compatible PV, façades, vitrages techniques, monuments historiques.</div>
+      </div>
+    </div>
+
+    <div class="image-block med">
+      <img src="../images/chronos drone.jpg" alt="Drone Ellipsys en intervention" />
+    </div>
+
+    <h3>Le pré-chiffrage rigoureux qui change tout</h3>
+    <p>
+      Chaque mission démarre par une étude de faisabilité gratuite : photos client, contraintes d'accès, environnement, urgence. Notre bureau d'études établit un devis ferme sous 24/48h avec planification réaliste — pas de surprise au moment de l'intervention.
+    </p>
+  </div>
+  <div class="page-num">04</div>
+</section>
+
+<!-- ════════════════════ PAGE 5 — RÉALISATIONS ════════════════════ -->
+<section class="page">
+  <div class="page-corner">Réalisations</div>
+  <div class="page-inner">
+    <div class="section-head">
+      <span class="section-num">— 04</span>
+      <h2>Quelques réalisations<br>récentes</h2>
+    </div>
+
+    <p class="lead" style="margin-bottom: 14pt;">
+      Nos chantiers représentatifs de la diversité de nos missions — du parc photovoltaïque à la résidence de prestige, en passant par les bâtiments tertiaires.
+    </p>
+
+    <div class="realisation-grid">
+      <div class="realisation-card">
+        <img src="../images/apres solaire.jpg" alt="Centrale photovoltaïque nettoyée" />
+        <div class="realisation-meta">
+          <div class="realisation-title">Centrale PV — Occitanie</div>
+          <div class="realisation-desc">+28% de production restaurée après un nettoyage par drone osmosé et inspection thermique combinée.</div>
+        </div>
+      </div>
+
+      <div class="realisation-card">
+        <img src="../images/demoussage-toiture-eimargues.jpg" alt="Démoussage toiture" />
+        <div class="realisation-meta">
+          <div class="realisation-title">Démoussage toiture — Aimargues</div>
+          <div class="realisation-desc">Traitement curatif + hydrofuge longue durée sur villa privée. Garantie 10 ans sur la protection.</div>
+        </div>
+      </div>
+
+      <div class="realisation-card">
+        <img src="../images/nettoyage-vitrages-scutum-montpellier.png" alt="Façade tertiaire Montpellier" />
+        <div class="realisation-meta">
+          <div class="realisation-title">Façade tertiaire — Montpellier</div>
+          <div class="realisation-desc">Nettoyage par drone aspirant d'un bâtiment R+5 sans interruption d'activité ni nacelle.</div>
+        </div>
+      </div>
+
+      <div class="realisation-card">
+        <img src="../images/thermographie-solaire.png" alt="Inspection thermographique" />
+        <div class="realisation-meta">
+          <div class="realisation-title">Audit thermographique PV</div>
+          <div class="realisation-desc">Détection de 12 hot spots sur un parc de 800 panneaux. Rapport remis en 48h pour SAV onduleur.</div>
+        </div>
+      </div>
+    </div>
+
+    <h3>Secteurs servis</h3>
+    <div class="sector-row">
+      <span class="sector-chip">Particuliers CSP+</span>
+      <span class="sector-chip">Syndics &amp; copros</span>
+      <span class="sector-chip">Exploitants PV</span>
+      <span class="sector-chip">Industriels</span>
+      <span class="sector-chip">Collectivités</span>
+      <span class="sector-chip">Bailleurs sociaux</span>
+      <span class="sector-chip">Immobilier prestige</span>
+      <span class="sector-chip">Patrimoine / ABF</span>
+    </div>
+  </div>
+  <div class="page-num">05</div>
+</section>
+
+<!-- ════════════════════ PAGE 6 — CONTACT ════════════════════ -->
+<section class="page">
+  <div class="page-corner">Contact</div>
+  <div class="page-inner">
+    <div class="section-head">
+      <span class="section-num">— 05</span>
+      <h2>Parlons de<br>votre projet</h2>
+    </div>
+
+    <p class="lead">
+      Pour toute demande de devis, partenariat ou apport d'affaires : nous répondons personnellement sous 24h. Pas de standard. Pas de robot. Vous tombez directement sur l'un des deux fondateurs.
+    </p>
+
+    <div class="founders">
+      <div class="founder-block">
+        <div class="founder-name">Monsef El Aidi</div>
+        <div class="founder-role">Co-fondateur · Digital &amp; développement</div>
+        <p class="founder-tel" style="margin-top: 6pt;">📧 monsef.elaidi@ellipsys-group.com</p>
+        <p class="founder-tel">📞 04 67 20 97 09</p>
+      </div>
+      <div class="founder-block">
+        <div class="founder-name">Ayoub El Barnoussi</div>
+        <div class="founder-role">Co-fondateur · Opérations terrain</div>
+        <p class="founder-tel" style="margin-top: 6pt;">📧 ayoub.elbarnoussi@ellipsys-group.com</p>
+        <p class="founder-tel">📞 04 67 20 97 09</p>
+      </div>
+    </div>
+
+    <div class="contact-card">
+      <h2 style="font-size: 16pt; margin-bottom: 6pt;">Zone d'intervention</h2>
+      <p style="color: #cbd5e1; font-size: 11pt;">France entière. Bases opérationnelles dans le sud, déplacement national pour les missions techniques.</p>
+
+      <div class="contact-grid">
+        <div class="contact-block">
+          <div class="contact-label">Siège · Montpellier</div>
+          <div class="contact-value">159 rue de Thor</div>
+          <div class="contact-sub">34000 Montpellier · Occitanie</div>
+        </div>
+        <div class="contact-block">
+          <div class="contact-label">Antenne · Aimargues</div>
+          <div class="contact-value">42 place de la Lucque</div>
+          <div class="contact-sub">30470 Aimargues · Gard</div>
+        </div>
+        <div class="contact-block">
+          <div class="contact-label">Téléphone</div>
+          <div class="contact-value">04 67 20 97 09</div>
+          <div class="contact-sub">Lundi-vendredi · 9h - 18h</div>
+        </div>
+        <div class="contact-block">
+          <div class="contact-label">Web</div>
+          <div class="contact-value">ellipsys-solutions.com</div>
+          <div class="contact-sub">Demande de devis en ligne · Réponse 24h</div>
+        </div>
+      </div>
+
+      <p class="footer-thin">
+        Ellipsys Solutions · SAS au capital social conforme aux statuts · Certifiés DGAC / EASA · RC Pro à jour<br>
+        Document à diffusion contrôlée · Édition 2026 · ellipsys-solutions.com
+      </p>
+    </div>
+  </div>
+  <div class="page-num">06</div>
+</section>
+
+</body>
+</html>
