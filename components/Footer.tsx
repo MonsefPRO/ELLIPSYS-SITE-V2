@@ -90,6 +90,7 @@ export default function Footer() {
             <h4 className="text-white font-bold mb-6 uppercase tracking-wider text-sm">{f.col2}</h4>
             <ul className="space-y-3 text-sm">
               <li><Link href="/prestations/nettoyage-solaire" className="hover:text-brand-orange-400 transition-colors">{f.solar}</Link></li>
+              <li><Link href="/nettoyage-panneaux-photovoltaiques" className="hover:text-brand-orange-400 transition-colors font-semibold">→ Centrales PV (B2B)</Link></li>
               <li><Link href="/prestations/traitement-toiture" className="hover:text-brand-orange-400 transition-colors">{f.roof}</Link></li>
               <li><Link href="/prestations/nettoyage-facade" className="hover:text-brand-orange-400 transition-colors">{f.facade}</Link></li>
               <li><Link href="/prestations/thermographie" className="hover:text-brand-orange-400 transition-colors">{f.thermal}</Link></li>
