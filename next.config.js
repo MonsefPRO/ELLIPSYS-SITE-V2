@@ -33,6 +33,19 @@ const nextConfig = {
     return [{ source: "/(.*)", headers: securityHeaders }];
   },
 
+  // ─── Reverse-proxy PostHog ───────────────────────────────────────────────
+  // Contourne les ad-blockers (uBlock, Brave, AdGuard…) qui bloquent *.i.posthog.com.
+  // Les requêtes partent vers ellipsys-solutions.com/ingest/* et sont rewrités côté Netlify.
+  async rewrites() {
+    return [
+      { source: "/ingest/static/:path*", destination: "https://eu-assets.i.posthog.com/static/:path*" },
+      { source: "/ingest/:path*",        destination: "https://eu.i.posthog.com/:path*" },
+      { source: "/ingest/decide",        destination: "https://eu.i.posthog.com/decide" },
+    ];
+  },
+  // Important pour que les rewrites PostHog fonctionnent sans /
+  skipTrailingSlashRedirect: true,
+
   poweredByHeader: false,
   reactStrictMode: true,
 
