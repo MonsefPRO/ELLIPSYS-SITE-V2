@@ -1,0 +1,75 @@
+Campaign,Campaign type,Budget,Networks,Languages,Bid strategy type,Campaign status
+Ellipsys PV-Toiture France 2026,Search,10,Google search,fr,Maximize clicks,Paused
+
+Campaign,Ad group,Max CPC,Ad group status
+Ellipsys PV-Toiture France 2026,01-Centrales-PV-B2B,1.80,Paused
+Ellipsys PV-Toiture France 2026,02-Maintenance-OM,1.80,Paused
+Ellipsys PV-Toiture France 2026,03-Soiling-Audit,1.50,Paused
+Ellipsys PV-Toiture France 2026,04-Geo-Sud-Occitanie,2.20,Paused
+Ellipsys PV-Toiture France 2026,05-Toiture-Demoussage,1.60,Paused
+Ellipsys PV-Toiture France 2026,06-Particuliers-PV,1.50,Paused
+
+Campaign,Ad group,Keyword,Match type,Status
+Ellipsys PV-Toiture France 2026,01-Centrales-PV-B2B,nettoyage centrale photovoltaique,Exact,Active
+Ellipsys PV-Toiture France 2026,01-Centrales-PV-B2B,nettoyage ferme solaire,Exact,Active
+Ellipsys PV-Toiture France 2026,01-Centrales-PV-B2B,nettoyage panneaux solaires industriels,Phrase,Active
+Ellipsys PV-Toiture France 2026,01-Centrales-PV-B2B,nettoyage ombriere photovoltaique,Phrase,Active
+Ellipsys PV-Toiture France 2026,01-Centrales-PV-B2B,nettoyage parc photovoltaique,Phrase,Active
+Ellipsys PV-Toiture France 2026,01-Centrales-PV-B2B,entretien centrale solaire,Exact,Active
+Ellipsys PV-Toiture France 2026,01-Centrales-PV-B2B,nettoyage solaire grande surface,Phrase,Active
+Ellipsys PV-Toiture France 2026,02-Maintenance-OM,contrat nettoyage panneaux photovoltaiques,Exact,Active
+Ellipsys PV-Toiture France 2026,02-Maintenance-OM,maintenance centrale solaire,Phrase,Active
+Ellipsys PV-Toiture France 2026,02-Maintenance-OM,O&M centrale photovoltaique,Phrase,Active
+Ellipsys PV-Toiture France 2026,02-Maintenance-OM,prestataire maintenance solaire,Phrase,Active
+Ellipsys PV-Toiture France 2026,02-Maintenance-OM,contrat entretien panneaux solaires,Phrase,Active
+Ellipsys PV-Toiture France 2026,02-Maintenance-OM,maintenance preventive photovoltaique,Phrase,Active
+Ellipsys PV-Toiture France 2026,03-Soiling-Audit,perte rendement panneaux solaires,Phrase,Active
+Ellipsys PV-Toiture France 2026,03-Soiling-Audit,perte production photovoltaique salete,Phrase,Active
+Ellipsys PV-Toiture France 2026,03-Soiling-Audit,soiling panneaux solaires,Phrase,Active
+Ellipsys PV-Toiture France 2026,03-Soiling-Audit,baisse production centrale solaire,Phrase,Active
+Ellipsys PV-Toiture France 2026,03-Soiling-Audit,audit production solaire,Phrase,Active
+Ellipsys PV-Toiture France 2026,03-Soiling-Audit,thermographie centrale photovoltaique drone,Phrase,Active
+Ellipsys PV-Toiture France 2026,04-Geo-Sud-Occitanie,nettoyage panneaux solaires Herault,Phrase,Active
+Ellipsys PV-Toiture France 2026,04-Geo-Sud-Occitanie,nettoyage panneaux solaires Gard,Phrase,Active
+Ellipsys PV-Toiture France 2026,04-Geo-Sud-Occitanie,nettoyage panneaux solaires Vaucluse,Phrase,Active
+Ellipsys PV-Toiture France 2026,04-Geo-Sud-Occitanie,nettoyage panneaux solaires Montpellier,Phrase,Active
+Ellipsys PV-Toiture France 2026,04-Geo-Sud-Occitanie,nettoyage panneaux solaires Nimes,Phrase,Active
+Ellipsys PV-Toiture France 2026,04-Geo-Sud-Occitanie,nettoyage drone Montpellier,Phrase,Active
+Ellipsys PV-Toiture France 2026,04-Geo-Sud-Occitanie,nettoyage panneaux solaires Occitanie,Phrase,Active
+Ellipsys PV-Toiture France 2026,05-Toiture-Demoussage,demoussage toiture drone,Phrase,Active
+Ellipsys PV-Toiture France 2026,05-Toiture-Demoussage,nettoyage toiture par drone,Phrase,Active
+Ellipsys PV-Toiture France 2026,05-Toiture-Demoussage,demoussage toiture sans echafaudage,Phrase,Active
+Ellipsys PV-Toiture France 2026,05-Toiture-Demoussage,traitement toiture drone Montpellier,Phrase,Active
+Ellipsys PV-Toiture France 2026,05-Toiture-Demoussage,hydrofuge toiture professionnel,Phrase,Active
+Ellipsys PV-Toiture France 2026,06-Particuliers-PV,nettoyage panneaux solaires maison,Phrase,Active
+Ellipsys PV-Toiture France 2026,06-Particuliers-PV,nettoyer mes panneaux solaires,Phrase,Active
+Ellipsys PV-Toiture France 2026,06-Particuliers-PV,entreprise nettoyage panneaux solaires,Phrase,Active
+Ellipsys PV-Toiture France 2026,06-Particuliers-PV,devis nettoyage panneaux solaires,Phrase,Active
+
+Campaign,Negative keyword,Match type,Level
+Ellipsys PV-Toiture France 2026,gratuit,Phrase,Campaign
+Ellipsys PV-Toiture France 2026,soi-meme,Phrase,Campaign
+Ellipsys PV-Toiture France 2026,comment,Phrase,Campaign
+Ellipsys PV-Toiture France 2026,tuto,Phrase,Campaign
+Ellipsys PV-Toiture France 2026,vinaigre,Phrase,Campaign
+Ellipsys PV-Toiture France 2026,formation,Phrase,Campaign
+Ellipsys PV-Toiture France 2026,emploi,Phrase,Campaign
+Ellipsys PV-Toiture France 2026,recrutement,Phrase,Campaign
+Ellipsys PV-Toiture France 2026,brosse,Phrase,Campaign
+Ellipsys PV-Toiture France 2026,kit,Phrase,Campaign
+Ellipsys PV-Toiture France 2026,raclette,Phrase,Campaign
+Ellipsys PV-Toiture France 2026,achat,Phrase,Campaign
+Ellipsys PV-Toiture France 2026,location,Phrase,Campaign
+Ellipsys PV-Toiture France 2026,autoconsommation,Phrase,Campaign
+Ellipsys PV-Toiture France 2026,devenir,Phrase,Campaign
+Ellipsys PV-Toiture France 2026,metier,Phrase,Campaign
+Ellipsys PV-Toiture France 2026,auto-nettoyant,Phrase,Campaign
+Ellipsys PV-Toiture France 2026,eolien,Phrase,Campaign
+Ellipsys PV-Toiture France 2026,hydraulique,Phrase,Campaign
+Ellipsys PV-Toiture France 2026,thermique solaire,Phrase,Campaign
+Ellipsys PV-Toiture France 2026,chauffe-eau,Phrase,Campaign
+Ellipsys PV-Toiture France 2026,karcher,Phrase,Campaign
+Ellipsys PV-Toiture France 2026,franchise,Phrase,Campaign
+Ellipsys PV-Toiture France 2026,job,Phrase,Campaign
+Ellipsys PV-Toiture France 2026,salaire,Phrase,Campaign
+Ellipsys PV-Toiture France 2026,stage,Phrase,Campaign
