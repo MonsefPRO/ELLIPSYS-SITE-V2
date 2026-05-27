@@ -23,6 +23,9 @@ export default function PostHogProvider() {
     posthog.init(key, {
       api_host: host,
       ui_host: uiHost,
+      // Netlify ne passe pas correctement les bodies binaires (gzip) en rewrite proxy
+      // → désactive la compression côté client pour que les events arrivent en POST JSON brut
+      disable_compression: true,
       defaults: "2026-01-30",
       capture_pageview: true,
       capture_pageleave: true,
