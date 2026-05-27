@@ -3,7 +3,7 @@
 
 const PHX = process.env.PHX_KEY;
 const PROJECT_ID = process.env.PROJECT_ID ?? "419510";
-const BASE = `https://us.posthog.com/api/projects/${PROJECT_ID}`;
+const BASE = `https://eu.posthog.com/api/projects/${PROJECT_ID}`;
 
 if (!PHX) {
   console.error("PHX_KEY env var missing");
@@ -169,9 +169,9 @@ console.log(`  ✓ "${i7.name}" → Funnel Conversion`);
 console.log("\n══════════════════════════════════════════════");
 console.log("✅ Setup PostHog terminé !");
 console.log("══════════════════════════════════════════════");
-console.log(`Dashboards : https://us.posthog.com/project/${PROJECT_ID}/dashboard`);
-console.log(`  • Performance Acquisition : https://us.posthog.com/project/${PROJECT_ID}/dashboard/${dashAcq.id}`);
-console.log(`  • Funnel Conversion       : https://us.posthog.com/project/${PROJECT_ID}/dashboard/${dashFunnel.id}`);
-console.log(`Cohortes  : https://us.posthog.com/project/${PROJECT_ID}/cohorts`);
-console.log(`Insights  : https://us.posthog.com/project/${PROJECT_ID}/insights`);
+console.log(`Dashboards : https://eu.posthog.com/project/${PROJECT_ID}/dashboard`);
+console.log(`  • Performance Acquisition : https://eu.posthog.com/project/${PROJECT_ID}/dashboard/${dashAcq.id}`);
+console.log(`  • Funnel Conversion       : https://eu.posthog.com/project/${PROJECT_ID}/dashboard/${dashFunnel.id}`);
+console.log(`Cohortes  : https://eu.posthog.com/project/${PROJECT_ID}/cohorts`);
+console.log(`Insights  : https://eu.posthog.com/project/${PROJECT_ID}/insights`);
 console.log(`\n${cohorts.length} cohortes / 7 insights / 2 dashboards`);

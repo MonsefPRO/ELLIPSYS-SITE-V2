@@ -5,7 +5,7 @@ const PHX = process.env.PHX_KEY;
 const PROJECT_ID = process.env.PROJECT_ID ?? "419510";
 const DASH_ACQ = parseInt(process.env.DASH_ACQ ?? "1574506");
 const DASH_FUNNEL = parseInt(process.env.DASH_FUNNEL ?? "1574507");
-const BASE = `https://us.posthog.com/api/projects/${PROJECT_ID}`;
+const BASE = `https://eu.posthog.com/api/projects/${PROJECT_ID}`;
 const H = { "Authorization": `Bearer ${PHX}`, "Content-Type": "application/json" };
 
 async function api(method, path, body) {
@@ -122,5 +122,5 @@ await createInsight("Funnel Acquisition Devis",
 console.log("\n══════════════════════════════════════════════");
 console.log("✅ Insights créés et attachés aux dashboards !");
 console.log("══════════════════════════════════════════════");
-console.log(`https://us.posthog.com/project/${PROJECT_ID}/dashboard/${DASH_ACQ}`);
-console.log(`https://us.posthog.com/project/${PROJECT_ID}/dashboard/${DASH_FUNNEL}`);
+console.log(`https://eu.posthog.com/project/${PROJECT_ID}/dashboard/${DASH_ACQ}`);
+console.log(`https://eu.posthog.com/project/${PROJECT_ID}/dashboard/${DASH_FUNNEL}`);

@@ -2,7 +2,7 @@
 const PHX = process.env.PHX_KEY;
 const PROJECT_ID = process.env.PROJECT_ID ?? "419510";
 const DASH_FUNNEL = parseInt(process.env.DASH_FUNNEL ?? "1574507");
-const BASE = `https://us.posthog.com/api/projects/${PROJECT_ID}`;
+const BASE = `https://eu.posthog.com/api/projects/${PROJECT_ID}`;
 const H = { "Authorization": `Bearer ${PHX}`, "Content-Type": "application/json" };
 
 const r = await fetch(`${BASE}/insights/`, {

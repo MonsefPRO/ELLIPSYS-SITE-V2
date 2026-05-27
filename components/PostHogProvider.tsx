@@ -7,7 +7,7 @@ export default function PostHogProvider() {
   useEffect(() => {
     // Clé publique PostHog — NEXT_PUBLIC_ = exposée au navigateur par design
     const key  = process.env.NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN;
-    const host = process.env.NEXT_PUBLIC_POSTHOG_HOST ?? "https://us.i.posthog.com";
+    const host = process.env.NEXT_PUBLIC_POSTHOG_HOST ?? "https://eu.i.posthog.com";
 
     // Si pas de clé configurée → on ne fait rien (évite crash + log inutile)
     if (!key) {
