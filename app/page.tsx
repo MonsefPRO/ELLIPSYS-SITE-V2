@@ -263,8 +263,84 @@ export default async function HomePage() {
         },
       ];
 
+  // ── JSON-LD FAQPage schema (featured snippets Google + voice search)
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Le drone peut-il endommager ma toiture ou mes panneaux solaires ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Non. Nos drones sont pilotés à distance, sans contact physique avec votre toiture, et nous utilisons une pulvérisation d'eau osmosée à pression contrôlée (jamais de haute pression). Cette méthode est strictement compatible avec les garanties constructeur des panneaux photovoltaïques (Trina, JinkoSolar, Q-CELLS, etc.) et préserve l'imperméabilité originelle des tuiles.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Quels produits utilisez-vous pour le nettoyage par drone ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nous utilisons principalement de l'eau osmosée pure (99,9% des minéraux retirés) sans détergent, qui sèche sans laisser de trace. Pour les traitements de toiture, nous proposons trois familles : choc (action rapide), action lente (sans rinçage, respect des matériaux fragiles) et enzymatique (bio-nettoyage 90% biodégradable conforme ISO 14001).",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Quels sont les tarifs d'un nettoyage de toiture ou de panneaux solaires par drone ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Le coût varie selon la surface, l'accessibilité, le type de prestation (toiture seule, panneaux solaires, façade, combinaison) et la zone géographique. Pour un devis personnalisé et gratuit sous 24h, contactez-nous via le formulaire en ligne ou au 04 67 20 97 09. Nous proposons également des contrats annuels pour les exploitants de centrales photovoltaïques.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Quels sont vos délais d'intervention ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nous proposons un protocole personnalisé sous 24 heures après réception de votre demande. L'intervention peut être planifiée sous 10 jours ouvrables (délai réglementaire des autorisations DGAC). En cas de conditions météorologiques défavorables, nous reprogrammons gratuitement.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Êtes-vous assurés et certifiés ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Oui. Ellipsys Solutions est certifié DGAC et EASA (scénarios européens STS-01 et STS-02 + SORA), couvert par une RC Pro et une RC Aéronautique. Nous respectons également les normes ISO 14001 (produits biodégradables) et nos pilotes sont brevetés.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Intervenez-vous dans toute la France ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Oui, partout en France métropolitaine. Nous avons des bases opérationnelles à Montpellier (34) et Aimargues (30), et intervenons en priorité dans l'Hérault, le Gard, le Vaucluse, les Bouches-du-Rhône, l'Auvergne-Rhône-Alpes, l'Île-de-France et la Nouvelle-Aquitaine. Pour l'Europe, sur étude.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Quelle est la différence entre nettoyage par drone et par robot ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Le drone est idéal pour les hauteurs et les accès difficiles (toitures industrielles, ombrières, façades en hauteur). Le robot terrestre (Rony) est conçu pour les grandes surfaces planes : centrales photovoltaïques au sol, parkings ombrières, toitures industrielles plates. Nous choisissons l'outil le mieux adapté à votre installation lors du diagnostic préalable.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Combien de temps dure une intervention de nettoyage par drone ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Pour une toiture résidentielle classique (100-150 m²), comptez 1 à 3 heures. Pour une centrale photovoltaïque, le robot Rony traite environ 500 m²/heure. Un devis détaillé précise toujours la durée estimée. La planification tient compte des autorisations DGAC et de la météo.",
+        },
+      },
+    ],
+  };
+
   return (
     <main className="flex min-h-screen flex-col w-full overflow-hidden">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
 
       {/* ══════════════════════════════════════════
           HERO — animations jouées au chargement

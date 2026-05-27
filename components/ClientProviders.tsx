@@ -10,12 +10,16 @@ const LeadEmailPopup = dynamic(
   { ssr: false }
 );
 
+// Sticky CTA mobile — booste les conversions mobile (+15-25% attendu)
+const StickyMobileCTA = dynamic(() => import("./StickyMobileCTA"), { ssr: false });
+
 export function ClientProviders() {
   return (
     <>
       <PostHogProvider />
       <CookieBanner />
       <LeadEmailPopup />
+      <StickyMobileCTA />
     </>
   );
 }
