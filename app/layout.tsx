@@ -24,24 +24,39 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ellipsys-solutions.netlify.app"),
-  title: "Nettoyage, Inspection et Maintenance par Drone et Robot en Europe | Ellipsys",
-  description: "Ellipsys Solutions : ingénierie robotique pour l'entretien de vos infrastructures. Nettoyage de panneaux solaires, démoussage, façades, thermographie et destruction de nids de frelons. Drones certifiés, robots terrestres, partout en France.",
+  metadataBase: new URL("https://ellipsys-solutions.com"),
+  title: "Nettoyage de Panneaux Solaires par Drone — France | Ellipsys Solutions",
+  description: "Nettoyage de panneaux photovoltaïques, façades et toitures par drone et robot. Récupérez jusqu'à 30% de production. Devis 24h. Montpellier, Lyon, Marseille, Paris, France entière. Certifiés DGAC/EASA.",
+  keywords: [
+    "nettoyage panneaux solaires drone",
+    "nettoyage panneaux photovoltaïques",
+    "nettoyage centrale photovoltaïque",
+    "nettoyage drone Montpellier",
+    "maintenance centrale solaire",
+    "démoussage toiture drone",
+    "thermographie drone",
+    "nettoyage façade drone",
+    "robot nettoyage panneaux solaires",
+    "eau osmosée panneaux solaires",
+  ],
   openGraph: {
     type: "website",
     locale: "fr_FR",
-    url: "https://ellipsys-solutions.netlify.app",
+    url: "https://ellipsys-solutions.com",
     siteName: "Ellipsys Solutions",
-    title: "Nettoyage, Inspection et Maintenance par Drone et Robot | Ellipsys",
-    description: "Ellipsys Solutions : drones et robots pour la maintenance de vos infrastructures. Panneaux solaires, toitures, façades, thermographie, nids de frelons — sans échafaudage, partout en France.",
+    title: "Nettoyage de Panneaux Solaires par Drone — Sans Échafaudage | Ellipsys",
+    description: "Drone + robot + eau osmosée pure. Récupération de rendement jusqu'à +30%. Centrales photovoltaïques, toitures, façades, thermographie. Toute France. Certifiés DGAC/EASA.",
     images: [
       {
         url: "/images/accueil.png",
         width: 1200,
         height: 630,
-        alt: "Ellipsys Solutions — Maintenance par drone et robotique",
+        alt: "Ellipsys Solutions — Nettoyage panneaux solaires par drone",
       },
     ],
+  },
+  alternates: {
+    canonical: "https://ellipsys-solutions.com",
   },
   twitter: {
     card: "summary_large_image",
@@ -66,14 +81,14 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "LocalBusiness",
-      "@id": "https://ellipsys-solutions.netlify.app/#business",
+      "@id": "https://ellipsys-solutions.com/#business",
       "name": "Ellipsys Solutions",
       "description": "Spécialiste de la maintenance extérieure par drone et robotique : nettoyage de panneaux solaires, démoussage toiture, façades, thermographie, destruction de nids de frelons. Intervention sans échafaudage, partout en France.",
-      "url": "https://ellipsys-solutions.netlify.app",
+      "url": "https://ellipsys-solutions.com",
       "telephone": "+33467209709",
       "email": "contact@ellipsys-group.com",
-      "logo": "https://ellipsys-solutions.netlify.app/images/favicon.png",
-      "image": "https://ellipsys-solutions.netlify.app/images/accueil.png",
+      "logo": "https://ellipsys-solutions.com/images/favicon.png",
+      "image": "https://ellipsys-solutions.com/images/accueil.png",
       "priceRange": "€€",
       "currenciesAccepted": "EUR",
       "paymentAccepted": "Virement, Chèque, Carte bancaire",
@@ -131,11 +146,11 @@ const jsonLd = {
     },
     {
       "@type": "WebSite",
-      "@id": "https://ellipsys-solutions.netlify.app/#website",
-      "url": "https://ellipsys-solutions.netlify.app",
+      "@id": "https://ellipsys-solutions.com/#website",
+      "url": "https://ellipsys-solutions.com",
       "name": "Ellipsys Solutions",
       "description": "Nettoyage, Inspection et Maintenance par Drone et Robot en Europe",
-      "publisher": { "@id": "https://ellipsys-solutions.netlify.app/#business" },
+      "publisher": { "@id": "https://ellipsys-solutions.com/#business" },
       "inLanguage": ["fr-FR", "en-GB"]
     }
   ]
