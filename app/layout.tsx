@@ -8,7 +8,6 @@ import { LanguageProvider } from "../contexts/LanguageContext";
 import ScrollToTop from "../components/ScrollToTop";
 import { ClientProviders } from "../components/ClientProviders";
 
-// ─── Polices chargées au build — servies depuis le même domaine (0 CDN externe) ──
 const manrope = Manrope({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800"],
@@ -23,10 +22,18 @@ const spaceGrotesk = Space_Grotesk({
   display: "swap",
 });
 
+// ─── METADATA GLOBALE (layout racine) ──────────────────────────────────────
+// IMPORTANT : canonical et og:url ne sont PAS définis ici.
+// Chaque page définit son propre canonical via generateMetadata() ou export const metadata.
+// metadataBase est défini ici pour que Next.js construise les URLs absolues correctement.
 export const metadata: Metadata = {
   metadataBase: new URL("https://ellipsys-solutions.com"),
-  title: "Nettoyage de Panneaux Solaires par Drone — France | Ellipsys Solutions",
-  description: "Nettoyage de panneaux photovoltaïques, façades et toitures par drone et robot. Récupérez jusqu'à 30% de production. Devis 24h. Montpellier, Lyon, Marseille, Paris, France entière. Certifiés DGAC/EASA.",
+  title: {
+    default: "Nettoyage par Drone & Robotique — France | Ellipsys Solutions",
+    template: "%s | Ellipsys Solutions",
+  },
+  description:
+    "Nettoyage de panneaux photovoltaïques, façades et toitures par drone et robot. Récupérez jusqu'à 30% de production. Devis 24h. France entière. Certifiés DGAC/EASA.",
   keywords: [
     "nettoyage panneaux solaires drone",
     "nettoyage panneaux photovoltaïques",
@@ -42,10 +49,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "fr_FR",
-    url: "https://ellipsys-solutions.com",
     siteName: "Ellipsys Solutions",
-    title: "Nettoyage de Panneaux Solaires par Drone — Sans Échafaudage | Ellipsys",
-    description: "Drone + robot + eau osmosée pure. Récupération de rendement jusqu'à +30%. Centrales photovoltaïques, toitures, façades, thermographie. Toute France. Certifiés DGAC/EASA.",
+    title: {
+      default: "Nettoyage par Drone & Robotique — France | Ellipsys Solutions",
+      template: "%s | Ellipsys Solutions",
+    },
+    description:
+      "Drone + robot + eau osmosée pure. Récupération de rendement jusqu'à +30%. Panneaux solaires, toitures, façades, thermographie. Toute France. Certifiés DGAC/EASA.",
     images: [
       {
         url: "/images/accueil.png",
@@ -55,13 +65,11 @@ export const metadata: Metadata = {
       },
     ],
   },
-  alternates: {
-    canonical: "https://ellipsys-solutions.com",
-  },
   twitter: {
     card: "summary_large_image",
     title: "Nettoyage, Inspection et Maintenance par Drone et Robot | Ellipsys",
-    description: "Drones et robots pour la maintenance de vos infrastructures — panneaux solaires, toitures, façades, thermographie. Partout en France.",
+    description:
+      "Drones et robots pour la maintenance de vos infrastructures — panneaux solaires, toitures, façades, thermographie. Partout en France.",
     images: ["/images/accueil.png"],
   },
   robots: {
@@ -83,7 +91,8 @@ const jsonLd = {
       "@type": "LocalBusiness",
       "@id": "https://ellipsys-solutions.com/#business",
       "name": "Ellipsys Solutions",
-      "description": "Spécialiste de la maintenance extérieure par drone et robotique : nettoyage de panneaux solaires, démoussage toiture, façades, thermographie, destruction de nids de frelons. Intervention sans échafaudage, partout en France.",
+      "description":
+        "Spécialiste de la maintenance extérieure par drone et robotique : nettoyage de panneaux solaires, démoussage toiture, façades, thermographie, destruction de nids de frelons. Intervention sans échafaudage, partout en France.",
       "url": "https://ellipsys-solutions.com",
       "telephone": "+33467209709",
       "email": "contact@ellipsys-group.com",
@@ -99,7 +108,7 @@ const jsonLd = {
           "addressLocality": "Aimargues",
           "postalCode": "30470",
           "addressCountry": "FR",
-          "addressRegion": "Occitanie"
+          "addressRegion": "Occitanie",
         },
         {
           "@type": "PostalAddress",
@@ -107,13 +116,13 @@ const jsonLd = {
           "addressLocality": "Montpellier",
           "postalCode": "34000",
           "addressCountry": "FR",
-          "addressRegion": "Occitanie"
-        }
+          "addressRegion": "Occitanie",
+        },
       ],
       "geo": {
         "@type": "GeoCoordinates",
         "latitude": 43.5944,
-        "longitude": 4.1884
+        "longitude": 4.1884,
       },
       "areaServed": [
         { "@type": "City", "name": "Montpellier" },
@@ -122,56 +131,95 @@ const jsonLd = {
         { "@type": "City", "name": "Paris" },
         { "@type": "City", "name": "Lyon" },
         { "@type": "City", "name": "Toulouse" },
-        { "@type": "Country", "name": "France" }
+        { "@type": "Country", "name": "France" },
       ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Services de maintenance par drone et robotique",
         "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Nettoyage de panneaux solaires par drone" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Démoussage et traitement de toiture" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Nettoyage de façades et bardages" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Thermographie infrarouge par drone" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Destruction de nids de frelons asiatiques" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Prises de vues aériennes et imagerie drone" } }
-        ]
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Nettoyage de panneaux solaires par drone",
+            },
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Démoussage et traitement de toiture",
+            },
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Nettoyage de façades et bardages",
+            },
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Thermographie infrarouge par drone",
+            },
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Destruction de nids de frelons asiatiques",
+            },
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Prises de vues aériennes et imagerie drone",
+            },
+          },
+        ],
       },
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.9",
         "reviewCount": "27",
-        "bestRating": "5"
+        "bestRating": "5",
       },
-      "sameAs": []
+      "sameAs": [],
     },
     {
       "@type": "WebSite",
       "@id": "https://ellipsys-solutions.com/#website",
       "url": "https://ellipsys-solutions.com",
       "name": "Ellipsys Solutions",
-      "description": "Nettoyage, Inspection et Maintenance par Drone et Robot en Europe",
+      "description":
+        "Nettoyage, Inspection et Maintenance par Drone et Robot en Europe",
       "publisher": { "@id": "https://ellipsys-solutions.com/#business" },
-      "inLanguage": ["fr-FR", "en-GB"]
-    }
-  ]
+      "inLanguage": ["fr-FR", "en-GB"],
+    },
+  ],
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="fr" className={`scroll-smooth ${manrope.variable} ${spaceGrotesk.variable}`}>
+    <html
+      lang="fr"
+      className={`scroll-smooth ${manrope.variable} ${spaceGrotesk.variable}`}
+    >
       <head>
-        {/* Préchargement de l'image LCP (hero visible au premier rendu) */}
         <link rel="preload" as="image" href="/rony.jpg" />
-        {/* JSON-LD Structured Data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
       <body className="antialiased flex flex-col min-h-screen">
-
-        {/* Consent Mode v2 — DOIT s'exécuter AVANT GTM (RGPD/UE obligatoire).
-            Tout est refusé par défaut ; le CookieBanner passe en "granted" après accord. */}
         <Script
           id="consent-default"
           strategy="beforeInteractive"
@@ -179,8 +227,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500,region:['FR','EU']});gtag('set','url_passthrough',true);gtag('set','ads_data_redaction',true);`,
           }}
         />
-
-        {/* GTM chargé après interaction — ne bloque plus le rendu initial */}
         <Script
           id="gtm"
           strategy="afterInteractive"
@@ -191,19 +237,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-5653377L"
-            height="0" width="0"
+            height="0"
+            width="0"
             style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
 
         <LanguageProvider>
-          {/* CookieBanner, PostHog, LeadEmailPopup — tous chargés côté client uniquement */}
           <ClientProviders />
           <Header />
           <ScrollToTop />
-          <div className="flex-grow">
-            {children}
-          </div>
+          <div className="flex-grow">{children}</div>
           <Footer />
         </LanguageProvider>
       </body>
