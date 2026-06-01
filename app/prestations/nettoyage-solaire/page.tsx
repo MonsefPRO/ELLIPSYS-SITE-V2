@@ -6,7 +6,7 @@ import AccordionSection from "@/components/AccordionSection";
 import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
-  title: "Nettoyage robotisé de panneaux solaires et restauration de rendement | Ellipsys",
+  title: "Nettoyage robotisé de panneaux solaires et restauration de rendement ",
   description: "Robot Rony et drone Chronos pour le nettoyage de parcs solaires. Eau osmosée, inspection thermographique, contrats annuels. Gain de rendement mesurable. CARSAT, AIE PVPS.",
   alternates: {
     canonical: "https://ellipsys-solutions.com/prestations/nettoyage-solaire",
