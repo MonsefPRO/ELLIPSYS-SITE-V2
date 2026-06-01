@@ -4,8 +4,14 @@ import { ChevronRight, Sun, Home, Thermometer, Bug, Camera, Droplets } from "luc
 import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
-  title: "Nos Solutions de Nettoyage et Inspection par Drone | Ellipsys",
-  description: "Découvrez toutes les prestations Ellipsys : nettoyage solaire, façades, toitures, thermographie, éradication nuisibles et captation aérienne. Interventions sans nacelle, par drone et robot.",
+  title: "Nos Solutions de Nettoyage...",
+  description: "Découvrez toutes les prestations...",
+  alternates: {
+    canonical: "https://ellipsys-solutions.com/prestations",
+  },
+  openGraph: {
+    url: "https://ellipsys-solutions.com/prestations",
+  },
 };
 
 export default async function PrestationsPage() {
