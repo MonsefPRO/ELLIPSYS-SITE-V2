@@ -6,7 +6,7 @@ import AccordionSection from "@/components/AccordionSection";
 import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
-  title: "Entretien de Toitures : Démoussage et Hydrofuge par Drone | Ellipsys",
+  title: "Entretien de Toitures : Démoussage et Hydrofuge par Drone ",
   description: "Démoussage aérien Certibiocide et hydrofuge par drone ou perche télescopique. Sans échafaudage, conforme CARSAT et ABF. Intervention en toute sécurité sur toitures sensibles.",
   alternates: {
     canonical: "https://ellipsys-solutions.com/prestations/traitement-toiture",
