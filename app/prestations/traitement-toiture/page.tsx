@@ -8,6 +8,12 @@ import { getLang } from "@/lib/getLang";
 export const metadata: Metadata = {
   title: "Entretien de Toitures : Démoussage et Hydrofuge par Drone | Ellipsys",
   description: "Démoussage aérien Certibiocide et hydrofuge par drone ou perche télescopique. Sans échafaudage, conforme CARSAT et ABF. Intervention en toute sécurité sur toitures sensibles.",
+  alternates: {
+    canonical: "https://ellipsys-solutions.com/prestations/traitement-toiture",
+  },
+  openGraph: {
+    url: "https://ellipsys-solutions.com/prestations/traitement-toiture",
+  },
 };
 
 const PX = "?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
@@ -111,8 +117,6 @@ export default async function TraitementToiturePage() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-
-            {/* Image toiture */}
             <div className="relative rounded-3xl overflow-hidden shadow-xl h-80 lg:h-[420px]">
               <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('${IMG.roofOrange}')` }} />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
@@ -122,8 +126,6 @@ export default async function TraitementToiturePage() {
                 </span>
               </div>
             </div>
-
-            {/* Texte intro */}
             <div>
               <p className="text-slate-600 leading-relaxed text-lg mb-6">
                 {isEn
@@ -142,7 +144,6 @@ export default async function TraitementToiturePage() {
             </div>
           </div>
 
-          {/* 2 cartes étapes */}
           <div className="grid md:grid-cols-2 gap-6">
             <div className="relative rounded-3xl overflow-hidden shadow-md border border-slate-100 group">
               <div className="absolute inset-0 bg-cover bg-center scale-105 group-hover:scale-110 transition-transform duration-700" style={{ backgroundImage: `url('${IMG.roofConstruct}')` }} />
