@@ -7,6 +7,12 @@ import { getLang } from "@/lib/getLang";
 export const metadata: Metadata = {
   title: "Heritage Building & Sensitive Structure Maintenance | Ellipsys",
   description: "Gentle methods for historic buildings, ashlar stone and traditional renders. Full compliance with Listed Building Authority (ABF) prescriptions.",
+  alternates: {
+    canonical: "https://ellipsys-solutions.com/prestations/patrimoine",
+  },
+  openGraph: {
+    url: "https://ellipsys-solutions.com/prestations/patrimoine",
+  },
 };
 
 export default async function PatrimoinePage() {
