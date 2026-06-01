@@ -8,6 +8,12 @@ import { getLang } from "@/lib/getLang";
 export const metadata: Metadata = {
   title: "Destruction de nids de frelons en grande hauteur par drone | Ellipsys",
   description: "La solution d'urgence optimale pour les nids inaccessibles. Aucun risque humain, produit Certibiocide injecté à distance, retrait du nid inclus. Intervention sous 2h.",
+  alternates: {
+    canonical: "https://ellipsys-solutions.com/prestations/nuisibles",
+  },
+  openGraph: {
+    url: "https://ellipsys-solutions.com/prestations/nuisibles",
+  },
 };
 
 const PX = "?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
@@ -94,8 +100,6 @@ export default async function FrelonsPage() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-
-            {/* Image nid dans l'arbre */}
             <div className="relative rounded-3xl overflow-hidden shadow-xl h-80 lg:h-[440px]">
               <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('${IMG.nestTree}')` }} />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
@@ -108,8 +112,6 @@ export default async function FrelonsPage() {
                 <p className="text-white text-xs font-semibold">{isEn ? "High-altitude hornet nest — inaccessible without specialised equipment" : "Nid de frelons en hauteur — inaccessible sans équipement spécialisé"}</p>
               </div>
             </div>
-
-            {/* Texte + Avis Expert */}
             <div>
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-red-100 text-red-700 text-xs font-black uppercase tracking-widest mb-5">
                 <AlertTriangle className="w-3.5 h-3.5" /> {isEn ? "The safety revolution" : "La révolution sécuritaire"}
@@ -138,7 +140,6 @@ export default async function FrelonsPage() {
             </div>
           </div>
 
-          {/* 4 features cards */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {features.map((f, i) => (
               <div key={i} className="bg-slate-50 rounded-3xl p-7 border border-slate-100 hover:shadow-md transition-shadow">
@@ -171,8 +172,6 @@ export default async function FrelonsPage() {
       <section className="py-16 bg-slate-50 border-y border-slate-100">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
-
-            {/* Protocole */}
             <div>
               <h2 className="text-3xl font-bold text-slate-900 mb-2">{isEn ? "Our 3-step eradication protocol" : "Notre protocole d'éradication en 3 étapes"}</h2>
               <p className="text-slate-500 text-sm mb-8 leading-relaxed">{isEn ? "A rigorous and safe process, from first call to definitive nest removal." : "Un processus rigoureux et sécurisé, du premier appel au retrait définitif du nid."}</p>
@@ -195,8 +194,6 @@ export default async function FrelonsPage() {
                 ))}
               </div>
             </div>
-
-            {/* Images nid */}
             <div className="space-y-5">
               <div className="relative rounded-3xl overflow-hidden shadow-lg h-64 lg:h-72">
                 <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('${IMG.nestClose}')` }} />
