@@ -8,6 +8,12 @@ import { getLang } from "@/lib/getLang";
 export const metadata: Metadata = {
   title: "Nettoyage de Façades et Bardages par Drone | Ellipsys",
   description: "Redonnez l'éclat à vos façades sans nacelle ni échafaudage. Nettoyage drone haute pression pour enduits, pierre, bardages métalliques et bois. Encrassement sel marin, pollution, pluies sahariennes.",
+  alternates: {
+    canonical: "https://ellipsys-solutions.com/prestations/nettoyage-facade",
+  },
+  openGraph: {
+    url: "https://ellipsys-solutions.com/prestations/nettoyage-facade",
+  },
 };
 
 const PX = "?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
@@ -248,8 +254,6 @@ export default async function FacadesPage() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-14">
-
-            {/* Image façade pierre */}
             <div className="relative rounded-3xl overflow-hidden shadow-xl h-80 lg:h-[440px]">
               <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('${IMG.facadeStone}')` }} />
               <div className="absolute inset-0 bg-gradient-to-t from-black/55 to-transparent" />
@@ -259,8 +263,6 @@ export default async function FacadesPage() {
                 </span>
               </div>
             </div>
-
-            {/* Texte + Avis Expert */}
             <div>
               <div className="inline-block px-3 py-1 bg-[#0e2f52] text-white text-xs font-bold rounded-full mb-5 uppercase tracking-wide">{isEn ? "Competitive advantage" : "Avantage concurrentiel"}</div>
               <h2 className="text-3xl font-bold text-slate-900 mb-5">{isEn ? "No aerial platform. No scaffolding.\nNo disruption." : "Aucune nacelle. Aucun échafaudage.\nAucune interruption."}</h2>
@@ -291,7 +293,6 @@ export default async function FacadesPage() {
             </div>
           </div>
 
-          {/* Comparatif nacelle vs drone */}
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {comparatif.map((row, i) => (
               <div key={i} className="bg-slate-50 rounded-2xl p-5 border border-slate-100">
@@ -331,8 +332,6 @@ export default async function FacadesPage() {
       <section className="py-16 bg-slate-50 border-y border-slate-200">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="grid lg:grid-cols-3 gap-10 items-start">
-
-            {/* Image détail façade */}
             <div className="space-y-5">
               <div className="relative rounded-3xl overflow-hidden shadow-lg h-64 lg:h-80">
                 <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('${IMG.facadeDetail}')` }} />
@@ -351,8 +350,6 @@ export default async function FacadesPage() {
                 </p>
               </div>
             </div>
-
-            {/* Agents cards */}
             <div className="lg:col-span-2">
               <h2 className="text-3xl font-bold text-slate-900 mb-8">{isEn ? "The 4 soiling agents degrading your facades" : "Les 4 agents d'encrassement qui dégradent vos façades"}</h2>
               <div className="grid sm:grid-cols-2 gap-5">
@@ -378,8 +375,6 @@ export default async function FacadesPage() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="grid lg:grid-cols-3 gap-10 items-start">
-
-            {/* Surfaces cards */}
             <div className="lg:col-span-2">
               <div className="flex items-center gap-3 mb-3">
                 <Droplets className="w-8 h-8 text-brand-orange-500" />
@@ -410,8 +405,6 @@ export default async function FacadesPage() {
                 ))}
               </div>
             </div>
-
-            {/* Image architecture */}
             <div className="relative rounded-3xl overflow-hidden shadow-lg h-64 lg:h-full min-h-[320px]">
               <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('${IMG.facadeArchi}')` }} />
               <div className="absolute inset-0 bg-gradient-to-t from-black/55 to-transparent" />
