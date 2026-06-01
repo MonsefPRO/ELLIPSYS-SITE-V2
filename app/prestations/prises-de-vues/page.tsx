@@ -6,7 +6,7 @@ import AccordionSection from "@/components/AccordionSection";
 import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
-  title: "Captation Audiovisuelle et Imagerie Aérienne par Drone | Ellipsys",
+  title: "Captation Audiovisuelle et Imagerie Aérienne par Drone ",
   description: "Sublimez votre patrimoine avec des visuels cinématographiques 4K. Prises de vues haute définition DJI Air 3S pour l'immobilier de prestige, domaines viticoles et événementiel.",
   alternates: {
     canonical: "https://ellipsys-solutions.com/prestations/prises-de-vues",
