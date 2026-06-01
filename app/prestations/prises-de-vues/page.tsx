@@ -8,6 +8,12 @@ import { getLang } from "@/lib/getLang";
 export const metadata: Metadata = {
   title: "Captation Audiovisuelle et Imagerie Aérienne par Drone | Ellipsys",
   description: "Sublimez votre patrimoine avec des visuels cinématographiques 4K. Prises de vues haute définition DJI Air 3S pour l'immobilier de prestige, domaines viticoles et événementiel.",
+  alternates: {
+    canonical: "https://ellipsys-solutions.com/prestations/prises-de-vues",
+  },
+  openGraph: {
+    url: "https://ellipsys-solutions.com/prestations/prises-de-vues",
+  },
 };
 
 const PX = "?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
@@ -177,7 +183,6 @@ export default async function PrisesDeVuesPage() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-
             <div className="relative rounded-3xl overflow-hidden shadow-xl h-80 lg:h-[440px]">
               <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('/images/3s.png')` }} />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
@@ -190,7 +195,6 @@ export default async function PrisesDeVuesPage() {
                 <p className="text-white text-xs font-semibold">{isEn ? "Cinematic overflight — perspectives inaccessible at ground level" : "Survol cinématographique — perspectives inaccessibles au sol"}</p>
               </div>
             </div>
-
             <div>
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-orange-100 text-brand-orange-700 text-xs font-black uppercase tracking-widest mb-5">
                 <Video className="w-3.5 h-3.5" /> {isEn ? "Cinematic-grade equipment" : "Équipement de niveau cinématographique"}
