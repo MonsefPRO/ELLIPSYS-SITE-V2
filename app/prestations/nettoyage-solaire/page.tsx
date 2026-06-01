@@ -8,6 +8,12 @@ import { getLang } from "@/lib/getLang";
 export const metadata: Metadata = {
   title: "Nettoyage robotisé de panneaux solaires et restauration de rendement | Ellipsys",
   description: "Robot Rony et drone Chronos pour le nettoyage de parcs solaires. Eau osmosée, inspection thermographique, contrats annuels. Gain de rendement mesurable. CARSAT, AIE PVPS.",
+  alternates: {
+    canonical: "https://ellipsys-solutions.com/prestations/nettoyage-solaire",
+  },
+  openGraph: {
+    url: "https://ellipsys-solutions.com/prestations/nettoyage-solaire",
+  },
 };
 
 const chartBars = [
@@ -108,7 +114,6 @@ export default async function PanneauxPhotovoltaiquesPage() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
-            {/* Image technicien solaire */}
             <div className="relative rounded-3xl overflow-hidden shadow-xl h-80 lg:h-[400px]">
               <div
                 className="absolute inset-0 bg-cover bg-center"
@@ -121,7 +126,6 @@ export default async function PanneauxPhotovoltaiquesPage() {
                 </span>
               </div>
             </div>
-            {/* Texte + Avis Expert */}
             <div>
               <h2 className="text-3xl font-bold text-slate-900 mb-5">{isEn ? "Estimating your yield loss" : "Estimer votre perte de rendement"}</h2>
               <p className="text-slate-600 leading-relaxed text-lg mb-6">
@@ -139,10 +143,7 @@ export default async function PanneauxPhotovoltaiquesPage() {
             </div>
           </div>
 
-          {/* TABLEAU AGENTS + GRAPHIQUE CÔTE À CÔTE */}
           <div className="grid lg:grid-cols-2 gap-8 mb-10">
-
-            {/* Colonne gauche : Tableau agents */}
             <div className="overflow-hidden rounded-2xl border border-slate-200 shadow-sm">
               <div className="grid grid-cols-4 bg-[#0e2f52] text-white text-xs font-bold px-4 py-4">
                 <div>{isEn ? "Obscuring Agent" : "Agent Obscurcissant"}</div>
@@ -160,13 +161,10 @@ export default async function PanneauxPhotovoltaiquesPage() {
               ))}
             </div>
 
-            {/* Colonne droite : Graphique barres */}
             <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 flex flex-col">
               <h3 className="text-center font-bold text-slate-900 mb-6 text-sm leading-tight">
                 {isEn ? "Photovoltaic Yield Losses\nby Soiling Type" : "Pertes de Rendement Photovoltaïque\nselon l'Encrassement"}
               </h3>
-
-              {/* Zone graphique */}
               <div className="flex items-end justify-around gap-3 border-b-2 border-slate-200 mb-4 px-2" style={{ height: '200px' }}>
                 {chartBarLabels.map((bar, i) => (
                   <div key={i} className="flex-1 flex flex-col items-center justify-end gap-1 h-full">
@@ -178,14 +176,11 @@ export default async function PanneauxPhotovoltaiquesPage() {
                   </div>
                 ))}
               </div>
-
-              {/* Labels barres */}
               <div className="flex justify-around gap-2 mb-4">
                 {chartBarLabels.map((bar, i) => (
                   <p key={i} className="flex-1 text-center text-xs text-slate-600 leading-tight">{bar.label}</p>
                 ))}
               </div>
-
               <div className="mt-auto space-y-2">
                 <p className="text-xs text-slate-500 leading-relaxed italic">
                   {isEn
@@ -198,7 +193,6 @@ export default async function PanneauxPhotovoltaiquesPage() {
             </div>
           </div>
 
-          {/* Note globale */}
           <div className="max-w-7xl mx-auto p-5 bg-slate-100 rounded-xl border border-slate-200 flex items-start gap-3">
             <AlertCircle className="w-5 h-5 text-slate-500 shrink-0 mt-0.5" />
             <p className="text-xs text-slate-500 leading-relaxed italic">
@@ -227,8 +221,6 @@ export default async function PanneauxPhotovoltaiquesPage() {
       {/* SECTION 2+3 : TECHNOLOGIE + COMPARATIF */}
       <section className="py-14 bg-slate-50 border-y border-slate-200">
         <div className="container mx-auto px-4 max-w-7xl space-y-12">
-
-          {/* En-tête */}
           <div className="text-center">
             <h2 className="text-3xl font-bold text-slate-900 mb-2">{isEn ? "Choice of intervention technology" : "Choix de la technologie d'intervention"}</h2>
             <p className="text-slate-500 text-sm max-w-xl mx-auto leading-relaxed">
@@ -236,10 +228,7 @@ export default async function PanneauxPhotovoltaiquesPage() {
             </p>
           </div>
 
-          {/* Arbre décisionnel + cartes solutions */}
           <div className="grid lg:grid-cols-4 gap-5 items-start">
-
-            {/* Guide de sélection simplifié */}
             <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-5">
               <h3 className="font-black text-[#0e2f52] text-[10px] uppercase tracking-widest mb-5">{isEn ? "Which tool for your site?" : "Quel outil pour votre site ?"}</h3>
               <div className="space-y-3">
@@ -270,9 +259,7 @@ export default async function PanneauxPhotovoltaiquesPage() {
               </div>
             </div>
 
-            {/* 3 cartes solutions */}
             <div className="lg:col-span-3 grid sm:grid-cols-3 gap-4 h-full">
-              {/* Drone Chronos */}
               <div className="bg-white rounded-2xl border-2 border-slate-100 shadow-sm p-6 flex flex-col hover:shadow-lg hover:-translate-y-0.5 transition-all">
                 <div className="text-4xl mb-3">✈</div>
                 <h4 className="font-black text-[#0e2f52] text-base mb-1">Drone Chronos</h4>
@@ -285,7 +272,6 @@ export default async function PanneauxPhotovoltaiquesPage() {
                 </ul>
               </div>
 
-              {/* Robot Rony — Solution Phare */}
               <div className="bg-gradient-to-b from-[#0e2f52] to-[#0a2240] rounded-2xl border-2 border-[#0e2f52] shadow-xl p-6 flex flex-col ring-2 ring-brand-orange-400/50 relative">
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2">
                   <span className="px-3 py-1 bg-brand-orange-500 text-white text-[9px] font-black rounded-full uppercase tracking-widest shadow-lg">⭐ {isEn ? "Flagship Solution" : "Solution Phare"}</span>
@@ -301,7 +287,6 @@ export default async function PanneauxPhotovoltaiquesPage() {
                 </ul>
               </div>
 
-              {/* Solution Hybride */}
               <div className="bg-white rounded-2xl border-2 border-slate-100 shadow-sm p-6 flex flex-col hover:shadow-lg hover:-translate-y-0.5 transition-all">
                 <div className="text-4xl mb-3">🔧</div>
                 <h4 className="font-black text-[#0e2f52] text-base mb-1">{isEn ? "Hybrid Solution" : "Solution Hybride"}</h4>
@@ -316,7 +301,6 @@ export default async function PanneauxPhotovoltaiquesPage() {
             </div>
           </div>
 
-          {/* Comparatif */}
           <div>
             <h2 className="text-2xl font-bold text-slate-900 mb-2 text-center">
               {isEn ? "Efficiency Comparison: Manual Cleaning vs Robotic Solutions" : "Comparatif d'efficacité : Nettoyage Manuel vs Solutions Robotisées"}
@@ -348,7 +332,6 @@ export default async function PanneauxPhotovoltaiquesPage() {
               ))}
             </div>
           </div>
-
         </div>
       </section>
 
