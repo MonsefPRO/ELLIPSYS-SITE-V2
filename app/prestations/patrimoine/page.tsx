@@ -5,7 +5,7 @@ import ExpertQuoteSide from "@/components/ExpertQuoteSide";
 import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
-  title: "Heritage Building & Sensitive Structure Maintenance | Ellipsys",
+  title: "Heritage Building & Sensitive Structure Maintenance ",
   description: "Gentle methods for historic buildings, ashlar stone and traditional renders. Full compliance with Listed Building Authority (ABF) prescriptions.",
   alternates: {
     canonical: "https://ellipsys-solutions.com/prestations/patrimoine",
