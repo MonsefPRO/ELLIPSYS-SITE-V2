@@ -8,6 +8,12 @@ import { getLang } from "@/lib/getLang";
 export const metadata: Metadata = {
   title: "Thermographie Aérienne et Inspection Technique de Bâtiments par Drone | Ellipsys",
   description: "Détectez l'invisible avec la thermographie par drone. Audits énergétiques Décret Tertiaire, maintenance de parcs solaires, détection de ponts thermiques. DJI Matrice 4T.",
+  alternates: {
+    canonical: "https://ellipsys-solutions.com/prestations/thermographie",
+  },
+  openGraph: {
+    url: "https://ellipsys-solutions.com/prestations/thermographie",
+  },
 };
 
 const PX = "?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
@@ -124,8 +130,6 @@ export default async function ThermographiePage() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-
-            {/* Image caméra thermique */}
             <div className="relative rounded-3xl overflow-hidden shadow-xl h-80 lg:h-[420px]">
               <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('/images/4T.jpg')` }} />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
@@ -135,8 +139,6 @@ export default async function ThermographiePage() {
                 </span>
               </div>
             </div>
-
-            {/* Texte + Avis Expert */}
             <div>
               <p className="text-slate-600 leading-relaxed text-lg mb-6">
                 {isEn
@@ -159,7 +161,6 @@ export default async function ThermographiePage() {
             </div>
           </div>
 
-          {/* Livrables 3 cartes */}
           <div className="grid md:grid-cols-3 gap-6">
             {livrables.map((l, i) => (
               <div key={i} className="bg-slate-50 rounded-2xl border border-slate-100 p-6 hover:shadow-md transition-shadow">
