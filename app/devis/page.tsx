@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Building2, User, Send, Camera, MapPin, Phone, Mail, CheckCircle2 } from "lucide-react";
 import { track, identify, Events } from "@/lib/analytics";
+import { pushLeadConversion } from "@/lib/gtag";
 
 type ServiceKey = "facade" | "solaire" | "toiture" | "thermographie" | "nuisibles" | "imagerie" | "autre";
 
@@ -228,6 +229,15 @@ export default function DevisPage() {
         has_message: !!base.message,
         hubspot_contact_id: data?.hubspotContactId,
         hubspot_deal_id: data?.hubspotDealId,
+      });
+      // Conversion Google Ads (dataLayer → balise de conversion configurée dans GTM)
+      pushLeadConversion({
+        service,
+        serviceLabel: svcLabel,
+        clientType,
+        city: base.city,
+        email: base.email,
+        phone: base.phone,
       });
       setSubmitted(true);
     } catch (err) {

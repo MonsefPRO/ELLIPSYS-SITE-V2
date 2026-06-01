@@ -170,6 +170,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="antialiased flex flex-col min-h-screen">
 
+        {/* Consent Mode v2 — DOIT s'exécuter AVANT GTM (RGPD/UE obligatoire).
+            Tout est refusé par défaut ; le CookieBanner passe en "granted" après accord. */}
+        <Script
+          id="consent-default"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500,region:['FR','EU']});gtag('set','url_passthrough',true);gtag('set','ads_data_redaction',true);`,
+          }}
+        />
+
         {/* GTM chargé après interaction — ne bloque plus le rendu initial */}
         <Script
           id="gtm"

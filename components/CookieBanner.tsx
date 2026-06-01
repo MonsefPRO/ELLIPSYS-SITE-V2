@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Cookie, ShieldCheck, BarChart2 } from "lucide-react";
+import { updateAdsConsent } from "../lib/gtag";
 
 const COOKIE_KEY = "ellipsys_cookie_consent";
 type ConsentState = "accepted" | "refused" | null;
@@ -19,6 +20,8 @@ export function CookieBanner() {
       return () => clearTimeout(t);
     } else {
       setConsent(stored);
+      // Visiteur récurrent : on réapplique son choix (Google + PostHog).
+      updateAdsConsent(stored === "accepted");
       if (stored === "accepted") activateAnalytics();
     }
   }, []);
@@ -35,6 +38,8 @@ export function CookieBanner() {
       setConsent(choice);
       setVisible(false);
       localStorage.setItem(COOKIE_KEY, choice);
+      // Consent Mode v2 : on informe Google du choix (pub + analytics).
+      updateAdsConsent(choice === "accepted");
       if (choice === "accepted") activateAnalytics();
     }, 350);
   }

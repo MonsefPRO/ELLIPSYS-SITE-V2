@@ -11,14 +11,14 @@ const securityHeaders = [
     value: [
       "default-src 'self'",
       // next/font sert les polices depuis le même domaine — plus besoin de fonts.googleapis.com
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://eu.posthog.com https://us.posthog.com https://cdn.curator.io",
+      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.googleadservices.com https://www.google.com https://googleads.g.doubleclick.net https://eu.posthog.com https://us.posthog.com https://cdn.curator.io",
       "style-src 'self' 'unsafe-inline' https://cdn.curator.io",
       // Polices servies localement par next/font
       "font-src 'self' https://cdn.curator.io",
-      "img-src 'self' data: blob: https://images.pexels.com https://images.unsplash.com https://*.supabase.co https://*.cdninstagram.com https://*.fbcdn.net https://media.licdn.com https://*.linkedin.com https://*.tiktokcdn.com https://p16-sign.tiktokcdn-us.com https://*.tiktokcdn-us.com",
-      "connect-src 'self' https://eu.posthog.com https://us.posthog.com https://*.supabase.co wss://*.supabase.co https://www.googletagmanager.com https://cdn.curator.io https://curator.io",
+      "img-src 'self' data: blob: https://www.googletagmanager.com https://www.google.com https://www.google.fr https://googleads.g.doubleclick.net https://www.googleadservices.com https://images.pexels.com https://images.unsplash.com https://*.supabase.co https://*.cdninstagram.com https://*.fbcdn.net https://media.licdn.com https://*.linkedin.com https://*.tiktokcdn.com https://p16-sign.tiktokcdn-us.com https://*.tiktokcdn-us.com",
+      "connect-src 'self' https://www.googletagmanager.com https://www.google.com https://googleads.g.doubleclick.net https://www.googleadservices.com https://eu.posthog.com https://us.posthog.com https://*.supabase.co wss://*.supabase.co https://cdn.curator.io https://curator.io",
       "media-src 'self'",
-      "frame-src 'none'",
+      "frame-src https://td.doubleclick.net https://www.googletagmanager.com",
       "worker-src 'self' blob:",
       "manifest-src 'self'",
       "form-action 'self'",
