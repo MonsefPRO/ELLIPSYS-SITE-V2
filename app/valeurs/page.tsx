@@ -4,7 +4,7 @@ import { ShieldAlert, Target, HeartHandshake, ChevronRight } from "lucide-react"
 import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
-  title: "Nos valeurs : Sécurité, Rigueur, Bienveillance | Ellipsys",
+  title: "Nos valeurs : Sécurité, Rigueur, Bienveillance",
   description: "Découvrez les engagements d'Ellipsys Solutions : sécurité absolue, rigueur d'ingénierie et bienveillance environnementale dans nos interventions par drone.",
 };
 

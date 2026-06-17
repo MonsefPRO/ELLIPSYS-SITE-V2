@@ -10,7 +10,7 @@ import ExpertQuoteSide from "@/components/ExpertQuoteSide";
 import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
-  title: "Nettoyage Drone pour Industrie, Logistique & Datacenters | Ellipsys",
+  title: "Nettoyage Drone pour Industrie, Logistique & Datacenters",
   description: "Entretien extérieur sans interruption de production (Uptime). Nettoyage de bardages et optimisation PUE pour Datacenters (Free Cooling).",
 };
 

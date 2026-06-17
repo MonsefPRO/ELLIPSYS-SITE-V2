@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy & Legal Notice | Ellipsys Solutions",
-  description: "Privacy policy, legal notice and general terms of service for Ellipsys Solutions.",
+  title: "Politique de confidentialité & mentions légales",
+  description: "Politique de confidentialité, mentions légales et conditions générales de service d'Ellipsys Solutions.",
 };
 
 export default async function PolitiqueConfidentialitePage() {

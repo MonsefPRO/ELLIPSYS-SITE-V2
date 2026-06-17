@@ -4,8 +4,8 @@ import { ShieldCheck, MapPin, Lightbulb, Target, ArrowRight } from "lucide-react
 import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
-  title: "About Ellipsys Solutions | Our Expertise & DNA",
-  description: "Founded on dual expertise in maintenance engineering and remote piloting technologies. Trusted partner for industry, local authorities and private clients.",
+  title: "À propos d'Ellipsys Solutions : notre expertise & notre ADN",
+  description: "Une double expertise en ingénierie de maintenance et en télépilotage de drones. Partenaire de confiance des industriels, collectivités et particuliers. Basés à Montpellier.",
 };
 
 export default async function AProposPage() {

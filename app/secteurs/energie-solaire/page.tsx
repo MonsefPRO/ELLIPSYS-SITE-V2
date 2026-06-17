@@ -6,7 +6,7 @@ import AccordionSection from "@/components/AccordionSection";
 import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
-  title: "Maintenance Parcs Solaires : Nettoyage Robot & Drone pour Acteurs du Solaire | Ellipsys",
+  title: "Maintenance Parcs Solaires : Nettoyage Robot & Drone pour Acteurs du Solaire",
   description: "Solution hybride Robot Rony + Drone Chronos pour la maintenance de parcs photovoltaïques. 500 m2/h, pentes 35%, eau osmosée. Gain de rendement mesurable.",
 };
 

@@ -6,7 +6,7 @@ import AccordionSection from "@/components/AccordionSection";
 import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
-  title: "Nettoyage Secteurs Haute Exigence : Pharma, Agro, Aeronautique | Ellipsys",
+  title: "Nettoyage Secteurs Haute Exigence : Pharma, Agro, Aéronautique",
   description: "Proprete exterieure repondant aux normes NF EN 1672-2. Nettoyage par drone pour l'industrie pharmaceutique, agroalimentaire et aeronautique.",
 };
 

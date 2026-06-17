@@ -14,7 +14,7 @@ import {
 import { getLang } from "../lib/getLang";
 
 export const metadata: Metadata = {
-  title: "Nettoyage, Inspection et Maintenance par Drone et Robot en Europe | Ellipsys",
+  title: "Nettoyage, Inspection et Maintenance par Drone et Robot en Europe",
   description: "Solutions de maintenance par drones et robots partout en Europe : nettoyage de panneaux solaires, toitures, facades, thermographie, destruction de nuisibles et imagerie.",
   alternates: {
     canonical: "https://ellipsys-solutions.com",

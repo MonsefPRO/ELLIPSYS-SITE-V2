@@ -4,8 +4,8 @@ import { ChevronRight, ShieldCheck, Scale, Leaf, FileCheck, BrainCircuit, Drople
 import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
-  title: "Our Intervention Method: Engineering at the Service of Materials | Ellipsys",
-  description: "Prior analysis, secure technology, responsible chemistry. Our intervention method systematically preserves the integrity of your surfaces.",
+  title: "Notre méthode d'intervention : l'ingénierie au service de vos surfaces",
+  description: "Analyse préalable, technologie sécurisée, chimie responsable : notre méthode d'intervention par drone préserve systématiquement l'intégrité de vos toitures et façades.",
 };
 
 export default async function MethodeGarantiesPage() {

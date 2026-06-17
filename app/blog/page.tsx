@@ -3,7 +3,7 @@ import { BlogTabs } from "@/components/BlogTabs";
 import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
-  title: "Blog Drone & Maintenance : Conseils, Réglementation, Innovations | Ellipsys",
+  title: "Blog Drone & Maintenance : Conseils, Réglementation, Innovations",
   description: "Articles experts sur le nettoyage par drone, la thermographie, la réglementation DGAC/EASA, l'entretien de panneaux solaires et la destruction de nids de frelons.",
 };
 

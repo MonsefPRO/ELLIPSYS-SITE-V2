@@ -4,8 +4,8 @@ import { MapPin, Globe, ChevronRight, CheckCircle2 } from "lucide-react";
 import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
-  title: "Service Areas | All of France | Ellipsys",
-  description: "Our technical teams and mobile units cover the whole of France. Coastline, mountains, industrial cities — the same quality standards everywhere.",
+  title: "Zone d'intervention : nettoyage par drone partout en France",
+  description: "Nos équipes techniques et unités mobiles couvrent toute la France. Littoral, montagne, villes industrielles : les mêmes standards de qualité partout. Devis gratuit sous 24h.",
 };
 
 export default async function ZoneInterventionPage() {

@@ -187,7 +187,10 @@ const jsonLd = {
         "reviewCount": "4",
         "bestRating": "5",
       },
-      "sameAs": [],
+      "sameAs": [
+        "https://www.linkedin.com/company/ellipsys-solutions-drones",
+        "https://www.instagram.com/ellipsysolutionsdrone/"
+      ],
     },
     {
       "@type": "WebSite",

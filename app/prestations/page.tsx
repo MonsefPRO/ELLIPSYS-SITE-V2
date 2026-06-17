@@ -4,8 +4,8 @@ import { ChevronRight, Sun, Home, Thermometer, Bug, Camera, Droplets } from "luc
 import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
-  title: "Nos Solutions de Nettoyage...",
-  description: "Découvrez toutes les prestations...",
+  title: "Nos prestations : nettoyage solaire, toiture, façade & thermographie par drone",
+  description: "Découvrez toutes nos prestations par drone et robot : nettoyage de panneaux solaires, démoussage de toiture, façade, thermographie et nuisibles. Sans échafaudage. Devis 24h.",
   alternates: {
     canonical: "https://ellipsys-solutions.com/prestations",
   },

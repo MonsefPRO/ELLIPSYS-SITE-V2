@@ -6,7 +6,7 @@ import AccordionSection from "@/components/AccordionSection";
 import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
-  title: "Entretien Batiments Publics et Espaces Collectifs par Drone | Ellipsys",
+  title: "Entretien Bâtiments Publics et Espaces Collectifs par Drone",
   description: "Nettoyage sans emprise au sol pour collectivites. Continuite de la voirie, securite ecoles, urgences frelons dans les parcs publics.",
 };
 

@@ -4,7 +4,7 @@ import Image from "next/image";
 import { CheckCircle2, ArrowRight, Phone, Info, ShieldCheck } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Tarifs Nettoyage par Drone — Toiture, Façade, Panneaux Solaires | Ellipsys Solutions",
+  title: "Tarifs Nettoyage par Drone — Toiture, Façade, Panneaux Solaires",
   description: "Comprendre les tarifs d'un nettoyage par drone : facteurs de prix, fourchettes du marché, méthodologie de devis. Devis personnalisé gratuit sous 24h. Montpellier, Aimargues, France entière.",
   keywords: [
     "tarif nettoyage drone",

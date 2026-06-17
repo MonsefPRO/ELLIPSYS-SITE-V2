@@ -41,8 +41,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const resolvedParams = await params;
   const villeName = formatVilleName(resolvedParams.ville);
   return {
-    title: `Drone Cleaning — Facades, Rooftops & Solar Panels in ${villeName} | Ellipsys`,
-    description: `Ellipsys operates in ${villeName} for facade cleaning, roof demossing, solar panel cleaning and drone thermal imaging. No scaffolding. Free quote within 24h.`,
+    title: `Nettoyage par drone à ${villeName} : panneaux solaires, toiture & façade`,
+    description: `Ellipsys intervient à ${villeName} : nettoyage de panneaux solaires, démoussage de toiture, nettoyage de façade et thermographie par drone. Sans échafaudage. Devis gratuit sous 24h.`,
   };
 }
 

@@ -4,8 +4,8 @@ import { MachineVideoCard } from "@/components/MachineVideoCard";
 import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
-  title: "Technology Fleet & Expertise — Drone Cleaning & Inspection | Ellipsys",
-  description: "Discover our cutting-edge technology fleet (drones and robots) and our regulatory credentials (DGAC, EASA, Certibiocide).",
+  title: "Notre flotte technologique & expertise : nettoyage et inspection par drone",
+  description: "Découvrez notre flotte de pointe (drones et robots) et nos habilitations réglementaires (DGAC, EASA, Certibiocide) pour le nettoyage et l'inspection sans échafaudage.",
 };
 
 export default async function ExpertisePage() {

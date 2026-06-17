@@ -4,8 +4,8 @@ import { Handshake, Building, ArrowRight, Megaphone, Users, ChevronRight, Briefc
 import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
-  title: "Partnerships, Prescribers & Recruitment | Ellipsys Solutions",
-  description: "Cleaning companies, estate agents, business introducers: let's join forces. Discover our partnership offers and join the Ellipsys network.",
+  title: "Partenariats, prescripteurs & apporteurs d'affaires",
+  description: "Entreprises de propreté, agents immobiliers, apporteurs d'affaires : unissons nos forces. Découvrez nos offres de partenariat et rejoignez le réseau Ellipsys.",
 };
 
 export default async function PartenairesPage() {

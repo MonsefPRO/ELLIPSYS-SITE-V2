@@ -5,8 +5,8 @@ import ExpertQuoteSide from "@/components/ExpertQuoteSide";
 import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
-  title: "Exterior Services for Private Homeowners | Ellipsys",
-  description: "Roof demossing, facade cleaning, solar panels and hornet nest removal for private clients. No bleach, biodegradable, transparent quote, photo report.",
+  title: "Nettoyage extérieur par drone pour particuliers : toiture, façade & solaire",
+  description: "Démoussage de toiture, nettoyage de façade, panneaux solaires et destruction de nids de frelons pour les particuliers. Sans javel, biodégradable, devis transparent et rapport photo.",
 };
 
 export default async function ParticuliersPage() {

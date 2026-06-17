@@ -4,7 +4,7 @@ import { Building2, Home, MapPin, Clock, Target, ChevronRight } from "lucide-rea
 import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
-  title: "Portfolio de nos interventions par drone : Avant / Après | Ellipsys",
+  title: "Portfolio de nos interventions par drone : Avant / Après",
   description: "Découvrez nos derniers chantiers en images. Des résultats concrets avant/après pour résoudre les problématiques d'accès complexes.",
 };
 
