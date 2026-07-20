@@ -101,28 +101,19 @@ const jsonLd = {
       "priceRange": "€€",
       "currenciesAccepted": "EUR",
       "paymentAccepted": "Virement, Chèque, Carte bancaire",
-      "address": [
-        {
-          "@type": "PostalAddress",
-          "streetAddress": "42, place de la Lucque",
-          "addressLocality": "Aimargues",
-          "postalCode": "30470",
-          "addressCountry": "FR",
-          "addressRegion": "Occitanie",
-        },
-        {
-          "@type": "PostalAddress",
-          "streetAddress": "159 Rue de Thor",
-          "addressLocality": "Montpellier",
-          "postalCode": "34000",
-          "addressCountry": "FR",
-          "addressRegion": "Occitanie",
-        },
-      ],
+      // Adresse unique = identique à la fiche Google Business (cohérence NAP)
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "159 Rue de Thor",
+        "addressLocality": "Montpellier",
+        "postalCode": "34000",
+        "addressCountry": "FR",
+        "addressRegion": "Occitanie",
+      },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": 43.5944,
-        "longitude": 4.1884,
+        "latitude": 43.6119,
+        "longitude": 3.9092,
       },
       "areaServed": [
         { "@type": "City", "name": "Montpellier" },
@@ -216,7 +207,6 @@ export default function RootLayout({
       className={`scroll-smooth ${manrope.variable} ${spaceGrotesk.variable}`}
     >
       <head>
-        <link rel="preload" as="image" href="/rony.jpg" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

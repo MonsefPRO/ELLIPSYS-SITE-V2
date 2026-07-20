@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
+import Image from "next/image";
 
 const IMAGES: { src: string; alt: string }[] = [
   { src: "/rony.jpg", alt: "Robot Ellipsys nettoyant des panneaux solaires photovoltaïques" },
@@ -48,14 +49,17 @@ export const HeroCarousel = () => {
               i === current ? "opacity-70" : "opacity-0"
             }`}
           >
-            <img
+            <Image
               src={image.src}
               alt={image.alt}
-              className="w-full h-full object-cover"
+              fill
+              sizes="100vw"
+              quality={70}
+              className="object-cover"
               // Priorité maximale uniquement pour l'image LCP (première visible)
-              fetchPriority={i === 0 ? "high" : "low"}
+              // → next/image génère automatiquement le <link rel="preload">
+              priority={i === 0}
               loading={i === 0 ? "eager" : "lazy"}
-              decoding={i === 0 ? "sync" : "async"}
             />
           </div>
         );

@@ -508,7 +508,7 @@ export default async function HomePage() {
 
           <FadeUp className="text-center mt-10" delay={0.1}>
             <a
-              href="https://g.page/r/ellipsys/review"
+              href="https://www.google.com/maps/search/?api=1&query=Ellipsys+Solutions+Drones+Montpellier"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-white border-2 border-slate-200 text-slate-700 rounded-xl font-bold text-sm hover:border-brand-orange-500 hover:text-brand-orange-500 transition-colors shadow-sm"
