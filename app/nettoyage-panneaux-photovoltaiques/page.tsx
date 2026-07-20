@@ -4,7 +4,7 @@ import Image from "next/image";
 import { ArrowRight, TrendingDown, Zap, Shield, Award, ChevronRight, Phone } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Nettoyage de Panneaux Photovoltaïques par Drone — Récupérez +30% de Production",
+  title: "Nettoyage photovoltaïque par drone : +30% de production",
   description: "Spécialiste du nettoyage de centrales photovoltaïques par drone et robot pour exploitants, asset managers et industriels. Eau osmosée pure. France entière. Audit soiling gratuit. +30% de rendement.",
   keywords: [
     "nettoyage centrale photovoltaïque",

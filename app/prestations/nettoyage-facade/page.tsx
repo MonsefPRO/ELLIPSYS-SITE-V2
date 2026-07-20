@@ -6,8 +6,8 @@ import AccordionSection from "@/components/AccordionSection";
 import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
-  title: "Nettoyage de Façades et Bardages par Drone ",
-  description: "Redonnez l'éclat à vos façades sans nacelle ni échafaudage. Nettoyage drone haute pression pour enduits, pierre, bardages métalliques et bois. Encrassement sel marin, pollution, pluies sahariennes.",
+  title: "Nettoyage façade par drone : sans nacelle ni échafaudage",
+  description: "Nettoyage de façade par drone : enduits, pierre, bardages métal et bois. Sans nacelle, sans fermeture de rue. Sel marin, pollution, pluies sahariennes. Devis gratuit sous 24h.",
   alternates: {
     canonical: "https://ellipsys-solutions.com/prestations/nettoyage-facade",
   },

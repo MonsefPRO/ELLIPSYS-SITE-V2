@@ -6,8 +6,8 @@ import AccordionSection from "@/components/AccordionSection";
 import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
-  title: "Entretien de Toitures : Démoussage et Hydrofuge par Drone ",
-  description: "Démoussage aérien Certibiocide et hydrofuge par drone ou perche télescopique. Sans échafaudage, conforme CARSAT et ABF. Intervention en toute sécurité sur toitures sensibles.",
+  title: "Démoussage toiture par drone : traitement & hydrofuge",
+  description: "Démoussage de toiture par drone : traitement Certibiocide + hydrofuge, sans échafaudage ni risque de chute. Conforme CARSAT et ABF. Devis gratuit sous 24h, France entière.",
   alternates: {
     canonical: "https://ellipsys-solutions.com/prestations/traitement-toiture",
   },
