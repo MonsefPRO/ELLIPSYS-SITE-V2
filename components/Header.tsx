@@ -26,6 +26,7 @@ const NAV = {
     solar2: "Acteurs de l'Énergie Solaire",
     marine: "Milieu Maritime & Plaisance",
     collectivites: "Collectivités & Espace Public",
+    particuliers: "Particuliers & Habitat",
     expertise: "Notre Expertise",
     news: "Actualités",
     blog: "Blog & Actus",
@@ -52,6 +53,7 @@ const NAV = {
     solar2: "Solar Energy Operators",
     marine: "Marine & Leisure",
     collectivites: "Local Authorities & Public Spaces",
+    particuliers: "Homeowners & Private Clients",
     expertise: "Technology & Fleet",
     news: "Insights",
     blog: "Blog & News",
@@ -122,6 +124,7 @@ export default function Header() {
                 <Link href="/secteurs/energie-solaire" className="block px-6 py-3 text-sm font-bold text-[#0e2f52] hover:bg-slate-50 hover:text-brand-orange-500">{n.solar2}</Link>
                 <Link href="/secteurs/maritime-plaisance" className="block px-6 py-3 text-sm font-bold text-[#0e2f52] hover:bg-slate-50 hover:text-brand-orange-500">{n.marine}</Link>
                 <Link href="/secteurs/collectivites" className="block px-6 py-3 text-sm font-bold text-[#0e2f52] hover:bg-slate-50 hover:text-brand-orange-500">{n.collectivites}</Link>
+                <Link href="/secteurs/particuliers" className="block px-6 py-3 text-sm font-bold text-[#0e2f52] hover:bg-slate-50 hover:text-brand-orange-500">{n.particuliers}</Link>
               </div>
             </div>
 
@@ -217,6 +220,7 @@ export default function Header() {
                   <Link href="/secteurs/energie-solaire" onClick={closeMobile} className="block px-8 py-3 text-sm font-semibold text-slate-700">{n.solar2}</Link>
                   <Link href="/secteurs/maritime-plaisance" onClick={closeMobile} className="block px-8 py-3 text-sm font-semibold text-slate-700">{n.marine}</Link>
                   <Link href="/secteurs/collectivites" onClick={closeMobile} className="block px-8 py-3 text-sm font-semibold text-slate-700">{n.collectivites}</Link>
+                  <Link href="/secteurs/particuliers" onClick={closeMobile} className="block px-8 py-3 text-sm font-semibold text-slate-700">{n.particuliers}</Link>
                 </div>
               )}
             </div>

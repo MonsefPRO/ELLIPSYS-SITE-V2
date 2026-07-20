@@ -22,8 +22,8 @@ export function HeroContent({ isEn }: Props) {
         >
           <span className="w-2 h-2 rounded-full bg-brand-orange-400 shrink-0 animate-pulse" />
           {isEn
-            ? "Our services are available to all client profiles, from private individuals to large enterprises"
-            : "Nos services s'adressent à tout type de clientèle, du particulier au professionnel"}
+            ? "Drone & robot cleaning · DGAC/EASA certified · Nationwide"
+            : "Nettoyage par drone & robot · Certifiés DGAC/EASA · France entière"}
         </motion.div>
 
         <motion.h1
@@ -48,8 +48,8 @@ export function HeroContent({ isEn }: Props) {
           className="text-sm md:text-base text-slate-100 mb-5 max-w-2xl font-medium leading-relaxed drop-shadow-md"
         >
           {isEn
-            ? "Ellipsys deploys high-precision tailored solutions to clean, inspect and protect your assets."
-            : "Ellipsys déploie des solutions sur mesure de haute précision pour nettoyer, inspecter et protéger votre patrimoine."}
+            ? "Solar panel, roof and façade cleaning by drone and robot — no scaffolding, no work platforms. Recover up to +30% of your panels' output. Free quote within 24h."
+            : "Nettoyage de panneaux solaires, toitures et façades par drone et robot — sans échafaudage ni nacelle. Récupérez jusqu'à +30 % de rendement sur vos panneaux. Devis gratuit sous 24h."}
         </motion.p>
 
         <motion.div

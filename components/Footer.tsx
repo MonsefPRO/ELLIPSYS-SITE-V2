@@ -17,6 +17,11 @@ const FOOTER = {
     thermal: "Thermographie",
     pests: "Urgence Nuisibles",
     aerial: "Captation & Imagerie",
+    heritage: "Patrimoine & Monuments",
+    pricing: "Tarifs & Prix",
+    about: "À propos",
+    method: "Notre Méthode",
+    allZones: "Toutes nos zones d'intervention",
     expertise: "Notre Expertise",
     sectors: "Secteurs d'intervention",
     portfolio: "Nos Réalisations",
@@ -39,6 +44,11 @@ const FOOTER = {
     thermal: "Thermal Imaging",
     pests: "Pest Emergency",
     aerial: "Aerial Imaging",
+    heritage: "Heritage & Monuments",
+    pricing: "Pricing",
+    about: "About Us",
+    method: "Our Method",
+    allZones: "All service areas",
     expertise: "Technology & Fleet",
     sectors: "Sectors",
     portfolio: "Our Portfolio",
@@ -96,6 +106,8 @@ export default function Footer() {
               <li><Link href="/prestations/thermographie" className="hover:text-brand-orange-400 transition-colors">{f.thermal}</Link></li>
               <li><Link href="/prestations/nuisibles" className="hover:text-brand-orange-400 transition-colors">{f.pests}</Link></li>
               <li><Link href="/prestations/prises-de-vues" className="hover:text-brand-orange-400 transition-colors">{f.aerial}</Link></li>
+              <li><Link href="/prestations/patrimoine" className="hover:text-brand-orange-400 transition-colors">{f.heritage}</Link></li>
+              <li><Link href="/tarifs" className="hover:text-brand-orange-400 transition-colors font-semibold">→ {f.pricing}</Link></li>
             </ul>
           </div>
 
@@ -103,6 +115,8 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-bold mb-6 uppercase tracking-wider text-sm">{f.col3}</h4>
             <ul className="space-y-3 text-sm">
+              <li><Link href="/a-propos" className="hover:text-brand-orange-400 transition-colors">{f.about}</Link></li>
+              <li><Link href="/methode" className="hover:text-brand-orange-400 transition-colors">{f.method}</Link></li>
               <li><Link href="/expertise" className="hover:text-brand-orange-400 transition-colors">{f.expertise}</Link></li>
               <li><Link href="/domaines" className="hover:text-brand-orange-400 transition-colors">{f.sectors}</Link></li>
               <li><Link href="/realisations" className="hover:text-brand-orange-400 transition-colors">{f.portfolio}</Link></li>
@@ -122,6 +136,7 @@ export default function Footer() {
               <li><Link href="/intervention/paris" className="flex items-center gap-1 hover:text-brand-orange-400 transition-colors"><ChevronRight className="w-3 h-3" /> Paris</Link></li>
               <li><Link href="/intervention/lyon" className="flex items-center gap-1 hover:text-brand-orange-400 transition-colors"><ChevronRight className="w-3 h-3" /> Lyon</Link></li>
               <li><Link href="/intervention/toulouse" className="flex items-center gap-1 hover:text-brand-orange-400 transition-colors"><ChevronRight className="w-3 h-3" /> Toulouse</Link></li>
+              <li><Link href="/zone-intervention" className="flex items-center gap-1 hover:text-brand-orange-400 transition-colors font-semibold text-slate-300"><ChevronRight className="w-3 h-3 text-brand-orange-500" /> {f.allZones}</Link></li>
               <li><span className="flex items-center gap-1 text-white font-bold mt-2"><ChevronRight className="w-3 h-3 text-brand-orange-500" /> {f.europe}</span></li>
             </ul>
           </div>

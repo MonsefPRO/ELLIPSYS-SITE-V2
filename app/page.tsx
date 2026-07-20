@@ -14,8 +14,8 @@ import {
 import { getLang } from "../lib/getLang";
 
 export const metadata: Metadata = {
-  title: "Nettoyage, Inspection et Maintenance par Drone et Robot en Europe",
-  description: "Solutions de maintenance par drones et robots partout en Europe : nettoyage de panneaux solaires, toitures, facades, thermographie, destruction de nuisibles et imagerie.",
+  title: "Nettoyage panneaux solaires & toitures par drone",
+  description: "Nettoyage de panneaux solaires, toitures et façades par drone et robot. Récupérez jusqu'à +30% de rendement. Sans échafaudage. Devis gratuit 24h ☎ 04 67 20 97 09.",
   alternates: {
     canonical: "https://ellipsys-solutions.com",
   },
