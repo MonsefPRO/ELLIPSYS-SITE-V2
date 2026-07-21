@@ -125,14 +125,14 @@ export default async function RealisationsPage() {
             </div>
           </div>
 
-          {/* PROJECT 3 : NETTOYAGE CENTRALES SOLAIRES MONTCHANIN & VITRY */}
+          {/* PROJECT 3 : NETTOYAGE CENTRALE SOLAIRE MONTCHANIN */}
           <div className="bg-white rounded-[2rem] overflow-hidden shadow-xl border border-slate-100">
             <div className="relative h-52 md:h-64">
-              <div className="absolute inset-0 bg-[url('/images/avant-apres-panneaux.jpg')] bg-cover bg-center"></div>
+              <div className="absolute inset-0 bg-[url('/images/avant-apres-montchanin.jpg')] bg-cover bg-center"></div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
               <div className="absolute top-3 left-3 flex gap-2">
-                <span className="bg-emerald-500 text-white px-3 py-1 rounded-full text-xs font-black tracking-widest shadow-md">{isEn ? "AFTER" : "APRÈS"}</span>
                 <span className="bg-red-600 text-white px-3 py-1 rounded-full text-xs font-black tracking-widest shadow-md">{isEn ? "BEFORE" : "AVANT"}</span>
+                <span className="bg-emerald-500 text-white px-3 py-1 rounded-full text-xs font-black tracking-widest shadow-md">{isEn ? "AFTER" : "APRÈS"}</span>
               </div>
               <div className="absolute bottom-3 right-3">
                 <span className="bg-black/50 text-white px-2 py-1 rounded-lg text-xs font-semibold backdrop-blur-sm">{isEn ? "Real photo — Ellipsys project" : "Photo réelle — Chantier Ellipsys"}</span>
@@ -141,15 +141,15 @@ export default async function RealisationsPage() {
             <div className="p-6 md:p-8">
               <div className="flex items-center gap-3 mb-4">
                 <Sun className="w-7 h-7 text-brand-orange-500 shrink-0" />
-                <h2 className="text-xl font-bold text-[#0e2f52]">{isEn ? "Solar Farm Cleaning — Montchanin & Vitry" : "Nettoyage de Centrales Solaires — Montchanin & Vitry"}</h2>
+                <h2 className="text-xl font-bold text-[#0e2f52]">{isEn ? "Solar Farm Cleaning — Montchanin" : "Nettoyage de Centrale Solaire — Montchanin"}</h2>
               </div>
               <div className="flex flex-wrap gap-4 mb-6 pb-6 border-b border-slate-100 text-sm">
-                <div className="flex items-center gap-2 text-slate-600"><MapPin className="w-4 h-4 text-slate-400" /> Montchanin & Vitry (71)</div>
-                <div className="flex items-center gap-2 text-slate-600"><Clock className="w-4 h-4 text-slate-400" /> {isEn ? "2 Sites" : "2 Sites"}</div>
+                <div className="flex items-center gap-2 text-slate-600"><MapPin className="w-4 h-4 text-slate-400" /> Montchanin (71)</div>
+                <div className="flex items-center gap-2 text-slate-600"><Clock className="w-4 h-4 text-slate-400" /> 22 000 m²</div>
                 <div className="flex items-center gap-2 text-slate-600"><Target className="w-4 h-4 text-slate-400" /> {isEn ? "Robot Ellipsys + Osmosed Water" : "Robot Ellipsys + Eau Osmosée"}</div>
               </div>
               <p className="text-sm text-slate-600 leading-relaxed mb-6">
-                <strong>{isEn ? "The challenge:" : "Le défi :"}</strong> {isEn ? "Two ground-mounted solar farms soiled by pollen, dust and organic deposits — production losses building up with every sunny day." : "Deux centrales photovoltaïques au sol encrassées par le pollen, les poussières et les dépôts organiques — des pertes de production qui s'accumulent à chaque journée d'ensoleillement."}<br /><br />
+                <strong>{isEn ? "The challenge:" : "Le défi :"}</strong> {isEn ? "A 22,000 m² ground-mounted solar farm soiled by pollen, dust and organic deposits — production losses building up with every sunny day." : "Une centrale photovoltaïque au sol de 22 000 m² encrassée par le pollen, les poussières et les dépôts organiques — des pertes de production qui s'accumulent à chaque journée d'ensoleillement."}<br /><br />
                 <strong>{isEn ? "Our approach:" : "Notre action :"}</strong> {isEn ? <>Deployment of our <strong>remote-controlled robot</strong> (soft rotary brushes, <strong>osmosed water</strong>) across the arrays. Uniform cleaning, no micro-scratches, zero work at height. The before/after above speaks for itself: panels back to their rated efficiency.</> : <>Déploiement de notre <strong>robot télécommandé</strong> (brosses rotatives souples, <strong>eau osmosée</strong>) sur les rangées de panneaux. Nettoyage homogène, sans micro-rayures, zéro travail en hauteur. L&apos;avant/après ci-dessus parle de lui-même : des panneaux qui retrouvent leur rendement nominal.</>}
               </p>
               <Link href="/prestations/nettoyage-solaire" className="inline-flex items-center gap-2 font-bold text-brand-orange-500 hover:gap-4 transition-all text-sm mt-4">
@@ -158,7 +158,7 @@ export default async function RealisationsPage() {
             </div>
           </div>
 
-          {/* PROJECT 4 : VUE AÉRIENNE CENTRALE */}
+          {/* PROJECT 4 : NETTOYAGE CENTRALE SOLAIRE VITRY */}
           <div className="bg-white rounded-[2rem] overflow-hidden shadow-xl border border-slate-100">
             <div className="relative h-52 md:h-64">
               <div className="absolute inset-0 bg-[url('/images/robot-vue-aerienne.jpg')] bg-cover bg-center"></div>
@@ -173,14 +173,16 @@ export default async function RealisationsPage() {
             <div className="p-6 md:p-8">
               <div className="flex items-center gap-3 mb-4">
                 <Sun className="w-7 h-7 text-brand-orange-500 shrink-0" />
-                <h2 className="text-xl font-bold text-[#0e2f52]">{isEn ? "The Scale of the Job — Aerial Survey" : "L'Ampleur du Chantier — Repérage Aérien"}</h2>
+                <h2 className="text-xl font-bold text-[#0e2f52]">{isEn ? "Solar Farm Cleaning — Vitry" : "Nettoyage de Centrale Solaire — Vitry"}</h2>
               </div>
               <div className="flex flex-wrap gap-4 mb-6 pb-6 border-b border-slate-100 text-sm">
-                <div className="flex items-center gap-2 text-slate-600"><MapPin className="w-4 h-4 text-slate-400" /> {isEn ? "Ground-mounted farm" : "Centrale au sol"}</div>
+                <div className="flex items-center gap-2 text-slate-600"><MapPin className="w-4 h-4 text-slate-400" /> Vitry (71)</div>
+                <div className="flex items-center gap-2 text-slate-600"><Clock className="w-4 h-4 text-slate-400" /> 31 000 m²</div>
                 <div className="flex items-center gap-2 text-slate-600"><Target className="w-4 h-4 text-slate-400" /> {isEn ? "Drone Survey + Robot" : "Repérage Drone + Robot"}</div>
               </div>
               <p className="text-sm text-slate-600 leading-relaxed mb-6">
-                <strong>{isEn ? "Our method:" : "Notre méthode :"}</strong> {isEn ? <>Before every large-scale intervention, an <strong>aerial survey</strong> maps the site: access, row spacing, sensitive areas. Our robot then covers up to <strong>2,500 m² per hour</strong> — the equivalent of 2 MWc cleaned in a single day.</> : <>Avant chaque intervention d&apos;envergure, un <strong>repérage aérien</strong> cartographie le site : accès, espacement des rangées, zones sensibles. Notre robot couvre ensuite jusqu&apos;à <strong>2 500 m² par heure</strong> — l&apos;équivalent de 2 MWc nettoyés en une seule journée.</>}
+                <strong>{isEn ? "The challenge:" : "Le défi :"}</strong> {isEn ? "A 31,000 m² ground-mounted solar farm — over 3 hectares of panels to restore without disrupting production." : "Une centrale photovoltaïque au sol de 31 000 m² — plus de 3 hectares de panneaux à restaurer sans perturber la production."}<br /><br />
+                <strong>{isEn ? "Our approach:" : "Notre action :"}</strong> {isEn ? <>An <strong>aerial survey</strong> first maps the site: access, row spacing, sensitive areas (drone view above). Our robot then covers up to <strong>2,500 m² per hour</strong> — the equivalent of 2 MWc cleaned in a single day.</> : <>Un <strong>repérage aérien</strong> cartographie d&apos;abord le site : accès, espacement des rangées, zones sensibles (vue drone ci-dessus). Notre robot couvre ensuite jusqu&apos;à <strong>2 500 m² par heure</strong> — l&apos;équivalent de 2 MWc nettoyés en une seule journée.</>}
               </p>
               <Link href="/nettoyage-panneaux-photovoltaiques" className="inline-flex items-center gap-2 font-bold text-brand-orange-500 hover:gap-4 transition-all text-sm mt-4">
                 {isEn ? "Our offer for PV farm operators" : "Notre offre exploitants de centrales PV"} <ChevronRight className="w-4 h-4" />
