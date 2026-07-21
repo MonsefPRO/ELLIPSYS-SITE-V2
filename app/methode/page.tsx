@@ -81,12 +81,12 @@ export default async function MethodeGarantiesPage() {
                 {(isEn ? [
                   { label: "Building height", desc: "Aerial drone above 12-15 m" },
                   { label: "Surface fragility", desc: "Telescopic poles on fragile slates" },
-                  { label: "Roof slope", desc: "Ground robot <35%, drone beyond" },
+                  { label: "Roof slope", desc: "Ground robot up to 25°, drone beyond" },
                   { label: "Surface area", desc: "Drone for >500 m², poles for finishing" },
                 ] : [
                   { label: "Hauteur du bâtiment", desc: "Drone aérien au-delà de 12-15m" },
                   { label: "Fragilité du support", desc: "Perches télescopiques sur ardoises fragiles" },
-                  { label: "Pente de la toiture", desc: "Robot terrestre < 35%, drone au-delà" },
+                  { label: "Pente de la toiture", desc: "Robot terrestre jusqu'à 25°, drone au-delà" },
                   { label: "Surface à traiter", desc: "Drone pour > 500m2, perches pour finitions" },
                 ]).map((item, i) => (
                   <div key={i} className="flex items-start justify-between gap-4 py-3 border-b border-slate-200 last:border-0">

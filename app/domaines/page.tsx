@@ -41,7 +41,7 @@ export default async function DomainesPage() {
       icon: Sun,
       href: "/secteurs/energie-solaire",
       title: isEn ? "Solar Energy Operators" : "Acteurs de l'Energie Solaire",
-      desc: isEn ? <>Soiling mathematically reduces your revenue. We provide regular monitoring and hybrid <strong>solar cleaning</strong> via our <strong>Robot Rony</strong> (for ground-mounted arrays) and aerial drones (for large rooftops). A direct solution to secure and sustain your return on investment.</> : <>L&apos;encrassement réduit mathématiquement vos revenus. Nous assurons un suivi régulier et un <strong>nettoyage solaire</strong> hybride via nos <strong>Robot Rony</strong> (pour les parcs au sol) et nos drones aériens (pour les grandes toitures). Une solution directe pour sécuriser et pérenniser votre retour sur investissement.</>,
+      desc: isEn ? <>Soiling mathematically reduces your revenue. We provide regular monitoring and hybrid <strong>solar cleaning</strong> via our <strong>ground robot</strong> (for ground-mounted arrays) and aerial drones (for large rooftops). A direct solution to secure and sustain your return on investment.</> : <>L&apos;encrassement réduit mathématiquement vos revenus. Nous assurons un suivi régulier et un <strong>nettoyage solaire</strong> hybride via notre <strong>robot terrestre</strong> (pour les parcs au sol) et nos drones aériens (pour les grandes toitures). Une solution directe pour sécuriser et pérenniser votre retour sur investissement.</>,
       img: "/images/solairebanner.png",
     },
     {

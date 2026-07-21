@@ -15,16 +15,16 @@ export default async function ExpertisePage() {
   const machines = [
     {
       category: isEn ? "Ground Robotics" : "Robotique Terrestre",
-      name: "Robot Rony",
+      name: "Robot Ellipsys",
       tagline: isEn
-        ? "The solar maintenance specialist. Engineered to operate on fragile glazed surfaces with zero risk of micro-scratching."
-        : "Le spécialiste de la maintenance solaire. Conçu pour intervenir sur surfaces vitrées fragiles sans risque de micro-rayures.",
+        ? "The solar maintenance specialist. Remote-controlled, engineered to operate on fragile glazed surfaces with zero risk of micro-scratching — dry or pure-water cleaning."
+        : "Le spécialiste de la maintenance solaire. Télécommandé, conçu pour intervenir sur surfaces vitrées fragiles sans risque de micro-rayures — nettoyage à sec ou à l'eau pure.",
       img: "/images/robot rony.jpg",
       video: "/videos/Rony.mp4",
       specs: [
-        { label: isEn ? "Weight" : "Poids", value: "7 kg" },
-        { label: isEn ? "Output" : "Rendement", value: "500 m²/h" },
-        { label: isEn ? "Max slope" : "Pente max", value: "35 %" },
+        { label: isEn ? "Output" : "Rendement", value: "2 500 m²/h" },
+        { label: isEn ? "Max slope" : "Pente max", value: "25°" },
+        { label: isEn ? "Brush width" : "Largeur de brosse", value: "1,20 m" },
         { label: isEn ? "Osmosed water" : "Eau osmosée", value: "0.5–2 L/m²" },
       ],
       accentColor: "from-emerald-600 to-teal-700",

@@ -126,7 +126,7 @@ export const blogPosts: BlogPost[] = [
 <p>C'est la clé de notre méthode. L'eau du robinet contient des minéraux (calcaire, magnésium...) qui laissent des dépôts blancs en séchant sur vos panneaux. L'eau osmosée est purifiée à 99,9 %, ce qui garantit un séchage sans résidu. Résultat : une surface parfaitement transparente, sans auréoles.</p>
 
 <h3>3. Brossage doux basse pression</h3>
-<p>Nous utilisons des brosses rotatives à poils doux montées sur perches télescopiques ou sur notre robot terrestre Rony. Aucune rayure, aucune pression excessive sur les cellules photovoltaïques.</p>
+<p>Nous utilisons des brosses rotatives à poils doux montées sur perches télescopiques ou sur notre robot terrestre. Aucune rayure, aucune pression excessive sur les cellules photovoltaïques.</p>
 
 <h3>4. Rinçage final et contrôle visuel</h3>
 <p>Un dernier rinçage à l'eau osmosée et un contrôle visuel systématique par notre technicien clôturent l'intervention.</p>

@@ -170,12 +170,12 @@ export default function NettoyagePanneauxPhotovoltaiques() {
 
             <div className="border border-slate-200 rounded-2xl overflow-hidden">
               <div className="relative h-48 bg-slate-100">
-                <Image src="/images/robot rony.jpg" alt="Robot Rony nettoyage panneaux solaires" fill className="object-cover" />
+                <Image src="/images/robot rony.jpg" alt="Robot Ellipsys nettoyage panneaux solaires" fill className="object-cover" />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-black text-slate-900 mb-2">🤖 Robot pour les surfaces</h3>
                 <p className="text-slate-600 text-sm leading-relaxed">
-                  Centrales au sol, parkings ombrières. Robot Rony avec brossage motorisé. 500 m²/h, traçabilité GPS, cadence constante sans intervention humaine en hauteur.
+                  Centrales au sol, parkings ombrières. Robot Ellipsys télécommandé avec brossage motorisé. Jusqu&apos;à 2 500 m²/h (≈ 2 MWc/jour), traçabilité GPS, cadence constante sans intervention humaine en hauteur.
                 </p>
               </div>
             </div>
@@ -275,7 +275,7 @@ export default function NettoyagePanneauxPhotovoltaiques() {
               <p className="text-xs font-bold uppercase tracking-widest text-slate-500 mb-2">Ombrières parking</p>
               <h3 className="text-2xl font-black text-slate-900 mb-3">Intervention robot</h3>
               <p className="text-slate-600 text-sm leading-relaxed mb-4">
-                GMS, parkings entreprises, parkings publics. Robot Rony pour cadence constante. Coordination horaires d&apos;ouverture.
+                GMS, parkings entreprises, parkings publics. Robot Ellipsys pour cadence constante. Coordination horaires d&apos;ouverture.
               </p>
               <p className="text-slate-500 text-xs italic">Pour 200-2000 m² de surface</p>
             </div>

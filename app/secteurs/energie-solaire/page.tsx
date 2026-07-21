@@ -7,7 +7,7 @@ import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
   title: "Maintenance Parcs Solaires : Nettoyage Robot & Drone pour Acteurs du Solaire",
-  description: "Solution hybride Robot Rony + Drone Chronos pour la maintenance de parcs photovoltaïques. 500 m2/h, pentes 35%, eau osmosée. Gain de rendement mesurable.",
+  description: "Solution hybride robot + drone pour la maintenance de parcs photovoltaïques. Jusqu'à 2 500 m²/h (≈ 2 MWc/jour), pentes 25°, eau osmosée. Gain de rendement mesurable.",
 };
 
 const PX = "?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
@@ -21,22 +21,22 @@ export default async function SolaireSecteurPage() {
   const isEn = lang === "en";
 
   const stats = [
-    { value: "500 m²/h", label: isEn ? "Robot Rony throughput" : "Cadence du Robot Rony" },
+    { value: "2 500 m²/h", label: isEn ? "Our robot's throughput" : "Cadence de notre robot" },
     { value: "4–30 %",   label: isEn ? "Output loss without maintenance" : "Perte de rendement sans entretien" },
-    { value: "35 %",     label: isEn ? "Maximum treatable slope" : "Pente maximale traitable" },
+    { value: "25°",      label: isEn ? "Maximum treatable slope" : "Pente maximale traitable" },
     { value: "÷ 10",     label: isEn ? "Water vs manual method" : "Eau consommée vs méthode manuelle" },
   ];
 
   const features = [
     {
       icon: Sun, color: "text-amber-500", bg: "bg-amber-50",
-      title: "500 m²/h",
-      desc: isEn ? "Robot Rony cleaning throughput on flat terrain. Our ground robot cleans up to five times faster than a manual team." : "Cadence de nettoyage du Robot Rony sur terrain plat. Notre robot terrestre nettoie jusqu'à cinq fois plus vite qu'une équipe manuelle.",
+      title: "2 500 m²/h",
+      desc: isEn ? "Our robot's cleaning throughput on flat terrain — around 2 MWc per day. It cleans up to twenty times faster than a manual team." : "Cadence de nettoyage de notre robot sur terrain plat — environ 2 MWc par jour. Il nettoie jusqu'à vingt fois plus vite qu'une équipe manuelle.",
     },
     {
       icon: Zap, color: "text-brand-orange-500", bg: "bg-brand-orange-50",
-      title: isEn ? "Slopes up to 35%" : "Pentes jusqu'à 35%",
-      desc: isEn ? "Automatic adaptation to terrain configurations. Robot Rony automatically adapts to the inclines of the vast majority of existing solar arrays." : "Adaptation automatique aux configurations de terrain. Le Robot Rony s'adapte automatiquement aux inclinaisons de la quasi-totalité des parcs solaires.",
+      title: isEn ? "Slopes up to 25°" : "Pentes jusqu'à 25°",
+      desc: isEn ? "Automatic adaptation to terrain configurations. Our robot adapts to the inclines of the vast majority of existing solar arrays." : "Adaptation automatique aux configurations de terrain. Notre robot s'adapte aux inclinaisons de la quasi-totalité des parcs solaires.",
     },
     {
       icon: CheckCircle2, color: "text-blue-500", bg: "bg-blue-50",
@@ -52,12 +52,12 @@ export default async function SolaireSecteurPage() {
 
   const avantages = [
     {
-      title: isEn ? "500 m²/h — 5× faster than manual cleaning" : "500 m²/h — cadence 5× supérieure au nettoyage manuel",
-      desc: isEn ? "Our Robot Rony (7 kg, soft rotary brushes, osmosed water) cleans up to 500 m² per hour on slopes up to 35%. For fragmented, inaccessible surfaces or fragile roofing, our Drone Chronos takes over with homogeneous aerial spraying." : "Notre Robot Rony (7 kg, brosses rotatives souples, eau osmosée) nettoie jusqu'à 500 m² par heure sur des pentes allant jusqu'à 35%. Pour les surfaces fragmentées, inaccessibles ou les toitures fragiles, notre drone Chronos prend le relais avec une pulvérisation aérienne homogène.",
+      title: isEn ? "2,500 m²/h — 20× faster than manual cleaning" : "2 500 m²/h — cadence 20× supérieure au nettoyage manuel",
+      desc: isEn ? "Our remote-controlled robot (1.2 m soft rotary brushes, dry or osmosed-water cleaning) covers up to 2,500 m² per hour — around 2 MWc per day — on slopes up to 25°. For fragmented, inaccessible surfaces or fragile roofing, our Drone Chronos takes over with homogeneous aerial spraying." : "Notre robot télécommandé (brosses rotatives souples de 1,20 m, nettoyage à sec ou à l'eau osmosée) couvre jusqu'à 2 500 m² par heure — environ 2 MWc par jour — sur des pentes allant jusqu'à 25°. Pour les surfaces fragmentées, inaccessibles ou les toitures fragiles, notre drone Chronos prend le relais avec une pulvérisation aérienne homogène.",
     },
     {
-      title: isEn ? "Slopes up to 35% — automatic terrain adaptation" : "Pentes jusqu'a 35% — adaptation automatique au terrain",
-      desc: isEn ? "Automatic adaptation to terrain configurations. Robot Rony automatically adapts to inclines of up to 35%, covering virtually all existing solar arrays without any manual intervention on the machine." : "Adaptation automatique aux configurations de terrain. Le Robot Rony s'adapte automatiquement aux inclinaisons jusqu'à 35%, couvrant la quasi-totalité des parcs solaires existants sans aucune intervention manuelle sur la machine.",
+      title: isEn ? "Slopes up to 25° — automatic terrain adaptation" : "Pentes jusqu'à 25° — adaptation automatique au terrain",
+      desc: isEn ? "Automatic adaptation to terrain configurations. Our robot adapts to inclines of up to 25° and crosses gaps of up to 70 cm between tables, covering virtually all existing solar arrays." : "Adaptation automatique aux configurations de terrain. Notre robot s'adapte aux inclinaisons jusqu'à 25° et franchit des écarts jusqu'à 70 cm entre les tables, couvrant la quasi-totalité des parcs solaires existants.",
     },
     {
       title: isEn ? "Osmosed water — 10× water savings vs conventional cleaning" : "Eau osmosée — sobriété hydrique × 10 vs nettoyage classique",
@@ -106,7 +106,7 @@ export default async function SolaireSecteurPage() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <div className="absolute top-5 left-5">
                 <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-amber-500/20 border border-amber-400/40 text-amber-200 text-xs font-bold backdrop-blur-sm">
-                  Robot Rony · Drone Chronos · {isEn ? "Osmosed water" : "Eau osmosée"}
+                  Robot Ellipsys · Drone Chronos · {isEn ? "Osmosed water" : "Eau osmosée"}
                 </span>
               </div>
               <div className="absolute bottom-5 left-5 right-5">
@@ -175,12 +175,12 @@ export default async function SolaireSecteurPage() {
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div className="space-y-4">
               <h3 className="text-xl font-bold text-slate-900 flex items-center gap-3">
-                <Sun className="w-6 h-6 text-amber-500" /> {isEn ? "Hybrid solution: Robot Rony + Drone Chronos" : "Solution hybride Robot Rony + Drone Chronos"}
+                <Sun className="w-6 h-6 text-amber-500" /> {isEn ? "Hybrid solution: ground robot + Drone Chronos" : "Solution hybride robot terrestre + drone Chronos"}
               </h3>
               <p className="text-slate-600 leading-relaxed text-sm">
                 {isEn
-                  ? <>Our <strong>Robot Rony</strong> (7 kg, soft rotary brushes, <strong>osmosed water</strong>) cleans up to <strong>500 m² per hour</strong> on slopes up to 35%. For fragmented, inaccessible surfaces or fragile roofing, our <strong>Drone Chronos</strong> takes over with homogeneous aerial spraying.</>
-                  : <>Notre <strong>Robot Rony</strong> (7 kg, brosses rotatives souples, <strong>eau osmosée</strong>) nettoie jusqu&apos;à <strong>500 m² par heure</strong> sur des pentes allant jusqu&apos;à 35%. Pour les surfaces fragmentées, inaccessibles ou les toitures fragiles, notre <strong>drone Chronos</strong> prend le relais avec une pulvérisation aérienne homogène.</>}
+                  ? <>Our <strong>remote-controlled robot</strong> (1.2 m soft rotary brushes, dry or <strong>osmosed water</strong> cleaning) covers up to <strong>2,500 m² per hour</strong> — around 2 MWc per day — on slopes up to 25°. For fragmented, inaccessible surfaces or fragile roofing, our <strong>Drone Chronos</strong> takes over with homogeneous aerial spraying.</>
+                  : <>Notre <strong>robot télécommandé</strong> (brosses rotatives souples de 1,20 m, nettoyage à sec ou à l&apos;<strong>eau osmosée</strong>) couvre jusqu&apos;à <strong>2 500 m² par heure</strong> — environ 2 MWc par jour — sur des pentes allant jusqu&apos;à 25°. Pour les surfaces fragmentées, inaccessibles ou les toitures fragiles, notre <strong>drone Chronos</strong> prend le relais avec une pulvérisation aérienne homogène.</>}
               </p>
               <div className="p-4 bg-slate-100 rounded-2xl flex items-start gap-3">
                 <AlertCircle className="w-4 h-4 text-slate-500 shrink-0 mt-0.5" />

@@ -327,7 +327,7 @@ export default async function HomePage() {
         name: "Quelle est la différence entre nettoyage par drone et par robot ?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Le drone est idéal pour les hauteurs et les accès difficiles (toitures industrielles, ombrières, façades en hauteur). Le robot terrestre (Rony) est conçu pour les grandes surfaces planes : centrales photovoltaïques au sol, parkings ombrières, toitures industrielles plates. Nous choisissons l'outil le mieux adapté à votre installation lors du diagnostic préalable.",
+          text: "Le drone est idéal pour les hauteurs et les accès difficiles (toitures industrielles, ombrières, façades en hauteur). Notre robot terrestre est conçu pour les grandes surfaces planes : centrales photovoltaïques au sol, parkings ombrières, toitures industrielles plates. Nous choisissons l'outil le mieux adapté à votre installation lors du diagnostic préalable.",
         },
       },
       {
@@ -335,7 +335,7 @@ export default async function HomePage() {
         name: "Combien de temps dure une intervention de nettoyage par drone ?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Pour une toiture résidentielle classique (100-150 m²), comptez 1 à 3 heures. Pour une centrale photovoltaïque, le robot Rony traite environ 500 m²/heure. Un devis détaillé précise toujours la durée estimée. La planification tient compte des autorisations DGAC et de la météo.",
+          text: "Pour une toiture résidentielle classique (100-150 m²), comptez 1 à 3 heures. Pour une centrale photovoltaïque, notre robot traite jusqu'à 2 500 m²/heure, soit environ 2 MWc par jour. Un devis détaillé précise toujours la durée estimée. La planification tient compte des autorisations DGAC et de la météo.",
         },
       },
     ],
