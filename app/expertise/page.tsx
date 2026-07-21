@@ -19,8 +19,8 @@ export default async function ExpertisePage() {
       tagline: isEn
         ? "The solar maintenance specialist. Remote-controlled, engineered to operate on fragile glazed surfaces with zero risk of micro-scratching — dry or pure-water cleaning."
         : "Le spécialiste de la maintenance solaire. Télécommandé, conçu pour intervenir sur surfaces vitrées fragiles sans risque de micro-rayures — nettoyage à sec ou à l'eau pure.",
-      img: "/images/robot rony.jpg",
-      video: "/videos/Rony.mp4",
+      img: "/images/robot-produit.jpg",
+      video: "/videos/robot-action.mp4",
       specs: [
         { label: isEn ? "Output" : "Rendement", value: "2 500 m²/h" },
         { label: isEn ? "Max slope" : "Pente max", value: "25°" },

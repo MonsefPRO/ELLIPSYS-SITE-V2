@@ -3,14 +3,14 @@ import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 
 const IMAGES: { src: string; alt: string }[] = [
-  { src: "/rony.jpg", alt: "Robot Ellipsys nettoyant des panneaux solaires photovoltaïques" },
+  { src: "/images/robot-centrale-sol.jpg", alt: "Robot Ellipsys nettoyant des panneaux solaires sur une centrale photovoltaïque" },
   { src: "/ares.png", alt: "Drone Ellipsys en intervention de nettoyage sans échafaudage" },
+  { src: "/images/robot-vue-aerienne.jpg", alt: "Vue aérienne d'une centrale solaire entretenue par Ellipsys Solutions" },
   { src: "/abateur_de_frelons.png", alt: "Drone Ellipsys détruisant un nid de frelons asiatiques en hauteur" },
-  { src: "/rony2.jpg", alt: "Robot de nettoyage de panneaux solaires sur centrale photovoltaïque" },
+  { src: "/images/robot-produit.jpg", alt: "Robot de nettoyage de panneaux solaires Ellipsys en action" },
   { src: "/chronos.jpg", alt: "Drone Ellipsys nettoyant une façade par pulvérisation d'eau osmosée" },
-  { src: "/rony4.jpg", alt: "Nettoyage robotisé de panneaux solaires par Ellipsys Solutions" },
+  { src: "/images/robot-brosse-action.jpg", alt: "Brosse rotative du robot Ellipsys évacuant la saleté des panneaux solaires" },
   { src: "/chronos2.jpg", alt: "Drone Ellipsys en démoussage de toiture sans nacelle" },
-  { src: "/rony5.jpg", alt: "Robot Ellipsys restaurant le rendement de panneaux photovoltaïques" },
 ];
 
 export const HeroCarousel = () => {

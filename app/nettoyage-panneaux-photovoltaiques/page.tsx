@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     title: "Nettoyage de Centrales Photovoltaïques — Drone + Robot + Eau Osmosée",
     description: "Restauration de production garantie pour exploitants et asset managers. Audit soiling gratuit sur votre centrale. France entière.",
     url: "https://ellipsys-solutions.com/nettoyage-panneaux-photovoltaiques",
-    images: ["/images/avant-apres-solaire.png"],
+    images: ["/images/avant-apres-panneaux.jpg"],
   },
   alternates: {
     canonical: "https://ellipsys-solutions.com/nettoyage-panneaux-photovoltaiques",
@@ -70,7 +70,7 @@ export default function NettoyagePanneauxPhotovoltaiques() {
       <section className="relative bg-gradient-to-br from-[#0e2f52] via-[#1e3a5f] to-[#0e2f52] text-white py-24 px-4 overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <Image
-            src="/images/avant-apres-solaire.png"
+            src="/images/avant-apres-panneaux.jpg"
             alt="Avant après nettoyage panneaux solaires"
             fill
             priority
@@ -170,7 +170,7 @@ export default function NettoyagePanneauxPhotovoltaiques() {
 
             <div className="border border-slate-200 rounded-2xl overflow-hidden">
               <div className="relative h-48 bg-slate-100">
-                <Image src="/images/robot rony.jpg" alt="Robot Ellipsys nettoyage panneaux solaires" fill className="object-cover" />
+                <Image src="/images/robot-centrale-sol.jpg" alt="Robot Ellipsys nettoyage panneaux solaires" fill className="object-cover" />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-black text-slate-900 mb-2">🤖 Robot pour les surfaces</h3>
