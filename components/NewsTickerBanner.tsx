@@ -7,6 +7,12 @@ import { ArrowRight, MapPin, Zap } from "lucide-react";
 const news = [
   {
     tag: "Nouveau Chantier",
+    location: "Montchanin & Vitry (71)",
+    text: "Nettoyage de Centrales Solaires — Avant/Après",
+    href: "/realisations",
+  },
+  {
+    tag: "Réalisation",
     location: "Aimargues (30)",
     text: "Démoussage de Toiture — Résultat Avant/Après",
     href: "/realisations",
