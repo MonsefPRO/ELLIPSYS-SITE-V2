@@ -47,19 +47,19 @@ export default async function ValeursPage() {
       title: isEn ? "CARE" : "BIENVEILLANCE",
       subtitle: isEn ? "Corporate Social Responsibility (CSR)" : "Responsabilité Sociétale des Entreprises (RSE)",
       tagline: isEn ? "A Corporate Social Responsibility (CSR) approach." : "Une démarche de Responsabilité Sociétale des Entreprises (RSE).",
-      body: isEn ? <>Ellipsys Solutions is committed to a CSR approach founded on the 16 framework principles of the United Nations. We apply our ethical charter daily: environmental protection (biodegradable products, <strong>osmosed water</strong>), ensuring a healthy working environment, and preventing all forms of corruption (<strong>Sapin 2 law</strong>) in our professional relationships.</> : <>Ellipsys Solutions s&apos;engage dans une démarche RSE fondée sur les 16 principes-cadres des Nations Unies. Nous appliquons au quotidien notre charte éthique : protection de l&apos;environnement (produits biodégradables, <strong>eau osmosée</strong>), garantie d&apos;un cadre de travail sain, et prévention de toute forme de corruption (<strong>loi Sapin 2</strong>) dans nos relations professionnelles.</>,
+      body: isEn ? <>Ellipsys Solutions is committed to a structured CSR approach aligned with recognised international principles. We apply our ethical charter daily: environmental protection (biodegradable products, <strong>osmosed water</strong>), ensuring a healthy working environment, and preventing all forms of corruption (<strong>Sapin 2 law</strong>) in our professional relationships.</> : <>Ellipsys Solutions s&apos;engage dans une démarche RSE structurée, alignée sur les grands principes internationaux reconnus. Nous appliquons au quotidien notre charte éthique : protection de l&apos;environnement (produits biodégradables, <strong>eau osmosée</strong>), garantie d&apos;un cadre de travail sain, et prévention de toute forme de corruption (<strong>loi Sapin 2</strong>) dans nos relations professionnelles.</>,
     },
   ];
 
   const engagements = isEn ? [
     { label: "CARSAT", desc: "Safety compliance" },
     { label: "INRS", desc: "Risk prevention" },
-    { label: "CSR", desc: "United Nations" },
+    { label: "CSR", desc: "Ethical charter" },
     { label: "Sapin 2", desc: "Anti-corruption" },
   ] : [
     { label: "CARSAT", desc: "Conformité sécurité" },
     { label: "INRS", desc: "Prévention des risques" },
-    { label: "RSE", desc: "Nations Unies" },
+    { label: "RSE", desc: "Charte éthique" },
     { label: "Sapin 2", desc: "Anti-corruption" },
   ];
 
@@ -148,11 +148,11 @@ export default async function ValeursPage() {
 
                     <p>{isEn ? <>{`Is it just a trendy word? `}<strong>Absolutely not.</strong>{` For us, it is a measurable, structured commitment aligned with the highest international standards.`}</> : <>Est-ce juste un mot à la mode ? <strong>Absolument pas.</strong> Pour nous, c&apos;est un engagement mesurable, structuré et aligné sur les plus hauts standards internationaux.</>}</p>
 
-                    <p>{isEn ? <>To translate this care into concrete actions, we have chosen to align with the <strong>United Nations Global Compact</strong>. We recently submitted our young organisation to their rigorous assessment tool: the <strong>&ldquo;Transformational Governance Tool&rdquo;</strong>.</> : <>Pour traduire cette bienveillance en actes concrets, nous avons fait le choix de nous adosser au <strong>Pacte Mondial des Nations Unies (UN Global Compact)</strong>. Nous avons récemment soumis notre jeune structure à leur outil d&apos;évaluation exigeant : le <strong>&ldquo;Transformational Governance Tool&rdquo;</strong>.</>}</p>
+                    <p>{isEn ? <>To translate this care into concrete actions, we have submitted our young organisation to a <strong>demanding international assessment framework</strong> covering corporate governance and ethics.</> : <>Pour traduire cette bienveillance en actes concrets, nous avons soumis notre jeune structure à un <strong>référentiel international exigeant</strong> d&apos;évaluation de la gouvernance et de l&apos;éthique d&apos;entreprise.</>}</p>
 
                     <div className="bg-emerald-50 border border-emerald-200 rounded-2xl p-5">
-                      <p className="text-xs font-black text-emerald-700 uppercase tracking-widest mb-2">{isEn ? "What is Transformational Governance?" : "Qu'est-ce que la Gouvernance Transformationnelle ?"}</p>
-                      <p className="text-slate-600 text-sm">{isEn ? <>This is a UN-driven approach that pushes companies to go well beyond simple legal or financial compliance. It is about becoming drivers of ethical, inclusive and transparent behaviour. This approach aligns directly with <strong>SDG 16</strong> (Peace, justice and strong institutions).</> : <>C&apos;est une approche portée par l&apos;ONU qui pousse les entreprises à aller bien au-delà de la simple conformité légale ou financière. C&apos;est le fait de devenir des moteurs de comportements éthiques, inclusifs et transparents. Cette démarche s&apos;inscrit directement dans la ligne de l&apos;<strong>ODD 16</strong> (Paix, justice et institutions efficaces).</>}</p>
+                      <p className="text-xs font-black text-emerald-700 uppercase tracking-widest mb-2">{isEn ? "What is exemplary governance?" : "Qu'est-ce qu'une gouvernance exemplaire ?"}</p>
+                      <p className="text-slate-600 text-sm">{isEn ? <>It means going well beyond simple legal or financial compliance: becoming a driver of <strong>ethical, inclusive and transparent</strong> behaviour, at every level of the company.</> : <>C&apos;est aller bien au-delà de la simple conformité légale ou financière : devenir un moteur de comportements <strong>éthiques, inclusifs et transparents</strong>, à tous les niveaux de l&apos;entreprise.</>}</p>
                     </div>
 
                     <p>{isEn ? <>This is exactly our vision of Care: building cutting-edge technology while guaranteeing <strong>irreproachable ethics</strong> and a <strong>positive societal impact</strong>.</> : <>C&apos;est exactement notre vision de la Bienveillance : construire une technologie de pointe tout en garantissant une <strong>éthique irréprochable</strong> et un <strong>impact sociétal positif</strong>.</>}</p>
