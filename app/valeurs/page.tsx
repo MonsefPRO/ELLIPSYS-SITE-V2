@@ -141,14 +141,6 @@ export default async function ValeursPage() {
                       <p className="text-emerald-200 text-xs font-black uppercase tracking-widest mb-1">{isEn ? "Message from the Founder" : "Mot du fondateur"}</p>
                       <h3 className="text-white font-black text-lg">{isEn ? "Care is not a word — it is a measurable commitment" : "La Bienveillance, ce n'est pas un mot — c'est un engagement mesurable"}</h3>
                     </div>
-                    {/* Badge ONU */}
-                    <div className="hidden sm:flex items-center gap-2 bg-white/15 border border-white/25 rounded-xl px-4 py-2 shrink-0 ml-6">
-                      <span className="text-2xl">🌐</span>
-                      <div className="text-left">
-                        <p className="text-white font-black text-xs">UN Global</p>
-                        <p className="text-emerald-200 text-xs">Compact</p>
-                      </div>
-                    </div>
                   </div>
 
                   <div className="p-8 lg:p-10 space-y-4 text-sm text-slate-700 leading-relaxed">
