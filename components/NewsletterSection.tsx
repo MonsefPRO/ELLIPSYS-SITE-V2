@@ -84,15 +84,6 @@ export default function NewsletterSection() {
 
       {/* ── Decorative background ── */}
       <div className="pointer-events-none absolute inset-0 select-none" aria-hidden>
-        {/* Grid pattern */}
-        <svg className="absolute inset-0 h-full w-full opacity-[0.06]" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <pattern id="nl-grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
-              <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" strokeWidth="1"/>
-            </pattern>
-          </defs>
-          <rect width="100%" height="100%" fill="url(#nl-grid)" />
-        </svg>
         {/* Orange glow left */}
         <div className="absolute -left-40 top-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-brand-orange-500/15 blur-[120px]" />
         {/* Darker navy glow right */}

@@ -6,7 +6,6 @@ import { HeroContent } from "../components/HeroContent";
 import { NewsTickerBanner } from "../components/NewsTickerBanner";
 import { FadeUp } from "../components/motion/FadeUp";
 import { StaggerContainer, StaggerItem } from "../components/motion/Stagger";
-import { LeadMagnetBanner } from "../components/LeadMagnetBanner";
 import {
   ChevronRight, Sun, Home, Building2,
   ThermometerSun, Bug, Video, ChevronDown
@@ -355,7 +354,7 @@ export default async function HomePage() {
         <div className="absolute inset-0 z-0">
           <HeroCarousel />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0e2f52]/60 via-[#0e2f52]/40 to-[#0e2f52]/80 z-10" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0e2f52]/40 via-[#0e2f52]/20 to-[#0e2f52]/65 z-10" />
         <HeroContent isEn={isEn} />
         <NewsTickerBanner />
       </section>
@@ -411,7 +410,6 @@ export default async function HomePage() {
           PROCESSUS — stagger gauche à droite
       ══════════════════════════════════════════ */}
       <section className="py-24 bg-[#0e2f52] relative overflow-hidden">
-        <div className="absolute inset-0 opacity-5 bg-[url('/images/Secteur.jpg')] bg-cover bg-center" />
         <div className="container mx-auto px-4 max-w-7xl relative">
 
           <FadeUp className="text-center mb-16">
@@ -429,15 +427,15 @@ export default async function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 relative">
             <div className="hidden md:block absolute top-10 left-[calc(12.5%+2.5rem)] right-[calc(12.5%+2.5rem)] h-px bg-gradient-to-r from-brand-orange-500/0 via-brand-orange-500/50 to-brand-orange-500/0" />
             {processSteps.map((step, i) => (
-              <FadeUp key={i} delay={i * 0.12}>
-                <div className="relative flex flex-col items-center text-center group">
+              <FadeUp key={i} delay={i * 0.12} className="h-full">
+                <div className="relative flex flex-col items-center text-center group h-full">
                   <div className="relative mb-6 z-10">
                     <div className="w-20 h-20 rounded-full bg-gradient-to-br from-brand-orange-500 to-red-600 text-white font-black flex items-center justify-center text-2xl shadow-2xl shadow-brand-orange-500/30 group-hover:scale-110 transition-transform">
                       {String(i + 1).padStart(2, '0')}
                     </div>
                     <div className="absolute inset-0 w-20 h-20 rounded-full bg-brand-orange-500/20 scale-125" />
                   </div>
-                  <div className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 hover:border-brand-orange-500/40 transition-all w-full">
+                  <div className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 hover:border-brand-orange-500/40 transition-all w-full flex-grow">
                     <h4 className="font-bold text-white mb-3 text-base leading-tight">{step.title}</h4>
                     <p className="text-xs text-slate-400 leading-relaxed">{step.desc}</p>
                   </div>
@@ -549,21 +547,6 @@ export default async function HomePage() {
             ))}
           </StaggerContainer>
 
-        </div>
-      </section>
-
-      {/* ══════════════════════════════════════════
-          LEAD MAGNET — guide gratuit + code promo
-      ══════════════════════════════════════════ */}
-      <section className="py-16 bg-[#060c18] px-4">
-        <div className="container mx-auto max-w-3xl">
-          <FadeUp>
-            <LeadMagnetBanner
-              language={isEn ? "en" : "fr"}
-              variant="banner"
-              pdfSlug="guide-ellipsys"
-            />
-          </FadeUp>
         </div>
       </section>
 

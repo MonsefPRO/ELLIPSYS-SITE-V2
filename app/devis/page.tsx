@@ -701,13 +701,13 @@ export default function DevisPage() {
                         placeholder={isEn ? "Describe any additional elements here: access constraints, special materials, building history, mandatory date…" : "Décrivez ici tout élément complémentaire : contraintes d'accès, matériaux spéciaux, historique du bâtiment, date impérative…"}
                       />
                     </div>
-                    <div className="p-5 bg-slate-50 border-2 border-dashed border-slate-200 rounded-2xl">
+                    <div className="p-5 bg-orange-50/60 border-2 border-dashed border-brand-orange-300 rounded-2xl">
                       <div className="text-center mb-3">
-                        <Camera className="w-7 h-7 text-slate-400 mx-auto mb-2" />
-                        <p className="text-sm text-slate-500">
+                        <Camera className="w-7 h-7 text-brand-orange-500 mx-auto mb-2" />
+                        <p className="text-sm font-semibold text-slate-700">
                           {isEn
-                            ? "Add photos of the site (plans, façades, roof) to facilitate the feasibility study"
-                            : "Ajouter des photos du site (plans, façades, toiture) pour faciliter l'étude de faisabilité"}
+                            ? "📸 Our tip: add photos of your site (roof, façade, panels). They help us tailor our response precisely to your needs — and reply faster."
+                            : "📸 Notre conseil : ajoutez des photos de votre site (toiture, façade, panneaux). Elles nous permettent d'adapter précisément notre réponse à votre besoin — et de vous répondre plus vite."}
                         </p>
                         <p className="text-xs text-slate-400 mt-1">
                           {isEn ? "Up to 5 files · 10 MB max per file · JPG, PNG, WebP, HEIC, PDF" : "Jusqu'à 5 fichiers · 10 Mo max par fichier · JPG, PNG, WebP, HEIC, PDF"}

@@ -20,7 +20,6 @@ const PX = "?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
 const IMG = {
   nestTree:  `https://images.pexels.com/photos/28995897/pexels-photo-28995897.jpeg${PX}`,
   nestClose: `https://images.pexels.com/photos/12989690/pexels-photo-12989690.jpeg${PX}`,
-  wasp:      `https://images.pexels.com/photos/14710901/pexels-photo-14710901.jpeg${PX}`,
 };
 
 export default async function FrelonsPage() {
@@ -195,20 +194,11 @@ export default async function FrelonsPage() {
               </div>
             </div>
             <div className="space-y-5">
-              <div className="relative rounded-3xl overflow-hidden shadow-lg h-64 lg:h-72">
+              <div className="relative rounded-3xl overflow-hidden shadow-lg h-80 lg:h-[420px]">
                 <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('${IMG.nestClose}')` }} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <div className="absolute bottom-4 left-5 right-5">
                   <p className="text-white text-xs font-semibold">{isEn ? "Alveolar structure of an Asian hornet nest — after biocidal treatment" : "Structure alvéolaire d'un nid de frelons asiatiques — après traitement biocide"}</p>
-                </div>
-              </div>
-              <div className="relative rounded-3xl overflow-hidden shadow-lg h-48">
-                <div className="absolute inset-0 bg-cover bg-center bg-top" style={{ backgroundImage: `url('${IMG.wasp}')` }} />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                <div className="absolute bottom-4 left-5">
-                  <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-red-500/20 border border-red-400/40 text-red-200 text-xs font-bold backdrop-blur-sm">
-                    {isEn ? "Vespa velutina — Asian Hornet" : "Vespa velutina — Frelon asiatique"}
-                  </span>
                 </div>
               </div>
             </div>

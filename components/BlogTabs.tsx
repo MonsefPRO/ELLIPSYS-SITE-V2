@@ -1,8 +1,8 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Link from "next/link";
-import { ArrowRight, Calendar, Clock, Instagram, Facebook, Linkedin, Music2 } from "lucide-react";
+import { ArrowRight, Calendar, Clock, Instagram, Facebook, Linkedin, Music2, ExternalLink } from "lucide-react";
 
 const articles = [
   {
@@ -67,21 +67,8 @@ const articles = [
   },
 ];
 
-const CURATOR_SCRIPT = "https://cdn.curator.io/published/f93c919d-6d31-4894-a325-2c72f8109036.js";
-
 export function BlogTabs() {
   const [tab, setTab] = useState<"articles" | "social">("articles");
-
-  // Charge le script Curator au montage du composant (div toujours présente dans le DOM)
-  useEffect(() => {
-    if (document.querySelector(`script[src="${CURATOR_SCRIPT}"]`)) return;
-    const script = document.createElement("script");
-    script.type = "text/javascript";
-    script.charset = "UTF-8";
-    script.async = true;
-    script.src = CURATOR_SCRIPT;
-    document.body.appendChild(script);
-  }, []);
 
   return (
     <>
@@ -150,36 +137,40 @@ export function BlogTabs() {
         </div>
       )}
 
-      {/* RÉSEAUX SOCIAUX — toujours dans le DOM pour que Curator s'initialise correctement */}
-      <div style={{ display: tab === "social" ? "block" : "none" }}>
-        {/* Boutons profils */}
-        <div className="flex flex-wrap justify-center gap-3 mb-10">
-          {[
-            { href: "https://www.instagram.com/ellipsysolutionsdrone/", label: "Instagram", icon: Instagram, cls: "bg-gradient-to-r from-purple-500 to-pink-500 text-white" },
-            { href: "https://www.facebook.com/profile.php?id=61588550468356&sk=reels_tab", label: "Facebook", icon: Facebook, cls: "bg-blue-600 text-white" },
-            { href: "https://www.tiktok.com/@ellipsyssolutions", label: "TikTok", icon: Music2, cls: "bg-black text-white" },
-            { href: "https://www.linkedin.com/company/110797987", label: "LinkedIn", icon: Linkedin, cls: "bg-sky-700 text-white" },
-          ].map((p) => (
-            <a
-              key={p.label}
-              href={p.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-bold ${p.cls} hover:scale-105 transition-transform shadow-sm`}
-            >
-              <p.icon className="w-4 h-4" />
-              {p.label}
-            </a>
-          ))}
+      {/* RÉSEAUX SOCIAUX */}
+      {tab === "social" && (
+        <div className="max-w-4xl mx-auto">
+          <p className="text-center text-slate-500 mb-10">
+            Nos chantiers en photos et en vidéos : avant/après, coulisses des interventions drone et robot. Suivez-nous sur le réseau de votre choix 👇
+          </p>
+          <div className="grid sm:grid-cols-2 gap-6">
+            {[
+              { href: "https://www.instagram.com/ellipsysolutionsdrone/", label: "Instagram", handle: "@ellipsysolutionsdrone", desc: "Avant/après et vidéos de chantiers", icon: Instagram, cls: "from-purple-500 to-pink-500" },
+              { href: "https://www.linkedin.com/company/110797987", label: "LinkedIn", handle: "Ellipsys Solutions Drones", desc: "Actualités B2B et réalisations", icon: Linkedin, cls: "from-sky-600 to-blue-700" },
+              { href: "https://www.tiktok.com/@ellipsyssolutions", label: "TikTok", handle: "@ellipsyssolutions", desc: "Les interventions les plus spectaculaires", icon: Music2, cls: "from-slate-800 to-black" },
+              { href: "https://www.facebook.com/profile.php?id=61588550468356", label: "Facebook", handle: "Ellipsys Solutions", desc: "Toute notre actualité en vidéo", icon: Facebook, cls: "from-blue-500 to-blue-700" },
+            ].map((p) => (
+              <a
+                key={p.label}
+                href={p.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all p-6 flex items-center gap-5"
+              >
+                <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${p.cls} flex items-center justify-center shrink-0 shadow-md`}>
+                  <p.icon className="w-7 h-7 text-white" />
+                </div>
+                <div className="flex-grow min-w-0">
+                  <p className="font-black text-slate-900">{p.label}</p>
+                  <p className="text-xs text-brand-orange-500 font-bold mb-1 truncate">{p.handle}</p>
+                  <p className="text-xs text-slate-500">{p.desc}</p>
+                </div>
+                <ExternalLink className="w-5 h-5 text-slate-300 group-hover:text-brand-orange-500 transition-colors shrink-0" />
+              </a>
+            ))}
+          </div>
         </div>
-
-        {/* Widget Curator.io — posts réels */}
-        <div id="curator-feed-default-feed-layout">
-          <a href="https://curator.io" target="_blank" rel="noopener noreferrer" className="crt-logo crt-tag">
-            Powered by Curator.io
-          </a>
-        </div>
-      </div>
+      )}
     </>
   );
 }

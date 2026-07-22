@@ -223,10 +223,10 @@ export default async function TraitementToiturePage() {
 
             <div className="space-y-5">
               <div className="relative rounded-3xl overflow-hidden shadow-lg h-64 lg:h-80">
-                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('${IMG.roofConstruct}')` }} />
+                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('/images/demoussage-toiture-eimargues.jpg')` }} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <div className="absolute bottom-5 left-5 right-5">
-                  <p className="text-white text-xs font-bold leading-relaxed">{isEn ? "Roof covering during treatment — zero load applied to tiles" : "Couverture en cours de traitement — aucun poids exercé sur les tuiles"}</p>
+                  <p className="text-white text-xs font-bold leading-relaxed">{isEn ? "Real Ellipsys project — moss removal in Aimargues (30), zero load applied to the tiles" : "Chantier réel Ellipsys — démoussage à Aimargues (30), aucun poids exercé sur les tuiles"}</p>
                 </div>
               </div>
               <div className="bg-white rounded-2xl border border-slate-200 p-5 flex items-start gap-3">

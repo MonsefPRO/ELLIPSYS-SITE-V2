@@ -6,7 +6,7 @@ const IMAGES: { src: string; alt: string }[] = [
   { src: "/images/robot-centrale-sol.jpg", alt: "Robot Ellipsys nettoyant des panneaux solaires sur une centrale photovoltaïque" },
   { src: "/ares.png", alt: "Drone Ellipsys en intervention de nettoyage sans échafaudage" },
   { src: "/images/robot-vue-aerienne.jpg", alt: "Vue aérienne d'une centrale solaire entretenue par Ellipsys Solutions" },
-  { src: "/abateur_de_frelons.png", alt: "Drone Ellipsys détruisant un nid de frelons asiatiques en hauteur" },
+  { src: "/images/avant-apres-montchanin.jpg", alt: "Avant après nettoyage de panneaux solaires — chantier Ellipsys à Montchanin" },
   { src: "/images/robot-produit.jpg", alt: "Robot de nettoyage de panneaux solaires Ellipsys en action" },
   { src: "/chronos.jpg", alt: "Drone Ellipsys nettoyant une façade par pulvérisation d'eau osmosée" },
   { src: "/images/robot-brosse-action.jpg", alt: "Brosse rotative du robot Ellipsys évacuant la saleté des panneaux solaires" },
@@ -36,8 +36,7 @@ export const HeroCarousel = () => {
   return (
     <div className="absolute inset-0 z-0">
       {/* Filtre de marque ultra-léger */}
-      <div className="absolute inset-0 bg-gradient-to-br from-sky-50/25 via-blue-50/20 to-white/25 z-10" />
-      <div className="brand-tint" style={{zIndex: 11}} />
+      <div className="absolute inset-0 bg-gradient-to-br from-sky-50/10 via-blue-50/5 to-white/10 z-10" />
       {IMAGES.map((image, i) => {
         // Ne rend les images que si elles ont déjà été préchargées
         const shouldRender = loaded.current.has(i) || i === current;
@@ -46,7 +45,7 @@ export const HeroCarousel = () => {
           <div
             key={image.src}
             className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-              i === current ? "opacity-70" : "opacity-0"
+              i === current ? "opacity-90" : "opacity-0"
             }`}
           >
             <Image

@@ -117,12 +117,16 @@ export default async function PanneauxPhotovoltaiquesPage() {
             <div className="relative rounded-3xl overflow-hidden shadow-xl h-80 lg:h-[400px]">
               <div
                 className="absolute inset-0 bg-cover bg-center"
-                style={{ backgroundImage: "url('https://images.pexels.com/photos/4254166/pexels-photo-4254166.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')" }}
+                style={{ backgroundImage: "url('/images/avant-apres-montchanin.jpg')" }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+              <div className="absolute top-4 left-4 flex gap-2">
+                <span className="bg-red-600 text-white px-3 py-1 rounded-full text-xs font-black tracking-widest shadow-md">{isEn ? "BEFORE" : "AVANT"}</span>
+                <span className="bg-emerald-500 text-white px-3 py-1 rounded-full text-xs font-black tracking-widest shadow-md">{isEn ? "AFTER" : "APRÈS"}</span>
+              </div>
               <div className="absolute bottom-5 left-5 right-5">
                 <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/15 border border-white/30 text-white text-sm font-bold backdrop-blur-sm">
-                  ☀️ {isEn ? "Photovoltaic array inspection and maintenance" : "Inspection et maintenance de parc photovoltaïque"}
+                  ☀️ {isEn ? "Real project — 22,000 m² solar farm, Montchanin (71)" : "Chantier réel — centrale de 22 000 m², Montchanin (71)"}
                 </span>
               </div>
             </div>
