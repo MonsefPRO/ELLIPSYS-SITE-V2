@@ -46,6 +46,19 @@ const nextConfig = {
   // Important pour que les rewrites PostHog fonctionnent sans /
   skipTrailingSlashRedirect: true,
 
+  // ─── Redirections 301 des anciennes URLs (version précédente du site) ────
+  // Détectées dans Search Console en « Erreur liée à des redirections »
+  // (dernière exploration Google : 9 mars 2026). On préserve le jus SEO
+  // et on évite les 404 pour tout visiteur arrivant d'un ancien lien.
+  async redirects() {
+    return [
+      { source: "/prestations/elimination-frelons",      destination: "/prestations/nuisibles",          permanent: true },
+      { source: "/prestations/panneaux-photovoltaiques", destination: "/prestations/nettoyage-solaire",  permanent: true },
+      { source: "/prestations/demoussage",               destination: "/prestations/traitement-toiture", permanent: true },
+      { source: "/risques-et-responsabilites",           destination: "/methode",                        permanent: true },
+    ];
+  },
+
   poweredByHeader: false,
   reactStrictMode: true,
 
