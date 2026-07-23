@@ -59,12 +59,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // SEO local
     { path: "/zone-intervention", priority: 0.8, changeFrequency: "monthly" },
-    { path: "/intervention/montpellier", priority: 0.85, changeFrequency: "monthly" },
+    // Villes à contenu local enrichi (climat, bâti, communes, FAQ propres)
+    { path: "/intervention/montpellier", priority: 0.9, changeFrequency: "monthly" },
     { path: "/intervention/nimes", priority: 0.85, changeFrequency: "monthly" },
-    { path: "/intervention/marseille", priority: 0.8, changeFrequency: "monthly" },
-    { path: "/intervention/paris", priority: 0.8, changeFrequency: "monthly" },
-    { path: "/intervention/lyon", priority: 0.8, changeFrequency: "monthly" },
+    { path: "/intervention/beziers", priority: 0.85, changeFrequency: "monthly" },
+    { path: "/intervention/sete", priority: 0.85, changeFrequency: "monthly" },
+    { path: "/intervention/perpignan", priority: 0.85, changeFrequency: "monthly" },
     { path: "/intervention/toulouse", priority: 0.8, changeFrequency: "monthly" },
+    { path: "/intervention/marseille", priority: 0.8, changeFrequency: "monthly" },
+    { path: "/intervention/avignon", priority: 0.8, changeFrequency: "monthly" },
+    // Villes hors zone Occitanie : conservées mais non prioritaires — elles
+    // captaient des impressions parisiennes sans jamais convertir.
+    { path: "/intervention/paris", priority: 0.5, changeFrequency: "yearly" },
+    { path: "/intervention/lyon", priority: 0.5, changeFrequency: "yearly" },
 
     // Blog (index)
     { path: "/blog", priority: 0.8, changeFrequency: "weekly" },

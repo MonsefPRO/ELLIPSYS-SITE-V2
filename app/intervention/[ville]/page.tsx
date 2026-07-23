@@ -1,12 +1,22 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import {
   MapPin, ChevronRight, CheckCircle2, Building2, Home,
-  ShieldCheck, Sun, Users, Clock, Star,
+  ShieldCheck, Sun, Users, Clock, Star, AlertTriangle, Landmark, HelpCircle,
 } from "lucide-react";
 import { getLang } from "@/lib/getLang";
+import { getVille, VILLES_AUTORISEES } from "@/lib/villes";
 
 type Props = { params: Promise<{ ville: string }> };
+
+// Seules les villes de la liste blanche existent. Toute autre URL renvoie un 404 :
+// sans ça, /intervention/nimportequoi retournait un 200 avec du contenu template —
+// c'est la définition même d'une doorway page pour Google.
+export function generateStaticParams() {
+  return VILLES_AUTORISEES.map((ville) => ({ ville }));
+}
+export const dynamicParams = false;
 
 const cityImages: Record<string, string> = {
   "montpellier": "/images/montpellier.png",
@@ -39,23 +49,87 @@ function formatVilleName(slug: string) {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const resolvedParams = await params;
-  const villeName = formatVilleName(resolvedParams.ville);
+  const citySlug = resolvedParams.ville.toLowerCase();
+  const data = getVille(citySlug);
+  // Le slug est désaccentué (sete, nimes, beziers) : on reprend le nom réel
+  // dès qu'on l'a, sinon le H1 et le title afficheraient « Sete » ou « Nimes ».
+  const villeName = data?.nom ?? formatVilleName(resolvedParams.ville);
+
+  // Description unique par ville quand on a du contenu local — évite les
+  // meta dupliquées sur 20 pages, que Google traite comme du contenu dupliqué.
   return {
     title: `Nettoyage par drone à ${villeName} : panneaux solaires, toiture & façade`,
-    description: `Ellipsys intervient à ${villeName} : nettoyage de panneaux solaires, démoussage de toiture, nettoyage de façade et thermographie par drone. Sans échafaudage. Devis gratuit sous 24h.`,
+    description: data
+      ? `Démoussage de toiture, nettoyage de façade et de panneaux solaires par drone à ${villeName} (${data.codeDept}). ${data.accroche} Devis gratuit sous 24 h.`
+      : `Ellipsys intervient à ${villeName} : nettoyage de panneaux solaires, démoussage de toiture, nettoyage de façade et thermographie par drone. Sans échafaudage. Devis gratuit sous 24h.`,
+    alternates: { canonical: `https://ellipsys-solutions.com/intervention/${citySlug}` },
   };
 }
 
 export default async function VillePage({ params }: Props) {
   const resolvedParams = await params;
   const citySlug = resolvedParams.ville.toLowerCase();
-  const villeName = formatVilleName(resolvedParams.ville);
   const cityImage = cityImages[citySlug] ?? DEFAULT_IMAGE;
   const lang = await getLang();
   const isEn = lang === "en";
 
+  if (!VILLES_AUTORISEES.includes(citySlug)) notFound();
+
+  const data = getVille(citySlug);
+  const villeName = data?.nom ?? formatVilleName(resolvedParams.ville);
+  // Le contenu local enrichi est rédigé en français et cible des requêtes
+  // françaises : on ne le rend pas en version EN plutôt que d'afficher une
+  // traduction automatique de mauvaise qualité.
+  const showLocal = Boolean(data) && !isEn;
+
+  const jsonLd = data
+    ? {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Service",
+            "name": `Nettoyage par drone à ${data.nom}`,
+            "serviceType": "Nettoyage de panneaux solaires, démoussage de toiture et nettoyage de façade par drone",
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "Ellipsys Solutions",
+              "telephone": "+33467209709",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "159 Rue de Thor",
+                "addressLocality": "Montpellier",
+                "postalCode": "34000",
+                "addressRegion": "Occitanie",
+                "addressCountry": "FR",
+              },
+              "url": "https://ellipsys-solutions.com",
+            },
+            "areaServed": [
+              { "@type": "City", "name": data.nom },
+              ...data.communes.map((c) => ({ "@type": "City", "name": c })),
+            ],
+            "url": `https://ellipsys-solutions.com/intervention/${data.slug}`,
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": data.faq.map((f) => ({
+              "@type": "Question",
+              "name": f.q,
+              "acceptedAnswer": { "@type": "Answer", "text": f.r },
+            })),
+          },
+        ],
+      }
+    : null;
+
   return (
     <main className="flex flex-col min-h-screen pt-24 pb-12 bg-slate-50">
+      {jsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      )}
 
       {/* HERO */}
       <section className="relative bg-[#0e2f52] text-white py-20 lg:py-28 text-center px-4 overflow-hidden">
@@ -81,7 +155,88 @@ export default async function VillePage({ params }: Props) {
         </div>
       </section>
 
+      {/* ─── CONTENU LOCAL ENRICHI (FR uniquement) ─────────────────────── */}
+      {showLocal && data && (
+        <>
+          {/* Bandeau chiffres locaux */}
+          <div className="bg-[#0e2f52] border-t border-white/10 py-8">
+            <div className="container mx-auto px-4 max-w-5xl grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+              {[
+                { k: data.departement, v: `Département ${data.codeDept}` },
+                { k: data.delai, v: "Mobilisation d'une équipe" },
+                { k: "24 h", v: "Devis gratuit" },
+                { k: `${data.communes.length + 1}`, v: "Communes desservies" },
+              ].map((s) => (
+                <div key={s.v}>
+                  <p className="text-2xl lg:text-3xl font-black text-brand-orange-500 leading-tight">{s.k}</p>
+                  <p className="text-slate-300 text-xs mt-1 uppercase tracking-wide">{s.v}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Le bâti local */}
+          <section className="py-20 bg-white">
+            <div className="container mx-auto px-4 max-w-6xl grid lg:grid-cols-3 gap-12">
+              <div className="lg:col-span-2">
+                <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-6">
+                  Nettoyage par drone à {data.nom} : ce que nous y rencontrons
+                </h2>
+                {data.intro.map((p, i) => (
+                  <p key={i} className="text-slate-600 leading-relaxed mb-5 text-[15px]">{p}</p>
+                ))}
+                <p className="text-slate-500 text-sm leading-relaxed">
+                  Nous intervenons notamment sur les quartiers {data.quartiers.slice(0, -1).join(", ")} et {data.quartiers.slice(-1)}.
+                </p>
+              </div>
+
+              <div className="bg-slate-50 rounded-3xl border border-slate-100 p-8 h-fit">
+                <div className="flex items-center gap-3 mb-5">
+                  <Landmark className="w-6 h-6 text-brand-orange-500" />
+                  <h3 className="text-lg font-bold text-slate-900">Le bâti à {data.nom}</h3>
+                </div>
+                <ul className="space-y-3">
+                  {data.typologies.map((t) => (
+                    <li key={t} className="flex items-start gap-3 text-sm text-slate-600">
+                      <CheckCircle2 className="w-4 h-4 text-emerald-500 mt-0.5 flex-shrink-0" />
+                      <span>{t}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          {/* Facteurs de dégradation locaux */}
+          <section className="py-20 bg-slate-50 border-y border-slate-200">
+            <div className="container mx-auto px-4 max-w-6xl">
+              <div className="text-center mb-14">
+                <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">
+                  Ce qui dégrade les bâtiments à {data.nom}
+                </h2>
+                <p className="text-slate-500 max-w-2xl mx-auto">
+                  Chaque territoire a ses propres agressions. Connaître celles de {data.nom}, c&apos;est
+                  choisir le bon traitement — et la bonne fréquence d&apos;entretien.
+                </p>
+              </div>
+              <div className="grid md:grid-cols-3 gap-8">
+                {data.facteurs.map((f) => (
+                  <div key={f.titre} className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                    <div className="w-12 h-12 rounded-2xl bg-brand-orange-500/10 flex items-center justify-center mb-5">
+                      <AlertTriangle className="w-6 h-6 text-brand-orange-500" />
+                    </div>
+                    <h3 className="text-lg font-bold text-slate-900 mb-3 leading-snug">{f.titre}</h3>
+                    <p className="text-slate-600 text-sm leading-relaxed">{f.texte}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        </>
+      )}
+
       {/* EXPERT QUOTE */}
+      {!showLocal && (
       <div className="bg-[#0e2f52] border-t border-white/10 py-10">
         <div className="container mx-auto px-4 max-w-4xl flex items-start gap-5">
           <span className="text-brand-orange-500 text-6xl font-bold leading-none -mt-2 select-none">&ldquo;</span>
@@ -97,6 +252,7 @@ export default async function VillePage({ params }: Props) {
           </div>
         </div>
       </div>
+      )}
 
       {/* INTERVENTIONS */}
       <section className="py-20 bg-white">
@@ -249,6 +405,69 @@ export default async function VillePage({ params }: Props) {
           </div>
         </div>
       </section>
+
+      {/* ─── COMMUNES DESSERVIES + FAQ LOCALE ──────────────────────────── */}
+      {showLocal && data && (
+        <>
+          <section className="py-20 bg-white">
+            <div className="container mx-auto px-4 max-w-5xl">
+              <div className="text-center mb-10">
+                <h2 className="text-3xl font-bold text-slate-900 mb-4">
+                  Nos zones d&apos;intervention autour de {data.nom}
+                </h2>
+                <p className="text-slate-500 max-w-2xl mx-auto">
+                  Nous nous déplaçons sur {data.nom} et l&apos;ensemble des communes
+                  limitrophes, en {data.departement} et au-delà.
+                </p>
+              </div>
+              <div className="flex flex-wrap justify-center gap-2.5">
+                <span className="px-4 py-2 rounded-full bg-brand-orange-500 text-white text-sm font-bold">
+                  {data.nom}
+                </span>
+                {data.communes.map((c) => (
+                  <span
+                    key={c}
+                    className="px-4 py-2 rounded-full bg-slate-100 text-slate-700 text-sm font-medium border border-slate-200"
+                  >
+                    {c}
+                  </span>
+                ))}
+              </div>
+              <p className="text-center text-slate-400 text-sm mt-8">
+                Votre commune n&apos;apparaît pas ?{" "}
+                <Link href="/zone-intervention" className="text-brand-orange-500 font-semibold hover:underline">
+                  Consultez notre zone d&apos;intervention
+                </Link>{" "}
+                ou{" "}
+                <Link href="/devis" className="text-brand-orange-500 font-semibold hover:underline">
+                  demandez-nous directement
+                </Link>.
+              </p>
+            </div>
+          </section>
+
+          <section className="py-20 bg-slate-50 border-y border-slate-200">
+            <div className="container mx-auto px-4 max-w-3xl">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl font-bold text-slate-900 mb-4">
+                  Questions fréquentes à {data.nom}
+                </h2>
+              </div>
+              <div className="space-y-5">
+                {data.faq.map((f) => (
+                  <div key={f.q} className="bg-white p-7 rounded-3xl shadow-sm border border-slate-100">
+                    <h3 className="font-bold text-slate-900 mb-3 flex items-start gap-3 leading-snug">
+                      <HelpCircle className="w-5 h-5 text-brand-orange-500 mt-0.5 flex-shrink-0" />
+                      {f.q}
+                    </h3>
+                    <p className="text-slate-600 text-sm leading-relaxed pl-8">{f.r}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        </>
+      )}
 
       {/* CERTIFICATIONS */}
       <section className="bg-[#0e2f52] py-10">
