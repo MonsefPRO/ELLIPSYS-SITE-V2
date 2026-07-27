@@ -175,7 +175,7 @@ export default function NettoyagePanneauxPhotovoltaiques() {
               <div className="p-6">
                 <h3 className="text-xl font-black text-slate-900 mb-2">🤖 Robot pour les surfaces</h3>
                 <p className="text-slate-600 text-sm leading-relaxed">
-                  Centrales au sol, parkings ombrières. Robot Ellipsys télécommandé avec brossage motorisé. Jusqu&apos;à 2 500 m²/h (≈ 2 MWc/jour), traçabilité GPS, cadence constante sans intervention humaine en hauteur.
+                  Centrales au sol, parkings ombrières. Robot Ellipsys télécommandé avec brossage motorisé. Jusqu&apos;à 1 200 m²/h (≈ 2 MWc/jour), traçabilité GPS, cadence constante sans intervention humaine en hauteur.
                 </p>
               </div>
             </div>

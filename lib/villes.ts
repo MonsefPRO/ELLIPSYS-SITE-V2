@@ -154,7 +154,7 @@ export const VILLES: Record<string, VilleData> = {
       },
       {
         q: "Intervenez-vous sur les bâtiments agricoles des Costières ?",
-        r: "Oui, c'est même l'un de nos terrains les plus fréquents dans le Gard : toitures de caves, hangars, bâtiments d'exploitation, et surtout les installations photovoltaïques posées sur ces grandes surfaces. Notre robot traite jusqu'à 2 500 m² par heure sur du panneau, ce qui rend l'intervention rentable même sur de très grandes toitures.",
+        r: "Oui, c'est même l'un de nos terrains les plus fréquents dans le Gard : toitures de caves, hangars, bâtiments d'exploitation, et surtout les installations photovoltaïques posées sur ces grandes surfaces. Notre robot traite jusqu'à 1 200 m² par heure sur du panneau, ce qui rend l'intervention rentable même sur de très grandes toitures.",
       },
     ],
   },
@@ -206,7 +206,7 @@ export const VILLES: Record<string, VilleData> = {
     faq: [
       {
         q: "Pouvez-vous nettoyer la toiture photovoltaïque d'un hangar agricole ?",
-        r: "Oui, c'est un de nos cas d'usage principaux dans le Biterrois. Notre robot de nettoyage traite jusqu'à 2 500 m² par heure et franchit des pentes jusqu'à 25°, avec une brosse de 1,20 m qui évacue les particules vers le bas sans les redéposer. Sur un hangar de plusieurs milliers de mètres carrés, l'intervention se fait en une journée, sans arrêt d'exploitation.",
+        r: "Oui, c'est un de nos cas d'usage principaux dans le Biterrois. Notre robot de nettoyage traite jusqu'à 1 200 m² par heure et franchit des pentes jusqu'à 25°, avec une brosse de 1,20 m qui évacue les particules vers le bas sans les redéposer. Sur un hangar de plusieurs milliers de mètres carrés, l'intervention se fait en une journée, sans arrêt d'exploitation.",
       },
       {
         q: "Le sel marin abîme-t-il vraiment les panneaux solaires ?",
@@ -333,7 +333,7 @@ export const VILLES: Record<string, VilleData> = {
       },
       {
         q: "Intervenez-vous sur les grandes centrales au sol ?",
-        r: "Oui. C'est le domaine du robot plutôt que du drone : jusqu'à 2 500 m² par heure, brosse de 1,20 m, franchissement de pentes jusqu'à 25°. Sur une centrale de plusieurs hectares, nous établissons un planning par tables et un rapport de production avant / après.",
+        r: "Oui. C'est le domaine du robot plutôt que du drone : jusqu'à 1 200 m² par heure, brosse de 1,20 m, franchissement de pentes jusqu'à 25°. Sur une centrale de plusieurs hectares, nous établissons un planning par tables et un rapport de production avant / après.",
       },
     ],
   },

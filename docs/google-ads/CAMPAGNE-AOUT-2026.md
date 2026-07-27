@@ -220,7 +220,7 @@ Jusqu'à +30% de Rendement
 Devis Gratuit sous 24h
 Robot & Drone Professionnels
 Eau Osmosée, Zéro Produit
-2 500 m² Nettoyés par Heure
+1 200 m² Nettoyés par Heure
 Sans Arrêt de Production
 Nettoyage Photovoltaïque 34
 Particuliers & Centrales
@@ -235,7 +235,7 @@ Entreprise Locale Montpellier
 **Descriptions (4) :**
 ```
 Panneaux encrassés = production perdue. Nettoyage robot et drone à l'eau osmosée. Devis gratuit sous 24 h à Montpellier.
-Notre robot traite 2 500 m² par heure sans rayer le verre ni interrompre votre production. Particuliers et centrales.
+Notre robot traite 1 200 m² par heure sans rayer le verre ni interrompre votre production. Particuliers et centrales.
 Sable saharien, pollen, sel marin : le dépôt ne part pas à la pluie. Nous mesurons le gain de rendement avant et après.
 Toiture résidentielle ou centrale au sol, Montpellier et Occitanie. Réponse sous 24 h, sans engagement.
 ```

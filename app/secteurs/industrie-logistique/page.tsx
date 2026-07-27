@@ -32,7 +32,7 @@ export default async function IndustriePage() {
 
   const stats = [
     { value: "0", label: isEn ? "Production stoppage — we work around your flows" : "Arrêt de production — nous travaillons autour de vos flux" },
-    { value: "2 500 m²/h", label: isEn ? "Robot throughput on flat roofs & PV" : "Cadence robot sur toitures plates & PV" },
+    { value: "1 200 m²/h", label: isEn ? "Robot throughput on flat roofs & PV" : "Cadence robot sur toitures plates & PV" },
     { value: "0", label: isEn ? "Scaffolding or cherry picker on site" : "Échafaudage ou nacelle sur site" },
     { value: "100 %", label: isEn ? "PDP / HSE compliance — supervised operations" : "Conformité PDP / HSE — opérations supervisées" },
   ];

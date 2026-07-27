@@ -334,7 +334,7 @@ export default async function HomePage() {
         name: "Combien de temps dure une intervention de nettoyage par drone ?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Pour une toiture résidentielle classique (100-150 m²), comptez 1 à 3 heures. Pour une centrale photovoltaïque, notre robot traite jusqu'à 2 500 m²/heure, soit environ 2 MWc par jour. Un devis détaillé précise toujours la durée estimée. La planification tient compte des autorisations DGAC et de la météo.",
+          text: "Pour une toiture résidentielle classique (100-150 m²), comptez 1 à 3 heures. Pour une centrale photovoltaïque, notre robot traite jusqu'à 1 200 m²/heure, soit environ 2 MWc par jour. Un devis détaillé précise toujours la durée estimée. La planification tient compte des autorisations DGAC et de la météo.",
         },
       },
     ],

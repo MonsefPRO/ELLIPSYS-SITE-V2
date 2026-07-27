@@ -22,10 +22,10 @@ export default async function ExpertisePage() {
       img: "/images/robot-produit.jpg",
       video: "/videos/robot-action.mp4",
       specs: [
-        { label: isEn ? "Output" : "Rendement", value: "2 500 m²/h" },
+        { label: isEn ? "Output" : "Rendement", value: "1 200 m²/h" },
         { label: isEn ? "Max slope" : "Pente max", value: "25°" },
         { label: isEn ? "Brush width" : "Largeur de brosse", value: "1,20 m" },
-        { label: isEn ? "Osmosed water" : "Eau osmosée", value: "0.5–2 L/m²" },
+        { label: isEn ? "Water flow" : "Débit d'eau", value: "7 L/min" },
       ],
       accentColor: "from-emerald-600 to-teal-700",
       badgeColor: "bg-emerald-500/20 border-emerald-500/40 text-emerald-300",

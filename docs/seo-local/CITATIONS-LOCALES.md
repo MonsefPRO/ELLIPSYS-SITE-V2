@@ -79,7 +79,7 @@ Nous intervenons à Montpellier, Nîmes, Béziers, Sète, Perpignan et dans tout
 ```
 Ellipsys Solutions réalise le nettoyage et l'inspection technique de bâtiments industriels et tertiaires par drone et robotique terrestre : centrales photovoltaïques, toitures d'entrepôts, bardages, verrières, ouvrages d'art.
 
-Notre robot traite jusqu'à 2 500 m²/h sur panneaux solaires et franchit des pentes jusqu'à 25°. Nos interventions s'effectuent sans arrêt d'exploitation, sans échafaudage et sans nacelle, avec plan de prévention et rapport photographique de fin de chantier.
+Notre robot traite jusqu'à 1 200 m²/h sur panneaux solaires et franchit des pentes jusqu'à 25°. Nos interventions s'effectuent sans arrêt d'exploitation, sans échafaudage et sans nacelle, avec plan de prévention et rapport photographique de fin de chantier.
 
 Certifications : DGAC, EASA STS-01 / STS-02, Certibiocide, RC aérienne.
 ```

@@ -24,7 +24,7 @@ export default async function PrestationsPage() {
       href: "/prestations/nettoyage-solaire",
       title: isEn ? "Solar Cleaning" : "Nettoyage Solaire",
       subtitle: isEn ? "Solar Energy · Drone · Yield" : "Énergie Solaire · Drone · Rendement",
-      desc: isEn ? <><strong>Robot Ellipsys</strong> (<strong>2,500 m²/h</strong>) and <strong>Drone Chronos</strong> for photovoltaic arrays. Soiling can cut your output by up to 30%. Annual contracts, <strong>osmosed water</strong>, CARSAT compliance.</> : <><strong>Robot Ellipsys</strong> (<strong>2 500 m²/h</strong>) et <strong>drone Chronos</strong> pour parcs photovoltaïques. L&apos;encrassement peut amputer votre production jusqu&apos;à 30 %. Contrats annuels, <strong>eau osmosée</strong>, conformité CARSAT.</>,
+      desc: isEn ? <><strong>Robot Ellipsys</strong> (<strong>1,200 m²/h</strong>) and <strong>Drone Chronos</strong> for photovoltaic arrays. Soiling can cut your output by up to 30%. Annual contracts, <strong>osmosed water</strong>, CARSAT compliance.</> : <><strong>Robot Ellipsys</strong> (<strong>1 200 m²/h</strong>) et <strong>drone Chronos</strong> pour parcs photovoltaïques. L&apos;encrassement peut amputer votre production jusqu&apos;à 30 %. Contrats annuels, <strong>eau osmosée</strong>, conformité CARSAT.</>,
       img: "/images/solairebanner.png",
     },
     {
