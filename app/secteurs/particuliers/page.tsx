@@ -77,7 +77,7 @@ export default async function ParticuliersPage() {
           bg: "bg-amber-50",
           border: "border-amber-200",
           title: "Panneaux Solaires",
-          desc: "Nettoyage à l'eau osmosée de vos panneaux photovoltaïques pour restaurer leur rendement nominal. Gain de 4 à 7% de production mesurable.",
+          desc: "Nettoyage de vos panneaux photovoltaïques pour restaurer leur rendement nominal. Gain de 4 à 7% de production mesurable.",
           href: "/prestations/nettoyage-solaire",
         },
         {

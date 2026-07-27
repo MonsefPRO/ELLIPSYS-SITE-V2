@@ -44,7 +44,6 @@ export const metadata: Metadata = {
     "thermographie drone",
     "nettoyage façade drone",
     "robot nettoyage panneaux solaires",
-    "eau osmosée panneaux solaires",
   ],
   openGraph: {
     type: "website",
@@ -55,7 +54,7 @@ export const metadata: Metadata = {
       template: "%s | Ellipsys Solutions",
     },
     description:
-      "Drone + robot + eau osmosée pure. Récupération de rendement jusqu'à +30%. Panneaux solaires, toitures, façades, thermographie. Toute France. Certifiés DGAC/EASA.",
+      "Drone + robot. Récupération de rendement jusqu'à +30%. Panneaux solaires, toitures, façades, thermographie. Toute France. Certifiés DGAC/EASA.",
     images: [
       {
         url: "/images/accueil.png",

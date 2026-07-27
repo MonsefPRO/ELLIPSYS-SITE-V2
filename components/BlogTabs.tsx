@@ -21,7 +21,7 @@ const articles = [
     date: "10 Avril 2026",
     readTime: "6 min",
     title: "Pluies de sable saharien : quel impact réel sur le rendement de vos panneaux solaires ?",
-    excerpt: "Les épisodes de sable saharien peuvent réduire la production d'un parc photovoltaïque de 8 à 15%. Nous analysons les données et expliquons comment un nettoyage à l'eau osmosée restaure le rendement nominal.",
+    excerpt: "Les épisodes de sable saharien peuvent réduire la production d'un parc photovoltaïque de 8 à 15%. Nous analysons les données et expliquons comment un nettoyage professionnel adapté restaure le rendement nominal.",
     href: "/blog/sable-saharien-panneaux-solaires-rendement",
     badge: "bg-amber-50 text-amber-600",
   },

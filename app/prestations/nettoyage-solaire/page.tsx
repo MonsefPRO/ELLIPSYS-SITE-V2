@@ -6,8 +6,8 @@ import AccordionSection from "@/components/AccordionSection";
 import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
-  title: "Nettoyage centrale solaire : robot & drone, eau osmosée",
-  description: "Nettoyage de centrales solaires et parcs photovoltaïques par robot et drone. Eau osmosée pure, jusqu'à +30% de rendement récupéré, contrats annuels. Devis gratuit sous 24h.",
+  title: "Nettoyage centrale solaire : robot & drone",
+  description: "Nettoyage de centrales solaires et parcs photovoltaïques par robot et drone. Jusqu'à +30% de rendement récupéré, contrats annuels. Devis gratuit sous 24h.",
   alternates: {
     canonical: "https://ellipsys-solutions.com/prestations/nettoyage-solaire",
   },
@@ -134,8 +134,8 @@ export default async function PanneauxPhotovoltaiquesPage() {
               <h2 className="text-3xl font-bold text-slate-900 mb-5">{isEn ? "Estimating your yield loss" : "Estimer votre perte de rendement"}</h2>
               <p className="text-slate-600 leading-relaxed text-lg mb-6">
                 {isEn
-                  ? <>A soiled solar array (<strong>dust, pollen, sand, droppings</strong>) suffers significant production losses. Our intervention is an immediately profitable investment. To clean your installations whilst controlling the risk of <strong>micro-scratches</strong>, we deploy our remote-controlled <strong>tracked ground robot</strong>, capable of cleaning up to <strong>1,200 m² per hour</strong> — about <strong>2 MWc per day</strong> — whilst adapting to slopes of up to 25°. Its <strong>soft rotary brushes</strong> (1.2 m wide) sweep particles downwards, dry or combined with a <strong>pure water</strong> rinse, guaranteeing the optimal restoration of your panels&apos; rated efficiency.</>
-                  : <>Un parc solaire encrassé (<strong>poussières, pollens, sable, fientes</strong>) subit d&apos;importantes pertes de production. Notre intervention est un investissement immédiatement rentable. Pour nettoyer vos installations en maîtrisant le risque de <strong>micro-rayures</strong>, nous déployons notre <strong>robot terrestre sur chenilles</strong> télécommandé, capable de nettoyer jusqu&apos;à <strong>1 200 m² par heure</strong> — soit environ <strong>2 MWc par jour</strong> — en s&apos;adaptant à des pentes allant jusqu&apos;à 25°. Ses <strong>brosses rotatives souples</strong> (1,20 m de large) évacuent les particules vers le bas, à sec ou associées à un rinçage à l&apos;<strong>eau pure</strong>, garantissant la restitution optimale de l&apos;efficacité nominale de vos panneaux.</>}
+                  ? <>A soiled solar array (<strong>dust, pollen, sand, droppings</strong>) suffers significant production losses. Our intervention is an immediately profitable investment. To clean your installations whilst controlling the risk of <strong>micro-scratches</strong>, we deploy our remote-controlled <strong>tracked ground robot</strong>, capable of cleaning up to <strong>1,200 m² per hour</strong> — about <strong>2 MWc per day</strong> — whilst adapting to slopes of up to 25°. Its <strong>soft rotary brushes</strong> (1.2 m wide) sweep particles downwards, guaranteeing the optimal restoration of your panels&apos; rated efficiency.</>
+                  : <>Un parc solaire encrassé (<strong>poussières, pollens, sable, fientes</strong>) subit d&apos;importantes pertes de production. Notre intervention est un investissement immédiatement rentable. Pour nettoyer vos installations en maîtrisant le risque de <strong>micro-rayures</strong>, nous déployons notre <strong>robot terrestre sur chenilles</strong> télécommandé, capable de nettoyer jusqu&apos;à <strong>1 200 m² par heure</strong> — soit environ <strong>2 MWc par jour</strong> — en s&apos;adaptant à des pentes allant jusqu&apos;à 25°. Ses <strong>brosses rotatives souples</strong> (1,20 m de large) évacuent les particules vers le bas, garantissant la restitution optimale de l&apos;efficacité nominale de vos panneaux.</>}
               </p>
               <div className="bg-[#0e2f52]/5 border border-[#0e2f52]/20 rounded-2xl p-5 flex items-start gap-4">
                 <span className="text-brand-orange-500 text-4xl font-bold leading-none -mt-1 select-none shrink-0">&ldquo;</span>
@@ -282,11 +282,11 @@ export default async function PanneauxPhotovoltaiquesPage() {
                 </div>
                 <div className="text-4xl mb-3 mt-2">🤖</div>
                 <h4 className="font-black text-white text-base mb-1">Robot Ellipsys</h4>
-                <p className="text-[10px] font-bold text-brand-orange-400 uppercase tracking-widest mb-3">1 200 m²/h · {isEn ? "Osmosed Water" : "Eau Osmosée"}</p>
+                <p className="text-[10px] font-bold text-brand-orange-400 uppercase tracking-widest mb-3">1 200 m²/h · {isEn ? "Soft Brushing" : "Brossage Doux"}</p>
                 <ul className="space-y-2 flex-grow">
                   <li className="text-xs text-slate-300 flex items-start gap-2"><span className="text-brand-orange-400 font-bold shrink-0">✓</span><span><strong className="text-white">1 200 m²/h</strong> {isEn ? "throughput" : "de cadence"}</span></li>
                   <li className="text-xs text-slate-300 flex items-start gap-2"><span className="text-brand-orange-400 font-bold shrink-0">✓</span><span>{isEn ? "Slopes up to" : "Pentes jusqu'à"} <strong className="text-white">35 %</strong></span></li>
-                  <li className="text-xs text-slate-300 flex items-start gap-2"><span className="text-brand-orange-400 font-bold shrink-0">✓</span><span><strong className="text-white">{isEn ? "Osmosed water" : "Eau osmosée"}</strong>{isEn ? ", soft brushes" : ", brosses douces"}</span></li>
+                  <li className="text-xs text-slate-300 flex items-start gap-2"><span className="text-brand-orange-400 font-bold shrink-0">✓</span><span><strong className="text-white">{isEn ? "Soft brushes" : "Brosses douces"}</strong>{isEn ? ", no detergent" : ", sans détergent"}</span></li>
                   <li className="text-xs text-slate-300 flex items-start gap-2"><span className="text-brand-orange-400 font-bold shrink-0">✓</span><span>{isEn ? "Only" : "Seulement"} <strong className="text-white">7 kg</strong> {isEn ? "on your modules" : "sur vos modules"}</span></li>
                 </ul>
               </div>

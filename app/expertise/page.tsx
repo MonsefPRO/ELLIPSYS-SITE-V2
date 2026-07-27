@@ -17,8 +17,8 @@ export default async function ExpertisePage() {
       category: isEn ? "Ground Robotics" : "Robotique Terrestre",
       name: "Robot Ellipsys",
       tagline: isEn
-        ? "The solar maintenance specialist. Remote-controlled, engineered to operate on fragile glazed surfaces with zero risk of micro-scratching — dry or pure-water cleaning."
-        : "Le spécialiste de la maintenance solaire. Télécommandé, conçu pour intervenir sur surfaces vitrées fragiles sans risque de micro-rayures — nettoyage à sec ou à l'eau pure.",
+        ? "The solar maintenance specialist. Remote-controlled, engineered to operate on fragile glazed surfaces with zero risk of micro-scratching — dry or wet cleaning, no detergent."
+        : "Le spécialiste de la maintenance solaire. Télécommandé, conçu pour intervenir sur surfaces vitrées fragiles sans risque de micro-rayures — nettoyage à sec ou humide, sans détergent.",
       img: "/images/robot-produit.jpg",
       video: "/videos/robot-action.mp4",
       specs: [

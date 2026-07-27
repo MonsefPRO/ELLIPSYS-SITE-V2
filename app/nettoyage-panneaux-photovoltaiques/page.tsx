@@ -5,7 +5,7 @@ import { ArrowRight, TrendingDown, Zap, Shield, Award, ChevronRight, Phone } fro
 
 export const metadata: Metadata = {
   title: "Nettoyage photovoltaïque par drone : +30% de production",
-  description: "Spécialiste du nettoyage de centrales photovoltaïques par drone et robot pour exploitants, asset managers et industriels. Eau osmosée pure. France entière. Audit soiling gratuit. +30% de rendement.",
+  description: "Spécialiste du nettoyage de centrales photovoltaïques par drone et robot pour exploitants, asset managers et industriels. Sans détergent, sans microfissure. France entière. Audit soiling gratuit. +30% de rendement.",
   keywords: [
     "nettoyage centrale photovoltaïque",
     "nettoyage ferme solaire",
@@ -48,7 +48,7 @@ const jsonLdService = {
   },
   areaServed: { "@type": "Country", name: "France" },
   description:
-    "Nettoyage professionnel de panneaux photovoltaïques par drone et robot pour centrales au sol, ombrières et toitures industrielles. Eau osmosée pure, sans détergent, sans risque de microfissures.",
+    "Nettoyage professionnel de panneaux photovoltaïques par drone et robot pour centrales au sol, ombrières et toitures industrielles. Sans détergent, sans risque de microfissures.",
   offers: {
     "@type": "Offer",
     description: "Audit soiling gratuit sur votre centrale",
@@ -149,7 +149,7 @@ export default function NettoyagePanneauxPhotovoltaiques() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-sm font-bold uppercase tracking-widest text-brand-orange-500 mb-3">— La méthode Ellipsys —</p>
-            <h2 className="text-3xl md:text-5xl font-black text-slate-900 leading-tight">Drone + Robot + Eau Osmosée Pure</h2>
+            <h2 className="text-3xl md:text-5xl font-black text-slate-900 leading-tight">Drone + Robot de précision</h2>
             <p className="text-lg text-slate-600 mt-6 max-w-3xl mx-auto">
               Une triple capacité technique unique sur le marché français, adaptée à chaque typologie d&apos;installation.
             </p>
@@ -163,7 +163,7 @@ export default function NettoyagePanneauxPhotovoltaiques() {
               <div className="p-6">
                 <h3 className="text-xl font-black text-slate-900 mb-2">🚁 Drone pour les hauteurs</h3>
                 <p className="text-slate-600 text-sm leading-relaxed">
-                  Toitures industrielles, ombrières, sites difficiles d&apos;accès. Flotte DJI Matrice 300/350 + Air 3S certifiée DGAC. Aspersion eau osmosée embarquée.
+                  Toitures industrielles, ombrières, sites difficiles d&apos;accès. Flotte DJI Matrice 300/350 + Air 3S certifiée DGAC.
                 </p>
               </div>
             </div>
@@ -182,12 +182,12 @@ export default function NettoyagePanneauxPhotovoltaiques() {
 
             <div className="border border-slate-200 rounded-2xl overflow-hidden">
               <div className="relative h-48 bg-slate-100">
-                <Image src="/images/apres solaire.jpg" alt="Eau osmosée pure nettoyage panneaux" fill className="object-cover" />
+                <Image src="/images/apres solaire.jpg" alt="Panneaux photovoltaïques nettoyés, rendement restauré" fill className="object-cover" />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-black text-slate-900 mb-2">💧 Eau osmosée pure</h3>
+                <h3 className="text-xl font-black text-slate-900 mb-2">🛡️ Garanties préservées</h3>
                 <p className="text-slate-600 text-sm leading-relaxed">
-                  Production sur site. 99,9% des minéraux retirés. Aucune trace, aucun détergent. Compatible toutes garanties constructeur (Trina, JinkoSolar, Q-CELLS, etc.).
+                  Brossage doux calibré, sans détergent, sans microfissure. Séchage sans trace. Compatible toutes garanties constructeur (Trina, JinkoSolar, Q-CELLS, etc.).
                 </p>
               </div>
             </div>
@@ -257,7 +257,7 @@ export default function NettoyagePanneauxPhotovoltaiques() {
               <p className="text-xs font-bold uppercase tracking-widest text-slate-500 mb-2">Toitures industrielles</p>
               <h3 className="text-2xl font-black text-slate-900 mb-3">Intervention ponctuelle</h3>
               <p className="text-slate-600 text-sm leading-relaxed mb-4">
-                Bâtiments tertiaires et industriels équipés PV. Intervention drone + lance osmosée. Devis personnalisé en m².
+                Bâtiments tertiaires et industriels équipés PV. Intervention drone. Devis personnalisé en m².
               </p>
               <p className="text-slate-500 text-xs italic">Pour installations 50-500 kWc</p>
             </div>
@@ -282,7 +282,7 @@ export default function NettoyagePanneauxPhotovoltaiques() {
           </div>
 
           <p className="text-center text-slate-500 text-sm mt-8 max-w-2xl mx-auto">
-            <em>Tous nos tarifs incluent : déplacement, étude de faisabilité, intervention, eau osmosée, rapport d&apos;intervention horodaté et géolocalisé.</em>
+            <em>Tous nos tarifs incluent : déplacement, étude de faisabilité, intervention, rapport d&apos;intervention horodaté et géolocalisé.</em>
           </p>
         </div>
       </section>

@@ -89,7 +89,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "6 min",
     badge: "bg-amber-50 text-amber-600",
     title: "Pluies de sable saharien : quel impact réel sur le rendement de vos panneaux solaires ?",
-    excerpt: "Les épisodes de sable saharien peuvent réduire la production d'un parc photovoltaïque de 8 à 15%. Nous analysons les données et expliquons comment un nettoyage à l'eau osmosée restaure le rendement nominal.",
+    excerpt: "Les épisodes de sable saharien peuvent réduire la production d'un parc photovoltaïque de 8 à 15%. Nous analysons les données et expliquons comment un nettoyage professionnel adapté restaure le rendement nominal.",
     metaTitle: "Sable Saharien et Panneaux Solaires : Impact sur le Rendement | Ellipsys",
     metaDescription: "Le sable du Sahara réduit le rendement de vos panneaux solaires de 8 à 15%. Découvrez comment un nettoyage professionnel par drone restaure votre production photovoltaïque. Devis gratuit.",
     content: `
@@ -122,14 +122,14 @@ export const blogPosts: BlogPost[] = [
 <h3>1. Inspection thermographique préalable (optionnelle)</h3>
 <p>Avant le nettoyage, nous pouvons réaliser un survol thermographique pour identifier les cellules en surchauffe (hot spots) causées par l'encrassement différentiel. Cela permet de cibler les zones prioritaires et de vérifier l'état électrique général de l'installation.</p>
 
-<h3>2. Nettoyage à l'eau osmosée déminéralisée</h3>
-<p>C'est la clé de notre méthode. L'eau du robinet contient des minéraux (calcaire, magnésium...) qui laissent des dépôts blancs en séchant sur vos panneaux. L'eau osmosée est purifiée à 99,9 %, ce qui garantit un séchage sans résidu. Résultat : une surface parfaitement transparente, sans auréoles.</p>
+<h3>2. Nettoyage sans détergent</h3>
+<p>C'est la clé de notre méthode. Le film de poussière saharienne est décollé puis évacué sans détergent ni produit agressif, ce qui évite les auréoles et les résidus chimiques sur le verre. Résultat : une surface qui retrouve sa transparence d'origine.</p>
 
 <h3>3. Brossage doux basse pression</h3>
 <p>Nous utilisons des brosses rotatives à poils doux montées sur perches télescopiques ou sur notre robot terrestre. Aucune rayure, aucune pression excessive sur les cellules photovoltaïques.</p>
 
 <h3>4. Rinçage final et contrôle visuel</h3>
-<p>Un dernier rinçage à l'eau osmosée et un contrôle visuel systématique par notre technicien clôturent l'intervention.</p>
+<p>Un rinçage final et un contrôle visuel systématique par notre technicien clôturent l'intervention.</p>
 
 <h2>Fréquence recommandée selon votre localisation</h2>
 <p>En Occitanie et PACA, zones les plus exposées aux épisodes sahariens, nous recommandons :</p>

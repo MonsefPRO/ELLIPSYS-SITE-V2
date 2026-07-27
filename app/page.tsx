@@ -278,7 +278,7 @@ export default async function HomePage() {
         name: "Le drone peut-il endommager ma toiture ou mes panneaux solaires ?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Non. Nos drones sont pilotés à distance, sans contact physique avec votre toiture, et nous utilisons une pulvérisation d'eau osmosée à pression contrôlée (jamais de haute pression). Cette méthode est strictement compatible avec les garanties constructeur des panneaux photovoltaïques (Trina, JinkoSolar, Q-CELLS, etc.) et préserve l'imperméabilité originelle des tuiles.",
+          text: "Non. Nos drones sont pilotés à distance, sans contact physique avec votre toiture, et nous utilisons une pulvérisation à pression contrôlée (jamais de haute pression). Cette méthode est strictement compatible avec les garanties constructeur des panneaux photovoltaïques (Trina, JinkoSolar, Q-CELLS, etc.) et préserve l'imperméabilité originelle des tuiles.",
         },
       },
       {
@@ -286,7 +286,7 @@ export default async function HomePage() {
         name: "Quels produits utilisez-vous pour le nettoyage par drone ?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Nous utilisons principalement de l'eau osmosée pure (99,9% des minéraux retirés) sans détergent, qui sèche sans laisser de trace. Pour les traitements de toiture, nous proposons trois familles : choc (action rapide), action lente (sans rinçage, respect des matériaux fragiles) et enzymatique (bio-nettoyage 90% biodégradable conforme ISO 14001).",
+          text: "Pour les panneaux et surfaces vitrées, nous privilégions un nettoyage sans détergent qui sèche sans laisser de trace. Pour les traitements de toiture, nous proposons trois familles : choc (action rapide), action lente (sans rinçage, respect des matériaux fragiles) et enzymatique (bio-nettoyage 90% biodégradable conforme ISO 14001).",
         },
       },
       {

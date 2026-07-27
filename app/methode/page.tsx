@@ -168,7 +168,7 @@ export default async function MethodeGarantiesPage() {
               <div className="grid grid-cols-2 gap-4">
                 {[
                   { icon: ShieldCheck, color: "text-emerald-500", label: isEn ? "Bleach-free certified" : "Sans Javel certifié", desc: isEn ? "Preserves waterproofing" : "Préserve l'imperméabilité" },
-                  { icon: Droplets, color: "text-blue-500", label: isEn ? "Osmosed water" : "Eau osmosée", desc: isEn ? "Glazing & solar panels" : "Vitrages et panneaux solaires" },
+                  { icon: Droplets, color: "text-blue-500", label: isEn ? "Controlled rinse" : "Rinçage maîtrisé", desc: isEn ? "Glazing & delicate surfaces" : "Vitrages et surfaces délicates" },
                   { icon: Leaf, color: "text-emerald-500", label: isEn ? "90%+ Biodegradable" : "Biodégradable 90%+", desc: isEn ? "Environmentally responsible" : "Respecte l'environnement" },
                   { icon: Zap, color: "text-brand-orange-500", label: isEn ? "Calibrated pressure" : "Pression adaptée", desc: isEn ? "Precisely matched to the surface" : "Millimetrée selon le support" },
                 ].map((item, i) => (

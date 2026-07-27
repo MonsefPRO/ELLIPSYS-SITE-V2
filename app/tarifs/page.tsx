@@ -66,7 +66,7 @@ const ranges = [
   {
     label: "Nettoyage panneaux solaires résidentiel",
     typical: "À partir de 350 € TTC",
-    sub: "Pour une installation 12-30 panneaux. Eau osmosée pure, sans détergent.",
+    sub: "Pour une installation 12-30 panneaux. Brossage doux, sans détergent.",
   },
   {
     label: "Centrale photovoltaïque (>100 kWc)",
@@ -230,7 +230,7 @@ export default function TarifsPage() {
             {[
               "Étude de faisabilité gratuite (photos ou visite de site)",
               "Protocole personnalisé proposé sous 24h",
-              "Eau osmosée pure produite sur site",
+              "Eau filtrée produite sur site",
               "Pilote certifié DGAC + assurance RC Aéronautique",
               "Reprogrammation gratuite en cas d'intempéries",
               "Rapport photo avant/après horodaté",
