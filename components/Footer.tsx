@@ -130,12 +130,17 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-bold mb-6 uppercase tracking-wider text-sm">{f.col4}</h4>
             <ul className="space-y-3 text-sm text-slate-400">
+              {/* Villes à contenu local enrichi, priorité Occitanie.
+                  Paris/Lyon retirés volontairement : ils tiraient le référencement
+                  vers des requêtes parisiennes qui ne convertissent pas. */}
               <li><Link href="/intervention/montpellier" className="flex items-center gap-1 hover:text-brand-orange-400 transition-colors"><ChevronRight className="w-3 h-3" /> Montpellier</Link></li>
               <li><Link href="/intervention/nimes" className="flex items-center gap-1 hover:text-brand-orange-400 transition-colors"><ChevronRight className="w-3 h-3" /> Nîmes</Link></li>
-              <li><Link href="/intervention/marseille" className="flex items-center gap-1 hover:text-brand-orange-400 transition-colors"><ChevronRight className="w-3 h-3" /> Marseille</Link></li>
-              <li><Link href="/intervention/paris" className="flex items-center gap-1 hover:text-brand-orange-400 transition-colors"><ChevronRight className="w-3 h-3" /> Paris</Link></li>
-              <li><Link href="/intervention/lyon" className="flex items-center gap-1 hover:text-brand-orange-400 transition-colors"><ChevronRight className="w-3 h-3" /> Lyon</Link></li>
+              <li><Link href="/intervention/beziers" className="flex items-center gap-1 hover:text-brand-orange-400 transition-colors"><ChevronRight className="w-3 h-3" /> Béziers</Link></li>
+              <li><Link href="/intervention/sete" className="flex items-center gap-1 hover:text-brand-orange-400 transition-colors"><ChevronRight className="w-3 h-3" /> Sète</Link></li>
+              <li><Link href="/intervention/perpignan" className="flex items-center gap-1 hover:text-brand-orange-400 transition-colors"><ChevronRight className="w-3 h-3" /> Perpignan</Link></li>
               <li><Link href="/intervention/toulouse" className="flex items-center gap-1 hover:text-brand-orange-400 transition-colors"><ChevronRight className="w-3 h-3" /> Toulouse</Link></li>
+              <li><Link href="/intervention/avignon" className="flex items-center gap-1 hover:text-brand-orange-400 transition-colors"><ChevronRight className="w-3 h-3" /> Avignon</Link></li>
+              <li><Link href="/intervention/marseille" className="flex items-center gap-1 hover:text-brand-orange-400 transition-colors"><ChevronRight className="w-3 h-3" /> Marseille</Link></li>
               <li><Link href="/zone-intervention" className="flex items-center gap-1 hover:text-brand-orange-400 transition-colors font-semibold text-slate-300"><ChevronRight className="w-3 h-3 text-brand-orange-500" /> {f.allZones}</Link></li>
               <li><span className="flex items-center gap-1 text-white font-bold mt-2"><ChevronRight className="w-3 h-3 text-brand-orange-500" /> {f.europe}</span></li>
             </ul>

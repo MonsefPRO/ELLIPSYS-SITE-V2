@@ -5,8 +5,8 @@ import ExpertQuoteSide from "@/components/ExpertQuoteSide";
 import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
-  title: "Nettoyage extérieur par drone pour particuliers : toiture, façade & solaire",
-  description: "Démoussage de toiture, nettoyage de façade, panneaux solaires et destruction de nids de frelons pour les particuliers. Sans javel, biodégradable, devis transparent et rapport photo.",
+  title: "Nettoyage par drone pour particuliers — Montpellier",
+  description: "Démoussage de toiture, nettoyage de façade, panneaux solaires et destruction de nids de frelons pour les particuliers à Montpellier, dans l'Hérault et le Gard. Sans javel, devis transparent et rapport photo.",
 };
 
 export default async function ParticuliersPage() {

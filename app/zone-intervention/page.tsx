@@ -145,6 +145,47 @@ export default async function ZoneInterventionPage() {
         </div>
       </section>
 
+      {/* Villes couvertes — liens vers les pages locales.
+          Ces liens sont indispensables : sans eux, les pages villes sont
+          orphelines et Google les explore mal (constaté dans Search Console). */}
+      <section className="py-20 bg-slate-50 border-t border-slate-200">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">
+              {isEn ? "Our local operation pages" : "Nos pages d'intervention locales"}
+            </h2>
+            <p className="text-slate-600 max-w-2xl mx-auto">
+              {isEn
+                ? "Each city has its own realities: local climate, building types, access constraints. Find the specifics of your area."
+                : "Chaque ville a ses réalités : climat local, type de bâti, contraintes d'accès. Retrouvez les spécificités de votre secteur."}
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              { slug: "montpellier", nom: "Montpellier", dept: "Hérault (34)" },
+              { slug: "nimes",       nom: "Nîmes",       dept: "Gard (30)" },
+              { slug: "beziers",     nom: "Béziers",     dept: "Hérault (34)" },
+              { slug: "sete",        nom: "Sète",        dept: "Hérault (34)" },
+              { slug: "perpignan",   nom: "Perpignan",   dept: "Pyrénées-Orientales (66)" },
+              { slug: "toulouse",    nom: "Toulouse",    dept: "Haute-Garonne (31)" },
+              { slug: "avignon",     nom: "Avignon",     dept: "Vaucluse (84)" },
+              { slug: "marseille",   nom: "Marseille",   dept: "Bouches-du-Rhône (13)" },
+            ].map((v) => (
+              <Link
+                key={v.slug}
+                href={`/intervention/${v.slug}`}
+                className="group bg-white rounded-2xl border border-slate-200 p-5 hover:border-brand-orange-500 hover:shadow-md transition-all"
+              >
+                <p className="font-bold text-slate-900 group-hover:text-brand-orange-500 transition-colors">
+                  {v.nom}
+                </p>
+                <p className="text-xs text-slate-500 mt-1">{v.dept}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 bg-gradient-to-br from-[#0e2f52] via-[#1a3d65] to-[#0e2f52] text-center px-4">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-6">

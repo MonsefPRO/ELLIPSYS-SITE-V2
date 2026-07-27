@@ -6,8 +6,8 @@ import AccordionSection from "@/components/AccordionSection";
 import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
-  title: "Destruction de nids de frelons en grande hauteur par drone ",
-  description: "La solution d'urgence optimale pour les nids inaccessibles. Aucun risque humain, produit Certibiocide injecté à distance, retrait du nid inclus. Intervention sous 2h.",
+  title: "Destruction de nids de frelons par drone — Montpellier",
+  description: "Destruction de nids de frelons asiatiques en grande hauteur par drone à Montpellier et dans l'Hérault. Aucun risque humain, produit Certibiocide injecté à distance, retrait du nid inclus. Intervention rapide.",
   alternates: {
     canonical: "https://ellipsys-solutions.com/prestations/nuisibles",
   },
