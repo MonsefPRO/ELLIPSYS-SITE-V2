@@ -40,7 +40,7 @@ export default async function HauteExigencePage() {
     {
       icon: FileText, color: "text-emerald-600", bg: "bg-emerald-50",
       title: isEn ? "Documentary rigour" : "Rigueur Documentaire",
-      desc: isEn ? "We provide Safety Data Sheets (SDS) for our biocide products or use pure osmosed water to comply with your quality processes." : "Nous fournissons les Fiches de Données de Sécurité (FDS) de nos produits biocides ou utilisons de l'eau pure osmosée pour respecter vos process qualité.",
+      desc: isEn ? "We provide Safety Data Sheets (SDS) for our biocide products or use filtered water to comply with your quality processes." : "Nous fournissons les Fiches de Données de Sécurité (FDS) de nos produits biocides ou utilisons de l'eau filtrée pour respecter vos process qualité.",
     },
     {
       icon: ShieldCheck, color: "text-brand-orange-500", bg: "bg-brand-orange-50",
@@ -60,7 +60,7 @@ export default async function HauteExigencePage() {
     },
     {
       title: isEn ? "Safety Data Sheet provided after each intervention" : "Fiche de Données de Sécurité fournie à l'issue de chaque intervention",
-      desc: isEn ? "We provide Safety Data Sheets (SDS) for our biocide products or use pure osmosed water to comply with your quality processes. Complete documentation is delivered immediately after each intervention." : "Nous fournissons les Fiches de Donnees de Securite (FDS) de nos produits biocides ou utilisons de l'eau pure osmosee pour respecter vos process qualite. La documentation complète est remise immédiatement après chaque intervention.",
+      desc: isEn ? "We provide Safety Data Sheets (SDS) for our biocide products or use filtered water to comply with your quality processes. Complete documentation is delivered immediately after each intervention." : "Nous fournissons les Fiches de Donnees de Securite (FDS) de nos produits biocides ou utilisons de l'eau filtree pour respecter vos process qualite. La documentation complète est remise immédiatement après chaque intervention.",
     },
     {
       title: isEn ? "No ground footprint — guaranteed continuity of your operations" : "Aucune emprise au sol — continuité de vos activités garantie",
@@ -190,7 +190,7 @@ export default async function HauteExigencePage() {
                   : <>Nous garantissons un nettoyage de précision de vos infrastructures (bâtiments d&apos;assemblage, entrepôts, hangars aéronautiques), répondant aux normes de propreté et de sécurité strictes (<strong>FOD</strong> - Foreign Object Debris) exigées par le secteur.</>}
               </p>
               <div className="p-4 bg-slate-800 rounded-2xl">
-                <p className="text-xs text-slate-300 leading-relaxed italic font-medium">{isEn ? <>Documentary rigour: We provide Safety Data Sheets (<strong>SDS</strong>) for our biocide products or use <strong>pure osmosed water</strong> to comply with your quality processes.</> : <>Rigueur documentaire : Nous fournissons les Fiches de Données de Sécurité (<strong>FDS</strong>) de nos produits biocides ou utilisons de l&apos;<strong>eau pure osmosée</strong> pour respecter vos process qualité.</>}</p>
+                <p className="text-xs text-slate-300 leading-relaxed italic font-medium">{isEn ? <>Documentary rigour: We provide Safety Data Sheets (<strong>SDS</strong>) for our biocide products or use <strong>filtered water</strong> to comply with your quality processes.</> : <>Rigueur documentaire : Nous fournissons les Fiches de Données de Sécurité (<strong>FDS</strong>) de nos produits biocides ou utilisons de l&apos;<strong>eau filtrée</strong> pour respecter vos process qualité.</>}</p>
               </div>
             </div>
           </div>
@@ -213,7 +213,7 @@ export default async function HauteExigencePage() {
           <TestTube className="w-10 h-10 text-brand-orange-400 mx-auto mb-6" />
           <h2 className="text-3xl font-bold text-white mb-6">{isEn ? "Schedule an intervention on your site" : "Planifier une intervention sur votre site"}</h2>
           <p className="text-slate-300 mb-10 text-lg">
-            {isEn ? "We provide SDS for our biocide products or use pure osmosed water to comply with your quality processes." : "Nous fournissons les FDS de nos produits biocides ou utilisons de l'eau pure osmosee pour respecter vos process qualite."}
+            {isEn ? "We provide SDS for our biocide products or use filtered water to comply with your quality processes." : "Nous fournissons les FDS de nos produits biocides ou utilisons de l'eau filtree pour respecter vos process qualite."}
           </p>
           <Link href="/devis" className="inline-flex items-center gap-2 px-10 py-5 bg-gradient-to-r from-brand-orange-500 to-red-600 text-white rounded-xl font-bold text-lg hover:scale-105 transition-transform shadow-2xl">
             {isEn ? "Schedule an intervention" : "Planifier une intervention"} <ChevronRight className="w-5 h-5" />

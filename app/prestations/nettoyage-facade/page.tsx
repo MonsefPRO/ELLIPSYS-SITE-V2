@@ -100,7 +100,7 @@ export default async function FacadesPage() {
       title: "Render, Roughcast and Concrete",
       icon: "🧱",
       traitement: "Adjustable high pressure (30 to 110 bar)",
-      desc: <>Pressure washing with <strong>pressure adjusted to substrate hardness</strong>, combined with targeted chemical degreaser pre-treatment. Full rinse with <strong>osmosis-purified water</strong> for an impeccable finish, free of streaks or limescale residue.</>,
+      desc: <>Pressure washing with <strong>pressure adjusted to substrate hardness</strong>, combined with targeted chemical degreaser pre-treatment. Full rinse with <strong>filtered water</strong> for an impeccable finish, free of streaks or limescale residue.</>,
       note: "Compatible with the majority of facade coatings.",
     },
     {
@@ -129,7 +129,7 @@ export default async function FacadesPage() {
       title: "Enduits, Crépis et Béton",
       icon: "🧱",
       traitement: "Haute pression modulable (30 à 110 bars)",
-      desc: <>Nettoyage <strong>haute pression</strong> adaptée à la dureté du support, combiné à un prétraitement chimique dégraissant ciblé. Rinçage complet à l&apos;<strong>eau osmosée</strong> pour un résultat impeccable, sans traces ni résidus calcaires.</>,
+      desc: <>Nettoyage <strong>haute pression</strong> adaptée à la dureté du support, combiné à un prétraitement chimique dégraissant ciblé. Rinçage complet à l&apos;<strong>eau filtrée</strong> pour un résultat impeccable, sans traces ni résidus calcaires.</>,
       note: "Compatible avec la majorité des revêtements de façade.",
     },
     {

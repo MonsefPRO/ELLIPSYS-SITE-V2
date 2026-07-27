@@ -126,7 +126,7 @@ export default async function PanneauxPhotovoltaiquesPage() {
               </div>
               <div className="absolute bottom-5 left-5 right-5">
                 <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/15 border border-white/30 text-white text-sm font-bold backdrop-blur-sm">
-                  ☀️ {isEn ? "Real project — 22,000 m² solar farm, Montchanin (71)" : "Chantier réel — centrale de 22 000 m², Montchanin (71)"}
+                  ☀️ {isEn ? "Real project — 31,000 m² solar farm, Vitry (71)" : "Chantier réel — centrale de 31 000 m², Vitry (71)"}
                 </span>
               </div>
             </div>

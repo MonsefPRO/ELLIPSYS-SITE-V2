@@ -146,7 +146,7 @@ export const VILLES: Record<string, VilleData> = {
     faq: [
       {
         q: "Peut-on nettoyer une façade en pierre nîmoise sans l'abîmer ?",
-        r: "Oui, à condition de bannir la haute pression. Le calcaire de Barutel est tendre : un jet puissant arrache la couche superficielle, ouvre la porosité et accélère le réencrassement. Nous travaillons à basse pression avec de l'eau osmosée, sans additif abrasif — une méthode compatible avec les prescriptions des Architectes des Bâtiments de France.",
+        r: "Oui, à condition de bannir la haute pression. Le calcaire de Barutel est tendre : un jet puissant arrache la couche superficielle, ouvre la porosité et accélère le réencrassement. Nous travaillons à basse pression avec de l'eau filtrée, sans additif abrasif — une méthode compatible avec les prescriptions des Architectes des Bâtiments de France.",
       },
       {
         q: "Faut-il une autorisation pour un nettoyage en secteur sauvegardé à Nîmes ?",
@@ -385,7 +385,7 @@ export const VILLES: Record<string, VilleData> = {
     faq: [
       {
         q: "Peut-on nettoyer une façade en brique foraine sans la dégrader ?",
-        r: "Oui, mais uniquement à basse pression. La brique foraine est poreuse : un karcher retire la croûte de surface, met à nu une matière plus absorbante et provoque un réencrassement accéléré. Nous travaillons à l'eau osmosée basse pression, sans abrasion mécanique du support.",
+        r: "Oui, mais uniquement à basse pression. La brique foraine est poreuse : un karcher retire la croûte de surface, met à nu une matière plus absorbante et provoque un réencrassement accéléré. Nous travaillons à l'eau filtrée basse pression, sans abrasion mécanique du support.",
       },
       {
         q: "Intervenez-vous sur les sites industriels de Blagnac et Colomiers ?",
@@ -468,7 +468,7 @@ export const VILLES: Record<string, VilleData> = {
     accroche: "Intra-muros classé, pierre calcaire et mistral : nettoyage doux sans échafaudage ni emprise au sol.",
     intro: [
       "Avignon pose un problème que la plupart des villes n'ont pas à cette échelle : la quasi-totalité du centre est intra-muros, classé, et soumise à l'avis des Architectes des Bâtiments de France. Les rues y sont étroites, souvent piétonnes, et l'implantation d'un échafaudage suppose une autorisation de voirie longue à obtenir et coûteuse à occuper.",
-      "Le bâti avignonnais est majoritairement en pierre calcaire, avec un grand nombre d'hôtels particuliers et de façades anciennes qui ne tolèrent aucun nettoyage abrasif. À cela s'ajoute le mistral, qui souffle ici avec une constance particulière et transporte poussières et particules jusque dans les cours intérieures. Notre approche — drone, basse pression, eau osmosée, zéro emprise au sol — répond simultanément à la contrainte patrimoniale, à la contrainte matériau et à la contrainte d'accès.",
+      "Le bâti avignonnais est majoritairement en pierre calcaire, avec un grand nombre d'hôtels particuliers et de façades anciennes qui ne tolèrent aucun nettoyage abrasif. À cela s'ajoute le mistral, qui souffle ici avec une constance particulière et transporte poussières et particules jusque dans les cours intérieures. Notre approche — drone, basse pression, eau filtrée, zéro emprise au sol — répond simultanément à la contrainte patrimoniale, à la contrainte matériau et à la contrainte d'accès.",
     ],
     facteurs: [
       {

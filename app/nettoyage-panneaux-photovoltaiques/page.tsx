@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     "robot nettoyage panneaux solaires",
   ],
   openGraph: {
-    title: "Nettoyage de Centrales Photovoltaïques — Drone + Robot + Eau Osmosée",
+    title: "Nettoyage de Centrales Photovoltaïques — Drone + Robot + Eau Filtrée",
     description: "Restauration de production garantie pour exploitants et asset managers. Audit soiling gratuit sur votre centrale. France entière.",
     url: "https://ellipsys-solutions.com/nettoyage-panneaux-photovoltaiques",
     images: ["/images/avant-apres-panneaux.jpg"],

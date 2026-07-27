@@ -22,7 +22,7 @@ export default async function MaritimePage() {
   const stats = [
     { value: "Cl⁻",      label: isEn ? "Chlorides eliminated after desalination" : "Chlorures éliminés après dessalage" },
     { value: "10×",       label: isEn ? "Repair cost vs preventive maintenance" : "Coût réparation vs entretien préventif" },
-    { value: "0.5 L/m²", label: isEn ? "Fresh osmosed water consumed" : "Eau douce osmosée consommée" },
+    { value: "0.5 L/m²", label: isEn ? "Fresh filtered water consumed" : "Eau douce filtrée consommée" },
     { value: "100 %",     label: isEn ? "Types of infrastructure covered" : "Types d'infrastructures couvertes" },
   ];
 
@@ -52,7 +52,7 @@ export default async function MaritimePage() {
   const avantages = [
     {
       title: isEn ? "Harbour masters' offices and port hangars — desalination of façades and roofs" : "Capitaineries et hangars portuaires — dessalage façades et toitures",
-      desc: isEn ? "Cleaning of façades and roofs exposed to sea spray. Our desalination protocols combine a low-pressure rinse with fresh osmosed water to evacuate chloride deposits, followed by a protective treatment adapted to the material type." : "Nettoyage de façades et toitures exposées aux embruns. Nos protocoles de dessalage combinent un rinçage à l'eau douce osmosée sous faible pression pour évacuer les dépôts de chlorures, suivi d'un traitement protecteur adapté au type de matériau.",
+      desc: isEn ? "Cleaning of façades and roofs exposed to sea spray. Our desalination protocols combine a low-pressure rinse with fresh filtered water to evacuate chloride deposits, followed by a protective treatment adapted to the material type." : "Nettoyage de façades et toitures exposées aux embruns. Nos protocoles de dessalage combinent un rinçage à l'eau douce filtrée sous faible pression pour évacuer les dépôts de chlorures, suivi d'un traitement protecteur adapté au type de matériau.",
     },
     {
       title: isEn ? "Pontoons and metal structures — prevention of accelerated corrosion" : "Pontons et structures métalliques — prévention corrosion accélérée",
@@ -186,8 +186,8 @@ export default async function MaritimePage() {
               </h3>
               <p className="text-slate-600 leading-relaxed text-sm">
                 {isEn
-                  ? <>Our intervention combines a <strong>controlled rinse</strong> with fresh osmosed water at <strong>low pressure</strong> to evacuate <strong>chloride</strong> deposits, followed by a protective treatment adapted to the material type (metal, reinforced concrete, composite). A thermographic inspection can complement the intervention to detect areas of residual moisture.</>
-                  : <>Notre intervention combine un <strong>rinçage contrôlé</strong> à l&apos;eau douce osmosée sous <strong>faible pression</strong> pour évacuer les dépôts de <strong>chlorures</strong>, suivi d&apos;un traitement protecteur adapté au type de matériau (métal, béton armé, composite). Une inspection thermographique peut compléter l&apos;intervention pour détecter les zones d&apos;humidité résiduelle.</>}
+                  ? <>Our intervention combines a <strong>controlled rinse</strong> with fresh filtered water at <strong>low pressure</strong> to evacuate <strong>chloride</strong> deposits, followed by a protective treatment adapted to the material type (metal, reinforced concrete, composite). A thermographic inspection can complement the intervention to detect areas of residual moisture.</>
+                  : <>Notre intervention combine un <strong>rinçage contrôlé</strong> à l&apos;eau douce filtrée sous <strong>faible pression</strong> pour évacuer les dépôts de <strong>chlorures</strong>, suivi d&apos;un traitement protecteur adapté au type de matériau (métal, béton armé, composite). Une inspection thermographique peut compléter l&apos;intervention pour détecter les zones d&apos;humidité résiduelle.</>}
               </p>
               <div className="p-4 bg-blue-50 border border-blue-200 rounded-2xl">
                 <p className="text-blue-800 text-sm font-semibold">{isEn ? <>In coastal environments, <strong>intervention frequency</strong> is key. Contact us to establish a maintenance plan adapted to the exposure of your infrastructure.</> : <>En milieu côtier, la <strong>fréquence d&apos;intervention</strong> est clé. Contactez-nous pour établir un plan de maintenance adapté à l&apos;exposition de vos infrastructures.</>}</p>

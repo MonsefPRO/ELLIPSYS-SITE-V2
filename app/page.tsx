@@ -159,7 +159,7 @@ export default async function HomePage() {
         {
           q: "Do you need access to water or electricity on my site?",
           a: (
-            <p>Yes, in general, access to a mains water point on your site is essential. Our drones and spray robots need to be connected to a water supply to feed our filtration (<strong>osmosed water</strong>) and continuous pumping systems. Electricity access is also required depending on your installation configuration. In cases of technical constraints, we can however organise operations using specialist equipment such as tanks, generators or other solutions as needed.</p>
+            <p>Yes, in general, access to a mains water point on your site is essential. Our drones and spray robots need to be connected to a water supply to feed our filtration (<strong>filtered water</strong>) and continuous pumping systems. Electricity access is also required depending on your installation configuration. In cases of technical constraints, we can however organise operations using specialist equipment such as tanks, generators or other solutions as needed.</p>
           ),
         },
         {
@@ -241,7 +241,7 @@ export default async function HomePage() {
         {
           q: "Avez-vous besoin d'un accès à l'eau ou à l'électricité sur mon site ?",
           a: (
-            <p>Oui, de manière générale, un accès à un point d&apos;eau de ville est indispensable sur votre site. Nos drones et robots pulvérisateurs ont besoin d&apos;être raccordés à une arrivée d&apos;eau pour alimenter nos systèmes de filtration (<strong>eau osmosée</strong>) et de pompage en continu. L&apos;accès à l&apos;électricité est également requis selon les configurations de votre installation. En cas de contraintes techniques, nous pouvons néanmoins organiser les chantiers en mobilisant des équipements spéciaux de type citernes, générateurs, ou autres selon vos besoins.</p>
+            <p>Oui, de manière générale, un accès à un point d&apos;eau de ville est indispensable sur votre site. Nos drones et robots pulvérisateurs ont besoin d&apos;être raccordés à une arrivée d&apos;eau pour alimenter nos systèmes de filtration (<strong>eau filtrée</strong>) et de pompage en continu. L&apos;accès à l&apos;électricité est également requis selon les configurations de votre installation. En cas de contraintes techniques, nous pouvons néanmoins organiser les chantiers en mobilisant des équipements spéciaux de type citernes, générateurs, ou autres selon vos besoins.</p>
           ),
         },
         {

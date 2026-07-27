@@ -39,7 +39,7 @@ export default async function ParticuliersPage() {
           bg: "bg-amber-50",
           border: "border-amber-200",
           title: "Solar Panel Cleaning",
-          desc: "Osmosis water cleaning of your photovoltaic panels to restore nominal output. Measurable production gain of 4 to 7%.",
+          desc: "Cleaning of your photovoltaic panels to restore nominal output. Measurable production gain of 4 to 7%.",
           href: "/prestations/nettoyage-solaire",
         },
         {
