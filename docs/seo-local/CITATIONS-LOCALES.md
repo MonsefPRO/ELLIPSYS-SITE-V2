@@ -25,7 +25,10 @@ Ville             : Montpellier
 Pays              : France
 Téléphone         : 04 67 20 97 09
 Format international : +33 4 67 20 97 09
+E-mail            : contact@ellipsys-group.com
 Site web          : https://ellipsys-solutions.com
+SIRET             : 99995753300014
+SIREN             : 999957533
 ```
 
 **Points de vigilance :**
@@ -36,16 +39,19 @@ Site web          : https://ellipsys-solutions.com
   utiliser `+33 4 67 20 97 09`.
 - URL **avec** `https://` et **sans** `www.` (c'est la forme canonique du site).
 
-### 🟠 Deux informations à trancher avant de commencer
+### ✅ Informations tranchées (27/07/2026) — plus aucun blocage
 
-| Élément | Statut | Pourquoi c'est bloquant |
-|---|---|---|
-| **SIRET / SIREN** | ❓ à me fournir | Demandé par PagesJaunes, Kompass, Europages, Societe.com. C'est aussi la clé anti-doublon des annuaires B2B. |
-| **E-mail public** | ❓ `contact@ellipsys-group.com` ou `@ellipsys-solutions.com` ? | Une fois diffusé sur 30 annuaires, c'est très pénible à corriger. **À figer avant la première inscription.** |
+| Élément | Valeur retenue |
+|---|---|
+| **SIRET** | `99995753300014` |
+| **SIREN** | `999957533` |
+| **E-mail public** | `contact@ellipsys-group.com` |
 
-> Le site affiche aujourd'hui `contact@ellipsys-group.com`. Si la boîte `@ellipsys-solutions.com`
-> n'existe pas, on garde `@ellipsys-group.com` partout — l'incohérence de domaine est un moindre mal
-> comparé à une adresse qui ne reçoit rien.
+> Le SIRET est **public** (registre des entreprises) : aucun problème à le diffuser, il est même
+> attendu par PagesJaunes, Kompass, Europages et Societe.com, et sert de clé anti-doublon.
+> L'e-mail retenu est celui qui reçoit réellement — cohérence sur les 24 annuaires.
+>
+> **Les 3 vagues d'inscription peuvent démarrer immédiatement.**
 
 ---
 
