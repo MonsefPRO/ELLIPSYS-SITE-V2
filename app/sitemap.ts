@@ -45,6 +45,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/valeurs", priority: 0.6, changeFrequency: "monthly" },
     { path: "/partenaires", priority: 0.6, changeFrequency: "monthly" },
     { path: "/politique-confidentialite", priority: 0.3, changeFrequency: "yearly" },
+    { path: "/mentions-legales", priority: 0.3, changeFrequency: "yearly" },
 
     // Secteurs
     { path: "/domaines", priority: 0.85, changeFrequency: "monthly" },

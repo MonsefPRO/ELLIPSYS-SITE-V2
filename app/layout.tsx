@@ -94,6 +94,11 @@ const jsonLd = {
         "Spécialiste de la maintenance extérieure par drone et robotique : nettoyage de panneaux solaires, démoussage toiture, façades, thermographie, destruction de nids de frelons. Intervention sans échafaudage, partout en France.",
       "url": "https://ellipsys-solutions.com",
       "telephone": "+33467209709",
+      // Identifiants légaux publics : renforcent la confiance accordée par Google
+      // (E-E-A-T) en rattachant le site à une entité juridique vérifiable.
+      "vatID": "FR74999957533",
+      "taxID": "99995753300014",
+      "legalName": "Ellipsys Solutions",
       "email": "contact@ellipsys-group.com",
       "logo": "https://ellipsys-solutions.com/images/favicon.png",
       "image": "https://ellipsys-solutions.com/images/accueil.png",

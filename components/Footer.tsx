@@ -151,7 +151,7 @@ export default function Footer() {
         <div className="mt-16 pt-8 border-t border-slate-800 text-sm text-slate-500 flex flex-col md:flex-row justify-between items-center gap-4">
           <p>© {new Date().getFullYear()} Ellipsys Solutions. {f.rights}</p>
           <div className="flex gap-6">
-            <Link href="/politique-confidentialite" className="hover:text-white transition-colors">{f.legal}</Link>
+            <Link href="/mentions-legales" className="hover:text-white transition-colors">{f.legal}</Link>
             <Link href="/politique-confidentialite" className="hover:text-white transition-colors">{f.privacy}</Link>
           </div>
         </div>
