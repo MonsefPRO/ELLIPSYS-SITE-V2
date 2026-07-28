@@ -1,5 +1,5 @@
 # 🚀 Campagne Google Ads — Sprint 5 jours
-**Lundi 24 → vendredi 28 août 2026 · Compte 157-589-1262**
+**Lundi 7 → vendredi 11 septembre 2026 · Compte 157-589-1262**
 
 ---
 
@@ -29,17 +29,17 @@ vous dira où investir ensuite. Sans conversion branchée, il n'y a pas de donn�
 
 | Échéance | Action | Qui |
 |---|---|---|
-| **avant le 10 août** | Suivi de conversion créé dans Google Ads + balise GTM publiée + **test réel validé** | Vous (je peux guider pas à pas) |
-| **avant le 10 août** | Vague 1 des citations locales (voir `docs/seo-local/CITATIONS-LOCALES.md`) | Vous |
-| **avant le 17 août** | Landing pages dédiées en ligne *(voir § Landing pages)* | Moi |
-| **lundi 17 août** | Campagne créée **en pause**, annonces soumises à validation | Vous |
-| **jeudi 20 août** | Contrôle : toutes les annonces affichent « Validée » ✅ | Vous |
-| **vendredi 21 août** | Faux devis de test → vérifier que la conversion remonte dans Google Ads | Vous |
-| **lundi 24 août, 8 h** | **Activation** | Vous |
-| 24 → 28 août, chaque soir | Pilotage quotidien (voir § Pilotage) | Vous + moi |
-| **samedi 29 août** | Mise en pause + bilan complet | Moi |
+| **avant le 24 août** | Suivi de conversion créé dans Google Ads + balise GTM publiée + **test réel validé** | Vous (je peux guider pas à pas) |
+| **avant le 24 août** | Vague 1 des citations locales (voir `docs/seo-local/CITATIONS-LOCALES.md`) | Vous |
+| **avant le 31 août** | Landing pages dédiées en ligne *(voir § Landing pages)* | Moi |
+| **lundi 31 août** | Campagne créée **en pause**, annonces soumises à validation | Vous |
+| **jeudi 3 septembre** | Contrôle : toutes les annonces affichent « Validée » ✅ | Vous |
+| **vendredi 4 septembre** | Faux devis de test → vérifier que la conversion remonte dans Google Ads | Vous |
+| **lundi 7 septembre, 8 h** | **Activation** | Vous |
+| 7 → 11 septembre, chaque soir | Pilotage quotidien (voir § Pilotage) | Vous + moi |
+| **samedi 12 septembre** | Mise en pause + bilan complet | Moi |
 
-> ⛔ **Si le suivi de conversion n'est pas validé le 21 août, ne lancez pas.** Décalez d'une semaine.
+> ⛔ **Si le suivi de conversion n'est pas validé le 4 septembre, ne lancez pas.** Décalez d'une semaine.
 > Une campagne à l'aveugle brûle le budget sans produire l'information qui justifie de le dépenser.
 
 ---
@@ -86,7 +86,7 @@ d'ailleurs prévu au § Pilotage.
 | Budget quotidien | **100 €** | |
 | Stratégie d'enchères | **Maximiser les clics** + plafond CPC **3,00 €** | ⛔ Surtout pas de tCPA ni Maximiser les conversions. |
 | Langue | Français | |
-| Dates | **24/08/2026 → 28/08/2026** | À saisir dès la création. Évite tout dépassement oublié. |
+| Dates | **07/09/2026 → 11/09/2026** | À saisir dès la création. Évite tout dépassement oublié. |
 | Diffusion | Standard | |
 | Rotation des annonces | **Optimiser** | |
 
@@ -378,9 +378,9 @@ en-tête fixe sur mobile.
 
 **Bénéfice double :** meilleur Quality Score pour les annonces (CPC plus bas dès le premier jour) **et**
 pages positionnables en référencement naturel — elles continueront de travailler longtemps après
-l'arrêt de la campagne. C'est le seul élément du sprint dont la valeur survit au 28 août.
+l'arrêt de la campagne. C'est le seul élément du sprint dont la valeur survit au 11 septembre.
 
-**Échéance : en ligne le 17 août**, pour que Google ait le temps de les explorer avant le lancement.
+**Échéance : en ligne le 31 août**, pour que Google ait le temps de les explorer avant le lancement.
 Dites-moi quand vous validez le budget et je les construis.
 
 ---
@@ -393,11 +393,11 @@ que vous avez acheté. Tout terme hors sujet part immédiatement en négatif.
 
 | Jour | À faire |
 |---|---|
-| **Lun 24** | 10 h : vérifier que les annonces diffusent (« Éligible »). 19 h : premier tri des termes de recherche. Ne rien optimiser d'autre — trop tôt. |
-| **Mar 25** | Tri des termes. Noter le CPC réel moyen par groupe. Si un CPC dépasse largement le plafond attendu, baisser l'enchère du groupe. |
-| **Mer 26** | **Point de bascule.** Comparer les 3 groupes : CTR, coût par lead. Mettre en pause les mots-clés à 0 clic après 100+ impressions. Réallouer vers le groupe gagnant. |
-| **Jeu 27** | Si le coût par lead est inférieur à 80 €, **monter le budget quotidien de 50 %** pour les 2 derniers jours. C'est le moment d'appuyer, pas d'attendre. |
-| **Ven 28** | Journée pleine. Ne plus toucher aux réglages : on ne modifie pas une campagne le jour où on la mesure. Mise en pause à 20 h. |
+| **Lun 7** | 10 h : vérifier que les annonces diffusent (« Éligible »). 19 h : premier tri des termes de recherche. Ne rien optimiser d'autre — trop tôt. |
+| **Mar 8** | Tri des termes. Noter le CPC réel moyen par groupe. Si un CPC dépasse largement le plafond attendu, baisser l'enchère du groupe. |
+| **Mer 9** | **Point de bascule.** Comparer les 3 groupes : CTR, coût par lead. Mettre en pause les mots-clés à 0 clic après 100+ impressions. Réallouer vers le groupe gagnant. |
+| **Jeu 10** | Si le coût par lead est inférieur à 80 €, **monter le budget quotidien de 50 %** pour les 2 derniers jours. C'est le moment d'appuyer, pas d'attendre. |
+| **Ven 11** | Journée pleine. Ne plus toucher aux réglages : on ne modifie pas une campagne le jour où on la mesure. Mise en pause à 20 h. |
 
 ### Repères de lecture (scénario B, 500 €)
 | Indicateur | Alerte | Correct | Bon |
@@ -450,7 +450,7 @@ même session. Le premier qui répond emporte souvent l'affaire.
 
 Le sprint n'est pas une fin : c'est une source de données.
 
-- **Bilan complet le 29 août** : quel service, quel mot-clé, quel appareil, quelle heure ont produit
+- **Bilan complet le 12 septembre** : quel service, quel mot-clé, quel appareil, quelle heure ont produit
   les leads. C'est la réponse à « où mettre mon argent ».
 - Les **3 landing pages restent en ligne** et continuent de se positionner en référencement naturel.
 - **Local Services Ads / Google Garanti** : disponible en France, facturation au lead, badge affiché
@@ -464,7 +464,7 @@ Le sprint n'est pas une fin : c'est une source de données.
 
 1. **Le budget** : A (250 €), B (500 €, recommandé) ou C (1 000 €) ?
 2. **Feu vert sur les 3 landing pages** — c'est le seul élément que je ne peux pas construire sans
-   votre validation, et il conditionne la date du 17 août.
+   votre validation, et il conditionne la date du 31 août.
 3. Le **SIRET** et l'**e-mail public définitif** (voir `docs/seo-local/CITATIONS-LOCALES.md`).
 
 Dès que j'ai le point 2, je construis les pages.

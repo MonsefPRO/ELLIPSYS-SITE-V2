@@ -182,9 +182,13 @@ const jsonLd = {
         "reviewCount": "4",
         "bestRating": "5",
       },
+      // Profils officiels : permettent à Google de relier explicitement le site
+      // à l'entité. À compléter au fur et à mesure des citations obtenues.
       "sameAs": [
         "https://www.linkedin.com/company/ellipsys-solutions-drones",
-        "https://www.instagram.com/ellipsysolutionsdrone/"
+        "https://www.instagram.com/ellipsysolutionsdrone/",
+        "https://www.tiktok.com/@ellipsyssolutions",
+        "https://www.facebook.com/profile.php?id=61588550468356"
       ],
     },
     {

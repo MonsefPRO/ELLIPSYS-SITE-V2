@@ -114,9 +114,9 @@ Ce sont celles qui pèsent réellement sur le local pack. **8 inscriptions, ~2 h
 
 | # | Annuaire | URL d'inscription | Coût | Pourquoi |
 |---|---|---|---|---|
-| 1 | **Google Business Profile** | ✅ *déjà fait* | Gratuit | La fiche mère. |
-| 2 | **Bing Places** | bingplaces.com | Gratuit | Alimente Bing **et Copilot**. Import direct depuis Google en 1 clic. |
-| 3 | **Apple Business Connect** | businessconnect.apple.com | Gratuit | Apple Plans + Siri. Très peu de concurrents l'ont fait — avantage facile. |
+| 1 | **Google Business Profile** | ✅ *fait* | Gratuit | La fiche mère. |
+| 2 | **Bing Places** | ✅ *fait le 28/07/2026* | Gratuit | Alimente Bing **et Copilot**. |
+| 3 | **Apple Business Connect** | ✅ *fait le 28/07/2026* | Gratuit | Apple Plans + Siri. Très peu de concurrents l'ont fait — avantage acquis. |
 | 4 | **PagesJaunes** | pagesjaunes.fr (espace pro Solocal) | Offre gratuite existante | **La plus grosse autorité locale française.** Incontournable. |
 | 5 | **Facebook — infos du lieu** | Page existante | Gratuit | Vérifier que l'adresse et le téléphone correspondent **exactement** au bloc canonique. |
 | 6 | **Yelp France** | biz.yelp.fr | Gratuit | Alimente Apple Plans et plusieurs agrégateurs. |
