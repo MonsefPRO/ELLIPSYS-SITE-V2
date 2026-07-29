@@ -47,6 +47,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/politique-confidentialite", priority: 0.3, changeFrequency: "yearly" },
     { path: "/mentions-legales", priority: 0.3, changeFrequency: "yearly" },
 
+    // Landing pages transactionnelles locales (aussi utilisées en Google Ads).
+    // Contenu local + FAQ propres : elles servent en SEO même hors campagne.
+    { path: "/demoussage-toiture-montpellier", priority: 0.9, changeFrequency: "monthly" },
+    { path: "/nettoyage-panneaux-solaires-montpellier", priority: 0.9, changeFrequency: "monthly" },
+    { path: "/nettoyage-facade-montpellier", priority: 0.9, changeFrequency: "monthly" },
+
     // Secteurs
     { path: "/domaines", priority: 0.85, changeFrequency: "monthly" },
     { path: "/secteurs/energie-solaire", priority: 0.85, changeFrequency: "monthly" },
