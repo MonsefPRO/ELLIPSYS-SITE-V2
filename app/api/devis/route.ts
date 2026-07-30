@@ -59,9 +59,10 @@ function buildDescription(d: DevisData): string {
   lines.push("");
   lines.push("── COORDONNÉES ──");
   lines.push(`Nom / Raison sociale : ${d.name}`);
-  lines.push(`Email : ${d.email}`);
+  if (d.email) lines.push(`Email : ${d.email}`);
   if (d.phone) lines.push(`Téléphone : ${d.phone}`);
-  lines.push(`Ville / CP : ${d.city}`);
+  if (d.city) lines.push(`Ville / CP : ${d.city}`);
+  if (!d.email && d.phone) lines.push("⚠️ Lead à RAPPELER (pas d'e-mail fourni)");
   if (d.siret) lines.push(`SIRET : ${d.siret}`);
   lines.push("");
   lines.push("── DÉTAILS DU PROJET ──");
@@ -145,9 +146,19 @@ export async function POST(req: NextRequest) {
     const pageUri = sanitize(body.pageUri, 300);
 
     // Validation
+    // Validation — on accepte un lead « rappelez-moi » qui n'a qu'un téléphone.
+    // Règle : un nom + AU MOINS un moyen de recontact (e-mail ou téléphone).
+    // La ville reste très utile mais ne doit plus bloquer un lead entrant.
     if (!name) return NextResponse.json({ error: "Nom requis." }, { status: 422 });
-    if (!isValidEmail(email)) return NextResponse.json({ error: "Email invalide." }, { status: 422 });
-    if (!city) return NextResponse.json({ error: "Ville requise." }, { status: 422 });
+    if (!email && !phone) {
+      return NextResponse.json(
+        { error: "Merci d'indiquer un e-mail ou un téléphone pour que nous puissions vous répondre." },
+        { status: 422 },
+      );
+    }
+    if (email && !isValidEmail(email)) {
+      return NextResponse.json({ error: "Email invalide." }, { status: 422 });
+    }
 
     // Référence unique pour le devis (utilisée pour le nommage Supabase Storage)
     const devisRef = `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
@@ -192,7 +203,10 @@ export async function POST(req: NextRequest) {
       hubspotContactId = contactRes.id;
       if (contactRes.error) hubspotError = `Contact: ${contactRes.error}`;
 
-      const dealName = `Devis ${serviceLabel} — ${city} — ${name}`.slice(0, 200);
+      const dealName = [`Devis ${serviceLabel}`, city, name]
+        .filter(Boolean)
+        .join(" — ")
+        .slice(0, 200);
       const dealRes = await createDeal(
         {
           name: dealName,
@@ -278,7 +292,9 @@ export async function POST(req: NextRequest) {
               <tr><td style="padding:8px 12px;border-bottom:1px solid #e2e8f0;color:#64748b;width:40%">Type client</td><td style="padding:8px 12px;border-bottom:1px solid #e2e8f0"><strong>${clientType === "pro" ? "Professionnel" : "Particulier"}</strong></td></tr>
               <tr><td style="padding:8px 12px;border-bottom:1px solid #e2e8f0;color:#64748b">Service</td><td style="padding:8px 12px;border-bottom:1px solid #e2e8f0"><strong>${escapeHtml(serviceLabel)}</strong></td></tr>
               <tr><td style="padding:8px 12px;border-bottom:1px solid #e2e8f0;color:#64748b">Nom</td><td style="padding:8px 12px;border-bottom:1px solid #e2e8f0">${escapeHtml(name)}</td></tr>
-              <tr><td style="padding:8px 12px;border-bottom:1px solid #e2e8f0;color:#64748b">Email</td><td style="padding:8px 12px;border-bottom:1px solid #e2e8f0"><a href="mailto:${escapeHtml(email)}">${escapeHtml(email)}</a></td></tr>
+              ${email
+                ? `<tr><td style="padding:8px 12px;border-bottom:1px solid #e2e8f0;color:#64748b">Email</td><td style="padding:8px 12px;border-bottom:1px solid #e2e8f0"><a href="mailto:${escapeHtml(email)}">${escapeHtml(email)}</a></td></tr>`
+                : `<tr><td style="padding:8px 12px;border-bottom:1px solid #e2e8f0;color:#64748b">Email</td><td style="padding:8px 12px;border-bottom:1px solid #e2e8f0;color:#b45309;font-weight:600">Non fourni — À RAPPELER</td></tr>`}
               <tr><td style="padding:8px 12px;border-bottom:1px solid #e2e8f0;color:#64748b">Téléphone</td><td style="padding:8px 12px;border-bottom:1px solid #e2e8f0">${phone ? `<a href="tel:${escapeHtml(phone)}">${escapeHtml(phone)}</a>` : "<em style='color:#94a3b8'>non renseigné</em>"}</td></tr>
               <tr><td style="padding:8px 12px;border-bottom:1px solid #e2e8f0;color:#64748b">Ville</td><td style="padding:8px 12px;border-bottom:1px solid #e2e8f0">${escapeHtml(city)}</td></tr>
               ${siret ? `<tr><td style="padding:8px 12px;border-bottom:1px solid #e2e8f0;color:#64748b">SIRET</td><td style="padding:8px 12px;border-bottom:1px solid #e2e8f0">${escapeHtml(siret)}</td></tr>` : ""}
@@ -311,7 +327,9 @@ export async function POST(req: NextRequest) {
         await resend.emails.send({
           from: `Ellipsys Solutions <${fromEmail}>`,
           to: teamEmails,
-          replyTo: email,
+          // Pas de reply-to sur un lead téléphone seul : il n'y a pas d'adresse
+          // à laquelle répondre, il faut rappeler.
+          ...(email && { replyTo: email }),
           subject,
           html,
         });
@@ -321,13 +339,16 @@ export async function POST(req: NextRequest) {
     }
 
     // ── 4) PostHog server-side capture ─────────────────────────────────
-    await identifyServer(email, {
-      email, name, phone: phone || undefined, city,
+    // Identité : l'e-mail quand on l'a, sinon le téléphone (lead « rappelez-moi »).
+    const distinctId = email || phone || devisRef;
+    await identifyServer(distinctId, {
+      ...(email && { email }),
+      name, phone: phone || undefined, city,
       client_type: clientType, siret: siret || undefined,
       lifecycle_stage: "lead",
     });
     await captureServer({
-      distinctId: email,
+      distinctId,
       event: "devis_submitted_server",
       properties: {
         service, service_label: serviceLabel, client_type: clientType, city,

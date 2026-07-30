@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Building2, User, Send, Camera, MapPin, Phone, Mail, CheckCircle2 } from "lucide-react";
+import QuickCallbackForm from "@/components/QuickCallbackForm";
 import { track, identify, Events } from "@/lib/analytics";
 import { pushLeadConversion } from "@/lib/gtag";
 
@@ -263,6 +264,44 @@ export default function DevisPage() {
             {isEn
               ? "Guide us through your project and our technical team will prepare a tailored proposal within 24/48h."
               : "Guidez-nous dans votre projet et notre bureau d'études vous prépare une offre sur mesure sous 24/48h."}
+          </p>
+        </div>
+      </section>
+
+      {/* ── RACCOURCI : rappel express ─────────────────────────────────────
+          Le formulaire détaillé ci-dessous sert à préparer une offre précise,
+          mais il est long pour un visiteur qui découvre le site. On lui offre
+          donc deux portes d'entrée immédiates (appeler / être rappelé) avant
+          de lui proposer le questionnaire complet. */}
+      <section className="px-4 -mt-8 relative z-10">
+        <div className="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl border border-slate-200 p-6 sm:p-8">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-5">
+            <div className="flex-1">
+              <p className="text-xs font-black uppercase tracking-widest text-brand-orange-500 mb-1">
+                {isEn ? "In a hurry?" : "Vous êtes pressé ?"}
+              </p>
+              <h2 className="text-xl font-black text-slate-900">
+                {isEn ? "Get a call back in 2 minutes" : "Faites-vous rappeler en 2 minutes"}
+              </h2>
+            </div>
+            <a
+              href="tel:+33467209709"
+              onClick={() => {
+                try {
+                  (window as unknown as { posthog?: { capture: (e: string, p?: Record<string, unknown>) => void } })
+                    .posthog?.capture("phone_clicked", { source: "devis_express" });
+                } catch { /* silent */ }
+              }}
+              className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl border-2 border-[#0e2f52] text-[#0e2f52] font-black hover:bg-[#0e2f52] hover:text-white transition-colors whitespace-nowrap"
+            >
+              <Phone className="w-4 h-4" /> 04 67 20 97 09
+            </a>
+          </div>
+          <QuickCallbackForm source="devis_express" />
+          <p className="text-center text-xs text-slate-400 mt-5 pt-4 border-t border-slate-100">
+            {isEn
+              ? "Prefer to detail your project? The full form is just below — it helps us prepare a more precise quote."
+              : "Vous préférez détailler votre projet ? Le formulaire complet est juste en dessous — il nous permet de chiffrer plus précisément."}
           </p>
         </div>
       </section>

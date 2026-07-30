@@ -4,7 +4,8 @@
 const HS_BASE = "https://api.hubapi.com";
 
 export interface HubspotContactInput {
-  email: string;
+  /** Optionnel : un lead « rappelez-moi » peut n'avoir qu'un téléphone. */
+  email?: string;
   firstname?: string;
   lastname?: string;
   phone?: string;
@@ -69,7 +70,9 @@ export async function upsertContact(
   token: string
 ): Promise<{ id: string | null; error?: string }> {
   const properties: Record<string, string> = {
-    email: input.email,
+    // L'e-mail n'est plus obligatoire : un lead « rappelez-moi » n'a qu'un
+    // téléphone. On ne l'envoie que s'il existe (HubSpot refuse une chaîne vide).
+    ...(input.email && { email: input.email }),
     ...(input.firstname && { firstname: input.firstname }),
     ...(input.lastname && { lastname: input.lastname }),
     ...(input.phone && { phone: input.phone }),
@@ -87,8 +90,9 @@ export async function upsertContact(
   );
   if (create.ok && create.data?.id) return { id: create.data.id };
 
-  // 409 = contact existe déjà → on cherche et met à jour
-  if (create.status === 409) {
+  // 409 = contact existe déjà → on cherche et met à jour.
+  // Ce cas suppose un e-mail : c'est la clé de déduplication HubSpot.
+  if (create.status === 409 && input.email) {
     const search = await hsFetch<{ results: { id: string }[] }>(
       "/crm/v3/objects/contacts/search",
       {
