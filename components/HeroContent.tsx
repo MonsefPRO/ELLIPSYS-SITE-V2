@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ChevronRight, Globe, CheckCircle2, ShieldCheck } from "lucide-react";
+import { ChevronRight, Globe, CheckCircle2, ShieldCheck, Phone } from "lucide-react";
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
@@ -64,12 +64,19 @@ export function HeroContent({ isEn }: Props) {
           >
             {isEn ? "Request a Free Quote" : "Demander un devis gratuit"} <ChevronRight className="w-5 h-5" />
           </Link>
-          <Link
-            href="/expertise"
-            className="w-full sm:w-auto px-8 py-4 bg-white/10 backdrop-blur-md text-white border border-white/30 rounded-xl font-bold text-lg hover:bg-white/20 active:scale-[0.98] transition-all shadow-lg flex items-center justify-center"
+          <a
+            href="tel:+33467209709"
+            onClick={() => {
+              try {
+                (window as unknown as { posthog?: { capture: (e: string, p?: Record<string, unknown>) => void } })
+                  .posthog?.capture("phone_clicked", { source: "hero" });
+              } catch { /* silent */ }
+            }}
+            className="w-full sm:w-auto px-8 py-4 bg-white/10 backdrop-blur-md text-white border border-white/30 rounded-xl font-bold text-lg hover:bg-white/20 active:scale-[0.98] transition-all shadow-lg flex items-center justify-center gap-2.5"
           >
-            {isEn ? "Our Technology Fleet" : "Notre parc technologique"}
-          </Link>
+            <Phone className="w-5 h-5 text-brand-orange-400" />
+            04 67 20 97 09
+          </a>
         </motion.div>
       </div>
 

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, Phone } from "lucide-react";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useLanguage } from "../contexts/LanguageContext";
 
@@ -151,6 +151,19 @@ export default function Header() {
           {/* CTA Desktop */}
           <div className="hidden lg:flex items-center gap-3">
             <LanguageSwitcher />
+            <a
+              href="tel:+33467209709"
+              onClick={() => {
+                try {
+                  (window as unknown as { posthog?: { capture: (e: string, p?: Record<string, unknown>) => void } })
+                    .posthog?.capture("phone_clicked", { source: "header" });
+                } catch { /* silent */ }
+              }}
+              className="flex items-center gap-2 px-4 py-3.5 rounded-xl font-bold text-sm text-[#0e2f52] hover:text-brand-orange-500 transition-colors"
+            >
+              <Phone className="w-4 h-4 text-brand-orange-500" />
+              04 67 20 97 09
+            </a>
             <Link href="/devis" className="px-7 py-3.5 bg-gradient-to-r from-brand-orange-500 to-red-600 text-white rounded-xl font-bold text-sm hover:scale-105 transition-transform shadow-lg flex items-center gap-2">
               {n.cta}
             </Link>
