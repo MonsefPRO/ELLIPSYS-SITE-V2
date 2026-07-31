@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
+import { Resend } from "resend";
 import { upsertContact } from "@/lib/hubspot";
+import { getTeamNotifyEmails, getNotifyFromEmail } from "@/lib/notify";
 import { captureServer, identifyServer } from "@/lib/posthog-server";
 
 export const runtime = "nodejs";
@@ -90,7 +92,51 @@ export async function POST(req: NextRequest) {
       }
     }
 
-    // ── 3) PostHog server-side capture ─────────────────────────────────
+    // ── 3) Notification équipe (Resend) ────────────────────────────────
+    // Une inscription newsletter est un contact entrant : l'équipe doit en être
+    // informée, comme pour un devis. Sans ça, l'inscrit dormait dans Supabase
+    // et HubSpot sans que personne ne le sache.
+    const resendKey = process.env.RESEND_API_KEY;
+    const teamEmails = getTeamNotifyEmails();
+    if (resendKey && teamEmails.length) {
+      try {
+        const resend = new Resend(resendKey);
+        await resend.emails.send({
+          from: `Ellipsys Solutions <${getNotifyFromEmail()}>`,
+          to: teamEmails,
+          subject: `📬 Nouvelle inscription newsletter — ${email}`,
+          html: `
+            <div style="font-family:system-ui,-apple-system,sans-serif;max-width:520px">
+              <h2 style="color:#0e2f52;margin:0 0 16px">Nouvelle inscription newsletter</h2>
+              <table style="width:100%;border-collapse:collapse;font-size:14px">
+                <tr>
+                  <td style="padding:8px 12px;border-bottom:1px solid #e2e8f0;color:#64748b">Email</td>
+                  <td style="padding:8px 12px;border-bottom:1px solid #e2e8f0">
+                    <a href="mailto:${email}">${email}</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:8px 12px;border-bottom:1px solid #e2e8f0;color:#64748b">Langue</td>
+                  <td style="padding:8px 12px;border-bottom:1px solid #e2e8f0">${lang}</td>
+                </tr>
+                <tr>
+                  <td style="padding:8px 12px;color:#64748b">Date</td>
+                  <td style="padding:8px 12px">${new Date(nowIso).toLocaleString("fr-FR")}</td>
+                </tr>
+              </table>
+              <p style="color:#94a3b8;font-size:12px;margin-top:20px">
+                Inscription depuis le formulaire newsletter du site ellipsys-solutions.com
+              </p>
+            </div>
+          `,
+        });
+      } catch (err) {
+        // Ne jamais faire échouer l'inscription à cause de la notification
+        console.warn("[newsletter] Resend notification failed:", err);
+      }
+    }
+
+    // ── 4) PostHog server-side capture ─────────────────────────────────
     await identifyServer(email, {
       email,
       lang,
