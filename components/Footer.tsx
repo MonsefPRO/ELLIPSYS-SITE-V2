@@ -31,6 +31,7 @@ const FOOTER = {
     europe: "Europe sur étude",
     legal: "Mentions légales & CGV",
     privacy: "Politique de confidentialité",
+    dataRights: "Vos données personnelles",
     rights: "Tous droits réservés.",
   },
   en: {
@@ -58,6 +59,7 @@ const FOOTER = {
     europe: "Europe on request",
     legal: "Legal Notice & T&C",
     privacy: "Privacy Policy",
+    dataRights: "Your personal data",
     rights: "All rights reserved.",
   },
 };
@@ -148,9 +150,32 @@ export default function Footer() {
 
         </div>
 
-        <div className="mt-16 pt-8 border-t border-slate-800 text-sm text-slate-500 flex flex-col md:flex-row justify-between items-center gap-4">
+        {/* ── Contact RGPD ────────────────────────────────────────────────
+            Obligation RGPD (art. 13) : l'utilisateur doit pouvoir identifier
+            facilement à qui s'adresser pour exercer ses droits (accès,
+            rectification, effacement, opposition, portabilité).
+            L'adresse doit être une boîte RÉELLEMENT relevée : une demande sans
+            réponse sous 1 mois constitue elle-même un manquement. */}
+        <div className="mt-16 pt-8 border-t border-slate-800">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 text-sm">
+            <span className="text-slate-400 font-semibold">{f.dataRights} :</span>
+            <a
+              href="mailto:contact@ellipsys-group.com?subject=Demande%20RGPD%20-%20mes%20donnees%20personnelles"
+              className="text-brand-orange-400 hover:text-brand-orange-300 transition-colors font-medium"
+            >
+              contact@ellipsys-group.com
+            </a>
+          </div>
+          <p className="text-slate-500 text-xs mt-2 max-w-3xl leading-relaxed">
+            {language === "en"
+              ? "You may request access to, correction or deletion of your personal data at any time by writing to this address. Response within one month. You may also lodge a complaint with the CNIL (www.cnil.fr)."
+              : "Vous pouvez à tout moment demander l'accès, la rectification ou la suppression de vos données personnelles en écrivant à cette adresse. Réponse sous un mois. Vous pouvez également introduire une réclamation auprès de la CNIL (www.cnil.fr)."}
+          </p>
+        </div>
+
+        <div className="mt-8 pt-6 border-t border-slate-800 text-sm text-slate-500 flex flex-col md:flex-row justify-between items-center gap-4">
           <p>© {new Date().getFullYear()} Ellipsys Solutions. {f.rights}</p>
-          <div className="flex gap-6">
+          <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
             <Link href="/mentions-legales" className="hover:text-white transition-colors">{f.legal}</Link>
             <Link href="/politique-confidentialite" className="hover:text-white transition-colors">{f.privacy}</Link>
           </div>

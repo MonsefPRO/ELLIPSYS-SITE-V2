@@ -155,7 +155,7 @@ export default async function PartenairesPage() {
             </div>
             <div className="md:w-1/3 w-full">
               <a
-                href="mailto:contact@ellipsys-solutions.com"
+                href="mailto:contact@ellipsys-group.com"
                 className="w-full flex items-center justify-center gap-2 px-8 py-5 bg-brand-orange-500 text-white rounded-xl font-bold text-lg hover:bg-brand-orange-600 transition-colors shadow-lg"
               >
                 <Briefcase className="w-5 h-5" /> {isEn ? "Apply Now" : "Postuler"}
