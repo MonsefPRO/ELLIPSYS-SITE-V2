@@ -257,7 +257,16 @@ export async function POST(req: NextRequest) {
     // ── 3) Notification email équipe (Resend) ──────────────────────────
     const resendKey = process.env.RESEND_API_KEY;
     const fromEmail = process.env.RESEND_FROM_EMAIL ?? "noreply@ellipsys-solutions.com";
-    const teamEmails = (process.env.TEAM_NOTIFY_EMAILS ?? "monsef.elaidi@ellipsys-group.com")
+    // Destinataires des notifications de devis.
+    // ⚠️ La variable d'environnement TEAM_NOTIFY_EMAILS, si elle est définie
+    // (Netlify), REMPLACE entièrement cette liste. Pour ajouter ou retirer un
+    // destinataire en production, c'est elle qu'il faut modifier — pas ce code.
+    // Format attendu : adresses séparées par des virgules.
+    const DEFAULT_NOTIFY = [
+      "monsef.elaidi@ellipsys-group.com",
+      "nathalie.gombart@ellipsys-group.com",
+    ].join(",");
+    const teamEmails = (process.env.TEAM_NOTIFY_EMAILS ?? DEFAULT_NOTIFY)
       .split(",")
       .map((e) => e.trim())
       .filter(Boolean);
