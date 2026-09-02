@@ -14,6 +14,66 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "frelon-asiatique-septembre-mois-dangereux",
+    image: "/images/Frelondrone.png",
+    category: "Nuisibles & Sécurité",
+    date: "5 Septembre 2026",
+    readTime: "6 min",
+    badge: "bg-red-50 text-red-600",
+    title: "Nid de frelons asiatiques en hauteur : pourquoi septembre est le mois le plus dangereux",
+    excerpt: "En septembre et octobre, les nids de frelons asiatiques atteignent leur taille maximale et la colonie devient bien plus agressive. C'est aussi le moment où il faut agir — mais surtout pas seul. Comment un drone permet de détruire un nid en grande hauteur sans aucun risque.",
+    metaTitle: "Nid de frelons asiatiques : pourquoi septembre est dangereux | Ellipsys",
+    metaDescription: "En septembre-octobre, les nids de frelons asiatiques sont à leur taille maximale et la colonie devient agressive. Découvrez pourquoi il faut agir vite et comment un drone détruit un nid en hauteur sans risque. Intervention Occitanie.",
+    content: `
+<h2>Septembre : le mois où le danger est à son maximum</h2>
+<p>Le frelon asiatique (<em>Vespa velutina</em>) suit un cycle annuel très marqué. Au printemps, une reine fondatrice construit un petit nid primaire, souvent bas et discret. Mais c'est en fin d'été que tout s'accélère : la colonie déménage vers un <strong>nid secondaire</strong>, généralement perché très haut — cime d'un arbre, sous une charpente, en haut d'une façade ou d'un pignon.</p>
+<p>En septembre et octobre, ce nid atteint sa <strong>taille maximale</strong> : il peut dépasser 50 à 80 cm de diamètre et abriter plusieurs milliers d'individus. Deux raisons rendent cette période particulièrement dangereuse :</p>
+<ul>
+  <li><strong>La colonie est au sommet de sa population</strong>, donc le nombre de frelons capables de défendre le nid est maximal.</li>
+  <li><strong>L'agressivité augmente</strong> : à l'approche de l'automne, la colonie protège ses futures reproductrices. La moindre vibration à proximité du nid peut déclencher une attaque groupée.</li>
+</ul>
+
+<h2>Pourquoi il ne faut jamais intervenir soi-même</h2>
+<p>Chaque année, des accidents graves surviennent parce qu'un particulier a tenté de détruire un nid lui-même — à la bombe insecticide, au jet d'eau, voire au feu. C'est une très mauvaise idée, pour trois raisons :</p>
+<ul>
+  <li><strong>Le risque de piqûres multiples.</strong> Contrairement à une guêpe, un frelon asiatique peut piquer plusieurs fois, et une colonie entière peut charger en quelques secondes. Les piqûres multiples peuvent entraîner un choc, et une seule piqûre peut être mortelle en cas d'allergie.</li>
+  <li><strong>Le risque de chute.</strong> La plupart des nids dangereux sont en hauteur. Monter sur une échelle avec une colonie agressive au-dessus de la tête, c'est cumuler le risque de piqûre et le risque de chute.</li>
+  <li><strong>L'inefficacité.</strong> Une bombe du commerce ne traite pas le cœur du nid. Les frelons survivants deviennent encore plus agressifs et reconstruisent ailleurs.</li>
+</ul>
+
+<h2>La solution en grande hauteur : le drone</h2>
+<p>C'est précisément là que notre méthode change tout. Beaucoup de nids sont hors de portée d'une perche télescopique classique (au-delà de 10-15 mètres) ou situés dans des endroits impossibles à sécuriser depuis une échelle ou une nacelle.</p>
+<p>Le drone permet d'intervenir <strong>à distance, depuis le sol</strong> :</p>
+<ul>
+  <li>Le télépilote reste à bonne distance, hors de portée de la colonie.</li>
+  <li>Le drone approche le nid et procède à l'<strong>injection d'un produit biocide</strong> directement au cœur du nid, là où se trouve la reine.</li>
+  <li>Aucune échelle, aucune nacelle, aucune prise de risque humaine à proximité immédiate du nid.</li>
+  <li>Le nid peut ensuite être retiré une fois la colonie neutralisée.</li>
+</ul>
+<p>C'est la méthode la plus sûre pour les nids inaccessibles : arbres de grande hauteur, clochers, charpentes, pignons de bâtiments industriels ou agricoles.</p>
+
+<h2>Que faire si vous repérez un nid ?</h2>
+<ol>
+  <li><strong>Ne vous approchez pas</strong> et éloignez les enfants et animaux de la zone.</li>
+  <li><strong>Ne tentez rien vous-même</strong>, même avec une bombe insecticide.</li>
+  <li><strong>Repérez sa position</strong> à distance (hauteur approximative, support : arbre, façade, toiture) — cela nous aide à préparer l'intervention.</li>
+  <li><strong>Contactez un professionnel</strong> équipé pour la grande hauteur.</li>
+</ol>
+
+<h2>Questions fréquentes</h2>
+<h3>À quelle période détruire un nid de frelons asiatiques ?</h3>
+<p>Le plus tôt possible dès qu'il est repéré. En septembre-octobre le nid est à sa taille maximale et la colonie la plus agressive : il faut agir sans attendre, mais toujours par un professionnel. Détruire le nid avant la sortie des futures reines (fin d'automne) limite aussi la prolifération l'année suivante.</p>
+<h3>Un nid de frelons en haut d'un arbre ou d'une façade, est-ce traitable ?</h3>
+<p>Oui. C'est justement le cas où le drone est le plus utile : il atteint des nids en grande hauteur, hors de portée des perches et des nacelles, sans faire monter personne.</p>
+<h3>Le frelon asiatique est-il dangereux pour l'homme ?</h3>
+<p>Il n'attaque pas spontanément loin de son nid, mais devient très agressif si l'on s'approche du nid. Les piqûres multiples peuvent être graves, et une piqûre peut être mortelle en cas d'allergie. La prudence est impérative.</p>
+
+<h2>Une intervention rapide, partout en Occitanie</h2>
+<p>Basés à Montpellier, nous intervenons dans l'Hérault, le Gard et toute l'Occitanie pour la destruction de nids de frelons asiatiques en grande hauteur par drone. Si vous avez repéré un nid, ne prenez aucun risque : contactez-nous, nous évaluons la situation et intervenons en sécurité.</p>
+<p><strong>Un nid repéré ? Appelez-nous au 04 67 20 97 09 — nous vous rappelons rapidement pour organiser l'intervention.</strong></p>
+`,
+  },
+  {
     slug: "demoussage-toiture-karcher-erreur",
     image: "/images/drone-toiture-intervention.png",
     category: "Toiture & Traitement",

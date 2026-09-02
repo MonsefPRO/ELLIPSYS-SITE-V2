@@ -6,6 +6,16 @@ import { ArrowRight, Calendar, Clock, Instagram, Facebook, Linkedin, Music2, Ext
 
 const articles = [
   {
+    image: "/images/Frelondrone.png",
+    category: "Nuisibles & Sécurité",
+    date: "5 Septembre 2026",
+    readTime: "6 min",
+    title: "Nid de frelons asiatiques en hauteur : pourquoi septembre est le mois le plus dangereux",
+    excerpt: "En septembre-octobre, les nids de frelons asiatiques atteignent leur taille maximale et la colonie devient bien plus agressive. Pourquoi il faut agir vite — mais jamais soi-même — et comment un drone détruit un nid en grande hauteur sans aucun risque.",
+    href: "/blog/frelon-asiatique-septembre-mois-dangereux",
+    badge: "bg-red-50 text-red-600",
+  },
+  {
     image: "/images/drone-toiture-intervention.png",
     category: "Toiture & Traitement",
     date: "14 Avril 2026",
