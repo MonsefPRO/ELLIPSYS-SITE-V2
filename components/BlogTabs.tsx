@@ -18,6 +18,16 @@ const articles = [
   {
     image: "/images/drone-toiture-intervention.png",
     category: "Toiture & Traitement",
+    date: "8 Septembre 2026",
+    readTime: "6 min",
+    title: "Démoussage de toiture : pourquoi l'automne est le meilleur moment pour agir",
+    excerpt: "Les premières pluies d'automne réveillent mousses et lichens sur les tuiles. Attendre l'hiver, c'est risquer les infiltrations. Pourquoi agir maintenant, et comment on démousse par drone sans jamais monter sur votre toit.",
+    href: "/blog/demoussage-toiture-automne-bon-moment",
+    badge: "bg-slate-100 text-slate-700",
+  },
+  {
+    image: "/images/drone-toiture-intervention.png",
+    category: "Toiture & Traitement",
     date: "14 Avril 2026",
     readTime: "5 min",
     title: "Démoussage de toiture : pourquoi le karcher haute pression est une erreur coûteuse",

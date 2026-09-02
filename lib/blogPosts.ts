@@ -74,6 +74,61 @@ export const blogPosts: BlogPost[] = [
 `,
   },
   {
+    slug: "demoussage-toiture-automne-bon-moment",
+    image: "/images/drone-toiture-intervention.png",
+    category: "Toiture & Traitement",
+    date: "8 Septembre 2026",
+    readTime: "6 min",
+    badge: "bg-slate-100 text-slate-700",
+    title: "Démoussage de toiture : pourquoi l'automne est le meilleur moment pour agir",
+    excerpt: "Les premières pluies d'automne, après un été sec, réveillent mousses et lichens sur les tuiles. Attendre l'hiver, c'est risquer les infiltrations. Voici pourquoi la fin de l'été est la fenêtre idéale pour démousser — et comment on le fait par drone, sans jamais monter sur votre toit.",
+    metaTitle: "Démoussage de toiture : pourquoi agir en automne | Ellipsys",
+    metaDescription: "Pourquoi l'automne est le meilleur moment pour démousser sa toiture : premières pluies, mousses, risque d'infiltration hivernale. Démoussage par drone sans monter sur le toit, traitement Certibiocide. Devis gratuit en Occitanie.",
+    content: `
+<h2>Pourquoi la mousse revient chaque automne</h2>
+<p>La mousse et le lichen ont besoin de trois choses pour se développer : de l'humidité, de l'ombre et un support poreux. En fin d'été, ces trois conditions se réunissent d'un coup. Après des semaines de sécheresse, les <strong>premières grosses pluies d'automne</strong> réhumidifient les tuiles, et les spores en dormance repartent immédiatement. Les versants nord, moins ensoleillés, sont les premiers touchés.</p>
+<p>C'est pour ça qu'une toiture qui paraissait « propre » en juillet peut verdir en quelques semaines à l'automne. Le phénomène est particulièrement marqué en Occitanie, où l'alternance entre longs étés secs et pluies intenses d'automne crée un cycle idéal pour ces organismes.</p>
+
+<h2>Pourquoi agir maintenant, et pas au printemps</h2>
+<p>Beaucoup de propriétaires attendent le printemps pour s'occuper de leur toiture. C'est une erreur de calendrier, pour trois raisons :</p>
+<ul>
+  <li><strong>La mousse retient l'eau.</strong> Un tapis de mousse agit comme une éponge sur vos tuiles. En hiver, cette eau gèle, se dilate, et accélère la dégradation de la tuile (phénomène de gel-dégel). Agir avant l'hiver, c'est éviter ce cycle destructeur.</li>
+  <li><strong>Le risque d'infiltration.</strong> Mousses et lichens soulèvent légèrement les tuiles et détournent l'écoulement de l'eau. Les infiltrations apparaissent justement pendant les pluies d'hiver — quand il est trop tard pour intervenir sereinement.</li>
+  <li><strong>Le traitement a le temps d'agir.</strong> Un démoussage professionnel n'est pas un nettoyage instantané : le produit agit sur plusieurs semaines. Traiter en automne laisse à la toiture tout l'hiver pour se débarrasser naturellement des organismes morts.</li>
+</ul>
+
+<h2>La bonne méthode : par drone, sans monter sur le toit</h2>
+<p>Le démoussage traditionnel implique de faire circuler un opérateur sur votre toiture. Sur des tuiles anciennes ou fragiles (tuile canal, ardoise), ce piétinement casse et déplace des tuiles — la réparation coûte parfois plus cher que le démoussage lui-même.</p>
+<p>Notre méthode supprime ce risque : nous appliquons le traitement <strong>par drone, depuis le sol</strong>.</p>
+<ul>
+  <li><strong>Aucun poids sur la toiture</strong> : pas de tuile fragilisée, pas de casse.</li>
+  <li><strong>Traitement Certibiocide homologué</strong> appliqué uniformément sur toute la surface, y compris les zones difficiles d'accès.</li>
+  <li><strong>Sans échafaudage</strong> : intervention rapide, sans emprise au sol, sans immobiliser votre habitation.</li>
+  <li><strong>Compatible</strong> tuile canal, tuile mécanique, ardoise, et bâti ancien — y compris en zone ABF (Architectes des Bâtiments de France).</li>
+</ul>
+
+<h2>Démoussage seul ou démoussage + hydrofuge ?</h2>
+<p>Deux niveaux de prestation existent, et le bon choix dépend de l'état de votre toiture :</p>
+<h3>Le démoussage seul</h3>
+<p>Il élimine les mousses, lichens et algues à la racine. C'est la base, suffisante si votre toiture est saine et que vous voulez simplement la nettoyer et la protéger à court terme.</p>
+<h3>Le démoussage + hydrofuge</h3>
+<p>Après le démoussage, on applique un <strong>hydrofuge pénétrant</strong> qui rend la tuile déperlante et ralentit fortement le retour des mousses. C'est l'équivalent d'une protection longue durée (5 à 8 ans selon l'exposition). Recommandé sur les versants nord et les toitures déjà poreuses.</p>
+<p>Nous évaluons l'état réel de votre toiture avant de recommander l'un ou l'autre — jamais l'inverse.</p>
+
+<h2>Questions fréquentes</h2>
+<h3>À quelle fréquence faut-il démousser une toiture ?</h3>
+<p>En général tous les 3 à 5 ans, selon l'exposition et l'environnement (arbres à proximité, versant nord, humidité). Un hydrofuge espace nettement cette fréquence.</p>
+<h3>Le démoussage par drone abîme-t-il les tuiles ?</h3>
+<p>Non, c'est justement l'inverse : comme personne ne marche sur le toit et qu'aucune haute pression n'est utilisée, on supprime les deux principales causes de casse. Le traitement agit chimiquement, sans agression mécanique.</p>
+<h3>Combien coûte un démoussage de toiture ?</h3>
+<p>Le prix dépend de la surface, de la pente, de l'état d'encrassement et du choix démoussage seul ou avec hydrofuge. Nous établissons un devis gratuit sous 24 h, sans frais de déplacement sur Montpellier et sa région.</p>
+
+<h2>Intervention en Occitanie</h2>
+<p>Basés à Montpellier, nous démoussons les toitures dans l'Hérault, le Gard et toute l'Occitanie. Ne laissez pas la mousse passer l'hiver sur vos tuiles : c'est maintenant, avant les grandes pluies, que le traitement est le plus efficace.</p>
+<p><strong>Devis gratuit sous 24 h — appelez le 04 67 20 97 09 ou demandez à être rappelé.</strong></p>
+`,
+  },
+  {
     slug: "demoussage-toiture-karcher-erreur",
     image: "/images/drone-toiture-intervention.png",
     category: "Toiture & Traitement",
