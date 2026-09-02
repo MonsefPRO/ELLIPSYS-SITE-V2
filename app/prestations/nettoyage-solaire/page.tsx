@@ -4,6 +4,7 @@ import { ChevronRight, Sun, CheckCircle2, AlertCircle } from "lucide-react";
 import ExpertQuoteSide from "@/components/ExpertQuoteSide";
 import AccordionSection from "@/components/AccordionSection";
 import { getLang } from "@/lib/getLang";
+import { LiensUtiles } from "@/components/LiensUtiles";
 
 export const metadata: Metadata = {
   title: "Nettoyage centrale solaire : robot & drone",
@@ -348,6 +349,18 @@ export default async function PanneauxPhotovoltaiquesPage() {
           <AccordionSection items={avantages} />
         </div>
       </section>
+
+      {/* Maillage interne contextuel — de-orphelinise la landing solaire Montpellier
+          et renforce la page centrales PV (B2B). */}
+      {!isEn && (
+        <LiensUtiles
+          liens={[
+            { href: "/nettoyage-panneaux-solaires-montpellier", label: "Nettoyage de panneaux solaires à Montpellier", sub: "Résidentiel & professionnel, devis sous 24 h" },
+            { href: "/nettoyage-panneaux-photovoltaiques", label: "Centrales photovoltaïques (B2B)", sub: "Parcs au sol, ombrières, contrats O&M" },
+            { href: "/tarifs", label: "Tarifs & prix", sub: "Fourchettes de prix par prestation" },
+          ]}
+        />
+      )}
 
       {/* CTA FINAL */}
       <section className="py-20 bg-gradient-to-br from-[#0e2f52] to-amber-950 text-center px-4">

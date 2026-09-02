@@ -4,6 +4,7 @@ import { ChevronRight, CheckCircle2, AlertCircle, Droplets } from "lucide-react"
 import ExpertQuoteSide from "@/components/ExpertQuoteSide";
 import AccordionSection from "@/components/AccordionSection";
 import { getLang } from "@/lib/getLang";
+import { LiensUtiles } from "@/components/LiensUtiles";
 
 export const metadata: Metadata = {
   title: "Nettoyage façade par drone — Montpellier & Occitanie",
@@ -434,6 +435,17 @@ export default async function FacadesPage() {
           </div>
         </div>
       </section>
+
+      {/* Maillage interne contextuel — de-orphelinise la landing façade Montpellier. */}
+      {!isEn && (
+        <LiensUtiles
+          liens={[
+            { href: "/nettoyage-facade-montpellier", label: "Nettoyage de façade à Montpellier", sub: "Sans échafaudage, devis gratuit sous 24 h" },
+            { href: "/tarifs", label: "Tarifs & prix", sub: "Fourchettes de prix par prestation" },
+            { href: "/zone-intervention", label: "Zones d'intervention", sub: "Montpellier, Hérault, Gard, Occitanie" },
+          ]}
+        />
+      )}
 
       {/* CTA FINAL */}
       <section className="py-20 bg-gradient-to-br from-[#0e2f52] to-slate-800 text-center px-4">

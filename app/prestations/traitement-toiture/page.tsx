@@ -4,6 +4,7 @@ import { ChevronRight, Shield, CheckCircle2, AlertCircle, Droplets } from "lucid
 import ExpertQuoteSide from "@/components/ExpertQuoteSide";
 import AccordionSection from "@/components/AccordionSection";
 import { getLang } from "@/lib/getLang";
+import { LiensUtiles } from "@/components/LiensUtiles";
 
 export const metadata: Metadata = {
   title: "Démoussage toiture par drone — Montpellier & Hérault",
@@ -371,6 +372,18 @@ export default async function TraitementToiturePage() {
           </div>
         </div>
       </section>
+
+      {/* Maillage interne contextuel — pointe vers les pages locales/transactionnelles
+          à faire indexer (la landing démoussage Montpellier était orpheline). */}
+      {!isEn && (
+        <LiensUtiles
+          liens={[
+            { href: "/demoussage-toiture-montpellier", label: "Démoussage de toiture à Montpellier", sub: "Notre offre locale, devis gratuit sous 24 h" },
+            { href: "/tarifs", label: "Tarifs & prix", sub: "Fourchettes de prix par prestation" },
+            { href: "/zone-intervention", label: "Zones d'intervention", sub: "Montpellier, Hérault, Gard, Occitanie" },
+          ]}
+        />
+      )}
 
       {/* CTA FINAL */}
       <section className="py-20 bg-gradient-to-br from-[#0e2f52] to-slate-800 text-center px-4">
