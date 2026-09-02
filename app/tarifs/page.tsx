@@ -55,32 +55,32 @@ const facteurs = [
 const ranges = [
   {
     label: "Démoussage toiture résidentielle",
-    typical: "À partir de 450 € TTC",
+    typical: "Devis sous 24 h",
     sub: "Pour une maison ~120 m². Inclut produit, intervention, rinçage, rapport photo.",
   },
   {
     label: "Hydrofuge protection toiture",
-    typical: "À partir de 600 € TTC",
+    typical: "Devis sous 24 h",
     sub: "Souvent en option après démoussage. Protection 10 ans selon produit.",
   },
   {
     label: "Nettoyage panneaux solaires résidentiel",
-    typical: "À partir de 350 € TTC",
+    typical: "Devis sous 24 h",
     sub: "Pour une installation 12-30 panneaux. Brossage doux, sans détergent.",
   },
   {
     label: "Centrale photovoltaïque (>100 kWc)",
-    typical: "Contrat annuel €/MWc/an",
-    sub: "Tarifs spécifiques pour exploitants et asset managers. Audit soiling gratuit.",
+    typical: "Devis sur mesure",
+    sub: "Offre dédiée aux exploitants et asset managers. Audit soiling gratuit.",
   },
   {
     label: "Nettoyage façade ou bardage",
-    typical: "Sur devis",
+    typical: "Devis sous 24 h",
     sub: "Très variable selon hauteur, surface, état et environnement (ABF, urbain dense).",
   },
   {
     label: "Thermographie infrarouge drone",
-    typical: "À partir de 350 € HT",
+    typical: "Devis sous 24 h",
     sub: "Audit Décret Tertiaire, inspection PV, ponts thermiques. Rapport sous 48h.",
   },
 ];
@@ -100,7 +100,7 @@ const faqs = [
   },
   {
     q: "Acceptez-vous les paiements échelonnés ?",
-    a: "Pour les missions supérieures à 2 000 € HT, nous acceptons un paiement en 3 fois sans frais (30% à la commande, 40% à l'intervention, 30% à 30 jours). Pour les particuliers, le règlement se fait après l'intervention sur rapport photo validé.",
+    a: "Pour les missions d'un montant important, nous acceptons un paiement en 3 fois sans frais (30% à la commande, 40% à l'intervention, 30% à 30 jours). Pour les particuliers, le règlement se fait après l'intervention sur rapport photo validé.",
   },
   {
     q: "Êtes-vous éligibles à un crédit d'impôt ou aides ?",
@@ -184,10 +184,10 @@ export default function TarifsPage() {
       <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-sm font-bold uppercase tracking-widest text-brand-orange-500 mb-3">— Fourchettes indicatives —</p>
-            <h2 className="text-3xl md:text-5xl font-black text-slate-900 leading-tight">Ordres de grandeur observés sur nos missions</h2>
+            <p className="text-sm font-bold uppercase tracking-widest text-brand-orange-500 mb-3">— Nos prestations —</p>
+            <h2 className="text-3xl md:text-5xl font-black text-slate-900 leading-tight">Ce que couvre chaque intervention</h2>
             <p className="text-lg text-slate-600 mt-6 max-w-3xl mx-auto">
-              Pour vous donner un repère <strong>avant</strong> de demander un devis détaillé. Ces tarifs sont des points de départ, pas des engagements.
+              Chaque prestation fait l&apos;objet d&apos;un <strong>devis personnalisé, gratuit et sans engagement</strong>, établi après analyse de votre site. Réponse sous 24 h.
             </p>
           </div>
 
@@ -209,9 +209,9 @@ export default function TarifsPage() {
             <div className="flex gap-4">
               <Info className="w-6 h-6 text-amber-600 shrink-0 mt-0.5" />
               <div>
-                <p className="font-bold text-amber-900 mb-2">Ces ordres de grandeur sont indicatifs.</p>
+                <p className="font-bold text-amber-900 mb-2">Chaque devis est unique.</p>
                 <p className="text-amber-800 text-sm leading-relaxed">
-                  Ils correspondent à des configurations standards. Votre devis final dépendra de l&apos;analyse précise de votre site. <strong>Aucune surprise à l&apos;arrivée du technicien</strong> : le prix devisé est le prix facturé.
+                  Votre devis dépend de l&apos;analyse précise de votre site (surface, accès, état, environnement). <strong>Aucune surprise à l&apos;arrivée du technicien</strong> : le prix devisé est le prix facturé.
                 </p>
               </div>
             </div>
