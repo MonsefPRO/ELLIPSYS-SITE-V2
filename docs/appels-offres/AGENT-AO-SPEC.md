@@ -1,6 +1,20 @@
 # 🎯 Agent Appels d'Offres — Spécification Ellipsys Solutions
 **La « mémoire » de l'agent AO. Lue par la routine du mardi et par la discussion dédiée.**
-Dernière mise à jour : 29 juillet 2026.
+Dernière mise à jour : 3 septembre 2026.
+
+---
+
+## 0. ⚠️ CONTRAINTE TECHNIQUE ACTUELLE — accès réseau restreint
+
+L'environnement d'exécution de la routine du mardi applique une politique réseau qui **bloque l'accès direct** à la quasi-totalité du web (confirmé le 01/09/2026 : l'API BOAMP, boamp.fr, France Marchés, MarchésOnline, Centrale des Marchés sont tous refusés par le proxy réseau — même un site anodin comme Wikipédia est bloqué). Tant que ce n'est pas corrigé côté configuration de l'environnement (réglage hors de portée de l'agent, à changer par Monsef dans les paramètres de l'environnement Claude Code) :
+
+- **Ne pas tenter** d'interroger l'API BOAMP en direct (§6) ni de charger le détail d'un avis via un fetch de page web — ces appels échoueront systématiquement (erreur `EGRESS_BLOCKED` / 403).
+- **S'appuyer uniquement sur l'outil de recherche web généraliste** (recherche par mots-clés), qui reste fonctionnel car il ne passe pas par le même proxy.
+- **Traiter les synthèses de résultats de recherche avec prudence** : elles peuvent mélanger des informations entre deux avis différents ou dater d'un avis déjà expiré/attribué. Avant de citer un montant, une deadline ou un acheteur, vérifier que ces informations apparaissent bien, textuellement, dans les résultats de recherche — ne jamais les déduire ou les extrapoler.
+- **Ne scorer GO un AO que si son objet, sa deadline (future) et son acheteur sont confirmés par le texte des résultats de recherche.** Si un élément clé (deadline, montant, allotissement) n'est pas vérifiable dans ces conditions, classer l'AO en « piste à vérifier manuellement » plutôt qu'en GO/À ÉTUDIER/NO-GO, et le dire explicitement dans le récap.
+- **Toujours vérifier la fraîcheur** : beaucoup de résultats de recherche remontent des AO déjà clos ou déjà attribués (ex. un accord-cadre déjà en cours d'exécution). Écarter tout AO dont la deadline semble dépassée par rapport à la date du jour.
+- Rappeler une fois par récap, si la contrainte est toujours active, que la veille est dégradée pour cette raison technique et pointer vers une solution de contournement : **inscrire Ellipsys aux alertes e-mail gratuites de France Marchés** (voir §6) sur les mots-clés/CPV du §5, pour que Monsef reçoive les AO directement par e-mail sans dépendre de l'accès réseau de l'agent.
+- Dès que l'accès réseau redevient fonctionnel (à tester en début de routine), reprendre la méthode complète du §6/§Méthode sans cette limitation, et supprimer ou mettre à jour cette section.
 
 ---
 
