@@ -125,6 +125,28 @@ puissance de lien — mais elles restent nécessaires. Les 24 inscriptions sont 
 
 ---
 
+### 6️⃣ GISEMENT 6 — UN Global Compact (RSE) — lien à très forte autorité
+
+> Ajouté le 03/09/2026 après réception du *Participant Media Toolkit 2026* du UN Global Compact.
+
+Le **UN Global Compact** est la plus grande initiative RSE au monde (ONU, 20 000+ entreprises). Chaque
+entreprise participante obtient une **page de profil sur unglobalcompact.org** — un domaine `.org`
+affilié à l'ONU, à l'autorité énorme. Deux leviers :
+
+- **Lever A — le lien du profil :** compléter la page de profil participant et **y insérer le lien vers
+  ellipsys-solutions.com**. C'est un backlink institutionnel que 99 % des concurrents n'ont pas.
+- **Lever B — le communiqué d'adhésion :** le toolkit fournit un **modèle de communiqué de presse**
+  (« [Entreprise] rejoint le UN Global Compact »). L'angle RSE + nettoyage écologique par drone (sans
+  détergent, sobriété en eau) est parfait pour la presse locale et les médias éco/énergie → chaque
+  reprise = un lien + de l'autorité. **Ça décuple le Gisement 1 (presse).**
+
+⚠️ **Honnêteté :** adhérer au UN Global Compact est un **engagement réel** (respect des Dix Principes,
+« Communication on Progress » annuelle), pas une astuce SEO. À exploiter **uniquement si Ellipsys a
+réellement adhéré** (ce que le toolkit laisse penser). Si c'est le cas, c'est un des meilleurs liens
+possibles ; sinon, ne pas adhérer juste pour un backlink.
+
+---
+
 ## 📅 PLAN D'EXÉCUTION — 8 SEMAINES
 
 | Semaine | Action | Effort |
