@@ -21,7 +21,7 @@ const articles = [
     date: "4 Septembre 2026",
     readTime: "4 min",
     title: "Nettoyer deux centrales solaires au sol en une seule tournée : comment on s'organise",
-    excerpt: "Récemment, notre équipe s'est déplacée en Saône-et-Loire pour nettoyer deux centrales photovoltaïques au sol pour le compte d'un exploitant solaire — plus de 50 000 m² de panneaux au total. Retour sur ce déplacement.",
+    excerpt: "Récemment, notre équipe s'est déplacée en Saône-et-Loire pour nettoyer deux centrales photovoltaïques au sol pour le compte d'un exploitant solaire, plus de 50 000 m² de panneaux au total. Retour sur ce déplacement.",
     href: "/blog/nettoyage-centrale-solaire-saone-et-loire",
     badge: "bg-orange-50 text-orange-600",
   },

@@ -83,7 +83,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "4 min",
     badge: "bg-orange-50 text-orange-600",
     title: "Nettoyer deux centrales solaires au sol en une seule tournée : comment on s'organise",
-    excerpt: "Récemment, notre équipe s'est déplacée en Saône-et-Loire pour nettoyer deux centrales photovoltaïques au sol pour le compte d'un exploitant solaire — plus de 50 000 m² de panneaux au total. Retour sur ce déplacement.",
+    excerpt: "Récemment, notre équipe s'est déplacée en Saône-et-Loire pour nettoyer deux centrales photovoltaïques au sol pour le compte d'un exploitant solaire, plus de 50 000 m² de panneaux au total. Retour sur ce déplacement.",
     metaTitle: "Nettoyage de centrales solaires en Saône-et-Loire | Ellipsys",
     metaDescription: "Retour sur le nettoyage par drone et robot de deux centrales photovoltaïques au sol en Saône-et-Loire (Vitry et Montchanin), plus de 50 000 m² traités sans arrêt de production.",
     content: `
@@ -95,7 +95,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>Le nettoyage : robot, eau filtrée, zéro détergent</h2>
 <p>Sur les deux centrales, la méthode est la même : un robot télécommandé équipé de brosses rotatives souples, qui travaille à l'eau filtrée et sans détergent, à raison de <strong>1 200 m² par heure</strong>. Aucun travail en hauteur, aucun risque pour les modules : le brossage doux nettoie sans micro-rayures et sans arrêter la production du site pendant l'intervention.</p>
-<p>Sur un déplacement de ce type, c'est surtout l'enchaînement des deux sites qui demande de l'organisation — logistique du matériel, coordination avec l'exploitant, conditions météo à anticiper.</p>
+<p>Sur un déplacement de ce type, c'est surtout l'enchaînement des deux sites qui demande de l'organisation, logistique du matériel, coordination avec l'exploitant, conditions météo à anticiper.</p>
 
 <h2>Le résultat</h2>
 <p>Sur les deux sites, les panneaux ont retrouvé leur rendement nominal : le contraste avant/après est immédiat, les modules ternis par la poussière redevenant d'un bleu profond, cellule par cellule. Deux centrales nettoyées, sans arrêt de production, en une seule tournée.</p>
