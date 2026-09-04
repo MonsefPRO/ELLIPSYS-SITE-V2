@@ -76,6 +76,37 @@ export const blogPosts: BlogPost[] = [
 `,
   },
   {
+    slug: "nettoyage-centrale-solaire-saone-et-loire",
+    image: "/images/avant-apres-montchanin.jpg",
+    category: "Nettoyage & Entretien",
+    date: "4 Septembre 2026",
+    readTime: "4 min",
+    badge: "bg-orange-50 text-orange-600",
+    title: "Nettoyer deux centrales solaires au sol en une seule tournée : comment on s'organise",
+    excerpt: "Récemment, notre équipe s'est déplacée en Saône-et-Loire pour nettoyer deux centrales photovoltaïques au sol pour le compte d'un exploitant solaire — plus de 50 000 m² de panneaux au total. Retour sur ce déplacement.",
+    metaTitle: "Nettoyage de centrales solaires en Saône-et-Loire | Ellipsys",
+    metaDescription: "Retour sur le nettoyage par drone et robot de deux centrales photovoltaïques au sol en Saône-et-Loire (Vitry et Montchanin), plus de 50 000 m² traités sans arrêt de production.",
+    content: `
+<h2>Un déplacement, deux centrales, plus de 50 000 m² à traiter</h2>
+<p>Récemment, notre équipe s'est déplacée en Saône-et-Loire pour intervenir sur deux centrales photovoltaïques au sol, pour le compte d'un exploitant solaire : une première à <strong>Vitry (71)</strong>, sur 31 000 m², puis une seconde à <strong>Montchanin (71)</strong>, sur 22 000 m². Deux sites, une même mission : retirer le pollen, la poussière et les dépôts organiques accumulés au fil des mois d'ensoleillement, sans jamais interrompre la production.</p>
+
+<h2>Le repérage avant l'intervention</h2>
+<p>Sur chaque site, un repérage aérien par drone permet de cartographier le terrain avant d'engager le robot : accès entre les rangées, espacement des structures, zones sensibles à éviter. C'est ce travail préparatoire qui permet ensuite d'enchaîner les deux chantiers sans temps mort.</p>
+
+<h2>Le nettoyage : robot, eau filtrée, zéro détergent</h2>
+<p>Sur les deux centrales, la méthode est la même : un robot télécommandé équipé de brosses rotatives souples, qui travaille à l'eau filtrée et sans détergent, à raison de <strong>1 200 m² par heure</strong>. Aucun travail en hauteur, aucun risque pour les modules : le brossage doux nettoie sans micro-rayures et sans arrêter la production du site pendant l'intervention.</p>
+<p>Sur un déplacement de ce type, c'est surtout l'enchaînement des deux sites qui demande de l'organisation — logistique du matériel, coordination avec l'exploitant, conditions météo à anticiper.</p>
+
+<h2>Le résultat</h2>
+<p>Sur les deux sites, les panneaux ont retrouvé leur rendement nominal : le contraste avant/après est immédiat, les modules ternis par la poussière redevenant d'un bleu profond, cellule par cellule. Deux centrales nettoyées, sans arrêt de production, en une seule tournée.</p>
+
+<h2>Une prestation qui se déplace partout en France</h2>
+<p>Basés à Montpellier, nous intervenons dans toute la France pour les exploitants de centrales photovoltaïques au sol, en toiture ou en ombrière. Ce déplacement en Saône-et-Loire illustre bien notre façon de travailler : un repérage précis, un nettoyage par robot sans arrêt de production, et une organisation pensée pour enchaîner plusieurs sites sans perte de temps.</p>
+<p>Découvrez notre <a href="/prestations/nettoyage-solaire">expertise en nettoyage solaire</a>, notre offre dédiée aux <a href="/secteurs/energie-solaire">exploitants de centrales photovoltaïques</a>, ou <a href="/devis">demandez un devis</a> pour votre installation, où qu'elle se trouve en France.</p>
+<p><strong>Une centrale solaire à faire nettoyer ? Contactez-nous au 04 67 20 97 09.</strong></p>
+`,
+  },
+  {
     slug: "frelon-asiatique-septembre-mois-dangereux",
     image: "/images/Frelondrone.png",
     category: "Nuisibles & Sécurité",
