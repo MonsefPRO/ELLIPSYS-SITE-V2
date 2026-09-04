@@ -96,8 +96,8 @@ export default async function PatrimoinePage() {
               </div>
               <p className="text-slate-600 leading-relaxed text-lg mb-6">
                 {isEn
-                  ? <>Historic buildings demand extreme care. We use <strong>gentle intervention methods</strong> — <strong className="text-slate-900">very low-pressure spray</strong>, <strong>neutral fungicide agents</strong> — to clean <strong>ashlar stone</strong> facades, traditional renders and historic rooftops.</>
-                  : <>Les bâtiments historiques exigent des précautions extrêmes. Nous utilisons des <strong>méthodes d&apos;intervention douces</strong> — <strong className="text-slate-900">pulvérisation très basse pression</strong>, <strong>agents fongicides neutres</strong> — pour nettoyer les façades en <strong>pierre de taille</strong>, les enduits traditionnels ou les toitures anciennes.</>}
+                  ? <>Historic buildings demand extreme care. We use <strong>gentle intervention methods</strong>, <strong className="text-slate-900">very low-pressure spray</strong>, <strong>neutral fungicide agents</strong>, to clean <strong>ashlar stone</strong> facades, traditional renders and historic rooftops.</>
+                  : <>Les bâtiments historiques exigent des précautions extrêmes. Nous utilisons des <strong>méthodes d&apos;intervention douces</strong>, <strong className="text-slate-900">pulvérisation très basse pression</strong>, <strong>agents fongicides neutres</strong>, pour nettoyer les façades en <strong>pierre de taille</strong>, les enduits traditionnels ou les toitures anciennes.</>}
               </p>
               <div className="grid grid-cols-2 gap-3">
                 {materials.map((mat, i) => (

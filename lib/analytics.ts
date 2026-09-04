@@ -9,7 +9,7 @@ type PropValue = string | number | boolean | null | undefined;
 
 /**
  * Capture un événement custom côté client.
- * Safe à appeler — ne throw jamais, ne casse pas si PostHog non chargé.
+ * Safe à appeler, ne throw jamais, ne casse pas si PostHog non chargé.
  */
 export function track(event: string, properties?: Record<string, PropValue>): void {
   try {
@@ -17,7 +17,7 @@ export function track(event: string, properties?: Record<string, PropValue>): vo
     // posthog.capture est safe même si init n'a pas eu lieu (queue interne)
     posthog.capture(event, properties);
   } catch (err) {
-    // silencieux — analytics ne doit jamais casser l'app
+    // silencieux, analytics ne doit jamais casser l'app
     if (process.env.NODE_ENV === "development") {
       console.warn(`[analytics] track('${event}') failed:`, err);
     }
@@ -40,7 +40,7 @@ export function identify(email: string, properties?: Record<string, PropValue>):
 }
 
 /**
- * Reset l'identité (à appeler en cas de "déconnexion" — rare sur un site vitrine).
+ * Reset l'identité (à appeler en cas de "déconnexion", rare sur un site vitrine).
  */
 export function resetIdentity(): void {
   try {

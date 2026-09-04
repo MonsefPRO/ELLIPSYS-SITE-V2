@@ -29,18 +29,18 @@ export const blogPosts: BlogPost[] = [
 <p>La plupart des usines, entrepôts et plateformes logistiques ont deux surfaces qui se dégradent en parallèle, sans que personne ne fasse le lien :</p>
 <ul>
   <li>Un <strong>bardage métallique</strong> (façades et parfois toiture) qui s'encrasse sous l'effet de la pollution atmosphérique, des poussières industrielles ou agricoles, et des dépôts de sel en zone littorale.</li>
-  <li>Une <strong>centrale photovoltaïque en toiture</strong> — de plus en plus fréquente sur les grandes toitures industrielles — qui perd du rendement à cause du même encrassement.</li>
+  <li>Une <strong>centrale photovoltaïque en toiture</strong>, de plus en plus fréquente sur les grandes toitures industrielles, qui perd du rendement à cause du même encrassement.</li>
 </ul>
-<p>En général, ces deux besoins sont gérés séparément : une entreprise pour la façade, une autre pour les panneaux, deux devis, deux plannings, deux déplacements. C'est une perte de temps et d'argent — alors que <strong>les deux se traitent en une seule intervention</strong>.</p>
+<p>En général, ces deux besoins sont gérés séparément : une entreprise pour la façade, une autre pour les panneaux, deux devis, deux plannings, deux déplacements. C'est une perte de temps et d'argent, alors que <strong>les deux se traitent en une seule intervention</strong>.</p>
 
 <h2>Le bardage encrassé : bien plus qu'une question d'image</h2>
-<p>Un bardage sale n'est pas qu'un problème esthétique — même si, pour un site qui reçoit des clients, des investisseurs ou des candidats, l'image compte. L'encrassement retient l'humidité et les polluants au contact du revêtement, ce qui accélère son vieillissement et peut, à terme, dégrader la protection anticorrosion. Un entretien régulier prolonge la durée de vie du bardage et évite un ravalement bien plus coûteux.</p>
-<p>Le nettoyage par drone permet de traiter des <strong>grandes hauteurs et de longues linéaires de façade sans échafaudage ni nacelle</strong> — donc sans immobiliser une partie du site ni bloquer les accès poids lourds.</p>
+<p>Un bardage sale n'est pas qu'un problème esthétique, même si, pour un site qui reçoit des clients, des investisseurs ou des candidats, l'image compte. L'encrassement retient l'humidité et les polluants au contact du revêtement, ce qui accélère son vieillissement et peut, à terme, dégrader la protection anticorrosion. Un entretien régulier prolonge la durée de vie du bardage et évite un ravalement bien plus coûteux.</p>
+<p>Le nettoyage par drone permet de traiter des <strong>grandes hauteurs et de longues linéaires de façade sans échafaudage ni nacelle</strong>, donc sans immobiliser une partie du site ni bloquer les accès poids lourds.</p>
 
 <h2>Les panneaux solaires en toiture : un rendement qui s'érode en silence</h2>
 <p>Sur un site industriel, les panneaux photovoltaïques sont exposés à un cocktail particulièrement salissant : poussières de process, films gras liés aux gaz d'échappement et à la circulation, poussières agricoles en périphérie, et sable saharien plusieurs fois par an en Occitanie. Là où la perte moyenne mondiale se situe entre 4 et 7 % (AIE PVPS), elle peut atteindre <strong>20 à 30 % dans ces environnements contraignants</strong>.</p>
 <p>Le problème, c'est que cette perte est <strong>invisible</strong> : la centrale continue de produire, simplement moins bien. Sur une grande toiture, quelques pourcents de rendement représentent un manque à gagner réel, chaque mois, sur toute l'année.</p>
-<p>Notre robot de nettoyage traite les grandes surfaces de panneaux à un rythme de <strong>1 200 m²/h</strong>, à l'eau filtrée et sans détergent — sans rayer les cellules et sans annuler les garanties constructeur.</p>
+<p>Notre robot de nettoyage traite les grandes surfaces de panneaux à un rythme de <strong>1 200 m²/h</strong>, à l'eau filtrée et sans détergent, sans rayer les cellules et sans annuler les garanties constructeur.</p>
 
 <h2>Le « 2 en 1 » : une seule intervention pour les deux</h2>
 <p>C'est là tout l'intérêt de notre approche. Puisque nous maîtrisons à la fois le <strong>drone</strong> (pour le bardage et les façades) et le <strong>robot</strong> (pour les panneaux en toiture), nous traitons les deux surfaces lors d'un même passage sur votre site. Les avantages sont concrets :</p>
@@ -72,7 +72,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>Un seul prestataire pour vos extérieurs industriels, en Occitanie</h2>
 <p>Basés à Montpellier, nous intervenons sur les sites industriels et logistiques de l'Hérault, du Gard et de toute l'Occitanie. Si votre site cumule un bardage à entretenir et des panneaux solaires en toiture, parlons-en : une seule intervention peut traiter les deux.</p>
-<p><strong>Audit gratuit de votre site et devis sous 24 h — appelez le 04 67 20 97 09 ou demandez à être rappelé.</strong></p>
+<p><strong>Audit gratuit de votre site et devis sous 24 h, appelez le 04 67 20 97 09 ou demandez à être rappelé.</strong></p>
 `,
   },
   {
@@ -114,12 +114,12 @@ export const blogPosts: BlogPost[] = [
     readTime: "6 min",
     badge: "bg-red-50 text-red-600",
     title: "Nid de frelons asiatiques en hauteur : pourquoi septembre est le mois le plus dangereux",
-    excerpt: "En septembre et octobre, les nids de frelons asiatiques atteignent leur taille maximale et la colonie devient bien plus agressive. C'est aussi le moment où il faut agir — mais surtout pas seul. Comment un drone permet de détruire un nid en grande hauteur sans aucun risque.",
+    excerpt: "En septembre et octobre, les nids de frelons asiatiques atteignent leur taille maximale et la colonie devient bien plus agressive. C'est aussi le moment où il faut agir, mais surtout pas seul. Comment un drone permet de détruire un nid en grande hauteur sans aucun risque.",
     metaTitle: "Nid de frelons asiatiques : pourquoi septembre est dangereux | Ellipsys",
     metaDescription: "En septembre-octobre, les nids de frelons asiatiques sont à leur taille maximale et la colonie devient agressive. Découvrez pourquoi il faut agir vite et comment un drone détruit un nid en hauteur sans risque. Intervention Occitanie.",
     content: `
 <h2>Septembre : le mois où le danger est à son maximum</h2>
-<p>Le frelon asiatique (<em>Vespa velutina</em>) suit un cycle annuel très marqué. Au printemps, une reine fondatrice construit un petit nid primaire, souvent bas et discret. Mais c'est en fin d'été que tout s'accélère : la colonie déménage vers un <strong>nid secondaire</strong>, généralement perché très haut — cime d'un arbre, sous une charpente, en haut d'une façade ou d'un pignon.</p>
+<p>Le frelon asiatique (<em>Vespa velutina</em>) suit un cycle annuel très marqué. Au printemps, une reine fondatrice construit un petit nid primaire, souvent bas et discret. Mais c'est en fin d'été que tout s'accélère : la colonie déménage vers un <strong>nid secondaire</strong>, généralement perché très haut, cime d'un arbre, sous une charpente, en haut d'une façade ou d'un pignon.</p>
 <p>En septembre et octobre, ce nid atteint sa <strong>taille maximale</strong> : il peut dépasser 50 à 80 cm de diamètre et abriter plusieurs milliers d'individus. Deux raisons rendent cette période particulièrement dangereuse :</p>
 <ul>
   <li><strong>La colonie est au sommet de sa population</strong>, donc le nombre de frelons capables de défendre le nid est maximal.</li>
@@ -127,7 +127,7 @@ export const blogPosts: BlogPost[] = [
 </ul>
 
 <h2>Pourquoi il ne faut jamais intervenir soi-même</h2>
-<p>Chaque année, des accidents graves surviennent parce qu'un particulier a tenté de détruire un nid lui-même — à la bombe insecticide, au jet d'eau, voire au feu. C'est une très mauvaise idée, pour trois raisons :</p>
+<p>Chaque année, des accidents graves surviennent parce qu'un particulier a tenté de détruire un nid lui-même, à la bombe insecticide, au jet d'eau, voire au feu. C'est une très mauvaise idée, pour trois raisons :</p>
 <ul>
   <li><strong>Le risque de piqûres multiples.</strong> Contrairement à une guêpe, un frelon asiatique peut piquer plusieurs fois, et une colonie entière peut charger en quelques secondes. Les piqûres multiples peuvent entraîner un choc, et une seule piqûre peut être mortelle en cas d'allergie.</li>
   <li><strong>Le risque de chute.</strong> La plupart des nids dangereux sont en hauteur. Monter sur une échelle avec une colonie agressive au-dessus de la tête, c'est cumuler le risque de piqûre et le risque de chute.</li>
@@ -149,7 +149,7 @@ export const blogPosts: BlogPost[] = [
 <ol>
   <li><strong>Ne vous approchez pas</strong> et éloignez les enfants et animaux de la zone.</li>
   <li><strong>Ne tentez rien vous-même</strong>, même avec une bombe insecticide.</li>
-  <li><strong>Repérez sa position</strong> à distance (hauteur approximative, support : arbre, façade, toiture) — cela nous aide à préparer l'intervention.</li>
+  <li><strong>Repérez sa position</strong> à distance (hauteur approximative, support : arbre, façade, toiture), cela nous aide à préparer l'intervention.</li>
   <li><strong>Contactez un professionnel</strong> équipé pour la grande hauteur.</li>
 </ol>
 
@@ -163,7 +163,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>Une intervention rapide, partout en Occitanie</h2>
 <p>Basés à Montpellier, nous intervenons dans l'Hérault, le Gard et toute l'Occitanie pour la destruction de nids de frelons asiatiques en grande hauteur par drone. Si vous avez repéré un nid, ne prenez aucun risque : contactez-nous, nous évaluons la situation et intervenons en sécurité.</p>
-<p><strong>Un nid repéré ? Appelez-nous au 04 67 20 97 09 — nous vous rappelons rapidement pour organiser l'intervention.</strong></p>
+<p><strong>Un nid repéré ? Appelez-nous au 04 67 20 97 09, nous vous rappelons rapidement pour organiser l'intervention.</strong></p>
 `,
   },
   {
@@ -174,7 +174,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "6 min",
     badge: "bg-slate-100 text-slate-700",
     title: "Démoussage de toiture : pourquoi l'automne est le meilleur moment pour agir",
-    excerpt: "Les premières pluies d'automne, après un été sec, réveillent mousses et lichens sur les tuiles. Attendre l'hiver, c'est risquer les infiltrations. Voici pourquoi la fin de l'été est la fenêtre idéale pour démousser — et comment on le fait par drone, sans jamais monter sur votre toit.",
+    excerpt: "Les premières pluies d'automne, après un été sec, réveillent mousses et lichens sur les tuiles. Attendre l'hiver, c'est risquer les infiltrations. Voici pourquoi la fin de l'été est la fenêtre idéale pour démousser, et comment on le fait par drone, sans jamais monter sur votre toit.",
     metaTitle: "Démoussage de toiture : pourquoi agir en automne | Ellipsys",
     metaDescription: "Pourquoi l'automne est le meilleur moment pour démousser sa toiture : premières pluies, mousses, risque d'infiltration hivernale. Démoussage par drone sans monter sur le toit, traitement Certibiocide. Devis gratuit en Occitanie.",
     content: `
@@ -186,18 +186,18 @@ export const blogPosts: BlogPost[] = [
 <p>Beaucoup de propriétaires attendent le printemps pour s'occuper de leur toiture. C'est une erreur de calendrier, pour trois raisons :</p>
 <ul>
   <li><strong>La mousse retient l'eau.</strong> Un tapis de mousse agit comme une éponge sur vos tuiles. En hiver, cette eau gèle, se dilate, et accélère la dégradation de la tuile (phénomène de gel-dégel). Agir avant l'hiver, c'est éviter ce cycle destructeur.</li>
-  <li><strong>Le risque d'infiltration.</strong> Mousses et lichens soulèvent légèrement les tuiles et détournent l'écoulement de l'eau. Les infiltrations apparaissent justement pendant les pluies d'hiver — quand il est trop tard pour intervenir sereinement.</li>
+  <li><strong>Le risque d'infiltration.</strong> Mousses et lichens soulèvent légèrement les tuiles et détournent l'écoulement de l'eau. Les infiltrations apparaissent justement pendant les pluies d'hiver, quand il est trop tard pour intervenir sereinement.</li>
   <li><strong>Le traitement a le temps d'agir.</strong> Un démoussage professionnel n'est pas un nettoyage instantané : le produit agit sur plusieurs semaines. Traiter en automne laisse à la toiture tout l'hiver pour se débarrasser naturellement des organismes morts.</li>
 </ul>
 
 <h2>La bonne méthode : par drone, sans monter sur le toit</h2>
-<p>Le démoussage traditionnel implique de faire circuler un opérateur sur votre toiture. Sur des tuiles anciennes ou fragiles (tuile canal, ardoise), ce piétinement casse et déplace des tuiles — la réparation coûte parfois plus cher que le démoussage lui-même.</p>
+<p>Le démoussage traditionnel implique de faire circuler un opérateur sur votre toiture. Sur des tuiles anciennes ou fragiles (tuile canal, ardoise), ce piétinement casse et déplace des tuiles, la réparation coûte parfois plus cher que le démoussage lui-même.</p>
 <p>Notre méthode supprime ce risque : nous appliquons le traitement <strong>par drone, depuis le sol</strong>.</p>
 <ul>
   <li><strong>Aucun poids sur la toiture</strong> : pas de tuile fragilisée, pas de casse.</li>
   <li><strong>Traitement Certibiocide homologué</strong> appliqué uniformément sur toute la surface, y compris les zones difficiles d'accès.</li>
   <li><strong>Sans échafaudage</strong> : intervention rapide, sans emprise au sol, sans immobiliser votre habitation.</li>
-  <li><strong>Compatible</strong> tuile canal, tuile mécanique, ardoise, et bâti ancien — y compris en zone ABF (Architectes des Bâtiments de France).</li>
+  <li><strong>Compatible</strong> tuile canal, tuile mécanique, ardoise, et bâti ancien, y compris en zone ABF (Architectes des Bâtiments de France).</li>
 </ul>
 
 <h2>Démoussage seul ou démoussage + hydrofuge ?</h2>
@@ -206,7 +206,7 @@ export const blogPosts: BlogPost[] = [
 <p>Il élimine les mousses, lichens et algues à la racine. C'est la base, suffisante si votre toiture est saine et que vous voulez simplement la nettoyer et la protéger à court terme.</p>
 <h3>Le démoussage + hydrofuge</h3>
 <p>Après le démoussage, on applique un <strong>hydrofuge pénétrant</strong> qui rend la tuile déperlante et ralentit fortement le retour des mousses. C'est l'équivalent d'une protection longue durée (5 à 8 ans selon l'exposition). Recommandé sur les versants nord et les toitures déjà poreuses.</p>
-<p>Nous évaluons l'état réel de votre toiture avant de recommander l'un ou l'autre — jamais l'inverse.</p>
+<p>Nous évaluons l'état réel de votre toiture avant de recommander l'un ou l'autre, jamais l'inverse.</p>
 
 <h2>Questions fréquentes</h2>
 <h3>À quelle fréquence faut-il démousser une toiture ?</h3>
@@ -218,7 +218,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>Intervention en Occitanie</h2>
 <p>Basés à Montpellier, nous démoussons les toitures dans l'Hérault, le Gard et toute l'Occitanie. Ne laissez pas la mousse passer l'hiver sur vos tuiles : c'est maintenant, avant les grandes pluies, que le traitement est le plus efficace.</p>
-<p><strong>Devis gratuit sous 24 h — appelez le 04 67 20 97 09 ou demandez à être rappelé.</strong></p>
+<p><strong>Devis gratuit sous 24 h, appelez le 04 67 20 97 09 ou demandez à être rappelé.</strong></p>
 `,
   },
   {
@@ -234,7 +234,7 @@ export const blogPosts: BlogPost[] = [
     metaDescription: "Le nettoyage haute pression endommage vos tuiles et annule les garanties. Découvrez la méthode certibiocide sans pression pour un démoussage professionnel durable. Devis gratuit.",
     content: `
 <h2>Le réflexe Karcher : une idée reçue qui coûte cher</h2>
-<p>Chaque année, des milliers de propriétaires font appel à des prestataires pour nettoyer leur toiture à l'eau sous pression. C'est visible, c'est spectaculaire, et ça paraît efficace. Sauf que cette méthode est, dans la grande majorité des cas, une <strong>erreur technique grave</strong> — et les conséquences peuvent se chiffrer en milliers d'euros.</p>
+<p>Chaque année, des milliers de propriétaires font appel à des prestataires pour nettoyer leur toiture à l'eau sous pression. C'est visible, c'est spectaculaire, et ça paraît efficace. Sauf que cette méthode est, dans la grande majorité des cas, une <strong>erreur technique grave</strong>, et les conséquences peuvent se chiffrer en milliers d'euros.</p>
 
 <h2>Ce que la haute pression fait vraiment à vos tuiles</h2>
 <p>Les tuiles en terre cuite ou en béton ont une structure poreuse. Leur imperméabilité naturelle repose sur une couche superficielle de granulats et d'enduits qui se forme au fil des années. Un jet haute pression à 150-200 bars :</p>
@@ -247,7 +247,7 @@ export const blogPosts: BlogPost[] = [
 </ul>
 <p>Résultat concret : votre toiture est certes "propre" visuellement pendant quelques semaines, puis les mousses et lichens recolonisent la surface jusqu'à <strong>trois fois plus vite</strong>, car la porosité augmentée offre un terrain idéal à leur développement.</p>
 
-<h2>La garantie fabricant annulée — et l'assurance qui ne suit pas</h2>
+<h2>La garantie fabricant annulée, et l'assurance qui ne suit pas</h2>
 <p>La plupart des fabricants de tuiles (Terreal, Monier, Imerys...) précisent explicitement dans leurs conditions de garantie que tout nettoyage à haute pression <strong>annule la garantie produit</strong>. Certains assureurs habitation refusent également de prendre en charge les infiltrations survenant après un nettoyage haute pression, le considérant comme une intervention mal réalisée.</p>
 <p>Autrement dit : vous payez une prestation qui dégrade votre bien, annule vos garanties et peut vous laisser seul face aux réparations.</p>
 
@@ -285,7 +285,7 @@ export const blogPosts: BlogPost[] = [
   <li>Quelle pression maximale en bar ?</li>
   <li>Que se passe-t-il si une tuile se casse lors de l'intervention ?</li>
 </ol>
-<p>Si les réponses sont floues, passez votre chemin. Ellipsys intervient avec <strong>assurance décennale</strong>, produits certifiés et protocole documenté. Demandez votre devis gratuit — nous répondons sous 24h.</p>
+<p>Si les réponses sont floues, passez votre chemin. Ellipsys intervient avec <strong>assurance décennale</strong>, produits certifiés et protocole documenté. Demandez votre devis gratuit, nous répondons sous 24h.</p>
     `,
   },
 
@@ -302,7 +302,7 @@ export const blogPosts: BlogPost[] = [
     metaDescription: "Le sable du Sahara réduit le rendement de vos panneaux solaires de 8 à 15%. Découvrez comment un nettoyage professionnel par drone restaure votre production photovoltaïque. Devis gratuit.",
     content: `
 <h2>Un phénomène météo aux conséquences économiques réelles</h2>
-<p>Chaque année, entre mars et juin, le sud de la France est régulièrement touché par des épisodes de transport de sable saharien. Ce phénomène, aussi appelé "pluie de sable" ou "sable du désert", dépose une fine couche de particules ocre sur toutes les surfaces horizontales et inclinées — y compris vos panneaux photovoltaïques.</p>
+<p>Chaque année, entre mars et juin, le sud de la France est régulièrement touché par des épisodes de transport de sable saharien. Ce phénomène, aussi appelé "pluie de sable" ou "sable du désert", dépose une fine couche de particules ocre sur toutes les surfaces horizontales et inclinées, y compris vos panneaux photovoltaïques.</p>
 <p>Ce que peu de propriétaires et exploitants savent, c'est que ce dépôt n'est pas seulement inesthétique. <strong>Il a un impact direct et mesurable sur la production électrique de votre installation.</strong></p>
 
 <h2>Données de terrain : combien perd-on vraiment ?</h2>
@@ -319,7 +319,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li><strong>Granulométrie fine</strong> : les particules pénètrent dans les micro-aspérités du verre</li>
   <li><strong>Teneur élevée en argile</strong> : forme une pellicule compacte et adhérente au contact de l'eau de pluie</li>
-  <li><strong>Faible solubilité</strong> : une pluie ordinaire ne suffit pas à éliminer le dépôt — elle le cimente au contraire</li>
+  <li><strong>Faible solubilité</strong> : une pluie ordinaire ne suffit pas à éliminer le dépôt, elle le cimente au contraire</li>
   <li><strong>Effet "crêpe"</strong> : l'argile et les sels minéraux créent une couche semi-opaque qui filtre le rayonnement lumineux</li>
 </ul>
 <p>C'est pour cette raison qu'après un épisode de sable saharien suivi de pluie, vos panneaux peuvent sembler "rincés" mais ont en réalité une pellicule d'argile calcifiée qui réduit durablement leur efficacité.</p>
@@ -358,8 +358,8 @@ export const blogPosts: BlogPost[] = [
 </ul>
 
 <h2>Conclusion</h2>
-<p>Le sable saharien n'est pas une nuisance anecdotique. C'est un phénomène météorologique récurrent en Méditerranée qui a un impact financier direct et calculable sur votre production solaire. Un nettoyage professionnel annuel n'est pas un coût — c'est un investissement à ROI démontré.</p>
-<p>Ellipsys intervient sur tous types d'installations photovoltaïques en Occitanie, PACA et région parisienne. Demandez votre devis gratuit — nous intervenons sous 5 jours ouvrés.</p>
+<p>Le sable saharien n'est pas une nuisance anecdotique. C'est un phénomène météorologique récurrent en Méditerranée qui a un impact financier direct et calculable sur votre production solaire. Un nettoyage professionnel annuel n'est pas un coût, c'est un investissement à ROI démontré.</p>
+<p>Ellipsys intervient sur tous types d'installations photovoltaïques en Occitanie, PACA et région parisienne. Demandez votre devis gratuit, nous intervenons sous 5 jours ouvrés.</p>
     `,
   },
 
@@ -405,7 +405,7 @@ export const blogPosts: BlogPost[] = [
   <li><strong>Budget indicatif</strong> : 5 000 à 15 000 €</li>
 </ul>
 
-<h3>4. Le drone Chronos — méthode Ellipsys</h3>
+<h3>4. Le drone Chronos, méthode Ellipsys</h3>
 <ul>
   <li><strong>Avantages</strong> : Zéro emprise au sol, zéro risque humain en hauteur, déployable en 30 minutes, opérationnel jusqu'à 60 km/h de vent, aucune perturbation de l'activité du site</li>
   <li><strong>Inconvénients</strong> : Nécessite une zone de décollage de 5 m², réglementé (scénario STS, plan de vol), non adapté aux façades en surplomb extrême</li>
@@ -439,7 +439,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>Conclusion</h2>
 <p>En 2026, le drone n'est plus une curiosité technologique pour le nettoyage de façade : c'est une solution mature, réglementée, assurée, et économiquement compétitive. Sur la plupart des chantiers de façade en accès difficile, il divise le budget par 2 à 4 et les délais par 3 à 7.</p>
-<p>Ellipsys est pilote de drone certifié DGAC, assuré en responsabilité civile professionnelle, et intervient partout en France. Demandez votre devis — réponse sous 24h.</p>
+<p>Ellipsys est pilote de drone certifié DGAC, assuré en responsabilité civile professionnelle, et intervient partout en France. Demandez votre devis, réponse sous 24h.</p>
     `,
   },
 
@@ -481,7 +481,7 @@ export const blogPosts: BlogPost[] = [
 <p>Jusqu'à récemment, la thermographie de bâtiment se faisait depuis le sol ou depuis des nacelles. Résultat : seules les façades basses étaient accessibles, et la partie haute des bâtiments (là où les déperditions sont souvent les plus importantes) restait dans un angle mort.</p>
 <p>Le drone thermique Ellipsys permet :</p>
 <ul>
-  <li><strong>Couverture totale</strong> : toiture, façades, acrotères, terrasses, points de jonction en hauteur — tout est accessible</li>
+  <li><strong>Couverture totale</strong> : toiture, façades, acrotères, terrasses, points de jonction en hauteur, tout est accessible</li>
   <li><strong>Rapidité</strong> : un bâtiment de 5 000 m² de façade peut être inspecté en 2 à 4 heures de vol</li>
   <li><strong>Précision</strong> : résolution thermique de 0,05°C, détection des gradients de 1°C entre deux zones adjacentes</li>
   <li><strong>Documentation</strong> : rapport PDF complet avec images géolocalisées, cartographie des défauts et préconisations</li>
@@ -512,7 +512,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>Conclusion</h2>
 <p>La thermographie par drone est probablement le meilleur investissement qu'un propriétaire tertiaire puisse faire dans le cadre du Décret Tertiaire : en 2 à 4 heures, vous avez une cartographie complète des déperditions de votre bâtiment, avec des préconisations chiffrées. C'est le point de départ de toute stratégie de réduction énergétique efficace.</p>
-<p>Ellipsys réalise des diagnostics thermographiques par drone partout en Occitanie, PACA et Île-de-France. Demandez votre devis — nous répondons sous 24h.</p>
+<p>Ellipsys réalise des diagnostics thermographiques par drone partout en Occitanie, PACA et Île-de-France. Demandez votre devis, nous répondons sous 24h.</p>
     `,
   },
 
@@ -550,7 +550,7 @@ export const blogPosts: BlogPost[] = [
 <p>Chez Ellipsys, nous avons développé un protocole d'intervention par drone spécifiquement adapté à la destruction de nids de frelons en hauteur. Notre approche repose sur trois principes :</p>
 
 <h3>1. Distance de sécurité garantie</h3>
-<p>Le drone opère à une distance suffisante du nid (généralement 1 à 3 mètres selon la configuration) pour éviter tout déclenchement défensif massif de la colonie. L'opérateur, lui, est à distance sécurisée au sol — généralement à plus de 30 mètres.</p>
+<p>Le drone opère à une distance suffisante du nid (généralement 1 à 3 mètres selon la configuration) pour éviter tout déclenchement défensif massif de la colonie. L'opérateur, lui, est à distance sécurisée au sol, généralement à plus de 30 mètres.</p>
 
 <h3>2. Produit insecticide homologué Certibiocide</h3>
 <p>Nous utilisons exclusivement des insecticides à action rapide homologués pour la destruction des hyménoptères sociaux, conformes à la réglementation biocide européenne. L'application est précise et ciblée, sans dispersion dans l'environnement.</p>
@@ -576,7 +576,7 @@ export const blogPosts: BlogPost[] = [
 <p>Intervention disponible en Occitanie (Hérault, Gard, Aveyron, Pyrénées-Orientales...) et PACA. <strong>Délai d'intervention : moins de 48h en saison.</strong></p>
 
 <h2>Ne pas attendre : les nids grossissent exponentiellement</h2>
-<p>Un nid de frelon asiatique peut contenir jusqu'à <strong>15 000 individus</strong> en fin de saison. Au printemps, un jeune nid ne compte que quelques dizaines d'ouvrières — l'intervention est alors rapide et peu coûteuse. En septembre, la situation est radicalement différente. Contactez-nous dès que vous repérez un nid ou une activité suspecte.</p>
+<p>Un nid de frelon asiatique peut contenir jusqu'à <strong>15 000 individus</strong> en fin de saison. Au printemps, un jeune nid ne compte que quelques dizaines d'ouvrières, l'intervention est alors rapide et peu coûteuse. En septembre, la situation est radicalement différente. Contactez-nous dès que vous repérez un nid ou une activité suspecte.</p>
     `,
   },
 
@@ -597,12 +597,12 @@ export const blogPosts: BlogPost[] = [
 <p>Ce cadre réglementaire class les opérations de drone en trois catégories :</p>
 <ul>
   <li><strong>Catégorie Ouverte</strong> : vols à faible risque, sans autorisation préalable, sous conditions strictes de masse et d'altitude</li>
-  <li><strong>Catégorie Spécifique</strong> : vols à risque modéré, nécessitant une autorisation ou une déclaration — c'est dans cette catégorie que s'inscrit la quasi-totalité des opérations professionnelles d'Ellipsys</li>
+  <li><strong>Catégorie Spécifique</strong> : vols à risque modéré, nécessitant une autorisation ou une déclaration, c'est dans cette catégorie que s'inscrit la quasi-totalité des opérations professionnelles d'Ellipsys</li>
   <li><strong>Catégorie Certifiée</strong> : vols à risque élevé (transport de personnes, charges dangereuses), sous régime de certification complète</li>
 </ul>
 
 <h2>Les scénarios STS : qu'est-ce que c'est ?</h2>
-<p>Au sein de la Catégorie Spécifique, l'EASA a défini des <strong>scénarios standard européens</strong> (STS — Standard Scenarios) qui permettent à un opérateur qualifié de voler sans demander une autorisation spécifique à chaque vol, à condition de respecter un ensemble de conditions prédéfinies.</p>
+<p>Au sein de la Catégorie Spécifique, l'EASA a défini des <strong>scénarios standard européens</strong> (STS, Standard Scenarios) qui permettent à un opérateur qualifié de voler sans demander une autorisation spécifique à chaque vol, à condition de respecter un ensemble de conditions prédéfinies.</p>
 <p>Il en existe actuellement deux :</p>
 
 <h3>STS-01 : Vol VLOS au-dessus de zones contrôlées au sol</h3>
@@ -616,12 +616,12 @@ export const blogPosts: BlogPost[] = [
 <p>Conditions clés : drone de classe C5, pilote télécommandé avec certificat STS, déclaration sur la plateforme Alphatango.</p>
 
 <h3>STS-02 : Vol VLOS au-dessus de zones peuplées</h3>
-<p>Ce scénario est plus contraignant car il autorise les vols au-dessus de zones peuplées (rues, espaces publics, abords de bâtiments habités) sans évacuation préalable. C'est le scénario utilisé pour les interventions en milieu urbain dense — nettoyage de façades en centre-ville, destruction de nids dans des quartiers résidentiels, thermographie de bâtiments tertiaires.</p>
+<p>Ce scénario est plus contraignant car il autorise les vols au-dessus de zones peuplées (rues, espaces publics, abords de bâtiments habités) sans évacuation préalable. C'est le scénario utilisé pour les interventions en milieu urbain dense, nettoyage de façades en centre-ville, destruction de nids dans des quartiers résidentiels, thermographie de bâtiments tertiaires.</p>
 <p>Conditions clés : drone de classe C6 (résistance à la chute, design sécurisé), pilote certifié STS-02, déclaration préalable DGAC, parfois coordination avec les autorités locales.</p>
 
 <h2>Ce qu'Ellipsys gère pour vous</h2>
 <p>La conformité réglementaire est l'une des premières questions que nos clients nous posent : <em>"Est-ce que vous avez les autorisations ?"</em></p>
-<p>La réponse est oui — et nous gérons l'intégralité de la démarche :</p>
+<p>La réponse est oui, et nous gérons l'intégralité de la démarche :</p>
 <ul>
   <li>Nos pilotes sont tous titulaires du <strong>certificat de compétences télépilote</strong> délivré par la DGAC</li>
   <li>Nous disposons des qualifications <strong>STS-01 et STS-02</strong> pour les opérations en zone peuplée</li>
@@ -634,18 +634,18 @@ export const blogPosts: BlogPost[] = [
 <h2>Les zones où le drone est interdit ou restreint</h2>
 <p>Certaines zones imposent des restrictions ou interdictions que nous identifions systématiquement avant chaque intervention :</p>
 <ul>
-  <li><strong>Zones CTR</strong> : espaces autour des aéroports (rayon variable, généralement 5-10 km) — vol possible sous conditions avec coordination préalable</li>
-  <li><strong>Zones militaires et sensibles</strong> : centrales nucléaires, sites SEVESO, zones militaires — vol interdit sauf autorisation spéciale</li>
+  <li><strong>Zones CTR</strong> : espaces autour des aéroports (rayon variable, généralement 5-10 km), vol possible sous conditions avec coordination préalable</li>
+  <li><strong>Zones militaires et sensibles</strong> : centrales nucléaires, sites SEVESO, zones militaires, vol interdit sauf autorisation spéciale</li>
   <li><strong>Espaces naturels protégés</strong> : certains parcs naturels imposent des restrictions au survol</li>
   <li><strong>Zones temporaires</strong> : événements publics, manifestations, opérations de sécurité</li>
 </ul>
 
 <h2>Pourquoi c'est important pour votre assurance</h2>
-<p>Un vol de drone réalisé hors cadre réglementaire — même pour une prestation commerciale — peut engager la responsabilité civile et pénale du donneur d'ordre. En confiant votre chantier à Ellipsys, vous vous assurez que l'intégralité de l'opération est conforme, documentée et assurée. C'est un élément clé pour votre propre couverture en cas d'incident.</p>
+<p>Un vol de drone réalisé hors cadre réglementaire, même pour une prestation commerciale, peut engager la responsabilité civile et pénale du donneur d'ordre. En confiant votre chantier à Ellipsys, vous vous assurez que l'intégralité de l'opération est conforme, documentée et assurée. C'est un élément clé pour votre propre couverture en cas d'incident.</p>
 
 <h2>Conclusion</h2>
 <p>La réglementation drone est complexe mais n'est pas un obstacle : c'est un cadre qui garantit la sécurité des personnes et la légitimité des opérations. Ellipsys maîtrise ce cadre depuis sa création et gère toute la partie administrative pour que vous puissiez vous concentrer sur l'essentiel : le résultat de l'intervention.</p>
-<p>Vous avez un projet ? Contactez-nous pour une étude de faisabilité — nous vous confirmons sous 24h si votre site est opérable et sous quelles conditions.</p>
+<p>Vous avez un projet ? Contactez-nous pour une étude de faisabilité, nous vous confirmons sous 24h si votre site est opérable et sous quelles conditions.</p>
     `,
   },
 ];

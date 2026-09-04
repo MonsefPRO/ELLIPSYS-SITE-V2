@@ -51,16 +51,16 @@ export default async function MaritimePage() {
 
   const avantages = [
     {
-      title: isEn ? "Harbour masters' offices and port hangars — desalination of façades and roofs" : "Capitaineries et hangars portuaires — dessalage façades et toitures",
+      title: isEn ? "Harbour masters' offices and port hangars, desalination of façades and roofs" : "Capitaineries et hangars portuaires, dessalage façades et toitures",
       desc: isEn ? "Cleaning of façades and roofs exposed to sea spray. Our desalination protocols combine a low-pressure rinse with fresh filtered water to evacuate chloride deposits, followed by a protective treatment adapted to the material type." : "Nettoyage de façades et toitures exposées aux embruns. Nos protocoles de dessalage combinent un rinçage à l'eau douce filtrée sous faible pression pour évacuer les dépôts de chlorures, suivi d'un traitement protecteur adapté au type de matériau.",
     },
     {
-      title: isEn ? "Pontoons and metal structures — prevention of accelerated corrosion" : "Pontons et structures métalliques — prévention corrosion accélérée",
+      title: isEn ? "Pontoons and metal structures, prevention of accelerated corrosion" : "Pontons et structures métalliques, prévention corrosion accélérée",
       desc: isEn ? "Sea salt, spray and chronic humidity constitute a permanent threat to metal, concrete and composite structures. Coastal corrosion acts invisibly and at an accelerated rate. Regular desalination prevents accelerated corrosion." : "Le sel marin, les embruns et l'humidité chronique constituent une menace permanente pour les structures métalliques, béton et composites. La corrosion côtière agit de manière invisible et accélérée. Dessalage régulier pour prévenir la corrosion accélérée.",
     },
     {
-      title: isEn ? "Solar panels in coastal zones — frequency adapted to salinity" : "Panneaux solaires en zone côtière — fréquence adaptée à la salinité",
-      desc: isEn ? "Cleaning frequency adapted to local salinity. In coastal areas, saline contamination of panels is particularly rapid — we define with you the optimal frequency based on your site's exposure and the measured salinity." : "Fréquence de nettoyage adaptée à la salinité locale. En zone littorale, la contamination saline des panneaux est particulièrement rapide — nous définissons avec vous la fréquence optimale selon l'exposition de votre site et la salinité mesurée.",
+      title: isEn ? "Solar panels in coastal zones, frequency adapted to salinity" : "Panneaux solaires en zone côtière, fréquence adaptée à la salinité",
+      desc: isEn ? "Cleaning frequency adapted to local salinity. In coastal areas, saline contamination of panels is particularly rapid, we define with you the optimal frequency based on your site's exposure and the measured salinity." : "Fréquence de nettoyage adaptée à la salinité locale. En zone littorale, la contamination saline des panneaux est particulièrement rapide, nous définissons avec vous la fréquence optimale selon l'exposition de votre site et la salinité mesurée.",
     },
     {
       title: isEn ? "Complementary thermographic inspection available" : "Inspection thermographique complémentaire disponible",
@@ -109,7 +109,7 @@ export default async function MaritimePage() {
                 </span>
               </div>
               <div className="absolute bottom-5 left-5 right-5">
-                <p className="text-white text-xs font-semibold">{isEn ? "Port infrastructure — desalination protocol to prevent accelerated marine corrosion" : "Infrastructure portuaire — protocole dessalage pour prévenir la corrosion marine accélérée"}</p>
+                <p className="text-white text-xs font-semibold">{isEn ? "Port infrastructure, desalination protocol to prevent accelerated marine corrosion" : "Infrastructure portuaire, protocole dessalage pour prévenir la corrosion marine accélérée"}</p>
               </div>
             </div>
 

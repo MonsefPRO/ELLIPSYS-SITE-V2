@@ -6,7 +6,7 @@ import AccordionSection from "@/components/AccordionSection";
 import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
-  title: "Destruction de nids de frelons par drone — Montpellier",
+  title: "Destruction de nids de frelons par drone, Montpellier",
   description: "Destruction de nids de frelons asiatiques en grande hauteur par drone à Montpellier et dans l'Hérault. Aucun risque humain, produit Certibiocide injecté à distance, retrait du nid inclus. Intervention rapide.",
   alternates: {
     canonical: "https://ellipsys-solutions.com/prestations/nuisibles",
@@ -46,21 +46,21 @@ export default async function FrelonsPage() {
   ];
 
   const protocole = isEn ? [
-    { step: "01", badge: "PRODUCT · FLIGHT", title: "Certibiocide Certification & Regulatory Compliance (DGAC / EASA)", desc: <>An Asian hornet nest directly engages your <strong>civil liability</strong>. Our <strong>Certibiocide</strong> certification guarantees a legal and effective treatment that <strong>neutralises the threat at source</strong>. Our pilots operate under the strict control of the <strong>DGAC</strong> for all overflights in inhabited zones — <strong>prefectoral authorisations managed by our teams</strong>.</> },
+    { step: "01", badge: "PRODUCT · FLIGHT", title: "Certibiocide Certification & Regulatory Compliance (DGAC / EASA)", desc: <>An Asian hornet nest directly engages your <strong>civil liability</strong>. Our <strong>Certibiocide</strong> certification guarantees a legal and effective treatment that <strong>neutralises the threat at source</strong>. Our pilots operate under the strict control of the <strong>DGAC</strong> for all overflights in inhabited zones, <strong>prefectoral authorisations managed by our teams</strong>.</> },
     { step: "02", badge: null,               title: "High-Altitude Intervention & Physical Nest Removal",              desc: <>After the safe remote injection of the <strong>approved biocidal product</strong>, we proceed with the <strong>meticulous physical removal of the nest</strong>. Without this removal, the site remains attractive to <strong>new swarms</strong> the following season.</> },
   ] : [
-    { step: "01", badge: "PRODUIT · VOL", title: "Habilitation Certibiocide & Conformité Réglementaire (DGAC / EASA)", desc: <>Un nid de frelons asiatiques engage directement votre <strong>responsabilité civile</strong>. Notre habilitation <strong>Certibiocide</strong> garantit un traitement légal et efficace qui <strong>neutralise la menace à la source</strong>. Nos pilotes opèrent sous le strict contrôle de la <strong>DGAC</strong> pour tout survol en zone habitée — <strong>autorisations préfectorales gérées par nos soins</strong>.</> },
+    { step: "01", badge: "PRODUIT · VOL", title: "Habilitation Certibiocide & Conformité Réglementaire (DGAC / EASA)", desc: <>Un nid de frelons asiatiques engage directement votre <strong>responsabilité civile</strong>. Notre habilitation <strong>Certibiocide</strong> garantit un traitement légal et efficace qui <strong>neutralise la menace à la source</strong>. Nos pilotes opèrent sous le strict contrôle de la <strong>DGAC</strong> pour tout survol en zone habitée, <strong>autorisations préfectorales gérées par nos soins</strong>.</> },
     { step: "02", badge: null,            title: "Intervention en Grande Hauteur & Retrait Physique du Nid",          desc: <>Après l&apos;injection sécurisée du <strong>produit biocide homologué</strong> à distance, nous procédons à l&apos;<strong>enlèvement physique minutieux du nid</strong>. Sans ce retrait, le site reste attractif pour de <strong>nouveaux essaims</strong> la saison suivante.</> },
   ];
 
   const avantages = isEn ? [
-    { title: "Remote Operation — Sting Risk Virtually Eliminated",   desc: <>It is the <strong>remote intervention</strong> that makes all the difference: the remote pilot operates from the ground, out of reach of the hornets. Your employees, neighbours and passers-by are never exposed. Our drone neutralises the nest <strong>without any physical approach</strong>.</> },
+    { title: "Remote Operation, Sting Risk Virtually Eliminated",   desc: <>It is the <strong>remote intervention</strong> that makes all the difference: the remote pilot operates from the ground, out of reach of the hornets. Your employees, neighbours and passers-by are never exposed. Our drone neutralises the nest <strong>without any physical approach</strong>.</> },
     { title: "Access to Zones Impossible by Conventional Methods",   desc: <>Roofs at <strong>20 metres</strong>, century-old trees, overhanging cornices: our drone reaches targets <strong>inaccessible by pole or ladder</strong>, without aerial platform rental or risk of accident.</> },
-    { title: "Definitive Eradication — Nest Removal Included",       desc: <>Unlike simple insecticide treatments, we systematically carry out <strong>physical removal of the structure</strong>. Without this removal, the site remains attractive to <strong>new swarms</strong> the following year.</> },
+    { title: "Definitive Eradication, Nest Removal Included",       desc: <>Unlike simple insecticide treatments, we systematically carry out <strong>physical removal of the structure</strong>. Without this removal, the site remains attractive to <strong>new swarms</strong> the following year.</> },
   ] : [
-    { title: "Télé-opération à Distance — Risque de Piqûres Fortement Limité", desc: <>C&apos;est l&apos;<strong>intervention à distance</strong> qui fait toute la différence : le télépilote opère depuis le sol, hors de portée des frelons. Vos employés, riverains et passants ne sont jamais exposés. Notre drone neutralise le nid <strong>sans aucune approche physique</strong>.</> },
+    { title: "Télé-opération à Distance, Risque de Piqûres Fortement Limité", desc: <>C&apos;est l&apos;<strong>intervention à distance</strong> qui fait toute la différence : le télépilote opère depuis le sol, hors de portée des frelons. Vos employés, riverains et passants ne sont jamais exposés. Notre drone neutralise le nid <strong>sans aucune approche physique</strong>.</> },
     { title: "Accès aux Zones Impossibles en Méthode Classique",               desc: <>Toitures à <strong>20 mètres</strong>, arbres centenaires, corniches en surplomb : notre drone atteint des cibles <strong>inaccessibles à la perche ou à l&apos;échelle</strong>, sans location de nacelle ni risque d&apos;accident.</> },
-    { title: "Éradication Définitive — Retrait du Nid Inclus",                 desc: <>Contrairement à de simples traitements insecticides, nous procédons systématiquement au <strong>retrait physique de la structure</strong>. Sans ce retrait, le site reste attractif pour de <strong>nouveaux essaims</strong> l&apos;année suivante.</> },
+    { title: "Éradication Définitive, Retrait du Nid Inclus",                 desc: <>Contrairement à de simples traitements insecticides, nous procédons systématiquement au <strong>retrait physique de la structure</strong>. Sans ce retrait, le site reste attractif pour de <strong>nouveaux essaims</strong> l&apos;année suivante.</> },
   ];
 
   return (
@@ -104,11 +104,11 @@ export default async function FrelonsPage() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <div className="absolute top-5 left-5">
                 <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-red-500/20 border border-red-400/40 text-red-300 text-xs font-bold backdrop-blur-sm">
-                  <AlertTriangle className="w-3.5 h-3.5" /> {isEn ? "Vital Danger — Asian Hornet" : "Danger Vital — Frelon Asiatique"}
+                  <AlertTriangle className="w-3.5 h-3.5" /> {isEn ? "Vital Danger, Asian Hornet" : "Danger Vital, Frelon Asiatique"}
                 </span>
               </div>
               <div className="absolute bottom-5 left-5 right-5">
-                <p className="text-white text-xs font-semibold">{isEn ? "High-altitude hornet nest — inaccessible without specialised equipment" : "Nid de frelons en hauteur — inaccessible sans équipement spécialisé"}</p>
+                <p className="text-white text-xs font-semibold">{isEn ? "High-altitude hornet nest, inaccessible without specialised equipment" : "Nid de frelons en hauteur, inaccessible sans équipement spécialisé"}</p>
               </div>
             </div>
             <div>
@@ -198,7 +198,7 @@ export default async function FrelonsPage() {
                 <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('${IMG.nestClose}')` }} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <div className="absolute bottom-4 left-5 right-5">
-                  <p className="text-white text-xs font-semibold">{isEn ? "Alveolar structure of an Asian hornet nest — after biocidal treatment" : "Structure alvéolaire d'un nid de frelons asiatiques — après traitement biocide"}</p>
+                  <p className="text-white text-xs font-semibold">{isEn ? "Alveolar structure of an Asian hornet nest, after biocidal treatment" : "Structure alvéolaire d'un nid de frelons asiatiques, après traitement biocide"}</p>
                 </div>
               </div>
             </div>

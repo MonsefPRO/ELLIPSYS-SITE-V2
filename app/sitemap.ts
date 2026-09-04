@@ -75,7 +75,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/intervention/toulouse", priority: 0.8, changeFrequency: "monthly" },
     { path: "/intervention/marseille", priority: 0.8, changeFrequency: "monthly" },
     { path: "/intervention/avignon", priority: 0.8, changeFrequency: "monthly" },
-    // Villes hors zone Occitanie : conservées mais non prioritaires — elles
+    // Villes hors zone Occitanie : conservées mais non prioritaires, elles
     // captaient des impressions parisiennes sans jamais convertir.
     { path: "/intervention/paris", priority: 0.5, changeFrequency: "yearly" },
     { path: "/intervention/lyon", priority: 0.5, changeFrequency: "yearly" },

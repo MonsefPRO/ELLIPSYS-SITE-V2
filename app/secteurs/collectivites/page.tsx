@@ -51,19 +51,19 @@ export default async function CollectivitesPage() {
 
   const avantages = [
     {
-      title: isEn ? "No ground footprint — no barriers or disruption" : "Aucune emprise au sol — aucune barricade ni perturbation",
+      title: isEn ? "No ground footprint, no barriers or disruption" : "Aucune emprise au sol, aucune barricade ni perturbation",
       desc: isEn ? "Public buildings and spaces face specific constraints: public access, user safety, service continuity. Our aerial drone approach eliminates the need for a ground footprint (marking, cherry pickers, scaffolding), enabling intervention on public buildings without disrupting pedestrian or vehicle traffic." : "Les bâtiments et espaces publics font face à des contraintes spécifiques : accès du public, sécurité des usagers, continuité du service. Notre approche aérienne par drone élimine le besoin d'emprise au sol (balisage, nacelles, échafaudages), permettant d'intervenir sur les bâtiments publics sans perturber la circulation piétons ou véhicules.",
     },
     {
-      title: isEn ? "School safety — interventions adapted to educational establishments" : "Sécurité écoles — interventions adaptées aux établissements scolaires",
+      title: isEn ? "School safety, interventions adapted to educational establishments" : "Sécurité écoles, interventions adaptées aux établissements scolaires",
       desc: isEn ? "Interventions outside school hours or without evacuation. We adapt to the constraints of educational establishments to intervene without disrupting teaching activities or exposing pupils. Our operations can take place at weekends or during school holidays." : "Interventions hors horaires scolaires ou sans évacuation. Nous nous adaptons aux contraintes des établissements scolaires pour intervenir sans perturber les activités pédagogiques ni exposer les élèves. Nos opérations peuvent se tenir le week-end ou pendant les vacances scolaires.",
     },
     {
-      title: isEn ? "Road continuity — pedestrian and vehicle access maintained" : "Continuité voirie — accès piétons et véhicules maintenus",
+      title: isEn ? "Road continuity, pedestrian and vehicle access maintained" : "Continuité voirie, accès piétons et véhicules maintenus",
       desc: isEn ? "Pedestrian and vehicle access maintained during the intervention. Unlike conventional methods (cherry pickers, scaffolding), our drone requires no road marking, preserving traffic flow and the continuity of public service." : "Accès piétons et véhicules maintenu pendant l'intervention. Contrairement aux méthodes classiques (nacelles, échafaudages), notre drone ne nécessite aucun balisage de voirie, préservant la fluidité du trafic et la continuité du service public.",
     },
     {
-      title: isEn ? "Emergency hornets — response within 2h in public spaces" : "Urgences frelons — intervention sous 2h dans les espaces publics",
+      title: isEn ? "Emergency hornets, response within 2h in public spaces" : "Urgences frelons, intervention sous 2h dans les espaces publics",
       desc: isEn ? "An Asian hornet nest in a park, school or stadium constitutes a health emergency engaging the liability of the local authority. Our team responds as an emergency with our qualified drone, neutralising the nest without area evacuation and without endangering the operators. We are listed on public procurement platforms." : "Un nid de frelons asiatiques dans un parc, une école ou un stade constitue une urgence sanitaire engageant la responsabilité de la collectivité. Notre équipe intervient en urgence avec notre drone qualifié, neutralisant le nid sans évacuation de zone et sans mise en danger des intervenants. Nous sommes référencés sur les plateformes de marchés publics.",
     },
   ];
@@ -109,7 +109,7 @@ export default async function CollectivitesPage() {
                 </span>
               </div>
               <div className="absolute bottom-5 left-5 right-5">
-                <p className="text-white text-xs font-semibold">{isEn ? "Public building — aerial intervention with no ground footprint or service disruption" : "Bâtiment public — intervention aérienne sans emprise au sol ni perturbation du service"}</p>
+                <p className="text-white text-xs font-semibold">{isEn ? "Public building, aerial intervention with no ground footprint or service disruption" : "Bâtiment public, intervention aérienne sans emprise au sol ni perturbation du service"}</p>
               </div>
             </div>
 
@@ -189,7 +189,7 @@ export default async function CollectivitesPage() {
               <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('${IMG.school}')` }} />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
               <div className="absolute bottom-4 left-5 right-5">
-                <p className="text-white text-xs font-semibold">{isEn ? "Public space — intervention without user disruption or road marking" : "Espace public — intervention sans perturbation des usagers ni balisage de voirie"}</p>
+                <p className="text-white text-xs font-semibold">{isEn ? "Public space, intervention without user disruption or road marking" : "Espace public, intervention sans perturbation des usagers ni balisage de voirie"}</p>
               </div>
             </div>
           </div>

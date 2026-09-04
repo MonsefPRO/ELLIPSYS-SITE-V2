@@ -7,7 +7,7 @@ import { getLang } from "@/lib/getLang";
 import { LiensUtiles } from "@/components/LiensUtiles";
 
 export const metadata: Metadata = {
-  title: "Démoussage toiture par drone — Montpellier & Hérault",
+  title: "Démoussage toiture par drone, Montpellier & Hérault",
   description: "Démoussage de toiture par drone à Montpellier, dans l'Hérault et en Occitanie : traitement Certibiocide + hydrofuge, sans échafaudage ni risque de chute. Adapté aux tuiles canal. Devis gratuit sous 24 h.",
   alternates: {
     canonical: "https://ellipsys-solutions.com/prestations/traitement-toiture",
@@ -44,7 +44,7 @@ export default async function TraitementToiturePage() {
 
   const stats = [
     { value: "5–10 ans", label: isEn ? "Waterproofing protection lifespan" : "Durée de protection hydrofuge" },
-    { value: "0 kg",     label: isEn ? "On the roof covering — zero contact" : "Sur la couverture — aucun contact" },
+    { value: "0 kg",     label: isEn ? "On the roof covering, zero contact" : "Sur la couverture, aucun contact" },
     { value: "ABF",      label: isEn ? "Compatible with Listed Heritage Buildings" : "Compatible Monuments Historiques" },
     { value: "< 4 h",   label: isEn ? "Intervention on 200 m²" : "Intervention sur 200 m²" },
   ];
@@ -74,7 +74,7 @@ export default async function TraitementToiturePage() {
   const avantages = [
     { icon: "🛡️", title: isEn ? "Zero Fall Risk (CARSAT Compliant)"       : "Aucun Risque de Chute (CARSAT)",      desc: isEn ? <>No more scaffolding rental costs or exposure of technicians to serious accidents. By eliminating all <strong>work at height</strong>, you are fully relieved of the legal obligations incumbent upon the project owner (<strong>Prevention Plan, PPSPS</strong>) and associated civil and criminal liabilities, in compliance with <strong>CARSAT</strong> directives.</> : <>Fini les coûts de location d&apos;<strong>échafaudages</strong> ou l&apos;exposition des techniciens aux accidents graves. En supprimant tout <strong>travail en hauteur</strong>, vous êtes déchargé des obligations légales du donneur d&apos;ordre (Plan de Prévention, PPSPS).</> },
     { icon: "🏛️", title: isEn ? "Heritage and Listed Building Compatibility" : "Patrimoine et Monuments Historiques", desc: isEn ? <>The drone treats listed and extremely fragile roofs (<strong>lauze stone, glazed tiles</strong>) by spraying at <strong>ultra-low pressure</strong> with no physical contact, preserving the absolute structural integrity of the building.</> : <>Le drone traite des toitures classées et extrêmement fragiles (<strong>lauzes, tuiles vernissées</strong>) en pulvérisant à <strong>très basse pression</strong> sans aucun contact physique, respectant l&apos;intégrité absolue de l&apos;édifice.</> },
-    { icon: "⚡",  title: isEn ? "Rapid Execution"                           : "Rapidité d'Exécution",               desc: isEn ? <>A roof of <strong>200 m²</strong> is treated within a few hours — where a conventional crew would require <strong>2 days</strong> of scaffolding assembly plus intervention. Minimal downtime, identical results.</> : <>Une toiture de <strong>200 m²</strong> se traite en quelques heures là où une équipe classique mobilise <strong>2 jours</strong> de montage + intervention. Moins de temps d&apos;immobilisation, résultat identique.</> },
+    { icon: "⚡",  title: isEn ? "Rapid Execution"                           : "Rapidité d'Exécution",               desc: isEn ? <>A roof of <strong>200 m²</strong> is treated within a few hours, where a conventional crew would require <strong>2 days</strong> of scaffolding assembly plus intervention. Minimal downtime, identical results.</> : <>Une toiture de <strong>200 m²</strong> se traite en quelques heures là où une équipe classique mobilise <strong>2 jours</strong> de montage + intervention. Moins de temps d&apos;immobilisation, résultat identique.</> },
     { icon: "💧", title: isEn ? "Long-Term Protection"                       : "Protection Longue Durée",            desc: isEn ? <><strong>Moss removal + waterproofing</strong> as a complete package: biological growth is eliminated, then the roof is sealed. A dual-layer protection that safeguards your roof covering for <strong>5 to 10 years</strong>.</> : <><strong>Démoussage + hydrofuge</strong> en pack complet : la mousse est éliminée, puis la toiture est imperméabilisée. Une double protection qui protège votre couverture pendant <strong>5 à 10 ans</strong>.</> },
   ];
 
@@ -123,7 +123,7 @@ export default async function TraitementToiturePage() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
               <div className="absolute bottom-5 left-5 right-5">
                 <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/15 border border-white/30 text-white text-sm font-bold backdrop-blur-sm">
-                  {isEn ? "🏠 Roof colonised by moss and lichens — before treatment" : "🏠 Toiture envahie par mousses et lichens — avant traitement"}
+                  {isEn ? "🏠 Roof colonised by moss and lichens, before treatment" : "🏠 Toiture envahie par mousses et lichens, avant traitement"}
                 </span>
               </div>
             </div>
@@ -154,8 +154,8 @@ export default async function TraitementToiturePage() {
                 <h2 className="text-2xl font-bold text-white mb-3">{isEn ? "Precision Aerial Moss Removal" : "Démoussage Aérien de Précision"}</h2>
                 <p className="text-slate-300 leading-relaxed text-sm">
                   {isEn
-                    ? <><strong>Certibiocide-certified biocide</strong> applied by drone at <strong>ultra-low pressure</strong>. Root-level elimination of <strong>moss, lichens and algae</strong>. Zero load on the roof covering — compatible with slate, lauze stone and glazed tiles.</>
-                    : <><strong>Biocide Certibiocide</strong> homologué projeté par drone à <strong>très basse pression</strong>. Élimination à la racine des <strong>mousses, lichens et algues</strong>. Aucun poids sur la couverture — compatible ardoises, lauzes, tuiles vernissées.</>
+                    ? <><strong>Certibiocide-certified biocide</strong> applied by drone at <strong>ultra-low pressure</strong>. Root-level elimination of <strong>moss, lichens and algae</strong>. Zero load on the roof covering, compatible with slate, lauze stone and glazed tiles.</>
+                    : <><strong>Biocide Certibiocide</strong> homologué projeté par drone à <strong>très basse pression</strong>. Élimination à la racine des <strong>mousses, lichens et algues</strong>. Aucun poids sur la couverture, compatible ardoises, lauzes, tuiles vernissées.</>
                   }
                 </p>
               </div>
@@ -166,7 +166,7 @@ export default async function TraitementToiturePage() {
               <div className="absolute inset-0 bg-gradient-to-br from-[#0e2f52]/90 to-[#0e2f52]/70" />
               <div className="relative p-8 text-white">
                 <span className="inline-block px-3 py-1 bg-blue-500/20 text-blue-300 text-xs font-bold rounded-full mb-4 uppercase tracking-wide border border-blue-400/30">{isEn ? "Step 2" : "Étape 2"}</span>
-                <h2 className="text-2xl font-bold mb-3">{isEn ? "Waterproofing — Your Building's Shield" : "Hydrofuge — Le Bouclier de votre Bâtiment"}</h2>
+                <h2 className="text-2xl font-bold mb-3">{isEn ? "Waterproofing, Your Building's Shield" : "Hydrofuge, Le Bouclier de votre Bâtiment"}</h2>
                 <p className="text-slate-300 leading-relaxed text-sm">
                   {isEn
                     ? <>After complete sanitation, the drone applies a waterproofing agent that penetrates the micropores and creates a <strong className="text-white">powerful beading effect</strong>. Water rolls off, infiltration is prevented, biological regrowth blocked for <strong className="text-white">5 to 10 years</strong>.</>
@@ -219,7 +219,7 @@ export default async function TraitementToiturePage() {
                   </div>
                 ))}
               </div>
-              <p className="text-xs text-slate-400 italic mt-3 pl-1">{isEn ? "Sources: INRS, CARSAT, DTU 40.x — Traditional roofing materials." : "Sources : INRS, CARSAT, DTU 40.x — Couvertures en matériaux traditionnels."}</p>
+              <p className="text-xs text-slate-400 italic mt-3 pl-1">{isEn ? "Sources: INRS, CARSAT, DTU 40.x, Traditional roofing materials." : "Sources : INRS, CARSAT, DTU 40.x, Couvertures en matériaux traditionnels."}</p>
             </div>
 
             <div className="space-y-5">
@@ -227,7 +227,7 @@ export default async function TraitementToiturePage() {
                 <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('/images/demoussage-toiture-eimargues.jpg')` }} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <div className="absolute bottom-5 left-5 right-5">
-                  <p className="text-white text-xs font-bold leading-relaxed">{isEn ? "Real Ellipsys project — moss removal in Aimargues (30), zero load applied to the tiles" : "Chantier réel Ellipsys — démoussage à Aimargues (30), aucun poids exercé sur les tuiles"}</p>
+                  <p className="text-white text-xs font-bold leading-relaxed">{isEn ? "Real Ellipsys project, moss removal in Aimargues (30), zero load applied to the tiles" : "Chantier réel Ellipsys, démoussage à Aimargues (30), aucun poids exercé sur les tuiles"}</p>
                 </div>
               </div>
               <div className="bg-white rounded-2xl border border-slate-200 p-5 flex items-start gap-3">
@@ -263,7 +263,7 @@ export default async function TraitementToiturePage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0e2f52]/80 to-transparent" />
                 <div className="absolute bottom-4 left-5 right-5 flex items-center gap-3">
                   <span className="inline-block px-3 py-1 bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 text-xs font-bold rounded-full">{isEn ? "Step 1" : "Étape 1"}</span>
-                  <h3 className="text-white font-bold text-lg">{isEn ? "Moss Removal — Our Protocol" : "Démoussage — Notre Protocole"}</h3>
+                  <h3 className="text-white font-bold text-lg">{isEn ? "Moss Removal, Our Protocol" : "Démoussage, Notre Protocole"}</h3>
                 </div>
               </div>
               <div className="p-5 bg-slate-50 space-y-3">
@@ -286,7 +286,7 @@ export default async function TraitementToiturePage() {
                 <div className="absolute bottom-4 left-5 right-5 flex items-center gap-3">
                   <span className="inline-block px-3 py-1 bg-blue-500/20 border border-blue-400/40 text-blue-300 text-xs font-bold rounded-full">{isEn ? "Step 2" : "Étape 2"}</span>
                   <h3 className="text-white font-bold text-lg flex items-center gap-2">
-                    <Droplets className="w-5 h-5 text-blue-300" /> {isEn ? "Waterproofing — Long-Term Protection" : "Hydrofuge — Protection Longue Durée"}
+                    <Droplets className="w-5 h-5 text-blue-300" /> {isEn ? "Waterproofing, Long-Term Protection" : "Hydrofuge, Protection Longue Durée"}
                   </h3>
                 </div>
               </div>
@@ -323,7 +323,7 @@ export default async function TraitementToiturePage() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <div className="absolute bottom-5 left-5 right-5">
                 <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-emerald-500/20 border border-emerald-400/40 text-emerald-200 text-xs font-bold backdrop-blur-sm">
-                  {isEn ? "🛡️ No work at height — CARSAT Compliance" : "🛡️ Aucun travail en hauteur — Conformité CARSAT"}
+                  {isEn ? "🛡️ No work at height, CARSAT Compliance" : "🛡️ Aucun travail en hauteur, Conformité CARSAT"}
                 </span>
               </div>
             </div>
@@ -373,7 +373,7 @@ export default async function TraitementToiturePage() {
         </div>
       </section>
 
-      {/* Maillage interne contextuel — pointe vers les pages locales/transactionnelles
+      {/* Maillage interne contextuel, pointe vers les pages locales/transactionnelles
           à faire indexer (la landing démoussage Montpellier était orpheline). */}
       {!isEn && (
         <LiensUtiles

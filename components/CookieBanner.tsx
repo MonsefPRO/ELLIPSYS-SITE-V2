@@ -89,14 +89,14 @@ export function CookieBanner() {
                         <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
                         <div>
                           <p className="text-white text-xs font-bold mb-0.5">Cookies essentiels</p>
-                          <p className="text-slate-500 text-xs">Nécessaires au bon fonctionnement du site. Toujours actifs — ne requièrent pas de consentement.</p>
+                          <p className="text-slate-500 text-xs">Nécessaires au bon fonctionnement du site. Toujours actifs, ne requièrent pas de consentement.</p>
                         </div>
                       </div>
                       <div className="flex items-start gap-3 p-3 rounded-xl bg-white/5 border border-white/10">
                         <BarChart2 className="w-4 h-4 text-brand-orange-400 shrink-0 mt-0.5" />
                         <div>
                           <p className="text-white text-xs font-bold mb-0.5">Cookies analytiques</p>
-                          <p className="text-slate-500 text-xs">PostHog — mesure d&apos;audience anonymisée. Pages vues, sources de trafic. Activés uniquement avec votre accord.</p>
+                          <p className="text-slate-500 text-xs">PostHog, mesure d&apos;audience anonymisée. Pages vues, sources de trafic. Activés uniquement avec votre accord.</p>
                         </div>
                       </div>
                     </div>

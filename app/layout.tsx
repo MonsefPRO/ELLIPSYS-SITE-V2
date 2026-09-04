@@ -29,7 +29,7 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   metadataBase: new URL("https://ellipsys-solutions.com"),
   title: {
-    default: "Nettoyage par Drone & Robotique — France | Ellipsys Solutions",
+    default: "Nettoyage par Drone & Robotique, France | Ellipsys Solutions",
     template: "%s | Ellipsys Solutions",
   },
   description:
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     locale: "fr_FR",
     siteName: "Ellipsys Solutions",
     title: {
-      default: "Nettoyage par Drone & Robotique — France | Ellipsys Solutions",
+      default: "Nettoyage par Drone & Robotique, France | Ellipsys Solutions",
       template: "%s | Ellipsys Solutions",
     },
     description:
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
         url: "/images/accueil.png",
         width: 1200,
         height: 630,
-        alt: "Ellipsys Solutions — Nettoyage panneaux solaires par drone",
+        alt: "Ellipsys Solutions, Nettoyage panneaux solaires par drone",
       },
     ],
   },
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Nettoyage, Inspection et Maintenance par Drone et Robot | Ellipsys",
     description:
-      "Drones et robots pour la maintenance de vos infrastructures — panneaux solaires, toitures, façades, thermographie. Partout en France.",
+      "Drones et robots pour la maintenance de vos infrastructures, panneaux solaires, toitures, façades, thermographie. Partout en France.",
     images: ["/images/accueil.png"],
   },
   robots: {

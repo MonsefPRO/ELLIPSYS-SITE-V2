@@ -1,4 +1,4 @@
-// Helper PostHog côté serveur — utilisé depuis les routes /api/*
+// Helper PostHog côté serveur, utilisé depuis les routes /api/*
 // Permet de capturer des événements de manière fiable (pas dépendant du JS browser)
 
 import { PostHog } from "posthog-node";
@@ -72,7 +72,7 @@ export async function identifyServer(
 }
 
 /**
- * Shutdown gracieux — à appeler si tu fais un long-running process.
+ * Shutdown gracieux, à appeler si tu fais un long-running process.
  * Pas nécessaire dans une Netlify Function (lambda éphémère).
  */
 export async function shutdownPostHog(): Promise<void> {

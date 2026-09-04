@@ -5,7 +5,7 @@ import ExpertQuoteSide from "@/components/ExpertQuoteSide";
 import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
-  title: "Nettoyage par drone pour particuliers — Montpellier",
+  title: "Nettoyage par drone pour particuliers, Montpellier",
   description: "Démoussage de toiture, nettoyage de façade, panneaux solaires et destruction de nids de frelons pour les particuliers à Montpellier, dans l'Hérault et le Gard. Sans javel, devis transparent et rapport photo.",
 };
 
@@ -21,7 +21,7 @@ export default async function ParticuliersPage() {
           bg: "bg-slate-50",
           border: "border-slate-200",
           title: "Roof Demossing & Waterproofing",
-          desc: "Certibiocide-approved biocide treatment and waterproof coating to eliminate moss and lichen. Gentle method — no high-pressure jet washing that damages roof tiles.",
+          desc: "Certibiocide-approved biocide treatment and waterproof coating to eliminate moss and lichen. Gentle method, no high-pressure jet washing that damages roof tiles.",
           href: "/prestations/traitement-toiture",
         },
         {
@@ -114,13 +114,13 @@ export default async function ParticuliersPage() {
         { value: "< 4 h",    label: "Intervention on 200 m² of roofing" },
         { value: "5–10 yrs", label: "Waterproof coating protection duration" },
         { value: "24 h",     label: "Free quote delivered" },
-        { value: "0 kg",     label: "On your roof — zero contact" },
+        { value: "0 kg",     label: "On your roof, zero contact" },
       ]
     : [
         { value: "< 4 h",   label: "Intervention sur 200 m² de toiture" },
         { value: "5–10 ans", label: "Durée de protection hydrofuge" },
         { value: "24 h",     label: "Devis gratuit remis" },
-        { value: "0 kg",     label: "Sur votre couverture — aucun contact" },
+        { value: "0 kg",     label: "Sur votre couverture, aucun contact" },
       ];
 
   const steps = isEn
@@ -240,7 +240,7 @@ export default async function ParticuliersPage() {
             </h2>
             <p className="text-slate-500 text-sm max-w-lg mx-auto">
               {isEn
-                ? <>A simple, transparent process — <strong>no surprises</strong>.</>
+                ? <>A simple, transparent process, <strong>no surprises</strong>.</>
                 : <>Un processus simple, transparent, <strong>sans surprise</strong>.</>}
             </p>
           </div>
@@ -272,8 +272,8 @@ export default async function ParticuliersPage() {
               <div className="absolute bottom-5 left-5 right-5">
                 <p className="text-white text-xs font-semibold">
                   {isEn
-                    ? "Drone roof treatment — zero contact with the roof covering"
-                    : "Traitement de toiture par drone — aucun pied posé sur la couverture"}
+                    ? "Drone roof treatment, zero contact with the roof covering"
+                    : "Traitement de toiture par drone, aucun pied posé sur la couverture"}
                 </p>
               </div>
             </div>

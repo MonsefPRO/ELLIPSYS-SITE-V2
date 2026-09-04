@@ -8,19 +8,19 @@ const news = [
   {
     tag: "Nouveau Chantier",
     location: "Montchanin & Vitry (71)",
-    text: "Nettoyage de Centrales Solaires — Avant/Après",
+    text: "Nettoyage de Centrales Solaires, Avant/Après",
     href: "/realisations",
   },
   {
     tag: "Réalisation",
     location: "Aimargues (30)",
-    text: "Démoussage de Toiture — Résultat Avant/Après",
+    text: "Démoussage de Toiture, Résultat Avant/Après",
     href: "/realisations",
   },
   {
     tag: "Réalisation",
     location: "Montpellier (34)",
-    text: "Nettoyage Vitrages Façades — Scutum",
+    text: "Nettoyage Vitrages Façades, Scutum",
     href: "/realisations",
   },
 ];
@@ -71,7 +71,7 @@ export function NewsTickerBanner() {
       <div className="pointer-events-auto p-px rounded-2xl bg-gradient-to-r from-brand-orange-500/40 via-white/10 to-brand-orange-500/20 shadow-2xl shadow-black/50">
         <div className="flex items-stretch bg-[#080f1e]/90 backdrop-blur-2xl rounded-[15px] overflow-hidden">
 
-          {/* LEFT — live label */}
+          {/* LEFT, live label */}
           <div className="flex items-center gap-2.5 px-5 py-3 border-r border-white/8 shrink-0 bg-brand-orange-500/5">
             <Zap className="w-3 h-3 text-brand-orange-400 fill-brand-orange-400 shrink-0" />
             <span className="text-[9px] font-black tracking-[0.22em] uppercase text-brand-orange-400 whitespace-nowrap">
@@ -84,7 +84,7 @@ export function NewsTickerBanner() {
             </span>
           </div>
 
-          {/* CENTER — 3-D animated content */}
+          {/* CENTER, 3-D animated content */}
           <div className="px-5 py-3" style={{ minWidth: 0 }}>
             <div style={{ height: "1.35rem", perspective: "800px" }}>
               <Link
@@ -132,7 +132,7 @@ export function NewsTickerBanner() {
             </div>
           </div>
 
-          {/* RIGHT — dot indicators */}
+          {/* RIGHT, dot indicators */}
           <div className="flex items-center gap-1.5 px-4 py-3 border-l border-white/8 shrink-0">
             {news.map((_, i) => (
               <button

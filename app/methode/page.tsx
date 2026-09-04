@@ -28,7 +28,7 @@ export default async function MethodeGarantiesPage() {
             </span>
           </h1>
           <p className="text-2xl text-slate-300 font-medium italic leading-relaxed max-w-3xl mx-auto">
-            &quot;{isEn ? "The tool adapts to the building — never the other way around." : "L'outil s'adapte au bâtiment, et non l'inverse."}&quot;
+            &quot;{isEn ? "The tool adapts to the building, never the other way around." : "L'outil s'adapte au bâtiment, et non l'inverse."}&quot;
           </p>
         </div>
       </section>
@@ -211,7 +211,7 @@ export default async function MethodeGarantiesPage() {
               </div>
               <div className="bg-brand-orange-50 rounded-2xl p-6 border border-brand-orange-100">
                 <a href="https://www.inrs.fr/risques/chutes-hauteur/ce-qu-il-faut-retenir.html" target="_blank" rel="noopener noreferrer" className="text-sm text-brand-orange-600 font-medium hover:underline">
-                  {isEn ? "Working at height safety — INRS.fr →" : "Securite travaux en hauteur — INRS.fr →"}
+                  {isEn ? "Working at height safety, INRS.fr →" : "Securite travaux en hauteur, INRS.fr →"}
                 </a>
               </div>
             </div>

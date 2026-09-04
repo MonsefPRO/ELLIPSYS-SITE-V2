@@ -24,8 +24,8 @@ export default async function MentionsLegalesPage() {
     {
       label: isEn ? "Legal form" : "Forme juridique",
       value: isEn
-        ? "SASU — simplified joint-stock company with a sole shareholder"
-        : "SASU — société par actions simplifiée unipersonnelle",
+        ? "SASU, simplified joint-stock company with a sole shareholder"
+        : "SASU, société par actions simplifiée unipersonnelle",
     },
     { label: isEn ? "Share capital" : "Capital social", value: "3 000,00 €" },
     {
@@ -41,15 +41,15 @@ export default async function MentionsLegalesPage() {
     {
       label: isEn ? "Trade register" : "Immatriculation au RCS",
       value: isEn
-        ? "999 957 533 R.C.S. Nîmes — registered on 20 January 2026"
-        : "999 957 533 R.C.S. Nîmes — inscrite le 20 janvier 2026",
+        ? "999 957 533 R.C.S. Nîmes, registered on 20 January 2026"
+        : "999 957 533 R.C.S. Nîmes, inscrite le 20 janvier 2026",
     },
     { label: isEn ? "VAT number" : "N° de TVA intracommunautaire", value: "FR74999957533" },
     {
       label: isEn ? "Business activity (APE/NAF)" : "Code APE / NAF",
       value: isEn
-        ? "74.90B — Other professional, scientific and technical activities"
-        : "74.90B — Autres activités spécialisées, scientifiques et techniques",
+        ? "74.90B, Other professional, scientific and technical activities"
+        : "74.90B, Autres activités spécialisées, scientifiques et techniques",
     },
     {
       label: isEn ? "Declared activity" : "Activité déclarée",
@@ -168,8 +168,8 @@ export default async function MentionsLegalesPage() {
             </h2>
             <p className="text-slate-600 text-sm leading-relaxed">
               {isEn
-                ? "The entire content of this website — texts, photographs, videos, graphics, logo and page structure — is the exclusive property of Ellipsys Solutions, unless otherwise stated. Any reproduction, representation, modification or distribution, in whole or in part, without prior written authorisation is prohibited and constitutes an infringement under Articles L.335-2 and following of the French Intellectual Property Code."
-                : "L'ensemble du contenu de ce site — textes, photographies, vidéos, éléments graphiques, logo et structure des pages — est la propriété exclusive d'Ellipsys Solutions, sauf mention contraire. Toute reproduction, représentation, modification ou diffusion, totale ou partielle, sans autorisation écrite préalable est interdite et constitue une contrefaçon au sens des articles L.335-2 et suivants du Code de la propriété intellectuelle."}
+                ? "The entire content of this website, texts, photographs, videos, graphics, logo and page structure, is the exclusive property of Ellipsys Solutions, unless otherwise stated. Any reproduction, representation, modification or distribution, in whole or in part, without prior written authorisation is prohibited and constitutes an infringement under Articles L.335-2 and following of the French Intellectual Property Code."
+                : "L'ensemble du contenu de ce site, textes, photographies, vidéos, éléments graphiques, logo et structure des pages, est la propriété exclusive d'Ellipsys Solutions, sauf mention contraire. Toute reproduction, représentation, modification ou diffusion, totale ou partielle, sans autorisation écrite préalable est interdite et constitue une contrefaçon au sens des articles L.335-2 et suivants du Code de la propriété intellectuelle."}
             </p>
             <p className="text-slate-600 text-sm leading-relaxed mt-4">
               {isEn

@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
  * Bloc de maillage interne contextuel.
  *
  * Objectif SEO : les liens du header/footer sont du « boilerplate » présent sur
- * toutes les pages — Google les dévalue fortement pour juger l'importance d'une
+ * toutes les pages, Google les dévalue fortement pour juger l'importance d'une
  * page. Ce qui transmet réellement du « jus » et débloque l'indexation, c'est un
  * lien CONTEXTUEL, dans le corps d'une page forte et thématiquement pertinente.
  *

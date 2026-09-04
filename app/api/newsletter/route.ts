@@ -104,7 +104,7 @@ export async function POST(req: NextRequest) {
         await resend.emails.send({
           from: `Ellipsys Solutions <${getNotifyFromEmail()}>`,
           to: teamEmails,
-          subject: `📬 Nouvelle inscription newsletter — ${email}`,
+          subject: `📬 Nouvelle inscription newsletter, ${email}`,
           html: `
             <div style="font-family:system-ui,-apple-system,sans-serif;max-width:520px">
               <h2 style="color:#0e2f52;margin:0 0 16px">Nouvelle inscription newsletter</h2>

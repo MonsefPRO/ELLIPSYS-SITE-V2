@@ -15,14 +15,14 @@ export default async function AProposPage() {
   const accreditations = isEn
     ? [
         "Remote pilots certified by DSAC (DGAC)",
-        "Certibiocide — Ministry of Ecological Transition",
+        "Certibiocide, Ministry of Ecological Transition",
         "Aeronautical Professional Civil Liability (XL INSURANCE COMPANY SE)",
         "Decennial liability insurance as applicable",
         "Operators registered under European STS/SORA framework",
       ]
     : [
         "Télépilotes certifiés DSAC (DGAC)",
-        "Certibiocide — Ministère de la Transition Écologique",
+        "Certibiocide, Ministère de la Transition Écologique",
         "RC Professionnelle Aéronautique (XL INSURANCE COMPANY SE)",
         "Assurance décennale selon nature des travaux",
         "Opérateurs enregistrés cadre européen STS/SORA",
@@ -150,7 +150,7 @@ export default async function AProposPage() {
       <section className="py-16 bg-slate-50 border-t border-slate-100 px-4 text-center">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-2xl font-bold text-slate-900 mb-4">{isEn ? "Discover Our Commitments" : "Découvrez nos engagements"}</h2>
-          <p className="text-slate-600 mb-8">{isEn ? "Safety, Rigour and Care — the three values that guide each of our actions." : "Sécurité, rigueur et bienveillance — les trois valeurs qui guident chacune de nos actions."}</p>
+          <p className="text-slate-600 mb-8">{isEn ? "Safety, Rigour and Care, the three values that guide each of our actions." : "Sécurité, rigueur et bienveillance, les trois valeurs qui guident chacune de nos actions."}</p>
           <Link href="/valeurs" className="inline-flex items-center gap-2 px-8 py-4 bg-[#0e2f52] text-white rounded-xl font-bold hover:bg-brand-orange-500 transition-colors">
             {isEn ? "Our Values" : "Nos valeurs"} <ArrowRight className="w-4 h-4" />
           </Link>

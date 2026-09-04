@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Phone, FileText } from "lucide-react";
 
 /**
- * Sticky CTA mobile — affiche tel + devis en bas d'écran sur mobile uniquement.
+ * Sticky CTA mobile, affiche tel + devis en bas d'écran sur mobile uniquement.
  * Apparaît après 600px de scroll pour ne pas masquer le hero.
  * Disparaît automatiquement sur les pages /devis (déjà sur la page) et /admin/*.
  *

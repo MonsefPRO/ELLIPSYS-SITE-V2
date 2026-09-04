@@ -115,14 +115,14 @@ export default async function ValeursPage() {
             <div key={i}>
               {/* Carte valeur */}
               <div className={`rounded-3xl overflow-hidden shadow-sm border ${v.border} flex flex-col md:flex-row group hover:shadow-md transition-shadow duration-300`}>
-                {/* COLONNE GAUCHE — numéro + icône */}
+                {/* COLONNE GAUCHE, numéro + icône */}
                 <div className={`${v.accentBg} md:w-40 flex flex-col items-center justify-center py-10 px-6 shrink-0`}>
                   <span className="text-white/30 text-6xl font-black leading-none mb-3">{v.num}</span>
                   <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center">
                     <v.icon className="w-8 h-8 text-white" />
                   </div>
                 </div>
-                {/* COLONNE DROITE — contenu */}
+                {/* COLONNE DROITE, contenu */}
                 <div className={`${v.cardBg} flex-grow p-8 lg:p-10`}>
                   <div className="mb-1">
                     <span className={`text-xs font-black uppercase tracking-widest ${v.accent}`}>{v.subtitle}</span>
@@ -133,13 +133,13 @@ export default async function ValeursPage() {
                 </div>
               </div>
 
-              {/* LETTRE DU FONDATEUR — uniquement sous Bienveillance/Responsibility */}
+              {/* LETTRE DU FONDATEUR, uniquement sous Bienveillance/Responsibility */}
               {(v.title === "BIENVEILLANCE" || v.title === "CARE") && (
                 <div className="mt-6 bg-white border border-emerald-200 rounded-3xl overflow-hidden shadow-sm">
                   <div className="bg-gradient-to-r from-emerald-700 to-teal-700 px-8 py-5 flex items-center justify-between">
                     <div>
                       <p className="text-emerald-200 text-xs font-black uppercase tracking-widest mb-1">{isEn ? "Message from the Founder" : "Mot du fondateur"}</p>
-                      <h3 className="text-white font-black text-lg">{isEn ? "Care is not a word — it is a measurable commitment" : "La Bienveillance, ce n'est pas un mot — c'est un engagement mesurable"}</h3>
+                      <h3 className="text-white font-black text-lg">{isEn ? "Care is not a word, it is a measurable commitment" : "La Bienveillance, ce n'est pas un mot, c'est un engagement mesurable"}</h3>
                     </div>
                   </div>
 

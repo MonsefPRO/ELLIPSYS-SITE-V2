@@ -4,7 +4,7 @@ import Image from "next/image";
 import { CheckCircle2, ArrowRight, Phone, Info, ShieldCheck } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Tarifs Nettoyage par Drone — Toiture, Façade, Panneaux Solaires",
+  title: "Tarifs Nettoyage par Drone, Toiture, Façade, Panneaux Solaires",
   description: "Comprendre les tarifs d'un nettoyage par drone : facteurs de prix, fourchettes du marché, méthodologie de devis. Devis personnalisé gratuit sous 24h. Montpellier, Aimargues, France entière.",
   keywords: [
     "tarif nettoyage drone",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     "prix m² nettoyage drone",
   ],
   openGraph: {
-    title: "Tarifs Nettoyage par Drone — Méthodologie & Devis Transparent",
+    title: "Tarifs Nettoyage par Drone, Méthodologie & Devis Transparent",
     description: "Notre approche transparente du tarif : facteurs réels, fourchettes du marché, devis personnalisé sous 24h.",
     url: "https://ellipsys-solutions.com/tarifs",
   },
@@ -88,11 +88,11 @@ const ranges = [
 const faqs = [
   {
     q: "Pourquoi vous ne publiez pas une grille tarifaire fixe au m² ?",
-    a: "Un \"prix au m²\" affiché publiquement est trompeur dans 80% des cas. Un démoussage de toiture pentue avec cheminées coûte 3x plus qu'une toiture plate dégagée — pour les mêmes m². Nous préférons un devis honnête, basé sur des photos et une analyse réelle, plutôt qu'un prix d'appel qui devient un \"+150% à l'arrivée du technicien\".",
+    a: "Un \"prix au m²\" affiché publiquement est trompeur dans 80% des cas. Un démoussage de toiture pentue avec cheminées coûte 3x plus qu'une toiture plate dégagée, pour les mêmes m². Nous préférons un devis honnête, basé sur des photos et une analyse réelle, plutôt qu'un prix d'appel qui devient un \"+150% à l'arrivée du technicien\".",
   },
   {
     q: "Comment obtenir un devis rapidement ?",
-    a: "Trois options : 1) Formulaire en ligne (3 minutes, vous ajoutez des photos) → réponse sous 24h. 2) Téléphone au 04 67 20 97 09 — vous parlez directement à un commercial. 3) Email à contact@ellipsys-group.com avec quelques photos. Tous nos devis sont gratuits et sans engagement.",
+    a: "Trois options : 1) Formulaire en ligne (3 minutes, vous ajoutez des photos) → réponse sous 24h. 2) Téléphone au 04 67 20 97 09, vous parlez directement à un commercial. 3) Email à contact@ellipsys-group.com avec quelques photos. Tous nos devis sont gratuits et sans engagement.",
   },
   {
     q: "Les tarifs incluent-ils le déplacement ?",
@@ -127,7 +127,7 @@ export default function TarifsPage() {
       <section className="relative bg-gradient-to-br from-[#0e2f52] via-[#1e3a5f] to-[#0e2f52] text-white py-24 px-4">
         <div className="max-w-5xl mx-auto">
           <span className="inline-block px-4 py-2 rounded-full bg-brand-orange-500/15 border border-brand-orange-500/40 text-brand-orange-300 text-sm font-bold uppercase tracking-wider mb-6">
-            — Tarifs & méthode de devis —
+           , Tarifs & méthode de devis —
           </span>
           <h1 className="text-4xl md:text-6xl font-black leading-tight mb-6 max-w-4xl">
             Combien coûte un nettoyage par drone ?
@@ -235,7 +235,7 @@ export default function TarifsPage() {
               "Reprogrammation gratuite en cas d'intempéries",
               "Rapport photo avant/après horodaté",
               "Recommandations préventives pour les 12 prochains mois",
-              "Pas de sous-traitant — équipe Ellipsys uniquement",
+              "Pas de sous-traitant, équipe Ellipsys uniquement",
             ].map((item, i) => (
               <div key={i} className="flex items-start gap-3">
                 <CheckCircle2 className="w-5 h-5 text-brand-orange-400 shrink-0 mt-0.5" />
@@ -275,7 +275,7 @@ export default function TarifsPage() {
             Recevez votre devis personnalisé sous 24h
           </h2>
           <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto leading-relaxed">
-            Quelques photos suffisent. Réponse personnelle d&apos;un membre de notre équipe — pas de robot, pas de standard.
+            Quelques photos suffisent. Réponse personnelle d&apos;un membre de notre équipe, pas de robot, pas de standard.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href={devisUrl} className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-brand-orange-600 font-black rounded-2xl text-lg shadow-2xl hover:scale-105 transition-transform">

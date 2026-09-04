@@ -6,7 +6,7 @@ import { track, Events } from "@/lib/analytics";
 import { pushLeadConversion } from "@/lib/gtag";
 
 /**
- * Rappel express — 2 champs (prénom + téléphone).
+ * Rappel express, 2 champs (prénom + téléphone).
  *
  * Objectif : capter le visiteur qui n'ira pas au bout d'un formulaire détaillé.
  * Un lead avec un numéro vaut infiniment mieux qu'un visiteur perdu : la
@@ -116,7 +116,7 @@ export default function QuickCallbackForm({ source = "devis_express" }: { source
       {error && <p className="text-sm text-red-600 mt-2">{error}</p>}
       <p className="text-xs text-slate-500 mt-2">
         <Send className="w-3 h-3 inline mr-1" />
-        On vous rappelle pour cerner votre besoin — c&apos;est souvent plus rapide qu&apos;un formulaire.
+        On vous rappelle pour cerner votre besoin, c&apos;est souvent plus rapide qu&apos;un formulaire.
       </p>
     </form>
   );

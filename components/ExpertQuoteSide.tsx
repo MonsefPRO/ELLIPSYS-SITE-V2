@@ -28,10 +28,10 @@ export default function ExpertQuoteSide({ quote, author = "— Expert Ellipsys S
 
   return (
     <>
-      {/* Sentinel invisible — placé là où était l'ancien bloc devis */}
+      {/* Sentinel invisible, placé là où était l'ancien bloc devis */}
       <div ref={sentinelRef} className="h-px w-full" aria-hidden="true" />
 
-      {/* Carte flottante — visible uniquement xl+ */}
+      {/* Carte flottante, visible uniquement xl+ */}
       <div
         role="complementary"
         aria-label="Avis de l'expert"

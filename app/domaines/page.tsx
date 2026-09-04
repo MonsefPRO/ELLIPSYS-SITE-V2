@@ -86,7 +86,7 @@ export default async function DomainesPage() {
         </div>
       </section>
 
-      <ExpertQuoteSide quote={isEn ? "The tool no longer dictates the method. At Ellipsys, it is your operational constraint that determines the technology deployed. Drone, robot or hybrid solution — we always choose what is most effective for you." : "L'outil ne dicte plus la méthode. Chez Ellipsys, c'est votre contrainte opérationnelle qui détermine la technologie déployée. Drone, robot ou solution hybride — nous choisissons toujours ce qui est le plus efficace pour vous."} />
+      <ExpertQuoteSide quote={isEn ? "The tool no longer dictates the method. At Ellipsys, it is your operational constraint that determines the technology deployed. Drone, robot or hybrid solution, we always choose what is most effective for you." : "L'outil ne dicte plus la méthode. Chez Ellipsys, c'est votre contrainte opérationnelle qui détermine la technologie déployée. Drone, robot ou solution hybride, nous choisissons toujours ce qui est le plus efficace pour vous."} />
 
       <section className="py-16">
         <div className="container mx-auto px-4 max-w-7xl">

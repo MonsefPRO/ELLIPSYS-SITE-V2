@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Download, X, CheckCircle, Loader2, Gift, FileText, ChevronRight } from "lucide-react";
 
 interface LeadMagnetBannerProps {
-  /** Slug du PDF dans /public/documents/ — ex: "guide-nettoyage-solaire" */
+  /** Slug du PDF dans /public/documents/, ex: "guide-nettoyage-solaire" */
   pdfSlug?: string;
   /** Titre affiché dans la bannière */
   title?: string;
@@ -169,7 +169,7 @@ export function LeadMagnetBanner({
               onClick={closeModal}
             />
 
-            {/* Conteneur modal — scrollable sur petit écran */}
+            {/* Conteneur modal, scrollable sur petit écran */}
             <motion.div
               key="modal"
               initial={{ opacity: 0, scale: 0.94, y: 16 }}
@@ -207,8 +207,8 @@ export function LeadMagnetBanner({
                         </h2>
                         <p className="text-slate-400 text-sm leading-relaxed">
                           {isFr
-                            ? "Entrez votre prénom et email — on vous envoie le PDF et votre code immédiatement."
-                            : "Enter your name and email — we'll send the PDF and your code right away."}
+                            ? "Entrez votre prénom et email, on vous envoie le PDF et votre code immédiatement."
+                            : "Enter your name and email, we'll send the PDF and your code right away."}
                         </p>
                       </div>
 
@@ -283,8 +283,8 @@ export function LeadMagnetBanner({
                       </h2>
                       <p className="text-slate-400 text-sm mb-6 leading-relaxed">
                         {isFr
-                          ? `Vérifiez votre boîte mail — votre guide et votre code promo sont en route.`
-                          : `Check your inbox — your guide and promo code are on their way.`}
+                          ? `Vérifiez votre boîte mail, votre guide et votre code promo sont en route.`
+                          : `Check your inbox, your guide and promo code are on their way.`}
                       </p>
 
                       <div className="rounded-xl border border-emerald-500/20 bg-emerald-500/5 p-4 mb-6">

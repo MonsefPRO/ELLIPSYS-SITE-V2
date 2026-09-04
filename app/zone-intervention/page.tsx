@@ -14,24 +14,24 @@ export default async function ZoneInterventionPage() {
 
   const regions = isEn
     ? [
-        { name: "Occitanie", desc: "Operational HQ — rapid interventions", primary: true },
+        { name: "Occitanie", desc: "Operational HQ, rapid interventions", primary: true },
         { name: "Provence-Alpes-Côte d'Azur", desc: "Mediterranean coast & industrial sites", primary: true },
         { name: "Nouvelle-Aquitaine", desc: "Atlantic coast, wine-growing areas", primary: false },
         { name: "Île-de-France", desc: "Greater Paris, tertiary & industry", primary: false },
         { name: "Auvergne-Rhône-Alpes", desc: "Industrial & mountain sites", primary: false },
         { name: "Hauts-de-France", desc: "Logistics platforms & heavy industry", primary: false },
         { name: "Grand Est", desc: "Industrial & energy sites", primary: false },
-        { name: "Other regions", desc: "Nationwide — quote on request", primary: false },
+        { name: "Other regions", desc: "Nationwide, quote on request", primary: false },
       ]
     : [
-        { name: "Occitanie", desc: "Siège opérationnel — interventions rapides", primary: true },
+        { name: "Occitanie", desc: "Siège opérationnel, interventions rapides", primary: true },
         { name: "Provence-Alpes-Côte d'Azur", desc: "Littoral méditerranéen & sites industriels", primary: true },
         { name: "Nouvelle-Aquitaine", desc: "Façade atlantique, zones viticoles", primary: false },
         { name: "Ile-de-France", desc: "Region parisienne, tertiaire & industrie", primary: false },
         { name: "Auvergne-Rhone-Alpes", desc: "Sites industriels & montagnards", primary: false },
         { name: "Hauts-de-France", desc: "Plateformes logistiques & industrie lourde", primary: false },
         { name: "Grand Est", desc: "Sites industriels & énergétiques", primary: false },
-        { name: "Autres régions", desc: "Intervention sur devis — tout le territoire", primary: false },
+        { name: "Autres régions", desc: "Intervention sur devis, tout le territoire", primary: false },
       ];
 
   const engagements = isEn
@@ -145,7 +145,7 @@ export default async function ZoneInterventionPage() {
         </div>
       </section>
 
-      {/* Villes couvertes — liens vers les pages locales.
+      {/* Villes couvertes, liens vers les pages locales.
           Ces liens sont indispensables : sans eux, les pages villes sont
           orphelines et Google les explore mal (constaté dans Search Console). */}
       <section className="py-20 bg-slate-50 border-t border-slate-200">

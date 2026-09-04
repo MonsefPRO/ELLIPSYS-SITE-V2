@@ -48,8 +48,8 @@ export function HeroContent({ isEn }: Props) {
           className="text-sm md:text-base text-slate-100 mb-5 max-w-2xl font-medium leading-relaxed drop-shadow-md"
         >
           {isEn
-            ? "Solar panel, roof and façade cleaning by drone and robot — no scaffolding, no work platforms. Recover up to +30% of your panels' output. Free quote within 24h."
-            : "Nettoyage de panneaux solaires, toitures et façades par drone et robot — sans échafaudage ni nacelle. Récupérez jusqu'à +30 % de rendement sur vos panneaux. Devis gratuit sous 24h."}
+            ? "Solar panel, roof and façade cleaning by drone and robot, no scaffolding, no work platforms. Recover up to +30% of your panels' output. Free quote within 24h."
+            : "Nettoyage de panneaux solaires, toitures et façades par drone et robot, sans échafaudage ni nacelle. Récupérez jusqu'à +30 % de rendement sur vos panneaux. Devis gratuit sous 24h."}
         </motion.p>
 
         <motion.div

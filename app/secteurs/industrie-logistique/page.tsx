@@ -31,23 +31,23 @@ export default async function IndustriePage() {
   ];
 
   const stats = [
-    { value: "0", label: isEn ? "Production stoppage — we work around your flows" : "Arrêt de production — nous travaillons autour de vos flux" },
+    { value: "0", label: isEn ? "Production stoppage, we work around your flows" : "Arrêt de production, nous travaillons autour de vos flux" },
     { value: "1 200 m²/h", label: isEn ? "Robot throughput on flat roofs & PV" : "Cadence robot sur toitures plates & PV" },
     { value: "0", label: isEn ? "Scaffolding or cherry picker on site" : "Échafaudage ou nacelle sur site" },
-    { value: "100 %", label: isEn ? "PDP / HSE compliance — supervised operations" : "Conformité PDP / HSE — opérations supervisées" },
+    { value: "100 %", label: isEn ? "PDP / HSE compliance, supervised operations" : "Conformité PDP / HSE, opérations supervisées" },
   ];
 
   const surfaces = isEn ? [
-    { icon: Warehouse, title: "Cladding & industrial façades", desc: "Warehouses, logistics platforms, production halls — degreasing of exhaust film and urban pollution." },
+    { icon: Warehouse, title: "Cladding & industrial façades", desc: "Warehouses, logistics platforms, production halls, degreasing of exhaust film and urban pollution." },
     { icon: Building2, title: "Industrial roofing & sheds", desc: "Steel decks, fibre cement, membranes: moss removal and cleaning with zero load on the structure." },
-    { icon: Sun, title: "Rooftop photovoltaics", desc: "Panels installed on your roofs and shade structures — up to +30% output recovered." },
+    { icon: Sun, title: "Rooftop photovoltaics", desc: "Panels installed on your roofs and shade structures, up to +30% output recovered." },
     { icon: Wind, title: "Cooling & ventilation units", desc: "External surfaces of free-cooling systems, air intakes and heat exchangers (datacentres)." },
     { icon: Shield, title: "High-bay glazing & skylights", desc: "Natural light restored in workshops and logistics halls, without a single rope access technician." },
     { icon: FileCheck, title: "Photo report included", desc: "Before/after evidence for your CMMS, insurers and CSR reporting." },
   ] : [
-    { icon: Warehouse, title: "Bardages & façades industrielles", desc: "Entrepôts, plateformes logistiques, halls de production — dégraissage du film d'échappement et de la pollution urbaine." },
+    { icon: Warehouse, title: "Bardages & façades industrielles", desc: "Entrepôts, plateformes logistiques, halls de production, dégraissage du film d'échappement et de la pollution urbaine." },
     { icon: Building2, title: "Toitures industrielles & sheds", desc: "Bacs acier, fibrociment, membranes : démoussage et nettoyage sans aucun poids sur la structure." },
-    { icon: Sun, title: "Photovoltaïque en toiture", desc: "Panneaux installés sur vos toits et ombrières — jusqu'à +30 % de production récupérée." },
+    { icon: Sun, title: "Photovoltaïque en toiture", desc: "Panneaux installés sur vos toits et ombrières, jusqu'à +30 % de production récupérée." },
     { icon: Wind, title: "Groupes froids & ventilation", desc: "Surfaces extérieures des systèmes free-cooling, prises d'air et échangeurs (datacenters)." },
     { icon: Shield, title: "Vitrages en hauteur & lanterneaux", desc: "Lumière naturelle restaurée dans vos ateliers et halls logistiques, sans cordiste." },
     { icon: FileCheck, title: "Rapport photo inclus", desc: "Preuves avant/après pour votre GMAO, vos assureurs et votre reporting RSE." },
@@ -76,7 +76,7 @@ export default async function IndustriePage() {
         </div>
       </section>
 
-      <ExpertQuoteSide quote={isEn ? "Stopping a production line carries an exorbitant cost. Our technology operates without ever interrupting your operational continuity — that is our number-one operational commitment." : "L'arrêt d'une ligne de production a un coût exorbitant. Notre technologie intervient sans jamais interrompre votre continuité d'activité — c'est notre engagement opérationnel numéro un."} />
+      <ExpertQuoteSide quote={isEn ? "Stopping a production line carries an exorbitant cost. Our technology operates without ever interrupting your operational continuity, that is our number-one operational commitment." : "L'arrêt d'une ligne de production a un coût exorbitant. Notre technologie intervient sans jamais interrompre votre continuité d'activité, c'est notre engagement opérationnel numéro un."} />
 
       {/* BANDEAU CHIFFRES CLÉS */}
       <section className="bg-[#0e2f52] py-10">
@@ -132,7 +132,7 @@ export default async function IndustriePage() {
               <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('/images/secteur-industrie.jpg')` }} />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <div className="absolute bottom-5 left-5 right-5">
-                <p className="text-white text-xs font-bold leading-relaxed">{isEn ? "Drone intervention on an industrial site — no ground footprint, no flow disruption" : "Intervention drone sur site industriel — aucune emprise au sol, aucun flux perturbé"}</p>
+                <p className="text-white text-xs font-bold leading-relaxed">{isEn ? "Drone intervention on an industrial site, no ground footprint, no flow disruption" : "Intervention drone sur site industriel, aucune emprise au sol, aucun flux perturbé"}</p>
               </div>
             </div>
 

@@ -52,7 +52,7 @@ export default async function ImmobilierSyndicsPage() {
 
   const avantages = [
     {
-      title: isEn ? "No cherry picker or scaffolding — zero resident disruption" : "Sans nacelle ni échafaudage — aucune nuisance résidents",
+      title: isEn ? "No cherry picker or scaffolding, zero resident disruption" : "Sans nacelle ni échafaudage, aucune nuisance résidents",
       desc: isEn ? "No disruption to residents and ground-floor businesses. Our aerial interventions preserve the tranquillity of occupants and allow operations even on the narrowest buildings or those with heavy pedestrian traffic." : "Aucune nuisance pour les résidents et commerces de pied d'immeuble. Nos interventions aériennes préservent la tranquillité des occupants et permettent d'intervenir même sur les immeubles les plus étroits ou à trafic piéton dense.",
     },
     {
@@ -64,7 +64,7 @@ export default async function ImmobilierSyndicsPage() {
       desc: isEn ? "Transparent pricing adapted to co-ownership budgets. We offer specific pricing conditions for managers and managing agents (multi-building contracts, group interventions). Contact us for a lasting partnership." : "Tarifs transparents adaptés aux budgets de copropriété. Nous proposons des conditions tarifaires spécifiques aux gestionnaires et syndics (contrats multi-bâtiments, interventions groupées). Contactez-nous pour un partenariat durable.",
     },
     {
-      title: isEn ? "CARSAT compliance — liability transferred to the operator" : "Sécurité CARSAT — responsabilité transférée à l'opérateur",
+      title: isEn ? "CARSAT compliance, liability transferred to the operator" : "Sécurité CARSAT, responsabilité transférée à l'opérateur",
       desc: isEn ? "No liability transferred to the managing agent for work at height. By engaging our certified teams, you are released from all criminal and civil liability related to work at height on your building." : "Aucune responsabilité transférée au syndic pour le travail en hauteur. En faisant appel à nos équipes certifiées, vous êtes dégagé de toute responsabilité pénale et civile liée aux interventions en hauteur sur votre copropriété.",
     },
   ];
@@ -110,7 +110,7 @@ export default async function ImmobilierSyndicsPage() {
                 </span>
               </div>
               <div className="absolute bottom-5 left-5 right-5">
-                <p className="text-white text-xs font-semibold">{isEn ? "Co-ownership exterior maintenance — intervention without cherry picker or scaffolding" : "Entretien extérieur de copropriété — intervention sans nacelle ni échafaudage"}</p>
+                <p className="text-white text-xs font-semibold">{isEn ? "Co-ownership exterior maintenance, intervention without cherry picker or scaffolding" : "Entretien extérieur de copropriété, intervention sans nacelle ni échafaudage"}</p>
               </div>
             </div>
 
@@ -190,7 +190,7 @@ export default async function ImmobilierSyndicsPage() {
               <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('${IMG.report}')` }} />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
               <div className="absolute bottom-4 left-5 right-5">
-                <p className="text-white text-xs font-semibold">{isEn ? "Before/after photo report delivered within 48h — complete dossier for your AGM" : "Rapport photo avant/après remis sous 48h — dossier complet pour votre AG"}</p>
+                <p className="text-white text-xs font-semibold">{isEn ? "Before/after photo report delivered within 48h, complete dossier for your AGM" : "Rapport photo avant/après remis sous 48h, dossier complet pour votre AG"}</p>
               </div>
             </div>
           </div>

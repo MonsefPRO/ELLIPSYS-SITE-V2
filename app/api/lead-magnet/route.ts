@@ -28,7 +28,7 @@ function buildEmailHtml(firstName: string, pdfUrl: string, promoCode: string, la
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>${isFr ? "Votre guide + code promo" : "Your guide + promo code"} — Ellipsys Solutions</title>
+  <title>${isFr ? "Votre guide + code promo" : "Your guide + promo code"}, Ellipsys Solutions</title>
 </head>
 <body style="margin:0;padding:0;background:#0a0f1a;font-family:'Segoe UI',Arial,sans-serif;">
   <table width="100%" cellpadding="0" cellspacing="0" style="background:#0a0f1a;padding:40px 0;">
@@ -120,7 +120,7 @@ function buildEmailHtml(firstName: string, pdfUrl: string, promoCode: string, la
           <tr>
             <td style="background:#060c18;border-radius:0 0 16px 16px;padding:20px 40px;text-align:center;">
               <p style="margin:0;color:#334155;font-size:12px;">
-                © ${new Date().getFullYear()} Ellipsys Solutions — Drone &amp; Robotique
+                © ${new Date().getFullYear()} Ellipsys Solutions, Drone &amp; Robotique
               </p>
             </td>
           </tr>
@@ -154,7 +154,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Adresse email invalide." }, { status: 422 });
     }
 
-    /* PDF public URL — fichiers dans /public/documents/ */
+    /* PDF public URL, fichiers dans /public/documents/ */
     const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellipsys-solutions.com";
     const pdfUrl  = `${baseUrl}/documents/${pdfSlug}.pdf`;
 
@@ -189,8 +189,8 @@ export async function POST(req: NextRequest) {
       from: `Ellipsys Solutions <${fromEmail}>`,
       to:   [email],
       subject: isFr
-        ? `📄 Votre guide + code ${promoCode} — Ellipsys Solutions`
-        : `📄 Your guide + code ${promoCode} — Ellipsys Solutions`,
+        ? `📄 Votre guide + code ${promoCode}, Ellipsys Solutions`
+        : `📄 Your guide + code ${promoCode}, Ellipsys Solutions`,
       html: buildEmailHtml(firstName, pdfUrl, promoCode, lang, baseUrl),
     });
 

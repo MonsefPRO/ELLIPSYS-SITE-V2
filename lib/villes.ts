@@ -1,5 +1,5 @@
 /**
- * Données locales réelles par ville — utilisées par app/intervention/[ville]/page.tsx
+ * Données locales réelles par ville, utilisées par app/intervention/[ville]/page.tsx
  *
  * Objectif SEO : sortir du contenu « template » (même page × N villes = doorway pages,
  * pénalisées par Google). Chaque ville doit avoir un contenu factuellement unique :
@@ -23,17 +23,17 @@ export type VilleData = {
   delai: string;
   /** Accroche courte pour la meta description (150 car. max une fois assemblée) */
   accroche: string;
-  /** 2 paragraphes uniques — le cœur du contenu local */
+  /** 2 paragraphes uniques, le cœur du contenu local */
   intro: string[];
   /** Ce qui dégrade spécifiquement les bâtiments ici */
   facteurs: Facteur[];
   /** Typologie du bâti local */
   typologies: string[];
-  /** Quartiers cités dans le texte — longue traîne */
+  /** Quartiers cités dans le texte, longue traîne */
   quartiers: string[];
   /** Communes réellement desservies depuis cette base */
   communes: string[];
-  /** 3 questions locales — alimentent aussi le JSON-LD FAQPage */
+  /** 3 questions locales, alimentent aussi le JSON-LD FAQPage */
   faq: FaqLocale[];
 };
 
@@ -48,7 +48,7 @@ export const VILLES: Record<string, VilleData> = {
     delai: "Sous 48 h",
     accroche: "Base opérationnelle Ellipsys. Intervention sous 48 h sur Montpellier et les 31 communes de la Métropole.",
     intro: [
-      "Montpellier est notre base opérationnelle : nos drones et notre robot de nettoyage partent du 159 rue de Thor, ce qui nous permet d'intervenir sur toute la Métropole sans frais de déplacement et de mobiliser une équipe sous 48 h. C'est aussi la ville où nous connaissons le mieux le bâti — et ses points faibles.",
+      "Montpellier est notre base opérationnelle : nos drones et notre robot de nettoyage partent du 159 rue de Thor, ce qui nous permet d'intervenir sur toute la Métropole sans frais de déplacement et de mobiliser une équipe sous 48 h. C'est aussi la ville où nous connaissons le mieux le bâti, et ses points faibles.",
       "Le parc immobilier montpelliérain pose trois problèmes très concrets. Les toitures en tuile canal des villas des années 1970-1990, majoritaires de Grabels à Vendargues, sont fragiles : elles ne supportent ni la circulation d'un couvreur ni le nettoyage haute pression. Les façades en béton architectonique d'Antigone et les résidences récentes de Port Marianne s'encrassent vite sous l'effet combiné de la pollution urbaine et des vents de sud-est. Enfin, l'Occitanie est la première région photovoltaïque de France : la densité d'installations résidentielles et de centrales au sol autour de Montpellier est telle que la perte de rendement liée à l'encrassement représente un manque à gagner mesurable dès la première année.",
     ],
     facteurs: [
@@ -109,7 +109,7 @@ export const VILLES: Record<string, VilleData> = {
     delai: "Sous 72 h",
     accroche: "Pierre calcaire, secteur sauvegardé, épisodes cévenols : un nettoyage doux, sans échafaudage.",
     intro: [
-      "Nîmes est à 50 minutes de notre base montpelliéraine : nous y intervenons régulièrement, avec une contrainte que peu de villes imposent aussi fortement — la pierre. Le calcaire nîmois, extrait historiquement des carrières de Barutel et de Lens, constitue l'essentiel du bâti ancien intra-muros. C'est un matériau tendre et poreux, incompatible avec tout nettoyage haute pression.",
+      "Nîmes est à 50 minutes de notre base montpelliéraine : nous y intervenons régulièrement, avec une contrainte que peu de villes imposent aussi fortement, la pierre. Le calcaire nîmois, extrait historiquement des carrières de Barutel et de Lens, constitue l'essentiel du bâti ancien intra-muros. C'est un matériau tendre et poreux, incompatible avec tout nettoyage haute pression.",
       "L'autre spécificité nîmoise est réglementaire. Une grande partie du centre est en secteur sauvegardé et relève de l'avis des Architectes des Bâtiments de France. Les méthodes agressives y sont proscrites, et l'installation d'un échafaudage sur une rue étroite du quartier de l'Écusson relève souvent du parcours du combattant administratif. Un nettoyage par drone, sans emprise au sol et sans contact abrasif, répond aux deux contraintes en même temps.",
     ],
     facteurs: [
@@ -146,7 +146,7 @@ export const VILLES: Record<string, VilleData> = {
     faq: [
       {
         q: "Peut-on nettoyer une façade en pierre nîmoise sans l'abîmer ?",
-        r: "Oui, à condition de bannir la haute pression. Le calcaire de Barutel est tendre : un jet puissant arrache la couche superficielle, ouvre la porosité et accélère le réencrassement. Nous travaillons à basse pression avec de l'eau filtrée, sans additif abrasif — une méthode compatible avec les prescriptions des Architectes des Bâtiments de France.",
+        r: "Oui, à condition de bannir la haute pression. Le calcaire de Barutel est tendre : un jet puissant arrache la couche superficielle, ouvre la porosité et accélère le réencrassement. Nous travaillons à basse pression avec de l'eau filtrée, sans additif abrasif, une méthode compatible avec les prescriptions des Architectes des Bâtiments de France.",
       },
       {
         q: "Faut-il une autorisation pour un nettoyage en secteur sauvegardé à Nîmes ?",
@@ -169,8 +169,8 @@ export const VILLES: Record<string, VilleData> = {
     delai: "Sous 72 h",
     accroche: "Bâti vigneronne, grandes toitures agricoles et proximité du littoral : nettoyage drone et robot.",
     intro: [
-      "Béziers combine deux environnements qui usent les bâtiments différemment : un centre urbain ancien, et un arrière-pays viticole aux très grandes surfaces bâties. Les maisons de maître vigneronnes et les caves coopératives du Biterrois présentent des toitures et des façades d'une ampleur qui rend l'échafaudage économiquement absurde — c'est précisément là que le drone change l'équation.",
-      "La proximité de la mer, à moins de 15 km, ajoute une contrainte que l'on retrouve jusque dans les terres : l'air chargé en sel se dépose sur les enduits et les vitrages, et favorise sur les façades exposées au nord un encrassement biologique noir persistant. Sur les installations photovoltaïques posées sur hangars agricoles — très nombreuses dans le secteur — le sel se combine aux poussières de travaux viticoles pour former un dépôt que la pluie ne suffit pas à éliminer.",
+      "Béziers combine deux environnements qui usent les bâtiments différemment : un centre urbain ancien, et un arrière-pays viticole aux très grandes surfaces bâties. Les maisons de maître vigneronnes et les caves coopératives du Biterrois présentent des toitures et des façades d'une ampleur qui rend l'échafaudage économiquement absurde, c'est précisément là que le drone change l'équation.",
+      "La proximité de la mer, à moins de 15 km, ajoute une contrainte que l'on retrouve jusque dans les terres : l'air chargé en sel se dépose sur les enduits et les vitrages, et favorise sur les façades exposées au nord un encrassement biologique noir persistant. Sur les installations photovoltaïques posées sur hangars agricoles, très nombreuses dans le secteur, le sel se combine aux poussières de travaux viticoles pour former un dépôt que la pluie ne suffit pas à éliminer.",
     ],
     facteurs: [
       {
@@ -269,7 +269,7 @@ export const VILLES: Record<string, VilleData> = {
       },
       {
         q: "Peut-on faire voler un drone au-dessus du port de Sète ?",
-        r: "Les zones portuaires comportent des restrictions spécifiques, comme les abords d'aérodromes. Nous vérifions systématiquement le statut de la zone avant intervention et déposons les déclarations nécessaires auprès de la DGAC. Cette démarche fait partie de la prestation — vous n'avez aucune formalité à gérer.",
+        r: "Les zones portuaires comportent des restrictions spécifiques, comme les abords d'aérodromes. Nous vérifions systématiquement le statut de la zone avant intervention et déposons les déclarations nécessaires auprès de la DGAC. Cette démarche fait partie de la prestation, vous n'avez aucune formalité à gérer.",
       },
       {
         q: "À quelle fréquence entretenir un bâtiment en bord de mer à Sète ?",
@@ -289,12 +289,12 @@ export const VILLES: Record<string, VilleData> = {
     accroche: "Tramontane, ensoleillement record et parc photovoltaïque dense : nettoyage drone et robot dans le 66.",
     intro: [
       "Perpignan cumule deux caractéristiques qui en font un terrain particulier : le département des Pyrénées-Orientales est l'un des plus ensoleillés de France, et l'un des plus ventés. Cet ensoleillement a fait du Roussillon un territoire à très forte densité photovoltaïque, des toitures résidentielles aux grandes centrales au sol du secteur de Rivesaltes et des Corbières.",
-      "La tramontane, elle, est un facteur d'encrassement largement sous-estimé. Elle souffle fort et souvent, et transporte en permanence des particules fines : poussières de garrigue, sables, résidus agricoles. Sur un panneau photovoltaïque, cela signifie un réencrassement rapide entre deux pluies — et dans un département où les précipitations sont rares, la pluie ne joue pratiquement pas son rôle de nettoyage naturel. C'est le contexte où l'écart de rendement entre un parc entretenu et un parc laissé en l'état est le plus élevé.",
+      "La tramontane, elle, est un facteur d'encrassement largement sous-estimé. Elle souffle fort et souvent, et transporte en permanence des particules fines : poussières de garrigue, sables, résidus agricoles. Sur un panneau photovoltaïque, cela signifie un réencrassement rapide entre deux pluies, et dans un département où les précipitations sont rares, la pluie ne joue pratiquement pas son rôle de nettoyage naturel. C'est le contexte où l'écart de rendement entre un parc entretenu et un parc laissé en l'état est le plus élevé.",
     ],
     facteurs: [
       {
         titre: "Tramontane et particules en suspension",
-        texte: "Un vent fort et fréquent maintient en permanence des poussières en suspension. Sur du photovoltaïque, le dépôt se reforme en quelques semaines après un nettoyage — d'où l'importance de raisonner en rendement mesuré plutôt qu'en fréquence théorique.",
+        texte: "Un vent fort et fréquent maintient en permanence des poussières en suspension. Sur du photovoltaïque, le dépôt se reforme en quelques semaines après un nettoyage, d'où l'importance de raisonner en rendement mesuré plutôt qu'en fréquence théorique.",
       },
       {
         titre: "Déficit pluviométrique",
@@ -325,11 +325,11 @@ export const VILLES: Record<string, VilleData> = {
     faq: [
       {
         q: "Le nettoyage d'une centrale photovoltaïque est-il rentable dans le 66 ?",
-        r: "C'est précisément le département où il l'est le plus, pour une raison simple : le déficit de pluie. Ailleurs, une partie du dépôt part naturellement. Ici, non — il s'accumule. L'écart de production entre un parc entretenu et un parc négligé y est donc plus élevé que la moyenne nationale. Nous quantifions ce gain avant intervention plutôt que d'annoncer un pourcentage générique.",
+        r: "C'est précisément le département où il l'est le plus, pour une raison simple : le déficit de pluie. Ailleurs, une partie du dépôt part naturellement. Ici, non, il s'accumule. L'écart de production entre un parc entretenu et un parc négligé y est donc plus élevé que la moyenne nationale. Nous quantifions ce gain avant intervention plutôt que d'annoncer un pourcentage générique.",
       },
       {
         q: "La tramontane empêche-t-elle de faire voler les drones ?",
-        r: "Elle impose une planification, pas un renoncement. Nos appareils sont exploités dans une plage de vent définie par le constructeur et par nos procédures. Concrètement, nous positionnons les interventions perpignanaises sur les fenêtres météo favorables — et sur les grandes surfaces planes, notre robot de nettoyage n'est de toute façon pas sensible au vent.",
+        r: "Elle impose une planification, pas un renoncement. Nos appareils sont exploités dans une plage de vent définie par le constructeur et par nos procédures. Concrètement, nous positionnons les interventions perpignanaises sur les fenêtres météo favorables, et sur les grandes surfaces planes, notre robot de nettoyage n'est de toute façon pas sensible au vent.",
       },
       {
         q: "Intervenez-vous sur les grandes centrales au sol ?",
@@ -348,8 +348,8 @@ export const VILLES: Record<string, VilleData> = {
     delai: "Sous 5 jours ouvrés",
     accroche: "Brique foraine poreuse et humidité de la Garonne : un nettoyage sans pression, adapté au bâti toulousain.",
     intro: [
-      "Toulouse impose une contrainte matériau que l'on ne rencontre nulle part ailleurs en Occitanie : la brique foraine. Cette brique de terre cuite plate, qui donne à la ville sa couleur, est extrêmement poreuse. Un nettoyage haute pression la décape en surface, ouvre ses pores et garantit un réencrassement plus rapide qu'avant l'intervention — c'est l'erreur la plus fréquente et la plus coûteuse sur le bâti toulousain.",
-      "Le climat toulousain, plus humide et moins venté que celui du littoral méditerranéen, aggrave le problème. L'humidité entretenue par la Garonne et les précipitations plus régulières favorisent nettement les développements de mousses et d'algues, en particulier sur les toitures en tuile canal des versants nord et sur les soubassements de façade. Sur le plan professionnel, le bassin toulousain concentre par ailleurs un tissu aéronautique et logistique dense — Blagnac, Colomiers, Labège — dont les bardages et toitures de très grande surface relèvent typiquement de notre méthode.",
+      "Toulouse impose une contrainte matériau que l'on ne rencontre nulle part ailleurs en Occitanie : la brique foraine. Cette brique de terre cuite plate, qui donne à la ville sa couleur, est extrêmement poreuse. Un nettoyage haute pression la décape en surface, ouvre ses pores et garantit un réencrassement plus rapide qu'avant l'intervention, c'est l'erreur la plus fréquente et la plus coûteuse sur le bâti toulousain.",
+      "Le climat toulousain, plus humide et moins venté que celui du littoral méditerranéen, aggrave le problème. L'humidité entretenue par la Garonne et les précipitations plus régulières favorisent nettement les développements de mousses et d'algues, en particulier sur les toitures en tuile canal des versants nord et sur les soubassements de façade. Sur le plan professionnel, le bassin toulousain concentre par ailleurs un tissu aéronautique et logistique dense, Blagnac, Colomiers, Labège, dont les bardages et toitures de très grande surface relèvent typiquement de notre méthode.",
     ],
     facteurs: [
       {
@@ -409,12 +409,12 @@ export const VILLES: Record<string, VilleData> = {
     accroche: "Pierre calcaire, mistral et pollution portuaire : croûtes noires et accès difficiles, traités par drone.",
     intro: [
       "Marseille présente une combinaison de facteurs de dégradation rarement réunie ailleurs : la pierre calcaire du bâti ancien, la pollution atmosphérique d'une grande métropole portuaire et industrielle, et une exposition marine directe. Le résultat est bien connu des propriétaires marseillais : les fameuses croûtes noires qui recouvrent les façades en pierre du centre et du Panier.",
-      "Ces croûtes ne sont pas de la saleté déposée, mais le produit d'une réaction chimique entre les polluants soufrés et le calcaire. Elles ne partent ni au jet d'eau simple ni à la brosse — et un nettoyage trop agressif emporte avec elles une partie de la pierre. La topographie marseillaise ajoute sa propre difficulté : les immeubles accrochés aux pentes d'Endoume, du Roucas Blanc ou des quartiers surplombant les calanques sont souvent inaccessibles à une nacelle. C'est là que le drone devient non pas une alternative, mais la seule option raisonnable.",
+      "Ces croûtes ne sont pas de la saleté déposée, mais le produit d'une réaction chimique entre les polluants soufrés et le calcaire. Elles ne partent ni au jet d'eau simple ni à la brosse, et un nettoyage trop agressif emporte avec elles une partie de la pierre. La topographie marseillaise ajoute sa propre difficulté : les immeubles accrochés aux pentes d'Endoume, du Roucas Blanc ou des quartiers surplombant les calanques sont souvent inaccessibles à une nacelle. C'est là que le drone devient non pas une alternative, mais la seule option raisonnable.",
     ],
     facteurs: [
       {
         titre: "Croûtes noires sur pierre calcaire",
-        texte: "Réaction chimique entre polluants atmosphériques et calcaire, formant une couche gypseuse noire adhérente. Elle exige un nettoyage doux et progressif — toute abrasion emporte le parement.",
+        texte: "Réaction chimique entre polluants atmosphériques et calcaire, formant une couche gypseuse noire adhérente. Elle exige un nettoyage doux et progressif, toute abrasion emporte le parement.",
       },
       {
         titre: "Mistral et embruns combinés",
@@ -444,11 +444,11 @@ export const VILLES: Record<string, VilleData> = {
     faq: [
       {
         q: "Comment traiter les croûtes noires d'une façade marseillaise ?",
-        r: "Par un nettoyage progressif à basse pression, éventuellement en plusieurs passes. L'objectif n'est pas de tout retirer d'un coup — c'est le meilleur moyen d'emporter la pierre avec la croûte — mais de dissoudre et évacuer la couche gypseuse en préservant le parement. Nous établissons systématiquement un essai sur zone témoin avant de traiter l'ensemble.",
+        r: "Par un nettoyage progressif à basse pression, éventuellement en plusieurs passes. L'objectif n'est pas de tout retirer d'un coup, c'est le meilleur moyen d'emporter la pierre avec la croûte, mais de dissoudre et évacuer la couche gypseuse en préservant le parement. Nous établissons systématiquement un essai sur zone témoin avant de traiter l'ensemble.",
       },
       {
         q: "Peut-on intervenir sur un immeuble en forte pente sans nacelle ?",
-        r: "Oui, c'est même la raison d'être de notre méthode. Le drone décolle depuis un point réduit — une terrasse, une portion de voie, une cour — et travaille sur toute la hauteur sans emprise au sol, sans autorisation de voirie, sans immobiliser la rue.",
+        r: "Oui, c'est même la raison d'être de notre méthode. Le drone décolle depuis un point réduit, une terrasse, une portion de voie, une cour, et travaille sur toute la hauteur sans emprise au sol, sans autorisation de voirie, sans immobiliser la rue.",
       },
       {
         q: "Intervenez-vous sur les plateformes logistiques de Vitrolles et Fos ?",
@@ -468,7 +468,7 @@ export const VILLES: Record<string, VilleData> = {
     accroche: "Intra-muros classé, pierre calcaire et mistral : nettoyage doux sans échafaudage ni emprise au sol.",
     intro: [
       "Avignon pose un problème que la plupart des villes n'ont pas à cette échelle : la quasi-totalité du centre est intra-muros, classé, et soumise à l'avis des Architectes des Bâtiments de France. Les rues y sont étroites, souvent piétonnes, et l'implantation d'un échafaudage suppose une autorisation de voirie longue à obtenir et coûteuse à occuper.",
-      "Le bâti avignonnais est majoritairement en pierre calcaire, avec un grand nombre d'hôtels particuliers et de façades anciennes qui ne tolèrent aucun nettoyage abrasif. À cela s'ajoute le mistral, qui souffle ici avec une constance particulière et transporte poussières et particules jusque dans les cours intérieures. Notre approche — drone, basse pression, eau filtrée, zéro emprise au sol — répond simultanément à la contrainte patrimoniale, à la contrainte matériau et à la contrainte d'accès.",
+      "Le bâti avignonnais est majoritairement en pierre calcaire, avec un grand nombre d'hôtels particuliers et de façades anciennes qui ne tolèrent aucun nettoyage abrasif. À cela s'ajoute le mistral, qui souffle ici avec une constance particulière et transporte poussières et particules jusque dans les cours intérieures. Notre approche, drone, basse pression, eau filtrée, zéro emprise au sol, répond simultanément à la contrainte patrimoniale, à la contrainte matériau et à la contrainte d'accès.",
     ],
     facteurs: [
       {
@@ -504,7 +504,7 @@ export const VILLES: Record<string, VilleData> = {
     faq: [
       {
         q: "Peut-on nettoyer une façade classée à Avignon ?",
-        r: "Un nettoyage d'entretien qui ne modifie pas l'aspect du bâtiment ne relève généralement pas d'une autorisation préalable. Dès qu'un traitement change la teinte ou l'aspect — hydrofuge coloré, ravalement — l'avis de l'ABF devient nécessaire. Nous qualifions votre situation avant le devis pour éviter toute mauvaise surprise.",
+        r: "Un nettoyage d'entretien qui ne modifie pas l'aspect du bâtiment ne relève généralement pas d'une autorisation préalable. Dès qu'un traitement change la teinte ou l'aspect, hydrofuge coloré, ravalement, l'avis de l'ABF devient nécessaire. Nous qualifions votre situation avant le devis pour éviter toute mauvaise surprise.",
       },
       {
         q: "Le drone est-il autorisé au-dessus de l'intra-muros ?",
@@ -512,7 +512,7 @@ export const VILLES: Record<string, VilleData> = {
       },
       {
         q: "Combien de temps dure une intervention sur une façade avignonnaise ?",
-        r: "Sur un hôtel particulier ou un immeuble de centre-ville, comptez généralement une à deux journées, contre plusieurs semaines avec un échafaudage — délai de montage et d'autorisation de voirie compris. C'est précisément là que l'écart de coût global se creuse.",
+        r: "Sur un hôtel particulier ou un immeuble de centre-ville, comptez généralement une à deux journées, contre plusieurs semaines avec un échafaudage, délai de montage et d'autorisation de voirie compris. C'est précisément là que l'écart de coût global se creuse.",
       },
     ],
   },
@@ -522,7 +522,7 @@ export const VILLES: Record<string, VilleData> = {
 export const VILLES_ENRICHIES = Object.keys(VILLES);
 
 /**
- * Villes servies sans page enrichie dédiée — conservées pour ne pas casser
+ * Villes servies sans page enrichie dédiée, conservées pour ne pas casser
  * les URLs existantes et le maillage, mais volontairement non listées ailleurs.
  */
 export const VILLES_LEGACY = [
@@ -530,7 +530,7 @@ export const VILLES_LEGACY = [
   "montauban", "narbonne", "ales", "arles", "lunel", "agde",
 ];
 
-/** Liste blanche complète — toute autre URL doit renvoyer un 404 */
+/** Liste blanche complète, toute autre URL doit renvoyer un 404 */
 export const VILLES_AUTORISEES = [...VILLES_ENRICHIES, ...VILLES_LEGACY];
 
 export function getVille(slug: string): VilleData | null {

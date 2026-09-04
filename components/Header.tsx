@@ -192,7 +192,7 @@ export default function Header() {
               {n.home}
             </Link>
 
-            {/* Accordion — Nos Solutions */}
+            {/* Accordion, Nos Solutions */}
             <div>
               <button
                 onClick={() => toggleSection("services")}
@@ -214,7 +214,7 @@ export default function Header() {
               )}
             </div>
 
-            {/* Accordion — Secteurs */}
+            {/* Accordion, Secteurs */}
             <div>
               <button
                 onClick={() => toggleSection("sectors")}
@@ -238,7 +238,7 @@ export default function Header() {
               )}
             </div>
 
-            {/* Accordion — Actualités */}
+            {/* Accordion, Actualités */}
             <div>
               <button
                 onClick={() => toggleSection("news")}

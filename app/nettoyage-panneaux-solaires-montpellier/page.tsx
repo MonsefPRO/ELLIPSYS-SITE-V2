@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import LandingPage from "@/components/LandingPage";
 
 /**
- * Landing page Google Ads — groupe « Panneaux solaires ».
+ * Landing page Google Ads, groupe « Panneaux solaires ».
  * Cible mixte particuliers + exploitants : le panier moyen y est le plus élevé
  * et la concurrence publicitaire la plus faible des trois groupes.
  */
 export const metadata: Metadata = {
-  title: "Nettoyage de panneaux solaires à Montpellier — devis 24 h",
+  title: "Nettoyage de panneaux solaires à Montpellier, devis 24 h",
   description:
     "Nettoyage de panneaux solaires et de centrales photovoltaïques par robot et drone à Montpellier et en Occitanie. Rendement mesuré avant et après. Devis gratuit sous 24 h.",
   alternates: { canonical: "https://ellipsys-solutions.com/nettoyage-panneaux-solaires-montpellier" },
@@ -34,7 +34,7 @@ export default function Page() {
       preuve={{
         image: "/images/avant-apres-panneaux.jpg",
         alt: "Avant après nettoyage de panneaux photovoltaïques",
-        legende: "Chantier réel — panneaux photovoltaïques rendus à leur transparence d'origine",
+        legende: "Chantier réel, panneaux photovoltaïques rendus à leur transparence d'origine",
         badges: ["AVANT", "APRÈS"],
       }}
       benefices={[
@@ -76,7 +76,7 @@ export default function Page() {
           note: "1 à 4 passages par an selon l'exposition. Audit de soiling offert.",
         },
       ]}
-      prixNote="Pour les exploitants et asset managers : nous réalisons un audit de soiling gratuit sur un site avant toute proposition. L'objectif est de vérifier que le gain de production justifie l'intervention — s'il ne la justifie pas, nous vous le disons."
+      prixNote="Pour les exploitants et asset managers : nous réalisons un audit de soiling gratuit sur un site avant toute proposition. L'objectif est de vérifier que le gain de production justifie l'intervention, s'il ne la justifie pas, nous vous le disons."
       faq={[
         {
           q: "Combien de rendement peut-on récupérer ?",
@@ -92,7 +92,7 @@ export default function Page() {
         },
         {
           q: "Le nettoyage annule-t-il la garantie de mes panneaux ?",
-          r: "Non, à condition d'utiliser la bonne méthode. Ce qui annule les garanties, c'est la haute pression et les produits abrasifs. Nous travaillons par brossage doux à pression contrôlée, sans détergent — une méthode compatible avec les préconisations des principaux fabricants.",
+          r: "Non, à condition d'utiliser la bonne méthode. Ce qui annule les garanties, c'est la haute pression et les produits abrasifs. Nous travaillons par brossage doux à pression contrôlée, sans détergent, une méthode compatible avec les préconisations des principaux fabricants.",
         },
       ]}
       communes={[

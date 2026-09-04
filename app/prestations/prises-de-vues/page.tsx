@@ -51,7 +51,7 @@ export default async function PrisesDeVuesPage() {
       icon: "🏰",
       img: `https://images.pexels.com/photos/1308940/pexels-photo-1308940.jpeg${PX}`,
       title: "Listed Heritage & Historic Monuments",
-      desc: "Châteaux, cathedrals, abbeys and classified sites. Our cinematic overflights capture the grandeur of your heritage from angles inaccessible at ground level — for your preservation dossiers, institutional communications or tourism materials.",
+      desc: "Châteaux, cathedrals, abbeys and classified sites. Our cinematic overflights capture the grandeur of your heritage from angles inaccessible at ground level, for your preservation dossiers, institutional communications or tourism materials.",
     },
     {
       icon: "🏛️",
@@ -88,7 +88,7 @@ export default async function PrisesDeVuesPage() {
       icon: "🏰",
       img: `https://images.pexels.com/photos/1308940/pexels-photo-1308940.jpeg${PX}`,
       title: "Monuments Historiques & Patrimoine",
-      desc: "Châteaux, cathédrales, abbayes et sites classés. Nos survols cinématographiques capturent la grandeur de votre patrimoine depuis des angles inaccessibles au sol — pour vos dossiers de préservation, communications institutionnelles ou supports touristiques.",
+      desc: "Châteaux, cathédrales, abbayes et sites classés. Nos survols cinématographiques capturent la grandeur de votre patrimoine depuis des angles inaccessibles au sol, pour vos dossiers de préservation, communications institutionnelles ou supports touristiques.",
     },
     {
       icon: "🏛️",
@@ -174,8 +174,8 @@ export default async function PrisesDeVuesPage() {
 
       <ExpertQuoteSide
         quote={isEn
-          ? "In prestige real estate, visual immersion is the primary driver of the sale. A cinematic aerial video allows the buyer to project themselves into the property well before the viewing — it is a direct conversion tool that justifies the price positioning."
-          : "Dans l'immobilier de prestige, l'immersion visuelle est le premier vecteur de vente. Une vidéo aérienne cinématographique permet à l'acquéreur de se projeter dans le bien bien avant la visite — c'est un outil de conversion direct qui justifie le positionnement prix."}
+          ? "In prestige real estate, visual immersion is the primary driver of the sale. A cinematic aerial video allows the buyer to project themselves into the property well before the viewing, it is a direct conversion tool that justifies the price positioning."
+          : "Dans l'immobilier de prestige, l'immersion visuelle est le premier vecteur de vente. Une vidéo aérienne cinématographique permet à l'acquéreur de se projeter dans le bien bien avant la visite, c'est un outil de conversion direct qui justifie le positionnement prix."}
         author="— Expert Ellipsys Solutions"
       />
 
@@ -192,7 +192,7 @@ export default async function PrisesDeVuesPage() {
                 </span>
               </div>
               <div className="absolute bottom-5 left-5 right-5">
-                <p className="text-white text-xs font-semibold">{isEn ? "Cinematic overflight — perspectives inaccessible at ground level" : "Survol cinématographique — perspectives inaccessibles au sol"}</p>
+                <p className="text-white text-xs font-semibold">{isEn ? "Cinematic overflight, perspectives inaccessible at ground level" : "Survol cinématographique, perspectives inaccessibles au sol"}</p>
               </div>
             </div>
             <div>
@@ -204,8 +204,8 @@ export default async function PrisesDeVuesPage() {
               </h2>
               <p className="text-slate-600 leading-relaxed mb-6">
                 {isEn
-                  ? <>We exclusively use the latest-generation professional equipment to guarantee irreproachable image quality, even in difficult lighting conditions. The <strong>1-inch sensor</strong> of the <strong className="text-slate-900">DJI Air 3S</strong> captures <strong>4× more light</strong> than a standard sensor — ideal for <strong>dusk</strong> or overcast conditions, the most flattering lighting for prestige real estate.</>
-                  : <>Nous n&apos;utilisons que des équipements professionnels de dernière génération pour garantir une qualité d&apos;image irréprochable, même dans des conditions de lumière difficiles. Le <strong>capteur 1 pouce</strong> du <strong className="text-slate-900">DJI Air 3S</strong> capte <strong>4× plus de lumière</strong> qu&apos;un capteur standard — idéal pour les prises de vues au <strong>crépuscule</strong> ou par temps couvert, conditions les plus flatteuses pour l&apos;immobilier de prestige.</>
+                  ? <>We exclusively use the latest-generation professional equipment to guarantee irreproachable image quality, even in difficult lighting conditions. The <strong>1-inch sensor</strong> of the <strong className="text-slate-900">DJI Air 3S</strong> captures <strong>4× more light</strong> than a standard sensor, ideal for <strong>dusk</strong> or overcast conditions, the most flattering lighting for prestige real estate.</>
+                  : <>Nous n&apos;utilisons que des équipements professionnels de dernière génération pour garantir une qualité d&apos;image irréprochable, même dans des conditions de lumière difficiles. Le <strong>capteur 1 pouce</strong> du <strong className="text-slate-900">DJI Air 3S</strong> capte <strong>4× plus de lumière</strong> qu&apos;un capteur standard, idéal pour les prises de vues au <strong>crépuscule</strong> ou par temps couvert, conditions les plus flatteuses pour l&apos;immobilier de prestige.</>
                 }
               </p>
               <div className="bg-[#0e2f52]/5 border border-[#0e2f52]/20 rounded-2xl p-5 flex items-start gap-4">
@@ -214,8 +214,8 @@ export default async function PrisesDeVuesPage() {
                   <p className="text-xs font-black text-brand-orange-500 uppercase tracking-widest mb-2">{isEn ? "Expert Opinion" : "Avis Expert"}</p>
                   <p className="text-slate-700 text-sm leading-relaxed italic">
                     {isEn
-                      ? "In prestige real estate, visual immersion is the primary driver of the sale. A cinematic aerial video allows the buyer to project themselves into the property well before the viewing — it is a direct conversion tool that justifies the price positioning."
-                      : "Dans l'immobilier de prestige, l'immersion visuelle est le premier vecteur de vente. Une vidéo aérienne cinématographique permet à l'acquéreur de se projeter dans le bien bien avant la visite — c'est un outil de conversion direct qui justifie le positionnement prix."
+                      ? "In prestige real estate, visual immersion is the primary driver of the sale. A cinematic aerial video allows the buyer to project themselves into the property well before the viewing, it is a direct conversion tool that justifies the price positioning."
+                      : "Dans l'immobilier de prestige, l'immersion visuelle est le premier vecteur de vente. Une vidéo aérienne cinématographique permet à l'acquéreur de se projeter dans le bien bien avant la visite, c'est un outil de conversion direct qui justifie le positionnement prix."
                     }
                   </p>
                 </div>
@@ -302,7 +302,7 @@ export default async function PrisesDeVuesPage() {
       <section className="py-16 bg-[#0e2f52]">
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-10">
-            <h2 className="text-2xl font-bold text-white mb-2">{isEn ? "Technical Specifications — DJI Air 3S" : "Fiche Technique — DJI Air 3S"}</h2>
+            <h2 className="text-2xl font-bold text-white mb-2">{isEn ? "Technical Specifications, DJI Air 3S" : "Fiche Technique, DJI Air 3S"}</h2>
             <p className="text-slate-400 text-sm">{isEn ? "The professional reference for cinematic aerial capture." : "La référence professionnelle pour la captation aérienne cinématographique."}</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

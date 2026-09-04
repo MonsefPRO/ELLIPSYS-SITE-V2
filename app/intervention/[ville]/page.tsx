@@ -55,7 +55,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // dès qu'on l'a, sinon le H1 et le title afficheraient « Sete » ou « Nimes ».
   const villeName = data?.nom ?? formatVilleName(resolvedParams.ville);
 
-  // Description unique par ville quand on a du contenu local — évite les
+  // Description unique par ville quand on a du contenu local, évite les
   // meta dupliquées sur 20 pages, que Google traite comme du contenu dupliqué.
   return {
     title: `Nettoyage par drone à ${villeName} : panneaux solaires, toiture & façade`,
@@ -141,13 +141,13 @@ export default async function VillePage({ params }: Props) {
           </div>
           <h1 className="text-4xl lg:text-5xl font-black mb-6 leading-tight">
             {isEn
-              ? <>Drone Cleaning — Facades, Rooftops &amp; Solar Panels in <span className="text-brand-orange-500">{villeName}</span></>
+              ? <>Drone Cleaning, Facades, Rooftops &amp; Solar Panels in <span className="text-brand-orange-500">{villeName}</span></>
               : <>Nettoyage façades, toitures &amp; panneaux solaires à <span className="text-brand-orange-500">{villeName}</span> par drone</>}
           </h1>
           <p className="text-xl text-slate-200 mb-10 leading-relaxed max-w-2xl mx-auto">
             {isEn
-              ? <>Ellipsys operates in <strong>{villeName}</strong> — no scaffolding, no cherry picker. Roof demossing, <strong>solar panel cleaning</strong>, <strong>building thermal imaging</strong> and facade maintenance — free quote within 24h.</>
-              : <>Ellipsys intervient à <strong>{villeName}</strong> sans échafaudage, sans nacelle. Démoussage, <strong>nettoyage de panneaux solaires</strong>, <strong>thermographie bâtiment</strong> et entretien de façades — devis gratuit sous 24 h.</>}
+              ? <>Ellipsys operates in <strong>{villeName}</strong>, no scaffolding, no cherry picker. Roof demossing, <strong>solar panel cleaning</strong>, <strong>building thermal imaging</strong> and facade maintenance, free quote within 24h.</>
+              : <>Ellipsys intervient à <strong>{villeName}</strong> sans échafaudage, sans nacelle. Démoussage, <strong>nettoyage de panneaux solaires</strong>, <strong>thermographie bâtiment</strong> et entretien de façades, devis gratuit sous 24 h.</>}
           </p>
           <Link href="/devis" className="inline-flex items-center gap-2 px-8 py-4 bg-brand-orange-500 text-white rounded-xl font-bold hover:bg-brand-orange-600 transition-colors shadow-lg text-lg">
             {isEn ? `Get a free quote in ${villeName}` : `Obtenir un devis gratuit à ${villeName}`} <ChevronRight className="w-5 h-5" />
@@ -216,7 +216,7 @@ export default async function VillePage({ params }: Props) {
                 </h2>
                 <p className="text-slate-500 max-w-2xl mx-auto">
                   Chaque territoire a ses propres agressions. Connaître celles de {data.nom}, c&apos;est
-                  choisir le bon traitement — et la bonne fréquence d&apos;entretien.
+                  choisir le bon traitement, et la bonne fréquence d&apos;entretien.
                 </p>
               </div>
               <div className="grid md:grid-cols-3 gap-8">
@@ -265,8 +265,8 @@ export default async function VillePage({ params }: Props) {
             </h2>
             <p className="text-slate-500 max-w-2xl mx-auto text-lg">
               {isEn
-                ? <><strong>No scaffolding, no cherry picker</strong> — faster, safer, adapted to all building types.</>
-                : <>Une méthode <strong>sans échafaudage, sans nacelle</strong> — plus rapide, plus sûre, adaptée à tous types de bâtiments.</>}
+                ? <><strong>No scaffolding, no cherry picker</strong>, faster, safer, adapted to all building types.</>
+                : <>Une méthode <strong>sans échafaudage, sans nacelle</strong>, plus rapide, plus sûre, adaptée à tous types de bâtiments.</>}
             </p>
           </div>
 
@@ -281,7 +281,7 @@ export default async function VillePage({ params }: Props) {
               </div>
               <ul className="space-y-3 text-slate-600 text-sm flex-1">
                 <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" /><span>{isEn ? <><strong>Industrial cladding cleaning</strong> without interrupting operations</> : <><strong>Nettoyage de bardages industriels</strong> sans interruption d&apos;activité</>}</span></li>
-                <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" /><span>{isEn ? <><strong>Solar panel cleaning in {villeName}</strong> — recover up to 30% in output</> : <><strong>Nettoyage de panneaux solaires à {villeName}</strong> — récupérez jusqu&apos;à 30 % de rendement</>}</span></li>
+                <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" /><span>{isEn ? <><strong>Solar panel cleaning in {villeName}</strong>, recover up to 30% in output</> : <><strong>Nettoyage de panneaux solaires à {villeName}</strong>, récupérez jusqu&apos;à 30 % de rendement</>}</span></li>
                 <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" /><span>{isEn ? <><strong>Building thermal imaging</strong> by drone: thermal bridge and infiltration detection</> : <><strong>Thermographie bâtiment</strong> par drone : détection de ponts thermiques et infiltrations</>}</span></li>
                 <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" /><span>{isEn ? "Maintenance of datacenters, logistics warehouses, glazed facades" : "Entretien de datacenters, entrepôts logistiques, façades vitrées"}</span></li>
               </ul>
@@ -296,7 +296,7 @@ export default async function VillePage({ params }: Props) {
                 <h3 className="text-xl font-bold text-slate-900">{isEn ? "Private Clients & Co-ownerships" : "Particuliers & Copropriétés"}</h3>
               </div>
               <ul className="space-y-3 text-slate-600 text-sm flex-1">
-                <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" /><span>{isEn ? <><strong>Roof demossing in {villeName}</strong> — no broken tiles, no fall risk</> : <><strong>Démoussage toiture à {villeName}</strong> — aucune tuile cassée, aucun risque de chute</>}</span></li>
+                <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" /><span>{isEn ? <><strong>Roof demossing in {villeName}</strong>, no broken tiles, no fall risk</> : <><strong>Démoussage toiture à {villeName}</strong>, aucune tuile cassée, aucun risque de chute</>}</span></li>
                 <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" /><span>{isEn ? <><strong>Facade cleaning in {villeName}</strong>: render, stone, plaster, concrete</> : <><strong>Nettoyage façade à {villeName}</strong> : crépi, pierre, enduit, béton</>}</span></li>
                 <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" /><span>{isEn ? "Anti-moss treatment and long-lasting waterproofing" : "Traitement anti-mousses et hydrofuge longue durée"}</span></li>
                 <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" /><span>{isEn ? <>Disinfection and <strong>pest</strong> treatment (pigeons, droppings, insects)</> : <>Désinfection et traitement <strong>nuisibles</strong> (pigeons, fientes, insectes)</>}</span></li>
@@ -333,8 +333,8 @@ export default async function VillePage({ params }: Props) {
             </h2>
             <p className="text-slate-500 max-w-xl mx-auto">
               {isEn
-                ? "We combine cutting-edge drone technology and field expertise for lasting results — without the constraints of traditional methods."
-                : "Nous combinons technologie drone de pointe et expertise terrain pour des résultats durables — sans les contraintes des méthodes traditionnelles."}
+                ? "We combine cutting-edge drone technology and field expertise for lasting results, without the constraints of traditional methods."
+                : "Nous combinons technologie drone de pointe et expertise terrain pour des résultats durables, sans les contraintes des méthodes traditionnelles."}
             </p>
           </div>
 
@@ -397,8 +397,8 @@ export default async function VillePage({ params }: Props) {
                 </h3>
                 <p className="text-slate-600 text-sm leading-relaxed">
                   {isEn
-                    ? <>Describe your project online, receive a <strong>personalised free quote</strong> tailored to your building in {villeName} — no commitment, no site visit required.</>
-                    : <>Décrivez votre projet en ligne, recevez un <strong>devis personnalisé gratuit</strong> adapté à votre bâtiment à {villeName} — sans engagement, sans déplacement.</>}
+                    ? <>Describe your project online, receive a <strong>personalised free quote</strong> tailored to your building in {villeName}, no commitment, no site visit required.</>
+                    : <>Décrivez votre projet en ligne, recevez un <strong>devis personnalisé gratuit</strong> adapté à votre bâtiment à {villeName}, sans engagement, sans déplacement.</>}
                 </p>
               </div>
             </div>
@@ -497,8 +497,8 @@ export default async function VillePage({ params }: Props) {
           </h2>
           <p className="text-slate-500 mb-8 text-lg">
             {isEn
-              ? <>Facade cleaning, roof demossing, solar panel cleaning or building thermal imaging in <strong>{villeName}</strong> — answer a few questions and get your <strong>free quote within 24h</strong>.</>
-              : <>Nettoyage façade, démoussage toiture, nettoyage panneaux solaires ou thermographie bâtiment à <strong>{villeName}</strong> — répondez à quelques questions et obtenez votre <strong>devis gratuit sous 24 h</strong>.</>}
+              ? <>Facade cleaning, roof demossing, solar panel cleaning or building thermal imaging in <strong>{villeName}</strong>, answer a few questions and get your <strong>free quote within 24h</strong>.</>
+              : <>Nettoyage façade, démoussage toiture, nettoyage panneaux solaires ou thermographie bâtiment à <strong>{villeName}</strong>, répondez à quelques questions et obtenez votre <strong>devis gratuit sous 24 h</strong>.</>}
           </p>
           <Link href="/devis" className="inline-flex items-center gap-2 px-10 py-5 bg-brand-orange-500 text-white rounded-xl font-bold hover:bg-brand-orange-600 transition-colors shadow-lg text-lg">
             {isEn ? `Get a free quote in ${villeName}` : `Obtenir un devis gratuit à ${villeName}`} <ChevronRight className="w-5 h-5" />

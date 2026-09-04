@@ -9,7 +9,7 @@ import { pushLeadConversion } from "@/lib/gtag";
  * Pop-up « Rappelez-moi ».
  *
  * Ancienne version : capture d'e-mail pour une newsletter de conseils. Demande
- * trop molle — quelqu'un qui consulte une page démoussage veut un devis ou un
+ * trop molle, quelqu'un qui consulte une page démoussage veut un devis ou un
  * rappel, pas une newsletter.
  *
  * Nouvelle version : deux chemins vers le contact immédiat.

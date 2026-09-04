@@ -35,7 +35,7 @@ export default async function HauteExigencePage() {
     {
       icon: Plane, color: "text-slate-600", bg: "bg-slate-100",
       title: isEn ? "Aeronautics" : "Aéronautique",
-      desc: isEn ? "We guarantee precision cleaning of your infrastructure (assembly buildings, warehouses, aeronautical hangars), meeting the strict FOD — Foreign Object Debris standards required by the sector." : "Nous garantissons un nettoyage de précision de vos infrastructures (bâtiments d'assemblage, entrepôts, hangars aéronautiques), répondant aux normes FOD - Foreign Object Debris exigées par le secteur.",
+      desc: isEn ? "We guarantee precision cleaning of your infrastructure (assembly buildings, warehouses, aeronautical hangars), meeting the strict FOD, Foreign Object Debris standards required by the sector." : "Nous garantissons un nettoyage de précision de vos infrastructures (bâtiments d'assemblage, entrepôts, hangars aéronautiques), répondant aux normes FOD - Foreign Object Debris exigées par le secteur.",
     },
     {
       icon: FileText, color: "text-emerald-600", bg: "bg-emerald-50",
@@ -56,14 +56,14 @@ export default async function HauteExigencePage() {
     },
     {
       title: isEn ? "FOD compliance for Aeronautics" : "Conformité FOD pour l'Aéronautique",
-      desc: isEn ? "We guarantee precision cleaning of your infrastructure (assembly buildings, warehouses, aeronautical hangars), meeting the strict cleanliness and safety standards (FOD — Foreign Object Debris) required by the sector." : "Nous garantissons un nettoyage de precision de vos infrastructures (batiments d'assemblage, entrepots, hangars aeronautiques), repondant aux normes de proprete et de securite strictes (FOD - Foreign Object Debris) exigees par le secteur.",
+      desc: isEn ? "We guarantee precision cleaning of your infrastructure (assembly buildings, warehouses, aeronautical hangars), meeting the strict cleanliness and safety standards (FOD, Foreign Object Debris) required by the sector." : "Nous garantissons un nettoyage de precision de vos infrastructures (batiments d'assemblage, entrepots, hangars aeronautiques), repondant aux normes de proprete et de securite strictes (FOD - Foreign Object Debris) exigees par le secteur.",
     },
     {
       title: isEn ? "Safety Data Sheet provided after each intervention" : "Fiche de Données de Sécurité fournie à l'issue de chaque intervention",
       desc: isEn ? "We provide Safety Data Sheets (SDS) for our biocide products or use filtered water to comply with your quality processes. Complete documentation is delivered immediately after each intervention." : "Nous fournissons les Fiches de Donnees de Securite (FDS) de nos produits biocides ou utilisons de l'eau filtree pour respecter vos process qualite. La documentation complète est remise immédiatement après chaque intervention.",
     },
     {
-      title: isEn ? "No ground footprint — guaranteed continuity of your operations" : "Aucune emprise au sol — continuité de vos activités garantie",
+      title: isEn ? "No ground footprint, guaranteed continuity of your operations" : "Aucune emprise au sol, continuité de vos activités garantie",
       desc: isEn ? "Our aerial drone approach eliminates the need for ground marking, cherry pickers or scaffolding, allowing logistics flows and site access to be maintained throughout the works." : "Notre approche aérienne par drone élimine le besoin de balisage au sol, de nacelles ou d'échafaudages, permettant de maintenir les flux logistiques et les accès de votre site pendant toute la durée des travaux.",
     },
   ];
@@ -93,7 +93,7 @@ export default async function HauteExigencePage() {
         </div>
       </section>
 
-      <ExpertQuoteSide quote={isEn ? "In sensitive environments, exterior cleanliness is not optional — it is an unavoidable regulatory standard. Our products and protocols are selected to meet the strictest standards of the sector." : "Dans les environnements sensibles, la proprete exterieure n'est pas une option — c'est un standard reglementaire incontournable. Nos produits et protocoles sont selectionnes pour repondre aux normes les plus strictes du secteur."} />
+      <ExpertQuoteSide quote={isEn ? "In sensitive environments, exterior cleanliness is not optional, it is an unavoidable regulatory standard. Our products and protocols are selected to meet the strictest standards of the sector." : "Dans les environnements sensibles, la proprete exterieure n'est pas une option, c'est un standard reglementaire incontournable. Nos produits et protocoles sont selectionnes pour repondre aux normes les plus strictes du secteur."} />
 
       {/* SECTION 1 : INTRO IMAGE SPLIT */}
       <section className="py-20 bg-white">
@@ -109,7 +109,7 @@ export default async function HauteExigencePage() {
                 </span>
               </div>
               <div className="absolute bottom-5 left-5 right-5">
-                <p className="text-white text-xs font-semibold">{isEn ? "High-demand industrial environment — protocols compliant with sector standards" : "Environnement industriel à haute exigence — protocoles conformes aux normes sectorielles"}</p>
+                <p className="text-white text-xs font-semibold">{isEn ? "High-demand industrial environment, protocols compliant with sector standards" : "Environnement industriel à haute exigence, protocoles conformes aux normes sectorielles"}</p>
               </div>
             </div>
 
@@ -129,7 +129,7 @@ export default async function HauteExigencePage() {
                 <span className="text-brand-orange-500 text-4xl font-bold leading-none -mt-1 select-none shrink-0">&ldquo;</span>
                 <div>
                   <p className="text-xs font-black text-brand-orange-500 uppercase tracking-widest mb-2">{isEn ? "Expert Opinion" : "Avis Expert"}</p>
-                  <p className="text-slate-700 text-sm leading-relaxed italic">{isEn ? "In sensitive environments, exterior cleanliness is not optional — it is an unavoidable regulatory standard. Our products and protocols are selected to meet the strictest standards of the sector." : "Dans les environnements sensibles, la proprete exterieure n'est pas une option — c'est un standard reglementaire incontournable. Nos produits et protocoles sont selectionnes pour repondre aux normes les plus strictes du secteur."}</p>
+                  <p className="text-slate-700 text-sm leading-relaxed italic">{isEn ? "In sensitive environments, exterior cleanliness is not optional, it is an unavoidable regulatory standard. Our products and protocols are selected to meet the strictest standards of the sector." : "Dans les environnements sensibles, la proprete exterieure n'est pas une option, c'est un standard reglementaire incontournable. Nos produits et protocoles sont selectionnes pour repondre aux normes les plus strictes du secteur."}</p>
                 </div>
               </div>
             </div>
@@ -177,7 +177,7 @@ export default async function HauteExigencePage() {
               <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('${IMG.facility}')` }} />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
               <div className="absolute bottom-4 left-5 right-5">
-                <p className="text-white text-xs font-semibold">{isEn ? "High-demand industrial site — maintenance compliant with sector standards" : "Site industriel à haute exigence — entretien conforme aux normes sectorielles"}</p>
+                <p className="text-white text-xs font-semibold">{isEn ? "High-demand industrial site, maintenance compliant with sector standards" : "Site industriel à haute exigence, entretien conforme aux normes sectorielles"}</p>
               </div>
             </div>
             <div className="space-y-4">

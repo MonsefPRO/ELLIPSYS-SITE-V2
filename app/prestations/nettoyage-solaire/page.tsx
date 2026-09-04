@@ -28,16 +28,16 @@ export default async function PanneauxPhotovoltaiquesPage() {
   const isEn = lang === "en";
 
   const agents = [
-    { name: isEn ? "Dust / Pollution" : "Poussière / Pollution", nature: isEn ? "Global haze" : "Voile global", perte: "5 % – 15 %", risque: isEn ? "Low" : "Faible", risqueColor: "bg-slate-200 text-slate-700" },
-    { name: isEn ? "Pollen / Vegetation" : "Pollen / Végétation", nature: isEn ? "Adhesive film" : "Film adhésif", perte: "10 % – 20 %", risque: isEn ? "Medium" : "Moyen", risqueColor: "bg-amber-200 text-amber-800" },
-    { name: isEn ? "Bird droppings" : "Fientes d'oiseaux", nature: isEn ? "Total local occlusion" : "Occultation totale locale", perte: "20 % – 35 %", risque: isEn ? "Critical — Hot spots" : "Critique — Points chauds", risqueColor: "bg-red-500 text-white" },
-    { name: isEn ? "Sand / Sea salt" : "Sable / Sel marin", nature: isEn ? "Opaque abrasive haze" : "Voile opaque et abrasif", perte: "15 % – 30 %", risque: isEn ? "High — Micro-scratches" : "Élevé — Micro-rayures", risqueColor: "bg-brand-orange-500 text-white" },
+    { name: isEn ? "Dust / Pollution" : "Poussière / Pollution", nature: isEn ? "Global haze" : "Voile global", perte: "5 %, 15 %", risque: isEn ? "Low" : "Faible", risqueColor: "bg-slate-200 text-slate-700" },
+    { name: isEn ? "Pollen / Vegetation" : "Pollen / Végétation", nature: isEn ? "Adhesive film" : "Film adhésif", perte: "10 %, 20 %", risque: isEn ? "Medium" : "Moyen", risqueColor: "bg-amber-200 text-amber-800" },
+    { name: isEn ? "Bird droppings" : "Fientes d'oiseaux", nature: isEn ? "Total local occlusion" : "Occultation totale locale", perte: "20 %, 35 %", risque: isEn ? "Critical, Hot spots" : "Critique, Points chauds", risqueColor: "bg-red-500 text-white" },
+    { name: isEn ? "Sand / Sea salt" : "Sable / Sel marin", nature: isEn ? "Opaque abrasive haze" : "Voile opaque et abrasif", perte: "15 %, 30 %", risque: isEn ? "High, Micro-scratches" : "Élevé, Micro-rayures", risqueColor: "bg-brand-orange-500 text-white" },
   ];
 
   const comparatif = [
     { critere: isEn ? "Execution speed" : "Vitesse d'exécution", manuel: isEn ? "80 to 120 m² / hour (pole or rope access)" : "80 à 120 m² / heure (à la perche ou cordiste)", robot: isEn ? "Up to 1,200 m² / hour (≈ 2 MWc per day)" : "Jusqu'à 1 200 m² / heure (≈ 2 MWc par jour)" },
-    { critere: isEn ? "Uniformity" : "Homogénéité", manuel: isEn ? "Random — depends on cherry picker or rope access operator" : "Aléatoire — dépend de l'opérateur en nacelle ou cordiste", robot: isEn ? "Uniform over 100% of the treated surface" : "Uniforme sur 100 % de la surface traitée" },
-    { critere: isEn ? "Pressure on modules" : "Pression sur les modules", manuel: isEn ? "Uncontrolled — possible overload (cherry picker, rope access)" : "Non contrôlée — surcharge possible (nacelle, cordiste)", robot: isEn ? "Calibrated and constant (soft brushes)" : "Calibrée et constante (brosses douces)" },
+    { critere: isEn ? "Uniformity" : "Homogénéité", manuel: isEn ? "Random, depends on cherry picker or rope access operator" : "Aléatoire, dépend de l'opérateur en nacelle ou cordiste", robot: isEn ? "Uniform over 100% of the treated surface" : "Uniforme sur 100 % de la surface traitée" },
+    { critere: isEn ? "Pressure on modules" : "Pression sur les modules", manuel: isEn ? "Uncontrolled, possible overload (cherry picker, rope access)" : "Non contrôlée, surcharge possible (nacelle, cordiste)", robot: isEn ? "Calibrated and constant (soft brushes)" : "Calibrée et constante (brosses douces)" },
     { critere: isEn ? "Safety (CARSAT)" : "Sécurité (CARSAT)", manuel: isEn ? "High risk: work at height, cherry picker or rope access" : "Risque élevé : travail en hauteur, nacelle ou cordiste", robot: isEn ? "Zero risk (operator and pilot on the ground)" : "Risque nul (opérateur et télépilote au sol)" },
   ];
 
@@ -127,7 +127,7 @@ export default async function PanneauxPhotovoltaiquesPage() {
               </div>
               <div className="absolute bottom-5 left-5 right-5">
                 <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/15 border border-white/30 text-white text-sm font-bold backdrop-blur-sm">
-                  ☀️ {isEn ? "Real project — 31,000 m² solar farm, Vitry (71)" : "Chantier réel — centrale de 31 000 m², Vitry (71)"}
+                  ☀️ {isEn ? "Real project, 31,000 m² solar farm, Vitry (71)" : "Chantier réel, centrale de 31 000 m², Vitry (71)"}
                 </span>
               </div>
             </div>
@@ -135,8 +135,8 @@ export default async function PanneauxPhotovoltaiquesPage() {
               <h2 className="text-3xl font-bold text-slate-900 mb-5">{isEn ? "Estimating your yield loss" : "Estimer votre perte de rendement"}</h2>
               <p className="text-slate-600 leading-relaxed text-lg mb-6">
                 {isEn
-                  ? <>A soiled solar array (<strong>dust, pollen, sand, droppings</strong>) suffers significant production losses. Our intervention is an immediately profitable investment. To clean your installations whilst controlling the risk of <strong>micro-scratches</strong>, we deploy our remote-controlled <strong>tracked ground robot</strong>, capable of cleaning up to <strong>1,200 m² per hour</strong> — about <strong>2 MWc per day</strong> — whilst adapting to slopes of up to 25°. Its <strong>soft rotary brushes</strong> (1.2 m wide) sweep particles downwards, guaranteeing the optimal restoration of your panels&apos; rated efficiency.</>
-                  : <>Un parc solaire encrassé (<strong>poussières, pollens, sable, fientes</strong>) subit d&apos;importantes pertes de production. Notre intervention est un investissement immédiatement rentable. Pour nettoyer vos installations en maîtrisant le risque de <strong>micro-rayures</strong>, nous déployons notre <strong>robot terrestre sur chenilles</strong> télécommandé, capable de nettoyer jusqu&apos;à <strong>1 200 m² par heure</strong> — soit environ <strong>2 MWc par jour</strong> — en s&apos;adaptant à des pentes allant jusqu&apos;à 25°. Ses <strong>brosses rotatives souples</strong> (1,20 m de large) évacuent les particules vers le bas, garantissant la restitution optimale de l&apos;efficacité nominale de vos panneaux.</>}
+                  ? <>A soiled solar array (<strong>dust, pollen, sand, droppings</strong>) suffers significant production losses. Our intervention is an immediately profitable investment. To clean your installations whilst controlling the risk of <strong>micro-scratches</strong>, we deploy our remote-controlled <strong>tracked ground robot</strong>, capable of cleaning up to <strong>1,200 m² per hour</strong>, about <strong>2 MWc per day</strong>, whilst adapting to slopes of up to 25°. Its <strong>soft rotary brushes</strong> (1.2 m wide) sweep particles downwards, guaranteeing the optimal restoration of your panels&apos; rated efficiency.</>
+                  : <>Un parc solaire encrassé (<strong>poussières, pollens, sable, fientes</strong>) subit d&apos;importantes pertes de production. Notre intervention est un investissement immédiatement rentable. Pour nettoyer vos installations en maîtrisant le risque de <strong>micro-rayures</strong>, nous déployons notre <strong>robot terrestre sur chenilles</strong> télécommandé, capable de nettoyer jusqu&apos;à <strong>1 200 m² par heure</strong>, soit environ <strong>2 MWc par jour</strong>, en s&apos;adaptant à des pentes allant jusqu&apos;à 25°. Ses <strong>brosses rotatives souples</strong> (1,20 m de large) évacuent les particules vers le bas, garantissant la restitution optimale de l&apos;efficacité nominale de vos panneaux.</>}
               </p>
               <div className="bg-[#0e2f52]/5 border border-[#0e2f52]/20 rounded-2xl p-5 flex items-start gap-4">
                 <span className="text-brand-orange-500 text-4xl font-bold leading-none -mt-1 select-none shrink-0">&ldquo;</span>
@@ -350,7 +350,7 @@ export default async function PanneauxPhotovoltaiquesPage() {
         </div>
       </section>
 
-      {/* Maillage interne contextuel — de-orphelinise la landing solaire Montpellier
+      {/* Maillage interne contextuel, de-orphelinise la landing solaire Montpellier
           et renforce la page centrales PV (B2B). */}
       {!isEn && (
         <LiensUtiles

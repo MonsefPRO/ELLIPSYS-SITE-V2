@@ -1,4 +1,4 @@
-// Helper HubSpot CRM — création/mise à jour de Contact + Deal
+// Helper HubSpot CRM, création/mise à jour de Contact + Deal
 // Utilise un Private App Token (env: HUBSPOT_ACCESS_TOKEN)
 
 const HS_BASE = "https://api.hubapi.com";
@@ -11,7 +11,7 @@ export interface HubspotContactInput {
   phone?: string;
   city?: string;
   company?: string;
-  ownerId?: string;        // hubspot_owner_id — propriétaire du contact
+  ownerId?: string;        // hubspot_owner_id, propriétaire du contact
   // Propriétés custom (créées en amont dans HubSpot si besoin)
   custom?: Record<string, string>;
 }
@@ -22,8 +22,8 @@ export interface HubspotDealInput {
   pipeline?: string;       // ID du pipeline (default: "default")
   stage?: string;          // ID de l'étape (default: "appointmentscheduled" sur free CRM)
   contactId?: string;      // ID HubSpot du contact à associer
-  ownerId?: string;        // hubspot_owner_id — propriétaire du deal
-  description?: string;    // Description longue (multi-lignes) — affichée dans la fiche Deal
+  ownerId?: string;        // hubspot_owner_id, propriétaire du deal
+  description?: string;    // Description longue (multi-lignes), affichée dans la fiche Deal
   closeDate?: string;      // Date de clôture estimée (ISO)
   custom?: Record<string, string>;
 }

@@ -1,4 +1,4 @@
-// Helper Google Ads / GTM — Consent Mode v2 + conversion "generate_lead"
+// Helper Google Ads / GTM, Consent Mode v2 + conversion "generate_lead"
 // Utilisé par CookieBanner (consentement) et la page /devis (conversion lead).
 //
 // Principe : on ne hardcode AUCUN ID de conversion Google Ads ici.
@@ -35,7 +35,7 @@ export function updateAdsConsent(granted: boolean) {
   });
 }
 
-// Valeur de lead estimée par service (€) — sert au value-based bidding plus tard.
+// Valeur de lead estimée par service (€), sert au value-based bidding plus tard.
 // Basée sur le panier moyen réel de chaque prestation.
 const LEAD_VALUE: Record<string, number> = {
   toiture: 2500,        // démoussage + hydrofuge, toiture ~100 m²
@@ -73,7 +73,7 @@ export function pushLeadConversion(p: LeadParams) {
     lead_service_label: p.serviceLabel,
     lead_client_type: p.clientType,
     lead_city: p.city || "",
-    // Enhanced Conversions for Leads — données fournies par l'utilisateur.
+    // Enhanced Conversions for Leads, données fournies par l'utilisateur.
     // GTM/Google Ads les hashe (SHA-256) avant transmission. Jamais en clair côté Google.
     enhanced_conversion_data: {
       email: p.email || "",

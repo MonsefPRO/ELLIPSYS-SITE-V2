@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     "robot nettoyage panneaux solaires",
   ],
   openGraph: {
-    title: "Nettoyage de Centrales Photovoltaïques — Drone + Robot + Eau Filtrée",
+    title: "Nettoyage de Centrales Photovoltaïques, Drone + Robot + Eau Filtrée",
     description: "Restauration de production garantie pour exploitants et asset managers. Audit soiling gratuit sur votre centrale. France entière.",
     url: "https://ellipsys-solutions.com/nettoyage-panneaux-photovoltaiques",
     images: ["/images/avant-apres-panneaux.jpg"],
@@ -108,7 +108,7 @@ export default function NettoyagePanneauxPhotovoltaiques() {
         </div>
       </section>
 
-      {/* ════════════════ PROBLÈME — Perte d'argent ════════════════ */}
+      {/* ════════════════ PROBLÈME, Perte d'argent ════════════════ */}
       <section className="py-20 px-4 bg-slate-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
@@ -219,7 +219,7 @@ export default function NettoyagePanneauxPhotovoltaiques() {
               },
               {
                 title: "Habilitations électriques",
-                desc: "Équipe certifiée B2V/BR/BC. Coupures partielles maîtrisées en coordination avec votre exploitant.",
+                desc: "Équipe habilitée B0-H0-H0V pour intervenir en sécurité à proximité des installations électriques, en coordination avec votre exploitant.",
               },
               {
                 title: "Couverture nationale",
@@ -263,7 +263,7 @@ export default function NettoyagePanneauxPhotovoltaiques() {
             </div>
 
             <div className="bg-[#0e2f52] text-white rounded-2xl p-8 transform md:scale-105 shadow-2xl">
-              <p className="text-xs font-bold uppercase tracking-widest text-brand-orange-400 mb-2">Centrales au sol — ⭐ Recommandé</p>
+              <p className="text-xs font-bold uppercase tracking-widest text-brand-orange-400 mb-2">Centrales au sol, ⭐ Recommandé</p>
               <h3 className="text-2xl font-black mb-3">Contrat annuel multi-sites</h3>
               <p className="text-slate-300 text-sm leading-relaxed mb-4">
                 Tarification €/MWc/an. 2 à 4 passages annuels selon votre exposition. Audit soiling intégré, reporting trimestriel.
@@ -287,7 +287,7 @@ export default function NettoyagePanneauxPhotovoltaiques() {
         </div>
       </section>
 
-      {/* ════════════════ CTA FINAL — Audit soiling ════════════════ */}
+      {/* ════════════════ CTA FINAL, Audit soiling ════════════════ */}
       <section className="py-24 px-4 bg-gradient-to-br from-brand-orange-500 to-brand-orange-600 text-white">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-sm font-bold uppercase tracking-widest mb-4 opacity-90">— Offre dédiée exploitants & asset managers —</p>
@@ -295,7 +295,7 @@ export default function NettoyagePanneauxPhotovoltaiques() {
             Audit soiling gratuit sur votre centrale
           </h2>
           <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto leading-relaxed">
-            Vous nous transmettez 30 jours de production. Nous calculons votre perte exacte vs le P50 théorique. Vous savez précisément combien vous perdez — et combien vous récupérerez.
+            Vous nous transmettez 30 jours de production. Nous calculons votre perte exacte vs le P50 théorique. Vous savez précisément combien vous perdez, et combien vous récupérerez.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

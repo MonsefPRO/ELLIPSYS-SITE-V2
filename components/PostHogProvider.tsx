@@ -5,7 +5,7 @@ import { useEffect } from "react";
 
 export default function PostHogProvider() {
   useEffect(() => {
-    // Clé publique PostHog — NEXT_PUBLIC_ = exposée au navigateur par design
+    // Clé publique PostHog, NEXT_PUBLIC_ = exposée au navigateur par design
     const key  = process.env.NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN;
     // Reverse-proxy via /ingest pour contourner les ad-blockers.
     // ui_host pointe vers eu.posthog.com pour que les liens "Voir dans PostHog" restent corrects.
@@ -15,7 +15,7 @@ export default function PostHogProvider() {
     // Si pas de clé configurée → on ne fait rien (évite crash + log inutile)
     if (!key) {
       if (process.env.NODE_ENV === "development") {
-        console.info("[PostHog] NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN absent — tracking désactivé.");
+        console.info("[PostHog] NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN absent, tracking désactivé.");
       }
       return;
     }

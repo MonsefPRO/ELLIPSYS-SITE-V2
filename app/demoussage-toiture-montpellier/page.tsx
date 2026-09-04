@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import LandingPage from "@/components/LandingPage";
 
 /**
- * Landing page Google Ads — groupe « Démoussage toiture ».
+ * Landing page Google Ads, groupe « Démoussage toiture ».
  * Sert aussi en référencement naturel après la campagne (contenu local réel).
  */
 export const metadata: Metadata = {
-  title: "Démoussage de toiture à Montpellier — devis gratuit 24 h",
+  title: "Démoussage de toiture à Montpellier, devis gratuit 24 h",
   description:
     "Démoussage de toiture par drone à Montpellier et dans l'Hérault. Sans échafaudage, sans monter sur les tuiles. Traitement Certibiocide + hydrofuge. Devis gratuit sous 24 h.",
   alternates: { canonical: "https://ellipsys-solutions.com/demoussage-toiture-montpellier" },
@@ -32,8 +32,8 @@ export default function Page() {
       formSoustitre="Deux champs suffisent pour qu'on vous rappelle."
       preuve={{
         image: "/images/demoussage-toiture-eimargues.jpg",
-        alt: "Avant après démoussage de toiture — chantier réel dans l'Hérault",
-        legende: "Chantier réel — démoussage de toiture à Aimargues (30), tuiles préservées",
+        alt: "Avant après démoussage de toiture, chantier réel dans l'Hérault",
+        legende: "Chantier réel, démoussage de toiture à Aimargues (30), tuiles préservées",
         badges: ["AVANT", "APRÈS"],
       }}
       benefices={[
@@ -45,12 +45,12 @@ export default function Page() {
         {
           titre: "Jamais de haute pression sur la tuile canal",
           texte:
-            "Le karcher arrache la couche superficielle des tuiles, ouvre leur porosité et accélère le réencrassement — tout en annulant certaines garanties fabricant. Nous travaillons à pression contrôlée avec un traitement Certibiocide homologué.",
+            "Le karcher arrache la couche superficielle des tuiles, ouvre leur porosité et accélère le réencrassement, tout en annulant certaines garanties fabricant. Nous travaillons à pression contrôlée avec un traitement Certibiocide homologué.",
         },
         {
           titre: "Hydrofuge en option, pour espacer les entretiens",
           texte:
-            "Après démoussage, un traitement hydrofuge réduit la porosité de la tuile et retarde nettement le retour des mousses. Nous vous disons franchement quand il est utile — et quand il ne l'est pas.",
+            "Après démoussage, un traitement hydrofuge réduit la porosité de la tuile et retarde nettement le retour des mousses. Nous vous disons franchement quand il est utile, et quand il ne l'est pas.",
         },
         {
           titre: "Rapport photo avant/après daté",
@@ -75,7 +75,7 @@ export default function Page() {
           note: "Tarif dégressif selon la surface. Rapport photo fourni pour l'AG.",
         },
       ]}
-      prixNote="Ces fourchettes sont indicatives : le prix réel dépend de la surface, de la pente, de l'accessibilité et de l'état de la couverture. Sur Montpellier et la Métropole, aucun frais de déplacement — nous partons de notre base."
+      prixNote="Ces fourchettes sont indicatives : le prix réel dépend de la surface, de la pente, de l'accessibilité et de l'état de la couverture. Sur Montpellier et la Métropole, aucun frais de déplacement, nous partons de notre base."
       faq={[
         {
           q: "Quand faut-il démousser sa toiture dans l'Hérault ?",
@@ -91,7 +91,7 @@ export default function Page() {
         },
         {
           q: "Intervenez-vous autour de Montpellier ou seulement en ville ?",
-          r: "Nous couvrons toute la Métropole et le nord de Montpellier — Saint-Gély-du-Fesc, Saint-Clément-de-Rivière, Montferrier, Assas, Clapiers — ainsi que le littoral et une large partie de l'Hérault et du Gard. Notre base est à Montpellier, donc pas de frais de déplacement sur la métropole.",
+          r: "Nous couvrons toute la Métropole et le nord de Montpellier, Saint-Gély-du-Fesc, Saint-Clément-de-Rivière, Montferrier, Assas, Clapiers, ainsi que le littoral et une large partie de l'Hérault et du Gard. Notre base est à Montpellier, donc pas de frais de déplacement sur la métropole.",
         },
       ]}
       communes={[

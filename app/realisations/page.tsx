@@ -49,13 +49,13 @@ export default async function RealisationsPage() {
                 <span className="bg-emerald-500 text-white px-3 py-1 rounded-full text-xs font-black tracking-widest shadow-md">{isEn ? "AFTER" : "APRÈS"}</span>
               </div>
               <div className="absolute bottom-3 right-3">
-                <span className="bg-black/50 text-white px-2 py-1 rounded-lg text-xs font-semibold backdrop-blur-sm">{isEn ? "Real photo — Ellipsys project" : "Photo réelle — Chantier Ellipsys"}</span>
+                <span className="bg-black/50 text-white px-2 py-1 rounded-lg text-xs font-semibold backdrop-blur-sm">{isEn ? "Real photo, Ellipsys project" : "Photo réelle, Chantier Ellipsys"}</span>
               </div>
             </div>
             <div className="p-6 md:p-8">
               <div className="flex items-center gap-3 mb-4">
                 <Building2 className="w-7 h-7 text-brand-orange-500 shrink-0" />
-                <h2 className="text-xl font-bold text-[#0e2f52]">{isEn ? "Glazing Cleaning — Scutum Montpellier" : "Nettoyage de Vitrages — Scutum Montpellier"}</h2>
+                <h2 className="text-xl font-bold text-[#0e2f52]">{isEn ? "Glazing Cleaning, Scutum Montpellier" : "Nettoyage de Vitrages, Scutum Montpellier"}</h2>
               </div>
               <div className="flex flex-wrap gap-4 mb-6 pb-6 border-b border-slate-100 text-sm">
                 <div className="flex items-center gap-2 text-slate-600"><MapPin className="w-4 h-4 text-slate-400" /> Montpellier (34)</div>
@@ -92,13 +92,13 @@ export default async function RealisationsPage() {
                 <span className="bg-red-600 text-white px-3 py-1 rounded-full text-xs font-black tracking-widest shadow-md">{isEn ? "BEFORE" : "AVANT"}</span>
               </div>
               <div className="absolute bottom-3 right-3">
-                <span className="bg-black/50 text-white px-2 py-1 rounded-lg text-xs font-semibold backdrop-blur-sm">{isEn ? "Real photo — Ellipsys project" : "Photo réelle — Chantier Ellipsys"}</span>
+                <span className="bg-black/50 text-white px-2 py-1 rounded-lg text-xs font-semibold backdrop-blur-sm">{isEn ? "Real photo, Ellipsys project" : "Photo réelle, Chantier Ellipsys"}</span>
               </div>
             </div>
             <div className="p-6 md:p-8">
               <div className="flex items-center gap-3 mb-4">
                 <Home className="w-7 h-7 text-brand-orange-500 shrink-0" />
-                <h2 className="text-xl font-bold text-[#0e2f52]">{isEn ? "Roof Moss Treatment — Aimargues" : "Démoussage de Toiture — Aimargues"}</h2>
+                <h2 className="text-xl font-bold text-[#0e2f52]">{isEn ? "Roof Moss Treatment, Aimargues" : "Démoussage de Toiture, Aimargues"}</h2>
               </div>
               <div className="flex flex-wrap gap-4 mb-6 pb-6 border-b border-slate-100 text-sm">
                 <div className="flex items-center gap-2 text-slate-600"><MapPin className="w-4 h-4 text-slate-400" /> Aimargues (30)</div>
@@ -134,13 +134,13 @@ export default async function RealisationsPage() {
                 <span className="bg-sky-500 text-white px-3 py-1 rounded-full text-xs font-black tracking-widest shadow-md">{isEn ? "DRONE VIEW" : "VUE DRONE"}</span>
               </div>
               <div className="absolute bottom-3 right-3">
-                <span className="bg-black/50 text-white px-2 py-1 rounded-lg text-xs font-semibold backdrop-blur-sm">{isEn ? "Real photo — Ellipsys project" : "Photo réelle — Chantier Ellipsys"}</span>
+                <span className="bg-black/50 text-white px-2 py-1 rounded-lg text-xs font-semibold backdrop-blur-sm">{isEn ? "Real photo, Ellipsys project" : "Photo réelle, Chantier Ellipsys"}</span>
               </div>
             </div>
             <div className="p-6 md:p-8">
               <div className="flex items-center gap-3 mb-4">
                 <Sun className="w-7 h-7 text-brand-orange-500 shrink-0" />
-                <h2 className="text-xl font-bold text-[#0e2f52]">{isEn ? "Solar Farm Cleaning — Montchanin" : "Nettoyage de Centrale Solaire — Montchanin"}</h2>
+                <h2 className="text-xl font-bold text-[#0e2f52]">{isEn ? "Solar Farm Cleaning, Montchanin" : "Nettoyage de Centrale Solaire, Montchanin"}</h2>
               </div>
               <div className="flex flex-wrap gap-4 mb-6 pb-6 border-b border-slate-100 text-sm">
                 <div className="flex items-center gap-2 text-slate-600"><MapPin className="w-4 h-4 text-slate-400" /> Montchanin (71)</div>
@@ -148,7 +148,7 @@ export default async function RealisationsPage() {
                 <div className="flex items-center gap-2 text-slate-600"><Target className="w-4 h-4 text-slate-400" /> {isEn ? "Robot Ellipsys + Filtered Water" : "Robot Ellipsys + Eau Filtrée"}</div>
               </div>
               <p className="text-sm text-slate-600 leading-relaxed mb-6">
-                <strong>{isEn ? "The challenge:" : "Le défi :"}</strong> {isEn ? "A 22,000 m² ground-mounted solar farm soiled by pollen, dust and organic deposits — production losses building up with every sunny day." : "Une centrale photovoltaïque au sol de 22 000 m² encrassée par le pollen, les poussières et les dépôts organiques — des pertes de production qui s'accumulent à chaque journée d'ensoleillement."}<br /><br />
+                <strong>{isEn ? "The challenge:" : "Le défi :"}</strong> {isEn ? "A 22,000 m² ground-mounted solar farm soiled by pollen, dust and organic deposits, production losses building up with every sunny day." : "Une centrale photovoltaïque au sol de 22 000 m² encrassée par le pollen, les poussières et les dépôts organiques, des pertes de production qui s'accumulent à chaque journée d'ensoleillement."}<br /><br />
                 <strong>{isEn ? "Our approach:" : "Notre action :"}</strong> {isEn ? <>Deployment of our <strong>remote-controlled robot</strong> (soft rotary brushes, no detergent) across the arrays. Uniform cleaning, no micro-scratches, zero work at height. The aerial view above shows the scale of the site: panels back to their rated efficiency, with no production downtime.</> : <>Déploiement de notre <strong>robot télécommandé</strong> (brosses rotatives souples, sans détergent) sur les rangées de panneaux. Nettoyage homogène, sans micro-rayures, zéro travail en hauteur. La vue aérienne ci-dessus donne l&apos;échelle du site : des panneaux qui retrouvent leur rendement nominal, sans arrêt de production.</>}
               </p>
               <Link href="/prestations/nettoyage-solaire" className="inline-flex items-center gap-2 font-bold text-brand-orange-500 hover:gap-4 transition-all text-sm mt-4">
@@ -167,13 +167,13 @@ export default async function RealisationsPage() {
                 <span className="bg-emerald-500 text-white px-3 py-1 rounded-full text-xs font-black tracking-widest shadow-md">{isEn ? "AFTER" : "APRÈS"}</span>
               </div>
               <div className="absolute bottom-3 right-3">
-                <span className="bg-black/50 text-white px-2 py-1 rounded-lg text-xs font-semibold backdrop-blur-sm">{isEn ? "Real photo — Ellipsys project" : "Photo réelle — Chantier Ellipsys"}</span>
+                <span className="bg-black/50 text-white px-2 py-1 rounded-lg text-xs font-semibold backdrop-blur-sm">{isEn ? "Real photo, Ellipsys project" : "Photo réelle, Chantier Ellipsys"}</span>
               </div>
             </div>
             <div className="p-6 md:p-8">
               <div className="flex items-center gap-3 mb-4">
                 <Sun className="w-7 h-7 text-brand-orange-500 shrink-0" />
-                <h2 className="text-xl font-bold text-[#0e2f52]">{isEn ? "Solar Farm Cleaning — Vitry" : "Nettoyage de Centrale Solaire — Vitry"}</h2>
+                <h2 className="text-xl font-bold text-[#0e2f52]">{isEn ? "Solar Farm Cleaning, Vitry" : "Nettoyage de Centrale Solaire, Vitry"}</h2>
               </div>
               <div className="flex flex-wrap gap-4 mb-6 pb-6 border-b border-slate-100 text-sm">
                 <div className="flex items-center gap-2 text-slate-600"><MapPin className="w-4 h-4 text-slate-400" /> Vitry (71)</div>
@@ -181,8 +181,8 @@ export default async function RealisationsPage() {
                 <div className="flex items-center gap-2 text-slate-600"><Target className="w-4 h-4 text-slate-400" /> {isEn ? "Drone Survey + Robot" : "Repérage Drone + Robot"}</div>
               </div>
               <p className="text-sm text-slate-600 leading-relaxed mb-6">
-                <strong>{isEn ? "The challenge:" : "Le défi :"}</strong> {isEn ? "A 31,000 m² ground-mounted solar farm — over 3 hectares of panels to restore without disrupting production." : "Une centrale photovoltaïque au sol de 31 000 m² — plus de 3 hectares de panneaux à restaurer sans perturber la production."}<br /><br />
-                <strong>{isEn ? "Our approach:" : "Notre action :"}</strong> {isEn ? <>An <strong>aerial survey</strong> first maps the site: access, row spacing, sensitive areas. Our robot then covers up to <strong>1,200 m² per hour</strong> — the equivalent of 2 MWc cleaned in a single day. The before/after above speaks for itself.</> : <>Un <strong>repérage aérien</strong> cartographie d&apos;abord le site : accès, espacement des rangées, zones sensibles. Notre robot couvre ensuite jusqu&apos;à <strong>1 200 m² par heure</strong> — l&apos;équivalent de 2 MWc nettoyés en une seule journée. L&apos;avant/après ci-dessus parle de lui-même.</>}
+                <strong>{isEn ? "The challenge:" : "Le défi :"}</strong> {isEn ? "A 31,000 m² ground-mounted solar farm, over 3 hectares of panels to restore without disrupting production." : "Une centrale photovoltaïque au sol de 31 000 m², plus de 3 hectares de panneaux à restaurer sans perturber la production."}<br /><br />
+                <strong>{isEn ? "Our approach:" : "Notre action :"}</strong> {isEn ? <>An <strong>aerial survey</strong> first maps the site: access, row spacing, sensitive areas. Our robot then covers up to <strong>1,200 m² per hour</strong>, the equivalent of 2 MWc cleaned in a single day. The before/after above speaks for itself.</> : <>Un <strong>repérage aérien</strong> cartographie d&apos;abord le site : accès, espacement des rangées, zones sensibles. Notre robot couvre ensuite jusqu&apos;à <strong>1 200 m² par heure</strong>, l&apos;équivalent de 2 MWc nettoyés en une seule journée. L&apos;avant/après ci-dessus parle de lui-même.</>}
               </p>
               <Link href="/nettoyage-panneaux-photovoltaiques" className="inline-flex items-center gap-2 font-bold text-brand-orange-500 hover:gap-4 transition-all text-sm mt-4">
                 {isEn ? "Our offer for PV farm operators" : "Notre offre exploitants de centrales PV"} <ChevronRight className="w-4 h-4" />

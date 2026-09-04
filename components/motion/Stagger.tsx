@@ -21,7 +21,7 @@ const itemVariants = {
   },
 };
 
-/* Wraps the entire grid/list — triggers stagger */
+/* Wraps the entire grid/list, triggers stagger */
 export function StaggerContainer({ children, className = "" }: { children: ReactNode; className?: string }) {
   return (
     <motion.div

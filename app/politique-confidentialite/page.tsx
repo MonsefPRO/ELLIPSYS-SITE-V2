@@ -38,7 +38,7 @@ export default async function PolitiqueConfidentialitePage() {
               <p><strong>{isEn ? "Email:" : "Email :"}</strong> contact@ellipsys-group.com</p>
               <p><strong>{isEn ? "Telephone:" : "Telephone :"}</strong> 04 67 20 97 09</p>
               <p><strong>{isEn ? "Publication manager:" : "Responsable de publication :"}</strong> {isEn ? "Ellipsys Solutions Management" : "Direction Ellipsys Solutions"}</p>
-              <p><strong>{isEn ? "Hosting:" : "Hebergement :"}</strong> Netlify, Inc. — 512 2nd Street, Suite 200, San Francisco, CA 94107, USA</p>
+              <p><strong>{isEn ? "Hosting:" : "Hebergement :"}</strong> Netlify, Inc., 512 2nd Street, Suite 200, San Francisco, CA 94107, USA</p>
             </div>
           </div>
 
@@ -119,13 +119,13 @@ export default async function PolitiqueConfidentialitePage() {
               {isEn ? (
                 <>
                   <li><strong>Essential cookies:</strong> Site operation, preference management</li>
-                  <li><strong>PostHog (analytics):</strong> Visitor behaviour analysis — anonymised data, EU servers</li>
+                  <li><strong>PostHog (analytics):</strong> Visitor behaviour analysis, anonymised data, EU servers</li>
                   <li><strong>Google Tag Manager:</strong> Centralised marketing tag management</li>
                 </>
               ) : (
                 <>
                   <li><strong>Cookies nécessaires :</strong> Fonctionnement du site, gestion des préférences</li>
-                  <li><strong>PostHog (analytique) :</strong> Analyse du comportement des visiteurs — données anonymisées, serveurs EU</li>
+                  <li><strong>PostHog (analytique) :</strong> Analyse du comportement des visiteurs, données anonymisées, serveurs EU</li>
                   <li><strong>Google Tag Manager :</strong> Gestion centralisée des balises marketing</li>
                 </>
               )}
@@ -239,7 +239,7 @@ export default async function PolitiqueConfidentialitePage() {
             </p>
             <div className="mt-4 space-y-2 text-sm text-slate-700">
               <p><strong>Email :</strong> <a href="mailto:contact@ellipsys-group.com" className="text-brand-orange-500 hover:underline">contact@ellipsys-group.com</a></p>
-              <p><strong>{isEn ? "Post:" : "Courrier :"}</strong> Ellipsys Solutions — 159 Rue de Thor, 34000 Montpellier</p>
+              <p><strong>{isEn ? "Post:" : "Courrier :"}</strong> Ellipsys Solutions, 159 Rue de Thor, 34000 Montpellier</p>
               <p><strong>{isEn ? "Telephone:" : "Telephone :"}</strong> 04 67 20 97 09</p>
             </div>
             <p className="text-slate-500 text-xs mt-6">

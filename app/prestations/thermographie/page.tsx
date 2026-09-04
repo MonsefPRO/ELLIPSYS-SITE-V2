@@ -40,7 +40,7 @@ export default async function ThermographiePage() {
       title: "Energy Performance and Buildings",
       desc: <>Did you know that <strong>50% of energy losses</strong> escape through the roof and upper sections of a building? To meet renovation obligations, a <strong>thermal audit</strong> is essential. Equipped with the <strong>DJI Matrice 4T</strong> range integrating radiometric cameras (640x512 resolution) and laser rangefinders (1,800 m range), we map your facades and flat roofs with extreme precision. We instantly detect <strong>thermal bridges</strong>, insulation defects and heat network leaks.</>,
       img: "/images/thermographie-industrie.png",
-      imgCaption: "Thermal mapping of facade — thermal bridges detected in red",
+      imgCaption: "Thermal mapping of facade, thermal bridges detected in red",
     },
     {
       badge: "Solar Parks",
@@ -48,7 +48,7 @@ export default async function ThermographiePage() {
       title: "Predictive Maintenance of Photovoltaic Parks",
       desc: <>Across vast hectares of solar panels, manual inspection is time-consuming and imprecise. <strong>Drone thermography</strong> enables rapid overflight to immediately identify <strong>dead cells</strong>, disconnected zones and <strong>hotspots</strong>. This data, integrated into precise reports, enables you to orchestrate <strong>surgical maintenance operations</strong> and secure your investments.</>,
       img: "/images/thermographie-solaire.png",
-      imgCaption: "Thermal inspection of PV park — defective cells geolocated",
+      imgCaption: "Thermal inspection of PV park, defective cells geolocated",
     },
   ] : [
     {
@@ -57,7 +57,7 @@ export default async function ThermographiePage() {
       title: "Enjeux Énergétiques et Bâtiments",
       desc: <>Saviez-vous que <strong>50 % des déperditions énergétiques</strong> s&apos;échappent par la toiture et les parties supérieures d&apos;un bâtiment ? Pour répondre aux obligations de rénovation, l&apos;<strong>audit thermique</strong> est indispensable. Équipés de la gamme <strong>DJI Matrice 4T</strong> intégrant des caméras radiométriques (résolution 640x512) et des télémètres laser (portée 1800 m), nous cartographions vos façades et toitures-terrasses avec une extrême finesse. Nous détectons instantanément les <strong>ponts thermiques</strong>, les défauts d&apos;isolation et les fuites de réseaux de chaleur.</>,
       img: "/images/thermographie-industrie.png",
-      imgCaption: "Cartographie thermique façade — ponts thermiques détectés en rouge",
+      imgCaption: "Cartographie thermique façade, ponts thermiques détectés en rouge",
     },
     {
       badge: "Parcs Solaires",
@@ -65,7 +65,7 @@ export default async function ThermographiePage() {
       title: "Maintenance Prédictive des Parcs Photovoltaïques",
       desc: <>Sur de vastes hectares de panneaux solaires, une inspection manuelle est chronophage et imprécise. La <strong>thermographie par drone</strong> permet un survol rapide pour identifier immédiatement les <strong>cellules mortes</strong>, les zones déconnectées et les <strong>points chauds (Hotspots)</strong>. Ces données, intégrées dans des rapports précis, permettent d&apos;orchestrer vos opérations de <strong>maintenance chirurgicale</strong> et de sécuriser vos investissements.</>,
       img: "/images/thermographie-solaire.png",
-      imgCaption: "Inspection thermique de parc PV — cellules défectueuses géolocalisées",
+      imgCaption: "Inspection thermique de parc PV, cellules défectueuses géolocalisées",
     },
   ];
 

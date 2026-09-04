@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 
-// LinkedIn Insight Tag — retargeting + base pour campagnes LinkedIn Conversion.
+// LinkedIn Insight Tag, retargeting + base pour campagnes LinkedIn Conversion.
 // RGPD : ne se charge QUE si l'utilisateur a accepté les cookies (comme PostHog/GTM).
 // Le Partner ID vient de NEXT_PUBLIC_LINKEDIN_PARTNER_ID (à renseigner une fois le
 // compte LinkedIn Ads activé → Campaign Manager > Ressources du compte > Insight Tag).

@@ -61,7 +61,7 @@ export default function DevisPage() {
   const isEn = typeof document !== "undefined" && document.cookie.includes("lang=en");
   const SERVICES = isEn ? SERVICES_EN : SERVICES_FR;
 
-  // Analytics — page view (1 seule fois au mount)
+  // Analytics, page view (1 seule fois au mount)
   useEffect(() => { track(Events.DEVIS_PAGE_VIEWED, { lang: isEn ? "en" : "fr" }); }, [isEn]);
 
   // ── URL params : pré-sélection automatique du service + type client ──
@@ -104,13 +104,13 @@ export default function DevisPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // Analytics — changement type client
+  // Analytics, changement type client
   const handleClientType = (t: "pro" | "particulier") => {
     setClientType(t);
     track(Events.DEVIS_CLIENT_TYPE_SELECTED, { client_type: t });
   };
 
-  // Analytics — sélection service
+  // Analytics, sélection service
   const handleService = (s: ServiceKey) => {
     setService(s);
     const label = SERVICES.find((x) => x.key === s)?.label ?? s;
@@ -175,7 +175,7 @@ export default function DevisPage() {
       base.message ? `Commentaire :\n${base.message}` : "",
     ].filter(Boolean).join("\n");
 
-    // Construction du FormData — supporte les fichiers attachés
+    // Construction du FormData, supporte les fichiers attachés
     const fd = new FormData();
     fd.append("clientType", clientType);
     fd.append("service", service);
@@ -300,8 +300,8 @@ export default function DevisPage() {
           <QuickCallbackForm source="devis_express" />
           <p className="text-center text-xs text-slate-400 mt-5 pt-4 border-t border-slate-100">
             {isEn
-              ? "Prefer to detail your project? The full form is just below — it helps us prepare a more precise quote."
-              : "Vous préférez détailler votre projet ? Le formulaire complet est juste en dessous — il nous permet de chiffrer plus précisément."}
+              ? "Prefer to detail your project? The full form is just below, it helps us prepare a more precise quote."
+              : "Vous préférez détailler votre projet ? Le formulaire complet est juste en dessous, il nous permet de chiffrer plus précisément."}
           </p>
         </div>
       </section>
@@ -745,8 +745,8 @@ export default function DevisPage() {
                         <Camera className="w-7 h-7 text-brand-orange-500 mx-auto mb-2" />
                         <p className="text-sm font-semibold text-slate-700">
                           {isEn
-                            ? "📸 Our tip: add photos of your site (roof, façade, panels). They help us tailor our response precisely to your needs — and reply faster."
-                            : "📸 Notre conseil : ajoutez des photos de votre site (toiture, façade, panneaux). Elles nous permettent d'adapter précisément notre réponse à votre besoin — et de vous répondre plus vite."}
+                            ? "📸 Our tip: add photos of your site (roof, façade, panels). They help us tailor our response precisely to your needs, and reply faster."
+                            : "📸 Notre conseil : ajoutez des photos de votre site (toiture, façade, panneaux). Elles nous permettent d'adapter précisément notre réponse à votre besoin, et de vous répondre plus vite."}
                         </p>
                         <p className="text-xs text-slate-400 mt-1">
                           {isEn ? "Up to 5 files · 10 MB max per file · JPG, PNG, WebP, HEIC, PDF" : "Jusqu'à 5 fichiers · 10 Mo max par fichier · JPG, PNG, WebP, HEIC, PDF"}

@@ -31,7 +31,7 @@ export default async function SolaireSecteurPage() {
     {
       icon: Sun, color: "text-amber-500", bg: "bg-amber-50",
       title: "1 200 m²/h",
-      desc: isEn ? "Our robot's cleaning throughput on flat terrain — around 2 MWc per day. It cleans up to ten times faster than a manual team." : "Cadence de nettoyage de notre robot sur terrain plat — environ 2 MWc par jour. Il nettoie jusqu'à dix fois plus vite qu'une équipe manuelle.",
+      desc: isEn ? "Our robot's cleaning throughput on flat terrain, around 2 MWc per day. It cleans up to ten times faster than a manual team." : "Cadence de nettoyage de notre robot sur terrain plat, environ 2 MWc par jour. Il nettoie jusqu'à dix fois plus vite qu'une équipe manuelle.",
     },
     {
       icon: Zap, color: "text-brand-orange-500", bg: "bg-brand-orange-50",
@@ -52,19 +52,19 @@ export default async function SolaireSecteurPage() {
 
   const avantages = [
     {
-      title: isEn ? "1,200 m²/h — 10× faster than manual cleaning" : "1 200 m²/h — cadence 10× supérieure au nettoyage manuel",
-      desc: isEn ? "Our remote-controlled robot (1.2 m soft rotary brushes, dry or wet cleaning) covers up to 1,200 m² per hour — around 2 MWc per day — on slopes up to 25°. For fragmented, inaccessible surfaces or fragile roofing, our Drone Chronos takes over with homogeneous aerial spraying." : "Notre robot télécommandé (brosses rotatives souples de 1,20 m, nettoyage à sec ou humide) couvre jusqu'à 1 200 m² par heure — environ 2 MWc par jour — sur des pentes allant jusqu'à 25°. Pour les surfaces fragmentées, inaccessibles ou les toitures fragiles, notre drone Chronos prend le relais avec une pulvérisation aérienne homogène.",
+      title: isEn ? "1,200 m²/h, 10× faster than manual cleaning" : "1 200 m²/h, cadence 10× supérieure au nettoyage manuel",
+      desc: isEn ? "Our remote-controlled robot (1.2 m soft rotary brushes, dry or wet cleaning) covers up to 1,200 m² per hour, around 2 MWc per day, on slopes up to 25°. For fragmented, inaccessible surfaces or fragile roofing, our Drone Chronos takes over with homogeneous aerial spraying." : "Notre robot télécommandé (brosses rotatives souples de 1,20 m, nettoyage à sec ou humide) couvre jusqu'à 1 200 m² par heure, environ 2 MWc par jour, sur des pentes allant jusqu'à 25°. Pour les surfaces fragmentées, inaccessibles ou les toitures fragiles, notre drone Chronos prend le relais avec une pulvérisation aérienne homogène.",
     },
     {
-      title: isEn ? "Slopes up to 25° — automatic terrain adaptation" : "Pentes jusqu'à 25° — adaptation automatique au terrain",
+      title: isEn ? "Slopes up to 25°, automatic terrain adaptation" : "Pentes jusqu'à 25°, adaptation automatique au terrain",
       desc: isEn ? "Automatic adaptation to terrain configurations. Our robot adapts to inclines of up to 25° and crosses gaps of up to 70 cm between tables, covering virtually all existing solar arrays." : "Adaptation automatique aux configurations de terrain. Notre robot s'adapte aux inclinaisons jusqu'à 25° et franchit des écarts jusqu'à 70 cm entre les tables, couvrant la quasi-totalité des parcs solaires existants.",
     },
     {
-      title: isEn ? "Water sobriety — 10× savings vs conventional cleaning" : "Sobriété hydrique × 10 vs nettoyage classique",
-      desc: isEn ? "0.5 to 2 L/m² only, versus 15 to 25 L manually. A controlled rinse without detergent and optimal restoration of your panels' rated efficiency — a strong CSR argument for your sustainability reports." : "0,5 à 2 L/m2 seulement, contre 15 à 25 L en manuel. Un rinçage maîtrisé, sans détergent, et une restitution optimale de l'efficacité nominale de vos panneaux — argument RSE fort pour vos rapports de durabilité.",
+      title: isEn ? "Water sobriety, 10× savings vs conventional cleaning" : "Sobriété hydrique × 10 vs nettoyage classique",
+      desc: isEn ? "0.5 to 2 L/m² only, versus 15 to 25 L manually. A controlled rinse without detergent and optimal restoration of your panels' rated efficiency, a strong CSR argument for your sustainability reports." : "0,5 à 2 L/m2 seulement, contre 15 à 25 L en manuel. Un rinçage maîtrisé, sans détergent, et une restitution optimale de l'efficacité nominale de vos panneaux, argument RSE fort pour vos rapports de durabilité.",
     },
     {
-      title: isEn ? "Annual contracts — yield optimised over the long term" : "Contrats annuels — rendement optimisé sur le long terme",
+      title: isEn ? "Annual contracts, yield optimised over the long term" : "Contrats annuels, rendement optimisé sur le long terme",
       desc: isEn ? "1 to 2 scheduled visits for optimised year-round yield. According to IEA PVPS, natural soiling reduces output by 4 to 7% per year. During Saharan sand episodes, the loss climbs to 30%. Our intervention pays for itself within weeks." : "1 à 2 passages programmés pour un rendement optimisé toute l'année. Selon l'AIE PVPS, un encrassement naturel réduit la production de 4 à 7% par an. Lors des épisodes de sables sahariens, la perte grimpe jusqu'à 30%. Notre intervention se rentabilise en quelques semaines.",
     },
   ];
@@ -110,7 +110,7 @@ export default async function SolaireSecteurPage() {
                 </span>
               </div>
               <div className="absolute bottom-5 left-5 right-5">
-                <p className="text-white text-xs font-semibold">{isEn ? "Photovoltaic array — hybrid Robot + Drone solution to maximise yield" : "Parc photovoltaïque — solution hybride Robot + Drone pour maximiser le rendement"}</p>
+                <p className="text-white text-xs font-semibold">{isEn ? "Photovoltaic array, hybrid Robot + Drone solution to maximise yield" : "Parc photovoltaïque, solution hybride Robot + Drone pour maximiser le rendement"}</p>
               </div>
             </div>
 
@@ -179,8 +179,8 @@ export default async function SolaireSecteurPage() {
               </h3>
               <p className="text-slate-600 leading-relaxed text-sm">
                 {isEn
-                  ? <>Our <strong>remote-controlled robot</strong> (1.2 m soft rotary brushes, dry or wet cleaning) covers up to <strong>1,200 m² per hour</strong> — around 2 MWc per day — on slopes up to 25°. For fragmented, inaccessible surfaces or fragile roofing, our <strong>Drone Chronos</strong> takes over with homogeneous aerial spraying.</>
-                  : <>Notre <strong>robot télécommandé</strong> (brosses rotatives souples de 1,20 m, nettoyage à sec ou humide) couvre jusqu&apos;à <strong>1 200 m² par heure</strong> — environ 2 MWc par jour — sur des pentes allant jusqu&apos;à 25°. Pour les surfaces fragmentées, inaccessibles ou les toitures fragiles, notre <strong>drone Chronos</strong> prend le relais avec une pulvérisation aérienne homogène.</>}
+                  ? <>Our <strong>remote-controlled robot</strong> (1.2 m soft rotary brushes, dry or wet cleaning) covers up to <strong>1,200 m² per hour</strong>, around 2 MWc per day, on slopes up to 25°. For fragmented, inaccessible surfaces or fragile roofing, our <strong>Drone Chronos</strong> takes over with homogeneous aerial spraying.</>
+                  : <>Notre <strong>robot télécommandé</strong> (brosses rotatives souples de 1,20 m, nettoyage à sec ou humide) couvre jusqu&apos;à <strong>1 200 m² par heure</strong>, environ 2 MWc par jour, sur des pentes allant jusqu&apos;à 25°. Pour les surfaces fragmentées, inaccessibles ou les toitures fragiles, notre <strong>drone Chronos</strong> prend le relais avec une pulvérisation aérienne homogène.</>}
               </p>
               <div className="p-4 bg-slate-100 rounded-2xl flex items-start gap-3">
                 <AlertCircle className="w-4 h-4 text-slate-500 shrink-0 mt-0.5" />
@@ -193,7 +193,7 @@ export default async function SolaireSecteurPage() {
               <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('${IMG.field}')` }} />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
               <div className="absolute bottom-4 left-5 right-5">
-                <p className="text-white text-xs font-semibold">{isEn ? "Solar array — preventive maintenance to secure return on investment" : "Parc solaire — maintenance préventive pour sécuriser le retour sur investissement"}</p>
+                <p className="text-white text-xs font-semibold">{isEn ? "Solar array, preventive maintenance to secure return on investment" : "Parc solaire, maintenance préventive pour sécuriser le retour sur investissement"}</p>
               </div>
             </div>
           </div>

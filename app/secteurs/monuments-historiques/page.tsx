@@ -20,10 +20,10 @@ export default async function MonumentsPage() {
   const isEn = lang === "en";
 
   const stats = [
-    { value: "ABF",      label: isEn ? "Compliance — Architects of Buildings of France" : "Conformité Architectes des Bâtiments de France" },
+    { value: "ABF",      label: isEn ? "Compliance, Architects of Buildings of France" : "Conformité Architectes des Bâtiments de France" },
     { value: "0",        label: isEn ? "Mechanical contact on materials" : "Contact mécanique sur les matériaux" },
     { value: "< 15 bars", label: isEn ? "Maximum pressure in conservation mode" : "Pression maximale en mode conservation" },
-    { value: "L.621-31", label: isEn ? "Compliance — Heritage Code" : "Conformité Code du Patrimoine" },
+    { value: "L.621-31", label: isEn ? "Compliance, Heritage Code" : "Conformité Code du Patrimoine" },
   ];
 
   const features = [
@@ -40,7 +40,7 @@ export default async function MonumentsPage() {
     {
       icon: Scale, color: "text-blue-500", bg: "bg-blue-50",
       title: isEn ? "Preliminary diagnosis" : "Diagnostic préalable",
-      desc: isEn ? "Fragility and porosity analysis before any intervention. Each monument is unique — our free preliminary study assesses technical constraints." : "Analyse de fragilite et de porosite avant toute intervention. Chaque monument est unique — notre étude préalable gratuite évalue les contraintes techniques.",
+      desc: isEn ? "Fragility and porosity analysis before any intervention. Each monument is unique, our free preliminary study assesses technical constraints." : "Analyse de fragilite et de porosite avant toute intervention. Chaque monument est unique, notre étude préalable gratuite évalue les contraintes techniques.",
     },
     {
       icon: FileText, color: "text-purple-600", bg: "bg-purple-50",
@@ -51,19 +51,19 @@ export default async function MonumentsPage() {
 
   const avantages = [
     {
-      title: isEn ? "No mechanical pressure — preservation of ancient materials" : "Aucune pression mécanique — préservation des matériaux anciens",
+      title: isEn ? "No mechanical pressure, preservation of ancient materials" : "Aucune pression mécanique, préservation des matériaux anciens",
       desc: isEn ? "Listed or registered Historic Monument buildings require a radically different approach. Our drones and very low-pressure spray methods allow cleaning of ashlar, traditional renders, slate or lauze roofing without any aggressive mechanical contact." : "Les édifices classés ou inscrits au titre des Monuments Historiques exigent une approche radicalement différente. Nos drones et méthodes de pulvérisation à très basse pression permettent de nettoyer pierre de taille, enduits traditionnels, toitures en ardoise ou lauze sans aucun contact mécanique agressif.",
     },
     {
-      title: isEn ? "ABF-approved products — guaranteed compliance" : "Produits homologués ABF — conformité garantie",
+      title: isEn ? "ABF-approved products, guaranteed compliance" : "Produits homologués ABF, conformité garantie",
       desc: isEn ? "Neutral fungicidal agents compatible with heritage conservation prescriptions. All our products are selected for their compatibility with the requirements of the Architects of Buildings of France, guaranteeing the legality and reversibility of each intervention." : "Agents fongicides neutres compatibles avec les prescriptions patrimoniales. Tous nos produits sont sélectionnés pour leur compatibilité avec les exigences des Architectes des Bâtiments de France, garantissant la légalité et la réversibilité de chaque intervention.",
     },
     {
-      title: isEn ? "Free preliminary diagnosis — fragility and porosity analysis" : "Diagnostic préalable gratuit — analyse de fragilité et porosité",
+      title: isEn ? "Free preliminary diagnosis, fragility and porosity analysis" : "Diagnostic préalable gratuit, analyse de fragilité et porosité",
       desc: isEn ? "Each monument is unique. We carry out a free feasibility study to assess the technical and regulatory constraints and the methods best suited to your building before any intervention." : "Chaque monument est unique. Nous réalisons une étude de faisabilité gratuite pour évaluer les contraintes techniques, réglementaires et les méthodes adaptées à votre édifice avant toute intervention.",
     },
     {
-      title: isEn ? "Complete monitoring dossier — compliance with Article L.621-31" : "Dossier de suivi complet — conformité article L.621-31",
+      title: isEn ? "Complete monitoring dossier, compliance with Article L.621-31" : "Dossier de suivi complet, conformité article L.621-31",
       desc: isEn ? "Our intervention protocols are designed to strictly comply with the prescriptions of the Architects of Buildings of France (ABF). We support you through the administrative procedures (prior declaration, specific authorisations) in accordance with Article L.621-31 of the Heritage Code." : "Nos protocoles d'intervention sont conçus pour respecter scrupuleusement les prescriptions des Architectes des Bâtiments de France (ABF). Nous vous accompagnons dans les démarches administratives (déclaration préalable, autorisations spécifiques) conformément à l'article L.621-31 du Code du patrimoine.",
     },
   ];
@@ -109,7 +109,7 @@ export default async function MonumentsPage() {
                 </span>
               </div>
               <div className="absolute bottom-5 left-5 right-5">
-                <p className="text-white text-xs font-semibold">{isEn ? "Historic monument — drone intervention with no mechanical contact on materials" : "Monument historique — intervention drone sans contact mécanique sur les matériaux"}</p>
+                <p className="text-white text-xs font-semibold">{isEn ? "Historic monument, drone intervention with no mechanical contact on materials" : "Monument historique, intervention drone sans contact mécanique sur les matériaux"}</p>
               </div>
             </div>
 
@@ -177,7 +177,7 @@ export default async function MonumentsPage() {
               <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('${IMG.detail}')` }} />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
               <div className="absolute bottom-4 left-5 right-5">
-                <p className="text-white text-xs font-semibold">{isEn ? "Architectural heritage — low-pressure treatment preserving material integrity" : "Patrimoine architectural — traitement basse pression préservant l'intégrité des matériaux"}</p>
+                <p className="text-white text-xs font-semibold">{isEn ? "Architectural heritage, low-pressure treatment preserving material integrity" : "Patrimoine architectural, traitement basse pression préservant l'intégrité des matériaux"}</p>
               </div>
             </div>
             <div className="space-y-4">

@@ -1,5 +1,5 @@
 // Helper upload Supabase Storage pour les pièces jointes des devis.
-// Bucket: "devis-attachments" — auto-créé au premier upload (idempotent).
+// Bucket: "devis-attachments", auto-créé au premier upload (idempotent).
 
 import { createClient, SupabaseClient } from "@supabase/supabase-js";
 

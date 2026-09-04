@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import LandingPage from "@/components/LandingPage";
 
 /**
- * Landing page Google Ads — groupe « Nettoyage façade ».
+ * Landing page Google Ads, groupe « Nettoyage façade ».
  * Cible particuliers + copropriétés (cycle de décision plus long).
  */
 export const metadata: Metadata = {
-  title: "Nettoyage de façade à Montpellier — sans échafaudage",
+  title: "Nettoyage de façade à Montpellier, sans échafaudage",
   description:
     "Nettoyage de façade par drone à Montpellier et en Occitanie : enduit, pierre, crépi, bardage. Sans nacelle, sans échafaudage, sans fermeture de rue. Devis gratuit sous 24 h.",
   alternates: { canonical: "https://ellipsys-solutions.com/nettoyage-facade-montpellier" },
@@ -32,8 +32,8 @@ export default function Page() {
       formSoustitre="Maison ou copropriété : dites-nous simplement où vous êtes."
       preuve={{
         image: "/images/SCUTUMFACADE.png",
-        alt: "Avant après nettoyage de façade par drone — chantier réel",
-        legende: "Chantier réel — nettoyage de façade par drone, façade rendue à son aspect d'origine",
+        alt: "Avant après nettoyage de façade par drone, chantier réel",
+        legende: "Chantier réel, nettoyage de façade par drone, façade rendue à son aspect d'origine",
         badges: ["AVANT", "APRÈS"],
       }}
       benefices={[
@@ -87,7 +87,7 @@ export default function Page() {
         },
         {
           q: "Peut-on nettoyer une façade en pierre ancienne sans l'abîmer ?",
-          r: "Oui, à condition de bannir la haute pression, qui arrache la couche superficielle d'une pierre tendre et accélère son réencrassement. Nous travaillons à basse pression, avec un traitement adapté au calcaire — une méthode compatible avec les prescriptions des Architectes des Bâtiments de France en secteur protégé.",
+          r: "Oui, à condition de bannir la haute pression, qui arrache la couche superficielle d'une pierre tendre et accélère son réencrassement. Nous travaillons à basse pression, avec un traitement adapté au calcaire, une méthode compatible avec les prescriptions des Architectes des Bâtiments de France en secteur protégé.",
         },
         {
           q: "Combien de temps dure une intervention sur une façade ?",

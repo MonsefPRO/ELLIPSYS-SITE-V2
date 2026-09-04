@@ -147,7 +147,7 @@ export async function POST(req: NextRequest) {
     const pageUri = sanitize(body.pageUri, 300);
 
     // Validation
-    // Validation — on accepte un lead « rappelez-moi » qui n'a qu'un téléphone.
+    // Validation, on accepte un lead « rappelez-moi » qui n'a qu'un téléphone.
     // Règle : un nom + AU MOINS un moyen de recontact (e-mail ou téléphone).
     // La ville reste très utile mais ne doit plus bloquer un lead entrant.
     if (!name) return NextResponse.json({ error: "Nom requis." }, { status: 422 });
@@ -206,7 +206,7 @@ export async function POST(req: NextRequest) {
 
       const dealName = [`Devis ${serviceLabel}`, city, name]
         .filter(Boolean)
-        .join(" — ")
+        .join(", ")
         .slice(0, 200);
       const dealRes = await createDeal(
         {
@@ -220,7 +220,7 @@ export async function POST(req: NextRequest) {
       hubspotDealId = dealRes.id;
       if (dealRes.error) hubspotError = `${hubspotError ?? ""} Deal: ${dealRes.error}`;
     } else {
-      console.warn("[devis] HUBSPOT_ACCESS_TOKEN manquant — étape HubSpot ignorée");
+      console.warn("[devis] HUBSPOT_ACCESS_TOKEN manquant, étape HubSpot ignorée");
     }
 
     // ── 2) Backup Supabase ──────────────────────────────────────────────
@@ -264,7 +264,7 @@ export async function POST(req: NextRequest) {
     if (resendKey && teamEmails.length) {
       try {
         const resend = new Resend(resendKey);
-        const subject = `🚀 Nouveau devis — ${serviceLabel} — ${city}`;
+        const subject = `🚀 Nouveau devis, ${serviceLabel}, ${city}`;
 
         const detailsHtml = Object.entries(detailsObj)
           .map(([k, v]) => `<tr><td style="padding:6px 12px;color:#64748b;width:40%">${escapeHtml(k)}</td><td style="padding:6px 12px"><strong>${escapeHtml(v)}</strong></td></tr>`)
@@ -293,7 +293,7 @@ export async function POST(req: NextRequest) {
               <tr><td style="padding:8px 12px;border-bottom:1px solid #e2e8f0;color:#64748b">Nom</td><td style="padding:8px 12px;border-bottom:1px solid #e2e8f0">${escapeHtml(name)}</td></tr>
               ${email
                 ? `<tr><td style="padding:8px 12px;border-bottom:1px solid #e2e8f0;color:#64748b">Email</td><td style="padding:8px 12px;border-bottom:1px solid #e2e8f0"><a href="mailto:${escapeHtml(email)}">${escapeHtml(email)}</a></td></tr>`
-                : `<tr><td style="padding:8px 12px;border-bottom:1px solid #e2e8f0;color:#64748b">Email</td><td style="padding:8px 12px;border-bottom:1px solid #e2e8f0;color:#b45309;font-weight:600">Non fourni — À RAPPELER</td></tr>`}
+                : `<tr><td style="padding:8px 12px;border-bottom:1px solid #e2e8f0;color:#64748b">Email</td><td style="padding:8px 12px;border-bottom:1px solid #e2e8f0;color:#b45309;font-weight:600">Non fourni, À RAPPELER</td></tr>`}
               <tr><td style="padding:8px 12px;border-bottom:1px solid #e2e8f0;color:#64748b">Téléphone</td><td style="padding:8px 12px;border-bottom:1px solid #e2e8f0">${phone ? `<a href="tel:${escapeHtml(phone)}">${escapeHtml(phone)}</a>` : "<em style='color:#94a3b8'>non renseigné</em>"}</td></tr>
               <tr><td style="padding:8px 12px;border-bottom:1px solid #e2e8f0;color:#64748b">Ville</td><td style="padding:8px 12px;border-bottom:1px solid #e2e8f0">${escapeHtml(city)}</td></tr>
               ${siret ? `<tr><td style="padding:8px 12px;border-bottom:1px solid #e2e8f0;color:#64748b">SIRET</td><td style="padding:8px 12px;border-bottom:1px solid #e2e8f0">${escapeHtml(siret)}</td></tr>` : ""}

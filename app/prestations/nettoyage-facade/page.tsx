@@ -7,7 +7,7 @@ import { getLang } from "@/lib/getLang";
 import { LiensUtiles } from "@/components/LiensUtiles";
 
 export const metadata: Metadata = {
-  title: "Nettoyage façade par drone — Montpellier & Occitanie",
+  title: "Nettoyage façade par drone, Montpellier & Occitanie",
   description: "Nettoyage de façade par drone à Montpellier et en Occitanie : enduits, pierre calcaire, bardages métal et bois. Sans nacelle, sans fermeture de rue. Sel marin, pollution, sable saharien. Devis gratuit sous 24 h.",
   alternates: {
     canonical: "https://ellipsys-solutions.com/prestations/nettoyage-facade",
@@ -162,11 +162,11 @@ export default async function FacadesPage() {
       desc: <>No aerial platform blocking your business entrance, no <strong>scaffolding</strong> blocking your shopfront, no road closure disrupting your customers. Our <strong>Chronos drone</strong> manages the entire intervention from ground level. The result: your teams and your business experience a <strong>minimum of disruption</strong>.</>,
     },
     {
-      title: "Difficult-to-Access Areas — No Obstacle",
+      title: "Difficult-to-Access Areas, No Obstacle",
       desc: <>Set-back facade, heights of <strong>15 to 20 metres</strong>, angles impossible to reach by aerial platform: our drone accesses locations where human teams cannot go, <strong>with no logistical constraints</strong> or rental surcharges.</>,
     },
     {
-      title: "Rapid Execution — Minimal Site Preparation",
+      title: "Rapid Execution, Minimal Site Preparation",
       desc: <>Where an aerial platform crew mobilises <strong>an entire day</strong> of assembly/disassembly plus intervention, our drone covers very large surface areas in record time. Less downtime, <strong>lower overall cost</strong>.</>,
     },
     {
@@ -183,11 +183,11 @@ export default async function FacadesPage() {
       desc: <>Pas de nacelle bloquant l&apos;entrée de votre commerce, pas d&apos;<strong>échafaudage</strong> condamnant votre vitrine, pas de fermeture de rue perturbant vos clients. Notre <strong>drone Chronos</strong> pilote l&apos;intervention entièrement depuis le sol. Résultat : vos équipes et votre activité subissent un <strong>minimum de perturbation</strong>.</>,
     },
     {
-      title: "Zones Difficilement Accessibles — Aucun Obstacle",
+      title: "Zones Difficilement Accessibles, Aucun Obstacle",
       desc: <>Façade en retrait, hauteur de <strong>15 à 20 mètres</strong>, angles impossibles à atteindre en nacelle : notre drone accède là où les équipes humaines ne peuvent aller, <strong>sans contrainte logistique</strong> ni surcoût de location.</>,
     },
     {
-      title: "Vitesse d'Exécution — Préparation Chantier Réduite",
+      title: "Vitesse d'Exécution, Préparation Chantier Réduite",
       desc: <>Là où une équipe nacelle mobilise <strong>une journée entière</strong> de montage/démontage + intervention, notre drone couvre de très grandes surfaces en temps record. Moins de temps d&apos;immobilisation, <strong>moins de coût global</strong>.</>,
     },
     {
@@ -260,7 +260,7 @@ export default async function FacadesPage() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/55 to-transparent" />
               <div className="absolute bottom-5 left-5 right-5">
                 <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/15 border border-white/30 text-white text-sm font-bold backdrop-blur-sm">
-                  {isEn ? "🏛️ Natural stone facade — before intervention" : "🏛️ Façade en pierre naturelle — avant intervention"}
+                  {isEn ? "🏛️ Natural stone facade, before intervention" : "🏛️ Façade en pierre naturelle, avant intervention"}
                 </span>
               </div>
             </div>
@@ -275,8 +275,8 @@ export default async function FacadesPage() {
               </p>
               <p className="text-slate-600 leading-relaxed mb-6">
                 {isEn
-                  ? <>For <strong>R+6</strong> facades, industrial hangars of <strong>20 metres</strong> or buildings set back from the public highway, our drone accesses locations where an aerial platform cannot — in just a few hours, <strong>without mobilising any personnel at height</strong>.</>
-                  : <>Pour les façades de <strong>R+6</strong>, les hangars industriels de <strong>20 mètres</strong> ou les bâtiments en retrait de voie publique, notre drone accède là où la nacelle ne peut pas aller — en quelques heures seulement, <strong>sans mobilisation de personnel en hauteur</strong>.</>
+                  ? <>For <strong>R+6</strong> facades, industrial hangars of <strong>20 metres</strong> or buildings set back from the public highway, our drone accesses locations where an aerial platform cannot, in just a few hours, <strong>without mobilising any personnel at height</strong>.</>
+                  : <>Pour les façades de <strong>R+6</strong>, les hangars industriels de <strong>20 mètres</strong> ou les bâtiments en retrait de voie publique, notre drone accède là où la nacelle ne peut pas aller, en quelques heures seulement, <strong>sans mobilisation de personnel en hauteur</strong>.</>
                 }
               </p>
               <div className="bg-[#0e2f52]/5 border border-[#0e2f52]/20 rounded-2xl p-5 flex items-start gap-4">
@@ -338,7 +338,7 @@ export default async function FacadesPage() {
                 <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('${IMG.facadeDetail}')` }} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/55 to-transparent" />
                 <div className="absolute bottom-4 left-5 right-5">
-                  <p className="text-white text-xs font-semibold">{isEn ? "Detail of soiling on ornamental stone — crystallised deposits" : "Détail d'encrassement sur pierre ornementale — dépôts cristallisés"}</p>
+                  <p className="text-white text-xs font-semibold">{isEn ? "Detail of soiling on ornamental stone, crystallised deposits" : "Détail d'encrassement sur pierre ornementale, dépôts cristallisés"}</p>
                 </div>
               </div>
               <div className="bg-white rounded-2xl border border-slate-200 p-5 flex items-start gap-3">
@@ -411,7 +411,7 @@ export default async function FacadesPage() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/55 to-transparent" />
               <div className="absolute bottom-5 left-5 right-5">
                 <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/15 border border-white/30 text-white text-xs font-bold backdrop-blur-sm">
-                  {isEn ? "🏛️ Listed building — gentle low-pressure method" : "🏛️ Bâtiment classé — méthode douce basse pression"}
+                  {isEn ? "🏛️ Listed building, gentle low-pressure method" : "🏛️ Bâtiment classé, méthode douce basse pression"}
                 </span>
               </div>
             </div>
@@ -436,7 +436,7 @@ export default async function FacadesPage() {
         </div>
       </section>
 
-      {/* Maillage interne contextuel — de-orphelinise la landing façade Montpellier. */}
+      {/* Maillage interne contextuel, de-orphelinise la landing façade Montpellier. */}
       {!isEn && (
         <LiensUtiles
           liens={[

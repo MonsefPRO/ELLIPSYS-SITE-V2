@@ -81,7 +81,7 @@ export default async function HomePage() {
   const processSteps: { num: string; title: string; desc: ReactNode }[] = isEn
     ? [
         { num: "01", title: "Initial Contact & Free Quote", desc: "Immediate assessment of your requirements, site accessibility and urgency qualification." },
-        { num: "02", title: "Technical Assessment & Compliance", desc: <span>We apply a methodology strictly adapted to your site — from expert equipment selection (thermal imaging, specialist treatments) to full regulatory compliance management (<strong>DGAC</strong> flights, environmental standards).</span> },
+        { num: "02", title: "Technical Assessment & Compliance", desc: <span>We apply a methodology strictly adapted to your site, from expert equipment selection (thermal imaging, specialist treatments) to full regulatory compliance management (<strong>DGAC</strong> flights, environmental standards).</span> },
         { num: "03", title: "Secure On-Site Operation", desc: <span>Rapid deployment of drones and robots with the establishment of a strict <strong>third-party exclusion zone</strong> on the ground.</span> },
         { num: "04", title: "Deliverables Handover", desc: "You promptly receive your intervention reports, thermal imagery or compliance documentation." },
       ]
@@ -95,7 +95,7 @@ export default async function HomePage() {
   /* ── REVIEWS ─────────────────────────────────────────────── */
   const reviewDate = isEn ? "One week ago · Visited in April" : "Il y a une semaine · Visité en avril";
   const reviews = [
-    { name: "Nathalie Gombart", date: reviewDate, text: isEn ? "Roof demossing done — it looks brand new!! High-quality staff, competent and pleasant." : "Démoussage de ma toiture, elle est comme neuve!! Un personnel de qualité, compétent et agréable.", initials: "NG", color: "bg-blue-600" },
+    { name: "Nathalie Gombart", date: reviewDate, text: isEn ? "Roof demossing done, it looks brand new!! High-quality staff, competent and pleasant." : "Démoussage de ma toiture, elle est comme neuve!! Un personnel de qualité, compétent et agréable.", initials: "NG", color: "bg-blue-600" },
     { name: "S Scutum", date: reviewDate, text: isEn ? "Very professional company that handled drone facade cleaning on one of our buildings. Serious work, efficient and well-organised team." : "Entreprise très professionnelle qui a pris en charge le nettoyage de façade de l'un de nos bâtiments par drone. Travail sérieux, équipe efficace et bien organisée.", initials: "SC", color: "bg-emerald-600" },
     { name: "Famille Levaillant", date: reviewDate, text: isEn ? "Results beyond our expectations. A serious and efficient company that honours its commitments." : "Résultat au delà de nos attentes. Société sérieuse, efficace et respecte ses engagements.", initials: "FL", color: "bg-brand-orange-600" },
     { name: "Scutum Incendie", date: reviewDate, text: isEn ? "Very satisfied with the drone facade cleaning service on our Montpellier office." : "Très satisfait de la prestation de nettoyage de façade par drone sur notre agence de Montpellier.", initials: "SI", color: "bg-red-600" },
@@ -348,7 +348,7 @@ export default async function HomePage() {
       />
 
       {/* ══════════════════════════════════════════
-          HERO — animations jouées au chargement
+          HERO, animations jouées au chargement
       ══════════════════════════════════════════ */}
       <section className="relative min-h-[95dvh] flex items-center justify-center pt-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -360,7 +360,7 @@ export default async function HomePage() {
       </section>
 
       {/* ══════════════════════════════════════════
-          6 PILIERS — stagger au scroll
+          6 PILIERS, stagger au scroll
       ══════════════════════════════════════════ */}
       <section id="solutions" className="py-24 bg-slate-50">
         <div className="container mx-auto px-4 max-w-7xl">
@@ -407,7 +407,7 @@ export default async function HomePage() {
       </section>
 
       {/* ══════════════════════════════════════════
-          PROCESSUS — stagger gauche à droite
+          PROCESSUS, stagger gauche à droite
       ══════════════════════════════════════════ */}
       <section className="py-24 bg-[#0e2f52] relative overflow-hidden">
         <div className="container mx-auto px-4 max-w-7xl relative">
@@ -454,7 +454,7 @@ export default async function HomePage() {
       </section>
 
       {/* ══════════════════════════════════════════
-          AVIS GOOGLE — stagger en grille
+          AVIS GOOGLE, stagger en grille
       ══════════════════════════════════════════ */}
       <section className="py-20 bg-white border-t border-slate-100">
         <div className="container mx-auto px-4 max-w-7xl">
@@ -520,7 +520,7 @@ export default async function HomePage() {
       </section>
 
       {/* ══════════════════════════════════════════
-          FAQ — fade-up en cascade
+          FAQ, fade-up en cascade
       ══════════════════════════════════════════ */}
       <section className="py-20 bg-slate-50 border-t border-slate-200">
         <div className="container mx-auto px-4 max-w-4xl">
@@ -551,7 +551,7 @@ export default async function HomePage() {
       </section>
 
       {/* ══════════════════════════════════════════
-          CTA FINAL — fade-up
+          CTA FINAL, fade-up
       ══════════════════════════════════════════ */}
       <section className="py-24 bg-[#0e2f52] text-white text-center px-4">
         <div className="container mx-auto px-4">

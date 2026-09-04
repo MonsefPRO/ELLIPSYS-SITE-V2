@@ -6,7 +6,7 @@ import { Play, X, Volume2, VolumeX, AlertTriangle } from "lucide-react";
 interface MachineVideoCardProps {
   img: string;
   name: string;
-  video?: string; // chemin vers /videos/xxx.mp4 — optionnel
+  video?: string; // chemin vers /videos/xxx.mp4, optionnel
 }
 
 export function MachineVideoCard({ img, name, video }: MachineVideoCardProps) {
