@@ -14,6 +14,68 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "nettoyage-bardage-panneaux-solaires-usine-2-en-1",
+    image: "/images/bardagetoit.png",
+    category: "Façades & Bardages",
+    date: "12 Septembre 2026",
+    readTime: "7 min",
+    badge: "bg-blue-50 text-blue-600",
+    title: "Usines et entrepôts : nettoyez bardage et panneaux solaires en une seule intervention",
+    excerpt: "La plupart des sites industriels cumulent deux problèmes traités séparément : un bardage qui s'encrasse et des panneaux solaires en toiture qui perdent du rendement. Les traiter en une seule intervention par drone et robot, c'est un déplacement, un prestataire, et une facture optimisée. Voici pourquoi c'est la bonne approche.",
+    metaTitle: "Nettoyage bardage + panneaux solaires d'usine en une intervention | Ellipsys",
+    metaDescription: "Usines, entrepôts, plateformes logistiques : nettoyez votre bardage ET vos panneaux solaires en toiture en une seule intervention par drone et robot. Sans échafaudage, sans arrêt de production. Devis B2B en Occitanie.",
+    content: `
+<h2>Un site industriel, deux problèmes que l'on traite d'habitude séparément</h2>
+<p>La plupart des usines, entrepôts et plateformes logistiques ont deux surfaces qui se dégradent en parallèle, sans que personne ne fasse le lien :</p>
+<ul>
+  <li>Un <strong>bardage métallique</strong> (façades et parfois toiture) qui s'encrasse sous l'effet de la pollution atmosphérique, des poussières industrielles ou agricoles, et des dépôts de sel en zone littorale.</li>
+  <li>Une <strong>centrale photovoltaïque en toiture</strong> — de plus en plus fréquente sur les grandes toitures industrielles — qui perd du rendement à cause du même encrassement.</li>
+</ul>
+<p>En général, ces deux besoins sont gérés séparément : une entreprise pour la façade, une autre pour les panneaux, deux devis, deux plannings, deux déplacements. C'est une perte de temps et d'argent — alors que <strong>les deux se traitent en une seule intervention</strong>.</p>
+
+<h2>Le bardage encrassé : bien plus qu'une question d'image</h2>
+<p>Un bardage sale n'est pas qu'un problème esthétique — même si, pour un site qui reçoit des clients, des investisseurs ou des candidats, l'image compte. L'encrassement retient l'humidité et les polluants au contact du revêtement, ce qui accélère son vieillissement et peut, à terme, dégrader la protection anticorrosion. Un entretien régulier prolonge la durée de vie du bardage et évite un ravalement bien plus coûteux.</p>
+<p>Le nettoyage par drone permet de traiter des <strong>grandes hauteurs et de longues linéaires de façade sans échafaudage ni nacelle</strong> — donc sans immobiliser une partie du site ni bloquer les accès poids lourds.</p>
+
+<h2>Les panneaux solaires en toiture : un rendement qui s'érode en silence</h2>
+<p>Sur un site industriel, les panneaux photovoltaïques sont exposés à un cocktail particulièrement salissant : poussières de process, films gras liés aux gaz d'échappement et à la circulation, poussières agricoles en périphérie, et sable saharien plusieurs fois par an en Occitanie. Là où la perte moyenne mondiale se situe entre 4 et 7 % (AIE PVPS), elle peut atteindre <strong>20 à 30 % dans ces environnements contraignants</strong>.</p>
+<p>Le problème, c'est que cette perte est <strong>invisible</strong> : la centrale continue de produire, simplement moins bien. Sur une grande toiture, quelques pourcents de rendement représentent un manque à gagner réel, chaque mois, sur toute l'année.</p>
+<p>Notre robot de nettoyage traite les grandes surfaces de panneaux à un rythme de <strong>1 200 m²/h</strong>, à l'eau filtrée et sans détergent — sans rayer les cellules et sans annuler les garanties constructeur.</p>
+
+<h2>Le « 2 en 1 » : une seule intervention pour les deux</h2>
+<p>C'est là tout l'intérêt de notre approche. Puisque nous maîtrisons à la fois le <strong>drone</strong> (pour le bardage et les façades) et le <strong>robot</strong> (pour les panneaux en toiture), nous traitons les deux surfaces lors d'un même passage sur votre site. Les avantages sont concrets :</p>
+<ul>
+  <li><strong>Un seul déplacement</strong> au lieu de deux : moins de coûts logistiques répercutés.</li>
+  <li><strong>Un seul prestataire</strong>, un seul interlocuteur, un seul planning à coordonner.</li>
+  <li><strong>Un seul créneau d'intervention</strong> : votre exploitation n'est mobilisée qu'une fois.</li>
+  <li><strong>Sans échafaudage ni nacelle</strong>, et <strong>sans arrêt de production</strong> : nous intervenons en dehors du strict périmètre de sécurité, sans bloquer vos flux.</li>
+  <li>Un <strong>panier optimisé</strong> : mutualiser les deux prestations est plus intéressant que de les commander séparément.</li>
+</ul>
+
+<h2>Comment se déroule une intervention</h2>
+<h3>1. Audit préalable</h3>
+<p>Nous évaluons l'état du bardage et le niveau d'encrassement des panneaux (idéalement à partir de photos ou d'une visite), pour dimensionner l'intervention et estimer le gain de rendement attendu sur la partie solaire.</p>
+<h3>2. Intervention drone + robot, sans interrompre l'activité</h3>
+<p>Le drone traite les façades et le bardage depuis le sol ; le robot nettoie les panneaux en toiture. Tout se fait à l'<strong>eau filtrée, sans détergent</strong>, en respectant un périmètre de sécurité qui n'immobilise pas votre exploitation.</p>
+<h3>3. Contrat d'entretien annuel</h3>
+<p>Pour un site industriel, un ou deux passages par an suffisent le plus souvent à maintenir le bardage propre et le rendement solaire au maximum. Un contrat annuel sécurise la performance et lisse le budget.</p>
+
+<h2>Questions fréquentes</h2>
+<h3>Faut-il arrêter la production pendant l'intervention ?</h3>
+<p>Non. Nos interventions par drone et robot s'intègrent à votre site sans bloquer votre production ni vos flux logistiques, en dehors du strict périmètre de sécurité.</p>
+<h3>Le nettoyage des panneaux annule-t-il la garantie constructeur ?</h3>
+<p>Non. Nous utilisons un brossage doux à l'eau filtrée, sans détergent et sans haute pression, compatible avec les garanties des fabricants de modules.</p>
+<h3>À quelle fréquence nettoyer un site industriel ?</h3>
+<p>En général un à deux passages par an, selon l'environnement (proximité d'axes routiers, de cultures, du littoral, zones de fortes poussières). Nous mesurons l'encrassement plutôt que d'appliquer une fréquence théorique.</p>
+<h3>Intervenez-vous sur tout type de bâtiment industriel ?</h3>
+<p>Oui : usines, entrepôts, plateformes logistiques, bâtiments agricoles. Le drone atteint les grandes hauteurs et les longues façades sans échafaudage, y compris sur les sites difficiles d'accès.</p>
+
+<h2>Un seul prestataire pour vos extérieurs industriels, en Occitanie</h2>
+<p>Basés à Montpellier, nous intervenons sur les sites industriels et logistiques de l'Hérault, du Gard et de toute l'Occitanie. Si votre site cumule un bardage à entretenir et des panneaux solaires en toiture, parlons-en : une seule intervention peut traiter les deux.</p>
+<p><strong>Audit gratuit de votre site et devis sous 24 h — appelez le 04 67 20 97 09 ou demandez à être rappelé.</strong></p>
+`,
+  },
+  {
     slug: "frelon-asiatique-septembre-mois-dangereux",
     image: "/images/Frelondrone.png",
     category: "Nuisibles & Sécurité",

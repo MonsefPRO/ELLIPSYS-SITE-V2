@@ -6,6 +6,16 @@ import { ArrowRight, Calendar, Clock, Instagram, Facebook, Linkedin, Music2, Ext
 
 const articles = [
   {
+    image: "/images/bardagetoit.png",
+    category: "Façades & Bardages",
+    date: "12 Septembre 2026",
+    readTime: "7 min",
+    title: "Usines et entrepôts : nettoyez bardage et panneaux solaires en une seule intervention",
+    excerpt: "Un bardage qui s'encrasse et des panneaux solaires en toiture qui perdent du rendement : deux problèmes que la plupart des sites industriels traitent séparément. Voici pourquoi les régler en une seule intervention par drone et robot est la bonne approche — un déplacement, un prestataire.",
+    href: "/blog/nettoyage-bardage-panneaux-solaires-usine-2-en-1",
+    badge: "bg-blue-50 text-blue-600",
+  },
+  {
     image: "/images/Frelondrone.png",
     category: "Nuisibles & Sécurité",
     date: "5 Septembre 2026",
