@@ -94,7 +94,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // ── Articles de blog (ajoutés automatiquement depuis lib/blogPosts.ts) ──
   const blogEntries: MetadataRoute.Sitemap = blogPosts.map((post) => ({
     url: `${BASE}/blog/${post.slug}`,
-    lastModified: parseFrDate(post.date),
+    // Les articles peuvent être datés en avance (calendrier éditorial). On plafonne
+    // la date de modification à aujourd'hui pour ne jamais envoyer un lastmod futur.
+    lastModified: new Date(Math.min(parseFrDate(post.date).getTime(), now.getTime())),
     changeFrequency: "monthly",
     priority: 0.75,
   }));

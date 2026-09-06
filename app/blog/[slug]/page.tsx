@@ -4,6 +4,23 @@ import Link from "next/link";
 import { Calendar, Clock, ArrowLeft, ChevronRight, Phone } from "lucide-react";
 import { blogPosts, getBlogPost } from "@/lib/blogPosts";
 
+const BASE = "https://ellipsys-solutions.com";
+
+// Convertit une date FR ("12 Septembre 2026") en ISO (YYYY-MM-DD) pour le schema.
+// Retourne undefined si le format n'est pas reconnu (on omet alors la propriété).
+const MOIS_FR: Record<string, number> = {
+  janvier: 1, fevrier: 2, février: 2, mars: 3, avril: 4, mai: 5, juin: 6,
+  juillet: 7, aout: 8, août: 8, septembre: 9, octobre: 10, novembre: 11,
+  decembre: 12, décembre: 12,
+};
+function frDateToIso(str: string): string | undefined {
+  const m = str.trim().toLowerCase().match(/(\d{1,2})\s+([a-zéûà]+)\s+(\d{4})/);
+  if (!m) return undefined;
+  const mois = MOIS_FR[m[2]];
+  if (!mois) return undefined;
+  return `${m[3]}-${String(mois).padStart(2, "0")}-${String(Number(m[1])).padStart(2, "0")}`;
+}
+
 interface Props {
   params: Promise<{ slug: string }>;
 }
@@ -19,6 +36,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: post.metaTitle,
     description: post.metaDescription,
+    alternates: { canonical: `${BASE}/blog/${post.slug}` },
   };
 }
 
@@ -29,8 +47,29 @@ export default async function BlogPostPage({ params }: Props) {
 
   const related = blogPosts.filter((p) => p.slug !== slug).slice(0, 3);
 
+  const datePublished = frDateToIso(post.date);
+  const jsonLdArticle = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.metaDescription,
+    image: `${BASE}${post.image}`,
+    ...(datePublished && { datePublished, dateModified: datePublished }),
+    author: { "@type": "Organization", name: "Ellipsys Solutions", url: BASE },
+    publisher: {
+      "@type": "Organization",
+      name: "Ellipsys Solutions",
+      logo: { "@type": "ImageObject", url: `${BASE}/logo.png` },
+    },
+    mainEntityOfPage: { "@type": "WebPage", "@id": `${BASE}/blog/${post.slug}` },
+  };
+
   return (
     <main className="flex flex-col min-h-screen pt-24 bg-slate-50">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdArticle) }}
+      />
 
       {/* ── HERO ── */}
       <section className="relative h-72 md:h-96 overflow-hidden">
