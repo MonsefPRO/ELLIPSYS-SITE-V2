@@ -28,6 +28,43 @@ export default async function FacadesPage() {
   const lang = await getLang();
   const isEn = lang === "en";
 
+  // FAQ visible (rendue via l'accordéon) + schema FAQPage strictement identique.
+  const faqs = [
+    {
+      q: "Peut-on nettoyer une façade sans échafaudage ni nacelle ?",
+      r: "Oui. Le nettoyage par drone traite les grandes hauteurs et les longues façades depuis le sol, sans échafaudage, sans nacelle et sans fermeture de rue, y compris sur les bâtiments industriels et les copropriétés.",
+      qEn: "Can a façade be cleaned without scaffolding or a work platform?",
+      rEn: "Yes. Drone cleaning handles great heights and long façades from the ground, without scaffolding, without a work platform and without closing the street, including on industrial buildings and apartment blocks.",
+    },
+    {
+      q: "Le nettoyage par drone convient-il aux bardages d'usines et d'entrepôts ?",
+      r: "Oui, c'est un cas d'usage idéal : le drone nettoie de grandes surfaces de bardage rapidement. Sur un site industriel équipé de panneaux solaires en toiture, nous traitons le bardage et les panneaux lors d'une seule intervention.",
+      qEn: "Is drone cleaning suitable for factory and warehouse cladding?",
+      rEn: "Yes, it is an ideal use case: the drone cleans large cladding surfaces quickly. On an industrial site with rooftop solar panels, we clean the cladding and the panels in a single intervention.",
+    },
+    {
+      q: "Intervenez-vous en secteur sauvegardé ou zone ABF ?",
+      r: "Oui. Notre méthode sans contact mécanique agressif et sans emprise au sol est adaptée aux façades classées ou situées en zone ABF (Architectes des Bâtiments de France).",
+      qEn: "Do you work in protected areas or ABF zones?",
+      rEn: "Yes. Our method, with no aggressive mechanical contact and no ground footprint, is suited to listed façades or those in ABF (French Buildings Architects) zones.",
+    },
+    {
+      q: "Le nettoyage abîme-t-il l'enduit ou le revêtement de façade ?",
+      r: "Non. Nous adaptons la pression et la méthode au support (enduit, béton, bardage métallique, vitrage) pour nettoyer efficacement sans dégrader le revêtement.",
+      qEn: "Does cleaning damage the render or façade coating?",
+      rEn: "No. We adapt the pressure and method to the surface (render, concrete, metal cladding, glazing) to clean effectively without degrading the coating.",
+    },
+  ];
+  const jsonLdFaq = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.r },
+    })),
+  };
+
   const agents = isEn ? [
     {
       icon: "🌊",
@@ -446,6 +483,20 @@ export default async function FacadesPage() {
           ]}
         />
       )}
+
+      {/* FAQ (visible + schema FAQPage identique pour le SEO/GSO) */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFaq) }}
+      />
+      <section className="py-20 bg-slate-50 border-t border-slate-100">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-3xl font-bold text-slate-900 mb-12 text-center">
+            {isEn ? "Frequently asked questions" : "Questions fréquentes"}
+          </h2>
+          <AccordionSection items={faqs.map((f) => ({ title: isEn ? f.qEn : f.q, desc: isEn ? f.rEn : f.r }))} />
+        </div>
+      </section>
 
       {/* CTA FINAL */}
       <section className="py-20 bg-gradient-to-br from-[#0e2f52] to-slate-800 text-center px-4">
