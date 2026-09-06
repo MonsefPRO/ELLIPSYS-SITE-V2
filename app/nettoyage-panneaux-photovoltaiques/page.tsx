@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, TrendingDown, Zap, Shield, Award, ChevronRight, Phone } from "lucide-react";
+import AccordionSection from "@/components/AccordionSection";
 
 export const metadata: Metadata = {
   title: "Nettoyage photovoltaïque par drone : +30% de production",
@@ -57,6 +58,35 @@ const jsonLdService = {
 };
 
 const devisUrl = "/devis?service=solaire&utm_source=organic&utm_medium=lp&utm_campaign=pv-b2b";
+
+const faqs = [
+  {
+    q: "Faut-il arrêter la production de la centrale pendant le nettoyage ?",
+    r: "Non. Nos interventions par drone et robot s'intègrent à votre site sans bloquer la production, en dehors du strict périmètre de sécurité.",
+  },
+  {
+    q: "Comment mesurez-vous le gain de rendement après nettoyage ?",
+    r: "Nous instrumentons la centrale (pyranomètre) et comparons la production réelle avant et après intervention sur une période de référence, pour chiffrer précisément les kWh récupérés.",
+  },
+  {
+    q: "Le nettoyage présente-t-il un risque de micro-fissures pour les modules ?",
+    r: "Non. Nous utilisons un brossage doux à l'eau filtrée, sans détergent ni haute pression, compatible avec les garanties constructeur et sans contrainte mécanique sur les cellules.",
+  },
+  {
+    q: "Proposez-vous des contrats d'entretien annuels ?",
+    r: "Oui. Nous établissons des contrats pluriannuels (semestriels ou trimestriels) adaptés aux exploitants et asset managers, avec un budget prévisible intégrable à votre O&M.",
+  },
+];
+
+const jsonLdFaq = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.r },
+  })),
+};
 
 export default function NettoyagePanneauxPhotovoltaiques() {
   return (
@@ -284,6 +314,18 @@ export default function NettoyagePanneauxPhotovoltaiques() {
           <p className="text-center text-slate-500 text-sm mt-8 max-w-2xl mx-auto">
             <em>Tous nos tarifs incluent : déplacement, étude de faisabilité, intervention, rapport d&apos;intervention horodaté et géolocalisé.</em>
           </p>
+        </div>
+      </section>
+
+      {/* FAQ (visible + schema FAQPage identique pour le SEO/GSO) */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFaq) }}
+      />
+      <section className="py-20 px-4 bg-slate-50 border-t border-slate-200">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-black text-slate-900 mb-12 text-center">Questions fréquentes</h2>
+          <AccordionSection items={faqs.map((f) => ({ title: f.q, desc: f.r }))} />
         </div>
       </section>
 

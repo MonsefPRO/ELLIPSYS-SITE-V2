@@ -30,6 +30,43 @@ export default async function TraitementToiturePage() {
   const lang = await getLang();
   const isEn = lang === "en";
 
+  // FAQ visible (rendue via l'accordéon) + schema FAQPage strictement identique.
+  const faqs = [
+    {
+      q: "Le démoussage par drone abîme-t-il les tuiles ?",
+      r: "Non, c'est l'inverse : personne ne marche sur le toit et aucune haute pression n'est utilisée, ce qui supprime les deux principales causes de casse. Le traitement agit chimiquement, sans agression mécanique.",
+      qEn: "Does drone demossing damage the tiles?",
+      rEn: "No, quite the opposite: no one walks on the roof and no high pressure is used, which removes the two main causes of breakage. The treatment acts chemically, without mechanical aggression.",
+    },
+    {
+      q: "À quelle fréquence faut-il démousser une toiture ?",
+      r: "En général tous les 3 à 5 ans selon l'exposition (versant nord, humidité, arbres à proximité). L'application d'un hydrofuge espace nettement cette fréquence.",
+      qEn: "How often should a roof be demossed?",
+      rEn: "Generally every 3 to 5 years depending on exposure (north-facing slopes, humidity, nearby trees). Applying a water repellent significantly extends this interval.",
+    },
+    {
+      q: "Quelle différence entre démoussage seul et démoussage avec hydrofuge ?",
+      r: "Le démoussage élimine mousses et lichens à la racine. L'hydrofuge, appliqué ensuite, rend la tuile déperlante et ralentit fortement le retour des mousses, pour une protection de 5 à 8 ans selon l'exposition.",
+      qEn: "What is the difference between demossing alone and demossing with a water repellent?",
+      rEn: "Demossing removes moss and lichen at the root. The water repellent, applied afterwards, makes the tile water-repellent and greatly slows the return of moss, for 5 to 8 years of protection depending on exposure.",
+    },
+    {
+      q: "Intervenez-vous en zone ABF ou sur monument historique ?",
+      r: "Oui. Notre méthode sans contact mécanique agressif et sans échafaudage est adaptée aux toitures classées ou situées en zone ABF (tuile canal, ardoise, lauze).",
+      qEn: "Do you work in ABF zones or on listed heritage buildings?",
+      rEn: "Yes. Our method, with no aggressive mechanical contact and no scaffolding, is suited to listed roofs or those in ABF zones (canal tiles, slate, stone slabs).",
+    },
+  ];
+  const jsonLdFaq = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.r },
+    })),
+  };
+
   const degradants = isEn ? [
     { name: "Lichens",        effet: "Surface micro-perforations, latent water infiltration",   risque: "Critical",    risqueColor: "bg-red-700 text-white" },
     { name: "Moss",           effet: "Water retention, progressive tile lifting",                risque: "High",        risqueColor: "bg-red-500 text-white" },
@@ -384,6 +421,20 @@ export default async function TraitementToiturePage() {
           ]}
         />
       )}
+
+      {/* FAQ (visible + schema FAQPage identique pour le SEO/GSO) */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFaq) }}
+      />
+      <section className="py-20 bg-slate-50 border-t border-slate-100">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-3xl font-bold text-slate-900 mb-12 text-center">
+            {isEn ? "Frequently asked questions" : "Questions fréquentes"}
+          </h2>
+          <AccordionSection items={faqs.map((f) => ({ title: isEn ? f.qEn : f.q, desc: isEn ? f.rEn : f.r }))} />
+        </div>
+      </section>
 
       {/* CTA FINAL */}
       <section className="py-20 bg-gradient-to-br from-[#0e2f52] to-slate-800 text-center px-4">

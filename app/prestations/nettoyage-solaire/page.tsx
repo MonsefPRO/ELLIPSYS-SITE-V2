@@ -27,6 +27,43 @@ export default async function PanneauxPhotovoltaiquesPage() {
   const lang = await getLang();
   const isEn = lang === "en";
 
+  // FAQ visible (rendue via l'accordéon) + schema FAQPage strictement identique.
+  const faqs = [
+    {
+      q: "Le nettoyage des panneaux solaires annule-t-il la garantie constructeur ?",
+      r: "Non. Nous utilisons un brossage doux à l'eau filtrée, sans détergent ni haute pression, compatible avec les garanties des fabricants de modules photovoltaïques.",
+      qEn: "Does solar panel cleaning void the manufacturer's warranty?",
+      rEn: "No. We use gentle brushing with filtered water, without detergent or high pressure, compatible with photovoltaic module manufacturers' warranties.",
+    },
+    {
+      q: "À quelle fréquence faut-il nettoyer ses panneaux solaires ?",
+      r: "En général un à deux passages par an selon l'environnement (littoral, agricole, industriel, épisodes de sable saharien). Nous mesurons l'encrassement avant intervention plutôt que d'appliquer une fréquence théorique.",
+      qEn: "How often should solar panels be cleaned?",
+      rEn: "Generally once or twice a year depending on the environment (coastal, agricultural, industrial, Saharan sand episodes). We measure soiling before intervening rather than applying a theoretical frequency.",
+    },
+    {
+      q: "Combien de rendement peut-on récupérer avec un nettoyage ?",
+      r: "La perte moyenne mondiale liée à l'encrassement se situe entre 4 et 7 % (AIE PVPS) et peut atteindre 20 à 30 % en environnement contraignant. Un nettoyage professionnel restaure la production nominale.",
+      qEn: "How much output can cleaning recover?",
+      rEn: "The global average loss from soiling is between 4 and 7% (IEA PVPS) and can reach 20 to 30% in challenging environments. Professional cleaning restores nominal output.",
+    },
+    {
+      q: "Faut-il arrêter la production pendant le nettoyage ?",
+      r: "Non. Nos interventions par drone et robot s'intègrent au site sans bloquer la production, en dehors du strict périmètre de sécurité.",
+      qEn: "Does production need to stop during cleaning?",
+      rEn: "No. Our drone and robot interventions integrate into the site without halting production, outside the strict safety perimeter.",
+    },
+  ];
+  const jsonLdFaq = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.r },
+    })),
+  };
+
   const agents = [
     { name: isEn ? "Dust / Pollution" : "Poussière / Pollution", nature: isEn ? "Global haze" : "Voile global", perte: "5 %, 15 %", risque: isEn ? "Low" : "Faible", risqueColor: "bg-slate-200 text-slate-700" },
     { name: isEn ? "Pollen / Vegetation" : "Pollen / Végétation", nature: isEn ? "Adhesive film" : "Film adhésif", perte: "10 %, 20 %", risque: isEn ? "Medium" : "Moyen", risqueColor: "bg-amber-200 text-amber-800" },
@@ -361,6 +398,20 @@ export default async function PanneauxPhotovoltaiquesPage() {
           ]}
         />
       )}
+
+      {/* FAQ (visible + schema FAQPage identique pour le SEO/GSO) */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFaq) }}
+      />
+      <section className="py-20 bg-slate-50 border-t border-slate-100">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-3xl font-bold text-slate-900 mb-12 text-center">
+            {isEn ? "Frequently asked questions" : "Questions fréquentes"}
+          </h2>
+          <AccordionSection items={faqs.map((f) => ({ title: isEn ? f.qEn : f.q, desc: isEn ? f.rEn : f.r }))} />
+        </div>
+      </section>
 
       {/* CTA FINAL */}
       <section className="py-20 bg-gradient-to-br from-[#0e2f52] to-amber-950 text-center px-4">
