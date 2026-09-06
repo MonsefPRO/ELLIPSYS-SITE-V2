@@ -91,7 +91,7 @@ const jsonLd = {
       "@id": "https://ellipsys-solutions.com/#business",
       "name": "Ellipsys Solutions",
       "description":
-        "Spécialiste de la maintenance extérieure par drone et robotique : nettoyage de panneaux solaires, démoussage toiture, façades, thermographie, destruction de nids de frelons. Intervention sans échafaudage, partout en France.",
+        "Spécialiste de la maintenance extérieure par drone et robot : nettoyage de panneaux solaires et de centrales photovoltaïques, démoussage de toiture, nettoyage de façades et de bardages industriels. Sur les sites industriels, bardage et panneaux solaires en toiture sont traités en une seule intervention. Sans échafaudage, partout en France. Adhérent UN Global Compact.",
       "url": "https://ellipsys-solutions.com",
       "telephone": "+33467209709",
       // Identifiants légaux publics : renforcent la confiance accordée par Google
@@ -100,6 +100,21 @@ const jsonLd = {
       "taxID": "99995753300014",
       "legalName": "Ellipsys Solutions",
       "email": "contact@ellipsys-group.com",
+      // Domaines d'expertise (entité) + appartenance RSE : aident Google et les
+      // moteurs IA à comprendre et citer Ellipsys sur ces sujets (E-E-A-T / GSO).
+      "knowsAbout": [
+        "Nettoyage de panneaux solaires photovoltaïques",
+        "Nettoyage de centrales solaires, ombrières et toitures industrielles",
+        "Démoussage et hydrofuge de toiture",
+        "Nettoyage de façades et de bardages industriels",
+        "Thermographie infrarouge par drone",
+        "Réglementation drone professionnelle DGAC (STS-01, STS-02, SORA)",
+      ],
+      "memberOf": {
+        "@type": "Organization",
+        "name": "United Nations Global Compact",
+        "url": "https://unglobalcompact.org",
+      },
       "logo": "https://ellipsys-solutions.com/images/favicon.png",
       "image": "https://ellipsys-solutions.com/images/accueil.png",
       "priceRange": "€€",
