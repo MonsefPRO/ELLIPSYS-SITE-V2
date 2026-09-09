@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ShieldAlert, Target, HeartHandshake, ChevronRight } from "lucide-react";
+import { ShieldAlert, Target, HeartHandshake, ChevronRight, FileText, Download } from "lucide-react";
 import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
@@ -176,6 +176,29 @@ export default async function ValeursPage() {
                     </div>
 
                     <p>{isEn ? <>Care is a <strong>process of continuous improvement</strong>. We have launched a CSR programme integrating a detailed action plan. Our commitment is clear: <strong>reach a score of 50% by 31 December 2026</strong>.</> : <>La bienveillance est une <strong>démarche d&apos;amélioration continue</strong>. Nous avons lancé un programme RSE intégrant un plan d&apos;action détaillé. Notre engagement est clair : <strong>atteindre un score de 50% d&apos;ici le 31 décembre 2026</strong>.</>}</p>
+
+                    {/* Téléchargement de la politique RSE complète (demande de Nicolas Papin, 09/09/2026) */}
+                    <a
+                      href="/documents/politique-rse-ellipsys-solutions.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-4 bg-white border-2 border-emerald-200 hover:border-emerald-400 rounded-2xl p-5 transition-colors group"
+                    >
+                      <div className="w-12 h-12 rounded-xl bg-emerald-50 flex items-center justify-center shrink-0">
+                        <FileText className="w-6 h-6 text-emerald-600" />
+                      </div>
+                      <div className="flex-grow">
+                        <p className="font-black text-slate-900 text-sm">
+                          {isEn ? "Our full CSR policy" : "Notre politique RSE complète"}
+                        </p>
+                        <p className="text-slate-500 text-xs">
+                          {isEn
+                            ? "Governance, human rights, working standards, environment, anti-corruption — PDF document"
+                            : "Gouvernance, droits humains, normes du travail, environnement, anti-corruption — document PDF"}
+                        </p>
+                      </div>
+                      <Download className="w-5 h-5 text-emerald-600 shrink-0 group-hover:translate-y-0.5 transition-transform" />
+                    </a>
 
                     <p className="italic text-slate-500">{isEn ? "Drone technology advances rapidly, and at Ellipsys Solutions, we ensure it flies in the right direction: with Rigour, Safety, and Care." : "La technologie des drones avance vite, et chez Ellipsys Solutions, nous nous assurons qu'elle vole dans la bonne direction : avec Rigueur, Sécurité, et Bienveillance."}</p>
 
