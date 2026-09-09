@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Phone, Send, CheckCircle2 } from "lucide-react";
 import { track, Events } from "@/lib/analytics";
 import { pushLeadConversion } from "@/lib/gtag";
+import { AntiSpamFields, useFormRenderedAt } from "@/components/AntiSpamFields";
 
 /**
  * Rappel express, 2 champs (prénom + téléphone).
@@ -21,6 +22,7 @@ export default function QuickCallbackForm({ source = "devis_express" }: { source
   const [loading, setLoading] = useState(false);
   const [sent, setSent]   = useState(false);
   const [error, setError] = useState("");
+  const renderedAt = useFormRenderedAt();
 
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -41,6 +43,9 @@ export default function QuickCallbackForm({ source = "devis_express" }: { source
     fd.append("serviceLabel", "Rappel express");
     fd.append("message", "Demande de rappel express depuis le site.");
     fd.append("pageUri", typeof window !== "undefined" ? window.location.pathname : "");
+    fd.append("renderedAt", String(renderedAt));
+    // Honeypot : recopié depuis le <form> (rempli uniquement par un bot).
+    fd.append("website", String(new FormData(e.currentTarget as HTMLFormElement).get("website") ?? ""));
 
     try {
       const res = await fetch("/api/devis", { method: "POST", body: fd });
@@ -86,6 +91,7 @@ export default function QuickCallbackForm({ source = "devis_express" }: { source
 
   return (
     <form onSubmit={onSubmit} className="w-full">
+      <AntiSpamFields />
       <div className="flex flex-col sm:flex-row gap-2.5">
         <input
           type="text"

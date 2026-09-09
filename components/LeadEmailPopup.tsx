@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { X, Phone, Send, CheckCircle2 } from "lucide-react";
 import { track, Events } from "@/lib/analytics";
 import { pushLeadConversion } from "@/lib/gtag";
+import { AntiSpamFields, useFormRenderedAt } from "@/components/AntiSpamFields";
 
 /**
  * Pop-up « Rappelez-moi ».
@@ -33,6 +34,7 @@ export function LeadEmailPopup() {
   const [phone, setPhone]     = useState("");
   const [status, setStatus]   = useState<Status>("idle");
   const [errorMsg, setErrorMsg] = useState("");
+  const renderedAt = useFormRenderedAt();
 
   useEffect(() => {
     if (sessionStorage.getItem(POPUP_KEY)) return;
@@ -89,6 +91,8 @@ export function LeadEmailPopup() {
     fd.append("serviceLabel", "Demande de rappel");
     fd.append("message", "Demande de rappel via le pop-up du site.");
     fd.append("pageUri", window.location.pathname);
+    fd.append("renderedAt", String(renderedAt));
+    fd.append("website", String(new FormData(e.currentTarget as HTMLFormElement).get("website") ?? ""));
 
     try {
       const res = await fetch("/api/devis", { method: "POST", body: fd });
@@ -205,6 +209,7 @@ export function LeadEmailPopup() {
                   </p>
 
                   <form onSubmit={submit} className="space-y-3">
+                    <AntiSpamFields />
                     <input
                       type="text"
                       value={name}

@@ -5,6 +5,7 @@ import { Building2, User, Send, Camera, MapPin, Phone, Mail, CheckCircle2 } from
 import QuickCallbackForm from "@/components/QuickCallbackForm";
 import { track, identify, Events } from "@/lib/analytics";
 import { pushLeadConversion } from "@/lib/gtag";
+import { AntiSpamFields, useFormRenderedAt } from "@/components/AntiSpamFields";
 
 type ServiceKey = "facade" | "solaire" | "toiture" | "thermographie" | "nuisibles" | "imagerie" | "autre";
 
@@ -117,6 +118,8 @@ export default function DevisPage() {
     track(Events.DEVIS_SERVICE_SELECTED, { service: s, service_label: label, client_type: clientType });
   };
 
+  const renderedAt = useFormRenderedAt();
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
@@ -189,6 +192,8 @@ export default function DevisPage() {
     fd.append("details", JSON.stringify(details));
     fd.append("fullDescription", fullDescription);
     fd.append("pageUri", typeof window !== "undefined" ? window.location.href : "");
+    fd.append("renderedAt", String(renderedAt));
+    fd.append("website", String(new FormData(e.currentTarget as HTMLFormElement).get("website") ?? ""));
     // Pièces jointes (limité à 5 × 10MB côté serveur)
     for (const file of attachments.slice(0, 5)) {
       fd.append("files", file);
@@ -337,6 +342,7 @@ export default function DevisPage() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="bg-white rounded-3xl shadow-sm border border-slate-100 p-8 space-y-8">
+                <AntiSpamFields />
 
                 {/* ── SECTION 1 : Contact details ── */}
                 <div>

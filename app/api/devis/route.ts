@@ -5,6 +5,8 @@ import { getTeamNotifyEmails, getNotifyFromEmail } from "@/lib/notify";
 import { upsertContact, createDeal } from "@/lib/hubspot";
 import { captureServer, identifyServer } from "@/lib/posthog-server";
 import { uploadDevisAttachments } from "@/lib/supabase-storage";
+import { readFile } from "node:fs/promises";
+import path from "node:path";
 
 export const runtime = "nodejs";
 // Augmente la taille max du body pour les uploads (par défaut Netlify Fn = 6MB)
@@ -145,6 +147,22 @@ export async function POST(req: NextRequest) {
     const service = sanitize(body.service, 30) || "autre";
     const serviceLabel = sanitize(body.serviceLabel, 120) || service;
     const pageUri = sanitize(body.pageUri, 300);
+
+    // ── Anti-spam silencieux (honeypot + piège temporel) ─────────────────
+    // Deux couches invisibles pour un visiteur réel, très efficaces contre les
+    // bots qui remplissent les formulaires automatiquement :
+    //  - honeypot : un champ caché par CSS que seul un bot remplit.
+    //  - piège temporel : un humain met toujours plus de 2,5 s à remplir un
+    //    formulaire ; un envoi plus rapide vient d'un script.
+    // On répond un succès factice (jamais d'erreur) pour ne pas indiquer au
+    // bot ce qui a été détecté, et on s'arrête là : pas de mail, pas de
+    // HubSpot, pas de Supabase. Un vrai client ne voit jamais cette branche.
+    const honeypot = sanitize(body.website, 200);
+    const renderedAt = Number(body.renderedAt);
+    const tooFast = Number.isFinite(renderedAt) && renderedAt > 0 && Date.now() - renderedAt < 2500;
+    if (honeypot || tooFast) {
+      return NextResponse.json({ ok: true, hubspotContactId: null, hubspotDealId: null, attachmentsUploaded: 0 });
+    }
 
     // Validation
     // Validation, on accepte un lead « rappelez-moi » qui n'a qu'un téléphone.
@@ -334,6 +352,57 @@ export async function POST(req: NextRequest) {
         });
       } catch (err) {
         console.warn("[devis] Resend email failed:", err);
+      }
+
+      // ── 3bis) Mail de confirmation au client, politique RSE en pièce jointe ──
+      // Demande de Nicolas Papin (09/09/2026) : transmettre systématiquement la
+      // politique RSE à tous les clients. Uniquement si un e-mail est fourni
+      // (un lead « rappelez-moi » n'en a pas toujours).
+      if (email) {
+        try {
+          const resend = new Resend(resendKey);
+          const rsePath = path.join(process.cwd(), "public", "documents", "politique-rse-ellipsys-solutions.pdf");
+          const rseBuffer = await readFile(rsePath);
+
+          const clientHtml = `
+            <div style="font-family:system-ui,sans-serif;max-width:600px;margin:auto;color:#0f172a">
+              <h2 style="color:#0e2f52;margin:0 0 8px">Merci pour votre demande, ${escapeHtml(name)} !</h2>
+              <p style="color:#475569;font-size:15px;line-height:1.6">
+                Nous avons bien reçu votre demande concernant <strong>${escapeHtml(serviceLabel)}</strong>.
+                Notre équipe revient vers vous sous 24 h avec une proposition personnalisée.
+              </p>
+              <p style="color:#475569;font-size:15px;line-height:1.6">
+                En pièce jointe, notre <strong>politique RSE</strong> : elle détaille nos engagements en matière
+                de sécurité, d'environnement et d'éthique, dans le cadre de notre adhésion au Pacte Mondial
+                des Nations Unies (UN Global Compact).
+              </p>
+              <p style="margin-top:24px">
+                <a href="tel:0467209709" style="background:#ea580c;color:white;padding:12px 20px;border-radius:8px;text-decoration:none;font-weight:bold;display:inline-block">
+                  📞 04 67 20 97 09
+                </a>
+              </p>
+              <p style="margin-top:32px;padding-top:16px;border-top:1px solid #e2e8f0;color:#94a3b8;font-size:12px">
+                Ellipsys Solutions, nettoyage industriel extérieur par drones et robots.
+              </p>
+            </div>
+          `;
+
+          await resend.emails.send({
+            from: `Ellipsys Solutions <${fromEmail}>`,
+            to: [email],
+            subject: `Votre demande de devis, ${serviceLabel}`,
+            html: clientHtml,
+            attachments: [
+              {
+                filename: "Politique-RSE-Ellipsys-Solutions.pdf",
+                content: rseBuffer.toString("base64"),
+              },
+            ],
+          });
+        } catch (err) {
+          // Ne doit jamais faire échouer la demande de devis elle-même.
+          console.warn("[devis] Email client (RSE) failed:", err);
+        }
       }
     }
 
