@@ -202,14 +202,14 @@ export default async function ValeursPage() {
 
                     <p className="italic text-slate-500">{isEn ? "Drone technology advances rapidly, and at Ellipsys Solutions, we ensure it flies in the right direction: with Rigour, Safety, and Care." : "La technologie des drones avance vite, et chez Ellipsys Solutions, nous nous assurons qu'elle vole dans la bonne direction : avec Rigueur, Sécurité, et Bienveillance."}</p>
 
-                    {/* Signature */}
+                    {/* Signature, cohérente avec la politique RSE (ELS-POL-RSE-007), signée par Nicolas Papin, Président */}
                     <div className="pt-4 border-t border-slate-100 flex items-center gap-4">
                       <div className="w-12 h-12 rounded-full bg-gradient-to-br from-emerald-600 to-teal-700 flex items-center justify-center text-white font-black text-lg shrink-0">
-                        E
+                        NP
                       </div>
                       <div>
-                        <p className="font-black text-slate-900 text-sm">{isEn ? "Management" : "La Direction"}</p>
-                        <p className="text-slate-400 text-xs">Ellipsys Solutions</p>
+                        <p className="font-black text-slate-900 text-sm">Nicolas Papin</p>
+                        <p className="text-slate-400 text-xs">{isEn ? "President, Ellipsys Solutions" : "Président, Ellipsys Solutions"}</p>
                       </div>
                     </div>
                   </div>
