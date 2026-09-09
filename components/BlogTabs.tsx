@@ -6,6 +6,16 @@ import { ArrowRight, Calendar, Clock, Instagram, Facebook, Linkedin, Music2, Ext
 
 const articles = [
   {
+    image: "/images/nosvaleurs.png",
+    category: "Vie de l'entreprise",
+    date: "10 Septembre 2026",
+    readTime: "5 min",
+    title: "Ellipsys Solutions rejoint le Pacte Mondial des Nations Unies",
+    excerpt: "Participants du UN Global Compact depuis le 27 juillet 2026. Ce que cet engagement signifie concrètement, avec des chiffres publics et vérifiables : zéro accident, économie d'eau, score de gouvernance publié.",
+    href: "/blog/ellipsys-adhesion-pacte-mondial-nations-unies",
+    badge: "bg-emerald-50 text-emerald-600",
+  },
+  {
     image: "/images/bardagetoit.png",
     category: "Façades & Bardages",
     date: "12 Septembre 2026",

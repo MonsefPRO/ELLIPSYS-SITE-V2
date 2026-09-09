@@ -14,6 +14,46 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "ellipsys-adhesion-pacte-mondial-nations-unies",
+    image: "/images/nosvaleurs.png",
+    category: "Vie de l'entreprise",
+    date: "10 Septembre 2026",
+    readTime: "5 min",
+    badge: "bg-emerald-50 text-emerald-600",
+    title: "Ellipsys Solutions rejoint le Pacte Mondial des Nations Unies",
+    excerpt: "Le 21 juillet 2026, Ellipsys Solutions a adressé au Secrétaire général des Nations Unies sa lettre d'engagement au Pacte Mondial. Nous sommes participants depuis le 27 juillet 2026. Voici ce que cet engagement signifie concrètement, avec des chiffres publics et vérifiables.",
+    metaTitle: "Ellipsys Solutions adhère au Pacte Mondial des Nations Unies | RSE",
+    metaDescription: "Ellipsys Solutions est participant au UN Global Compact depuis le 27 juillet 2026. Découvrez notre politique RSE, nos indicateurs de sécurité et d'environnement, et notre engagement chiffré et daté.",
+    content: `
+<h2>Un engagement formalisé, pas un slogan</h2>
+<p>Le 21 juillet 2026, notre Président Nicolas Papin a adressé à Son Excellence António Guterres, Secrétaire général des Nations Unies, la lettre par laquelle Ellipsys Solutions confirme son soutien aux Dix Principes du Pacte Mondial. Notre entreprise en est participante depuis le <strong>27 juillet 2026</strong>.</p>
+<p>Le Pacte Mondial des Nations Unies (UN Global Compact) est la plus vaste initiative internationale d'entreprises engagées en matière de responsabilité sociétale. Il invite les organisations à aligner leurs opérations sur dix principes universellement acceptés, portant sur les droits humains, les normes internationales du travail, l'environnement et la lutte contre la corruption.</p>
+
+<h2>Pourquoi cette adhésion, pour une entreprise comme la nôtre</h2>
+<p>Notre métier est le nettoyage industriel extérieur, l'entretien et l'inspection de bâtiments et d'installations. C'est un métier où l'on tombe : les études de la CARSAT montrent que près de la moitié des accidents graves survenus dans le bâtiment le sont lors d'interventions courtes en hauteur.</p>
+<p>Nous avons fondé Ellipsys Solutions sur une conviction simple : cette fatalité n'en est pas une. En substituant au travail en toiture des technologies robotiques et aériennes pilotées depuis le sol, nous réduisons d'environ <strong>90 % l'exposition de nos équipes au risque de chute</strong>. L'adhésion au Pacte Mondial formalise une exigence qui préexistait à notre entreprise et qui a présidé à sa création.</p>
+
+<h2>Des chiffres publics, y compris ceux qui restent à améliorer</h2>
+<p>Nous avons soumis notre jeune structure au Transformational Governance Tool, un outil d'auto-évaluation de la maturité de gouvernance du Pacte Mondial, conçu pour auditer de grandes entreprises internationales. Nous publions notre résultat en toute transparence.</p>
+<ul>
+  <li><strong>Score global de gouvernance : 36 %</strong>, avec un objectif public et daté de 50 % au 30 décembre 2026.</li>
+  <li><strong>Zéro accident du travail</strong> depuis la création de l'entreprise (taux de fréquence et taux de gravité de 0,0, sur environ 7 800 heures travaillées).</li>
+  <li><strong>Environ 90 % d'économie d'eau</strong> par rapport aux méthodes manuelles de nettoyage (0,5 à 2 L/m² contre 10 à 15 L/m²).</li>
+  <li><strong>Produits biodégradables à plus de 90 %</strong>, sans javel, systématiquement soumis à l'accord préalable du client.</li>
+  <li><strong>Drones et robots 100 % électriques</strong>, sans émission directe au point d'utilisation.</li>
+</ul>
+<p>Un engagement qui ne se mesure pas n'est pas un engagement. C'est pour cette raison que nous avons choisi de publier un score de départ modeste plutôt qu'une communication sans preuve.</p>
+
+<h2>Ce que cela change concrètement pour nos clients</h2>
+<p>Notre politique RSE encadre désormais l'ensemble de notre chaîne de valeur : sélection de nos fournisseurs sur des critères pondérés incluant les Dix Principes, dispositif d'alerte ouvert à toute personne (client, sous-traitant, riverain), et transparence totale sur nos indicateurs de sécurité et d'environnement.</p>
+<p>Ellipsys Solutions est par ailleurs adhérente de la Fédération Française du Bâtiment (FFB) et du MEDEF, deux plateformes professionnelles où nous partageons notre retour d'expérience sur la réduction du travail en hauteur.</p>
+
+<h2>Consulter notre politique RSE complète</h2>
+<p>Notre politique RSE complète, document de référence ELS-POL-RSE-007, est disponible en téléchargement sur notre page <a href="/valeurs">Nos Valeurs</a>. Elle détaille nos engagements pilier par pilier, nos indicateurs chiffrés et notre plan d'actions daté.</p>
+<p><strong>Une question sur notre démarche RSE ? Contactez-nous au 04 67 20 97 09.</strong></p>
+`,
+  },
+  {
     slug: "nettoyage-bardage-panneaux-solaires-usine-2-en-1",
     image: "/images/bardagetoit.png",
     category: "Façades & Bardages",
