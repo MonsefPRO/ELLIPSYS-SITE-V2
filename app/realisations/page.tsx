@@ -36,6 +36,28 @@ export default async function RealisationsPage() {
         </div>
       </section>
 
+      {/* CHIFFRES CLÉS — uniquement des données réelles et vérifiables (issues des
+          chantiers ci-dessous et de notre politique RSE), pas de statistique
+          de production que nous ne mesurons pas (nous sommes prestataires de
+          nettoyage, pas exploitants de centrale). */}
+      <section className="py-8 bg-[#0e2f52]">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+            {[
+              { label: "53 000 m²", desc: isEn ? "Solar farms cleaned" : "De centrales photovoltaïques nettoyées" },
+              { label: "1 200 m²/h", desc: isEn ? "Robot cleaning capacity" : "De capacité de nettoyage robot" },
+              { label: "≈ 90 %", desc: isEn ? "Water saved vs manual method" : "D'eau économisée vs méthode manuelle" },
+              { label: "0", desc: isEn ? "Accident since our creation" : "Accident depuis notre création" },
+            ].map((e, i) => (
+              <div key={i} className="border-r border-white/10 last:border-0 px-4">
+                <p className="text-2xl font-black text-brand-orange-400 mb-1">{e.label}</p>
+                <p className="text-slate-300 text-xs leading-tight">{e.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="py-20">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-8 items-start">
