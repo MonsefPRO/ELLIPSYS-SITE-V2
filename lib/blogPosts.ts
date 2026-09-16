@@ -14,6 +14,52 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "panneaux-solaires-rendement-perdu-apres-ete",
+    image: "/images/robot-centrale-sol.jpg",
+    category: "Énergie Solaire",
+    date: "16 Septembre 2026",
+    readTime: "6 min",
+    badge: "bg-amber-50 text-amber-600",
+    title: "Panneaux solaires : combien de rendement avez-vous perdu cet été ?",
+    excerpt: "Un été sec, peu de pluie, et des mois d'accumulation de poussière, pollen et dépôts sur vos panneaux. La perte de rendement est invisible au quotidien, mais elle se lit noir sur blanc sur votre facture d'électricité ou votre production. Voici comment la mesurer et la récupérer avant l'hiver.",
+    metaTitle: "Panneaux solaires : rendement perdu après l'été | Ellipsys",
+    metaDescription: "Après un été sec, l'encrassement des panneaux solaires fait perdre 4 à 30% de production selon l'environnement. Nettoyage par robot et drone, sans détergent, jusqu'à 1200 m²/h. Devis gratuit en Occitanie.",
+    content: `
+<h2>Un été sec, une perte de rendement qui s'accumule en silence</h2>
+<p>Contrairement à un panneau cassé ou un onduleur en panne, un panneau solaire encrassé continue de produire. C'est précisément ce qui rend le problème invisible : la centrale fonctionne, la production tombe simplement, un peu chaque semaine, sans alarme ni signal.</p>
+<p>Après un été comme celui que nous venons de traverser en Occitanie, la combinaison est presque toujours la même : plusieurs mois sans grosse pluie, des épisodes de sable saharien, du pollen au printemps, et la poussière ambiante qui se dépose progressivement sur les modules. La perte moyenne mondiale se situe entre <strong>4 et 7 %</strong> (source AIE PVPS), mais elle peut atteindre <strong>20 à 30 %</strong> dans les environnements les plus contraignants : zones littorales (sel), agricoles (poussières de récolte) ou à proximité d'axes routiers et de plateformes industrielles.</p>
+
+<h2>Pourquoi la pluie ne résout pas le problème</h2>
+<p>Beaucoup de propriétaires et d'exploitants comptent sur les pluies d'automne pour « nettoyer » naturellement leurs panneaux. En réalité, la pluie rince superficiellement mais laisse des dépôts minéraux, et n'enlève ni les fientes d'oiseaux, ni les résidus de pollen collés, ni les dépôts sahariens les plus tenaces. Sur une installation en légère pente ou peu inclinée, l'eau de pluie stagne même parfois et aggrave localement l'encrassement.</p>
+
+<h2>Comment mesurer ce que vous perdez réellement</h2>
+<p>Plutôt que d'appliquer une fréquence de nettoyage théorique, nous mesurons l'encrassement réel avant d'intervenir. Pour les centrales et les installations professionnelles, un audit par instrumentation pyranomètre compare la production réelle à la production attendue et objective précisément le <strong>soiling ratio</strong>, la part de production perdue à cause de la saleté. C'est cette mesure, avant et après intervention, qui permet de chiffrer le gain réel plutôt que d'avancer une estimation générique.</p>
+
+<h2>Le nettoyage par robot et drone, sans dégrader vos panneaux</h2>
+<p>Le nettoyage haute pression ou les produits agressifs peuvent créer des micro-rayures sur les cellules et, dans certains cas, remettre en cause la garantie constructeur. Notre méthode repose sur un principe simple : brossage doux et eau filtrée, sans détergent, sans pression excessive.</p>
+<ul>
+  <li><strong>Robot</strong> pour les grandes surfaces (centrales au sol, ombrières, toitures industrielles) : jusqu'à <strong>1 200 m² par heure</strong>, sans arrêt de production.</li>
+  <li><strong>Drone</strong> pour les toitures résidentielles et les installations difficiles d'accès, sans échafaudage ni nacelle.</li>
+  <li>Aucun produit chimique agressif, compatible avec les garanties des fabricants de modules.</li>
+</ul>
+<p>Sur nos deux derniers chantiers de centrales au sol documentés, nous avons traité plus de <strong>53 000 m²</strong> de panneaux, sans arrêt de production ni dommage matériel.</p>
+
+<h2>Questions fréquentes</h2>
+<h3>À quelle fréquence faut-il nettoyer des panneaux solaires ?</h3>
+<p>Un nettoyage par an suffit dans la plupart des cas en Occitanie, idéalement en fin d'été ou en tout début d'automne, après la saison la plus sèche et avant les pluies hivernales. En zone littorale, agricole ou industrielle, deux passages annuels sont souvent plus pertinents. Nous mesurons l'encrassement avant de recommander une fréquence.</p>
+<h3>Le nettoyage annule-t-il la garantie constructeur ?</h3>
+<p>Non, à condition d'utiliser une méthode douce. Notre brossage à l'eau filtrée, sans détergent et sans haute pression, est compatible avec les garanties des fabricants de modules.</p>
+<h3>Faut-il arrêter la production pendant l'intervention ?</h3>
+<p>Non. Nos interventions par robot et drone s'intègrent au site sans bloquer la production, en dehors du strict périmètre de sécurité.</p>
+<h3>Quelle est la différence entre le robot et le drone ?</h3>
+<p>Le robot couvre de grandes surfaces au sol ou en toiture industrielle à haute cadence. Le drone intervient sur les toitures résidentielles et les zones difficiles d'accès, sans échafaudage. Le choix dépend de la configuration de votre installation.</p>
+
+<h2>Récupérer votre rendement avant l'hiver</h2>
+<p>Basés à Montpellier, nous intervenons sur les installations résidentielles et les centrales professionnelles de l'Hérault, du Gard et de toute l'Occitanie. C'est maintenant, avant les premières pluies hivernales, que le nettoyage a le plus d'impact sur votre production des prochains mois.</p>
+<p><strong>Audit gratuit et devis sous 24 h, appelez le 04 67 20 97 09 ou demandez à être rappelé.</strong></p>
+`,
+  },
+  {
     slug: "ellipsys-adhesion-pacte-mondial-nations-unies",
     image: "/images/nosvaleurs.png",
     category: "Vie de l'entreprise",

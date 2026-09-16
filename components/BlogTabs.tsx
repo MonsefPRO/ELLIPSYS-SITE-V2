@@ -6,6 +6,16 @@ import { ArrowRight, Calendar, Clock, Instagram, Facebook, Linkedin, Music2, Ext
 
 const articles = [
   {
+    image: "/images/robot-centrale-sol.jpg",
+    category: "Énergie Solaire",
+    date: "16 Septembre 2026",
+    readTime: "6 min",
+    title: "Panneaux solaires : combien de rendement avez-vous perdu cet été ?",
+    excerpt: "Un été sec et des mois d'accumulation de poussière et de pollen : la perte de rendement est invisible au quotidien, mais elle se lit sur votre production. Comment la mesurer et la récupérer avant l'hiver.",
+    href: "/blog/panneaux-solaires-rendement-perdu-apres-ete",
+    badge: "bg-amber-50 text-amber-600",
+  },
+  {
     image: "/images/nosvaleurs.png",
     category: "Vie de l'entreprise",
     date: "10 Septembre 2026",
