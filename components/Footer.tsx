@@ -140,6 +140,8 @@ export default function Footer() {
               <li><Link href="/intervention/beziers" className="flex items-center gap-1 hover:text-brand-orange-400 transition-colors"><ChevronRight className="w-3 h-3" /> Béziers</Link></li>
               <li><Link href="/intervention/sete" className="flex items-center gap-1 hover:text-brand-orange-400 transition-colors"><ChevronRight className="w-3 h-3" /> Sète</Link></li>
               <li><Link href="/intervention/perpignan" className="flex items-center gap-1 hover:text-brand-orange-400 transition-colors"><ChevronRight className="w-3 h-3" /> Perpignan</Link></li>
+              <li><Link href="/intervention/narbonne" className="flex items-center gap-1 hover:text-brand-orange-400 transition-colors"><ChevronRight className="w-3 h-3" /> Narbonne</Link></li>
+              <li><Link href="/intervention/ales" className="flex items-center gap-1 hover:text-brand-orange-400 transition-colors"><ChevronRight className="w-3 h-3" /> Alès</Link></li>
               <li><Link href="/intervention/toulouse" className="flex items-center gap-1 hover:text-brand-orange-400 transition-colors"><ChevronRight className="w-3 h-3" /> Toulouse</Link></li>
               <li><Link href="/intervention/avignon" className="flex items-center gap-1 hover:text-brand-orange-400 transition-colors"><ChevronRight className="w-3 h-3" /> Avignon</Link></li>
               <li><Link href="/intervention/marseille" className="flex items-center gap-1 hover:text-brand-orange-400 transition-colors"><ChevronRight className="w-3 h-3" /> Marseille</Link></li>

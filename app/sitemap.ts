@@ -72,6 +72,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/intervention/beziers", priority: 0.85, changeFrequency: "monthly" },
     { path: "/intervention/sete", priority: 0.85, changeFrequency: "monthly" },
     { path: "/intervention/perpignan", priority: 0.85, changeFrequency: "monthly" },
+    { path: "/intervention/narbonne", priority: 0.85, changeFrequency: "monthly" },
+    { path: "/intervention/ales", priority: 0.85, changeFrequency: "monthly" },
     { path: "/intervention/toulouse", priority: 0.8, changeFrequency: "monthly" },
     { path: "/intervention/marseille", priority: 0.8, changeFrequency: "monthly" },
     { path: "/intervention/avignon", priority: 0.8, changeFrequency: "monthly" },

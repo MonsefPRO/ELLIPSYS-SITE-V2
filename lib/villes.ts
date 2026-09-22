@@ -516,6 +516,121 @@ export const VILLES: Record<string, VilleData> = {
       },
     ],
   },
+  // ────────────────────────────────────────────────────────────────────────
+  narbonne: {
+    slug: "narbonne",
+    nom: "Narbonne",
+    departement: "Aude",
+    codeDept: "11",
+    region: "Occitanie",
+    delai: "Sous 72 h",
+    accroche: "Vent parmi les plus forts de France, vignoble des Corbières et zone logistique : nettoyage drone et robot dans l'Aude.",
+    intro: [
+      "Narbonne se trouve dans l'un des couloirs de vent les plus constants de France : le cers et la tramontane, qui soufflent depuis le golfe du Lion, justifient d'ailleurs la forte densité de parcs éoliens sur les communes voisines. Cette même exposition explique pourquoi les toitures et les panneaux solaires du Narbonnais s'encrassent différemment du reste de l'Hérault, un dépôt de poussières fines et de sel remis en suspension en permanence, plutôt qu'un encrassement lent et régulier.",
+      "L'arrière-pays narbonnais est aussi un vignoble à grande échelle, les Corbières et le massif de la Clape produisent une poussière calcaire et organique qui se dépose sur les hangars viticoles et les installations photovoltaïques posées sur leurs toitures. À cela s'ajoute la zone logistique du plateau de Montredon, au croisement des autoroutes A9 et A61, qui concentre des entrepôts de grande surface aux toitures et bardages typiquement adaptés à notre méthode robot.",
+    ],
+    facteurs: [
+      {
+        titre: "Cers et tramontane quasi permanents",
+        texte: "Le golfe du Lion connaît l'un des régimes de vent les plus soutenus de France. Il maintient des particules en suspension en continu, ce qui accélère le réencrassement des panneaux solaires entre deux pluies et sollicite fortement les fixations de toiture.",
+      },
+      {
+        titre: "Salinité des étangs littoraux",
+        texte: "La proximité des étangs de Bages-Sigean et de Gruissan expose les bâtiments à un air chargé en sel, en particulier sur les communes situées entre Narbonne et le littoral, avec un effet cumulatif proche de celui observé à Sète.",
+      },
+      {
+        titre: "Poussières viticoles des Corbières",
+        texte: "Les travaux de vigne et la garrigue du massif de la Clape libèrent une poussière calcaire fine qui se fixe sur les toitures photovoltaïques des exploitations, un phénomène comparable à celui du Biterrois mais renforcé par le vent narbonnais.",
+      },
+    ],
+    typologies: [
+      "Hangars viticoles des Corbières équipés en photovoltaïque",
+      "Entrepôts logistiques du plateau de Montredon",
+      "Bâti ancien en pierre du quartier de la Cité",
+      "Maisons vigneronnes et caves coopératives",
+      "Résidences et immeubles du centre-ville",
+      "Bâtiments portuaires et conchylicoles autour des étangs",
+    ],
+    quartiers: [
+      "Le Bourg", "La Cité", "Saint-Just", "Razimbaud", "Plateau de Montredon",
+    ],
+    communes: [
+      "Gruissan", "Bages", "Peyriac-de-Mer", "Sigean", "Coursan", "Cuxac-d'Aude",
+      "Ouveillan", "Bize-Minervois", "Fleury-d'Aude", "Salles-d'Aude", "Armissan", "Vinassan",
+    ],
+    faq: [
+      {
+        q: "Le nettoyage de panneaux solaires est-il rentable sur une exploitation viticole narbonnaise ?",
+        r: "Oui, et souvent plus qu'ailleurs : la combinaison vent fort + poussière calcaire des Corbières produit un encrassement rapide sur les hangars viticoles équipés en toiture photovoltaïque. Notre robot traite jusqu'à 1 200 m² par heure, adapté aux grandes toitures d'exploitation sans arrêt d'activité.",
+      },
+      {
+        q: "La tramontane empêche-t-elle d'intervenir à Narbonne ?",
+        r: "Elle impose une planification plus fine qu'ailleurs, pas un renoncement. Le golfe du Lion est l'une des zones les plus ventées de France, nos vols sont donc positionnés sur les fenêtres météo favorables. Sur les grandes surfaces planes, notre robot de nettoyage n'est de toute façon pas sensible au vent.",
+      },
+      {
+        q: "Quel délai pour intervenir à Narbonne ?",
+        r: "Nous partons de Montpellier, à un peu plus d'une heure de route. Nous mobilisons une équipe sous 72 h en règle générale, devis gratuit établi sous 24 h après votre demande.",
+      },
+    ],
+  },
+
+  // ────────────────────────────────────────────────────────────────────────
+  ales: {
+    slug: "ales",
+    nom: "Alès",
+    departement: "Gard",
+    codeDept: "30",
+    region: "Occitanie",
+    delai: "Sous 72 h",
+    accroche: "Bassin industriel en reconversion, contreforts cévenols et pluies parmi les plus intenses de France : nettoyage drone et robot dans le Gard.",
+    intro: [
+      "Alès est la porte des Cévennes, et cette position change la donne par rapport au reste du Gard : le massif cévenol, à quelques kilomètres, concentre certains des cumuls de pluie les plus élevés de France métropolitaine lors des épisodes cévenols d'automne. Sur les toitures orientées nord de la vallée du Gardon, la conséquence est un développement de mousses et de lichens nettement plus rapide qu'à Nîmes, pourtant dans le même département.",
+      "L'ancien bassin minier alésien ajoute une seconde spécificité, industrielle cette fois. D'anciens sites d'extraction et friches industrielles ont été reconvertis en zones d'activité, entrepôts logistiques et, de plus en plus, en toitures équipées de photovoltaïque sur de très grandes surfaces. Ce sont typiquement des chantiers où l'échafaudage devient économiquement absurde et où notre robot, capable de traiter 1 200 m² par heure, change l'équation.",
+    ],
+    facteurs: [
+      {
+        titre: "Épisodes cévenols intenses",
+        texte: "La proximité du massif cévenol, l'un des secteurs les plus arrosés de France en automne, sature rapidement les toitures. Sur les versants nord de la vallée du Gardon, c'est le facteur numéro un de développement des mousses.",
+      },
+      {
+        titre: "Grandes toitures industrielles de reconversion",
+        texte: "D'anciens sites miniers et industriels du bassin alésien accueillent aujourd'hui entrepôts et centrales photovoltaïques en toiture. Ces surfaces, souvent de plusieurs milliers de mètres carrés, s'encrassent de façon homogène et se prêtent particulièrement bien au nettoyage robotisé.",
+      },
+      {
+        titre: "Humidité de fond de vallée",
+        texte: "Encaissée entre plusieurs vallées cévenoles, Alès conserve une humidité plus élevée qu'en plaine gardoise, en particulier en automne et en hiver, ce qui favorise mousses et algues sur les toitures peu ensoleillées.",
+      },
+    ],
+    typologies: [
+      "Anciens sites miniers et industriels reconvertis",
+      "Entrepôts logistiques et centrales photovoltaïques en toiture",
+      "Corons et logements ouvriers historiques",
+      "Mas cévenols en schiste des contreforts",
+      "Toitures en tuile romane du centre-ville",
+      "Zones d'activité de Saint-Christol-lès-Alès et Salindres",
+    ],
+    quartiers: [
+      "Centre-ville", "Rochebelle", "Clavières", "Bruèges", "Tamaris",
+    ],
+    communes: [
+      "Saint-Christol-lès-Alès", "Anduze", "Saint-Hilaire-de-Brethmas", "Saint-Martin-de-Valgalgues",
+      "Salindres", "Rousson", "Méjannes-lès-Alès", "Vézénobres", "Saint-Privat-des-Vieux",
+    ],
+    faq: [
+      {
+        q: "Intervenez-vous sur les anciens sites industriels reconvertis en photovoltaïque ?",
+        r: "Oui, c'est même l'un de nos cas d'usage les plus fréquents dans le bassin alésien. Ces toitures de reconversion sont souvent très étendues et difficiles d'accès pour un échafaudage. Notre robot, brosse de 1,20 m, franchissement de pentes jusqu'à 25°, traite ces grandes surfaces en une intervention planifiée, sans arrêt d'exploitation.",
+      },
+      {
+        q: "Les pluies cévenoles justifient-elles un entretien plus fréquent à Alès ?",
+        r: "Oui. La proximité du massif cévenol expose les toitures nord de la vallée du Gardon à une humidité nettement supérieure à celle de Nîmes, pourtant à moins d'une heure. Nous recommandons généralement un passage annuel, voire semestriel sur les versants les plus exposés, contre 3 à 5 ans en plaine gardoise.",
+      },
+      {
+        q: "Quel délai pour intervenir à Alès depuis votre base ?",
+        r: "Environ 1 h 10 de route depuis Montpellier. Nous mobilisons une équipe sous 72 h en règle générale, avec un devis gratuit établi sous 24 h après votre demande.",
+      },
+    ],
+  },
 };
 
 /** Toutes les villes disposant d'un contenu local enrichi */
@@ -527,7 +642,7 @@ export const VILLES_ENRICHIES = Object.keys(VILLES);
  */
 export const VILLES_LEGACY = [
   "paris", "lyon", "bordeaux", "nice", "aix-en-provence", "toulon",
-  "montauban", "narbonne", "ales", "arles", "lunel", "agde",
+  "montauban", "arles", "lunel", "agde",
 ];
 
 /** Liste blanche complète, toute autre URL doit renvoyer un 404 */

@@ -349,8 +349,8 @@ export default async function VillePage({ params }: Props) {
                 </h3>
                 <p className="text-slate-600 text-sm leading-relaxed">
                   {isEn
-                    ? <>Our teams are <strong>mobilisable within 48h</strong> in {villeName} and the surrounding area. Response and free quote within <strong>24h</strong>, guaranteed.</>
-                    : <>Nos équipes sont <strong>mobilisables sous 48 h</strong> sur {villeName} et son agglomération. Réponse et devis gratuit sous <strong>24 h</strong> garanti.</>}
+                    ? <>Our teams are mobilisable <strong>{(data?.delai ?? "within 48h").toLowerCase()}</strong> in {villeName} and the surrounding area. Response and free quote within <strong>24h</strong>, guaranteed.</>
+                    : <>Nos équipes sont mobilisables <strong>{(data?.delai ?? "sous 48 h").toLowerCase()}</strong> sur {villeName} et son agglomération. Réponse et devis gratuit sous <strong>24 h</strong> garanti.</>}
                 </p>
               </div>
             </div>
