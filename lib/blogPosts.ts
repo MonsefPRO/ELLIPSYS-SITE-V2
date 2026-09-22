@@ -14,6 +14,63 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "prix-negatifs-electricite-seuil-arret-centrale-photovoltaique",
+    image: "/images/robot-vue-aerienne.jpg",
+    category: "Énergie Solaire",
+    date: "22 Septembre 2026",
+    readTime: "7 min",
+    badge: "bg-amber-50 text-amber-600",
+    title: "Prix négatifs : ce qui change pour votre centrale au 1er décembre",
+    excerpt: "La France a connu 407 heures de prix négatifs au premier semestre 2026, soit près de 10 % du temps. Un arrêté de juillet abaisse le seuil d'arrêt obligatoire à 5 MWc en décembre, puis à 1 MWc en mars 2027. Voici ce que cela change concrètement pour un exploitant photovoltaïque.",
+    metaTitle: "Prix négatifs : nouveau seuil d'arrêt centrales PV",
+    metaDescription: "407 h de prix négatifs au S1 2026. L'arrêté du 20 juillet 2026 abaisse le seuil d'arrêt à 5 MWc au 1er décembre, puis 1 MWc en mars 2027. Ce que cela change pour votre centrale.",
+    content: `
+<h2>407 heures de prix négatifs en six mois</h2>
+<p>Au premier semestre 2026, l'électricité s'est échangée à prix négatif pendant <strong>407 heures</strong> sur le marché français, soit près de 10 % du temps. Pour mesurer la vitesse du phénomène, il suffit de regarder les années précédentes : 147 heures en 2023, 361 heures en 2024, puis 513 heures sur l'ensemble de l'année 2025. Le seul premier semestre 2026 représente donc déjà près de 80 % de l'année précédente complète.</p>
+<p>Le record absolu a été atteint le 1<sup>er</sup> mai 2026, avec une cotation à <strong>-498,65 €/MWh</strong>, à moins de deux euros du plancher réglementaire fixé à -500 €/MWh.</p>
+<p>Un chiffre concerne directement les producteurs solaires : <strong>65 % de ces heures négatives se concentrent entre 11h et 16h</strong>, exactement au moment où une centrale photovoltaïque produit le plus. Avril, mai et juin ont à eux seuls représenté 70 % des heures négatives du semestre.</p>
+
+<h2>Le nouveau seuil d'arrêt obligatoire, et son calendrier</h2>
+<p>L'arrêté du 20 juillet 2026 modifie les règles pour les installations bénéficiant d'un contrat d'obligation d'achat ou de complément de rémunération. Le seuil de puissance au-delà duquel une installation doit cesser d'injecter pendant les épisodes de prix négatifs passe de 10 MW à :</p>
+<ul>
+  <li><strong>5 MWc au 1<sup>er</sup> décembre 2026</strong></li>
+  <li><strong>1 MWc au 1<sup>er</sup> mars 2027</strong></li>
+</ul>
+<p>Le texte vise aussi bien les centrales au sol que les toitures, les hangars et les ombrières, ainsi que l'éolien terrestre. Autrement dit, des installations qui n'étaient pas concernées jusqu'ici entrent dans le dispositif en quelques mois.</p>
+<p>La compensation prévue ne couvre pas intégralement la perte. Le coefficient appliqué au photovoltaïque est de 0,47, ce qui laisse un manque à gagner résiduel à la charge du producteur sur chaque épisode.</p>
+
+<h2>Pourquoi le phénomène s'amplifie</h2>
+<p>Trois causes se combinent, et aucune ne relève d'un dysfonctionnement ponctuel.</p>
+<p><strong>La production renouvelable progresse plus vite que la flexibilité du système.</strong> Environ 6 GWc ont été raccordés en 2025, et une part significative de ce parc continue d'injecter même à prix négatif parce que les anciens contrats d'obligation d'achat ne l'incitent pas à s'arrêter.</p>
+<p><strong>Le stockage reste très en retard sur les besoins.</strong> La France dispose d'environ 1,32 GW de stockage par batterie opérationnel, pour une cible de 5 GW en 2030 et une fourchette de 6 à 10 GW envisagée par RTE à l'horizon 2035. Plus de 7 GW de projets ont réservé leurs droits d'accès au réseau, mais les délais d'instruction ajoutent couramment 12 à 18 mois, et certaines zones saturées repoussent des mises en service jusqu'en 2030.</p>
+<p><strong>La demande ne suit pas la courbe de production solaire.</strong> Le pic de production de midi ne correspond pas au pic de consommation, et sans capacité de stockage suffisante pour décaler cette énergie, le surplus fait mécaniquement plonger les prix.</p>
+
+<h2>Ce que cela change dans la gestion d'un parc</h2>
+<p>Pour un exploitant, la conséquence est simple à formuler : <strong>le nombre d'heures réellement valorisées diminue</strong>. Quand la plage horaire rentable se réduit et que les tarifs de vente baissent, chaque kilowattheure perdu pendant les heures qui comptent encore pèse proportionnellement plus lourd qu'auparavant.</p>
+<p>Or une grande partie des variables qui déterminent la rentabilité d'un parc échappe totalement à l'exploitant : le prix de marché, le calendrier réglementaire, la file d'attente de raccordement, la météo. Le rendement du parc existant fait partie du petit nombre de leviers qui restent entièrement sous contrôle.</p>
+<p>L'encrassement des modules entre précisément dans cette catégorie. Il n'est ni conjoncturel, ni réglementaire, et il se mesure.</p>
+
+<h2>Questions fréquentes</h2>
+<h3>Mon installation est-elle concernée par le nouveau seuil ?</h3>
+<p>Si elle dépasse 5 MWc et bénéficie d'un contrat d'obligation d'achat ou de complément de rémunération, elle l'est à partir du 1<sup>er</sup> décembre 2026. Le seuil descend ensuite à 1 MWc au 1<sup>er</sup> mars 2027, ce qui élargit nettement le périmètre, y compris à des toitures industrielles et des ombrières de parking.</p>
+<h3>Que se passe-t-il concrètement quand le prix devient négatif ?</h3>
+<p>L'installation concernée doit cesser d'injecter sur le réseau pendant l'épisode. Une compensation est prévue, mais avec un coefficient de 0,47 pour le photovoltaïque, elle ne couvre pas l'intégralité du manque à gagner.</p>
+<h3>Est-ce que ce phénomène est appelé à durer ?</h3>
+<p>Les facteurs structurels qui l'alimentent, à savoir le décalage entre la croissance du parc renouvelable et celle du stockage, ne se résorberont pas à court terme compte tenu des délais de raccordement actuels. La trajectoire de RTE situe l'essentiel du rattrapage en capacité de stockage entre 2030 et 2035.</p>
+<h3>Le nettoyage des modules change-t-il vraiment quelque chose dans ce contexte ?</h3>
+<p>Il n'agit pas sur le prix de marché, et nous ne prétendons pas l'inverse. Il agit sur la quantité d'énergie produite pendant les heures qui restent valorisées. Dans un contexte où ces heures se raréfient, la production perdue par encrassement devient proportionnellement plus coûteuse qu'à l'époque où l'ensemble de la journée était rémunérateur.</p>
+<h3>Comment savoir ce que je perds réellement ?</h3>
+<p>Par la mesure plutôt que par l'estimation. Un audit compare la production réelle à la production attendue et objective le soiling ratio, c'est-à-dire la part de production perdue à cause des dépôts. C'est cette mesure, avant et après intervention, qui chiffre le gain réel.</p>
+
+<h2>Notre intervention sur les centrales</h2>
+<p>Nous nettoyons les centrales photovoltaïques par robot, jusqu'à 1 200 m² par heure, avec une brosse de 1,20 m et un franchissement de pentes jusqu'à 25°, sans interruption d'exploitation. Sur nos deux derniers chantiers de centrales au sol documentés, plus de 53 000 m² de panneaux ont été traités sans arrêt de production ni dommage matériel.</p>
+<p>Basés à Montpellier, nous intervenons sur toute l'Occitanie, de Perpignan à Nîmes et de Narbonne à Toulouse, ainsi que sur les départements limitrophes.</p>
+<p><strong>Audit et devis gratuits sous 24 h, au 04 67 20 97 09 ou via notre formulaire de demande de devis.</strong></p>
+
+<p><em>Sources : bilans électriques RTE, données de marché EPEX SPOT, arrêté du 20 juillet 2026.</em></p>
+`,
+  },
+  {
     slug: "panneaux-solaires-rendement-perdu-apres-ete",
     image: "/images/robot-centrale-sol.jpg",
     category: "Énergie Solaire",
@@ -22,7 +79,7 @@ export const blogPosts: BlogPost[] = [
     badge: "bg-amber-50 text-amber-600",
     title: "Panneaux solaires : combien de rendement avez-vous perdu cet été ?",
     excerpt: "Un été sec, peu de pluie, et des mois d'accumulation de poussière, pollen et dépôts sur vos panneaux. La perte de rendement est invisible au quotidien, mais elle se lit noir sur blanc sur votre facture d'électricité ou votre production. Voici comment la mesurer et la récupérer avant l'hiver.",
-    metaTitle: "Panneaux solaires : rendement perdu après l'été | Ellipsys",
+    metaTitle: "Panneaux solaires : rendement perdu après l'été",
     metaDescription: "Après un été sec, l'encrassement des panneaux solaires fait perdre 4 à 30% de production selon l'environnement. Nettoyage par robot et drone, sans détergent, jusqu'à 1200 m²/h. Devis gratuit en Occitanie.",
     content: `
 <h2>Un été sec, une perte de rendement qui s'accumule en silence</h2>
@@ -68,7 +125,7 @@ export const blogPosts: BlogPost[] = [
     badge: "bg-emerald-50 text-emerald-600",
     title: "Ellipsys Solutions rejoint le Pacte Mondial des Nations Unies",
     excerpt: "Le 21 juillet 2026, Ellipsys Solutions a adressé au Secrétaire général des Nations Unies sa lettre d'engagement au Pacte Mondial. Nous sommes participants depuis le 27 juillet 2026. Voici ce que cet engagement signifie concrètement, avec des chiffres publics et vérifiables.",
-    metaTitle: "Ellipsys Solutions adhère au Pacte Mondial des Nations Unies | RSE",
+    metaTitle: "Adhésion au Pacte Mondial des Nations Unies",
     metaDescription: "Ellipsys Solutions est participant au UN Global Compact depuis le 27 juillet 2026. Découvrez notre politique RSE, nos indicateurs de sécurité et d'environnement, et notre engagement chiffré et daté.",
     content: `
 <h2>Un engagement formalisé, pas un slogan</h2>
@@ -108,7 +165,7 @@ export const blogPosts: BlogPost[] = [
     badge: "bg-blue-50 text-blue-600",
     title: "Usines et entrepôts : nettoyez bardage et panneaux solaires en une seule intervention",
     excerpt: "La plupart des sites industriels cumulent deux problèmes traités séparément : un bardage qui s'encrasse et des panneaux solaires en toiture qui perdent du rendement. Les traiter en une seule intervention par drone et robot, c'est un déplacement, un prestataire, et une facture optimisée. Voici pourquoi c'est la bonne approche.",
-    metaTitle: "Nettoyage bardage + panneaux solaires d'usine en une intervention | Ellipsys",
+    metaTitle: "Nettoyage bardage + panneaux solaires d'usine en une intervention",
     metaDescription: "Usines, entrepôts, plateformes logistiques : nettoyez votre bardage ET vos panneaux solaires en toiture en une seule intervention par drone et robot. Sans échafaudage, sans arrêt de production. Devis B2B en Occitanie.",
     content: `
 <h2>Un site industriel, deux problèmes que l'on traite d'habitude séparément</h2>
@@ -170,7 +227,7 @@ export const blogPosts: BlogPost[] = [
     badge: "bg-orange-50 text-orange-600",
     title: "Nettoyer deux centrales solaires au sol en une seule tournée : comment on s'organise",
     excerpt: "Récemment, notre équipe s'est déplacée en Saône-et-Loire pour nettoyer deux centrales photovoltaïques au sol pour le compte d'un exploitant solaire, plus de 50 000 m² de panneaux au total. Retour sur ce déplacement.",
-    metaTitle: "Nettoyage de centrales solaires en Saône-et-Loire | Ellipsys",
+    metaTitle: "Nettoyage de centrales solaires en Saône-et-Loire",
     metaDescription: "Retour sur le nettoyage par drone et robot de deux centrales photovoltaïques au sol en Saône-et-Loire (Vitry et Montchanin), plus de 50 000 m² traités sans arrêt de production.",
     content: `
 <h2>Un déplacement, deux centrales, plus de 50 000 m² à traiter</h2>
@@ -201,7 +258,7 @@ export const blogPosts: BlogPost[] = [
     badge: "bg-red-50 text-red-600",
     title: "Nid de frelons asiatiques en hauteur : pourquoi septembre est le mois le plus dangereux",
     excerpt: "En septembre et octobre, les nids de frelons asiatiques atteignent leur taille maximale et la colonie devient bien plus agressive. C'est aussi le moment où il faut agir, mais surtout pas seul. Comment un drone permet de détruire un nid en grande hauteur sans aucun risque.",
-    metaTitle: "Nid de frelons asiatiques : pourquoi septembre est dangereux | Ellipsys",
+    metaTitle: "Nid de frelons asiatiques : pourquoi septembre est dangereux",
     metaDescription: "En septembre-octobre, les nids de frelons asiatiques sont à leur taille maximale et la colonie devient agressive. Découvrez pourquoi il faut agir vite et comment un drone détruit un nid en hauteur sans risque. Intervention Occitanie.",
     content: `
 <h2>Septembre : le mois où le danger est à son maximum</h2>
@@ -261,7 +318,7 @@ export const blogPosts: BlogPost[] = [
     badge: "bg-slate-100 text-slate-700",
     title: "Démoussage de toiture : pourquoi l'automne est le meilleur moment pour agir",
     excerpt: "Les premières pluies d'automne, après un été sec, réveillent mousses et lichens sur les tuiles. Attendre l'hiver, c'est risquer les infiltrations. Voici pourquoi la fin de l'été est la fenêtre idéale pour démousser, et comment on le fait par drone, sans jamais monter sur votre toit.",
-    metaTitle: "Démoussage de toiture : pourquoi agir en automne | Ellipsys",
+    metaTitle: "Démoussage de toiture : pourquoi agir en automne",
     metaDescription: "Pourquoi l'automne est le meilleur moment pour démousser sa toiture : premières pluies, mousses, risque d'infiltration hivernale. Démoussage par drone sans monter sur le toit, traitement Certibiocide. Devis gratuit en Occitanie.",
     content: `
 <h2>Pourquoi la mousse revient chaque automne</h2>
@@ -316,7 +373,7 @@ export const blogPosts: BlogPost[] = [
     badge: "bg-slate-100 text-slate-700",
     title: "Démoussage de toiture : pourquoi le karcher haute pression est une erreur coûteuse",
     excerpt: "Le nettoyage haute pression fragilise les tuiles et annule les garanties fabricant. Découvrez pourquoi nos traitements certibiocides sans pression sont la seule méthode professionnelle validée par les assureurs.",
-    metaTitle: "Démoussage Toiture : Pourquoi le Karcher est une Erreur | Ellipsys",
+    metaTitle: "Démoussage Toiture : Pourquoi le Karcher est une Erreur",
     metaDescription: "Le nettoyage haute pression endommage vos tuiles et annule les garanties. Découvrez la méthode certibiocide sans pression pour un démoussage professionnel durable. Devis gratuit.",
     content: `
 <h2>Le réflexe Karcher : une idée reçue qui coûte cher</h2>
@@ -384,7 +441,7 @@ export const blogPosts: BlogPost[] = [
     badge: "bg-amber-50 text-amber-600",
     title: "Pluies de sable saharien : quel impact réel sur le rendement de vos panneaux solaires ?",
     excerpt: "Les épisodes de sable saharien peuvent réduire la production d'un parc photovoltaïque de 8 à 15%. Nous analysons les données et expliquons comment un nettoyage professionnel adapté restaure le rendement nominal.",
-    metaTitle: "Sable Saharien et Panneaux Solaires : Impact sur le Rendement | Ellipsys",
+    metaTitle: "Sable Saharien et Panneaux Solaires : Impact sur le Rendement",
     metaDescription: "Le sable du Sahara réduit le rendement de vos panneaux solaires de 8 à 15%. Découvrez comment un nettoyage professionnel par drone restaure votre production photovoltaïque. Devis gratuit.",
     content: `
 <h2>Un phénomène météo aux conséquences économiques réelles</h2>
@@ -458,7 +515,7 @@ export const blogPosts: BlogPost[] = [
     badge: "bg-emerald-50 text-emerald-600",
     title: "Nettoyage de façade industrielle : pourquoi le drone remplace l'échafaudage en 2026",
     excerpt: "Échafaudage, nacelle, alpinisme industriel : chaque méthode traditionnelle implique des coûts logistiques et des risques humains énormes. Découvrez comment le drone Chronos nettoie un bardage de 15 mètres en une journée.",
-    metaTitle: "Nettoyage Façade par Drone vs Échafaudage : Comparatif 2026 | Ellipsys",
+    metaTitle: "Nettoyage Façade par Drone vs Échafaudage : Comparatif 2026",
     metaDescription: "Drone vs échafaudage pour le nettoyage de façade : coûts, délais, risques. Découvrez pourquoi le drone Chronos est la solution la plus efficace en 2026. Devis gratuit Montpellier.",
     content: `
 <h2>Le nettoyage de façade : un marché en pleine mutation</h2>
@@ -538,7 +595,7 @@ export const blogPosts: BlogPost[] = [
     badge: "bg-blue-50 text-blue-600",
     title: "Décret Tertiaire : comment la thermographie drone vous aide à atteindre vos objectifs de -40%",
     excerpt: "Le Décret Tertiaire impose une réduction de 40% de la consommation énergétique des bâtiments de plus de 1000m² d'ici 2030. La thermographie par drone est l'outil de diagnostic le plus rapide et le plus précis.",
-    metaTitle: "Thermographie Drone et Décret Tertiaire : Guide Complet 2026 | Ellipsys",
+    metaTitle: "Thermographie Drone et Décret Tertiaire : Guide Complet 2026",
     metaDescription: "Le Décret Tertiaire impose -40% de consommation d'ici 2030. La thermographie par drone détecte les déperditions thermiques en quelques heures. Devis gratuit en Occitanie.",
     content: `
 <h2>Le Décret Tertiaire : une obligation légale aux conséquences financières concrètes</h2>
@@ -611,7 +668,7 @@ export const blogPosts: BlogPost[] = [
     badge: "bg-red-50 text-red-600",
     title: "Frelon asiatique : comment neutraliser un nid en grande hauteur sans aucun risque ?",
     excerpt: "Le frelon asiatique (Vespa velutina) est une espèce invasive classée dangereuse. Nos drones Certibiocide permettent d'intervenir sur des nids en toiture ou sous corniche sans aucune mise en danger.",
-    metaTitle: "Destruction Nid Frelon Asiatique par Drone : Sans Risque | Ellipsys",
+    metaTitle: "Destruction Nid Frelon Asiatique par Drone : Sans Risque",
     metaDescription: "Frelon asiatique en hauteur ? Le drone Certibiocide Ellipsys neutralise les nids sous corniche, en toiture ou en arbre sans danger. Intervention rapide en Occitanie et PACA.",
     content: `
 <h2>Le frelon asiatique : une espèce dangereuse et invasive</h2>
@@ -675,7 +732,7 @@ export const blogPosts: BlogPost[] = [
     badge: "bg-orange-50 text-orange-600",
     title: "Scénarios STS-01 et STS-02 : tout comprendre sur la réglementation européenne des drones",
     excerpt: "Depuis janvier 2024, les vols de drones en zone peuplée sont soumis aux scénarios européens STS. Nous détaillons les obligations déclaratives, les zones d'exclusion et comment Ellipsys gère l'intégralité de ces démarches.",
-    metaTitle: "Réglementation Drone STS-01 STS-02 : Guide Complet 2026 | Ellipsys",
+    metaTitle: "Réglementation Drone STS-01 STS-02 : Guide Complet 2026",
     metaDescription: "Scénarios STS-01 et STS-02, certification DGAC, zones interdites : tout sur la réglementation drone en France en 2026. Ellipsys gère toutes vos démarches réglementaires.",
     content: `
 <h2>La réglementation drone en France : un cadre européen harmonisé</h2>

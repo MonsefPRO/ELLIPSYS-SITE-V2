@@ -6,6 +6,16 @@ import { ArrowRight, Calendar, Clock, Instagram, Facebook, Linkedin, Music2, Ext
 
 const articles = [
   {
+    image: "/images/robot-vue-aerienne.jpg",
+    category: "Énergie Solaire",
+    date: "22 Septembre 2026",
+    readTime: "7 min",
+    title: "Prix négatifs : ce qui change pour votre centrale au 1er décembre",
+    excerpt: "407 heures de prix négatifs au premier semestre 2026, soit près de 10 % du temps. Le seuil d'arrêt obligatoire descend à 5 MWc en décembre, puis à 1 MWc en mars 2027.",
+    href: "/blog/prix-negatifs-electricite-seuil-arret-centrale-photovoltaique",
+    badge: "bg-amber-50 text-amber-600",
+  },
+  {
     image: "/images/robot-centrale-sol.jpg",
     category: "Énergie Solaire",
     date: "16 Septembre 2026",
