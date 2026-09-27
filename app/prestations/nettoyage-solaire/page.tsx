@@ -394,7 +394,6 @@ export default async function PanneauxPhotovoltaiquesPage() {
           liens={[
             { href: "/nettoyage-panneaux-solaires-montpellier", label: "Nettoyage de panneaux solaires à Montpellier", sub: "Résidentiel & professionnel, devis sous 24 h" },
             { href: "/nettoyage-panneaux-photovoltaiques", label: "Centrales photovoltaïques (B2B)", sub: "Parcs au sol, ombrières, contrats O&M" },
-            { href: "/nettoyage-ombrieres-photovoltaiques", label: "Nettoyage d'ombrières photovoltaïques", sub: "Parkings commerciaux et logistiques, sans fermeture de site" },
             { href: "/tarifs", label: "Tarifs & prix", sub: "Fourchettes de prix par prestation" },
           ]}
         />

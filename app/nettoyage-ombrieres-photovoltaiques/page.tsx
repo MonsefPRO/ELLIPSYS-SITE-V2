@@ -35,10 +35,9 @@ export default function Page() {
       formTitre="Audit de votre parc sous 24 h"
       formSoustitre="Dites-nous le nombre de places couvertes et la localisation des sites."
       preuve={{
-        image: "/images/avant-apres-panneaux.jpg",
-        alt: "Avant après nettoyage de panneaux photovoltaïques d'ombrière",
-        legende: "Chantier réel, panneaux rendus à leur transparence d'origine",
-        badges: ["AVANT", "APRÈS"],
+        image: "/images/robot-intervention-structure.jpg",
+        alt: "Robot de nettoyage Ellipsys en intervention sur une structure photovoltaïque surélevée",
+        legende: "Intervention réelle : notre robot sur une structure surélevée, la bande déjà nettoyée est visible",
       }}
       benefices={[
         {
