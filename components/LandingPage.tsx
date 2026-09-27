@@ -190,8 +190,18 @@ export default function LandingPage(p: LandingPageProps) {
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-black text-slate-900 mb-3">Combien ça coûte ?</h2>
             <p className="text-slate-600 max-w-2xl mx-auto">
-              Nous préférons annoncer des ordres de grandeur plutôt que de vous faire remplir un
-              formulaire pour découvrir un prix. Le devis exact reste gratuit et sans engagement.
+              {p.prix.some((x) => /\d/.test(x.prix)) ? (
+                <>
+                  Nous préférons annoncer des ordres de grandeur plutôt que de vous faire remplir un
+                  formulaire pour découvrir un prix. Le devis exact reste gratuit et sans engagement.
+                </>
+              ) : (
+                <>
+                  Surface, accès, état d&apos;encrassement et méthode retenue font trop varier le montant
+                  pour qu&apos;un tarif affiché ait du sens. Nous chiffrons votre cas précis, gratuitement
+                  et sans engagement, sous 24 h.
+                </>
+              )}
             </p>
           </div>
 

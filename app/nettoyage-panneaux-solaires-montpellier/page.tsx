@@ -62,7 +62,7 @@ export default function Page() {
       prix={[
         {
           label: "Installation résidentielle",
-          prix: "à partir de 350 €",
+          prix: "sur devis",
           note: "Pour 12 à 30 panneaux en toiture. Intervention en une demi-journée.",
         },
         {
