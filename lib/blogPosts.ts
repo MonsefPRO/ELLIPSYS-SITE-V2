@@ -14,6 +14,75 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "apsad-d20-assurance-photovoltaique-ce-qui-change",
+    image: "/images/avant-apres-panneaux-2.jpg",
+    category: "Énergie Solaire",
+    date: "28 Septembre 2026",
+    readTime: "7 min",
+    badge: "bg-amber-50 text-amber-600",
+    title: "APSAD D20 : ce que le nouveau référentiel change pour l'assurance photovoltaïque",
+    excerpt: "Le référentiel APSAD D20 s'applique depuis le 1er septembre 2026. Les assureurs passent d'une conformité déclarée à une conformité démontrée : thermographie, contrôle Q20 et documentation deviennent décisifs pour assurer une installation photovoltaïque.",
+    metaTitle: "APSAD D20 : ce qui change pour l'assurance photovoltaïque",
+    metaDescription: "Le référentiel APSAD D20 s'applique depuis le 1er septembre 2026. Thermographie, contrôle Q20, documentation : ce que les assureurs regardent désormais.",
+    content: `
+<h2>Un référentiel de prévention entré en application le 1er septembre 2026</h2>
+<p>Le référentiel <strong>APSAD D20</strong> encadre la prévention des risques sur les installations photovoltaïques, et en premier lieu le risque d'incendie. Il est édité par le <strong>CNPP</strong>, l'organisme de référence en prévention et protection contre les risques, sous la marque APSAD reconnue par les assureurs.</p>
+<p>Une nouvelle édition, datée de septembre 2025, remplace la version de 2013. Elle est <strong>applicable depuis le 1<sup>er</sup> septembre 2026</strong>. Elle s'accompagne du <strong>compte rendu de contrôle Q20</strong>, le document qui formalise toute vérification, initiale ou périodique, d'une installation au regard du référentiel.</p>
+
+<h2>Pourquoi les assureurs s'en saisissent</h2>
+<p>Face à une sinistralité en hausse, les assureurs durcissent leur analyse des projets photovoltaïques. Le courtier Verspieren résume ce changement par une formule : on passe <strong>d'une conformité déclarée à une conformité démontrée</strong>. Il ne suffit plus d'affirmer qu'une installation respecte les règles de l'art, il faut pouvoir le prouver, documents à l'appui.</p>
+<p>Dans cette logique, l'assurabilité ne se règle plus en fin de chantier. Elle se construit dès la conception et se maintient tout au long de l'exploitation. Un dossier incomplet ou une traçabilité défaillante peut désormais se traduire par des difficultés à trouver un assureur, ou par une surprime.</p>
+
+<h2>Les quatre critères qui pèsent dans l'analyse</h2>
+<p><strong>La conception.</strong> L'implantation, l'accessibilité pour les secours et le compartimentage des équipements sont examinés sous l'angle de la limitation de la propagation d'un sinistre.</p>
+<p><strong>La maintenance.</strong> L'existence d'un contrat d'entretien ne suffit plus : l'assureur regarde la capacité à maintenir un niveau de sécurité constant dans le temps, avec une détection précoce des anomalies et des contrôles périodiques.</p>
+<p><strong>La documentation.</strong> Les pièces attendues sont de plus en plus complètes : comptes rendus de contrôle conformes aux exigences APSAD, rapports de maintenance détaillant les actions correctives, justificatifs de conformité des matériels et procès-verbaux de réception sans réserve.</p>
+<p><strong>L'environnement du site.</strong> Grêle, vent violent, incendies de végétation : l'exposition climatique du site est prise en compte, et une installation située en zone exposée doit justifier de mesures de protection adaptées.</p>
+
+<h2>La thermographie infrarouge au cœur du référentiel</h2>
+<p>La thermographie infrarouge devient un élément structurant du D20. Elle vise à détecter les échauffements anormaux des modules, des câbles et des connexions, et couvre trois parties de l'installation :</p>
+<ul>
+  <li><strong>La partie courant alternatif</strong>, en aval de l'onduleur, contrôlée selon le référentiel APSAD D19 consacré à la thermographie des installations électriques.</li>
+  <li><strong>La partie courant continu</strong>, entre les modules et l'onduleur, également selon le D19, avec une attention particulière portée aux connecteurs et aux boîtes de jonction.</li>
+  <li><strong>Les modules eux-mêmes</strong> : ce contrôle est facultatif par défaut, mais il peut être imposé par le prescripteur, qui est souvent l'assureur.</li>
+</ul>
+
+<h2>Deux précisions souvent mal comprises</h2>
+<p><strong>La périodicité n'est pas fixée par le référentiel.</strong> Certaines lectures présentent la maintenance annuelle comme une obligation. D'après les analyses techniques du référentiel, le D20 ne fixe pas de fréquence : il <strong>recommande</strong> un contrôle annuel. En pratique, c'est souvent l'assureur qui fixe l'exigence dans le contrat.</p>
+<p><strong>Tout le monde ne peut pas délivrer un compte rendu Q20.</strong> Les contrôles doivent être réalisés par des opérateurs titulaires d'un certificat de compétence délivré par le CNPP. Avant de confier un contrôle, il est donc utile de vérifier cette qualification.</p>
+
+<h2>Encrassement et points chauds : un lien à connaître</h2>
+<p>Le référentiel D20 ne traite pas du nettoyage des modules. Un phénomène physique mérite toutefois d'être connu des exploitants : un dépôt localisé, comme une fiente d'oiseau, une feuille ou un amas de poussière, ombrage une partie de cellule et peut provoquer un échauffement local, appelé point chaud. C'est précisément le type d'anomalie qu'une thermographie des modules met en évidence.</p>
+
+<h2>Ce qu'un exploitant peut préparer dès maintenant</h2>
+<ul>
+  <li>Les comptes rendus de contrôle Q20 délivrés par un opérateur certifié.</li>
+  <li>Le carnet de maintenance et les rapports d'intervention, avec les actions correctives réalisées.</li>
+  <li>Les justificatifs de conformité des matériels et les procès-verbaux de réception.</li>
+  <li>L'historique des sinistres et des évolutions de l'installation (surface, matériel ajouté, changement d'exploitant).</li>
+</ul>
+<p>Réunir ces éléments plusieurs semaines avant l'échéance d'un contrat permet d'aborder le renouvellement avec un dossier solide. À titre indicatif, Verspieren estime le coût de l'assurance d'un projet agrivoltaïque entre 2 et 4 % du capital assuré par an.</p>
+
+<h2>Questions fréquentes</h2>
+<h3>L'APSAD D20 est-il une obligation légale ?</h3>
+<p>Non. C'est un référentiel de prévention reconnu par les assureurs, et non un texte de loi. Un assureur peut en revanche s'y référer pour accepter un dossier, fixer des garanties ou limiter des exclusions.</p>
+<h3>À quelle fréquence faut-il faire contrôler son installation ?</h3>
+<p>Le référentiel ne fixe pas de périodicité et recommande un contrôle annuel. Le contrat d'assurance peut, lui, imposer une fréquence précise.</p>
+<h3>Qui peut délivrer un compte rendu de contrôle Q20 ?</h3>
+<p>Un opérateur titulaire d'un certificat de compétence délivré par le CNPP. C'est ce document qui constitue la preuve de contrôle au regard du référentiel.</p>
+<h3>La thermographie des modules est-elle obligatoire ?</h3>
+<p>Elle est facultative par défaut dans le D20, contrairement à celle des parties courant alternatif et courant continu. Le prescripteur, souvent l'assureur, peut toutefois l'exiger.</p>
+
+<h2>Sources</h2>
+<ul>
+  <li><a href="https://cybel.cnpp.com/livre-referentiel-apsad-d20-installations-photovoltaiques-2025.html" target="_blank" rel="noopener noreferrer">CNPP Éditions, référentiel APSAD D20 Installations photovoltaïques</a></li>
+  <li><a href="https://www.verspieren.com/article/apsad-d20-quels-criteres-influencent-desormais-lassurance-photovoltaique" target="_blank" rel="noopener noreferrer">Verspieren, APSAD D20 : quels critères influencent désormais l'assurance photovoltaïque</a></li>
+  <li><a href="https://france.apave.com/Actualites/News/Installations-photovoltaiques-un-nouveau-referentiel-APSAD-D20-applicable-en-2026" target="_blank" rel="noopener noreferrer">Apave, un nouveau référentiel APSAD D20 applicable en 2026</a></li>
+  <li><a href="https://www.acritec.fr/referentiel-apsad-d20-installations-photovoltaiques/" target="_blank" rel="noopener noreferrer">Acritec, APSAD D20 et Q20 : le guide complet</a></li>
+</ul>
+`,
+  },
+  {
     slug: "prix-negatifs-electricite-seuil-arret-centrale-photovoltaique",
     image: "/images/robot-vue-aerienne.jpg",
     category: "Énergie Solaire",

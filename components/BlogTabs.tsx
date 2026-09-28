@@ -6,6 +6,16 @@ import { ArrowRight, Calendar, Clock, Instagram, Facebook, Linkedin, Music2, Ext
 
 const articles = [
   {
+    image: "/images/avant-apres-panneaux-2.jpg",
+    category: "Énergie Solaire",
+    date: "28 Septembre 2026",
+    readTime: "7 min",
+    title: "APSAD D20 : ce que le nouveau référentiel change pour l'assurance photovoltaïque",
+    excerpt: "Applicable depuis le 1er septembre 2026, le référentiel APSAD D20 change la façon dont les assureurs analysent une installation photovoltaïque : thermographie, contrôle Q20 et documentation.",
+    href: "/blog/apsad-d20-assurance-photovoltaique-ce-qui-change",
+    badge: "bg-amber-50 text-amber-600",
+  },
+  {
     image: "/images/robot-vue-aerienne.jpg",
     category: "Énergie Solaire",
     date: "22 Septembre 2026",
