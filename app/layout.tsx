@@ -1,25 +1,29 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Script from "next/script";
-import { Manrope, Space_Grotesk } from "next/font/google";
+import localFont from "next/font/local";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { LanguageProvider } from "../contexts/LanguageContext";
 import ScrollToTop from "../components/ScrollToTop";
 import { ClientProviders } from "../components/ClientProviders";
 
-const manrope = Manrope({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
+// Polices auto-hébergées (sous-ensemble latin, variables) : le build ne dépend
+// plus de Google Fonts, dont un échec réseau a déjà fait échouer un déploiement.
+const manrope = localFont({
+  src: "./fonts/manrope-latin.woff2",
+  weight: "200 800",
   variable: "--font-manrope",
   display: "swap",
+  fallback: ["sans-serif"],
 });
 
-const spaceGrotesk = Space_Grotesk({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+const spaceGrotesk = localFont({
+  src: "./fonts/space-grotesk-latin.woff2",
+  weight: "300 700",
   variable: "--font-space-grotesk",
   display: "swap",
+  fallback: ["sans-serif"],
 });
 
 // ─── METADATA GLOBALE (layout racine) ──────────────────────────────────────
