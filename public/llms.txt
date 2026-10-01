@@ -1,13 +1,22 @@
 # Ellipsys Solutions
 
-> Spécialiste français du nettoyage et de la maintenance par drone et robot pour les professionnels et les particuliers : panneaux solaires photovoltaïques (centrales au sol, ombrières, toitures industrielles), toitures (démoussage, hydrofuge), façades et bardages, y compris bardages d'usines et d'entrepôts. Interventions sans échafaudage ni nacelle, partout en France. Pilotes certifiés DGAC/EASA (scénarios STS-01, STS-02, SORA). Basé à Montpellier (Hérault, Occitanie). Entreprise adhérente au Pacte mondial des Nations Unies (UN Global Compact) depuis 2026.
+> Spécialiste français du nettoyage et de la maintenance par drone et robot, basé à Montpellier (Hérault, Occitanie). Cœur de métier : le nettoyage de centrales photovoltaïques au sol, d'ombrières de parking et de toitures solaires industrielles, ainsi que le démoussage de toitures et le nettoyage de façades et de bardages d'usines. Interventions sans échafaudage ni nacelle, en priorité sur l'arc méditerranéen (Occitanie et Provence), et partout en France sur projet. Pilotes certifiés DGAC/EASA (scénarios STS-01, STS-02, SORA). Entreprise adhérente au Pacte mondial des Nations Unies (UN Global Compact) depuis 2026.
 
-Ellipsys Solutions intervient pour les exploitants de centrales photovoltaïques, les industriels, les syndics, les collectivités, les monuments historiques et les particuliers. Le nettoyage à l'eau filtrée, sans détergent, permet de récupérer jusqu'à 30 % de rendement sur des panneaux solaires encrassés, sans annuler les garanties constructeur. Le robot traite les grandes surfaces de panneaux à 1 200 m²/h. Devis gratuit sous 24 h. Téléphone : +33 4 67 20 97 09.
+Ellipsys Solutions travaille pour les exploitants et propriétaires de centrales photovoltaïques, les asset managers, les industriels et logisticiens, les syndics, les collectivités et les particuliers. Le nettoyage se fait à l'eau filtrée, sans détergent ni haute pression, ce qui préserve les garanties constructeur. Le robot traite jusqu'à 1 200 m² de panneaux par heure, sans arrêt de production. Devis gratuit sous 24 h. Téléphone : +33 4 67 20 97 09. E-mail : contact@ellipsys-group.com.
+
+## Références documentées
+
+Plus de 83 000 m² de centrales photovoltaïques au sol nettoyées, avec photos avant/après réelles : [voir les réalisations](https://ellipsys-solutions.com/realisations).
+
+- Le Fossat (Ariège, 09) : centrale photovoltaïque au sol de 30 000 m², nettoyée par deux pilotes en septembre 2026.
+- Vitry (Saône-et-Loire, 71) : centrale photovoltaïque au sol de 31 000 m², repérage drone puis nettoyage robot.
+- Montchanin (Saône-et-Loire, 71) : centrale photovoltaïque au sol de 22 000 m².
 
 ## Prestations principales
 
 - [Nettoyage de panneaux solaires](https://ellipsys-solutions.com/prestations/nettoyage-solaire) : robot pour centrales au sol, ombrières et toitures industrielles, drone pour toitures et panneaux difficiles d'accès. Eau filtrée, sans détergent, contrats annuels.
-- [Nettoyage de centrales photovoltaïques B2B](https://ellipsys-solutions.com/nettoyage-panneaux-photovoltaiques) : offre dédiée exploitants, asset managers et O&M, avec mesure du gain de rendement (pyranomètre).
+- [Nettoyage de centrales photovoltaïques B2B](https://ellipsys-solutions.com/nettoyage-panneaux-photovoltaiques) : offre dédiée aux exploitants, asset managers et équipes O&M, avec mesure du gain de rendement.
+- [Nettoyage d'ombrières photovoltaïques](https://ellipsys-solutions.com/nettoyage-ombrieres-photovoltaiques) : parkings commerciaux, tertiaires et logistiques, intervention par zones sans fermer le parking. L'encrassement d'une ombrière (fientes, particules de freinage, résidus d'échappement) est gras et résiste à la pluie.
 - [Démoussage et hydrofuge de toiture](https://ellipsys-solutions.com/prestations/traitement-toiture) : traitement Certibiocide par drone, sans monter sur le toit, compatible tuile canal, ardoise et monuments historiques (zone ABF).
 - [Nettoyage de façades et de bardages](https://ellipsys-solutions.com/prestations/nettoyage-facade) : façades, bardages industriels d'usines et d'entrepôts, sans nacelle ni échafaudage, sans fermeture de rue.
 
@@ -17,21 +26,40 @@ La plupart des usines et entrepôts cumulent un bardage à nettoyer et des panne
 
 ## Autres prestations
 
-- [Thermographie par drone](https://ellipsys-solutions.com/prestations/thermographie) : détection de cellules PV défectueuses, ponts thermiques, conformité Décret Tertiaire. Rapport sous 48 h.
+- [Thermographie par drone](https://ellipsys-solutions.com/prestations/thermographie) : détection de cellules photovoltaïques défectueuses, ponts thermiques, conformité Décret Tertiaire. Rapport sous 48 h.
 - [Prises de vues aériennes](https://ellipsys-solutions.com/prestations/prises-de-vues) : photo 50 Mpx et vidéo 4K.
 - Destruction de nids de frelons asiatiques en grande hauteur par drone (sur demande).
 
+## Zones d'intervention
+
+Base opérationnelle à Montpellier (34). Délais et spécificités locales (climat, bâti, communes desservies) détaillés par ville :
+
+- [Montpellier](https://ellipsys-solutions.com/intervention/montpellier), [Sète](https://ellipsys-solutions.com/intervention/sete), [Béziers](https://ellipsys-solutions.com/intervention/beziers) (Hérault)
+- [Nîmes](https://ellipsys-solutions.com/intervention/nimes), [Alès](https://ellipsys-solutions.com/intervention/ales) (Gard)
+- [Narbonne](https://ellipsys-solutions.com/intervention/narbonne) (Aude), [Perpignan](https://ellipsys-solutions.com/intervention/perpignan) (Pyrénées-Orientales)
+- [Toulouse](https://ellipsys-solutions.com/intervention/toulouse) (Haute-Garonne)
+- [Avignon](https://ellipsys-solutions.com/intervention/avignon) (Vaucluse), [Marseille](https://ellipsys-solutions.com/intervention/marseille) (Bouches-du-Rhône)
+
+Vue d'ensemble : [zones d'intervention](https://ellipsys-solutions.com/zone-intervention).
+
+## Analyses et actualités du photovoltaïque
+
+- [Prix négatifs : ce qui change pour votre centrale au 1er décembre](https://ellipsys-solutions.com/blog/prix-negatifs-electricite-seuil-arret-centrale-photovoltaique) : 407 heures de prix négatifs au premier semestre 2026, seuil d'arrêt obligatoire abaissé à 5 MWc au 1er décembre 2026 puis 1 MWc au 1er mars 2027.
+- [APSAD D20 : ce que le nouveau référentiel change pour l'assurance photovoltaïque](https://ellipsys-solutions.com/blog/apsad-d20-assurance-photovoltaique-ce-qui-change) : article informatif sur le référentiel de prévention applicable depuis le 1er septembre 2026.
+- [Panneaux solaires : combien de rendement avez-vous perdu cet été ?](https://ellipsys-solutions.com/blog/panneaux-solaires-rendement-perdu-apres-ete)
+- [Tous les articles](https://ellipsys-solutions.com/blog)
+
 ## Informations pratiques
 
-- [Zones d'intervention](https://ellipsys-solutions.com/zone-intervention) : toute la France, bases à Montpellier (34) et Aimargues (30), priorité Occitanie et arc méditerranéen.
 - [Demande de devis](https://ellipsys-solutions.com/devis) : réponse sous 24 h.
 - [Notre méthode](https://ellipsys-solutions.com/methode) : engagements, sécurité, réglementation drone.
-- [Blog](https://ellipsys-solutions.com/blog) : conseils entretien panneaux solaires, démoussage de toiture, nettoyage de façade et de bardage, réglementation drone.
+- [Nos valeurs et politique RSE](https://ellipsys-solutions.com/valeurs).
 
 ## FAQ (réponses courtes)
 
-- Le drone ou le robot peut-il endommager les panneaux ou la toiture ? Non : brossage doux et eau filtrée à pression contrôlée, sans détergent ni haute pression, compatible garanties constructeur.
+- Le drone ou le robot peut-il endommager les panneaux ou la toiture ? Non : brossage doux et eau filtrée à pression contrôlée, sans détergent ni haute pression, compatible avec les garanties constructeur.
+- Faut-il arrêter la production d'une centrale pendant le nettoyage ? Non : l'intervention s'intègre au site en dehors du strict périmètre de sécurité.
+- Faut-il fermer un parking pour nettoyer ses ombrières ? Non : l'intervention se fait par zones successives, en neutralisant seulement le périmètre en cours de traitement.
 - Peut-on nettoyer le bardage et les panneaux solaires d'un site industriel en même temps ? Oui : une seule intervention traite les deux, un seul déplacement, sans arrêt de production.
 - La pluie nettoie-t-elle les panneaux solaires ? Non : elle laisse des dépôts minéraux et ne retire ni pollen, ni fientes, ni sable saharien.
-- Faut-il arrêter la production d'une centrale pendant le nettoyage ? Non : l'intervention s'intègre au site en dehors du strict périmètre de sécurité.
-- Certifications et engagements : DGAC, EASA (STS-01/STS-02, SORA), RC Pro et RC Aéronautique, produits ISO 14001, adhérent UN Global Compact (RSE).
+- Certifications et engagements : DGAC, EASA (STS-01/STS-02, SORA), équipe habilitée B0-H0-H0V pour travailler à proximité des installations électriques, RC Pro et RC Aéronautique, produits ISO 14001, adhérent UN Global Compact (RSE).

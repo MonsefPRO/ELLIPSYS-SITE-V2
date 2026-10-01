@@ -4,6 +4,6 @@ Allow: /
 # Sitemap
 Sitemap: https://ellipsys-solutions.com/sitemap.xml
 
-# Disallow private/utility paths
+# Chemins techniques prives. /_next/ reste autorise : Google doit pouvoir
+# charger le CSS, le JS, les polices et les images optimisees pour lire les pages.
 Disallow: /api/
-Disallow: /_next/
