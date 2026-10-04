@@ -6,7 +6,8 @@ import ExpertQuoteSide from "@/components/ExpertQuoteSide";
 import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
-  title: "Expertises Sectorielles : Industrie, Bâtiment, Solaire, Maritime et Habitat",
+  alternates: { canonical: "https://ellipsys-solutions.com/domaines" },
+  title: "Expertises sectorielles : industrie, solaire, habitat",
   description: "Des protocoles d'intervention sur mesure. Découvrez nos solutions pour l'industrie, les syndics, les monuments historiques et l'énergie solaire.",
 };
 

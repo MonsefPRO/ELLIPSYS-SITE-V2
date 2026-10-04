@@ -92,7 +92,7 @@ export const blogPosts: BlogPost[] = [
     title: "Prix négatifs : ce qui change pour votre centrale au 1er décembre",
     excerpt: "La France a connu 407 heures de prix négatifs au premier semestre 2026, soit près de 10 % du temps. Un arrêté de juillet abaisse le seuil d'arrêt obligatoire à 5 MWc en décembre, puis à 1 MWc en mars 2027. Voici ce que cela change concrètement pour un exploitant photovoltaïque.",
     metaTitle: "Prix négatifs : nouveau seuil d'arrêt centrales PV",
-    metaDescription: "407 h de prix négatifs au S1 2026. L'arrêté du 20 juillet 2026 abaisse le seuil d'arrêt à 5 MWc au 1er décembre, puis 1 MWc en mars 2027. Ce que cela change pour votre centrale.",
+    metaDescription: "407 h de prix négatifs au S1 2026. Le seuil d'arrêt passe à 5 MWc au 1er décembre, puis 1 MWc en mars 2027 : ce que cela change pour votre centrale.",
     content: `
 <h2>407 heures de prix négatifs en six mois</h2>
 <p>Au premier semestre 2026, l'électricité s'est échangée à prix négatif pendant <strong>407 heures</strong> sur le marché français, soit près de 10 % du temps. Pour mesurer la vitesse du phénomène, il suffit de regarder les années précédentes : 147 heures en 2023, 361 heures en 2024, puis 513 heures sur l'ensemble de l'année 2025. Le seul premier semestre 2026 représente donc déjà près de 80 % de l'année précédente complète.</p>
@@ -149,7 +149,7 @@ export const blogPosts: BlogPost[] = [
     title: "Panneaux solaires : combien de rendement avez-vous perdu cet été ?",
     excerpt: "Un été sec, peu de pluie, et des mois d'accumulation de poussière, pollen et dépôts sur vos panneaux. La perte de rendement est invisible au quotidien, mais elle se lit noir sur blanc sur votre facture d'électricité ou votre production. Voici comment la mesurer et la récupérer avant l'hiver.",
     metaTitle: "Panneaux solaires : rendement perdu après l'été",
-    metaDescription: "Après un été sec, l'encrassement des panneaux solaires fait perdre 4 à 30% de production selon l'environnement. Nettoyage par robot et drone, sans détergent, jusqu'à 1200 m²/h. Devis gratuit en Occitanie.",
+    metaDescription: "Après un été sec, l'encrassement fait perdre 4 à 30 % de production selon l'environnement. Nettoyage par robot et drone, sans détergent, en Occitanie.",
     content: `
 <h2>Un été sec, une perte de rendement qui s'accumule en silence</h2>
 <p>Contrairement à un panneau cassé ou un onduleur en panne, un panneau solaire encrassé continue de produire. C'est précisément ce qui rend le problème invisible : la centrale fonctionne, la production tombe simplement, un peu chaque semaine, sans alarme ni signal.</p>
@@ -195,7 +195,7 @@ export const blogPosts: BlogPost[] = [
     title: "Ellipsys Solutions rejoint le Pacte Mondial des Nations Unies",
     excerpt: "Le 21 juillet 2026, Ellipsys Solutions a adressé au Secrétaire général des Nations Unies sa lettre d'engagement au Pacte Mondial. Nous sommes participants depuis le 27 juillet 2026. Voici ce que cet engagement signifie concrètement, avec des chiffres publics et vérifiables.",
     metaTitle: "Adhésion au Pacte Mondial des Nations Unies",
-    metaDescription: "Ellipsys Solutions est participant au UN Global Compact depuis le 27 juillet 2026. Découvrez notre politique RSE, nos indicateurs de sécurité et d'environnement, et notre engagement chiffré et daté.",
+    metaDescription: "Ellipsys Solutions participe au UN Global Compact depuis le 27 juillet 2026 : politique RSE, indicateurs de sécurité et d'environnement, engagements datés.",
     content: `
 <h2>Un engagement formalisé, pas un slogan</h2>
 <p>Le 21 juillet 2026, notre Président Nicolas Papin a adressé à Son Excellence António Guterres, Secrétaire général des Nations Unies, la lettre par laquelle Ellipsys Solutions confirme son soutien aux Dix Principes du Pacte Mondial. Notre entreprise en est participante depuis le <strong>27 juillet 2026</strong>.</p>
@@ -234,8 +234,8 @@ export const blogPosts: BlogPost[] = [
     badge: "bg-blue-50 text-blue-600",
     title: "Usines et entrepôts : nettoyez bardage et panneaux solaires en une seule intervention",
     excerpt: "La plupart des sites industriels cumulent deux problèmes traités séparément : un bardage qui s'encrasse et des panneaux solaires en toiture qui perdent du rendement. Les traiter en une seule intervention par drone et robot, c'est un déplacement, un prestataire, et une facture optimisée. Voici pourquoi c'est la bonne approche.",
-    metaTitle: "Nettoyage bardage + panneaux solaires d'usine en une intervention",
-    metaDescription: "Usines, entrepôts, plateformes logistiques : nettoyez votre bardage ET vos panneaux solaires en toiture en une seule intervention par drone et robot. Sans échafaudage, sans arrêt de production. Devis B2B en Occitanie.",
+    metaTitle: "Usine : bardage et panneaux solaires en une intervention",
+    metaDescription: "Usines et entrepôts : nettoyez bardage et panneaux solaires en toiture en une seule intervention par drone et robot, sans arrêt de production. Devis B2B.",
     content: `
 <h2>Un site industriel, deux problèmes que l'on traite d'habitude séparément</h2>
 <p>La plupart des usines, entrepôts et plateformes logistiques ont deux surfaces qui se dégradent en parallèle, sans que personne ne fasse le lien :</p>
@@ -297,7 +297,7 @@ export const blogPosts: BlogPost[] = [
     title: "Nettoyer deux centrales solaires au sol en une seule tournée : comment on s'organise",
     excerpt: "Récemment, notre équipe s'est déplacée en Saône-et-Loire pour nettoyer deux centrales photovoltaïques au sol pour le compte d'un exploitant solaire, plus de 50 000 m² de panneaux au total. Retour sur ce déplacement.",
     metaTitle: "Nettoyage de centrales solaires en Saône-et-Loire",
-    metaDescription: "Retour sur le nettoyage par drone et robot de deux centrales photovoltaïques au sol en Saône-et-Loire (Vitry et Montchanin), plus de 50 000 m² traités sans arrêt de production.",
+    metaDescription: "Nettoyage par drone et robot de deux centrales photovoltaïques au sol en Saône-et-Loire (Vitry, Montchanin) : plus de 50 000 m² sans arrêt de production.",
     content: `
 <h2>Un déplacement, deux centrales, plus de 50 000 m² à traiter</h2>
 <p>Récemment, notre équipe s'est déplacée en Saône-et-Loire pour intervenir sur deux centrales photovoltaïques au sol, pour le compte d'un exploitant solaire : une première à <strong>Vitry (71)</strong>, sur 31 000 m², puis une seconde à <strong>Montchanin (71)</strong>, sur 22 000 m². Deux sites, une même mission : retirer le pollen, la poussière et les dépôts organiques accumulés au fil des mois d'ensoleillement, sans jamais interrompre la production.</p>
@@ -327,8 +327,8 @@ export const blogPosts: BlogPost[] = [
     badge: "bg-red-50 text-red-600",
     title: "Nid de frelons asiatiques en hauteur : pourquoi septembre est le mois le plus dangereux",
     excerpt: "En septembre et octobre, les nids de frelons asiatiques atteignent leur taille maximale et la colonie devient bien plus agressive. C'est aussi le moment où il faut agir, mais surtout pas seul. Comment un drone permet de détruire un nid en grande hauteur sans aucun risque.",
-    metaTitle: "Nid de frelons asiatiques : pourquoi septembre est dangereux",
-    metaDescription: "En septembre-octobre, les nids de frelons asiatiques sont à leur taille maximale et la colonie devient agressive. Découvrez pourquoi il faut agir vite et comment un drone détruit un nid en hauteur sans risque. Intervention Occitanie.",
+    metaTitle: "Nids de frelons asiatiques : pourquoi agir en septembre",
+    metaDescription: "En septembre et octobre, les nids de frelons asiatiques atteignent leur taille maximale. Pourquoi agir vite, et comment un drone détruit un nid en hauteur.",
     content: `
 <h2>Septembre : le mois où le danger est à son maximum</h2>
 <p>Le frelon asiatique (<em>Vespa velutina</em>) suit un cycle annuel très marqué. Au printemps, une reine fondatrice construit un petit nid primaire, souvent bas et discret. Mais c'est en fin d'été que tout s'accélère : la colonie déménage vers un <strong>nid secondaire</strong>, généralement perché très haut, cime d'un arbre, sous une charpente, en haut d'une façade ou d'un pignon.</p>
@@ -388,7 +388,7 @@ export const blogPosts: BlogPost[] = [
     title: "Démoussage de toiture : pourquoi l'automne est le meilleur moment pour agir",
     excerpt: "Les premières pluies d'automne, après un été sec, réveillent mousses et lichens sur les tuiles. Attendre l'hiver, c'est risquer les infiltrations. Voici pourquoi la fin de l'été est la fenêtre idéale pour démousser, et comment on le fait par drone, sans jamais monter sur votre toit.",
     metaTitle: "Démoussage de toiture : pourquoi agir en automne",
-    metaDescription: "Pourquoi l'automne est le meilleur moment pour démousser sa toiture : premières pluies, mousses, risque d'infiltration hivernale. Démoussage par drone sans monter sur le toit, traitement Certibiocide. Devis gratuit en Occitanie.",
+    metaDescription: "L'automne est le meilleur moment pour démousser sa toiture, avant les infiltrations de l'hiver. Démoussage par drone sans monter sur le toit, en Occitanie.",
     content: `
 <h2>Pourquoi la mousse revient chaque automne</h2>
 <p>La mousse et le lichen ont besoin de trois choses pour se développer : de l'humidité, de l'ombre et un support poreux. En fin d'été, ces trois conditions se réunissent d'un coup. Après des semaines de sécheresse, les <strong>premières grosses pluies d'automne</strong> réhumidifient les tuiles, et les spores en dormance repartent immédiatement. Les versants nord, moins ensoleillés, sont les premiers touchés.</p>
@@ -443,7 +443,7 @@ export const blogPosts: BlogPost[] = [
     title: "Démoussage de toiture : pourquoi le karcher haute pression est une erreur coûteuse",
     excerpt: "Le nettoyage haute pression fragilise les tuiles et annule les garanties fabricant. Découvrez pourquoi nos traitements certibiocides sans pression sont la seule méthode professionnelle validée par les assureurs.",
     metaTitle: "Démoussage Toiture : Pourquoi le Karcher est une Erreur",
-    metaDescription: "Le nettoyage haute pression endommage vos tuiles et annule les garanties. Découvrez la méthode certibiocide sans pression pour un démoussage professionnel durable. Devis gratuit.",
+    metaDescription: "La haute pression abîme les tuiles et peut annuler les garanties. La méthode Certibiocide sans pression, pour un démoussage professionnel et durable.",
     content: `
 <h2>Le réflexe Karcher : une idée reçue qui coûte cher</h2>
 <p>Chaque année, des milliers de propriétaires font appel à des prestataires pour nettoyer leur toiture à l'eau sous pression. C'est visible, c'est spectaculaire, et ça paraît efficace. Sauf que cette méthode est, dans la grande majorité des cas, une <strong>erreur technique grave</strong>, et les conséquences peuvent se chiffrer en milliers d'euros.</p>
@@ -510,8 +510,8 @@ export const blogPosts: BlogPost[] = [
     badge: "bg-amber-50 text-amber-600",
     title: "Pluies de sable saharien : quel impact réel sur le rendement de vos panneaux solaires ?",
     excerpt: "Les épisodes de sable saharien peuvent réduire la production d'un parc photovoltaïque de 8 à 15%. Nous analysons les données et expliquons comment un nettoyage professionnel adapté restaure le rendement nominal.",
-    metaTitle: "Sable Saharien et Panneaux Solaires : Impact sur le Rendement",
-    metaDescription: "Le sable du Sahara réduit le rendement de vos panneaux solaires de 8 à 15%. Découvrez comment un nettoyage professionnel par drone restaure votre production photovoltaïque. Devis gratuit.",
+    metaTitle: "Sable saharien : quel impact sur vos panneaux solaires ?",
+    metaDescription: "Le sable du Sahara réduit le rendement des panneaux solaires de 8 à 15 %. Comment un nettoyage professionnel par drone restaure votre production.",
     content: `
 <h2>Un phénomène météo aux conséquences économiques réelles</h2>
 <p>Chaque année, entre mars et juin, le sud de la France est régulièrement touché par des épisodes de transport de sable saharien. Ce phénomène, aussi appelé "pluie de sable" ou "sable du désert", dépose une fine couche de particules ocre sur toutes les surfaces horizontales et inclinées, y compris vos panneaux photovoltaïques.</p>
@@ -584,8 +584,8 @@ export const blogPosts: BlogPost[] = [
     badge: "bg-emerald-50 text-emerald-600",
     title: "Nettoyage de façade industrielle : pourquoi le drone remplace l'échafaudage en 2026",
     excerpt: "Échafaudage, nacelle, alpinisme industriel : chaque méthode traditionnelle implique des coûts logistiques et des risques humains énormes. Découvrez comment le drone Chronos nettoie un bardage de 15 mètres en une journée.",
-    metaTitle: "Nettoyage Façade par Drone vs Échafaudage : Comparatif 2026",
-    metaDescription: "Drone vs échafaudage pour le nettoyage de façade : coûts, délais, risques. Découvrez pourquoi le drone Chronos est la solution la plus efficace en 2026. Devis gratuit Montpellier.",
+    metaTitle: "Nettoyage de façade : drone ou échafaudage ?",
+    metaDescription: "Drone ou échafaudage pour nettoyer une façade : coûts, délais, risques. Pourquoi le drone est souvent la solution la plus efficace. Devis à Montpellier.",
     content: `
 <h2>Le nettoyage de façade : un marché en pleine mutation</h2>
 <p>Pendant des décennies, nettoyer une façade d'immeuble de bureaux, un bardage industriel ou la vitrerie d'un bâtiment commercial impliquait un choix entre trois méthodes : l'échafaudage tubulaire, la nacelle élévatrice ou les techniques de cordistes. Toutes efficaces, mais toutes coûteuses, lentes et potentiellement dangereuses.</p>
@@ -664,8 +664,8 @@ export const blogPosts: BlogPost[] = [
     badge: "bg-blue-50 text-blue-600",
     title: "Décret Tertiaire : comment la thermographie drone vous aide à atteindre vos objectifs de -40%",
     excerpt: "Le Décret Tertiaire impose une réduction de 40% de la consommation énergétique des bâtiments de plus de 1000m² d'ici 2030. La thermographie par drone est l'outil de diagnostic le plus rapide et le plus précis.",
-    metaTitle: "Thermographie Drone et Décret Tertiaire : Guide Complet 2026",
-    metaDescription: "Le Décret Tertiaire impose -40% de consommation d'ici 2030. La thermographie par drone détecte les déperditions thermiques en quelques heures. Devis gratuit en Occitanie.",
+    metaTitle: "Thermographie drone et Décret Tertiaire : le guide 2026",
+    metaDescription: "Le Décret Tertiaire impose -40 % de consommation d'ici 2030. La thermographie par drone détecte les déperditions thermiques en quelques heures.",
     content: `
 <h2>Le Décret Tertiaire : une obligation légale aux conséquences financières concrètes</h2>
 <p>Depuis le 1er octobre 2021, le Décret Tertiaire (issu de la loi ELAN) impose aux propriétaires et exploitants de bâtiments tertiaires de plus de 1 000 m² de réduire leur consommation d'énergie finale :</p>
@@ -738,7 +738,7 @@ export const blogPosts: BlogPost[] = [
     title: "Frelon asiatique : comment neutraliser un nid en grande hauteur sans aucun risque ?",
     excerpt: "Le frelon asiatique (Vespa velutina) est une espèce invasive classée dangereuse. Nos drones Certibiocide permettent d'intervenir sur des nids en toiture ou sous corniche sans aucune mise en danger.",
     metaTitle: "Destruction Nid Frelon Asiatique par Drone : Sans Risque",
-    metaDescription: "Frelon asiatique en hauteur ? Le drone Certibiocide Ellipsys neutralise les nids sous corniche, en toiture ou en arbre sans danger. Intervention rapide en Occitanie et PACA.",
+    metaDescription: "Nid de frelons asiatiques en hauteur ? Le drone le neutralise sous corniche, en toiture ou dans un arbre, sans danger. Occitanie et PACA.",
     content: `
 <h2>Le frelon asiatique : une espèce dangereuse et invasive</h2>
 <p>Le frelon asiatique (<em>Vespa velutina nigrithorax</em>) est arrivé en France métropolitaine autour de 2004, probablement introduit accidentellement via des marchandises en provenance d'Asie du Sud-Est. Depuis, il a colonisé la quasi-totalité du territoire et est classé <strong>espèce exotique envahissante préoccupante pour l'Union Européenne</strong> par le règlement EU 1143/2014.</p>
@@ -802,7 +802,7 @@ export const blogPosts: BlogPost[] = [
     title: "Scénarios STS-01 et STS-02 : tout comprendre sur la réglementation européenne des drones",
     excerpt: "Depuis janvier 2024, les vols de drones en zone peuplée sont soumis aux scénarios européens STS. Nous détaillons les obligations déclaratives, les zones d'exclusion et comment Ellipsys gère l'intégralité de ces démarches.",
     metaTitle: "Réglementation Drone STS-01 STS-02 : Guide Complet 2026",
-    metaDescription: "Scénarios STS-01 et STS-02, certification DGAC, zones interdites : tout sur la réglementation drone en France en 2026. Ellipsys gère toutes vos démarches réglementaires.",
+    metaDescription: "Scénarios STS-01 et STS-02, certification DGAC, zones interdites : la réglementation drone en France en 2026, et les démarches que nous prenons en charge.",
     content: `
 <h2>La réglementation drone en France : un cadre européen harmonisé</h2>
 <p>Depuis le 1er janvier 2021, la réglementation relative aux drones civils est harmonisée à l'échelle européenne, sous l'égide de l'EASA (Agence de l'Union Européenne pour la Sécurité Aérienne). En France, la mise en application est supervisée par la DGAC (Direction Générale de l'Aviation Civile).</p>

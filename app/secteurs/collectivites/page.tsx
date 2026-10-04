@@ -6,8 +6,9 @@ import AccordionSection from "@/components/AccordionSection";
 import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
-  title: "Entretien Bâtiments Publics et Espaces Collectifs par Drone",
-  description: "Nettoyage sans emprise au sol pour collectivites. Continuite de la voirie, securite ecoles, urgences frelons dans les parcs publics.",
+  alternates: { canonical: "https://ellipsys-solutions.com/secteurs/collectivites" },
+  title: "Entretien des bâtiments publics par drone",
+  description: "Nettoyage sans emprise au sol pour les collectivités : continuité de la voirie, sécurité des écoles, urgences frelons dans les parcs publics.",
 };
 
 const IMG = {

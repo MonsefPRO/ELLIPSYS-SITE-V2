@@ -8,7 +8,7 @@ import LandingPage from "@/components/LandingPage";
 export const metadata: Metadata = {
   title: "Nettoyage de façade à Montpellier, sans échafaudage",
   description:
-    "Nettoyage de façade par drone à Montpellier et en Occitanie : enduit, pierre, crépi, bardage. Sans nacelle, sans échafaudage, sans fermeture de rue. Devis gratuit sous 24 h.",
+    "Nettoyage de façade par drone à Montpellier et en Occitanie : enduit, pierre, crépi, bardage. Sans nacelle ni échafaudage, sans fermer la rue. Devis 24 h.",
   alternates: { canonical: "https://ellipsys-solutions.com/nettoyage-facade-montpellier" },
 };
 

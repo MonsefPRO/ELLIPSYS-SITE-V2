@@ -4,8 +4,9 @@ import { MapPin, Globe, ChevronRight, CheckCircle2 } from "lucide-react";
 import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
-  title: "Zone d'intervention : nettoyage par drone partout en France",
-  description: "Nos équipes techniques et unités mobiles couvrent toute la France. Littoral, montagne, villes industrielles : les mêmes standards de qualité partout. Devis gratuit sous 24h.",
+  alternates: { canonical: "https://ellipsys-solutions.com/zone-intervention" },
+  title: "Zone d'intervention : nettoyage par drone en France",
+  description: "Nos équipes couvrent toute la France, avec une priorité sur l'Occitanie et l'arc méditerranéen. Mêmes standards de qualité partout. Devis gratuit sous 24 h.",
 };
 
 export default async function ZoneInterventionPage() {

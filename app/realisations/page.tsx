@@ -4,7 +4,8 @@ import { Building2, Home, Sun, MapPin, Clock, Target, ChevronRight } from "lucid
 import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
-  title: "Portfolio de nos interventions par drone : Avant / Après",
+  alternates: { canonical: "https://ellipsys-solutions.com/realisations" },
+  title: "Nos réalisations par drone : avant / après",
   description: "Découvrez nos derniers chantiers en images. Des résultats concrets avant/après pour résoudre les problématiques d'accès complexes.",
 };
 

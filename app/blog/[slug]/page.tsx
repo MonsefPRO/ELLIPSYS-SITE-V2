@@ -29,6 +29,35 @@ export async function generateStaticParams() {
   return blogPosts.map((p) => ({ slug: p.slug }));
 }
 
+function htmlToText(html: string): string {
+  return html
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&nbsp;/g, " ")
+    .replace(/&amp;/g, "&")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;|&apos;/g, "'")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+// Lit les paires <h3> question / <p> réponse de la section « Questions fréquentes »
+// d'un article, pour les exposer en FAQPage (format repris par Google et les IA).
+function extractFaq(content: string): { q: string; r: string }[] {
+  const start = content.search(/<h2>\s*Questions fr[ée]quentes/i);
+  if (start < 0) return [];
+  const rest = content.slice(start + 4);
+  const nextH2 = rest.search(/<h2/);
+  const section = nextH2 >= 0 ? rest.slice(0, nextH2) : rest;
+  return section
+    .split(/<h3>/)
+    .slice(1)
+    .map((block) => {
+      const [q, after = ""] = block.split(/<\/h3>/);
+      return { q: htmlToText(q), r: htmlToText(after) };
+    })
+    .filter((f) => f.q && f.r);
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = getBlogPost(slug);
@@ -37,6 +66,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: post.metaTitle,
     description: post.metaDescription,
     alternates: { canonical: `${BASE}/blog/${post.slug}` },
+    openGraph: {
+      type: "article",
+      title: post.metaTitle,
+      description: post.metaDescription,
+      url: `${BASE}/blog/${post.slug}`,
+      images: [{ url: post.image, alt: post.title }],
+    },
   };
 }
 
@@ -64,12 +100,29 @@ export default async function BlogPostPage({ params }: Props) {
     mainEntityOfPage: { "@type": "WebPage", "@id": `${BASE}/blog/${post.slug}` },
   };
 
+  const faq = extractFaq(post.content);
+  const jsonLdFaq = faq.length > 0 && {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faq.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.r },
+    })),
+  };
+
   return (
     <main className="flex flex-col min-h-screen pt-24 bg-slate-50">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdArticle) }}
       />
+      {jsonLdFaq && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFaq) }}
+        />
+      )}
 
       {/* ── HERO ── */}
       <section className="relative h-72 md:h-96 overflow-hidden">

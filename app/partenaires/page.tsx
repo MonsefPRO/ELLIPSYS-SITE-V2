@@ -4,6 +4,7 @@ import { Handshake, Building, ArrowRight, Megaphone, Users, ChevronRight, Briefc
 import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://ellipsys-solutions.com/partenaires" },
   title: "Partenariats, prescripteurs & apporteurs d'affaires",
   description: "Entreprises de propreté, agents immobiliers, apporteurs d'affaires : unissons nos forces. Découvrez nos offres de partenariat et rejoignez le réseau Ellipsys.",
 };

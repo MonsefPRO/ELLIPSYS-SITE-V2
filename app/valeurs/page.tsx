@@ -4,6 +4,7 @@ import { ShieldAlert, Target, HeartHandshake, ChevronRight, FileText, Download }
 import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://ellipsys-solutions.com/valeurs" },
   title: "Nos valeurs : Sécurité, Rigueur, Bienveillance",
   description: "Découvrez les engagements d'Ellipsys Solutions : sécurité absolue, rigueur d'ingénierie et bienveillance environnementale dans nos interventions par drone.",
 };

@@ -3,8 +3,9 @@ import { BlogTabs } from "@/components/BlogTabs";
 import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
-  title: "Blog Drone & Maintenance : Conseils, Réglementation, Innovations",
-  description: "Articles experts sur le nettoyage par drone, la thermographie, la réglementation DGAC/EASA, l'entretien de panneaux solaires et la destruction de nids de frelons.",
+  alternates: { canonical: "https://ellipsys-solutions.com/blog" },
+  title: "Blog drone et maintenance : conseils et réglementation",
+  description: "Articles experts : nettoyage par drone, entretien des panneaux solaires, thermographie, réglementation DGAC/EASA et destruction de nids de frelons.",
 };
 
 export default async function BlogPage() {

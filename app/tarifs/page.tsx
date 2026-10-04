@@ -4,8 +4,8 @@ import Image from "next/image";
 import { CheckCircle2, ArrowRight, Phone, Info, ShieldCheck } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Tarifs Nettoyage par Drone, Toiture, Façade, Panneaux Solaires",
-  description: "Comprendre les tarifs d'un nettoyage par drone : facteurs de prix, fourchettes du marché, méthodologie de devis. Devis personnalisé gratuit sous 24h. Montpellier, Aimargues, France entière.",
+  title: "Tarifs du nettoyage par drone : toiture, façade, solaire",
+  description: "Comprendre le prix d'un nettoyage par drone : facteurs de coût, méthode de devis. Devis personnalisé gratuit sous 24 h, en Occitanie et partout en France.",
   keywords: [
     "tarif nettoyage drone",
     "prix nettoyage toiture drone",
@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     title: "Tarifs Nettoyage par Drone, Méthodologie & Devis Transparent",
     description: "Notre approche transparente du tarif : facteurs réels, fourchettes du marché, devis personnalisé sous 24h.",
     url: "https://ellipsys-solutions.com/tarifs",
+    images: [{ url: "/images/accueil.png", alt: "Tarifs du nettoyage par drone, Ellipsys Solutions" }],
   },
   alternates: { canonical: "https://ellipsys-solutions.com/tarifs" },
 };

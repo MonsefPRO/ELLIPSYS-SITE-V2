@@ -6,7 +6,7 @@ import AccordionSection from "@/components/AccordionSection";
 
 export const metadata: Metadata = {
   title: "Nettoyage photovoltaïque par drone : +30% de production",
-  description: "Spécialiste du nettoyage de centrales photovoltaïques par drone et robot pour exploitants, asset managers et industriels. Sans détergent, sans microfissure. France entière. Audit soiling gratuit. +30% de rendement.",
+  description: "Nettoyage de centrales photovoltaïques par drone et robot pour exploitants, asset managers et industriels. Sans détergent. Audit de soiling gratuit.",
   keywords: [
     "nettoyage centrale photovoltaïque",
     "nettoyage ferme solaire",

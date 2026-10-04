@@ -6,8 +6,9 @@ import AccordionSection from "@/components/AccordionSection";
 import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
-  title: "Entretien Monuments Historiques et Bâtiments Classés par Drone",
-  description: "Méthodes douces conformes ABF pour monuments historiques et bâtiments classés. Respect de l'article L.621-31 du Code du patrimoine. Étude de faisabilité gratuite.",
+  alternates: { canonical: "https://ellipsys-solutions.com/secteurs/monuments-historiques" },
+  title: "Entretien des monuments historiques par drone",
+  description: "Méthodes douces conformes ABF pour monuments historiques et bâtiments classés, dans le respect du Code du patrimoine. Étude de faisabilité gratuite.",
 };
 
 const IMG = {

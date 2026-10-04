@@ -6,6 +6,7 @@ import AccordionSection from "@/components/AccordionSection";
 import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://ellipsys-solutions.com/secteurs/immobilier-syndics" },
   title: "Nettoyage Drone pour Immobilier & Syndics de Copropriété",
   description: "Accompagnement des gestionnaires immobiliers. Rapports techniques avec photos pour AG, devis détaillés, interventions sans nacelle.",
 };

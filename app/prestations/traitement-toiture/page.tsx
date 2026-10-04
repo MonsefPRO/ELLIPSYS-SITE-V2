@@ -8,12 +8,13 @@ import { LiensUtiles } from "@/components/LiensUtiles";
 
 export const metadata: Metadata = {
   title: "Démoussage toiture par drone, Montpellier & Hérault",
-  description: "Démoussage de toiture par drone à Montpellier, dans l'Hérault et en Occitanie : traitement Certibiocide + hydrofuge, sans échafaudage ni risque de chute. Adapté aux tuiles canal. Devis gratuit sous 24 h.",
+  description: "Démoussage de toiture par drone en Occitanie : traitement Certibiocide + hydrofuge, sans échafaudage ni risque de chute, adapté aux tuiles canal. Devis 24 h.",
   alternates: {
     canonical: "https://ellipsys-solutions.com/prestations/traitement-toiture",
   },
   openGraph: {
     url: "https://ellipsys-solutions.com/prestations/traitement-toiture",
+    images: [{ url: "/images/drone-toiture-intervention.png", alt: "Démoussage de toiture par drone" }],
   },
 };
 

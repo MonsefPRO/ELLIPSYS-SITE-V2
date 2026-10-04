@@ -14,6 +14,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     url: "https://ellipsys-solutions.com/prestations/nettoyage-solaire",
+    images: [{ url: "/images/solairebanner.png", alt: "Nettoyage de panneaux solaires par robot et drone" }],
   },
 };
 

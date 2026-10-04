@@ -4,13 +4,14 @@ import { ChevronRight, Sun, Home, Thermometer, Bug, Camera, Droplets } from "luc
 import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
-  title: "Nos prestations : nettoyage solaire, toiture, façade & thermographie par drone",
-  description: "Découvrez toutes nos prestations par drone et robot : nettoyage de panneaux solaires, démoussage de toiture, façade, thermographie et nuisibles. Sans échafaudage. Devis 24h.",
+  title: "Prestations par drone : solaire, toiture, façade",
+  description: "Toutes nos prestations par drone et robot : panneaux solaires, démoussage de toiture, façade, thermographie et nuisibles. Sans échafaudage. Devis 24 h.",
   alternates: {
     canonical: "https://ellipsys-solutions.com/prestations",
   },
   openGraph: {
     url: "https://ellipsys-solutions.com/prestations",
+    images: [{ url: "/images/accueil.png", alt: "Prestations Ellipsys Solutions par drone et robot" }],
   },
 };
 

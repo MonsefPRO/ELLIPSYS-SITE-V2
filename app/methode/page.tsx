@@ -4,8 +4,9 @@ import { ChevronRight, ShieldCheck, Scale, Leaf, FileCheck, BrainCircuit, Drople
 import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
-  title: "Notre méthode d'intervention : l'ingénierie au service de vos surfaces",
-  description: "Analyse préalable, technologie sécurisée, chimie responsable : notre méthode d'intervention par drone préserve systématiquement l'intégrité de vos toitures et façades.",
+  alternates: { canonical: "https://ellipsys-solutions.com/methode" },
+  title: "Notre méthode d'intervention par drone",
+  description: "Analyse préalable, technologie sécurisée, chimie responsable : notre méthode d'intervention par drone préserve l'intégrité de vos toitures et façades.",
 };
 
 export default async function MethodeGarantiesPage() {

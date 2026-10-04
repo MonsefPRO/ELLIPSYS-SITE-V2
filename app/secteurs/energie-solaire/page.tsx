@@ -6,8 +6,9 @@ import AccordionSection from "@/components/AccordionSection";
 import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
-  title: "Maintenance Parcs Solaires : Nettoyage Robot & Drone pour Acteurs du Solaire",
-  description: "Solution hybride robot + drone pour la maintenance de parcs photovoltaïques. Jusqu'à 1 200 m²/h (≈ 2 MWc/jour), pentes 25°, sans détergent. Gain de rendement mesurable.",
+  alternates: { canonical: "https://ellipsys-solutions.com/secteurs/energie-solaire" },
+  title: "Maintenance de parcs solaires : nettoyage robot et drone",
+  description: "Robot + drone pour la maintenance de parcs photovoltaïques : jusqu'à 1 200 m²/h (≈ 2 MWc/jour), pentes de 25°, sans détergent. Gain de rendement mesurable.",
 };
 
 const PX = "?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";

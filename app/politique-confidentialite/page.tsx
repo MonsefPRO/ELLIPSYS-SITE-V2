@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://ellipsys-solutions.com/politique-confidentialite" },
   title: "Politique de confidentialité & mentions légales",
   description: "Politique de confidentialité, mentions légales et conditions générales de service d'Ellipsys Solutions.",
 };

@@ -4,8 +4,9 @@ import { MachineVideoCard } from "@/components/MachineVideoCard";
 import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
-  title: "Notre flotte technologique & expertise : nettoyage et inspection par drone",
-  description: "Découvrez notre flotte de pointe (drones et robots) et nos habilitations réglementaires (DGAC, EASA, Certibiocide) pour le nettoyage et l'inspection sans échafaudage.",
+  alternates: { canonical: "https://ellipsys-solutions.com/expertise" },
+  title: "Flotte et expertise : nettoyage et inspection par drone",
+  description: "Notre flotte de drones et de robots, et nos habilitations (DGAC, EASA, Certibiocide) pour nettoyer et inspecter vos bâtiments sans échafaudage.",
 };
 
 export default async function ExpertisePage() {

@@ -10,7 +10,7 @@ import LandingPage from "@/components/LandingPage";
 export const metadata: Metadata = {
   title: "Nettoyage d'ombrières photovoltaïques",
   description:
-    "Nettoyage et entretien d'ombrières photovoltaïques de parking par robot et drone, sans fermer le parking. Arc méditerranéen, de Perpignan à Marseille. Devis sous 24 h.",
+    "Nettoyage d'ombrières photovoltaïques de parking par robot et drone, sans fermer le parking. De Perpignan à Marseille. Devis sous 24 h.",
   alternates: {
     canonical: "https://ellipsys-solutions.com/nettoyage-ombrieres-photovoltaiques",
   },

@@ -14,12 +14,13 @@ import { getLang } from "../lib/getLang";
 
 export const metadata: Metadata = {
   title: "Nettoyage panneaux solaires & toitures par drone",
-  description: "Nettoyage de panneaux solaires, toitures et façades par drone et robot. Récupérez jusqu'à +30% de rendement. Sans échafaudage. Devis gratuit 24h ☎ 04 67 20 97 09.",
+  description: "Nettoyage de panneaux solaires, toitures et façades par drone et robot. Jusqu'à +30 % de rendement, sans échafaudage. Devis 24 h ☎ 04 67 20 97 09.",
   alternates: {
     canonical: "https://ellipsys-solutions.com",
   },
   openGraph: {
     url: "https://ellipsys-solutions.com",
+    images: [{ url: "/images/accueil.png", alt: "Ellipsys Solutions, nettoyage par drone et robot" }],
   },
 };
 

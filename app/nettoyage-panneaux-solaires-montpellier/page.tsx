@@ -9,7 +9,7 @@ import LandingPage from "@/components/LandingPage";
 export const metadata: Metadata = {
   title: "Nettoyage de panneaux solaires à Montpellier, devis 24 h",
   description:
-    "Nettoyage de panneaux solaires et de centrales photovoltaïques par robot et drone à Montpellier et en Occitanie. Rendement mesuré avant et après. Devis gratuit sous 24 h.",
+    "Nettoyage de panneaux solaires et de centrales photovoltaïques par robot et drone à Montpellier et en Occitanie. Rendement mesuré avant/après. Devis 24 h.",
   alternates: { canonical: "https://ellipsys-solutions.com/nettoyage-panneaux-solaires-montpellier" },
 };
 

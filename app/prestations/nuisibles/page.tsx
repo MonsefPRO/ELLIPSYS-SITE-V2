@@ -7,12 +7,13 @@ import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
   title: "Destruction de nids de frelons par drone, Montpellier",
-  description: "Destruction de nids de frelons asiatiques en grande hauteur par drone à Montpellier et dans l'Hérault. Aucun risque humain, produit Certibiocide injecté à distance, retrait du nid inclus. Intervention rapide.",
+  description: "Destruction de nids de frelons asiatiques en hauteur par drone, à Montpellier et dans l'Hérault. Produit Certibiocide injecté à distance, retrait du nid inclus.",
   alternates: {
     canonical: "https://ellipsys-solutions.com/prestations/nuisibles",
   },
   openGraph: {
     url: "https://ellipsys-solutions.com/prestations/nuisibles",
+    images: [{ url: "/images/bannerfrelons.png", alt: "Destruction de nids de frelons par drone" }],
   },
 };
 

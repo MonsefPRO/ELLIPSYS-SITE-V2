@@ -8,12 +8,13 @@ import { LiensUtiles } from "@/components/LiensUtiles";
 
 export const metadata: Metadata = {
   title: "Nettoyage façade par drone, Montpellier & Occitanie",
-  description: "Nettoyage de façade par drone à Montpellier et en Occitanie : enduits, pierre calcaire, bardages métal et bois. Sans nacelle, sans fermeture de rue. Sel marin, pollution, sable saharien. Devis gratuit sous 24 h.",
+  description: "Nettoyage de façade par drone à Montpellier et en Occitanie : enduits, pierre calcaire, bardages métal et bois. Sans nacelle ni fermeture de rue. Devis 24 h.",
   alternates: {
     canonical: "https://ellipsys-solutions.com/prestations/nettoyage-facade",
   },
   openGraph: {
     url: "https://ellipsys-solutions.com/prestations/nettoyage-facade",
+    images: [{ url: "/images/Barda.png", alt: "Nettoyage de façade et de bardage par drone" }],
   },
 };
 

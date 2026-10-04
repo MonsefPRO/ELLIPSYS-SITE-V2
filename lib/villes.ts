@@ -582,7 +582,7 @@ export const VILLES: Record<string, VilleData> = {
     codeDept: "30",
     region: "Occitanie",
     delai: "Sous 72 h",
-    accroche: "Bassin industriel en reconversion, contreforts cévenols et pluies parmi les plus intenses de France : nettoyage drone et robot dans le Gard.",
+    accroche: "Bassin industriel en reconversion, contreforts cévenols et pluies intenses : nettoyage drone et robot dans le Gard.",
     intro: [
       "Alès est la porte des Cévennes, et cette position change la donne par rapport au reste du Gard : le massif cévenol, à quelques kilomètres, concentre certains des cumuls de pluie les plus élevés de France métropolitaine lors des épisodes cévenols d'automne. Sur les toitures orientées nord de la vallée du Gardon, la conséquence est un développement de mousses et de lichens nettement plus rapide qu'à Nîmes, pourtant dans le même département.",
       "L'ancien bassin minier alésien ajoute une seconde spécificité, industrielle cette fois. D'anciens sites d'extraction et friches industrielles ont été reconvertis en zones d'activité, entrepôts logistiques et, de plus en plus, en toitures équipées de photovoltaïque sur de très grandes surfaces. Ce sont typiquement des chantiers où l'échafaudage devient économiquement absurde et où notre robot, capable de traiter 1 200 m² par heure, change l'équation.",

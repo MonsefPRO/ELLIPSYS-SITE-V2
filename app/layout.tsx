@@ -34,10 +34,10 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://ellipsys-solutions.com"),
   title: {
     default: "Nettoyage par Drone & Robotique, France | Ellipsys Solutions",
-    template: "%s | Ellipsys Solutions",
+    template: "%s | Ellipsys",
   },
   description:
-    "Nettoyage de panneaux photovoltaïques, façades et toitures par drone et robot. Récupérez jusqu'à 30% de production. Devis 24h. France entière. Certifiés DGAC/EASA.",
+    "Nettoyage de panneaux photovoltaïques, façades et toitures par drone et robot. Jusqu'à 30 % de production récupérée. Devis 24 h. Certifiés DGAC/EASA.",
   keywords: [
     "nettoyage panneaux solaires drone",
     "nettoyage panneaux photovoltaïques",
@@ -53,27 +53,18 @@ export const metadata: Metadata = {
     type: "website",
     locale: "fr_FR",
     siteName: "Ellipsys Solutions",
-    title: {
-      default: "Nettoyage par Drone & Robotique, France | Ellipsys Solutions",
-      template: "%s | Ellipsys Solutions",
-    },
-    description:
-      "Drone + robot. Récupération de rendement jusqu'à +30%. Panneaux solaires, toitures, façades, thermographie. Toute France. Certifiés DGAC/EASA.",
     images: [
       {
         url: "/images/accueil.png",
-        width: 1200,
-        height: 630,
-        alt: "Ellipsys Solutions, Nettoyage panneaux solaires par drone",
+        width: 1680,
+        height: 945,
+        alt: "Ellipsys Solutions, nettoyage de panneaux solaires par drone et robot",
       },
     ],
   },
+  // Pas de titre ni d'image fixes : X reprend ceux de chaque page (og:title, og:image).
   twitter: {
     card: "summary_large_image",
-    title: "Nettoyage, Inspection et Maintenance par Drone et Robot | Ellipsys",
-    description:
-      "Drones et robots pour la maintenance de vos infrastructures, panneaux solaires, toitures, façades, thermographie. Partout en France.",
-    images: ["/images/accueil.png"],
   },
   robots: {
     index: true,

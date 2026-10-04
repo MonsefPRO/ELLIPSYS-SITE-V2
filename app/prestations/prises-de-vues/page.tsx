@@ -6,13 +6,14 @@ import AccordionSection from "@/components/AccordionSection";
 import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
-  title: "Captation Audiovisuelle et Imagerie Aérienne par Drone ",
-  description: "Sublimez votre patrimoine avec des visuels cinématographiques 4K. Prises de vues haute définition DJI Air 3S pour l'immobilier de prestige, domaines viticoles et événementiel.",
+  title: "Captation audiovisuelle et imagerie aérienne par drone",
+  description: "Visuels cinématographiques 4K par drone pour l'immobilier de prestige, les domaines viticoles et l'événementiel. Prises de vues DJI Air 3S.",
   alternates: {
     canonical: "https://ellipsys-solutions.com/prestations/prises-de-vues",
   },
   openGraph: {
     url: "https://ellipsys-solutions.com/prestations/prises-de-vues",
+    images: [{ url: "/images/3s.png", alt: "Prises de vues aériennes par drone" }],
   },
 };
 

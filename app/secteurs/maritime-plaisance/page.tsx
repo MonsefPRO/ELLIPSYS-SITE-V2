@@ -6,8 +6,9 @@ import AccordionSection from "@/components/AccordionSection";
 import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
-  title: "Nettoyage et Dessalage d'Infrastructures Maritimes et Portuaires",
-  description: "Protocole de dessalage par drone pour infrastructures navales et portuaires. Evacuation des chlorures, protection contre la corrosion marine.",
+  alternates: { canonical: "https://ellipsys-solutions.com/secteurs/maritime-plaisance" },
+  title: "Dessalage d'infrastructures maritimes et portuaires",
+  description: "Protocole de dessalage par drone pour infrastructures navales et portuaires. Évacuation des chlorures, protection contre la corrosion marine.",
 };
 
 const IMG = {

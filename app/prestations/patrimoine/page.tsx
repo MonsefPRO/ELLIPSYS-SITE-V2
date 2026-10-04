@@ -5,13 +5,14 @@ import ExpertQuoteSide from "@/components/ExpertQuoteSide";
 import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
-  title: "Entretien du patrimoine bâti & structures sensibles par drone",
-  description: "Méthodes douces pour monuments historiques, pierre de taille et enduits traditionnels. Conformité totale aux prescriptions des Architectes des Bâtiments de France (ABF).",
+  title: "Entretien du patrimoine bâti par drone",
+  description: "Méthodes douces pour monuments historiques, pierre de taille et enduits traditionnels, conformes aux prescriptions des Architectes des Bâtiments de France.",
   alternates: {
     canonical: "https://ellipsys-solutions.com/prestations/patrimoine",
   },
   openGraph: {
     url: "https://ellipsys-solutions.com/prestations/patrimoine",
+    images: [{ url: "/images/Drone.jpg", alt: "Entretien du patrimoine bâti par drone" }],
   },
 };
 
