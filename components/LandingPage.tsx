@@ -40,6 +40,8 @@ export type LandingPageProps = {
   communes: string[];
   /** Lien vers la page de service complète (maillage interne) */
   pageDetail: { href: string; label: string };
+  /** Liens vers d'autres pages SEO cachées (maillage interne hors navigation) */
+  liensConnexes?: { href: string; label: string }[];
   url: string;
 };
 
@@ -277,6 +279,16 @@ export default function LandingPage(p: LandingPageProps) {
             >
               {p.pageDetail.label} →
             </Link>
+            {p.liensConnexes && p.liensConnexes.length > 0 && (
+              <div className="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
+                <span className="text-slate-400">Voir aussi :</span>
+                {p.liensConnexes.map((l) => (
+                  <Link key={l.href} href={l.href} className="text-slate-200 hover:text-brand-orange-300 underline underline-offset-4 transition-colors">
+                    {l.label}
+                  </Link>
+                ))}
+              </div>
+            )}
           </div>
         </div>
       </section>

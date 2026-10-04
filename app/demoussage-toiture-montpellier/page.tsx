@@ -115,6 +115,10 @@ export default function Page() {
         href: "/prestations/traitement-toiture",
         label: "Voir le détail de notre méthode de démoussage",
       }}
+      liensConnexes={[
+        { href: "/hydrofuge-toiture-montpellier", label: "Hydrofuge de toiture à Montpellier" },
+        { href: "/inspection-toiture-drone-montpellier", label: "Inspection de toiture par drone à Montpellier" },
+      ]}
     />
   );
 }
