@@ -7,7 +7,7 @@ import { getLang } from "@/lib/getLang";
 import { LiensUtiles } from "@/components/LiensUtiles";
 
 export const metadata: Metadata = {
-  title: "Nettoyage centrale solaire : robot & drone",
+  title: "Nettoyage de panneaux solaires : robot et drone",
   description: "Nettoyage de centrales solaires et parcs photovoltaïques par robot et drone. Jusqu'à +30% de rendement récupéré, contrats annuels. Devis gratuit sous 24h.",
   alternates: {
     canonical: "https://ellipsys-solutions.com/prestations/nettoyage-solaire",

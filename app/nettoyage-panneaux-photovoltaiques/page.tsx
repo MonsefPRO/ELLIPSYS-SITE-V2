@@ -164,8 +164,8 @@ export default function NettoyagePanneauxPhotovoltaiques() {
               <div className="w-14 h-14 rounded-2xl bg-emerald-100 mx-auto flex items-center justify-center mb-4">
                 <Award className="w-7 h-7 text-emerald-600" />
               </div>
-              <div className="text-4xl font-black text-emerald-700 mb-2">+28%</div>
-              <p className="text-slate-600">Gain de production moyen mesuré 14 jours après notre intervention.</p>
+              <div className="text-4xl font-black text-emerald-700 mb-2">83 000 m²</div>
+              <p className="text-slate-600">De centrales au sol déjà nettoyées par nos équipes : Le Fossat, Vitry, Montchanin.</p>
             </div>
           </div>
           <p className="text-center text-slate-500 text-sm mt-8 max-w-2xl mx-auto">
@@ -193,7 +193,7 @@ export default function NettoyagePanneauxPhotovoltaiques() {
               <div className="p-6">
                 <h3 className="text-xl font-black text-slate-900 mb-2">🚁 Drone pour les hauteurs</h3>
                 <p className="text-slate-600 text-sm leading-relaxed">
-                  Toitures industrielles, ombrières, sites difficiles d&apos;accès. Flotte DJI Matrice 300/350 + Air 3S certifiée DGAC.
+                  Toitures industrielles, ombrières, sites difficiles d&apos;accès. Drones professionnels, dont le DJI Matrice 4T pour l&apos;inspection thermique, pilotés par des télépilotes certifiés DGAC.
                 </p>
               </div>
             </div>
@@ -244,7 +244,7 @@ export default function NettoyagePanneauxPhotovoltaiques() {
                 desc: "Contrats pluriannuels semestriels ou trimestriels. Budget prévisible, intégrable à votre budget O&M.",
               },
               {
-                title: "Rapport conforme audit DDPM/IRSN",
+                title: "Rapport d'intervention détaillé",
                 desc: "Compte-rendu détaillé pour vos investisseurs, banques et bilan annuel. Photos avant/après horodatées et géolocalisées.",
               },
               {
