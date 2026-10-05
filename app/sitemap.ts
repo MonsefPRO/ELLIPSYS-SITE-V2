@@ -27,6 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/tarifs", priority: 0.95, changeFrequency: "monthly" },
     { path: "/nettoyage-panneaux-photovoltaiques", priority: 0.95, changeFrequency: "weekly" },
     { path: "/nettoyage-ombrieres-photovoltaiques", priority: 0.95, changeFrequency: "monthly" },
+    { path: "/nettoyage-centrale-solaire", priority: 0.95, changeFrequency: "monthly" },
 
     // Prestations
     { path: "/prestations", priority: 0.9, changeFrequency: "monthly" },

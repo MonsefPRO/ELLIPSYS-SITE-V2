@@ -43,7 +43,24 @@ export type LandingPageProps = {
   /** Liens vers d'autres pages SEO cachées (maillage interne hors navigation) */
   liensConnexes?: { href: string; label: string }[];
   url: string;
+  /** Options pour les pages non locales (par défaut : Montpellier) */
+  badgeZone?: string;
+  pointsCles?: string[];
+  zonesTitre?: string;
+  /** Remplace les communes dans le JSON-LD (régions, pays) */
+  areaServed?: { "@type": string; name: string }[];
+  /** Chantiers chiffrés affichés après la preuve visuelle */
+  references?: { chiffre: string; titre: string; lieu: string; texte: string }[];
+  referencesTitre?: string;
+  referencesLien?: { href: string; label: string };
 };
+
+const POINTS_CLES_DEFAUT = [
+  "Sans échafaudage ni nacelle",
+  "Télépilotes certifiés DGAC / EASA",
+  "Devis gratuit sous 24 h",
+  "Entreprise montpelliéraine",
+];
 
 export default function LandingPage(p: LandingPageProps) {
   const jsonLd = {
@@ -53,7 +70,7 @@ export default function LandingPage(p: LandingPageProps) {
         "@type": "Service",
         name: p.h1Texte,
         serviceType: p.serviceLabel,
-        areaServed: [
+        areaServed: p.areaServed ?? [
           { "@type": "City", name: "Montpellier" },
           ...p.communes.map((c) => ({ "@type": "City", name: c })),
         ],
@@ -99,7 +116,7 @@ export default function LandingPage(p: LandingPageProps) {
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-start">
             <div className="text-white pt-2">
               <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-orange-500/20 border border-brand-orange-400/40 text-brand-orange-300 text-xs font-bold mb-5">
-                <MapPin className="w-3.5 h-3.5" /> Montpellier · Hérault · Occitanie
+                <MapPin className="w-3.5 h-3.5" /> {p.badgeZone ?? "Montpellier · Hérault · Occitanie"}
               </span>
 
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black leading-[1.1] mb-5">{p.h1}</h1>
@@ -107,12 +124,7 @@ export default function LandingPage(p: LandingPageProps) {
               <p className="text-lg text-slate-200 leading-relaxed mb-7 max-w-xl">{p.accroche}</p>
 
               <ul className="space-y-2.5 mb-8">
-                {[
-                  "Sans échafaudage ni nacelle",
-                  "Télépilotes certifiés DGAC / EASA",
-                  "Devis gratuit sous 24 h",
-                  "Entreprise montpelliéraine",
-                ].map((t) => (
+                {(p.pointsCles ?? POINTS_CLES_DEFAUT).map((t) => (
                   <li key={t} className="flex items-center gap-3 text-white font-medium">
                     <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0" />
                     {t}
@@ -168,6 +180,39 @@ export default function LandingPage(p: LandingPageProps) {
           </div>
         </div>
       </section>
+
+      {/* ─── RÉFÉRENCES CHIFFRÉES (optionnel) ───────────────────────────── */}
+      {p.references && p.references.length > 0 && (
+        <section className="pb-14 bg-white">
+          <div className="container mx-auto px-4 max-w-5xl">
+            {p.referencesTitre && (
+              <h2 className="text-2xl sm:text-3xl font-black text-slate-900 mb-8 text-center">{p.referencesTitre}</h2>
+            )}
+            <div className="grid sm:grid-cols-3 gap-5">
+              {p.references.map((r) => (
+                <div key={r.titre} className="border border-slate-200 rounded-3xl p-6 bg-slate-50">
+                  <p className="text-3xl font-black text-[#0e2f52] mb-1">{r.chiffre}</p>
+                  <h3 className="font-black text-slate-900 leading-snug">{r.titre}</h3>
+                  <p className="flex items-center gap-1.5 text-xs font-bold text-brand-orange-600 mt-1 mb-3">
+                    <MapPin className="w-3.5 h-3.5" /> {r.lieu}
+                  </p>
+                  <p className="text-sm text-slate-600 leading-relaxed">{r.texte}</p>
+                </div>
+              ))}
+            </div>
+            {p.referencesLien && (
+              <p className="text-center mt-7">
+                <Link
+                  href={p.referencesLien.href}
+                  className="text-brand-orange-600 hover:text-brand-orange-700 font-bold text-sm transition-colors"
+                >
+                  {p.referencesLien.label} →
+                </Link>
+              </p>
+            )}
+          </div>
+        </section>
+      )}
 
       {/* ─── BÉNÉFICES ──────────────────────────────────────────────────── */}
       <section className="py-16 bg-slate-50 border-y border-slate-200">
@@ -268,7 +313,7 @@ export default function LandingPage(p: LandingPageProps) {
 
           <div className="pt-8 border-t border-white/10">
             <p className="text-xs uppercase tracking-widest text-slate-400 font-bold mb-4">
-              Nous intervenons notamment à
+              {p.zonesTitre ?? "Nous intervenons notamment à"}
             </p>
             <p className="text-slate-300 text-sm leading-relaxed max-w-3xl mx-auto">
               {p.communes.join(" · ")}

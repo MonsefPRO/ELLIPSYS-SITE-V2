@@ -128,6 +128,9 @@ export default function Page() {
         href: "/prestations/nettoyage-solaire",
         label: "Voir notre offre complète pour les parcs photovoltaïques",
       }}
+      liensConnexes={[
+        { href: "/nettoyage-centrale-solaire", label: "Nettoyage de centrale solaire et photovoltaïque" },
+      ]}
     />
   );
 }
