@@ -66,7 +66,7 @@ const faqs = [
   },
   {
     q: "Comment mesurez-vous le gain de rendement après nettoyage ?",
-    r: "Nous instrumentons la centrale (pyranomètre) et comparons la production réelle avant et après intervention sur une période de référence, pour chiffrer précisément les kWh récupérés.",
+    r: "À partir de vos propres données de supervision : nous comparons la production des jours qui suivent l'intervention à celle des jours qui la précèdent, à ensoleillement comparable, ou nous la rapportons au rayonnement mesuré par la station météo du site. C'est ce qui chiffre les kWh récupérés.",
   },
   {
     q: "Le nettoyage présente-t-il un risque de micro-fissures pour les modules ?",
@@ -169,7 +169,7 @@ export default function NettoyagePanneauxPhotovoltaiques() {
             </div>
           </div>
           <p className="text-center text-slate-500 text-sm mt-8 max-w-2xl mx-auto">
-            <em>Données issues de retours d&apos;exploitants en France métropolitaine. Le soiling ratio est mesurable par instrumentation pyranomètre vs production réelle.</em>
+            <em>Données issues de retours d&apos;exploitants en France métropolitaine. Le gain réel se vérifie sur vos données de supervision, en comparant la production avant et après intervention.</em>
           </p>
         </div>
       </section>
@@ -236,8 +236,8 @@ export default function NettoyagePanneauxPhotovoltaiques() {
           <div className="grid md:grid-cols-2 gap-8">
             {[
               {
-                title: "Mesure du soiling avant/après",
-                desc: "Instrumentation pyranomètre + analyse production sur 14 jours. Vous savez précisément combien de kWh récupérés.",
+                title: "Gain vérifié sur vos données",
+                desc: "Nous analysons avec vous la production avant et après intervention, à partir de votre supervision. Vous voyez combien de kWh ont été récupérés.",
               },
               {
                 title: "Tarification €/MWc/an",
