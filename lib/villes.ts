@@ -23,6 +23,8 @@ export type VilleData = {
   delai: string;
   /** Accroche courte pour la meta description (150 car. max une fois assemblée) */
   accroche: string;
+  /** Title Google calé sur la requête qui amène réellement des impressions (GSC) */
+  titreSeo?: string;
   /** 2 paragraphes uniques, le cœur du contenu local */
   intro: string[];
   /** Ce qui dégrade spécifiquement les bâtiments ici */
@@ -287,6 +289,7 @@ export const VILLES: Record<string, VilleData> = {
     region: "Occitanie",
     delai: "Sous 72 h",
     accroche: "Tramontane, ensoleillement record et parc photovoltaïque dense : nettoyage drone et robot dans le 66.",
+    titreSeo: "Nettoyage de panneaux solaires à Perpignan",
     intro: [
       "Perpignan cumule deux caractéristiques qui en font un terrain particulier : le département des Pyrénées-Orientales est l'un des plus ensoleillés de France, et l'un des plus ventés. Cet ensoleillement a fait du Roussillon un territoire à très forte densité photovoltaïque, des toitures résidentielles aux grandes centrales au sol du secteur de Rivesaltes et des Corbières.",
       "La tramontane, elle, est un facteur d'encrassement largement sous-estimé. Elle souffle fort et souvent, et transporte en permanence des particules fines : poussières de garrigue, sables, résidus agricoles. Sur un panneau photovoltaïque, cela signifie un réencrassement rapide entre deux pluies, et dans un département où les précipitations sont rares, la pluie ne joue pratiquement pas son rôle de nettoyage naturel. C'est le contexte où l'écart de rendement entre un parc entretenu et un parc laissé en l'état est le plus élevé.",
@@ -407,6 +410,7 @@ export const VILLES: Record<string, VilleData> = {
     region: "Provence-Alpes-Côte d'Azur",
     delai: "Sous 5 jours ouvrés",
     accroche: "Pierre calcaire, mistral et pollution portuaire : croûtes noires et accès difficiles, traités par drone.",
+    titreSeo: "Nettoyage de façade à Marseille, par drone",
     intro: [
       "Marseille présente une combinaison de facteurs de dégradation rarement réunie ailleurs : la pierre calcaire du bâti ancien, la pollution atmosphérique d'une grande métropole portuaire et industrielle, et une exposition marine directe. Le résultat est bien connu des propriétaires marseillais : les fameuses croûtes noires qui recouvrent les façades en pierre du centre et du Panier.",
       "Ces croûtes ne sont pas de la saleté déposée, mais le produit d'une réaction chimique entre les polluants soufrés et le calcaire. Elles ne partent ni au jet d'eau simple ni à la brosse, et un nettoyage trop agressif emporte avec elles une partie de la pierre. La topographie marseillaise ajoute sa propre difficulté : les immeubles accrochés aux pentes d'Endoume, du Roucas Blanc ou des quartiers surplombant les calanques sont souvent inaccessibles à une nacelle. C'est là que le drone devient non pas une alternative, mais la seule option raisonnable.",
@@ -525,6 +529,7 @@ export const VILLES: Record<string, VilleData> = {
     region: "Occitanie",
     delai: "Sous 72 h",
     accroche: "Vent parmi les plus forts de France, vignoble des Corbières et zone logistique : nettoyage drone et robot dans l'Aude.",
+    titreSeo: "Nettoyage panneaux solaires et façades à Narbonne",
     intro: [
       "Narbonne se trouve dans l'un des couloirs de vent les plus constants de France : le cers et la tramontane, qui soufflent depuis le golfe du Lion, justifient d'ailleurs la forte densité de parcs éoliens sur les communes voisines. Cette même exposition explique pourquoi les toitures et les panneaux solaires du Narbonnais s'encrassent différemment du reste de l'Hérault, un dépôt de poussières fines et de sel remis en suspension en permanence, plutôt qu'un encrassement lent et régulier.",
       "L'arrière-pays narbonnais est aussi un vignoble à grande échelle, les Corbières et le massif de la Clape produisent une poussière calcaire et organique qui se dépose sur les hangars viticoles et les installations photovoltaïques posées sur leurs toitures. À cela s'ajoute la zone logistique du plateau de Montredon, au croisement des autoroutes A9 et A61, qui concentre des entrepôts de grande surface aux toitures et bardages typiquement adaptés à notre méthode robot.",
