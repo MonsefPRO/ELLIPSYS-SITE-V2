@@ -94,7 +94,7 @@ export default async function HomePage() {
       ];
 
   /* ── REVIEWS ─────────────────────────────────────────────── */
-  const reviewDate = isEn ? "One week ago · Visited in April" : "Il y a une semaine · Visité en avril";
+  const reviewDate = isEn ? "Google review · Visited in April" : "Avis Google · Visité en avril";
   const reviews = [
     { name: "Nathalie Gombart", date: reviewDate, text: isEn ? "Roof demossing done, it looks brand new!! High-quality staff, competent and pleasant." : "Démoussage de ma toiture, elle est comme neuve!! Un personnel de qualité, compétent et agréable.", initials: "NG", color: "bg-blue-600" },
     { name: "S Scutum", date: reviewDate, text: isEn ? "Very professional company that handled drone facade cleaning on one of our buildings. Serious work, efficient and well-organised team." : "Entreprise très professionnelle qui a pris en charge le nettoyage de façade de l'un de nos bâtiments par drone. Travail sérieux, équipe efficace et bien organisée.", initials: "SC", color: "bg-emerald-600" },

@@ -122,8 +122,13 @@ export default function DevisPage() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setLoading(true);
     setErrorMsg(null);
+    // Un e-mail OU un téléphone suffit : un pro pressé laisse souvent juste son numéro.
+    if (!base.email.trim() && !base.phone.trim()) {
+      setErrorMsg(isEn ? "Please enter an email or a phone number so we can reply." : "Indiquez un e-mail ou un téléphone pour que nous puissions vous répondre.");
+      return;
+    }
+    setLoading(true);
 
     const svcLabel = SERVICES.find(s => s.key === service)?.label ?? service;
     const details: Record<string, string> = {};
@@ -358,12 +363,12 @@ export default function DevisPage() {
                     </div>
 
                     <div className={FIELD}>
-                      <label className={LABEL}>{isEn ? "Email *" : "Email *"}</label>
-                      <input required type="email" value={base.email} onChange={e => setB("email", e.target.value)} className={INPUT} placeholder="votre@email.com" />
+                      <label className={LABEL}>{isEn ? "Email (or phone)" : "Email (ou téléphone)"}</label>
+                      <input type="email" value={base.email} onChange={e => setB("email", e.target.value)} className={INPUT} placeholder="votre@email.com" />
                     </div>
 
                     <div className={FIELD}>
-                      <label className={LABEL}>{isEn ? "Phone" : "Téléphone"}</label>
+                      <label className={LABEL}>{isEn ? "Phone (or email)" : "Téléphone (ou e-mail)"}</label>
                       <input type="tel" value={base.phone} onChange={e => setB("phone", e.target.value)} className={INPUT} placeholder="06 xx xx xx xx" />
                     </div>
 
@@ -389,7 +394,7 @@ export default function DevisPage() {
                     {isEn ? "Your service" : "Votre prestation"}
                   </h2>
                   <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-                    {SERVICES.map(s => (
+                    {SERVICES.filter(s => s.key !== "nuisibles" || service === "nuisibles").map(s => (
                       <button
                         key={s.key}
                         type="button"
@@ -865,13 +870,13 @@ export default function DevisPage() {
             <div className="bg-[#0e2f52] rounded-3xl p-7 text-white">
               <h3 className="text-lg font-black mb-3 text-brand-orange-400">{isEn ? "Service areas" : "Zones d'intervention"}</h3>
               <p className="text-slate-300 text-sm leading-relaxed mb-4">
-                {isEn ? "Our teams operate throughout France and occasionally across Europe." : "Nos équipes interviennent sur toute la France et ponctuellement en Europe."}
+                {isEn ? "Based in Montpellier, we work first across the Mediterranean arc, and anywhere in France on project." : "Basés à Montpellier, nous intervenons en priorité sur l'arc méditerranéen, et partout en France sur projet."}
               </p>
               <div className="flex flex-wrap gap-2 text-xs font-bold text-[#0e2f52]">
-                {["Montpellier", "Nîmes", "Marseille", "Paris", "Lyon", "Toulouse", "Bordeaux"].map(v => (
+                {["Montpellier", "Nîmes", "Béziers", "Narbonne", "Perpignan", "Toulouse", "Avignon", "Marseille"].map(v => (
                   <span key={v} className="bg-white px-3 py-1 rounded-full">{v}</span>
                 ))}
-                <span className="bg-brand-orange-500 text-white px-3 py-1 rounded-full">{isEn ? "Europe on request" : "Europe sur étude"}</span>
+                <span className="bg-brand-orange-500 text-white px-3 py-1 rounded-full">{isEn ? "France on project" : "France sur projet"}</span>
               </div>
             </div>
 
