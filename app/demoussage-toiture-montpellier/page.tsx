@@ -6,7 +6,7 @@ import LandingPage from "@/components/LandingPage";
  * Sert aussi en référencement naturel après la campagne (contenu local réel).
  */
 export const metadata: Metadata = {
-  title: "Démoussage de toiture à Montpellier, devis gratuit 24 h",
+  title: "Démoussage et nettoyage de toiture à Montpellier",
   description:
     "Démoussage de toiture par drone à Montpellier et dans l'Hérault, sans échafaudage ni monter sur les tuiles. Traitement Certibiocide + hydrofuge. Devis 24 h.",
   alternates: { canonical: "https://ellipsys-solutions.com/demoussage-toiture-montpellier" },
