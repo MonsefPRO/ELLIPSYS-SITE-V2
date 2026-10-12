@@ -199,6 +199,9 @@ export default function Page() {
         { href: "/nettoyage-panneaux-solaires-montpellier", label: "Nettoyage de panneaux solaires à Montpellier" },
         { href: "/nettoyage-panneaux-solaires-toiture-industrielle", label: "Panneaux solaires en toiture industrielle" },
         { href: "/thermographie-panneaux-photovoltaiques-drone", label: "Thermographie de panneaux photovoltaïques" },
+        { href: "/nettoyage-centrale-photovoltaique-occitanie", label: "Centrales en Occitanie" },
+        { href: "/contrat-nettoyage-centrale-photovoltaique", label: "Contrat de nettoyage de centrale" },
+        { href: "/nettoyage-centrale-agrivoltaique", label: "Centrales agrivoltaïques" },
       ]}
     />
   );

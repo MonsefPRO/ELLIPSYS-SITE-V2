@@ -156,6 +156,7 @@ export default function Page() {
       liensConnexes={[
         { href: "/nettoyage-panneaux-solaires-toiture-industrielle", label: "Panneaux solaires en toiture industrielle" },
         { href: "/nettoyage-centrale-solaire", label: "Nettoyage de centrale solaire" },
+        { href: "/nettoyage-facade-vitree-drone", label: "Nettoyage de façade vitrée par drone" },
       ]}
     />
   );

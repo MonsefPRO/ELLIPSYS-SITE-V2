@@ -118,6 +118,8 @@ export default function Page() {
       liensConnexes={[
         { href: "/hydrofuge-toiture-montpellier", label: "Hydrofuge de toiture à Montpellier" },
         { href: "/inspection-toiture-drone-montpellier", label: "Inspection de toiture par drone à Montpellier" },
+        { href: "/demoussage-toiture-nimes", label: "Démoussage de toiture à Nîmes" },
+        { href: "/demoussage-toiture-beziers", label: "Démoussage de toiture à Béziers" },
       ]}
     />
   );
