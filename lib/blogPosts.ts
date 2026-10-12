@@ -14,6 +14,57 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "prix-mwh-solaire-baisse-appel-offres-2026",
+    image: "/images/robot-franchissement.jpg",
+    category: "Énergie Solaire",
+    date: "12 Octobre 2026",
+    readTime: "5 min",
+    badge: "bg-amber-50 text-amber-600",
+    title: "Le MWh solaire à 61 € : ce que la baisse des appels d'offres change pour un exploitant",
+    excerpt: "Le dernier appel d'offres pour les centrales au sol fixe un prix moyen de 61,33 €/MWh, contre 79,48 € à la période précédente. Quand le MWh rapporte moins, chaque MWh perdu à cause de l'encrassement pèse plus lourd.",
+    metaTitle: "MWh solaire à 61 € : ce qui change pour un exploitant",
+    metaDescription: "Appel d'offres PPE2 : le prix moyen du PV au sol tombe à 61,33 €/MWh (−23 %). Pourquoi chaque MWh perdu à l'encrassement coûte désormais plus cher.",
+    content: `
+<h2>Un prix moyen en baisse de 23 % en une seule session</h2>
+<p>Les résultats de la 9<sup>e</sup> période de l'appel d'offres PPE2 pour le photovoltaïque au sol ont été publiés le 9 octobre 2026. Le prix moyen des lauréats s'établit à <strong>61,33 €/MWh</strong>, contre <strong>79,48 €/MWh</strong> à la période précédente, soit une baisse d'environ 23 %.</p>
+<p>La concurrence explique en grande partie ce recul : plus de <strong>8,3 GWc de projets</strong> se sont portés candidats pour 925 MWc retenus. Le petit photovoltaïque (100 à 500 kWc) suit la même tendance, avec un prix moyen de <strong>75,48 €/MWh</strong>, en baisse de 14,9 %, et trois fois plus de candidats que de places.</p>
+
+<h2>Ce que cela signifie pour la rentabilité d'une centrale</h2>
+<p>Ces prix concernent les nouveaux projets lauréats : les centrales déjà en service conservent leur contrat. Mais ils dessinent la trajectoire du marché. Un MWh qui rapporte moins laisse moins de marge pour absorber les pertes de production.</p>
+<p>Or une partie de ces pertes est évitable. L'encrassement des modules (poussières, pollen, fientes, sable saharien) coûte en moyenne 4 à 7 % de production selon l'AIE PVPS, et davantage à proximité de cultures, d'axes routiers ou du littoral.</p>
+
+<h2>Un ordre de grandeur</h2>
+<p>Prenons une centrale de 10 MWc dans le Sud de la France, qui produit environ 14 000 MWh par an. Avec 5 % de pertes dues à l'encrassement :</p>
+<ul>
+  <li>700 MWh ne sont pas produits chaque année ;</li>
+  <li>au prix de 61 €/MWh, cela représente environ <strong>43 000 € de revenus non encaissés par an</strong>.</li>
+</ul>
+<p>Ce calcul reste une estimation : la production réelle et le taux d'encrassement varient d'un site à l'autre. C'est précisément pour cela que la mesure doit précéder toute décision.</p>
+
+<h2>Les leviers qui restent entre les mains de l'exploitant</h2>
+<p>Le prix de vente, le calendrier réglementaire et la file d'attente de raccordement échappent à l'exploitant. La production de son parc existant, en revanche, reste sous son contrôle.</p>
+<ul>
+  <li><strong>Mesurer l'encrassement</strong> en comparant la production réelle à la production attendue, à ensoleillement comparable, à partir des données de supervision.</li>
+  <li><strong>Adapter la fréquence de nettoyage</strong> à l'environnement du site plutôt qu'appliquer une règle théorique : un à deux passages par an suffisent dans la plupart des cas.</li>
+  <li><strong>Planifier avant les mois de forte production</strong>, pour aborder le printemps avec des modules propres.</li>
+  <li><strong>Regrouper les sites</strong> d'un même portefeuille dans une seule tournée pour réduire le coût par intervention.</li>
+</ul>
+
+<h2>Questions fréquentes</h2>
+<h3>Le prix de 61 €/MWh s'applique-t-il aux centrales existantes ?</h3>
+<p>Non. Il correspond au prix moyen des projets lauréats de la dernière période d'appel d'offres. Les centrales en service restent rémunérées selon leur propre contrat. Ce chiffre indique en revanche la direction du marché pour les nouveaux projets.</p>
+<h3>Combien de production l'encrassement fait-il perdre ?</h3>
+<p>En moyenne 4 à 7 % selon l'AIE PVPS, avec de fortes variations selon l'environnement : un site entouré de cultures, proche d'une route très fréquentée ou du littoral s'encrasse plus vite qu'un site isolé.</p>
+<h3>Comment savoir si un nettoyage est rentable ?</h3>
+<p>En comparant le coût de l'intervention à l'énergie récupérée. Les données de supervision permettent de mesurer l'écart de production avant et après nettoyage, à ensoleillement comparable, et donc de chiffrer le gain réel.</p>
+
+<h2>Notre approche</h2>
+<p>Basés à Montpellier, nous nettoyons les centrales photovoltaïques au sol, les ombrières et les toitures solaires avec notre propre équipe de pilotes certifiés et nos équipements, drones et robots, sans arrêt de production. Découvrez notre <a href="/prestations/nettoyage-solaire">offre de nettoyage solaire</a> ou <a href="/devis">demandez un devis</a>.</p>
+
+<p><em>Sources : résultats de l'appel d'offres PPE2 photovoltaïque au sol et de l'appel d'offres simplifié petit PV, pv-magazine, 8 et 9 octobre 2026 ; AIE PVPS pour les pertes liées à l'encrassement.</em></p>
+`,
+  },
+  {
     slug: "apsad-d20-assurance-photovoltaique-ce-qui-change",
     image: "/images/avant-apres-panneaux-2.jpg",
     category: "Énergie Solaire",

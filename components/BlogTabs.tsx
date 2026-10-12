@@ -6,6 +6,16 @@ import { ArrowRight, Calendar, Clock, Instagram, Facebook, Linkedin, Music2, Ext
 
 const articles = [
   {
+    image: "/images/robot-franchissement.jpg",
+    category: "Énergie Solaire",
+    date: "12 Octobre 2026",
+    readTime: "5 min",
+    title: "Le MWh solaire à 61 € : ce que la baisse des appels d'offres change pour un exploitant",
+    excerpt: "Prix moyen du PV au sol à 61,33 €/MWh, en baisse de 23 %. Quand le MWh rapporte moins, chaque MWh perdu à l'encrassement pèse plus lourd.",
+    href: "/blog/prix-mwh-solaire-baisse-appel-offres-2026",
+    badge: "bg-amber-50 text-amber-600",
+  },
+  {
     image: "/images/avant-apres-panneaux-2.jpg",
     category: "Énergie Solaire",
     date: "28 Septembre 2026",
