@@ -157,6 +157,8 @@ export default function Page() {
         { href: "/nettoyage-bardage-industriel", label: "Nettoyage de bardage industriel" },
         { href: "/nettoyage-centrale-solaire", label: "Nettoyage de centrale solaire" },
         { href: "/nettoyage-ombrieres-photovoltaiques", label: "Nettoyage d'ombrières photovoltaïques" },
+        { href: "/nettoyage-panneaux-solaires-hangar-agricole", label: "Panneaux solaires sur hangar agricole" },
+        { href: "/thermographie-panneaux-photovoltaiques-drone", label: "Thermographie de panneaux photovoltaïques" },
       ]}
     />
   );

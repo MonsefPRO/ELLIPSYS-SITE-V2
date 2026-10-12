@@ -198,6 +198,7 @@ export default function Page() {
         { href: "/nettoyage-ombrieres-photovoltaiques", label: "Nettoyage d'ombrières photovoltaïques" },
         { href: "/nettoyage-panneaux-solaires-montpellier", label: "Nettoyage de panneaux solaires à Montpellier" },
         { href: "/nettoyage-panneaux-solaires-toiture-industrielle", label: "Panneaux solaires en toiture industrielle" },
+        { href: "/thermographie-panneaux-photovoltaiques-drone", label: "Thermographie de panneaux photovoltaïques" },
       ]}
     />
   );
