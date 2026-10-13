@@ -154,6 +154,7 @@ export default function Page() {
         { href: "/nettoyage-centrale-solaire", label: "Nettoyage de centrale solaire" },
         { href: "/contrat-nettoyage-centrale-photovoltaique", label: "Contrat de nettoyage de centrale" },
         { href: "/nettoyage-centrale-agrivoltaique", label: "Centrales agrivoltaïques" },
+        { href: "/nettoyage-centrale-photovoltaique-paca", label: "Centrales en PACA" },
       ]}
     />
   );

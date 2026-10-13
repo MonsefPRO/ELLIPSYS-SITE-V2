@@ -29,6 +29,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/nettoyage-ombrieres-photovoltaiques", priority: 0.95, changeFrequency: "monthly" },
     { path: "/nettoyage-centrale-solaire", priority: 0.95, changeFrequency: "monthly" },
     { path: "/nettoyage-centrale-photovoltaique-occitanie", priority: 0.95, changeFrequency: "monthly" },
+    { path: "/nettoyage-centrale-photovoltaique-paca", priority: 0.95, changeFrequency: "monthly" },
+    { path: "/nettoyage-robotise-centrale-photovoltaique", priority: 0.9, changeFrequency: "monthly" },
     { path: "/contrat-nettoyage-centrale-photovoltaique", priority: 0.9, changeFrequency: "monthly" },
     { path: "/nettoyage-centrale-agrivoltaique", priority: 0.9, changeFrequency: "monthly" },
     { path: "/nettoyage-panneaux-solaires-toiture-industrielle", priority: 0.9, changeFrequency: "monthly" },
@@ -100,11 +102,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/blog", priority: 0.8, changeFrequency: "weekly" },
   ];
 
+  // Photos réelles de chantier associées aux pages : déclarées dans le sitemap
+  // pour être découvertes par Google Images (seconde porte d'entrée vers le site).
+  const IMAGES: Record<string, string[]> = {
+    "": ["/images/accueil.png"],
+    "/realisations": ["/images/avant-apres-fossat.jpg", "/images/avant-apres-montchanin.jpg", "/images/SCUTUMFACADE.png", "/images/demoussage-toiture-eimargues.jpg"],
+    "/nettoyage-centrale-solaire": ["/images/avant-apres-fossat.jpg", "/images/robot-franchissement.jpg"],
+    "/nettoyage-centrale-photovoltaique-occitanie": ["/images/avant-apres-fossat.jpg", "/images/robot-centrale-sol.jpg"],
+    "/nettoyage-centrale-photovoltaique-paca": ["/images/robot-vue-aerienne.jpg"],
+    "/nettoyage-robotise-centrale-photovoltaique": ["/images/robot-produit.jpg", "/images/robot-franchissement.jpg"],
+    "/contrat-nettoyage-centrale-photovoltaique": ["/images/avant-apres-montchanin.jpg", "/images/robot-vue-aerienne.jpg"],
+    "/nettoyage-ombrieres-photovoltaiques": ["/images/robot-intervention-structure.jpg"],
+    "/nettoyage-bardage-industriel": ["/images/Bardage-facades.png", "/images/nettoyage-vitrages-scutum-montpellier.png"],
+    "/nettoyage-facade-vitree-drone": ["/images/SCUTUMFACADE.png"],
+    "/demoussage-toiture-montpellier": ["/images/demoussage-toiture-eimargues.jpg"],
+    "/demoussage-toiture-nimes": ["/images/demoussage-toiture-eimargues.jpg"],
+  };
+  const imagesOf = (path: string) =>
+    IMAGES[path]?.map((src) => `${BASE}${encodeURI(src)}`);
+
   const staticEntries: MetadataRoute.Sitemap = pages.map((p) => ({
     url: `${BASE}${p.path}`,
     lastModified: now,
     changeFrequency: p.changeFrequency,
     priority: p.priority,
+    ...(imagesOf(p.path) ? { images: imagesOf(p.path) } : {}),
   }));
 
   // ── Articles de blog (ajoutés automatiquement depuis lib/blogPosts.ts) ──
@@ -115,6 +137,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(Math.min(parseFrDate(post.date).getTime(), now.getTime())),
     changeFrequency: "monthly",
     priority: 0.75,
+    images: [`${BASE}${encodeURI(post.image)}`],
   }));
 
   return [...staticEntries, ...blogEntries];

@@ -202,6 +202,8 @@ export default function Page() {
         { href: "/nettoyage-centrale-photovoltaique-occitanie", label: "Centrales en Occitanie" },
         { href: "/contrat-nettoyage-centrale-photovoltaique", label: "Contrat de nettoyage de centrale" },
         { href: "/nettoyage-centrale-agrivoltaique", label: "Centrales agrivoltaïques" },
+        { href: "/nettoyage-centrale-photovoltaique-paca", label: "Centrales en PACA" },
+        { href: "/nettoyage-robotise-centrale-photovoltaique", label: "Nettoyage robotisé de centrale" },
       ]}
     />
   );
