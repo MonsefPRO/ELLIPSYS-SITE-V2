@@ -28,7 +28,7 @@ export const metadata: Metadata = {
         url: "/images/avant-apres-fossat.jpg",
         width: 2404,
         height: 1350,
-        alt: "Avant et après nettoyage de la centrale photovoltaïque au sol du Fossat",
+        alt: "Avant et après nettoyage de la centrale photovoltaïque au sol de Lapeyrouse-Fossat",
       },
     ],
   },
@@ -61,16 +61,16 @@ export default function Page() {
       formSoustitre="Indiquez la surface ou la puissance du site et sa localisation."
       preuve={{
         image: "/images/avant-apres-fossat.jpg",
-        alt: "Avant et après nettoyage des modules de la centrale photovoltaïque au sol du Fossat",
-        legende: "Centrale du Fossat (Ariège), 30 000 m² nettoyés en septembre 2026 : les mêmes modules avant et après",
+        alt: "Avant et après nettoyage des modules de la centrale photovoltaïque au sol de Lapeyrouse-Fossat",
+        legende: "Centrale de Lapeyrouse-Fossat (Haute-Garonne), 30 000 m² nettoyés en septembre 2026 : les mêmes modules avant et après",
         badges: ["AVANT", "APRÈS"],
       }}
       referencesTitre="Nos dernières centrales nettoyées"
       references={[
         {
           chiffre: "30 000 m²",
-          titre: "Centrale au sol du Fossat",
-          lieu: "Ariège (09)",
+          titre: "Centrale au sol de Lapeyrouse-Fossat",
+          lieu: "Haute-Garonne (31)",
           texte:
             "Trois hectares de modules couverts d'un voile d'encrassement. Deux pilotes ont traité l'ensemble des rangées en septembre 2026.",
         },
@@ -167,7 +167,7 @@ export default function Page() {
         },
         {
           q: "Intervenez-vous en dehors de l'Occitanie ?",
-          r: "Oui. Basés à Montpellier, nous intervenons en priorité sur l'arc méditerranéen, de Perpignan à Marseille, et partout en France sur projet. Nos dernières centrales nettoyées se trouvent en Ariège et en Saône-et-Loire.",
+          r: "Oui. Basés à Montpellier, nous intervenons en priorité sur l'arc méditerranéen, de Perpignan à Marseille, et partout en France sur projet. Nos dernières centrales nettoyées se trouvent en Haute-Garonne et en Saône-et-Loire.",
         },
       ]}
       zonesTitre="Nous intervenons notamment dans ces départements"

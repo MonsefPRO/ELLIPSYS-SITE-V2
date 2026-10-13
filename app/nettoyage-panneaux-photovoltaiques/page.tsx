@@ -165,7 +165,7 @@ export default function NettoyagePanneauxPhotovoltaiques() {
                 <Award className="w-7 h-7 text-emerald-600" />
               </div>
               <div className="text-4xl font-black text-emerald-700 mb-2">83 000 m²</div>
-              <p className="text-slate-600">De centrales au sol déjà nettoyées par nos équipes : Le Fossat, Vitry, Montchanin.</p>
+              <p className="text-slate-600">De centrales au sol déjà nettoyées par nos équipes : Lapeyrouse-Fossat, Vitry, Montchanin.</p>
             </div>
           </div>
           <p className="text-center text-slate-500 text-sm mt-8 max-w-2xl mx-auto">

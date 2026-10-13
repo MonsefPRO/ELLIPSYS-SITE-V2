@@ -63,7 +63,7 @@ export default async function RealisationsPage() {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-8 items-start">
 
-          {/* PROJET MIS EN AVANT : CENTRALE SOLAIRE FOSSAT (le plus recent) */}
+          {/* PROJET MIS EN AVANT : CENTRALE SOLAIRE LAPEYROUSE-FOSSAT (le plus recent) */}
           <div className="lg:col-span-2 bg-white rounded-[2rem] overflow-hidden shadow-xl border border-slate-100 lg:grid lg:grid-cols-2">
             <div className="relative h-56 md:h-72 lg:h-full lg:min-h-[380px]">
               <div className="absolute inset-0 bg-[url('/images/avant-apres-fossat.jpg')] bg-cover bg-center"></div>
@@ -80,10 +80,10 @@ export default async function RealisationsPage() {
               <span className="inline-block self-start bg-brand-orange-50 text-brand-orange-600 px-3 py-1 rounded-full text-xs font-black tracking-widest mb-4">{isEn ? "LATEST PROJECT" : "DERNIER CHANTIER"}</span>
               <div className="flex items-center gap-3 mb-4">
                 <Sun className="w-7 h-7 text-brand-orange-500 shrink-0" />
-                <h2 className="text-xl md:text-2xl font-bold text-[#0e2f52]">{isEn ? "Solar Farm Cleaning, Le Fossat" : "Nettoyage de Centrale Solaire, Le Fossat"}</h2>
+                <h2 className="text-xl md:text-2xl font-bold text-[#0e2f52]">{isEn ? "Solar Farm Cleaning, Lapeyrouse-Fossat" : "Nettoyage de Centrale Solaire, Lapeyrouse-Fossat"}</h2>
               </div>
               <div className="flex flex-wrap gap-4 mb-6 pb-6 border-b border-slate-100 text-sm">
-                <div className="flex items-center gap-2 text-slate-600"><MapPin className="w-4 h-4 text-slate-400" /> Le Fossat (09)</div>
+                <div className="flex items-center gap-2 text-slate-600"><MapPin className="w-4 h-4 text-slate-400" /> Lapeyrouse-Fossat (31)</div>
                 <div className="flex items-center gap-2 text-slate-600"><Clock className="w-4 h-4 text-slate-400" /> 30 000 m²</div>
                 <div className="flex items-center gap-2 text-slate-600"><Target className="w-4 h-4 text-slate-400" /> {isEn ? "2 pilots" : "2 pilotes"}</div>
                 <div className="flex items-center gap-2 text-slate-600"><Clock className="w-4 h-4 text-slate-400" /> {isEn ? "September 2026" : "Septembre 2026"}</div>
