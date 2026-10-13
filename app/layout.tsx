@@ -66,6 +66,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
   },
+  // Vérification de propriété Bing Webmaster Tools (aucun effet visible).
+  verification: {
+    other: { "msvalidate.01": "0972CBC21A84AF62DF1A88ADA6EC44C9" },
+  },
   robots: {
     index: true,
     follow: true,
