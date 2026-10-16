@@ -363,6 +363,14 @@ export const blogPosts: BlogPost[] = [
 <h2>Le résultat</h2>
 <p>Sur les deux sites, les panneaux ont retrouvé leur rendement nominal : le contraste avant/après est immédiat, les modules ternis par la poussière redevenant d'un bleu profond, cellule par cellule. Deux centrales nettoyées, sans arrêt de production, en une seule tournée.</p>
 
+<h2>Questions fréquentes</h2>
+<h3>Faut-il arrêter la production pendant le nettoyage ?</h3>
+<p>Non. Le robot travaille entre les rangées pendant que la centrale continue de produire. Sur Vitry et Montchanin, aucune coupure n'a été nécessaire.</p>
+<h3>Combien de temps faut-il pour nettoyer une centrale au sol ?</h3>
+<p>Le robot nettoie environ 1 200 m² par heure. Pour 30 000 m², il faut donc compter autour de 25 heures de nettoyage effectif, auxquelles s'ajoutent l'installation, le repérage et les conditions du site.</p>
+<h3>Intervenez-vous en dehors de l'Occitanie ?</h3>
+<p>Oui, partout en France. Pour limiter les frais de déplacement, nous regroupons les sites d'une même région ou d'un même portefeuille dans une seule tournée, comme pour ces deux centrales de Saône-et-Loire.</p>
+
 <h2>Une prestation qui se déplace partout en France</h2>
 <p>Basés à Montpellier, nous intervenons dans toute la France pour les exploitants de centrales photovoltaïques au sol, en toiture ou en ombrière. Ce déplacement en Saône-et-Loire illustre bien notre façon de travailler : un repérage précis, un nettoyage par robot sans arrêt de production, et une organisation pensée pour enchaîner plusieurs sites sans perte de temps.</p>
 <p>Découvrez notre <a href="/prestations/nettoyage-solaire">expertise en nettoyage solaire</a>, notre offre dédiée aux <a href="/secteurs/energie-solaire">exploitants de centrales photovoltaïques</a>, ou <a href="/devis">demandez un devis</a> pour votre installation, où qu'elle se trouve en France.</p>
@@ -541,6 +549,16 @@ export const blogPosts: BlogPost[] = [
 </ul>
 <p>Ces tarifs incluent le produit biocide, l'application, la main-d'œuvre et les déplacements en Occitanie et PACA. À mettre en perspective avec le coût d'une tuile fissurée ou d'une infiltration : facilement 2 000 à 10 000 €.</p>
 
+<h2>Questions fréquentes</h2>
+<h3>Peut-on démousser une toiture au nettoyeur haute pression ?</h3>
+<p>C'est déconseillé. Un jet à 150-200 bars décape la couche de surface des tuiles et augmente leur porosité : la toiture paraît propre quelques semaines, puis les mousses reviennent plus vite. Certains fabricants de tuiles excluent aussi la haute pression de leur garantie.</p>
+<h3>Combien de temps le traitement anti-mousse met-il à agir ?</h3>
+<p>Plusieurs semaines. Le produit élimine les mousses, lichens et algues à la racine, puis les pluies les détachent progressivement, sans action mécanique sur les tuiles. Un rinçage basse pression peut accélérer le résultat si besoin.</p>
+<h3>Quelle est la meilleure période pour démousser une toiture ?</h3>
+<p>L'automne, avant les pluies et le gel de l'hiver : le produit a alors tout l'hiver pour agir. Nous l'expliquons en détail dans notre article sur le <a href="/blog/demoussage-toiture-automne-bon-moment">démoussage en automne</a>.</p>
+<h3>Faut-il appliquer un hydrofuge après le démoussage ?</h3>
+<p>Ce n'est pas obligatoire. L'hydrofuge rend la tuile déperlante et ralentit le retour des mousses, pour 5 à 8 ans selon l'exposition. Il s'applique sur une toiture propre et sèche, juste après le démoussage.</p>
+
 <h2>Notre conseil avant de prendre une décision</h2>
 <p>Si un prestataire vous propose un nettoyage haute pression "100 % efficace", demandez-lui systématiquement :</p>
 <ol>
@@ -619,6 +637,16 @@ export const blogPosts: BlogPost[] = [
   <li>Coût d'un nettoyage professionnel 50 kWc : ~350 à 500 €</li>
   <li><strong>ROI du nettoyage : positif dès la première année</strong></li>
 </ul>
+
+<h2>Questions fréquentes</h2>
+<h3>La pluie suffit-elle à nettoyer les panneaux après un épisode de sable ?</h3>
+<p>Rarement. Le sable saharien contient beaucoup d'argile : avec une pluie faible, il forme une pellicule adhérente qui reste sur le verre. Les panneaux semblent rincés, mais la production reste en dessous de la normale.</p>
+<h3>Combien de production un dépôt de sable fait-il perdre ?</h3>
+<p>Cela dépend de l'épaisseur du dépôt et des pluies qui suivent : de quelques pour cent après un épisode léger à plus de 10 % après un épisode intense. Le plus fiable est de comparer la production réelle à la production attendue dans les données de supervision.</p>
+<h3>Quand faut-il nettoyer après un épisode de sable saharien ?</h3>
+<p>Dans le Sud de la France, les épisodes se concentrent entre mars et juin. Nettoyer en fin de période, avant les mois de plus forte production, évite de multiplier les passages tout en récupérant l'essentiel de la production d'été.</p>
+<h3>Faut-il un détergent pour retirer le sable ?</h3>
+<p>Non. Nous travaillons à l'eau filtrée, sans détergent, avec des brosses douces : les détergents laissent des traces sur le verre et n'apportent rien sur ce type de dépôt.</p>
 
 <h2>Conclusion</h2>
 <p>Le sable saharien n'est pas une nuisance anecdotique. C'est un phénomène météorologique récurrent en Méditerranée qui a un impact financier direct et calculable sur votre production solaire. Un nettoyage professionnel annuel n'est pas un coût, c'est un investissement à ROI démontré.</p>
@@ -700,6 +728,16 @@ export const blogPosts: BlogPost[] = [
   <li>Appels d'offres avec contraintes fortes de délai</li>
 </ul>
 
+<h2>Questions fréquentes</h2>
+<h3>Le nettoyage de façade par drone est-il autorisé en ville ?</h3>
+<p>Oui, dans le cadre de la réglementation européenne des drones : exploitant déclaré auprès de la DGAC, télépilote formé, vérification des restrictions aériennes et périmètre de sécurité au sol. Nous détaillons ce cadre dans notre article sur la <a href="/blog/reglementation-drone-sts-01-sts-02">réglementation drone</a>.</p>
+<h3>À partir de quelle hauteur le drone devient-il intéressant ?</h3>
+<p>Surtout au-delà de 8 mètres, ou dès que l'installation d'un échafaudage ou d'une nacelle est compliquée : trottoir étroit, parking à garder ouvert, site en activité.</p>
+<h3>Faut-il interrompre l'activité du bâtiment ?</h3>
+<p>Non. Le drone n'occupe qu'une petite zone de décollage. Sur les façades vitrées de Scutum à Montpellier, l'intervention a duré deux jours sans fermer les locaux ni bloquer les accès.</p>
+<h3>Quelles façades peut-on nettoyer par drone ?</h3>
+<p>Les bardages métalliques, les vitrages et les façades de bâtiments professionnels ou industriels. Le drone est moins adapté aux façades en fort surplomb, où un cordiste reste parfois la meilleure option.</p>
+
 <h2>Conclusion</h2>
 <p>En 2026, le drone n'est plus une curiosité technologique pour le nettoyage de façade : c'est une solution mature, réglementée, assurée, et économiquement compétitive. Sur la plupart des chantiers de façade en accès difficile, il divise le budget par 2 à 4 et les délais par 3 à 7.</p>
 <p>Ellipsys est pilote de drone certifié DGAC, assuré en responsabilité civile professionnelle, et intervient partout en France. Demandez votre devis, réponse sous 24h.</p>
@@ -719,7 +757,7 @@ export const blogPosts: BlogPost[] = [
     metaDescription: "Le Décret Tertiaire impose -40 % de consommation d'ici 2030. La thermographie par drone détecte les déperditions thermiques en quelques heures.",
     content: `
 <h2>Le Décret Tertiaire : une obligation légale aux conséquences financières concrètes</h2>
-<p>Depuis le 1er octobre 2021, le Décret Tertiaire (issu de la loi ELAN) impose aux propriétaires et exploitants de bâtiments tertiaires de plus de 1 000 m² de réduire leur consommation d'énergie finale :</p>
+<p>Depuis le 1er octobre 2019, le Décret Tertiaire (issu de la loi ELAN) impose aux propriétaires et exploitants de bâtiments tertiaires de plus de 1 000 m² de réduire leur consommation d'énergie finale :</p>
 <ul>
   <li><strong>-40 %</strong> d'ici 2030 (par rapport à une année de référence)</li>
   <li><strong>-50 %</strong> d'ici 2040</li>
@@ -772,6 +810,16 @@ export const blogPosts: BlogPost[] = [
   <li><strong>Parc immobilier multi-sites</strong> : tarif dégressif sur devis</li>
 </ul>
 <p>Délai de rendu du rapport : <strong>5 jours ouvrés</strong> après l'intervention.</p>
+
+<h2>Questions fréquentes</h2>
+<h3>Le décret tertiaire concerne-t-il mon bâtiment ?</h3>
+<p>Il s'applique aux bâtiments, ou ensembles de bâtiments sur un même site, dont la surface à usage tertiaire atteint 1 000 m² ou plus : bureaux, commerces, hôtels, enseignement, santé, entrepôts. Les consommations se déclarent chaque année sur la plateforme OPERAT de l'ADEME.</p>
+<h3>La thermographie est-elle obligatoire ?</h3>
+<p>Non. Le décret fixe des objectifs de baisse de consommation, pas une méthode. La thermographie est un outil de diagnostic qui aide à repérer les pertes et à choisir les travaux les plus utiles.</p>
+<h3>Quand réaliser une thermographie de bâtiment ?</h3>
+<p>Pendant la saison de chauffe, avec un écart d'au moins 10 °C entre l'intérieur et l'extérieur, par temps sec et sans soleil direct sur les façades : tôt le matin ou en soirée.</p>
+<h3>Combien de temps dure l'inspection ?</h3>
+<p>Comptez 2 à 4 heures de vol pour un bâtiment de 5 000 m² de façade. Le rapport, avec images géolocalisées et défauts classés par priorité, est remis sous 5 jours ouvrés.</p>
 
 <h2>Conclusion</h2>
 <p>La thermographie par drone est probablement le meilleur investissement qu'un propriétaire tertiaire puisse faire dans le cadre du Décret Tertiaire : en 2 à 4 heures, vous avez une cartographie complète des déperditions de votre bâtiment, avec des préconisations chiffrées. C'est le point de départ de toute stratégie de réduction énergétique efficace.</p>
@@ -857,7 +905,7 @@ export const blogPosts: BlogPost[] = [
     content: `
 <h2>La réglementation drone en France : un cadre européen harmonisé</h2>
 <p>Depuis le 1er janvier 2021, la réglementation relative aux drones civils est harmonisée à l'échelle européenne, sous l'égide de l'EASA (Agence de l'Union Européenne pour la Sécurité Aérienne). En France, la mise en application est supervisée par la DGAC (Direction Générale de l'Aviation Civile).</p>
-<p>Ce cadre réglementaire class les opérations de drone en trois catégories :</p>
+<p>Ce cadre réglementaire classe les opérations de drone en trois catégories :</p>
 <ul>
   <li><strong>Catégorie Ouverte</strong> : vols à faible risque, sans autorisation préalable, sous conditions strictes de masse et d'altitude</li>
   <li><strong>Catégorie Spécifique</strong> : vols à risque modéré, nécessitant une autorisation ou une déclaration, c'est dans cette catégorie que s'inscrit la quasi-totalité des opérations professionnelles d'Ellipsys</li>
@@ -868,27 +916,27 @@ export const blogPosts: BlogPost[] = [
 <p>Au sein de la Catégorie Spécifique, l'EASA a défini des <strong>scénarios standard européens</strong> (STS, Standard Scenarios) qui permettent à un opérateur qualifié de voler sans demander une autorisation spécifique à chaque vol, à condition de respecter un ensemble de conditions prédéfinies.</p>
 <p>Il en existe actuellement deux :</p>
 
-<h3>STS-01 : Vol VLOS au-dessus de zones contrôlées au sol</h3>
+<h3>STS-01 : vol à vue au-dessus d'une zone contrôlée, en milieu peuplé</h3>
 <p><em>VLOS = Visual Line Of Sight (vue directe du drone sans aide optique)</em></p>
-<p>Ce scénario autorise des vols en contact visuel direct, à basse altitude, dans des zones où le risque sol est atténué par des mesures de contrôle (balisage, équipes au sol, évacuation de zones). Il est adapté aux interventions :</p>
+<p>Ce scénario autorise des vols à vue, jusqu'à 120 m de hauteur, au-dessus d'une zone au sol contrôlée : un périmètre balisé dont l'exploitant tient les tiers à l'écart. Il peut s'appliquer en milieu peuplé, par exemple aux abords d'un bâtiment en ville. Il est adapté aux interventions :</p>
 <ul>
-  <li>Dans des propriétés privées sécurisées</li>
   <li>Sur des chantiers avec périmètre de sécurité</li>
-  <li>En zone peu peuplée avec mise en sécurité du sol</li>
+  <li>Aux abords de bâtiments en zone urbaine, avec balisage du sol</li>
+  <li>Dans des propriétés privées sécurisées</li>
 </ul>
-<p>Conditions clés : drone de classe C5, pilote télécommandé avec certificat STS, déclaration sur la plateforme Alphatango.</p>
+<p>Conditions clés : drone de classe C5, télépilote titulaire du certificat STS, déclaration de l'exploitant sur la plateforme AlphaTango.</p>
 
-<h3>STS-02 : Vol VLOS au-dessus de zones peuplées</h3>
-<p>Ce scénario est plus contraignant car il autorise les vols au-dessus de zones peuplées (rues, espaces publics, abords de bâtiments habités) sans évacuation préalable. C'est le scénario utilisé pour les interventions en milieu urbain dense, nettoyage de façades en centre-ville, destruction de nids dans des quartiers résidentiels, thermographie de bâtiments tertiaires.</p>
-<p>Conditions clés : drone de classe C6 (résistance à la chute, design sécurisé), pilote certifié STS-02, déclaration préalable DGAC, parfois coordination avec les autorités locales.</p>
+<h3>STS-02 : vol hors vue au-dessus d'une zone contrôlée, en milieu peu peuplé</h3>
+<p>Ce scénario autorise des vols hors vue directe (BVLOS), avec des observateurs, au-dessus d'une zone au sol contrôlée située en milieu peu peuplé. Il sert surtout aux inspections de grandes surfaces ou d'ouvrages linéaires, loin des habitations.</p>
+<p>Conditions clés : drone de classe C6, télépilote titulaire du certificat STS, déclaration de l'exploitant auprès de la DGAC.</p>
 
 <h2>Ce qu'Ellipsys gère pour vous</h2>
 <p>La conformité réglementaire est l'une des premières questions que nos clients nous posent : <em>"Est-ce que vous avez les autorisations ?"</em></p>
 <p>La réponse est oui, et nous gérons l'intégralité de la démarche :</p>
 <ul>
   <li>Nos pilotes sont tous titulaires du <strong>certificat de compétences télépilote</strong> délivré par la DGAC</li>
-  <li>Nous disposons des qualifications <strong>STS-01 et STS-02</strong> pour les opérations en zone peuplée</li>
-  <li>Chaque vol fait l'objet d'une <strong>déclaration préalable sur Alphatango</strong> (système DGAC) avec plan de vol</li>
+  <li>Nous disposons de la qualification <strong>STS-01</strong> pour les vols à vue en zone peuplée</li>
+  <li>Chaque intervention est préparée en amont : <strong>déclaration d'exploitant sur AlphaTango</strong> (système DGAC), plan de vol et analyse de la zone</li>
   <li>Nous consultons systématiquement les <strong>cartes Geoportail Aviation</strong> pour vérifier les espaces aériens réglementés (CTR aéroport, zones militaires, zones à risques)</li>
   <li>Notre matériel est assuré en <strong>responsabilité civile professionnelle drone</strong></li>
   <li>Nous établissons un <strong>rapport d'intervention</strong> documentant le vol, les conditions météo et les résultats</li>
@@ -905,6 +953,16 @@ export const blogPosts: BlogPost[] = [
 
 <h2>Pourquoi c'est important pour votre assurance</h2>
 <p>Un vol de drone réalisé hors cadre réglementaire, même pour une prestation commerciale, peut engager la responsabilité civile et pénale du donneur d'ordre. En confiant votre chantier à Ellipsys, vous vous assurez que l'intégralité de l'opération est conforme, documentée et assurée. C'est un élément clé pour votre propre couverture en cas d'incident.</p>
+
+<h2>Questions fréquentes</h2>
+<h3>Quelle différence entre STS-01 et STS-02 ?</h3>
+<p>Le STS-01 couvre les vols à vue, jusqu'à 120 m de hauteur, au-dessus d'une zone au sol contrôlée, y compris en milieu peuplé, avec un drone de classe C5. Le STS-02 couvre les vols hors vue, avec observateurs, au-dessus d'une zone contrôlée en milieu peu peuplé, avec un drone de classe C6.</p>
+<h3>Faut-il une autorisation pour chaque vol ?</h3>
+<p>Non. Pour un scénario standard, l'exploitant dépose une déclaration auprès de la DGAC, sur la plateforme AlphaTango, au lieu de demander une autorisation à chaque vol. Chaque vol doit en revanche être préparé : restrictions aériennes, périmètre au sol, météo.</p>
+<h3>Peut-on faire voler un drone près d'un aéroport ?</h3>
+<p>Parfois, sous conditions. Les abords des aérodromes, les sites sensibles et certains espaces protégés sont restreints ou interdits. La carte des restrictions drones du Géoportail indique ce qui s'applique ; selon la zone, une coordination préalable avec le contrôle aérien est nécessaire.</p>
+<h3>Que vérifier avant de confier une intervention à un opérateur de drone ?</h3>
+<p>Qu'il est enregistré comme exploitant auprès de la DGAC, que ses télépilotes ont les certificats adaptés à l'opération, et qu'il est assuré en responsabilité civile pour l'activité drone.</p>
 
 <h2>Conclusion</h2>
 <p>La réglementation drone est complexe mais n'est pas un obstacle : c'est un cadre qui garantit la sécurité des personnes et la légitimité des opérations. Ellipsys maîtrise ce cadre depuis sa création et gère toute la partie administrative pour que vous puissiez vous concentrer sur l'essentiel : le résultat de l'intervention.</p>
