@@ -182,13 +182,6 @@ const jsonLd = {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Destruction de nids de frelons asiatiques",
-            },
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
               "name": "Prises de vues aériennes et imagerie drone",
             },
           },

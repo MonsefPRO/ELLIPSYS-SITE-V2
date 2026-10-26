@@ -43,7 +43,7 @@ export default async function ZoneInterventionPage() {
         "Same quality protocol regardless of location",
       ]
     : [
-        <><strong>Intervention dans les 48h</strong> pour les urgences (frelons)</>,
+        <><strong>Intervention dans les 48h</strong> pour les urgences</>,
         "Déploiement planifié sous 1 à 2 semaines pour les chantiers",
         "Unités mobiles équipées, sans dépendance logistique locale",
         "Même protocole qualité quel que soit l'emplacement",

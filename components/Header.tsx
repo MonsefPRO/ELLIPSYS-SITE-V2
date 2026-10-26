@@ -15,7 +15,6 @@ const NAV = {
     roof: "Entretien Toitures",
     facade: "Façades & Bardages",
     thermal: "Thermographie",
-    pests: "Éradication Nuisibles",
     aerial: "Captation & Imagerie",
     sectors: "Secteurs",
     sectorsOverview: "➔ Vue d'ensemble des secteurs",
@@ -42,7 +41,6 @@ const NAV = {
     roof: "Roof Treatment",
     facade: "Facades & Cladding",
     thermal: "Thermal Imaging",
-    pests: "Pest Eradication",
     aerial: "Aerial Imaging",
     sectors: "Industries",
     sectorsOverview: "➔ All Industries",
@@ -105,7 +103,6 @@ export default function Header() {
                 <Link href="/prestations/traitement-toiture" className="block px-6 py-3 text-sm font-bold text-[#0e2f52] hover:bg-slate-50 hover:text-brand-orange-500">{n.roof}</Link>
                 <Link href="/prestations/nettoyage-facade" className="block px-6 py-3 text-sm font-bold text-[#0e2f52] hover:bg-slate-50 hover:text-brand-orange-500">{n.facade}</Link>
                 <Link href="/prestations/thermographie" className="block px-6 py-3 text-sm font-bold text-[#0e2f52] hover:bg-slate-50 hover:text-brand-orange-500">{n.thermal}</Link>
-                <Link href="/prestations/nuisibles" className="block px-6 py-3 text-sm font-bold text-[#0e2f52] hover:bg-slate-50 hover:text-brand-orange-500">{n.pests}</Link>
                 <Link href="/prestations/prises-de-vues" className="block px-6 py-3 text-sm font-bold text-[#0e2f52] hover:bg-slate-50 hover:text-brand-orange-500">{n.aerial}</Link>
               </div>
             </div>
@@ -208,7 +205,6 @@ export default function Header() {
                   <Link href="/prestations/traitement-toiture" onClick={closeMobile} className="block px-8 py-3 text-sm font-semibold text-slate-700">{n.roof}</Link>
                   <Link href="/prestations/nettoyage-facade" onClick={closeMobile} className="block px-8 py-3 text-sm font-semibold text-slate-700">{n.facade}</Link>
                   <Link href="/prestations/thermographie" onClick={closeMobile} className="block px-8 py-3 text-sm font-semibold text-slate-700">{n.thermal}</Link>
-                  <Link href="/prestations/nuisibles" onClick={closeMobile} className="block px-8 py-3 text-sm font-semibold text-slate-700">{n.pests}</Link>
                   <Link href="/prestations/prises-de-vues" onClick={closeMobile} className="block px-8 py-3 text-sm font-semibold text-slate-700">{n.aerial}</Link>
                 </div>
               )}

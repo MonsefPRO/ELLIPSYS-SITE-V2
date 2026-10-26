@@ -45,7 +45,7 @@ export default function Page() {
         {
           titre: "Une méthode adaptée à chaque support",
           texte:
-            "Enduit, pierre calcaire tendre, crépi, béton, bardage métal ou bois : chaque matériau demande une pression et un traitement précis. Nous adaptons la méthode au support, sans haute pression qui dégrade la surface.",
+            "Enduit, pierre calcaire tendre, crépi, béton, bardage métal ou bois : chaque matériau demande une pression et un traitement précis. Haute pression modulable sur le béton et les bardages métalliques, basse pression sur la pierre tendre et les enduits fragiles.",
         },
         {
           titre: "Zéro travail en hauteur pour vos équipes",

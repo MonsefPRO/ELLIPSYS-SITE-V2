@@ -8,7 +8,7 @@ import { FadeUp } from "../components/motion/FadeUp";
 import { StaggerContainer, StaggerItem } from "../components/motion/Stagger";
 import {
   ChevronRight, Sun, Home, Building2,
-  ThermometerSun, Bug, Video, ChevronDown
+  ThermometerSun, Video, ChevronDown
 } from "lucide-react";
 import { getLang } from "../lib/getLang";
 
@@ -66,11 +66,6 @@ export default async function HomePage() {
       desc: isEn
         ? <span>Advanced energy diagnostics (<strong>Tertiary Decree</strong>) and detection of invisible anomalies.</span>
         : <span>Diagnostics énergétiques de pointe (<strong>Décret Tertiaire</strong>) et détection d&apos;anomalies invisibles.</span> },
-    { href: "/prestations/nuisibles", icon: Bug, image: "/images/bannerfrelons.webp",
-      title: isEn ? "High-Altitude Pest Eradication" : "Destruction Nuisibles Grande Hauteur",
-      desc: isEn
-        ? "Rapid and secure neutralisation using strict risk-control protocols."
-        : "Neutralisation rapide et sécurisée avec des protocoles stricts de maîtrise des risques." },
     { href: "/prestations/prises-de-vues", icon: Video, image: "https://images.pexels.com/photos/17590771/pexels-photo-17590771.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       title: isEn ? "Aerial Imaging & Videography" : "Captation Audiovisuelle & Imagerie",
       desc: isEn

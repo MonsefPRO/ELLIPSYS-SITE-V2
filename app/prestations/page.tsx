@@ -41,7 +41,7 @@ export default async function PrestationsPage() {
       href: "/prestations/nettoyage-facade",
       title: isEn ? "Façade & Cladding Cleaning" : "Nettoyage Façades & Bardages",
       subtitle: isEn ? "Façades & Cladding · Stone · Metal · Timber" : "Façades & Bardages · Pierre · Métal · Bois",
-      desc: isEn ? <><strong>High-pressure</strong> cleaning by <strong>Drone Chronos</strong> on all façade types. <strong>No scaffolding</strong>, no road closure. Treatment of sea salt, Saharan rain, carbonaceous pollution.</> : <>Nettoyage <strong>haute pression</strong> par <strong>drone Chronos</strong> sur tous types de façades. <strong>Sans nacelle</strong>, sans fermeture de rue. Traitement sel marin, pluies sahariennes, pollution carbonée.</>,
+      desc: isEn ? <><strong>Adjustable high-pressure</strong> cleaning by <strong>Drone Chronos</strong>, tuned to each façade material. <strong>No scaffolding</strong>, no road closure. Treatment of sea salt, Saharan rain, carbonaceous pollution.</> : <>Nettoyage <strong>haute pression modulable</strong> par <strong>drone Chronos</strong>, réglée selon le support de la façade. <strong>Sans nacelle</strong>, sans fermeture de rue. Traitement sel marin, pluies sahariennes, pollution carbonée.</>,
       img: "/images/Barda.webp",
     },
     {
