@@ -6,6 +6,16 @@ import { ArrowRight, Calendar, Clock, Instagram, Facebook, Linkedin, Music2, Ext
 
 const articles = [
   {
+    image: "/images/Bardage-facades.png",
+    category: "Facades & Bardages",
+    date: "26 Octobre 2026",
+    readTime: "7 min",
+    title: "Nettoyage en hauteur par drone : plus rapide et plus sûr qu'un échafaudage ou une nacelle",
+    excerpt: "La chute reste le premier risque du travail en hauteur. Avec le drone, personne ne monte : ce que dit le Code du travail, où se gagne le temps, et les limites à connaître.",
+    href: "/blog/nettoyage-en-hauteur-drone",
+    badge: "bg-emerald-50 text-emerald-600",
+  },
+  {
     image: "/images/robot-franchissement.jpg",
     category: "Énergie Solaire",
     date: "12 Octobre 2026",

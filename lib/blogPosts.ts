@@ -14,6 +14,94 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "nettoyage-en-hauteur-drone",
+    image: "/images/Bardage-facades.png",
+    category: "Facades & Bardages",
+    date: "26 Octobre 2026",
+    readTime: "7 min",
+    badge: "bg-emerald-50 text-emerald-600",
+    title: "Nettoyage en hauteur par drone : plus rapide et plus sûr qu'un échafaudage ou une nacelle",
+    excerpt: "Toitures, façades, vitrages, bardages, panneaux solaires : nettoyer en hauteur expose au premier risque mortel du BTP, la chute. Le drone supprime le problème à la source : personne ne monte. Ce que dit le Code du travail, où se gagne vraiment le temps, et les limites à connaître.",
+    metaTitle: "Nettoyage en hauteur par drone : plus sûr, plus rapide",
+    metaDescription: "Toitures, façades, vitrages, panneaux solaires : pourquoi le drone évite nacelle, échafaudage et cordes, ce que dit le Code du travail et ses limites.",
+    content: `
+<h2>Le vrai risque du nettoyage en hauteur : la chute</h2>
+<p>Nettoyer une façade, un bardage d'entrepôt, une verrière ou une toiture, c'est d'abord envoyer quelqu'un en hauteur. Et la chute reste l'un des risques les plus graves du travail en France.</p>
+<ul>
+  <li>En 2024, l'Assurance Maladie a reconnu <strong>549 614 accidents du travail</strong> et <strong>764 décès</strong>.</li>
+  <li>Parmi les accidents dont la cause est identifiée, les chutes de hauteur représentent <strong>13 % des décès</strong> et 15 % des nouvelles incapacités permanentes.</li>
+  <li>Selon l'INRS, la chute de hauteur est la <strong>2<sup>e</sup> cause de décès au travail</strong>, et le BTP concentre plus de la moitié des décès par chute de hauteur.</li>
+</ul>
+<p>Le premier réflexe de prévention n'est donc pas de mieux protéger la personne en hauteur. C'est de se demander si quelqu'un a vraiment besoin d'y monter. L'INRS le formule simplement : il faut d'abord « se demander si le travail ne peut pas être réalisé depuis le sol ».</p>
+
+<h2>Ce que le Code du travail impose dès qu'on travaille en hauteur</h2>
+<p>Quand un salarié travaille en hauteur, la loi fixe un ordre de priorité très clair :</p>
+<ol>
+  <li><strong>Un plan de travail sécurisé</strong>, conçu pour éviter la chute (article R4323-58).</li>
+  <li><strong>Des protections collectives</strong> : garde-corps d'au moins 1 mètre, plinthe et lisse (R4323-59), ou à défaut des filets qui limitent la chute (R4323-60).</li>
+  <li><strong>En dernier lieu seulement</strong>, un équipement individuel antichute, avec un travailleur qui ne doit jamais rester seul (R4323-61).</li>
+</ol>
+<p>Les techniques d'accès par cordes, celles des cordistes, sont <strong>interdites comme poste de travail</strong>, sauf si une protection collective est techniquement impossible ou plus dangereuse (R4323-64).</p>
+<p>Chaque solution traditionnelle a ensuite ses propres obligations :</p>
+<ul>
+  <li><strong>L'échafaudage</strong> doit être monté et démonté par des travailleurs formés, sous la direction d'une personne compétente (R4323-69). Il doit être vérifié avant sa mise en service, contrôlé chaque jour, et de façon approfondie tous les trois mois.</li>
+  <li><strong>La nacelle</strong> exige un conducteur formé et autorisé par son employeur (le CACES R486 est la référence), et une vérification générale tous les six mois.</li>
+  <li><strong>Sur la voie publique</strong>, un échafaudage demande un permis de stationnement à la mairie, avec une redevance. À Lyon, la demande se dépose au moins 8 jours avant ; à Nantes, 14 jours.</li>
+</ul>
+<p>Pour le donneur d'ordre, ce n'est pas qu'une affaire de prestataire : selon la durée et la nature des travaux, un plan de prévention peut être exigé entre son entreprise et l'entreprise intervenante.</p>
+
+<h2>Ce que le drone change : personne ne monte</h2>
+<p>Avec un drone, le télépilote reste au sol. Il n'y a pas de poste de travail en hauteur, donc pas de garde-corps à poser, pas de harnais, pas d'échafaudage à monter, vérifier puis démonter, pas de nacelle à faire livrer.</p>
+<p>C'est exactement ce que demande la logique du Code du travail : supprimer l'exposition plutôt que la protéger. La sécurité se gère au sol, avec une zone balisée pendant le vol pour tenir les passants à l'écart.</p>
+<p>Le drone convient à la plupart des surfaces en hauteur :</p>
+<ul>
+  <li><strong>Façades et vitrages</strong> de bâtiments tertiaires, hôtels, commerces ;</li>
+  <li><strong>Bardages</strong> d'usines et d'entrepôts, sans fermer les quais ;</li>
+  <li><strong>Toitures</strong> : démoussage et hydrofuge sans marcher sur les tuiles ;</li>
+  <li><strong>Panneaux solaires en toiture</strong>, difficiles d'accès ou sur couverture fragile.</li>
+</ul>
+
+<h2>Plus rapide : où se gagne vraiment le temps</h2>
+<p>Le gain se fait sur le chantier lui-même. Un échafaudage de façade passe par une visite préalable, un montage par des monteurs formés, un procès-verbal de réception, des contrôles quotidiens, puis un démontage. Pendant tout ce temps, il occupe le trottoir, le parking ou l'accès au bâtiment.</p>
+<p>Le drone, lui, s'installe le jour même et repart le soir. Sur les façades vitrées de Scutum à Montpellier, deux façades ont été nettoyées en <strong>deux jours</strong>, sans nacelle, sans bloquer les accès et sans interrompre l'activité des locaux.</p>
+<p>Soyons honnêtes sur un point : <strong>l'administratif ne disparaît pas</strong>. En zone peuplée, un vol de drone professionnel se déclare à l'avance à la préfecture (10 jours ouvrables selon le guide de la DSAC). C'est du même ordre qu'une autorisation de voirie pour un échafaudage. La différence est ailleurs : une fois la date fixée, l'intervention dure quelques heures ou quelques jours, au lieu d'immobiliser le site pendant une ou deux semaines. Nous nous chargeons des déclarations.</p>
+
+<h2>Plus efficace : un résultat contrôlé sans monter</h2>
+<ul>
+  <li><strong>Une distance constante</strong> avec la surface : le traitement est régulier, sans zones oubliées entre deux positions de nacelle.</li>
+  <li><strong>Une caméra embarquée</strong> permet de contrôler le résultat en direct, y compris sur les parties hautes qu'on ne voit pas depuis le sol.</li>
+  <li><strong>Aucun appui sur la surface</strong> : pas de tuile cassée, pas de vitrage rayé par une plateforme, pas de bardage enfoncé.</li>
+</ul>
+<p>Pour comparer les budgets et les délais façade par façade, voyez notre article <a href="/blog/nettoyage-facade-drone-vs-echafaudage">drone ou échafaudage pour une façade industrielle</a>.</p>
+
+<h2>Les limites du drone, à connaître avant de choisir</h2>
+<ul>
+  <li><strong>La météo</strong> : par vent fort ou sous la pluie, on ne vole pas. Les limites sont celles du constructeur et de notre manuel d'exploitation : nous décalons l'intervention plutôt que de prendre un risque.</li>
+  <li><strong>Les zones réglementées</strong> : abords d'aéroports, sites sensibles, certains espaces protégés. Nous vérifions chaque site avant de confirmer une date.</li>
+  <li><strong>Certaines configurations</strong> : cours très étroites, fortes avancées de toiture ou balcons en surplomb. Une solution mixte, avec une nacelle ponctuelle, reste parfois la meilleure option.</li>
+  <li><strong>L'encrassement très incrusté</strong> : sur certaines surfaces, plusieurs passages sont nécessaires.</li>
+</ul>
+
+<h2>Questions fréquentes</h2>
+<h3>Le nettoyage par drone est-il autorisé en ville ?</h3>
+<p>Oui, dans le cadre de la réglementation européenne des drones. L'exploitant doit être déclaré auprès de la DGAC, la zone survolée est balisée au sol, et en zone peuplée le vol est déclaré à l'avance à la préfecture. Nous prenons ces démarches en charge.</p>
+<h3>Le drone remplace-t-il toujours la nacelle ou l'échafaudage ?</h3>
+<p>Non, mais dans la majorité des cas de nettoyage, oui. Il est moins adapté aux cours très étroites et aux surplombs importants. Dans ces cas, nous proposons une solution mixte ou nous vous le disons dès la visite.</p>
+<h3>Combien de temps faut-il prévoir ?</h3>
+<p>En zone peuplée, comptez environ deux semaines entre la commande et l'intervention, le temps de la déclaration en préfecture. L'intervention elle-même dure de quelques heures à quelques jours : deux jours pour les deux façades vitrées de Scutum à Montpellier.</p>
+<h3>Peut-on nettoyer par vent ou par pluie ?</h3>
+<p>Non. Au-delà des limites de vent du drone ou sous la pluie, nous reportons l'intervention. C'est une règle de sécurité, et aussi une question de qualité du résultat.</p>
+<h3>Qui est responsable de la sécurité pendant l'intervention ?</h3>
+<p>Nous, pour le vol et le balisage de la zone au sol. Le donneur d'ordre reste chargé de la coordination avec son activité, par exemple avec un plan de prévention quand il est requis.</p>
+
+<h2>Notre approche</h2>
+<p>Basés à Montpellier, nous nettoyons en hauteur par drone les façades, vitrages, bardages et toitures, et par robot les panneaux solaires, avec nos propres pilotes certifiés DGAC. Découvrez notre offre de <a href="/prestations/nettoyage-facade">nettoyage de façade</a>, de <a href="/prestations/traitement-toiture">traitement de toiture</a>, ou lisez notre article sur la <a href="/blog/reglementation-drone-sts-01-sts-02">réglementation drone</a>.</p>
+<p><strong>Un chantier en hauteur à prévoir ? <a href="/devis">Demandez un devis</a> ou appelez le 04 67 20 97 09.</strong></p>
+
+<p><em>Sources : Assurance Maladie, rapport annuel 2024 des risques professionnels (novembre 2025) ; INRS, dossier chutes de hauteur et revue Travail &amp; Sécurité n° 883 (2026) ; Code du travail, articles R4323-58 à R4323-69 ; DSAC, guide de la catégorie spécifique (2026) ; Villes de Lyon et de Nantes, autorisations d'occupation du domaine public.</em></p>
+`,
+  },
+  {
     slug: "prix-mwh-solaire-baisse-appel-offres-2026",
     image: "/images/robot-franchissement.jpg",
     category: "Énergie Solaire",

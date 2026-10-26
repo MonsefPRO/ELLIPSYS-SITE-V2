@@ -58,6 +58,8 @@ Vue d'ensemble : [zones d'intervention](https://ellipsys-solutions.com/zone-inte
 
 ## Analyses et actualités du photovoltaïque
 
+- [Nettoyage en hauteur par drone : plus rapide et plus sûr qu'un échafaudage ou une nacelle](https://ellipsys-solutions.com/blog/nettoyage-en-hauteur-drone) : chutes de hauteur (13 % des décès au travail dont la cause est identifiée, Assurance Maladie 2024), hiérarchie du Code du travail (R4323-58 à R4323-64), ce que le drone supprime, délais réels (déclaration préfecture en zone peuplée) et limites du drone.
+- [Le MWh solaire à 61 € : ce que la baisse des appels d'offres change pour un exploitant](https://ellipsys-solutions.com/blog/prix-mwh-solaire-baisse-appel-offres-2026) : prix moyen PPE2 PV au sol 61,33 €/MWh (−23 %), coût de l'encrassement pour un exploitant.
 - [Prix négatifs : ce qui change pour votre centrale au 1er décembre](https://ellipsys-solutions.com/blog/prix-negatifs-electricite-seuil-arret-centrale-photovoltaique) : 407 heures de prix négatifs au premier semestre 2026, seuil d'arrêt obligatoire abaissé à 5 MWc au 1er décembre 2026 puis 1 MWc au 1er mars 2027.
 - [APSAD D20 : ce que le nouveau référentiel change pour l'assurance photovoltaïque](https://ellipsys-solutions.com/blog/apsad-d20-assurance-photovoltaique-ce-qui-change) : article informatif sur le référentiel de prévention applicable depuis le 1er septembre 2026.
 - [Panneaux solaires : combien de rendement avez-vous perdu cet été ?](https://ellipsys-solutions.com/blog/panneaux-solaires-rendement-perdu-apres-ete)
