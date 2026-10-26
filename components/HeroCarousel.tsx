@@ -5,7 +5,7 @@ import Image from "next/image";
 const IMAGES: { src: string; alt: string }[] = [
   { src: "/images/robot-centrale-sol.jpg", alt: "Robot Ellipsys nettoyant des panneaux solaires sur une centrale photovoltaïque" },
   { src: "/ares.png", alt: "Drone Ellipsys en intervention de nettoyage sans échafaudage" },
-  { src: "/images/robot-vue-aerienne.jpg", alt: "Vue aérienne d'une centrale solaire entretenue par Ellipsys Solutions" },
+  { src: "/images/robot-vue-aerienne.webp", alt: "Vue aérienne d'une centrale solaire entretenue par Ellipsys Solutions" },
   { src: "/images/avant-apres-montchanin.jpg", alt: "Avant après nettoyage de panneaux solaires, chantier Ellipsys à Vitry" },
   { src: "/images/robot-produit.jpg", alt: "Robot de nettoyage de panneaux solaires Ellipsys en action" },
   { src: "/chronos.jpg", alt: "Drone Ellipsys nettoyant une façade par pulvérisation d'eau filtrée" },

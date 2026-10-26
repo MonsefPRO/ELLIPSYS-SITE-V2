@@ -31,7 +31,7 @@ export default function Page() {
       formTitre="Votre devis gratuit sous 24 h"
       formSoustitre="Indiquez simplement l'adresse et le type de toiture."
       preuve={{
-        image: "/images/Toiture.jpg",
+        image: "/images/Toiture.webp",
         alt: "Application d'un traitement de toiture par drone",
         legende: "Application d'un traitement par drone : personne ne circule sur la couverture",
       }}

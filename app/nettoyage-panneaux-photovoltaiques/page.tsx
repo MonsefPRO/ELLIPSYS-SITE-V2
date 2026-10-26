@@ -212,7 +212,7 @@ export default function NettoyagePanneauxPhotovoltaiques() {
 
             <div className="border border-slate-200 rounded-2xl overflow-hidden">
               <div className="relative h-48 bg-slate-100">
-                <Image src="/images/apres solaire.jpg" alt="Panneaux photovoltaïques nettoyés, rendement restauré" fill className="object-cover" />
+                <Image src="/images/apres solaire.webp" alt="Panneaux photovoltaïques nettoyés, rendement restauré" fill className="object-cover" />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-black text-slate-900 mb-2">🛡️ Garanties préservées</h3>

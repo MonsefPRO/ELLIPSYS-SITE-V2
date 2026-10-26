@@ -40,7 +40,7 @@ export default function Page() {
         </>
       }
       accroche="Un module défectueux ne se voit pas à l'œil nu : il chauffe. Notre drone équipé d'une caméra thermique radiométrique survole vos rangées, repère les anomalies et les géolocalise module par module. Vous savez exactement où envoyer votre mainteneur."
-      heroImage="/images/thermographie.png"
+      heroImage="/images/thermographie.webp"
       heroAlt="Illustration d'un drone réalisant une thermographie de panneaux photovoltaïques"
       badgeZone="Arc méditerranéen · Partout en France sur projet"
       pointsCles={[
@@ -52,7 +52,7 @@ export default function Page() {
       formTitre="Chiffrage de votre inspection sous 24 h"
       formSoustitre="Indiquez la puissance ou la surface du site et sa localisation."
       preuve={{
-        image: "/images/thermographie-solaire.png",
+        image: "/images/thermographie-solaire.webp",
         alt: "Illustration du principe de la thermographie aérienne sur une centrale photovoltaïque",
         legende: "Le principe : la caméra thermique fait ressortir les modules en surchauffe, que le rapport localise ensuite sur le plan du site",
       }}

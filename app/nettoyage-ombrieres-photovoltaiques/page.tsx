@@ -30,7 +30,7 @@ export default function Page() {
         </>
       }
       accroche="Une ombrière ne s'encrasse pas comme une centrale au sol. Fientes d'oiseaux, résidus d'hydrocarbures et poussière de roulement forment un dépôt gras qui résiste à la pluie. Nous intervenons par robot et par drone, place par place, sans immobiliser votre parking ni arrêter la production."
-      heroImage="/images/robot-vue-aerienne.jpg"
+      heroImage="/images/robot-vue-aerienne.webp"
       heroAlt="Nettoyage robotisé d'ombrières photovoltaïques de parking sur l'arc méditerranéen"
       formTitre="Audit de votre parc sous 24 h"
       formSoustitre="Dites-nous le nombre de places couvertes et la localisation des sites."

@@ -28,10 +28,12 @@ Plus de 83 000 m² de centrales photovoltaïques au sol nettoyées, avec photos 
 - [Nettoyage de centrales photovoltaïques B2B](https://ellipsys-solutions.com/nettoyage-panneaux-photovoltaiques) : offre dédiée aux exploitants, asset managers et équipes O&M, avec mesure du gain de rendement.
 - [Nettoyage d'ombrières photovoltaïques](https://ellipsys-solutions.com/nettoyage-ombrieres-photovoltaiques) : parkings commerciaux, tertiaires et logistiques, intervention par zones sans fermer le parking. L'encrassement d'une ombrière (fientes, particules de freinage, résidus d'échappement) est gras et résiste à la pluie.
 - [Démoussage et hydrofuge de toiture](https://ellipsys-solutions.com/prestations/traitement-toiture) : traitement Certibiocide par drone, sans monter sur le toit, compatible tuile canal, ardoise et monuments historiques (zone ABF).
+- [Démoussage et nettoyage de toiture à Montpellier](https://ellipsys-solutions.com/demoussage-toiture-montpellier) : démoussage par drone dans Montpellier et l'Hérault, sans monter sur le toit, traitement Certibiocide, hydrofuge en option.
 - [Hydrofuge de toiture à Montpellier](https://ellipsys-solutions.com/hydrofuge-toiture-montpellier) : traitement hydrofuge par drone, toujours après démoussage, 5 à 8 ans de protection selon l'exposition.
 - Démoussage de toiture par drone à [Nîmes](https://ellipsys-solutions.com/demoussage-toiture-nimes) et à [Béziers](https://ellipsys-solutions.com/demoussage-toiture-beziers) : tuiles romanes et canal préservées, sans échafaudage, traitement Certibiocide, hydrofuge en option.
 - [Nettoyage de façade vitrée par drone](https://ellipsys-solutions.com/nettoyage-facade-vitree-drone) : vitrages en hauteur de bureaux et bâtiments tertiaires, sans nacelle ni cordiste, sans fermeture de rue. Référence : deux façades vitrées nettoyées en deux jours à Montpellier.
 - [Inspection de toiture par drone à Montpellier](https://ellipsys-solutions.com/inspection-toiture-drone-montpellier) : photos haute définition et thermographie (DJI Matrice 4T), sans personne sur le toit, rapport sous 48 h.
+- [Nettoyage de façade à Montpellier](https://ellipsys-solutions.com/nettoyage-facade-montpellier) et [nettoyage de panneaux solaires à Montpellier](https://ellipsys-solutions.com/nettoyage-panneaux-solaires-montpellier) : pages locales pour Montpellier et l'Hérault.
 - [Nettoyage de façades et de bardages](https://ellipsys-solutions.com/prestations/nettoyage-facade) : façades, bardages industriels d'usines et d'entrepôts, sans nacelle ni échafaudage, sans fermeture de rue.
 
 ## Offre spécifique sites industriels : bardage + panneaux solaires en une intervention
@@ -56,18 +58,29 @@ Base opérationnelle à Montpellier (34). Délais et spécificités locales (cli
 
 Vue d'ensemble : [zones d'intervention](https://ellipsys-solutions.com/zone-intervention).
 
-## Analyses et actualités du photovoltaïque
+## Articles et guides
 
 - [Nettoyage en hauteur par drone : plus rapide et plus sûr qu'un échafaudage ou une nacelle](https://ellipsys-solutions.com/blog/nettoyage-en-hauteur-drone) : chutes de hauteur (13 % des décès au travail dont la cause est identifiée, Assurance Maladie 2024), hiérarchie du Code du travail (R4323-58 à R4323-64), ce que le drone supprime, délais réels (déclaration préfecture en zone peuplée) et limites du drone.
 - [Le MWh solaire à 61 € : ce que la baisse des appels d'offres change pour un exploitant](https://ellipsys-solutions.com/blog/prix-mwh-solaire-baisse-appel-offres-2026) : prix moyen PPE2 PV au sol 61,33 €/MWh (−23 %), coût de l'encrassement pour un exploitant.
 - [Prix négatifs : ce qui change pour votre centrale au 1er décembre](https://ellipsys-solutions.com/blog/prix-negatifs-electricite-seuil-arret-centrale-photovoltaique) : 407 heures de prix négatifs au premier semestre 2026, seuil d'arrêt obligatoire abaissé à 5 MWc au 1er décembre 2026 puis 1 MWc au 1er mars 2027.
 - [APSAD D20 : ce que le nouveau référentiel change pour l'assurance photovoltaïque](https://ellipsys-solutions.com/blog/apsad-d20-assurance-photovoltaique-ce-qui-change) : article informatif sur le référentiel de prévention applicable depuis le 1er septembre 2026.
 - [Panneaux solaires : combien de rendement avez-vous perdu cet été ?](https://ellipsys-solutions.com/blog/panneaux-solaires-rendement-perdu-apres-ete)
+- [Nettoyer deux centrales solaires au sol en une seule tournée](https://ellipsys-solutions.com/blog/nettoyage-centrale-solaire-saone-et-loire) : étude de cas, Vitry (31 000 m²) et Montchanin (22 000 m²) en Saône-et-Loire, robot à 1 200 m² par heure, sans arrêt de production.
+- [Pluies de sable saharien : quel impact sur le rendement des panneaux solaires ?](https://ellipsys-solutions.com/blog/sable-saharien-panneaux-solaires-rendement) : pourquoi la pluie ne suffit pas après un épisode de sable, quand nettoyer dans le Sud de la France.
+- [Nettoyage de façade industrielle : drone ou échafaudage ?](https://ellipsys-solutions.com/blog/nettoyage-facade-drone-vs-echafaudage) : comparatif de délais et de budgets entre échafaudage, nacelle, cordistes et drone.
+- [Scénarios STS-01 et STS-02 : la réglementation européenne des drones](https://ellipsys-solutions.com/blog/reglementation-drone-sts-01-sts-02) : STS-01 (vol à vue, zone contrôlée, milieu peuplé, classe C5), STS-02 (hors vue, milieu peu peuplé, classe C6), déclaration AlphaTango.
+- [Décret tertiaire et thermographie par drone](https://ellipsys-solutions.com/blog/thermographie-drone-decret-tertiaire) : bâtiments de 1 000 m² et plus, objectifs −40 % en 2030, quand réaliser une thermographie.
+- [Démoussage de toiture : pourquoi l'automne est le meilleur moment](https://ellipsys-solutions.com/blog/demoussage-toiture-automne-bon-moment) et [pourquoi le karcher haute pression est une erreur](https://ellipsys-solutions.com/blog/demoussage-toiture-karcher-erreur).
+- [Ellipsys Solutions rejoint le Pacte mondial des Nations unies](https://ellipsys-solutions.com/blog/ellipsys-adhesion-pacte-mondial-nations-unies).
 - [Tous les articles](https://ellipsys-solutions.com/blog)
 
 ## Informations pratiques
 
 - [Demande de devis](https://ellipsys-solutions.com/devis) : réponse sous 24 h.
+- [Tarifs](https://ellipsys-solutions.com/tarifs) : principes de chiffrage, prix ferme sur devis.
+- [Réalisations](https://ellipsys-solutions.com/realisations) : chantiers documentés avec photos avant/après.
+- [Qui sommes-nous](https://ellipsys-solutions.com/a-propos) et [notre expertise et nos équipements](https://ellipsys-solutions.com/expertise).
+- [Mentions légales](https://ellipsys-solutions.com/mentions-legales) : identité légale de l'entreprise.
 - [Notre méthode](https://ellipsys-solutions.com/methode) : engagements, sécurité, réglementation drone.
 - [Nos valeurs et politique RSE](https://ellipsys-solutions.com/valeurs).
 

@@ -26,12 +26,12 @@ export default function Page() {
         </>
       }
       accroche="Mousses, lichens et salissures traités par drone, sans échafaudage ni circulation sur la couverture. Vos tuiles canal restent intactes, et vous n'avez aucun risque de chute à assumer."
-      heroImage="/images/demoussage-toiture-eimargues.jpg"
+      heroImage="/images/demoussage-toiture-eimargues.webp"
       heroAlt="Démoussage de toiture par drone à Montpellier et dans l'Hérault"
       formTitre="Votre devis gratuit sous 24 h"
       formSoustitre="Deux champs suffisent pour qu'on vous rappelle."
       preuve={{
-        image: "/images/demoussage-toiture-eimargues.jpg",
+        image: "/images/demoussage-toiture-eimargues.webp",
         alt: "Avant après démoussage de toiture, chantier réel dans l'Hérault",
         legende: "Chantier réel, démoussage de toiture à Aimargues (30), tuiles préservées",
         badges: ["AVANT", "APRÈS"],

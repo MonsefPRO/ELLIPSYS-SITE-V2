@@ -26,12 +26,12 @@ export default function Page() {
         </>
       }
       accroche="Tuiles déplacées, fissures, mousses, gouttières encombrées, humidité : notre drone photographie chaque versant en haute définition, et la caméra thermique repère ce que l'œil ne voit pas encore. Personne ne monte sur votre toit."
-      heroImage="/images/Drone.jpg"
+      heroImage="/images/Drone.webp"
       heroAlt="Drone Ellipsys Solutions utilisé pour les interventions sur toiture"
       formTitre="Votre inspection, devis sous 24 h"
       formSoustitre="Indiquez simplement l'adresse et ce qui vous inquiète."
       preuve={{
-        image: "/images/toitsale.jpeg",
+        image: "/images/toitsale.webp",
         alt: "Tuiles canal couvertes de lichens et d'encrassement",
         legende: "Le type de dégradation qu'une inspection rapprochée met en évidence : lichens et encrassement sur tuiles canal",
       }}

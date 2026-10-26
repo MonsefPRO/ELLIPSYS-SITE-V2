@@ -65,7 +65,7 @@ export default async function ZoneInterventionPage() {
     <main className="flex flex-col min-h-screen pt-24 pb-12">
 
       <section className="relative bg-slate-900 text-white py-20 lg:py-32 overflow-hidden text-center px-4">
-        <div className="absolute inset-0 opacity-40 bg-[url('/images/Secteur.jpg')] bg-cover bg-center"></div>
+        <div className="absolute inset-0 opacity-40 bg-[url('/images/Secteur.webp')] bg-cover bg-center"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-[#0e2f52]/90 to-[#0e2f52]"></div>
         <div className="relative z-10 max-w-4xl mx-auto">
           <Globe className="w-12 h-12 text-brand-orange-400 mx-auto mb-6" />
@@ -168,6 +168,8 @@ export default async function ZoneInterventionPage() {
               { slug: "beziers",     nom: "Béziers",     dept: "Hérault (34)" },
               { slug: "sete",        nom: "Sète",        dept: "Hérault (34)" },
               { slug: "perpignan",   nom: "Perpignan",   dept: "Pyrénées-Orientales (66)" },
+              { slug: "narbonne",    nom: "Narbonne",    dept: "Aude (11)" },
+              { slug: "ales",        nom: "Alès",        dept: "Gard (30)" },
               { slug: "toulouse",    nom: "Toulouse",    dept: "Haute-Garonne (31)" },
               { slug: "avignon",     nom: "Avignon",     dept: "Vaucluse (84)" },
               { slug: "marseille",   nom: "Marseille",   dept: "Bouches-du-Rhône (13)" },

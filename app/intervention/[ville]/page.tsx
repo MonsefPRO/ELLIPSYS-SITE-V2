@@ -6,7 +6,7 @@ import {
   ShieldCheck, Sun, Users, Clock, Star, AlertTriangle, Landmark, HelpCircle,
 } from "lucide-react";
 import { getLang } from "@/lib/getLang";
-import { getVille, VILLES_AUTORISEES } from "@/lib/villes";
+import { getVille, VILLES_AUTORISEES, VILLES_NOINDEX } from "@/lib/villes";
 
 type Props = { params: Promise<{ ville: string }> };
 
@@ -19,13 +19,13 @@ export function generateStaticParams() {
 export const dynamicParams = false;
 
 const cityImages: Record<string, string> = {
-  "montpellier": "/images/montpellier.png",
-  "nimes": "/images/nimes.png",
-  "marseille": "/images/marseille.png",
-  "paris": "/images/paris.png",
-  "lyon": "/images/lyon.png",
+  "montpellier": "/images/montpellier.webp",
+  "nimes": "/images/nimes.webp",
+  "marseille": "/images/marseille.webp",
+  "paris": "/images/paris.webp",
+  "lyon": "/images/lyon.webp",
   "bordeaux": "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=1920&q=80",
-  "toulouse": "/images/toulouse.png",
+  "toulouse": "/images/toulouse.webp",
   "nice": "https://images.unsplash.com/photo-1533104816931-20fa691ff6ca?auto=format&fit=crop&w=1920&q=80",
   "avignon": "https://images.unsplash.com/photo-1547980695-33d0f48e53a1?auto=format&fit=crop&w=1920&q=80",
   "aix-en-provence": "https://images.unsplash.com/photo-1602524816290-a4d4a0b9e5c6?auto=format&fit=crop&w=1920&q=80",
@@ -63,6 +63,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? `${villeName} (${data.codeDept}) : ${data.accroche} Devis sous 24 h.`
       : `Nettoyage de panneaux solaires, démoussage de toiture, nettoyage de façade et thermographie par drone à ${villeName}. Sans échafaudage. Devis sous 24 h.`,
     alternates: { canonical: `https://ellipsys-solutions.com/intervention/${citySlug}` },
+    ...(VILLES_NOINDEX.includes(citySlug) && { robots: { index: false, follow: true } }),
   };
 }
 

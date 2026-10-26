@@ -69,7 +69,7 @@ export default async function FrelonsPage() {
 
       {/* BANNIÈRE */}
       <section className="relative bg-[#0e2f52] text-white py-20 lg:py-32 min-h-[500px] overflow-hidden">
-        <div className="absolute inset-0 opacity-100 bg-cover bg-center" style={{ backgroundImage: `url('/images/bannerfrelons.png')` }} />
+        <div className="absolute inset-0 opacity-100 bg-cover bg-center" style={{ backgroundImage: `url('/images/bannerfrelons.webp')` }} />
         <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/20 to-transparent" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl">

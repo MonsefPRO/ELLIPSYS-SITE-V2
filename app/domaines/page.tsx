@@ -22,42 +22,42 @@ export default async function DomainesPage() {
       title: isEn ? "High-Demand Sectors" : "Secteurs à Haute Exigence",
       desc: isEn ? "Pharma & Food: Strict contamination risk control. We comply with NF EN 1672-2 by ensuring perfect hygiene and cleanability of exterior infrastructure (silos, roofs)." : "Pharma & Agroalimentaire : Maîtrise stricte des risques de contamination. Nous respectons la norme NF EN 1672-2 en garantissant l'hygiène et la nettoyabilité parfaite des infrastructures extérieures (silos, toitures).",
       desc2: isEn ? "Aeronautics: Precision cleaning of your infrastructure (assembly buildings, hangars) meeting the strict safety standards of the sector." : "Aéronautique : Nettoyage de précision de vos infrastructures (bâtiments d'assemblage, hangars) répondant aux normes de sécurité strictes du secteur.",
-      img: "/images/secteur-haute-exigence.jpg",
+      img: "/images/secteur-haute-exigence.webp",
     },
     {
       icon: Building,
       href: "/secteurs/immobilier-syndics",
       title: isEn ? "Real Estate & Property Managers" : "Immobilier & Syndics",
       desc: isEn ? <>We support property managers in maximising asset value. We simplify the work of managing agents by carrying out rigorous <strong>preventive maintenance</strong> (façades, roofs, inaccessible glazing) and providing comprehensive visual inspection reports, essential for general meetings.</> : <>Nous accompagnons les gestionnaires de biens dans la valorisation de leurs actifs. Nous facilitons le travail des syndics en exécutant une <strong>maintenance préventive</strong> rigoureuse (façades, toitures, vitrages inaccessibles) et en fournissant des rapports visuels d&apos;inspection complets, indispensables lors des assemblées générales.</>,
-      img: "/images/secteur-syndic.jpg",
+      img: "/images/secteur-syndic.webp",
     },
     {
       icon: Landmark,
       href: "/secteurs/monuments-historiques",
       title: isEn ? "Listed Heritage Buildings (ABF)" : "Monuments Historiques (ABF)",
       desc: isEn ? <>For historic buildings, the drone is a major breakthrough. Our gentle interventions comply with the Ministry of Culture's preservation rules and are subject to obtaining prior authorisations (Article L. 621-31 of the Heritage Code) from the Architects of Buildings of France <strong>without requiring scaffolding</strong>.</> : <>Pour le bâti ancien, le drone est une avancée majeure. Nos interventions douces respectent les règles de préservation du Ministère de la Culture et sont soumises à l&apos;obtention des autorisations préalables (Article L. 621-31 du Code du patrimoine) auprès des Architectes des Bâtiments de France <strong>sans nécessiter d&apos;échafaudages</strong>.</>,
-      img: "/images/secteur-monuments.jpg",
+      img: "/images/secteur-monuments.webp",
     },
     {
       icon: Sun,
       href: "/secteurs/energie-solaire",
       title: isEn ? "Solar Energy Operators" : "Acteurs de l'Energie Solaire",
       desc: isEn ? <>Soiling mathematically reduces your revenue. We provide regular monitoring and hybrid <strong>solar cleaning</strong> via our <strong>ground robot</strong> (for ground-mounted arrays) and aerial drones (for large rooftops). A direct solution to secure and sustain your return on investment.</> : <>L&apos;encrassement réduit mathématiquement vos revenus. Nous assurons un suivi régulier et un <strong>nettoyage solaire</strong> hybride via notre <strong>robot terrestre</strong> (pour les parcs au sol) et nos drones aériens (pour les grandes toitures). Une solution directe pour sécuriser et pérenniser votre retour sur investissement.</>,
-      img: "/images/solairebanner.png",
+      img: "/images/solairebanner.webp",
     },
     {
       icon: Ship,
       href: "/secteurs/maritime-plaisance",
       title: isEn ? "Maritime & Leisure Boating" : "Milieu Maritime & Plaisance",
       desc: isEn ? "In coastal areas, marine spray violently accelerates electrochemical corrosion of metals. We apply Desalination protocols: a technical preventive rinse of coastal structures to evacuate chlorides, extending the lifespan of your façades and naval infrastructure." : "En bord de mer, les embruns marins accélèrent violemment la corrosion électrochimique des métaux. Nous appliquons des protocoles de Dessalage : un rinçage technique préventif des structures littorales pour évacuer les chlorures, prolongeant la vie de vos façades et infrastructures navales.",
-      img: "/images/secteur-maritime.jpg",
+      img: "/images/secteur-maritime.webp",
     },
     {
       icon: School,
       href: "/secteurs/collectivites",
       title: isEn ? "Local Authorities & Public Spaces" : "Collectivités & Espace Public",
       desc: isEn ? <>We offer a service that respects public infrastructure. Our drone method allows maintenance of town halls, schools and civil engineering structures with unmatched execution speed (possible outside school periods). <strong>No cherry picker</strong>, no traffic disruption.</> : <>Nous offrons un service respectueux des infrastructures publiques. Notre méthode par drone permet d&apos;entretenir les mairies, les écoles et les ouvrages d&apos;art avec une rapidité d&apos;exécution inégalée (possible hors période scolaire). <strong>Aucune nacelle</strong>, aucun blocage de la circulation.</>,
-      img: "/images/espacepublic.jpg",
+      img: "/images/espacepublic.webp",
     },
   ];
 
@@ -95,7 +95,7 @@ export default async function DomainesPage() {
           {/* MAIN BLOCK : INDUSTRY */}
           <div className="bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-100 flex flex-col md:flex-row mb-12 group">
             <div className="md:w-2/5 bg-slate-200 relative min-h-[300px]">
-              <div className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style={{ backgroundImage: `url('/images/bloc1.png')` }}></div>
+              <div className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style={{ backgroundImage: `url('/images/bloc1.webp')` }}></div>
               <div className="absolute inset-0 bg-[#0e2f52]/20"></div>
             </div>
             <div className="md:w-3/5 p-8 lg:p-12 flex flex-col justify-center">

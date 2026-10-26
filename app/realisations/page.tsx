@@ -16,7 +16,7 @@ export default async function RealisationsPage() {
   return (
     <main className="flex flex-col min-h-screen pt-24 pb-12 bg-slate-50">
       <section className="relative bg-[#0e2f52] text-white py-20 lg:py-32 overflow-hidden">
-        <div className="absolute inset-0 opacity-100 bg-cover bg-center" style={{ backgroundImage: `url('/images/accueil.png')` }} />
+        <div className="absolute inset-0 opacity-100 bg-cover bg-center" style={{ backgroundImage: `url('/images/accueil.webp')` }} />
         <div className="brand-tint" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/20 to-transparent" />
         <div className="container mx-auto px-4 relative z-10">
@@ -101,7 +101,7 @@ export default async function RealisationsPage() {
           {/* PROJECT 1 : SCUTUM MONTPELLIER */}
           <div className="bg-white rounded-[2rem] overflow-hidden shadow-xl border border-slate-100">
             <div className="relative h-52 md:h-64">
-              <div className="absolute inset-0 bg-[url('/images/SCUTUMFACADE.png')] bg-cover bg-center"></div>
+              <div className="absolute inset-0 bg-[url('/images/SCUTUMFACADE.webp')] bg-cover bg-center"></div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
               <div className="absolute top-3 left-3">
                 <span className="bg-emerald-500 text-white px-3 py-1 rounded-full text-xs font-black tracking-widest shadow-md">{isEn ? "AFTER" : "APRÈS"}</span>
@@ -143,7 +143,7 @@ export default async function RealisationsPage() {
           {/* PROJECT 2 : DEMOUSSAGE TOITURE EIMARGUES */}
           <div className="bg-white rounded-[2rem] overflow-hidden shadow-xl border border-slate-100">
             <div className="relative h-52 md:h-64">
-              <div className="absolute inset-0 bg-[url('/images/demoussage-toiture-eimargues.jpg')] bg-cover bg-center"></div>
+              <div className="absolute inset-0 bg-[url('/images/demoussage-toiture-eimargues.webp')] bg-cover bg-center"></div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
               <div className="absolute top-3 left-3 flex gap-2">
                 <span className="bg-emerald-500 text-white px-3 py-1 rounded-full text-xs font-black tracking-widest shadow-md">{isEn ? "AFTER" : "APRÈS"}</span>
@@ -186,7 +186,7 @@ export default async function RealisationsPage() {
           {/* PROJECT 3 : NETTOYAGE CENTRALE SOLAIRE MONTCHANIN */}
           <div className="bg-white rounded-[2rem] overflow-hidden shadow-xl border border-slate-100">
             <div className="relative h-52 md:h-64">
-              <div className="absolute inset-0 bg-[url('/images/robot-vue-aerienne.jpg')] bg-cover bg-center"></div>
+              <div className="absolute inset-0 bg-[url('/images/robot-vue-aerienne.webp')] bg-cover bg-center"></div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
               <div className="absolute top-3 left-3">
                 <span className="bg-sky-500 text-white px-3 py-1 rounded-full text-xs font-black tracking-widest shadow-md">{isEn ? "DRONE VIEW" : "VUE DRONE"}</span>

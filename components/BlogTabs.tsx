@@ -6,7 +6,7 @@ import { ArrowRight, Calendar, Clock, Instagram, Facebook, Linkedin, Music2, Ext
 
 const articles = [
   {
-    image: "/images/Bardage-facades.png",
+    image: "/images/Bardage-facades.webp",
     category: "Facades & Bardages",
     date: "26 Octobre 2026",
     readTime: "7 min",
@@ -36,7 +36,7 @@ const articles = [
     badge: "bg-amber-50 text-amber-600",
   },
   {
-    image: "/images/robot-vue-aerienne.jpg",
+    image: "/images/robot-vue-aerienne.webp",
     category: "Énergie Solaire",
     date: "22 Septembre 2026",
     readTime: "7 min",
@@ -56,7 +56,7 @@ const articles = [
     badge: "bg-amber-50 text-amber-600",
   },
   {
-    image: "/images/nosvaleurs.png",
+    image: "/images/nosvaleurs.webp",
     category: "Vie de l'entreprise",
     date: "10 Septembre 2026",
     readTime: "5 min",
@@ -66,7 +66,7 @@ const articles = [
     badge: "bg-emerald-50 text-emerald-600",
   },
   {
-    image: "/images/bardagetoit.png",
+    image: "/images/bardagetoit.webp",
     category: "Façades & Bardages",
     date: "12 Septembre 2026",
     readTime: "7 min",
@@ -86,7 +86,7 @@ const articles = [
     badge: "bg-orange-50 text-orange-600",
   },
   {
-    image: "/images/Frelondrone.png",
+    image: "/images/Frelondrone.webp",
     category: "Nuisibles & Sécurité",
     date: "5 Septembre 2026",
     readTime: "6 min",
@@ -96,7 +96,7 @@ const articles = [
     badge: "bg-red-50 text-red-600",
   },
   {
-    image: "/images/drone-toiture-intervention.png",
+    image: "/images/drone-toiture-intervention.webp",
     category: "Toiture & Traitement",
     date: "8 Septembre 2026",
     readTime: "6 min",
@@ -106,7 +106,7 @@ const articles = [
     badge: "bg-slate-100 text-slate-700",
   },
   {
-    image: "/images/drone-toiture-intervention.png",
+    image: "/images/drone-toiture-intervention.webp",
     category: "Toiture & Traitement",
     date: "14 Avril 2026",
     readTime: "5 min",
@@ -116,7 +116,7 @@ const articles = [
     badge: "bg-slate-100 text-slate-700",
   },
   {
-    image: "/images/solairebanner.png",
+    image: "/images/solairebanner.webp",
     category: "Énergie Solaire",
     date: "10 Avril 2026",
     readTime: "6 min",
@@ -126,7 +126,7 @@ const articles = [
     badge: "bg-amber-50 text-amber-600",
   },
   {
-    image: "/images/thermographie-banner.png",
+    image: "/images/thermographie-banner.webp",
     category: "Thermographie",
     date: "5 Avril 2026",
     readTime: "7 min",
@@ -136,7 +136,7 @@ const articles = [
     badge: "bg-blue-50 text-blue-600",
   },
   {
-    image: "/images/bannerfrelons.png",
+    image: "/images/bannerfrelons.webp",
     category: "Nuisibles & Sécurité",
     date: "1 Avril 2026",
     readTime: "4 min",
@@ -146,7 +146,7 @@ const articles = [
     badge: "bg-red-50 text-red-600",
   },
   {
-    image: "/images/Barda.png",
+    image: "/images/Barda.webp",
     category: "Facades & Bardages",
     date: "25 Mars 2026",
     readTime: "5 min",

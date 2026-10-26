@@ -40,7 +40,7 @@ export default function Page() {
         </>
       }
       accroche="Immeubles de bureaux, sièges sociaux, bâtiments tertiaires : les vitrages en hauteur se ternissent sous la pollution, le sel et la poussière. Notre drone les nettoie depuis les airs, sans nacelle sur le trottoir ni fermeture d'accès."
-      heroImage="/images/chronos drone.jpg"
+      heroImage="/images/chronos drone.webp"
       heroAlt="Drone de nettoyage de façade Ellipsys au sol avant une intervention"
       badgeZone="Arc méditerranéen · Partout en France sur projet"
       pointsCles={[
@@ -52,7 +52,7 @@ export default function Page() {
       formTitre="Chiffrage de votre façade sous 24 h"
       formSoustitre="Indiquez le type de bâtiment, la hauteur approximative et la localisation."
       preuve={{
-        image: "/images/SCUTUMFACADE.png",
+        image: "/images/SCUTUMFACADE.webp",
         alt: "Bâtiment professionnel à façades vitrées nettoyé par drone à Montpellier",
         legende: "Chantier réel à Montpellier : deux façades vitrées nettoyées par drone en deux jours, sans nacelle ni emprise au sol",
       }}

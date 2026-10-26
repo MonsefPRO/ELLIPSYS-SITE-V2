@@ -7,8 +7,8 @@ import { getLang } from "@/lib/getLang";
 import { LiensUtiles } from "@/components/LiensUtiles";
 
 export const metadata: Metadata = {
-  title: "Nettoyage façade par drone, Montpellier & Occitanie",
-  description: "Nettoyage de façade par drone à Montpellier et en Occitanie : enduits, pierre calcaire, bardages métal et bois. Sans nacelle ni fermeture de rue. Devis 24 h.",
+  title: "Nettoyage de façades et bardages par drone",
+  description: "Nettoyage de façades et de bardages par drone : enduits, pierre calcaire, métal, bois, vitrages. Sans nacelle ni fermeture de rue, en Occitanie et en PACA. Devis 24 h.",
   alternates: {
     canonical: "https://ellipsys-solutions.com/prestations/nettoyage-facade",
   },
@@ -262,7 +262,7 @@ export default async function FacadesPage() {
 
       {/* BANNIÈRE */}
       <section className="relative bg-[#0e2f52] text-white py-20 lg:py-32 min-h-[500px] overflow-hidden">
-        <div className="absolute inset-0 opacity-100 bg-[url('/images/Barda.png')] bg-cover bg-center" />
+        <div className="absolute inset-0 opacity-100 bg-[url('/images/Barda.webp')] bg-cover bg-center" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/20 to-transparent" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl">
@@ -272,11 +272,11 @@ export default async function FacadesPage() {
             <h1 className="text-4xl lg:text-6xl font-black mb-6 leading-tight">
               {isEn ? "Facade and Cladding Cleaning:" : "Nettoyage de Façades et Bardages :"}{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-orange-400 to-amber-300">
-                {isEn ? "Restore Your Building&apos;s Brilliance" : "Redonnez l&apos;Éclat à votre Bâtiment"}
+                {isEn ? "Restore Your Building's Brilliance" : "Redonnez l'Éclat à votre Bâtiment"}
               </span>
             </h1>
             <p className="text-xl text-brand-orange-300 font-semibold mb-4 italic">
-              {isEn ? "No aerial platform, no activity disruption, with cinematographic results." : "Sans nacelle, sans interruption d&apos;activité, avec un résultat cinématographique."}
+              {isEn ? "No aerial platform, no activity disruption, with cinematographic results." : "Sans nacelle, sans interruption d'activité, avec un résultat cinématographique."}
             </p>
           </div>
         </div>

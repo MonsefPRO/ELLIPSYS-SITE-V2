@@ -41,7 +41,7 @@ export default function Page() {
         </>
       }
       accroche="Usines, entrepôts, plateformes logistiques : le bardage se salit sur des centaines de mètres linéaires et à des hauteurs où la nacelle bloque les quais et les voies poids lourds. Notre drone nettoie depuis les airs, le site continue de tourner."
-      heroImage="/images/Bardage-facades.png"
+      heroImage="/images/Bardage-facades.webp"
       heroAlt="Drone de nettoyage pulvérisant un bardage métallique de bâtiment industriel"
       badgeZone="Arc méditerranéen · Partout en France sur projet"
       pointsCles={[
@@ -53,7 +53,7 @@ export default function Page() {
       formTitre="Chiffrage de votre site sous 24 h"
       formSoustitre="Indiquez le type de bâtiment, la hauteur approximative et la localisation."
       preuve={{
-        image: "/images/nettoyage-vitrages-scutum-montpellier.png",
+        image: "/images/nettoyage-vitrages-scutum-montpellier.webp",
         alt: "Bâtiment professionnel à Montpellier dont les façades ont été nettoyées par drone",
         legende: "Chantier réel à Montpellier : deux façades d'un bâtiment professionnel nettoyées par drone en deux jours, sans nacelle",
       }}

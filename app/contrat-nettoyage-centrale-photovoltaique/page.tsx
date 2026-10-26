@@ -41,7 +41,7 @@ export default function Page() {
         </>
       }
       accroche="Pour un exploitant ou un asset manager, le nettoyage ne doit pas être une intervention ponctuelle décidée dans l'urgence. Un contrat annuel fixe le rythme, le budget et le reporting de chaque centrale, et s'intègre à votre plan d'O&M."
-      heroImage="/images/robot-vue-aerienne.jpg"
+      heroImage="/images/robot-vue-aerienne.webp"
       heroAlt="Vue aérienne d'un robot de nettoyage en intervention sur une centrale photovoltaïque au sol"
       badgeZone="Arc méditerranéen · Partout en France sur projet"
       pointsCles={[

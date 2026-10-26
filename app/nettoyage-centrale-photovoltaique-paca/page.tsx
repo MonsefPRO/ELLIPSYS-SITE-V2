@@ -31,7 +31,7 @@ export default function Page() {
         </>
       }
       accroche="La Provence compte parmi les régions les plus ensoleillées de France, et ses centrales au sol parmi les plus exposées : mistral chargé de poussière, sable saharien, cultures et littoral. Nous nettoyons vos modules par robot et par drone, pendant que la centrale continue d'injecter."
-      heroImage="/images/robot-vue-aerienne.jpg"
+      heroImage="/images/robot-vue-aerienne.webp"
       heroAlt="Vue aérienne d'un robot de nettoyage en intervention sur une centrale photovoltaïque au sol"
       badgeZone="Provence-Alpes-Côte d'Azur · Arc méditerranéen"
       pointsCles={[

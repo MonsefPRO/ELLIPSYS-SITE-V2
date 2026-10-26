@@ -650,6 +650,12 @@ export const VILLES_LEGACY = [
   "montauban", "arles", "lunel", "agde",
 ];
 
+/**
+ * Villes legacy sans contenu propre : pages gabarit servies en noindex pour ne
+ * pas passer pour des pages satellites. Paris et Lyon restent indexables.
+ */
+export const VILLES_NOINDEX = VILLES_LEGACY.filter((v) => v !== "paris" && v !== "lyon");
+
 /** Liste blanche complète, toute autre URL doit renvoyer un 404 */
 export const VILLES_AUTORISEES = [...VILLES_ENRICHIES, ...VILLES_LEGACY];
 

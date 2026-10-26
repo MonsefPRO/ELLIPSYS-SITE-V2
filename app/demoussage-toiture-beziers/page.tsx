@@ -28,7 +28,7 @@ export default function Page() {
         </>
       }
       accroche="Air marin chargé de sel, humidité du vent de sud-est : dans le Biterrois, les tuiles canal se couvrent vite de mousses et de lichens. Nous les traitons par drone, sans échafaudage et sans que personne ne circule sur la couverture."
-      heroImage="/images/Toiture.jpg"
+      heroImage="/images/Toiture.webp"
       heroAlt="Drone appliquant un traitement sur une toiture en tuiles"
       badgeZone="Béziers · Hérault · Occitanie"
       pointsCles={[
@@ -40,7 +40,7 @@ export default function Page() {
       formTitre="Votre devis gratuit sous 24 h"
       formSoustitre="Indiquez simplement l'adresse et le type de toiture."
       preuve={{
-        image: "/images/demoussage-toiture-eimargues.jpg",
+        image: "/images/demoussage-toiture-eimargues.webp",
         alt: "Avant après démoussage de toiture, chantier réel en Occitanie",
         legende: "Chantier réel : démoussage de toiture par drone à Aimargues, tuiles préservées",
         badges: ["AVANT", "APRÈS"],

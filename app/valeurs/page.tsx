@@ -71,7 +71,7 @@ export default async function ValeursPage() {
       <section className="relative bg-[#0e2f52] text-white py-20 lg:py-32 min-h-[500px] overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url('/images/nosvaleurs.png')` }}
+          style={{ backgroundImage: `url('/images/nosvaleurs.webp')` }}
         />
         <div className="brand-tint" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/40 to-black/20" />

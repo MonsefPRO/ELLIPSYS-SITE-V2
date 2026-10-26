@@ -157,7 +157,7 @@ export default async function ParticuliersPage() {
   return (
     <main className="flex flex-col min-h-screen pt-24 pb-12">
       <section className="relative bg-[#0e2f52] text-white py-20 lg:py-32 min-h-[500px] overflow-hidden">
-        <div className="absolute inset-0 opacity-100 bg-[url('/images/Toiture.jpg')] bg-cover bg-center" />
+        <div className="absolute inset-0 opacity-100 bg-[url('/images/Toiture.webp')] bg-cover bg-center" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/20 to-transparent" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl">
@@ -263,7 +263,7 @@ export default async function ParticuliersPage() {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative rounded-3xl overflow-hidden shadow-xl h-80 lg:h-[420px]">
-              <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('/images/drone-toiture-intervention.png')` }} />
+              <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('/images/drone-toiture-intervention.webp')` }} />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <div className="absolute top-5 left-5">
                 <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-emerald-500/20 border border-emerald-400/40 text-emerald-200 text-xs font-bold backdrop-blur-sm">

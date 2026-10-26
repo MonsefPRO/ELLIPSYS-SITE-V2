@@ -26,12 +26,12 @@ export default function Page() {
         </>
       }
       accroche="Enduit, pierre, crépi, bardage : nous ravalons votre façade par drone, sans monter d'échafaudage, sans immobiliser la rue et sans autorisation de voirie. Une à deux journées au lieu de plusieurs semaines."
-      heroImage="/images/apres facade.jpg"
+      heroImage="/images/apres facade.webp"
       heroAlt="Nettoyage de façade par drone à Montpellier, sans échafaudage"
       formTitre="Votre devis gratuit sous 24 h"
       formSoustitre="Maison ou copropriété : dites-nous simplement où vous êtes."
       preuve={{
-        image: "/images/SCUTUMFACADE.png",
+        image: "/images/SCUTUMFACADE.webp",
         alt: "Avant après nettoyage de façade par drone, chantier réel",
         legende: "Chantier réel, nettoyage de façade par drone, façade rendue à son aspect d'origine",
         badges: ["AVANT", "APRÈS"],

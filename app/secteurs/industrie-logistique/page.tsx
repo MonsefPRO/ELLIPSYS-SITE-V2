@@ -130,7 +130,7 @@ export default async function IndustriePage() {
 
             {/* PHOTO CHANTIER */}
             <div className="relative rounded-3xl overflow-hidden shadow-lg h-64 lg:h-80">
-              <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('/images/secteur-industrie.jpg')` }} />
+              <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('/images/secteur-industrie.webp')` }} />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <div className="absolute bottom-5 left-5 right-5">
                 <p className="text-white text-xs font-bold leading-relaxed">{isEn ? "Drone intervention on an industrial site, no ground footprint, no flow disruption" : "Intervention drone sur site industriel, aucune emprise au sol, aucun flux perturbé"}</p>

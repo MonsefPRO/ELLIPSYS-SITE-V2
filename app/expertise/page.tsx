@@ -37,7 +37,7 @@ export default async function ExpertisePage() {
       tagline: isEn
         ? <>The cleaning giant. Designed for very high-altitude operations, it replaces <strong>scaffolding</strong> for facades and rooftops.</>
         : <>Le géant du nettoyage. Pensé pour les interventions en très grande hauteur, il remplace les <strong>échafaudages</strong> pour façades et toitures.</>,
-      img: "/images/chronos drone.jpg",
+      img: "/images/chronos drone.webp",
       video: "/videos/drone-chronos-demo.mp4",
       specs: [
         { label: isEn ? "Pressure" : "Pression", value: "110 bars" },

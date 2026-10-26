@@ -28,7 +28,7 @@ export default function Page() {
         </>
       }
       accroche="Après les épisodes cévenols, les versants nord des toitures gardoises se couvrent de mousses et de lichens. Nous les traitons par drone, sans échafaudage et sans que personne ne circule sur vos tuiles romanes."
-      heroImage="/images/drone-toiture-intervention.png"
+      heroImage="/images/drone-toiture-intervention.webp"
       heroAlt="Drone de traitement survolant une toiture en tuiles dans le Gard"
       badgeZone="Nîmes · Gard · Occitanie"
       pointsCles={[
@@ -40,7 +40,7 @@ export default function Page() {
       formTitre="Votre devis gratuit sous 24 h"
       formSoustitre="Indiquez simplement l'adresse et le type de toiture."
       preuve={{
-        image: "/images/demoussage-toiture-eimargues.jpg",
+        image: "/images/demoussage-toiture-eimargues.webp",
         alt: "Avant après démoussage de toiture à Aimargues dans le Gard",
         legende: "Chantier réel dans le Gard : démoussage de toiture à Aimargues, à 20 minutes de Nîmes",
         badges: ["AVANT", "APRÈS"],

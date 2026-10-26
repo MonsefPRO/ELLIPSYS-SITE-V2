@@ -7,7 +7,7 @@ import { getLang } from "@/lib/getLang";
 import { LiensUtiles } from "@/components/LiensUtiles";
 
 export const metadata: Metadata = {
-  title: "Démoussage toiture par drone, Montpellier & Hérault",
+  title: "Démoussage et hydrofuge de toiture par drone",
   description: "Démoussage de toiture par drone en Occitanie : traitement Certibiocide + hydrofuge, sans échafaudage ni risque de chute, adapté aux tuiles canal. Devis 24 h.",
   alternates: {
     canonical: "https://ellipsys-solutions.com/prestations/traitement-toiture",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
 const PX = "?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
 const IMG = {
-  roofOrange:   `/images/toitsale.jpeg`,
+  roofOrange:   `/images/toitsale.webp`,
   roofConstruct:`https://images.pexels.com/photos/31771165/pexels-photo-31771165.jpeg${PX}`,
   roofClay:     `https://images.pexels.com/photos/5401232/pexels-photo-5401232.jpeg${PX}`,
   safetyWorker: `https://images.pexels.com/photos/9075453/pexels-photo-9075453.jpeg${PX}`,
@@ -125,7 +125,7 @@ export default async function TraitementToiturePage() {
 
       {/* BANNIÈRE */}
       <section className="relative bg-[#0e2f52] text-white py-20 lg:py-32 min-h-[500px] overflow-hidden">
-        <div className="absolute inset-0 opacity-100 bg-[url('/images/drone-toiture-intervention.png')] bg-cover bg-center" />
+        <div className="absolute inset-0 opacity-100 bg-[url('/images/drone-toiture-intervention.webp')] bg-cover bg-center" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/20 to-transparent" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl">
@@ -262,7 +262,7 @@ export default async function TraitementToiturePage() {
 
             <div className="space-y-5">
               <div className="relative rounded-3xl overflow-hidden shadow-lg h-64 lg:h-80">
-                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('/images/demoussage-toiture-eimargues.jpg')` }} />
+                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('/images/demoussage-toiture-eimargues.webp')` }} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <div className="absolute bottom-5 left-5 right-5">
                   <p className="text-white text-xs font-bold leading-relaxed">{isEn ? "Real Ellipsys project, moss removal in Aimargues (30), zero load applied to the tiles" : "Chantier réel Ellipsys, démoussage à Aimargues (30), aucun poids exercé sur les tuiles"}</p>

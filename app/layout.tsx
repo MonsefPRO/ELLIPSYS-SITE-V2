@@ -197,7 +197,7 @@ const jsonLd = {
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "5.0",
-        "reviewCount": "4",
+        "reviewCount": "8",
         "bestRating": "5",
       },
       // Profils officiels : permettent à Google de relier explicitement le site

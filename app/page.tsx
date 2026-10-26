@@ -46,27 +46,27 @@ export default async function HomePage() {
 
   /* ── PILLARS ─────────────────────────────────────────────── */
   const pillars = [
-    { href: "/prestations/nettoyage-solaire", icon: Sun, image: "/images/solairebanner.png",
+    { href: "/prestations/nettoyage-solaire", icon: Sun, image: "/images/solairebanner.webp",
       title: isEn ? "Solar Farm Cleaning" : "Nettoyage de Parc Photovoltaïque",
       desc: isEn
         ? <span>Restoring the output of your photovoltaic farms using ground-based and aerial robotics.</span>
         : <span>Restauration du rendement de vos parcs photovoltaïques par robotique terrestre et aérienne.</span> },
-    { href: "/prestations/traitement-toiture", icon: Home, image: "/images/drone-toiture-intervention.png",
+    { href: "/prestations/traitement-toiture", icon: Home, image: "/images/drone-toiture-intervention.webp",
       title: isEn ? "Roof Demossing & Waterproofing" : "Démoussage et Hydrofuge Toitures",
       desc: isEn
         ? <span>Roof maintenance and <strong>waterproofing</strong> with <strong>no scaffolding</strong> and no fall risk.</span>
         : <span>Entretien et protection <strong>hydrofuge</strong> <strong>sans échafaudage</strong> ni risque de chute.</span> },
-    { href: "/prestations/nettoyage-facade", icon: Building2, image: "/images/Barda.png",
+    { href: "/prestations/nettoyage-facade", icon: Building2, image: "/images/Barda.webp",
       title: isEn ? "Facade & Cladding Cleaning" : "Nettoyage Façades et Bardages",
       desc: isEn
         ? <span>Aesthetic restoration of commercial and industrial buildings <strong>without work platforms</strong>.</span>
         : <span>Restauration esthétique de vos bâtiments commerciaux et industriels <strong>sans nacelle</strong>.</span> },
-    { href: "/prestations/thermographie", icon: ThermometerSun, image: "/images/thermographie-banner.png",
+    { href: "/prestations/thermographie", icon: ThermometerSun, image: "/images/thermographie-banner.webp",
       title: isEn ? "Thermal Imaging & Technical Inspection" : "Thermographie et Inspection Technique",
       desc: isEn
         ? <span>Advanced energy diagnostics (<strong>Tertiary Decree</strong>) and detection of invisible anomalies.</span>
         : <span>Diagnostics énergétiques de pointe (<strong>Décret Tertiaire</strong>) et détection d&apos;anomalies invisibles.</span> },
-    { href: "/prestations/nuisibles", icon: Bug, image: "/images/bannerfrelons.png",
+    { href: "/prestations/nuisibles", icon: Bug, image: "/images/bannerfrelons.webp",
       title: isEn ? "High-Altitude Pest Eradication" : "Destruction Nuisibles Grande Hauteur",
       desc: isEn
         ? "Rapid and secure neutralisation using strict risk-control protocols."

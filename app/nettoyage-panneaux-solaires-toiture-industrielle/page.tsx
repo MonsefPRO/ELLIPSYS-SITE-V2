@@ -41,7 +41,7 @@ export default function Page() {
         </>
       }
       accroche="Sur une usine ou un entrepôt, les modules reçoivent les poussières de process, les films gras de la circulation et le sable saharien. La centrale continue de produire, simplement moins bien. Notre robot les nettoie à l'eau filtrée, sans que personne ne marche sur les panneaux."
-      heroImage="/images/Bannerindustrie.jpg"
+      heroImage="/images/Bannerindustrie.webp"
       heroAlt="Bâtiment logistique et industriel avec toiture de grande surface"
       badgeZone="Arc méditerranéen · Partout en France sur projet"
       pointsCles={[

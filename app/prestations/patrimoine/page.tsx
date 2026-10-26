@@ -58,7 +58,7 @@ export default async function PatrimoinePage() {
     <main className="flex flex-col min-h-screen pt-24 pb-12">
 
       <section className="relative bg-[#0e2f52] text-white py-20 lg:py-32 min-h-[500px] overflow-hidden">
-        <div className="absolute inset-0 opacity-40 bg-[url('/images/Drone.jpg')] bg-cover bg-center" />
+        <div className="absolute inset-0 opacity-40 bg-[url('/images/Drone.webp')] bg-cover bg-center" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#0e2f52] via-[#0e2f52]/85 to-transparent" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl">

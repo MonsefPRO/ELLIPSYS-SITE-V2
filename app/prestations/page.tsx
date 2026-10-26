@@ -26,7 +26,7 @@ export default async function PrestationsPage() {
       title: isEn ? "Solar Cleaning" : "Nettoyage Solaire",
       subtitle: isEn ? "Solar Energy · Drone · Yield" : "Énergie Solaire · Drone · Rendement",
       desc: isEn ? <><strong>Robot Ellipsys</strong> (<strong>1,200 m²/h</strong>) and <strong>Drone Chronos</strong> for photovoltaic arrays. Soiling can cut your output by up to 30%. Annual contracts, <strong>no detergent</strong>, CARSAT compliance.</> : <><strong>Robot Ellipsys</strong> (<strong>1 200 m²/h</strong>) et <strong>drone Chronos</strong> pour parcs photovoltaïques. L&apos;encrassement peut amputer votre production jusqu&apos;à 30 %. Contrats annuels, <strong>sans détergent</strong>, conformité CARSAT.</>,
-      img: "/images/solairebanner.png",
+      img: "/images/solairebanner.webp",
     },
     {
       icon: Home,
@@ -34,7 +34,7 @@ export default async function PrestationsPage() {
       title: isEn ? "Roof Maintenance" : "Entretien de Toitures",
       subtitle: isEn ? "Roofs · Waterproofing · Heritage" : "Toitures · Hydrofuge · Patrimoine",
       desc: isEn ? <><strong>Certibiocide</strong> <strong>moss removal</strong> and <strong>waterproofing</strong> by drone without setting foot on the roof. ABF and listed building compatible. 5 to 10 years protection, zero fall risk.</> : <><strong>Démoussage</strong> <strong>Certibiocide</strong> et <strong>hydrofuge</strong> par drone sans monter sur la couverture. Compatible ABF, monuments historiques. Protection 5 à 10 ans, aucun risque de chute.</>,
-      img: "/images/drone-toiture-intervention.png",
+      img: "/images/drone-toiture-intervention.webp",
     },
     {
       icon: Droplets,
@@ -42,7 +42,7 @@ export default async function PrestationsPage() {
       title: isEn ? "Façade & Cladding Cleaning" : "Nettoyage Façades & Bardages",
       subtitle: isEn ? "Façades & Cladding · Stone · Metal · Timber" : "Façades & Bardages · Pierre · Métal · Bois",
       desc: isEn ? <><strong>High-pressure</strong> cleaning by <strong>Drone Chronos</strong> on all façade types. <strong>No scaffolding</strong>, no road closure. Treatment of sea salt, Saharan rain, carbonaceous pollution.</> : <>Nettoyage <strong>haute pression</strong> par <strong>drone Chronos</strong> sur tous types de façades. <strong>Sans nacelle</strong>, sans fermeture de rue. Traitement sel marin, pluies sahariennes, pollution carbonée.</>,
-      img: "/images/Barda.png",
+      img: "/images/Barda.webp",
     },
     {
       icon: Thermometer,
@@ -50,7 +50,7 @@ export default async function PrestationsPage() {
       title: isEn ? "Aerial Thermography" : "Thermographie Aérienne",
       subtitle: isEn ? "Photovoltaic / Industrial / Buildings" : "Photovoltaïques / Usines / Bâtiments",
       desc: isEn ? <><strong>Thermal</strong> audit with <strong>DJI Matrice 4T</strong>: thermal bridges, defective PV cells, network leaks. Detailed PDF report within <strong>48h</strong>. Compliance with the <strong>Tertiary Decree</strong>.</> : <>Audit <strong>thermique</strong> <strong>DJI Matrice 4T</strong> : ponts thermiques, cellules PV défectueuses, fuites de réseaux. Rapport PDF détaillé sous <strong>48h</strong>. Conformité <strong>Décret Tertiaire</strong>.</>,
-      img: "/images/thermographie-banner.png",
+      img: "/images/thermographie-banner.webp",
     },
     {
       icon: Bug,
@@ -58,7 +58,7 @@ export default async function PrestationsPage() {
       title: isEn ? "Pest Eradication" : "Éradication Nuisibles",
       subtitle: isEn ? "Hornets · Emergency · Certibiocide" : "Frelons · Urgence · Certibiocide",
       desc: isEn ? <>Destruction of Asian hornet nests at height by drone. Remote operators, <strong>precise biocide injection</strong>, physical nest removal. Intervention within <strong>2h</strong>.</> : <>Destruction de nids de frelons asiatiques en grande hauteur par drone. Opérateurs à distance, <strong>injection biocide</strong> précise, retrait physique du nid. Intervention sous <strong>2h</strong>.</>,
-      img: "/images/bannerfrelons.png",
+      img: "/images/bannerfrelons.webp",
     },
     {
       icon: Camera,
@@ -75,7 +75,7 @@ export default async function PrestationsPage() {
 
       {/* BANNIÈRE */}
       <section className="relative bg-[#0e2f52] text-white py-20 lg:py-32 min-h-[500px] overflow-hidden">
-        <div className="absolute inset-0 opacity-100 bg-cover bg-center" style={{ backgroundImage: `url('/images/robot-vue-aerienne.jpg')` }} />
+        <div className="absolute inset-0 opacity-100 bg-cover bg-center" style={{ backgroundImage: `url('/images/robot-vue-aerienne.webp')` }} />
         <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/20 to-transparent" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl">
