@@ -9,11 +9,12 @@ import LandingPage from "@/components/LandingPage";
  */
 const URL = "https://ellipsys-solutions.com/nettoyage-centrale-agrivoltaique";
 const TITRE = "Nettoyage de centrale agrivoltaïque";
+const TITRE_SEO = "Agrivoltaïsme : nettoyage des panneaux agrivoltaïques";
 const DESCRIPTION =
   "Nettoyage de panneaux en agrivoltaïsme : sans produit chimique au-dessus des cultures et des animaux, planifié avec l'exploitation agricole. Devis 24 h.";
 
 export const metadata: Metadata = {
-  title: TITRE,
+  title: TITRE_SEO,
   description: DESCRIPTION,
   alternates: { canonical: URL },
 };
@@ -146,6 +147,7 @@ export default function Page() {
         { href: "/nettoyage-centrale-solaire", label: "Nettoyage de centrale solaire" },
         { href: "/nettoyage-panneaux-solaires-hangar-agricole", label: "Panneaux sur hangar agricole" },
         { href: "/contrat-nettoyage-centrale-photovoltaique", label: "Contrat de nettoyage de centrale" },
+        { href: "/nettoyage-ombrieres-photovoltaiques", label: "Nettoyage d'ombrières photovoltaïques" },
       ]}
     />
   );

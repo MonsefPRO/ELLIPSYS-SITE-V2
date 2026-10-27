@@ -6,6 +6,26 @@ import { ArrowRight, Calendar, Clock, Instagram, Facebook, Linkedin, Music2, Ext
 
 const articles = [
   {
+    image: "/images/robot-franchissement.jpg",
+    category: "Énergie Solaire",
+    date: "27 Octobre 2026",
+    readTime: "8 min",
+    title: "Agrivoltaïsme : définition, loi APER, règles du décret de 2024 et entretien des panneaux",
+    excerpt: "Définition légale, seuil de 90 %, zone témoin, taux de couverture de 40 %, contrôles, puis comment entretenir les panneaux sans pénaliser cultures ni animaux.",
+    href: "/blog/agrivoltaisme-definition-loi-aper-entretien",
+    badge: "bg-amber-50 text-amber-600",
+  },
+  {
+    image: "/images/robot-intervention-structure.jpg",
+    category: "Énergie Solaire",
+    date: "27 Octobre 2026",
+    readTime: "7 min",
+    title: "Ombrières photovoltaïques sur parking : ce qu'impose la loi APER, les reports possibles et l'entretien",
+    excerpt: "Parkings de plus de 1 500 m², 17,5 % d'ombrières, reports jusqu'en 2028 et 2030 : le point sur l'obligation, puis sur l'entretien sans fermer le parking.",
+    href: "/blog/ombrieres-photovoltaiques-parking-obligation-loi-aper",
+    badge: "bg-amber-50 text-amber-600",
+  },
+  {
     image: "/images/Bardage-facades.webp",
     category: "Facades & Bardages",
     date: "26 Octobre 2026",

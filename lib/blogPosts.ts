@@ -14,6 +14,170 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "agrivoltaisme-definition-loi-aper-entretien",
+    image: "/images/robot-franchissement.jpg",
+    category: "Énergie Solaire",
+    date: "27 Octobre 2026",
+    readTime: "8 min",
+    badge: "bg-amber-50 text-amber-600",
+    title: "Agrivoltaïsme : définition, loi APER, règles du décret de 2024 et entretien des panneaux",
+    excerpt: "Une centrale agrivoltaïque n'est pas une centrale solaire posée sur un champ : la loi exige qu'elle rende un service à l'agriculture. Définition légale, seuil de 90 %, zone témoin, taux de couverture de 40 %, contrôles, puis la question que peu de guides traitent : comment entretenir les panneaux sans pénaliser les cultures ni les animaux.",
+    metaTitle: "Agrivoltaïsme 2026 : définition, loi APER, règles",
+    metaDescription: "Agrivoltaïsme : définition légale (loi APER), seuil de 90 %, zone témoin, taux de couverture de 40 %, contrôles, et entretien des panneaux agrivoltaïques.",
+    content: `
+<p><strong>L'agrivoltaïsme consiste à installer des panneaux photovoltaïques sur une parcelle agricole de sorte qu'ils servent directement la production agricole, qui reste l'activité principale.</strong> En France, ce n'est plus une simple appellation commerciale : depuis la loi du 10 mars 2023 relative à l'accélération de la production d'énergies renouvelables (loi APER) et son décret d'application du 8 avril 2024, une installation ne peut se dire agrivoltaïque que si elle respecte des conditions précises et contrôlées.</p>
+
+<h2>La définition légale de l'agrivoltaïsme</h2>
+<p>L'article 54 de la loi APER, codifié à l'article L.314-36 du code de l'énergie, définit l'installation agrivoltaïque comme une installation photovoltaïque dont les modules sont situés sur une parcelle agricole où ils contribuent durablement à l'installation, au maintien ou au développement d'une production agricole.</p>
+<p>Pour être qualifiée d'agrivoltaïque, l'installation doit apporter directement à la parcelle <strong>au moins un</strong> des quatre services suivants :</p>
+<ul>
+  <li><strong>l'amélioration du potentiel et de l'impact agronomiques</strong> ;</li>
+  <li><strong>l'adaptation au changement climatique</strong> ;</li>
+  <li><strong>la protection contre les aléas</strong> (grêle, gel, coups de chaleur) ;</li>
+  <li><strong>l'amélioration du bien-être animal</strong>.</li>
+</ul>
+<p>Elle doit en outre garantir une production agricole significative et un revenu durable à l'agriculteur actif qui exploite la parcelle. Une centrale au sol posée sur un terrain où l'agriculture devient secondaire ne relève pas de l'agrivoltaïsme.</p>
+
+<h2>Les règles fixées par le décret du 8 avril 2024</h2>
+<p>Le décret n° 2024-318 du 8 avril 2024 traduit ces principes en critères mesurables, aux articles R.314-108 à R.314-120 du code de l'énergie.</p>
+<h3>Une perte de rendement agricole limitée à 10 %</h3>
+<p>La production agricole est jugée significative si le rendement moyen par hectare de la parcelle équipée reste <strong>supérieur à 90 %</strong> de celui d'une zone témoin ou d'un référentiel local (article R.314-114). Le préfet peut, sur demande justifiée, admettre une baisse plus forte, par exemple après un aléa imprévisible.</p>
+<h3>Une zone témoin sans panneaux</h3>
+<p>La zone témoin sert de point de comparaison. Elle doit représenter <strong>au moins 5 % de la surface agrivoltaïque, dans la limite d'un hectare</strong>, être située à proximité, sans panneaux ni ombrage, dans des conditions de sol et de climat équivalentes, et être cultivée de la même façon.</p>
+<h3>Un taux de couverture plafonné à 40 % au-delà de 10 MWc</h3>
+<p>Le taux de couverture correspond au rapport entre la surface maximale projetée au sol des modules et la surface de la parcelle. Pour les installations de <strong>plus de 10 MWc</strong> qui ne relèvent pas d'une technologie éprouvée, il ne peut pas dépasser <strong>40 %</strong> (article R.314-118). Pour les technologies éprouvées, le décret renvoie à un arrêté pour fixer la valeur maximale par type de technologie.</p>
+<h3>Des contrôles réguliers</h3>
+<p>L'installation est contrôlée avant sa mise en service, puis la sixième année, puis à intervalles réguliers : tous les ans dans le cas général, tous les trois ans si le taux de couverture est inférieur à 40 %, tous les cinq ans pour les technologies éprouvées (article R.314-120). L'exploitant transmet aussi <strong>chaque année à l'ADEME</strong> ses données de production énergétique et agricole.</p>
+<p>Un arrêté du 5 juillet 2024 précise le contenu des rapports de contrôle et les garanties financières de démantèlement.</p>
+
+<h2>Où en est l'agrivoltaïsme en France</h2>
+<p>La filière est jeune. L'observatoire de l'agrivoltaïsme lancé par l'ADEME recensait 227 installations en mars 2026 : 191 antérieures à la loi APER, 42 démonstrateurs et seulement 2 relevant du nouveau régime. Les projets se multiplient pourtant, notamment dans le Sud, où l'ombrage des panneaux protège les cultures et les troupeaux des épisodes de chaleur de plus en plus fréquents.</p>
+<p>Cette dynamique pose une question que les textes ne traitent pas : celle de l'exploitation au quotidien, et en particulier de l'entretien des panneaux.</p>
+
+<h2>Pourquoi une centrale agrivoltaïque s'encrasse plus vite</h2>
+<p>Sur une centrale au sol classique, la végétation est entretenue au minimum et rien ou presque ne soulève de poussière. Sur une parcelle agrivoltaïque, l'activité agricole se poursuit sous les panneaux :</p>
+<ul>
+  <li><strong>travail du sol, semis et récoltes</strong>, qui remettent des particules en suspension ;</li>
+  <li><strong>pollens</strong> des cultures et des prairies ;</li>
+  <li><strong>fientes d'oiseaux</strong>, attirés par les grains et les cultures ;</li>
+  <li><strong>présence des animaux</strong> en élevage, qui soulève poussière et terre sèche ;</li>
+  <li>sur l'arc méditerranéen, les <strong>épisodes de sable saharien</strong>, plusieurs fois par an.</li>
+</ul>
+<p>Ces dépôts réduisent directement la production électrique. Les fientes sont les plus pénalisantes : en ombrant une cellule, elles font chuter la production du module, et par ricochet de la chaîne et peuvent provoquer des points chauds. Nous détaillons ces mécanismes dans notre article sur <a href="/blog/panneaux-solaires-rendement-perdu-apres-ete">le rendement perdu après l'été</a> et sur <a href="/blog/sable-saharien-panneaux-solaires-rendement">l'effet du sable saharien</a>.</p>
+
+<h2>Entretenir les panneaux sans pénaliser l'agriculture</h2>
+<p>Le nettoyage d'une centrale agrivoltaïque ne peut pas reprendre tel quel les pratiques d'une centrale au sol. Quatre contraintes changent la façon de travailler.</p>
+<h3>Rien ne doit retomber sur les cultures ni les animaux</h3>
+<p>Détergents, additifs et produits de traitement sont à exclure. Un nettoyage à l'<strong>eau filtrée, sans produit chimique</strong>, laisse ruisseler uniquement la poussière retirée des modules. C'est aussi la méthode qui préserve le verre et les garanties des fabricants.</p>
+<h3>Le calendrier se cale sur l'exploitation</h3>
+<p>Le bon moment n'est pas seulement celui où les panneaux sont sales. On intervient après une récolte, hors des périodes de traitement des cultures, et quand le troupeau est sur une autre parcelle. Le planning se construit avec l'agriculteur et l'exploitant de la centrale.</p>
+<h3>La zone témoin ne doit pas être perturbée</h3>
+<p>Le passage des équipes et du matériel doit éviter la zone témoin, dont les rendements servent de référence lors des contrôles. Une erreur à ce niveau fausse la comparaison qui conditionne la qualification agrivoltaïque.</p>
+<h3>Des structures souvent hautes et espacées</h3>
+<p>Pour laisser passer les engins agricoles ou les animaux, les panneaux sont souvent surélevés, espacés, parfois montés sur trackers. Un repérage permet de choisir entre le robot, qui travaille sur les tables accessibles, et le drone, qui atteint les structures hautes sans nacelle ni engin lourd sur la parcelle.</p>
+
+<h2>À quelle fréquence nettoyer une centrale agrivoltaïque ?</h2>
+<p>Un passage par an constitue une base, idéalement avant la saison de forte production. Sur une parcelle très poussiéreuse (grandes cultures, élevage, proximité d'une route ou d'une carrière) ou exposée au sable saharien, un second passage se justifie souvent. Le plus fiable reste de <strong>mesurer l'encrassement réel</strong> et le gain de production attendu avant de fixer une fréquence. Une thermographie par drone, réalisée dans le même déplacement, repère en plus les modules défectueux et les points chauds.</p>
+
+<h2>Questions fréquentes</h2>
+<h3>Qu'est-ce que l'agrivoltaïsme ?</h3>
+<p>C'est l'installation de panneaux photovoltaïques sur une parcelle agricole de sorte qu'ils rendent un service direct à l'agriculture (protection contre les aléas, adaptation au climat, potentiel agronomique ou bien-être animal), la production agricole restant l'activité principale. La définition légale figure à l'article L.314-36 du code de l'énergie, issu de la loi APER du 10 mars 2023.</p>
+<h3>Quelle est la différence entre une centrale agrivoltaïque et une centrale au sol ?</h3>
+<p>Une centrale au sol produit de l'électricité sur un terrain dont c'est l'usage principal. Une centrale agrivoltaïque doit maintenir une production agricole significative, au moins 90 % du rendement d'une zone témoin, et rendre un service à la parcelle. Elle est contrôlée avant sa mise en service puis régulièrement.</p>
+<h3>Quel est le taux de couverture maximal en agrivoltaïsme ?</h3>
+<p>Pour les installations de plus de 10 MWc qui ne relèvent pas d'une technologie éprouvée, le taux de couverture ne peut pas dépasser 40 % de la parcelle (article R.314-118 du code de l'énergie). Pour les technologies éprouvées, le décret renvoie à un arrêté pour fixer la valeur maximale.</p>
+<h3>Faut-il nettoyer les panneaux d'une centrale agrivoltaïque ?</h3>
+<p>Oui, souvent davantage qu'une centrale au sol : le travail du sol, les récoltes, les pollens, les fientes et les animaux encrassent les modules plus vite. Un à deux passages par an, selon la mesure de l'encrassement, permettent de récupérer la production perdue par encrassement.</p>
+<h3>Le nettoyage des panneaux est-il compatible avec les cultures et l'élevage ?</h3>
+<p>Oui, à condition de travailler à l'eau filtrée, sans détergent ni produit chimique, et de planifier l'intervention avec l'agriculteur : après une récolte, hors périodes de traitement et en l'absence du troupeau, en évitant la zone témoin.</p>
+
+<h2>Notre approche</h2>
+<p>Basés à Montpellier, nous nettoyons les centrales solaires par robot et par drone, sans produit chimique et sans arrêt de production, avec nos propres pilotes certifiés DGAC. Sur une centrale agrivoltaïque, nous planifions l'intervention avec l'exploitant de la centrale et l'exploitant agricole. Découvrez notre offre de <a href="/prestations/nettoyage-solaire">nettoyage de panneaux solaires</a> et de <a href="/prestations/thermographie">thermographie par drone</a>.</p>
+<p><strong>Une centrale agrivoltaïque à entretenir ? <a href="/devis">Demandez un devis</a> ou appelez le 04 67 20 97 09.</strong></p>
+
+<p><em>Sources : loi n° 2023-175 du 10 mars 2023, article 54 ; code de l'énergie, articles L.314-36 et R.314-108 à R.314-120 ; décret n° 2024-318 du 8 avril 2024 (Légifrance) ; arrêté du 5 juillet 2024 relatif au développement de l'agrivoltaïsme ; ADEME, observatoire de l'agrivoltaïsme, comité de pilotage de mars 2026.</em></p>
+`,
+  },
+  {
+    slug: "ombrieres-photovoltaiques-parking-obligation-loi-aper",
+    image: "/images/robot-intervention-structure.jpg",
+    category: "Énergie Solaire",
+    date: "27 Octobre 2026",
+    readTime: "7 min",
+    badge: "bg-amber-50 text-amber-600",
+    title: "Ombrières photovoltaïques sur parking : ce qu'impose la loi APER, les reports possibles et l'entretien",
+    excerpt: "Parkings de plus de 1 500 m², part d'ombrières ramenée à 17,5 % par la loi du 26 novembre 2025, reports possibles jusqu'en 2028 et 2030, aux conditions fixées par le décret du 7 septembre 2026 : le point sur l'obligation, puis sur l'entretien, qui fait la rentabilité d'une ombrière une fois posée.",
+    metaTitle: "Ombrières de parking : obligation loi APER 2026-2030",
+    metaDescription: "Ombrières photovoltaïques sur parking : parkings concernés, 17,5 % d'ombrières, échéances 2026 et 2028, reports 2028 et 2030, entretien.",
+    content: `
+<p><strong>Depuis la loi APER du 10 mars 2023, les parkings extérieurs de plus de 1 500 m² doivent être ombragés sur au moins la moitié de leur surface, dont une partie par des ombrières photovoltaïques.</strong> Le cadre a été assoupli depuis : la loi du 26 novembre 2025 a réduit la part d'ombrières exigée et ouvert des reports d'échéance, dont le décret du 7 septembre 2026 fixe les conditions. Voici ce qui s'applique aujourd'hui, puis ce qui détermine le rendement réel d'une ombrière une fois installée.</p>
+
+<h2>Quels parkings sont concernés ?</h2>
+<p>L'obligation, prévue à l'article 40 de la loi APER, vise les <strong>parcs de stationnement extérieurs de plus de 1 500 m²</strong>, quel que soit leur usage : centres commerciaux, sites tertiaires, plateformes logistiques, établissements publics. Les parkings gérés en concession ou en délégation de service public suivent un calendrier propre, lié au renouvellement du contrat.</p>
+<p>Le décret n° 2024-1023 du 13 novembre 2024 précise le mode de calcul de la superficie et les cas d'exonération : contraintes techniques, de sécurité, architecturales, patrimoniales ou environnementales, impossibilité de respecter l'obligation dans des conditions économiquement acceptables, ou ombrage déjà assuré par des arbres sur au moins la moitié de la surface.</p>
+
+<h2>Ce que la loi du 26 novembre 2025 a changé</h2>
+<p>La loi n° 2025-1129 du 26 novembre 2025, de simplification du droit de l'urbanisme et du logement, a assoupli l'obligation sans la supprimer :</p>
+<ul>
+  <li>le <strong>taux d'ombrage reste fixé à 50 %</strong> de la surface du parking ;</li>
+  <li>la part couverte par des <strong>ombrières photovoltaïques passe à 17,5 % minimum</strong> de la surface, contre la moitié auparavant ;</li>
+  <li>le reste de la surface à ombrager peut l'être par de la <strong>végétation</strong> ;</li>
+  <li>l'obligation peut aussi être remplie par un autre dispositif de production d'énergie renouvelable, s'il produit autant que les ombrières qu'il remplace ;</li>
+  <li>le <strong>plan local d'urbanisme ne peut plus interdire ni limiter</strong> l'installation d'ombrières.</li>
+</ul>
+
+<h2>Les échéances et les reports possibles</h2>
+<p>Pour les parkings existants hors concession, les échéances de la loi APER restent le <strong>1<sup>er</sup> juillet 2026</strong> pour les parkings de 10 000 m² et plus, et le <strong>1<sup>er</sup> juillet 2028</strong> pour ceux de 1 500 à 10 000 m².</p>
+<p>La loi du 26 novembre 2025 permet de les reporter si le propriétaire signe, dans les délais, un contrat d'engagement avec acompte puis un bon de commande portant sur des panneaux qui répondent à des critères stricts de performance et de résilience, fixés par le décret n° 2026-842 du 7 septembre 2026 :</p>
+<ul>
+  <li><strong>parkings de 10 000 m² et plus</strong> : contrat avec acompte signé au plus tard le 30 juin 2026, bon de commande avant le 31 décembre 2026, installation avant le <strong>1<sup>er</sup> janvier 2028</strong> ;</li>
+  <li><strong>parkings de 1 500 à 10 000 m²</strong> : contrat avec acompte au plus tard le 30 juin 2027, bon de commande avant le 31 décembre 2027, installation avant le <strong>1<sup>er</sup> janvier 2030</strong>.</li>
+</ul>
+<p>Les panneaux doivent notamment afficher un rendement supérieur à 22 %, une perte d'efficacité inférieure à 0,4 % par an, une empreinte carbone inférieure à 740 kgCO₂eq/kWc, une garantie produit d'au moins 12 ans et une garantie de performance d'au moins 30 ans, avec des exigences sur le lieu d'assemblage des modules, qui doivent être assemblés dans l'Espace économique européen pour les parkings de moins de 10 000 m². Leur respect doit être attesté par un organisme certificateur accrédité.</p>
+
+<h2>Une ombrière s'encrasse plus vite qu'une centrale au sol</h2>
+<p>Une fois installée, une ombrière vit dans un environnement plus salissant que la plupart des centrales solaires :</p>
+<ul>
+  <li><strong>une faible inclinaison</strong> : plus un module est incliné, mieux la pluie entraîne les dépôts ; les ombrières, souvent proches de l'horizontale pour couvrir les places, les retiennent davantage, surtout en bas de cadre ;</li>
+  <li><strong>les particules de freinage et les résidus d'échappement</strong>, qui forment un film gras que la pluie ne retire pas ;</li>
+  <li><strong>les fientes d'oiseaux</strong>, nombreuses autour des parkings commerciaux, qui créent des points d'ombrage très pénalisants ;</li>
+  <li><strong>les pollens</strong> des arbres plantés sur le parking, d'autant plus nombreux que la loi encourage désormais la végétalisation.</li>
+</ul>
+<p>Avec un prix de rachat de l'électricité solaire en baisse et des heures de prix négatifs de plus en plus nombreuses en milieu de journée, chaque kilowattheure perdu par encrassement pèse davantage sur la rentabilité. Nous l'expliquons dans notre article sur <a href="/blog/prix-negatifs-electricite-seuil-arret-centrale-photovoltaique">les prix négatifs</a>.</p>
+
+<h2>Entretenir des ombrières sans fermer le parking</h2>
+<p>Sur un parking, la vraie contrainte est commerciale : on ne ferme pas un parking de centre commercial pour nettoyer des panneaux. La méthode doit donc s'adapter au site :</p>
+<ul>
+  <li><strong>une intervention par zones</strong>, en ne neutralisant que le périmètre de sécurité en cours de traitement ;</li>
+  <li><strong>des créneaux hors ouverture</strong> sur les sites très fréquentés : tôt le matin, le soir ou le week-end ;</li>
+  <li><strong>pas de nacelle entre les voitures</strong> : le robot travaille sur les panneaux, le drone atteint les structures hautes ou difficiles d'accès ;</li>
+  <li><strong>de l'eau filtrée, sans détergent</strong>, qui préserve le verre et les garanties des fabricants.</li>
+</ul>
+<p>Une thermographie par drone dans le même déplacement permet de repérer les modules défectueux et les points chauds, un point que regardent de plus en plus les assureurs, comme nous l'expliquons à propos du <a href="/blog/apsad-d20-assurance-photovoltaique-ce-qui-change">référentiel APSAD D20</a>.</p>
+
+<h2>À quelle fréquence nettoyer une ombrière ?</h2>
+<p>Un passage par an est la base sur un site standard, idéalement au printemps, après les épisodes de sable saharien et avant la saison de forte production. Sur un parking très fréquenté, en bord de route à fort trafic ou près du littoral, deux passages par an sont souvent plus rentables. La bonne fréquence se décide en mesurant l'encrassement réel et le gain de production attendu.</p>
+
+<h2>Questions fréquentes</h2>
+<h3>Quels parkings doivent installer des ombrières photovoltaïques ?</h3>
+<p>Les parcs de stationnement extérieurs de plus de 1 500 m², quel que soit leur usage. Ils doivent être ombragés sur la moitié de leur surface, dont au moins 17,5 % par des ombrières photovoltaïques depuis la loi du 26 novembre 2025, le reste pouvant être végétalisé. Des exonérations existent pour contraintes techniques, patrimoniales ou environnementales, ou lorsque le coût n'est pas économiquement acceptable.</p>
+<h3>Quelle est la date limite pour installer des ombrières sur un parking ?</h3>
+<p>Le 1<sup>er</sup> juillet 2026 pour les parkings de 10 000 m² et plus, le 1<sup>er</sup> juillet 2028 pour ceux de 1 500 à 10 000 m². La loi du 26 novembre 2025 permet de reporter ces échéances au 1<sup>er</sup> janvier 2028 et au 1<sup>er</sup> janvier 2030 si le propriétaire s'engage dans les délais sur des panneaux répondant aux critères de performance et de résilience fixés par le décret du 7 septembre 2026.</p>
+<h3>La loi impose-t-elle l'entretien des ombrières ?</h3>
+<p>Non. L'obligation porte sur l'installation. L'entretien relève de l'intérêt économique du propriétaire ou de l'exploitant : c'est lui qui détermine la production réelle, donc le retour sur investissement des ombrières.</p>
+<h3>Faut-il fermer le parking pour nettoyer les ombrières ?</h3>
+<p>Non. Le nettoyage se fait par zones, en neutralisant seulement le périmètre de sécurité en cours de traitement, et en dehors des heures d'ouverture sur les sites très fréquentés.</p>
+<h3>Une ombrière se nettoie-t-elle avec la pluie ?</h3>
+<p>Mal. Les ombrières sont souvent peu inclinées, et le dépôt typique d'un parking (fientes, particules de freinage, résidus d'échappement) forme un film gras que la pluie ne retire pas, contrairement à une poussière minérale sèche.</p>
+
+<h2>Notre approche</h2>
+<p>Basés à Montpellier, nous nettoyons les panneaux solaires et les ombrières par robot et par drone, sans détergent, sans arrêt de production et sans fermer les parkings, de Perpignan à Marseille. Découvrez notre offre de <a href="/prestations/nettoyage-solaire">nettoyage de panneaux solaires</a> et de <a href="/prestations/thermographie">thermographie par drone</a>.</p>
+<p><strong>Des ombrières à entretenir ? <a href="/devis">Demandez un devis</a> ou appelez le 04 67 20 97 09.</strong></p>
+
+<p><em>Sources : loi n° 2023-175 du 10 mars 2023, article 40 ; décret n° 2024-1023 du 13 novembre 2024 ; loi n° 2025-1129 du 26 novembre 2025 ; décret n° 2026-842 du 7 septembre 2026 ; photovoltaique.info (HESPUL), obligations de solarisation ; cabinet Seban &amp; Associés, report des échéances de solarisation des parcs de stationnement.</em></p>
+`,
+  },
+  {
     slug: "nettoyage-en-hauteur-drone",
     image: "/images/Bardage-facades.png",
     category: "Facades & Bardages",

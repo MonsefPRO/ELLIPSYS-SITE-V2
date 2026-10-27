@@ -169,6 +169,7 @@ export const VILLES: Record<string, VilleData> = {
     codeDept: "34",
     region: "Occitanie",
     delai: "Sous 72 h",
+    titreSeo: "Nettoyage de panneaux solaires à Béziers, par drone",
     accroche: "Bâti vigneronne, grandes toitures agricoles et proximité du littoral : nettoyage drone et robot.",
     intro: [
       "Béziers combine deux environnements qui usent les bâtiments différemment : un centre urbain ancien, et un arrière-pays viticole aux très grandes surfaces bâties. Les maisons de maître vigneronnes et les caves coopératives du Biterrois présentent des toitures et des façades d'une ampleur qui rend l'échafaudage économiquement absurde, c'est précisément là que le drone change l'équation.",

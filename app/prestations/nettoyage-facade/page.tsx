@@ -7,7 +7,7 @@ import { getLang } from "@/lib/getLang";
 import { LiensUtiles } from "@/components/LiensUtiles";
 
 export const metadata: Metadata = {
-  title: "Nettoyage de façades et bardages par drone",
+  title: "Nettoyage façade et bardage par drone en Occitanie",
   description: "Nettoyage de façades et de bardages par drone : enduits, pierre calcaire, métal, bois, vitrages. Sans nacelle ni fermeture de rue, en Occitanie et en PACA. Devis 24 h.",
   alternates: {
     canonical: "https://ellipsys-solutions.com/prestations/nettoyage-facade",

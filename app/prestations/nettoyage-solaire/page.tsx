@@ -7,8 +7,8 @@ import { getLang } from "@/lib/getLang";
 import { LiensUtiles } from "@/components/LiensUtiles";
 
 export const metadata: Metadata = {
-  title: "Nettoyage de panneaux solaires : robot et drone",
-  description: "Nettoyage de centrales solaires et parcs photovoltaïques par robot et drone. Jusqu'à +30% de rendement récupéré, contrats annuels. Devis gratuit sous 24h.",
+  title: "Nettoyage parc solaire et panneaux : robot et drone",
+  description: "Nettoyage de parcs solaires, centrales au sol, ombrières de parking et centrales agrivoltaïques par robot et drone. Jusqu'à +30 % de rendement. Devis 24 h.",
   alternates: {
     canonical: "https://ellipsys-solutions.com/prestations/nettoyage-solaire",
   },
@@ -53,6 +53,18 @@ export default async function PanneauxPhotovoltaiquesPage() {
       r: "Non. Nos interventions par drone et robot s'intègrent au site sans bloquer la production, en dehors du strict périmètre de sécurité.",
       qEn: "Does production need to stop during cleaning?",
       rEn: "No. Our drone and robot interventions integrate into the site without halting production, outside the strict safety perimeter.",
+    },
+    {
+      q: "Nettoyez-vous les ombrières photovoltaïques de parking ?",
+      r: "Oui. Le robot et le drone traitent les ombrières par zones, sans fermer le parking : seul le périmètre de sécurité en cours de traitement est neutralisé. Le dépôt y est plus gras que sur une centrale au sol (fientes, particules de freinage, résidus d'échappement) et la pluie ne le retire pas. Un passage par an est la base, deux sur les parkings très fréquentés.",
+      qEn: "Do you clean solar carports over car parks?",
+      rEn: "Yes. The robot and the drone treat carports zone by zone, without closing the car park: only the active safety perimeter is cordoned off. Soiling there is greasier than on ground-mounted plants (bird droppings, brake dust, exhaust residue) and rain does not remove it. Once a year is the baseline, twice on busy car parks.",
+    },
+    {
+      q: "Intervenez-vous sur les centrales agrivoltaïques ?",
+      r: "Oui. Sous les panneaux, il y a des cultures ou un élevage : nous travaillons sans détergent ni produit chimique, l'eau de rinçage ne contient que la poussière retirée, et l'intervention se planifie avec l'exploitant agricole (récoltes, présence des animaux). Selon la hauteur des structures et l'espacement des rangées, nous intervenons au robot ou au drone.",
+      qEn: "Do you work on agrivoltaic plants?",
+      rEn: "Yes. Crops or livestock sit under the panels: we work without detergent or chemicals, the rinse water only carries the dust removed, and the job is scheduled with the farmer (harvests, animals on site). Depending on structure height and row spacing, we use the robot or the drone.",
     },
   ];
   const jsonLdFaq = {

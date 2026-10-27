@@ -8,7 +8,7 @@ import LandingPage from "@/components/LandingPage";
  * n'occupe encore sérieusement la requête d'entretien.
  */
 export const metadata: Metadata = {
-  title: "Nettoyage d'ombrières photovoltaïques",
+  title: "Nettoyage d'ombrières photovoltaïques de parking",
   description:
     "Nettoyage d'ombrières photovoltaïques de parking par robot et drone, sans fermer le parking. De Perpignan à Marseille. Devis sous 24 h.",
   alternates: {
@@ -94,7 +94,7 @@ export default function Page() {
         },
         {
           q: "La loi APER nous impose des ombrières, encadre-t-elle aussi leur entretien ?",
-          r: "L'obligation de solarisation porte sur l'installation, pas sur l'entretien. La loi APER impose la couverture partielle des parkings extérieurs de plus de 10 000 m² depuis le 1er juillet 2026, et de 1 500 à 10 000 m² à partir du 1er juillet 2028, avec des pénalités annuelles en cas de non-conformité. L'entretien relève ensuite de votre intérêt économique : c'est lui qui détermine le rendement réel de l'investissement que vous venez de réaliser.",
+          r: "L'obligation porte sur l'installation, pas sur l'entretien. La loi APER impose d'ombrager la moitié des parkings extérieurs de plus de 1 500 m², dont au moins 17,5 % de la surface en ombrières photovoltaïques depuis la loi du 26 novembre 2025. Les échéances sont le 1er juillet 2026 au-delà de 10 000 m² et le 1er juillet 2028 entre 1 500 et 10 000 m², avec des reports possibles, sous conditions, au 1er janvier 2028 et au 1er janvier 2030 (loi du 26 novembre 2025 et décret du 7 septembre 2026). L'entretien relève ensuite de votre intérêt économique : c'est lui qui détermine le rendement réel de l'investissement.",
         },
         {
           q: "Pourquoi l'entretien devient-il plus rentable qu'avant ?",
@@ -130,6 +130,8 @@ export default function Page() {
       }}
       liensConnexes={[
         { href: "/nettoyage-centrale-solaire", label: "Nettoyage de centrale solaire et photovoltaïque" },
+        { href: "/nettoyage-centrale-agrivoltaique", label: "Nettoyage de centrale agrivoltaïque" },
+        { href: "/contrat-nettoyage-centrale-photovoltaique", label: "Contrat d'entretien photovoltaïque" },
       ]}
     />
   );
