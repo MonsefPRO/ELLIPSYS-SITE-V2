@@ -74,7 +74,7 @@ export const blogPosts: BlogPost[] = [
 <h3>La zone témoin ne doit pas être perturbée</h3>
 <p>Le passage des équipes et du matériel doit éviter la zone témoin, dont les rendements servent de référence lors des contrôles. Une erreur à ce niveau fausse la comparaison qui conditionne la qualification agrivoltaïque.</p>
 <h3>Des structures souvent hautes et espacées</h3>
-<p>Pour laisser passer les engins agricoles ou les animaux, les panneaux sont souvent surélevés, espacés, parfois montés sur trackers. Un repérage permet de choisir entre le robot, qui travaille sur les tables accessibles, et le drone, qui atteint les structures hautes sans nacelle ni engin lourd sur la parcelle.</p>
+<p>Pour laisser passer les engins agricoles ou les animaux, les panneaux sont souvent surélevés, espacés, parfois montés sur trackers. Un repérage permet de choisir entre le robot, qui travaille sur les tables accessibles, et le drone, qui atteint les structures hautes sans nacelle ni engin lourd sur la parcelle. Nous détaillons notre méthode sur la page <a href="/nettoyage-centrale-agrivoltaique">nettoyage des panneaux agrivoltaïques</a>.</p>
 
 <h2>À quelle fréquence nettoyer une centrale agrivoltaïque ?</h2>
 <p>Un passage par an constitue une base, idéalement avant la saison de forte production. Sur une parcelle très poussiéreuse (grandes cultures, élevage, proximité d'une route ou d'une carrière) ou exposée au sable saharien, un second passage se justifie souvent. Le plus fiable reste de <strong>mesurer l'encrassement réel</strong> et le gain de production attendu avant de fixer une fréquence. Une thermographie par drone, réalisée dans le même déplacement, repère en plus les modules défectueux et les points chauds.</p>
@@ -92,7 +92,7 @@ export const blogPosts: BlogPost[] = [
 <p>Oui, à condition de travailler à l'eau filtrée, sans détergent ni produit chimique, et de planifier l'intervention avec l'agriculteur : après une récolte, hors périodes de traitement et en l'absence du troupeau, en évitant la zone témoin.</p>
 
 <h2>Notre approche</h2>
-<p>Basés à Montpellier, nous nettoyons les centrales solaires par robot et par drone, sans produit chimique et sans arrêt de production, avec nos propres pilotes certifiés DGAC. Sur une centrale agrivoltaïque, nous planifions l'intervention avec l'exploitant de la centrale et l'exploitant agricole. Découvrez notre offre de <a href="/prestations/nettoyage-solaire">nettoyage de panneaux solaires</a> et de <a href="/prestations/thermographie">thermographie par drone</a>.</p>
+<p>Basés à Montpellier, nous nettoyons les centrales solaires par robot et par drone, sans produit chimique et sans arrêt de production, avec nos propres pilotes certifiés DGAC. Sur une centrale agrivoltaïque, nous planifions l'intervention avec l'exploitant de la centrale et l'exploitant agricole : voir notre page dédiée au <a href="/nettoyage-centrale-agrivoltaique">nettoyage de centrale agrivoltaïque</a>. Découvrez aussi notre offre de <a href="/prestations/nettoyage-solaire">nettoyage de panneaux solaires</a> et de <a href="/prestations/thermographie">thermographie par drone</a>.</p>
 <p><strong>Une centrale agrivoltaïque à entretenir ? <a href="/devis">Demandez un devis</a> ou appelez le 04 67 20 97 09.</strong></p>
 
 <p><em>Sources : loi n° 2023-175 du 10 mars 2023, article 54 ; code de l'énergie, articles L.314-36 et R.314-108 à R.314-120 ; décret n° 2024-318 du 8 avril 2024 (Légifrance) ; arrêté du 5 juillet 2024 relatif au développement de l'agrivoltaïsme ; ADEME, observatoire de l'agrivoltaïsme, comité de pilotage de mars 2026.</em></p>
@@ -153,6 +153,7 @@ export const blogPosts: BlogPost[] = [
   <li><strong>pas de nacelle entre les voitures</strong> : le robot travaille sur les panneaux, le drone atteint les structures hautes ou difficiles d'accès ;</li>
   <li><strong>de l'eau filtrée, sans détergent</strong>, qui préserve le verre et les garanties des fabricants.</li>
 </ul>
+<p>Le détail de notre méthode est sur la page <a href="/nettoyage-ombrieres-photovoltaiques">nettoyage d'ombrières photovoltaïques</a>.</p>
 <p>Une thermographie par drone dans le même déplacement permet de repérer les modules défectueux et les points chauds, un point que regardent de plus en plus les assureurs, comme nous l'expliquons à propos du <a href="/blog/apsad-d20-assurance-photovoltaique-ce-qui-change">référentiel APSAD D20</a>.</p>
 
 <h2>À quelle fréquence nettoyer une ombrière ?</h2>
@@ -171,7 +172,7 @@ export const blogPosts: BlogPost[] = [
 <p>Mal. Les ombrières sont souvent peu inclinées, et le dépôt typique d'un parking (fientes, particules de freinage, résidus d'échappement) forme un film gras que la pluie ne retire pas, contrairement à une poussière minérale sèche.</p>
 
 <h2>Notre approche</h2>
-<p>Basés à Montpellier, nous nettoyons les panneaux solaires et les ombrières par robot et par drone, sans détergent, sans arrêt de production et sans fermer les parkings, de Perpignan à Marseille. Découvrez notre offre de <a href="/prestations/nettoyage-solaire">nettoyage de panneaux solaires</a> et de <a href="/prestations/thermographie">thermographie par drone</a>.</p>
+<p>Basés à Montpellier, nous nettoyons les panneaux solaires et les ombrières par robot et par drone, sans détergent, sans arrêt de production et sans fermer les parkings, de Perpignan à Marseille : voir notre page dédiée au <a href="/nettoyage-ombrieres-photovoltaiques">nettoyage d'ombrières photovoltaïques de parking</a>. Découvrez aussi notre offre de <a href="/prestations/nettoyage-solaire">nettoyage de panneaux solaires</a> et de <a href="/prestations/thermographie">thermographie par drone</a>.</p>
 <p><strong>Des ombrières à entretenir ? <a href="/devis">Demandez un devis</a> ou appelez le 04 67 20 97 09.</strong></p>
 
 <p><em>Sources : loi n° 2023-175 du 10 mars 2023, article 40 ; décret n° 2024-1023 du 13 novembre 2024 ; loi n° 2025-1129 du 26 novembre 2025 ; décret n° 2026-842 du 7 septembre 2026 ; photovoltaique.info (HESPUL), obligations de solarisation ; cabinet Seban &amp; Associés, report des échéances de solarisation des parcs de stationnement.</em></p>
