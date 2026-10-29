@@ -1,3 +1,4 @@
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import Link from "next/link";
 import Image from "next/image";
 import { CheckCircle2, ShieldCheck, Clock, MapPin, Phone, HelpCircle } from "lucide-react";
@@ -104,6 +105,7 @@ export default function LandingPage(p: LandingPageProps) {
   return (
     <main className="flex flex-col min-h-screen bg-slate-50">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <BreadcrumbJsonLd items={[{ name: p.h1Texte, path: p.url.replace("https://ellipsys-solutions.com", "") }]} />
 
       {/* ─── HERO : titre + formulaire visible sans défilement ─────────── */}
       <section className="relative pt-24 pb-14 lg:pt-28 lg:pb-20 overflow-hidden">

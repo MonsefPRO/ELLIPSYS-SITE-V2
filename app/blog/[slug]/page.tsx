@@ -1,3 +1,4 @@
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
@@ -81,7 +82,12 @@ export default async function BlogPostPage({ params }: Props) {
   const post = getBlogPost(slug);
   if (!post) notFound();
 
-  const related = blogPosts.filter((p) => p.slug !== slug).slice(0, 3);
+  // Articles liés : même thème d'abord, puis les plus récents.
+  const autres = blogPosts.filter((p) => p.slug !== slug);
+  const related = [
+    ...autres.filter((p) => p.category === post.category),
+    ...autres.filter((p) => p.category !== post.category),
+  ].slice(0, 3);
 
   const datePublished = frDateToIso(post.date);
   const jsonLdArticle = {
@@ -113,6 +119,7 @@ export default async function BlogPostPage({ params }: Props) {
 
   return (
     <main className="flex flex-col min-h-screen pt-24 bg-slate-50">
+      <BreadcrumbJsonLd items={[{ name: "Blog", path: "/blog" }, { name: post.title, path: `/blog/${post.slug}` }]} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdArticle) }}
