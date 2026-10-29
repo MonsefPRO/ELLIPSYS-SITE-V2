@@ -120,6 +120,18 @@ export default function Page() {
           q: "Qui commande le nettoyage : l'agriculteur ou l'exploitant de la centrale ?",
           r: "Cela dépend du contrat qui les lie. Le plus souvent, c'est l'exploitant de la centrale qui en a la charge, en coordination avec l'exploitant agricole. Nous travaillons avec les deux pour planifier l'intervention.",
         },
+        {
+          q: "Intervenez-vous sur les parcs agrivoltaïques ovins et bovins ?",
+          r: "Oui. Nous intervenons quand le troupeau est sur une autre parcelle, ou sur des zones temporairement fermées en accord avec l'éleveur. Sur les structures basses des parcs ovins, le robot travaille généralement sur les tables ; sur les structures plus hautes des parcs bovins, le drone prend souvent le relais.",
+        },
+        {
+          q: "Et sur une vigne ou un verger sous panneaux ?",
+          r: "Nous évitons les périodes de traitement, les vendanges et la récolte, et nous coordonnons avec l'exploitant la position des panneaux lorsqu'ils sont montés sur persiennes ou trackers. En hauteur et entre les rangs, le drone évite de faire entrer un engin lourd dans la parcelle.",
+        },
+        {
+          q: "Nettoyez-vous les serres photovoltaïques ?",
+          r: "Oui, après un repérage qui détermine la méthode, drone ou robot, selon la pente, la structure et l'accès. Personne ne marche sur la couverture, et l'eau de nettoyage, sans produit, rejoint les gouttières : nous intervenons ouvrants fermés pour qu'elle ne touche pas les cultures.",
+        },
       ]}
       zonesTitre="Nous intervenons notamment dans ces départements"
       communes={[
@@ -148,6 +160,8 @@ export default function Page() {
         { href: "/nettoyage-panneaux-solaires-hangar-agricole", label: "Panneaux sur hangar agricole" },
         { href: "/contrat-nettoyage-centrale-photovoltaique", label: "Contrat de nettoyage de centrale" },
         { href: "/nettoyage-ombrieres-photovoltaiques", label: "Nettoyage d'ombrières photovoltaïques" },
+        { href: "/blog/agrivoltaisme-definition-loi-aper-entretien", label: "Guide : agrivoltaïsme et loi APER" },
+        { href: "/blog/agrivoltaisme-ovin-bovin-vigne-serres-entretien-panneaux", label: "Ovin, bovin, vigne, serres : l'entretien des panneaux" },
       ]}
     />
   );

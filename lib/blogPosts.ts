@@ -14,6 +14,230 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "nettoyer-panneaux-solaires-karcher-eau-osmosee-methode",
+    image: "/images/robot-brosse-action.jpg",
+    category: "Énergie Solaire",
+    date: "29 Octobre 2026",
+    readTime: "7 min",
+    badge: "bg-amber-50 text-amber-600",
+    title: "Nettoyer des panneaux solaires : Kärcher, eau osmosée, savon… ce qui marche et ce qui abîme",
+    excerpt: "Haute pression, eau du robinet, liquide vaisselle, brosse de voiture : les réflexes les plus courants sont souvent ceux qui abîment les panneaux ou laissent des traces. Ce qui fonctionne vraiment, à quel moment nettoyer, les règles de sécurité, et quand faire appel à un professionnel.",
+    metaTitle: "Nettoyer ses panneaux solaires : Kärcher, eau, méthode",
+    metaDescription: "Peut-on nettoyer des panneaux solaires au Kärcher ? Eau osmosée, savon, brosse, bon moment, sécurité : ce qui marche, ce qui abîme, quand appeler un pro.",
+    content: `
+<p><strong>Des panneaux solaires se nettoient à l'eau douce ou déminéralisée, avec une brosse souple, à basse pression et panneaux froids. Le nettoyeur haute pression utilisé de près, les détergents et les brosses dures sont à éviter : ils peuvent abîmer les joints et le traitement du verre, et compromettre la garantie du fabricant.</strong> Voici le détail, méthode par méthode, puis les cas où il vaut mieux confier le travail à un professionnel.</p>
+
+<h2>Faut-il vraiment nettoyer ses panneaux solaires ?</h2>
+<p>La pluie rince une partie de la poussière, mais pas tout. Les fientes d'oiseaux, les pollens collants, le sable saharien mêlé à la pluie ou le film gras des zones de circulation résistent au simple ruissellement, surtout sur des panneaux peu inclinés où l'eau stagne en bas de cadre. Or un dépôt localisé peut ombrer une cellule, faire chuter la production du module, pénaliser la chaîne et provoquer un point chaud. Nous détaillons ces mécanismes dans notre article sur <a href="/blog/panneaux-solaires-rendement-perdu-apres-ete">le rendement perdu après l'été</a>.</p>
+
+<h2>Le Kärcher (nettoyeur haute pression) : la fausse bonne idée</h2>
+<p>C'est la recherche la plus fréquente, et la réponse est la même que pour une toiture : <strong>la haute pression utilisée de près n'est pas faite pour un panneau photovoltaïque</strong>. Un jet concentré peut :</p>
+<ul>
+  <li>forcer les <strong>joints</strong> entre le verre et le cadre et faire pénétrer de l'eau dans le module ;</li>
+  <li>user le <strong>traitement antireflet</strong> du verre, qui contribue au rendement ;</li>
+  <li>solliciter mécaniquement le verre et favoriser des <strong>microfissures</strong> dans les cellules, invisibles à l'œil nu.</li>
+</ul>
+<p>La plupart des notices de fabricants encadrent strictement, voire excluent, le nettoyage à haute pression. En cas de dommage, la garantie peut être refusée. Si vous utilisez un nettoyeur, c'est en position basse pression, jet large, à bonne distance, uniquement pour rincer. Nous avons déjà expliqué pourquoi la haute pression est aussi une erreur coûteuse <a href="/blog/demoussage-toiture-karcher-erreur">sur une toiture</a>.</p>
+
+<h2>Quelle eau utiliser : robinet, pluie, osmosée ?</h2>
+<ul>
+  <li><strong>L'eau du robinet</strong> convient pour un rinçage occasionnel, mais si elle est calcaire, elle laisse en séchant des traces blanches qui finissent par retenir la poussière.</li>
+  <li><strong>L'eau de pluie récupérée</strong>, propre et filtrée, est peu minéralisée et fonctionne bien.</li>
+  <li><strong>L'eau déminéralisée ou osmosée</strong> est la référence des professionnels : elle ne laisse pas de traces en séchant, ce qui dispense d'essuyer les panneaux.</li>
+  <li><strong>L'eau chaude</strong> n'apporte rien de décisif et l'écart de température avec un verre froid ou très chaud est à éviter.</li>
+</ul>
+
+<h2>Savon, vinaigre, produits : faut-il en mettre ?</h2>
+<p>En règle générale, non. Le liquide vaisselle ou l'eau savonneuse mal rincés laissent un film qui accroche la poussière plus vite qu'avant. Les produits abrasifs, les solvants et les nettoyants ménagers agressifs peuvent attaquer les joints et le traitement du verre. Si un dépôt résiste, comme une fiente séchée, il vaut mieux le détremper à l'eau puis le reprendre à la brosse souple que de frotter fort ou d'ajouter un produit. Certains fabricants tolèrent un détergent doux : vérifiez la notice de vos panneaux avant toute chose.</p>
+
+<h2>Quel matériel utiliser ?</h2>
+<ul>
+  <li><strong>Une brosse souple</strong> à poils doux, montée sur une perche télescopique alimentée en eau, utilisée depuis le sol ou depuis un point sécurisé. Jamais d'éponge abrasive ni de raclette métallique.</li>
+  <li><strong>Ne jamais marcher ni s'appuyer sur les panneaux</strong> : le poids d'une personne peut fissurer des cellules.</li>
+</ul>
+
+<h2>À quel moment nettoyer ?</h2>
+<ul>
+  <li><strong>Panneaux froids</strong> : tôt le matin, en fin de journée ou par temps couvert. En plein soleil, l'eau sèche trop vite et laisse des traces, et l'eau froide sur un verre brûlant crée un écart de température inutile.</li>
+</ul>
+
+<h2>Sécurité : le vrai risque, c'est la toiture</h2>
+<p>Sur une maison, le principal danger n'est pas le panneau mais la chute. Monter sur un toit mouillé, avec une perche et un tuyau, sans harnais ni point d'ancrage, est la situation typique des accidents domestiques graves. S'ajoute le risque électrique : un panneau exposé à la lumière reste sous tension, même onduleur coupé. On ne touche jamais un câble, un connecteur ou un module endommagé.</p>
+<p>Si les panneaux ne sont pas accessibles depuis le sol, le plus sûr est de faire appel à un professionnel équipé pour le travail en hauteur, ou intervenant par drone, sans monter sur le toit.</p>
+
+<h2>Grandes surfaces : robot et drone</h2>
+<p>Au-delà de quelques panneaux, la perche ne suffit plus. Sur une centrale au sol, une toiture industrielle, un hangar agricole ou un parking, les professionnels utilisent :</p>
+<ul>
+  <li><strong>le robot</strong>, qui roule sur les rangées de modules avec une brosse rotative souple, à l'eau filtrée et sans détergent ; le nôtre traite jusqu'à 1 200 m² par heure ;</li>
+  <li><strong>le drone</strong>, qui atteint les toitures et les structures hautes sans échafaudage ni nacelle.</li>
+</ul>
+<p>Deux cas demandent une méthode particulière : les <a href="/nettoyage-ombrieres-photovoltaiques">ombrières photovoltaïques de parking</a>, qu'on nettoie par zones sans fermer le parking, et les <a href="/nettoyage-centrale-agrivoltaique">centrales agrivoltaïques</a>, où rien ne doit retomber sur les cultures ni les animaux.</p>
+
+<h2>À quelle fréquence nettoyer ?</h2>
+<p>Pour une installation résidentielle bien inclinée, un nettoyage par an ou tous les deux ans suffit souvent, sauf dépôt visible comme des fientes. Pour une centrale, une ombrière ou une toiture industrielle sur l'arc méditerranéen, un passage par an est la base, et un second se justifie souvent sur les sites très exposés, idéalement au printemps, après les épisodes de <a href="/blog/sable-saharien-panneaux-solaires-rendement">sable saharien</a> et avant la saison de forte production. Le plus fiable reste de comparer la production réelle à celle attendue.</p>
+
+<h2>Combien coûte un nettoyage professionnel ?</h2>
+<p>Le prix dépend surtout de la surface, de l'accès (toit en pente, hauteur, structure surélevée), du niveau d'encrassement et de la distance. Plus la surface est grande, plus le prix au mètre carré baisse, car les coûts fixes de déplacement et d'installation se répartissent. Nous expliquons pourquoi nous préférons un devis sur photos à un prix d'appel sur notre page <a href="/tarifs">tarifs</a>.</p>
+
+<h2>Questions fréquentes</h2>
+<h3>Peut-on nettoyer des panneaux solaires au Kärcher ?</h3>
+<p>Pas à haute pression de près. Le jet peut forcer les joints, user le traitement antireflet et favoriser des microfissures, et la plupart des fabricants l'encadrent ou l'excluent. Au mieux, un rinçage en basse pression, jet large et à distance.</p>
+<h3>Quelle eau utiliser pour nettoyer des panneaux solaires ?</h3>
+<p>L'eau déminéralisée ou osmosée est idéale car elle ne laisse aucune trace en séchant. L'eau de pluie propre convient aussi. L'eau du robinet calcaire laisse des traces blanches si elle sèche sur le verre.</p>
+<h3>Peut-on nettoyer des panneaux solaires avec du savon ?</h3>
+<p>C'est déconseillé : mal rincé, le savon laisse un film qui retient la poussière. Certains fabricants tolèrent un détergent doux, mais l'eau seule et une brosse souple suffisent dans la grande majorité des cas.</p>
+<h3>La pluie suffit-elle à nettoyer les panneaux solaires ?</h3>
+<p>Elle retire une partie de la poussière sèche, pas les fientes, les pollens collants ni les films gras. Sur des panneaux peu inclinés, elle laisse même souvent un dépôt en bas de cadre.</p>
+<h3>À quel moment de la journée nettoyer des panneaux solaires ?</h3>
+<p>Tôt le matin, en fin de journée ou par temps couvert, quand les panneaux sont froids. En plein soleil, l'eau sèche trop vite et laisse des traces.</p>
+
+<h2>Notre approche</h2>
+<p>Basés à Montpellier, nous nettoyons les panneaux solaires par robot et par drone, à l'eau filtrée, sans détergent et sans arrêt de production : centrales au sol, toitures industrielles et agricoles, ombrières de parking et centrales agrivoltaïques. Découvrez notre offre de <a href="/prestations/nettoyage-solaire">nettoyage de panneaux solaires</a>.</p>
+<p><strong>Des panneaux à nettoyer ? <a href="/devis">Demandez un devis</a> ou appelez le 04 67 20 97 09.</strong></p>
+`,
+  },
+  {
+    slug: "agrivoltaisme-ovin-bovin-vigne-serres-entretien-panneaux",
+    image: "/images/robot-centrale-sol.jpg",
+    category: "Énergie Solaire",
+    date: "29 Octobre 2026",
+    readTime: "7 min",
+    badge: "bg-amber-50 text-amber-600",
+    title: "Agrivoltaïsme ovin, bovin, vigne, serres : comment entretenir les panneaux selon la production",
+    excerpt: "Moutons sous les panneaux, bovins, vignes sous persiennes, maraîchage, serres photovoltaïques : chaque production agricole encrasse les modules à sa façon et impose ses propres périodes d'intervention. Le point, production par production, pour nettoyer sans gêner l'exploitation.",
+    metaTitle: "Agrivoltaïsme ovin, bovin, vigne : entretien des panneaux",
+    metaDescription: "Agrivoltaïsme ovin, bovin, vigne, maraîchage, serres : comment chaque production encrasse les panneaux et quand les nettoyer sans gêner l'exploitation.",
+    content: `
+<p><strong>En agrivoltaïsme, il n'y a pas une façon d'entretenir les panneaux, mais autant que de productions agricoles.</strong> Un parc ovin, une vigne sous persiennes et une serre photovoltaïque ne s'encrassent pas de la même manière et n'acceptent pas une intervention aux mêmes périodes. Deux règles restent communes : rien ne doit retomber sur les cultures ni sur les animaux, et le calendrier se décide avec l'agriculteur. Pour la définition légale et les règles du décret de 2024, voir notre <a href="/blog/agrivoltaisme-definition-loi-aper-entretien">guide de l'agrivoltaïsme</a>.</p>
+
+<h2>Agrivoltaïsme ovin : les moutons sous les panneaux</h2>
+<p>Le pâturage ovin est l'une des formes les plus répandues d'agrivoltaïsme en élevage : les moutons entretiennent la végétation sous les modules et profitent de l'ombre lors des fortes chaleurs. Côté panneaux :</p>
+<ul>
+  <li><strong>l'encrassement</strong> vient surtout de la poussière soulevée par le troupeau sur sol sec, des pollens de la prairie et des fientes d'oiseaux ;</li>
+  <li><strong>les structures</strong> sont souvent assez basses, ce qui permet généralement au robot de travailler directement sur les tables ;</li>
+  <li><strong>le bon moment</strong> : quand le troupeau a changé de parcelle, ou sur des zones temporairement fermées en accord avec l'éleveur. On ne travaille pas au milieu des animaux.</li>
+</ul>
+
+<h2>Agrivoltaïsme bovin : des structures plus hautes</h2>
+<p>Avec des bovins, les structures sont plus hautes et plus robustes pour laisser circuler les animaux et résister aux frottements. La poussière et les fientes d'oiseaux restent les principaux dépôts. La hauteur des tables oriente souvent vers le drone, ou vers le robot quand la structure et l'accès le permettent. Comme pour les ovins, l'intervention se fait en l'absence du troupeau, sur la parcelle concernée.</p>
+
+<h2>Vigne et arboriculture : nettoyer entre les traitements</h2>
+<p>Au-dessus des vignes et des vergers, les panneaux sont souvent montés en hauteur, parfois sur des persiennes ou des trackers pilotés pour protéger la culture du gel, de la grêle ou des coups de chaleur. Deux points comptent :</p>
+<ul>
+  <li><strong>les périodes de traitement</strong> : les pulvérisations peuvent déposer un voile sur les modules les plus proches, et l'on évite d'intervenir pendant ces périodes comme pendant les vendanges ou la récolte ;</li>
+  <li><strong>la position des panneaux</strong> : sur des persiennes ou des trackers, on coordonne avec l'exploitant la position des modules pendant le nettoyage.</li>
+</ul>
+<p>En hauteur et entre les rangs, le drone évite de faire entrer un engin lourd dans la parcelle.</p>
+
+<h2>Grandes cultures et maraîchage : la poussière du travail du sol</h2>
+<p>Labour, semis, récolte : chaque passage d'engin remet de la terre fine en suspension, qui se dépose sur les modules. Les grains attirent aussi les oiseaux. L'idéal est d'intervenir <strong>après la récolte</strong>, une fois la poussière retombée, et avant la saison de forte production. Le passage des équipes évite la <strong>zone témoin</strong>, dont les rendements servent de référence lors des contrôles.</p>
+
+<h2>Serres photovoltaïques : nettoyer sans marcher sur la toiture</h2>
+<p>Les serres photovoltaïques, fréquentes dans le maraîchage méditerranéen, portent les panneaux sur une partie de leur toiture. Elles relèvent en principe d'un régime distinct de l'agrivoltaïsme au sens de la loi APER : le décret du 8 avril 2024 les traite à part et exige qu'elles soient nécessaires à l'activité agricole. La question de l'entretien se pose pourtant de la même façon :</p>
+<ul>
+  <li>on ne marche ni sur les panneaux ni sur les parties vitrées ou plastiques de la couverture ;</li>
+  <li>la méthode, drone ou robot, se choisit après un repérage, selon la pente, la structure et l'accès ;</li>
+  <li>l'eau de nettoyage, sans produit, rejoint les gouttières comme la pluie, et l'on intervient ouvrants fermés pour qu'elle ne touche pas les cultures.</li>
+</ul>
+
+<h2>Récapitulatif par production</h2>
+<ul>
+  <li><strong>Ovin, bovin</strong> : poussière du troupeau, pollens, fientes. Intervenir quand le troupeau est sur une autre parcelle.</li>
+  <li><strong>Vigne, arboriculture</strong> : poussière, voile de traitement, fientes. Éviter les traitements, les vendanges et la récolte.</li>
+  <li><strong>Grandes cultures, maraîchage</strong> : terre fine du travail du sol, fientes. Intervenir après la récolte.</li>
+  <li><strong>Serres</strong> : poussière, sable saharien, fientes. Intervenir après repérage, sans marcher sur la couverture.</li>
+</ul>
+<p>Dans tous les cas : eau filtrée, sans détergent ni produit chimique, et un repérage préalable, souvent par drone, pour choisir la méthode.</p>
+
+<h2>Questions fréquentes</h2>
+<h3>Une serre photovoltaïque est-elle de l'agrivoltaïsme ?</h3>
+<p>En principe non : le décret du 8 avril 2024 traite à part les serres, hangars et ombrières agricoles, qui doivent être nécessaires à l'activité agricole, sans relever des critères de l'agrivoltaïsme (services rendus à la parcelle, seuil de 90 %, zone témoin).</p>
+<h3>Peut-on nettoyer les panneaux en présence des moutons ?</h3>
+<p>Ce n'est pas recommandé. On intervient quand le troupeau est sur une autre parcelle, ou sur des zones temporairement fermées en accord avec l'éleveur, pour la sécurité des animaux comme des équipes.</p>
+<h3>L'eau de nettoyage est-elle un risque pour les cultures ou les animaux ?</h3>
+<p>Non, si l'on travaille à l'eau filtrée, sans détergent ni produit chimique : seule la poussière retirée des modules ruisselle au sol.</p>
+<h3>Comment nettoyer les panneaux d'une serre photovoltaïque ?</h3>
+<p>Sans jamais marcher sur la couverture. Après un repérage, on choisit le drone ou le robot selon la pente, la structure et l'accès, à l'eau filtrée, sans produit et ouvrants fermés.</p>
+<h3>Quand nettoyer une centrale agrivoltaïque sur vigne ?</h3>
+<p>En dehors des périodes de traitement, des vendanges et de la récolte, idéalement avant la saison de forte production, en coordonnant avec l'exploitant la position des panneaux s'ils sont mobiles.</p>
+<h3>À quelle fréquence nettoyer des panneaux agrivoltaïques ?</h3>
+<p>Un passage par an est une base ; un second se justifie souvent sur les parcelles très poussiéreuses ou exposées au sable saharien. La bonne fréquence se décide en mesurant l'encrassement réel.</p>
+
+<h2>Notre approche</h2>
+<p>Basés à Montpellier, nous nettoyons les panneaux par robot et par drone, sans produit chimique et sans arrêt de production. En Occitanie et en Provence, où cohabitent vigne, élevage ovin et maraîchage sous serre, nous planifions chaque intervention avec l'exploitant de la centrale et l'exploitant agricole : voir notre page sur le <a href="/nettoyage-centrale-agrivoltaique">nettoyage des panneaux agrivoltaïques</a>, et notre offre de <a href="/prestations/nettoyage-solaire">nettoyage de panneaux solaires</a>.</p>
+<p><strong>Une centrale agrivoltaïque ou des serres photovoltaïques à entretenir ? <a href="/devis">Demandez un devis</a> ou appelez le 04 67 20 97 09.</strong></p>
+`,
+  },
+  {
+    slug: "ombriere-photovoltaique-entretien-nettoyage-duree-de-vie",
+    image: "/images/robot-vue-aerienne.webp",
+    category: "Énergie Solaire",
+    date: "29 Octobre 2026",
+    readTime: "6 min",
+    badge: "bg-amber-50 text-amber-600",
+    title: "Ombrière photovoltaïque : entretien, nettoyage et durée de vie (parking, agricole, particulier)",
+    excerpt: "Une ombrière photovoltaïque se pose pour trente ans, mais son rendement dépend de l'entretien. Ce qu'il faut surveiller (modules, structure, évacuation de l'eau, électricité), comment et quand la nettoyer, et ce qui change entre un parking, une ombrière agricole et un carport de particulier.",
+    metaTitle: "Ombrière photovoltaïque : entretien et nettoyage",
+    metaDescription: "Ombrière photovoltaïque de parking, agricole ou de particulier : quoi entretenir, comment et quand la nettoyer, durée de vie et pièges à éviter.",
+    content: `
+<p><strong>Une ombrière photovoltaïque demande peu d'entretien, mais elle en demande : nettoyer les modules, vérifier la structure et l'évacuation de l'eau, et contrôler la partie électrique.</strong> C'est ce suivi qui fait la différence entre une ombrière qui produit ce qu'annonçait l'étude et une ombrière qui perd, année après année, une part de sa production. Pour l'obligation d'équiper les parkings, voir notre <a href="/blog/ombrieres-photovoltaiques-parking-obligation-loi-aper">guide de la loi APER sur les ombrières</a>.</p>
+
+<h2>Quelle est la durée de vie d'une ombrière photovoltaïque ?</h2>
+<p>Les modules sont aujourd'hui couramment garantis 25 à 30 ans en performance, la garantie produit étant plus courte, souvent de 12 à 25 ans. Leur rendement baisse d'environ 1 à 2 % la première année, puis de l'ordre de 0,4 à 0,5 % par an. La structure, en acier galvanisé, en aluminium ou en bois, est conçue pour durer aussi longtemps si elle est surveillée. L'onduleur est généralement remplacé au moins une fois sur cette durée. Ce qui fait perdre de la production ou abîme une ombrière avant l'heure, ce sont l'encrassement non traité, les infiltrations et les défauts électriques non détectés.</p>
+
+<h2>Ce qu'il faut entretenir</h2>
+<h3>Les modules</h3>
+<p>C'est le poste qui pèse le plus sur la production. Une ombrière est souvent peu inclinée pour couvrir les places, et la pluie y entraîne mal les dépôts. Sur un parking, fientes d'oiseaux, particules de freinage et résidus d'échappement forment un film gras qui résiste au ruissellement.</p>
+<h3>La structure</h3>
+<p>Un contrôle visuel régulier repère la corrosion, les fixations desserrées et les chocs de véhicules sur les poteaux, fréquents sur les parkings.</p>
+<h3>L'évacuation de l'eau</h3>
+<p>Beaucoup d'ombrières collectent l'eau de pluie dans des chéneaux ou des gouttières. Feuilles, pollens et dépôts les bouchent, et l'eau déborde alors sur les places ou s'infiltre dans la structure.</p>
+<h3>La partie électrique</h3>
+<p>Onduleurs, câbles, connecteurs et protections se vérifient selon les recommandations du fabricant et de l'installateur. Une thermographie par drone repère en une fois les modules défectueux et les points chauds, un point que regardent de plus en plus les assureurs, comme nous l'expliquons à propos du <a href="/blog/apsad-d20-assurance-photovoltaique-ce-qui-change">référentiel APSAD D20</a>.</p>
+
+<h2>Comment nettoyer une ombrière</h2>
+<ul>
+  <li><strong>À l'eau filtrée, sans détergent</strong>, à basse pression : la haute pression de près peut forcer les joints et user le traitement du verre.</li>
+  <li><strong>Sans marcher sur les modules</strong> : le poids d'une personne peut fissurer des cellules.</li>
+  <li><strong>Sans nacelle entre les voitures</strong> sur un parking : le robot roule sur les panneaux, le drone atteint les structures hautes.</li>
+  <li><strong>Par zones</strong>, en ne neutralisant que le périmètre en cours de traitement, et hors des heures d'ouverture sur les sites très fréquentés.</li>
+</ul>
+<p>Le détail de notre méthode est sur la page <a href="/nettoyage-ombrieres-photovoltaiques">nettoyage d'ombrières photovoltaïques</a>.</p>
+
+<h2>Parking, agricole, particulier : ce qui change</h2>
+<h3>Ombrière de parking</h3>
+<p>Le dépôt est gras, le site ne ferme pas, et l'enjeu est financier : sur un grand parc, quelques points de production perdus pèsent vite sur les revenus. Un passage par an est la base, deux sur les parkings très fréquentés, planifiés hors ouverture.</p>
+<h3>Ombrière agricole</h3>
+<p>Au-dessus d'une aire de stockage, d'un parc à matériel ou d'animaux, la poussière de l'exploitation et les fientes d'oiseaux dominent. Comme pour une centrale agrivoltaïque, aucun produit ne doit retomber sur les animaux ou les récoltes, et l'intervention se cale sur le calendrier de l'exploitation : voir notre page sur le <a href="/nettoyage-centrale-agrivoltaique">nettoyage des panneaux agrivoltaïques</a>.</p>
+<h3>Ombrière ou carport de particulier</h3>
+<p>Sur un carport d'une ou deux places, les panneaux sont souvent accessibles depuis le sol. Une perche télescopique avec brosse souple et de l'eau peu calcaire suffisent, panneaux froids, sans haute pression ni produit. Nous détaillons les bons gestes dans notre article <a href="/blog/nettoyer-panneaux-solaires-karcher-eau-osmosee-methode">nettoyer des panneaux solaires</a>.</p>
+
+<h2>Le calendrier d'entretien type</h2>
+<ul>
+  <li><strong>Au printemps</strong> : nettoyage des modules après les épisodes de sable saharien, avant la saison de forte production.</li>
+  <li><strong>En été</strong> : contrôle de la production et thermographie, quand l'ensoleillement fait ressortir les défauts.</li>
+  <li><strong>À l'automne</strong> : nettoyage des chéneaux après la chute des feuilles, second nettoyage des modules sur les sites très exposés.</li>
+  <li><strong>Chaque année</strong> : contrôle visuel de la structure et des fixations.</li>
+</ul>
+
+<h2>Questions fréquentes</h2>
+<h3>Faut-il nettoyer une ombrière photovoltaïque ?</h3>
+<p>Oui. Peu inclinée et exposée aux fientes, aux pollens et, sur un parking, aux résidus de freinage et d'échappement, une ombrière se nettoie mal avec la pluie. Un passage par an est la base, deux sur les sites très exposés.</p>
+<h3>Quelle est la durée de vie d'une ombrière photovoltaïque ?</h3>
+<p>Les modules sont couramment garantis 25 à 30 ans en performance (la garantie produit est plus courte), et la structure est conçue pour la même durée si elle est surveillée. L'onduleur est généralement remplacé au moins une fois.</p>
+<h3>Qui entretient une ombrière installée par un tiers-investisseur ?</h3>
+<p>Cela dépend du contrat. Lorsque l'ombrière est financée et exploitée par un tiers, c'est souvent l'exploitant qui assure la maintenance, mais le partage des rôles est fixé par le contrat. Il faut le vérifier avant de commander un nettoyage.</p>
+<h3>Faut-il fermer le parking pour nettoyer les ombrières ?</h3>
+<p>Non. Le nettoyage se fait par zones, en neutralisant seulement le périmètre en cours de traitement, et en dehors des heures d'ouverture sur les sites très fréquentés.</p>
+<h3>Comment nettoyer un carport solaire chez soi ?</h3>
+<p>Depuis le sol, avec une perche et une brosse souple, à l'eau peu calcaire, tôt le matin ou en fin de journée. Pas de haute pression, pas de produit, et on ne monte jamais sur les panneaux.</p>
+
+<h2>Notre approche</h2>
+<p>Basés à Montpellier, nous nettoyons les ombrières photovoltaïques par robot et par drone, sans détergent, sans arrêt de production et sans fermer les parkings, de Perpignan à Marseille. Voir notre page dédiée au <a href="/nettoyage-ombrieres-photovoltaiques">nettoyage d'ombrières photovoltaïques</a>, notre offre de <a href="/prestations/nettoyage-solaire">nettoyage de panneaux solaires</a> et de <a href="/prestations/thermographie">thermographie par drone</a>.</p>
+<p><strong>Des ombrières à entretenir ? <a href="/devis">Demandez un devis</a> ou appelez le 04 67 20 97 09.</strong></p>
+`,
+  },
+  {
     slug: "agrivoltaisme-definition-loi-aper-entretien",
     image: "/images/robot-franchissement.jpg",
     category: "Énergie Solaire",

@@ -104,6 +104,14 @@ export default function Page() {
           q: "Intervenez-vous sur plusieurs sites d'un même groupe ?",
           r: "Oui, et c'est le cas de figure où nous sommes les plus compétitifs. Regrouper plusieurs sites de l'arc méditerranéen dans une même tournée mutualise les coûts de déplacement et de mobilisation. Nous établissons alors un planning annuel par site, avec un rapport de production avant et après pour chacun.",
         },
+        {
+          q: "Nettoyez-vous aussi les ombrières agricoles et de stockage ?",
+          r: "Oui. Au-dessus d'une aire de stockage, d'un parc à matériel ou d'animaux, nous appliquons la même méthode, à l'eau filtrée et sans produit chimique, et nous calons l'intervention sur le calendrier de l'exploitation.",
+        },
+        {
+          q: "Peut-on nettoyer une ombrière au nettoyeur haute pression ?",
+          r: "Pas de près. Un jet haute pression concentré peut forcer les joints des modules et user le traitement du verre, et la plupart des fabricants l'encadrent ou l'excluent. Nous travaillons à l'eau filtrée, à pression maîtrisée, avec une brosse souple.",
+        },
       ]}
       communes={[
         "Montpellier",
@@ -132,6 +140,8 @@ export default function Page() {
         { href: "/nettoyage-centrale-solaire", label: "Nettoyage de centrale solaire et photovoltaïque" },
         { href: "/nettoyage-centrale-agrivoltaique", label: "Nettoyage de centrale agrivoltaïque" },
         { href: "/contrat-nettoyage-centrale-photovoltaique", label: "Contrat d'entretien photovoltaïque" },
+        { href: "/blog/ombrieres-photovoltaiques-parking-obligation-loi-aper", label: "Guide : ombrières de parking et loi APER" },
+        { href: "/blog/ombriere-photovoltaique-entretien-nettoyage-duree-de-vie", label: "Ombrière photovoltaïque : entretien et durée de vie" },
       ]}
     />
   );
