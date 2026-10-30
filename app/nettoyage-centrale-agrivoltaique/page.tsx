@@ -160,6 +160,7 @@ export default function Page() {
         { href: "/nettoyage-panneaux-solaires-hangar-agricole", label: "Panneaux sur hangar agricole" },
         { href: "/contrat-nettoyage-centrale-photovoltaique", label: "Contrat de nettoyage de centrale" },
         { href: "/nettoyage-ombrieres-photovoltaiques", label: "Nettoyage d'ombrières photovoltaïques" },
+        { href: "/nettoyage-serres-photovoltaiques", label: "Nettoyage de serres photovoltaïques" },
         { href: "/blog/agrivoltaisme-definition-loi-aper-entretien", label: "Guide : agrivoltaïsme et loi APER" },
         { href: "/blog/agrivoltaisme-ovin-bovin-vigne-serres-entretien-panneaux", label: "Ovin, bovin, vigne, serres : l'entretien des panneaux" },
       ]}

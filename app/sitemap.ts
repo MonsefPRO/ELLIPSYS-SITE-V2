@@ -33,6 +33,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/nettoyage-robotise-centrale-photovoltaique", priority: 0.9, changeFrequency: "monthly" },
     { path: "/contrat-nettoyage-centrale-photovoltaique", priority: 0.9, changeFrequency: "monthly" },
     { path: "/nettoyage-centrale-agrivoltaique", priority: 0.9, changeFrequency: "monthly" },
+    { path: "/nettoyage-serres-photovoltaiques", priority: 0.9, changeFrequency: "monthly" },
     { path: "/nettoyage-panneaux-solaires-toiture-industrielle", priority: 0.9, changeFrequency: "monthly" },
     { path: "/nettoyage-bardage-industriel", priority: 0.9, changeFrequency: "monthly" },
     { path: "/nettoyage-panneaux-solaires-hangar-agricole", priority: 0.9, changeFrequency: "monthly" },
