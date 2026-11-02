@@ -5,6 +5,7 @@ import { getTeamNotifyEmails, getNotifyFromEmail } from "@/lib/notify";
 import { upsertContact, createDeal } from "@/lib/hubspot";
 import { captureServer, identifyServer } from "@/lib/posthog-server";
 import { uploadDevisAttachments } from "@/lib/supabase-storage";
+import { detectSolicitation } from "@/lib/spam-filter";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 
@@ -161,6 +162,22 @@ export async function POST(req: NextRequest) {
     const renderedAt = Number(body.renderedAt);
     const tooFast = Number.isFinite(renderedAt) && renderedAt > 0 && Date.now() - renderedAt < 2500;
     if (honeypot || tooFast) {
+      return NextResponse.json({ ok: true, hubspotContactId: null, hubspotDealId: null, attachmentsUploaded: 0 });
+    }
+
+    // ── Anti-démarchage (agences SEO / marketing qui « testent » le formulaire) ──
+    // Même logique que le honeypot : faux succès silencieux, aucun mail, aucun
+    // deal HubSpot, aucune ligne Supabase. On garde une trace dans les logs et
+    // dans PostHog (event « devis_blocked_solicitation ») pour pouvoir vérifier
+    // qu'aucun vrai client n'a été bloqué par erreur.
+    const solicitation = detectSolicitation({ email, name, message });
+    if (solicitation) {
+      console.warn(`[devis] Démarchage bloqué (${solicitation}) : ${email || phone}`);
+      await captureServer({
+        distinctId: email || phone || `blocked-${Date.now()}`,
+        event: "devis_blocked_solicitation",
+        properties: { reason: solicitation, email, name, phone, service, page_uri: pageUri },
+      }).catch(() => {});
       return NextResponse.json({ ok: true, hubspotContactId: null, hubspotDealId: null, attachmentsUploaded: 0 });
     }
 
