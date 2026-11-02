@@ -406,6 +406,7 @@ export const VILLES: Record<string, VilleData> = {
       "Bâtiments aéronautiques de Blagnac et Colomiers",
       "Parcs d'activité et bureaux de Labège et Basso Cambo",
       "Résidences et copropriétés de Rangueil et des Minimes",
+      "Centrales photovoltaïques au sol du sud toulousain",
     ],
     quartiers: [
       "Capitole", "Saint-Cyprien", "Les Minimes", "Rangueil", "Purpan",
@@ -424,6 +425,10 @@ export const VILLES: Record<string, VilleData> = {
       {
         q: "Intervenez-vous sur les sites industriels de Blagnac et Colomiers ?",
         r: "Oui. Bardages de grande hauteur, toitures d'entrepôts, verrières, groupes froids en toiture : ce sont des surfaces où l'échafaudage et la nacelle imposent un arrêt d'exploitation. Notre méthode s'exécute sans emprise au sol et sans interruption d'activité, avec un plan de prévention en amont.",
+      },
+      {
+        q: "Nettoyez-vous des centrales solaires autour de Toulouse ?",
+        r: "Oui. En Haute-Garonne, nous avons nettoyé la centrale au sol de Lapeyrouse-Fossat (30 000 m², septembre 2026) puis celle de Miremont (60 000 m², octobre 2026), à chaque fois avec deux pilotes et notre robot à brosses souples, sans détergent. Les photos de ces chantiers sont sur notre page réalisations.",
       },
       {
         q: "Toulouse est à quelle distance de vos équipes ?",

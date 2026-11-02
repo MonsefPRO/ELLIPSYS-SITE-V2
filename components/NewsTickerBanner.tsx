@@ -7,6 +7,12 @@ import { ArrowRight, MapPin, Zap } from "lucide-react";
 const news = [
   {
     tag: "Nouveau Chantier",
+    location: "Miremont (31)",
+    text: "Centrale Solaire au Sol, 60 000 m² Nettoyés",
+    href: "/realisations",
+  },
+  {
+    tag: "Réalisation",
     location: "Lapeyrouse-Fossat (31)",
     text: "Centrale Solaire au Sol, 30 000 m² Nettoyés",
     href: "/realisations",

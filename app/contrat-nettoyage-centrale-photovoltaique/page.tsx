@@ -61,10 +61,10 @@ export default function Page() {
       referencesTitre="Ce que nous avons déjà réalisé"
       references={[
         {
-          chiffre: "83 000 m²",
+          chiffre: "143 000 m²",
           titre: "De centrales au sol nettoyées",
           lieu: "Occitanie et Saône-et-Loire",
-          texte: "Trois centrales au sol documentées avec photos avant et après, sans arrêt de production.",
+          texte: "Quatre centrales au sol documentées en photos : Miremont, Lapeyrouse-Fossat, Vitry et Montchanin.",
         },
         {
           chiffre: "2 sites",

@@ -45,7 +45,7 @@ export default async function RealisationsPage() {
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
             {[
-              { label: "83 000 m²", desc: isEn ? "Solar farms cleaned" : "De centrales photovoltaïques nettoyées" },
+              { label: "143 000 m²", desc: isEn ? "Solar farms cleaned" : "De centrales photovoltaïques nettoyées" },
               { label: "1 200 m²/h", desc: isEn ? "Robot cleaning capacity" : "De capacité de nettoyage robot" },
               { label: "≈ 90 %", desc: isEn ? "Water saved vs manual method" : "D'eau économisée vs méthode manuelle" },
               { label: "0", desc: isEn ? "Accident since our creation" : "Accident depuis notre création" },
@@ -63,13 +63,12 @@ export default async function RealisationsPage() {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-8 items-start">
 
-          {/* PROJET MIS EN AVANT : CENTRALE SOLAIRE LAPEYROUSE-FOSSAT (le plus recent) */}
+          {/* PROJET MIS EN AVANT : CENTRALE SOLAIRE MIREMONT (le plus recent) */}
           <div className="lg:col-span-2 bg-white rounded-[2rem] overflow-hidden shadow-xl border border-slate-100 lg:grid lg:grid-cols-2">
             <div className="relative h-56 md:h-72 lg:h-full lg:min-h-[380px]">
-              <div className="absolute inset-0 bg-[url('/images/avant-apres-fossat.jpg')] bg-cover bg-center"></div>
+              <div className="absolute inset-0 bg-[url('/images/centrale-solaire-miremont.webp')] bg-cover bg-center"></div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
-              <div className="absolute top-3 left-3 flex gap-2">
-                <span className="bg-red-600 text-white px-3 py-1 rounded-full text-xs font-black tracking-widest shadow-md">{isEn ? "BEFORE" : "AVANT"}</span>
+              <div className="absolute top-3 left-3">
                 <span className="bg-emerald-500 text-white px-3 py-1 rounded-full text-xs font-black tracking-widest shadow-md">{isEn ? "AFTER" : "APRÈS"}</span>
               </div>
               <div className="absolute bottom-3 right-3">
@@ -80,7 +79,41 @@ export default async function RealisationsPage() {
               <span className="inline-block self-start bg-brand-orange-50 text-brand-orange-600 px-3 py-1 rounded-full text-xs font-black tracking-widest mb-4">{isEn ? "LATEST PROJECT" : "DERNIER CHANTIER"}</span>
               <div className="flex items-center gap-3 mb-4">
                 <Sun className="w-7 h-7 text-brand-orange-500 shrink-0" />
-                <h2 className="text-xl md:text-2xl font-bold text-[#0e2f52]">{isEn ? "Solar Farm Cleaning, Lapeyrouse-Fossat" : "Nettoyage de Centrale Solaire, Lapeyrouse-Fossat"}</h2>
+                <h2 className="text-xl md:text-2xl font-bold text-[#0e2f52]">{isEn ? "Solar Farm Cleaning, Miremont" : "Nettoyage de Centrale Solaire, Miremont"}</h2>
+              </div>
+              <div className="flex flex-wrap gap-4 mb-6 pb-6 border-b border-slate-100 text-sm">
+                <div className="flex items-center gap-2 text-slate-600"><MapPin className="w-4 h-4 text-slate-400" /> Miremont (31)</div>
+                <div className="flex items-center gap-2 text-slate-600"><Clock className="w-4 h-4 text-slate-400" /> 60 000 m²</div>
+                <div className="flex items-center gap-2 text-slate-600"><Target className="w-4 h-4 text-slate-400" /> {isEn ? "2 pilots + Robot" : "2 pilotes + Robot"}</div>
+                <div className="flex items-center gap-2 text-slate-600"><Clock className="w-4 h-4 text-slate-400" /> {isEn ? "October 2026" : "Octobre 2026"}</div>
+              </div>
+              <p className="text-sm text-slate-600 leading-relaxed mb-6">
+                <strong>{isEn ? "The challenge:" : "Le défi :"}</strong> {isEn ? "A 60,000 m² ground-mounted solar farm near Toulouse: 6 hectares of panels, long rows to clean one after another." : "Une centrale photovoltaïque au sol de 60 000 m² près de Toulouse : 6 hectares de panneaux, de longues rangées à nettoyer les unes après les autres."}<br /><br />
+                <strong>{isEn ? "Our approach:" : "Notre action :"}</strong> {isEn ? <>Two pilots deployed our <strong>cleaning robot</strong> (soft rotary brushes, no detergent) along every row of the farm. Uniform cleaning, <strong>zero work at height</strong>: the panels are back to a clean, even surface, as the photo above shows.</> : <>Deux pilotes ont déployé notre <strong>robot de nettoyage</strong> (brosses rotatives souples, sans détergent) sur l&apos;ensemble des rangées de la centrale. Nettoyage homogène, <strong>zéro travail en hauteur</strong> : les panneaux retrouvent une surface propre et uniforme, comme le montre la photo ci-dessus.</>}
+              </p>
+              <Link href="/nettoyage-panneaux-photovoltaiques" className="inline-flex items-center gap-2 font-bold text-brand-orange-500 hover:gap-4 transition-all text-sm">
+                {isEn ? "Our offer for PV farm operators" : "Notre offre exploitants de centrales PV"} <ChevronRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </div>
+
+          {/* PROJECT 0 : CENTRALE SOLAIRE LAPEYROUSE-FOSSAT */}
+          <div className="bg-white rounded-[2rem] overflow-hidden shadow-xl border border-slate-100">
+            <div className="relative h-52 md:h-64">
+              <div className="absolute inset-0 bg-[url('/images/avant-apres-fossat.jpg')] bg-cover bg-center"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+              <div className="absolute top-3 left-3 flex gap-2">
+                <span className="bg-red-600 text-white px-3 py-1 rounded-full text-xs font-black tracking-widest shadow-md">{isEn ? "BEFORE" : "AVANT"}</span>
+                <span className="bg-emerald-500 text-white px-3 py-1 rounded-full text-xs font-black tracking-widest shadow-md">{isEn ? "AFTER" : "APRÈS"}</span>
+              </div>
+              <div className="absolute bottom-3 right-3">
+                <span className="bg-black/50 text-white px-2 py-1 rounded-lg text-xs font-semibold backdrop-blur-sm">{isEn ? "Real photo, Ellipsys project" : "Photo réelle, Chantier Ellipsys"}</span>
+              </div>
+            </div>
+            <div className="p-6 md:p-8">
+              <div className="flex items-center gap-3 mb-4">
+                <Sun className="w-7 h-7 text-brand-orange-500 shrink-0" />
+                <h2 className="text-xl font-bold text-[#0e2f52]">{isEn ? "Solar Farm Cleaning, Lapeyrouse-Fossat" : "Nettoyage de Centrale Solaire, Lapeyrouse-Fossat"}</h2>
               </div>
               <div className="flex flex-wrap gap-4 mb-6 pb-6 border-b border-slate-100 text-sm">
                 <div className="flex items-center gap-2 text-slate-600"><MapPin className="w-4 h-4 text-slate-400" /> Lapeyrouse-Fossat (31)</div>
@@ -92,8 +125,8 @@ export default async function RealisationsPage() {
                 <strong>{isEn ? "The challenge:" : "Le défi :"}</strong> {isEn ? "A 30,000 m² ground-mounted solar farm, 3 hectares of panels covered by a layer of soiling that reduced their transparency." : "Une centrale photovoltaïque au sol de 30 000 m², soit 3 hectares de panneaux recouverts d'un voile d'encrassement qui réduisait leur transparence."}<br /><br />
                 <strong>{isEn ? "Our approach:" : "Notre action :"}</strong> {isEn ? "Two pilots cleaned every row of the farm. The before/after speaks for itself: the modules are back to their original transparency." : "Deux pilotes ont nettoyé l'ensemble des rangées de la centrale. L'avant/après parle de lui-même : les modules retrouvent leur transparence d'origine."}
               </p>
-              <Link href="/nettoyage-panneaux-photovoltaiques" className="inline-flex items-center gap-2 font-bold text-brand-orange-500 hover:gap-4 transition-all text-sm">
-                {isEn ? "Our offer for PV farm operators" : "Notre offre exploitants de centrales PV"} <ChevronRight className="w-4 h-4" />
+              <Link href="/intervention/toulouse" className="inline-flex items-center gap-2 font-bold text-brand-orange-500 hover:gap-4 transition-all text-sm">
+                {isEn ? "Our work around Toulouse" : "Nos interventions autour de Toulouse"} <ChevronRight className="w-4 h-4" />
               </Link>
             </div>
           </div>

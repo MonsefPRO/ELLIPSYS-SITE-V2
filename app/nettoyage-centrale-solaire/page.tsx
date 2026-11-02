@@ -12,7 +12,7 @@ const TITRE = "Nettoyage de centrale, parc et ferme solaire";
 /** Texte du H1 visible, inchangé (JSON-LD et fil d'Ariane) */
 const H1_TEXTE = "Nettoyage de centrale solaire et photovoltaïque";
 const DESCRIPTION =
-  "Nettoyage de centrale, parc ou ferme solaire par robot ou drone : eau filtrée, sans arrêt de production. 83 000 m² déjà nettoyés. Devis sous 24 h.";
+  "Nettoyage de centrale, parc ou ferme solaire par robot ou drone : eau filtrée, sans arrêt de production. 143 000 m² déjà nettoyés. Devis sous 24 h.";
 
 export const metadata: Metadata = {
   title: TITRE,
@@ -57,7 +57,7 @@ export default function Page() {
         "Robot jusqu'à 1 200 m² par heure",
         "Eau filtrée, sans détergent",
         "Équipe habilitée B0-H0-H0V",
-        "83 000 m² de centrales déjà nettoyés",
+        "143 000 m² de centrales déjà nettoyés",
       ]}
       formTitre="Chiffrage de votre centrale ou parc solaire sous 24 h"
       formSoustitre="Indiquez la surface ou la puissance du site et sa localisation."
@@ -70,6 +70,13 @@ export default function Page() {
       referencesTitre="Nos derniers parcs et fermes solaires nettoyés"
       references={[
         {
+          chiffre: "60 000 m²",
+          titre: "Centrale au sol de Miremont",
+          lieu: "Haute-Garonne (31)",
+          texte:
+            "Six hectares de modules au sud de Toulouse. Deux pilotes ont nettoyé l'ensemble des rangées au robot en octobre 2026.",
+        },
+        {
           chiffre: "30 000 m²",
           titre: "Centrale au sol de Lapeyrouse-Fossat",
           lieu: "Haute-Garonne (31)",
@@ -77,18 +84,11 @@ export default function Page() {
             "Trois hectares de modules couverts d'un voile d'encrassement. Deux pilotes ont traité l'ensemble des rangées en septembre 2026.",
         },
         {
-          chiffre: "31 000 m²",
-          titre: "Centrale au sol de Vitry",
+          chiffre: "53 000 m²",
+          titre: "Centrales au sol de Vitry et Montchanin",
           lieu: "Saône-et-Loire (71)",
           texte:
-            "Repérage par drone pour cartographier les accès entre rangées, puis nettoyage par robot, sans interruption d'exploitation.",
-        },
-        {
-          chiffre: "22 000 m²",
-          titre: "Centrale au sol de Montchanin",
-          lieu: "Saône-et-Loire (71)",
-          texte:
-            "Enchaînée avec Vitry dans la même tournée pour le même exploitant : plus de 50 000 m² traités en un seul déplacement.",
+            "Deux centrales du même exploitant enchaînées dans une seule tournée : repérage par drone des accès entre rangées, puis nettoyage par robot, sans interruption d'exploitation.",
         },
       ]}
       referencesLien={{ href: "/realisations", label: "Voir les photos avant et après de nos chantiers" }}

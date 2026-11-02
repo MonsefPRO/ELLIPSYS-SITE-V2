@@ -108,7 +108,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // pour être découvertes par Google Images (seconde porte d'entrée vers le site).
   const IMAGES: Record<string, string[]> = {
     "": ["/images/accueil.png"],
-    "/realisations": ["/images/avant-apres-fossat.jpg", "/images/avant-apres-montchanin.jpg", "/images/SCUTUMFACADE.png", "/images/demoussage-toiture-eimargues.jpg"],
+    "/realisations": ["/images/centrale-solaire-miremont.webp", "/images/avant-apres-fossat.jpg", "/images/avant-apres-montchanin.jpg", "/images/SCUTUMFACADE.png", "/images/demoussage-toiture-eimargues.jpg"],
     "/nettoyage-centrale-solaire": ["/images/avant-apres-fossat.jpg", "/images/robot-franchissement.jpg"],
     "/nettoyage-centrale-photovoltaique-occitanie": ["/images/avant-apres-fossat.jpg", "/images/robot-centrale-sol.jpg"],
     "/nettoyage-centrale-photovoltaique-paca": ["/images/robot-vue-aerienne.jpg"],
