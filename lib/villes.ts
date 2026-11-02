@@ -311,6 +311,7 @@ export const VILLES: Record<string, VilleData> = {
     intro: [
       "Perpignan cumule deux caractéristiques qui en font un terrain particulier : le département des Pyrénées-Orientales est l'un des plus ensoleillés de France, et l'un des plus ventés. Cet ensoleillement a fait du Roussillon un territoire à très forte densité photovoltaïque, des toitures résidentielles aux grandes centrales au sol du secteur de Rivesaltes et des Corbières.",
       "La tramontane, elle, est un facteur d'encrassement largement sous-estimé. Elle souffle fort et souvent, et transporte en permanence des particules fines : poussières de garrigue, sables, résidus agricoles. Sur un panneau photovoltaïque, cela signifie un réencrassement rapide entre deux pluies, et dans un département où les précipitations sont rares, la pluie ne joue pratiquement pas son rôle de nettoyage naturel. C'est le contexte où l'écart de rendement entre un parc entretenu et un parc laissé en l'état est le plus élevé.",
+      "Sur les panneaux solaires du Roussillon, trois sources d'encrassement se cumulent. La tramontane d'abord, qui charge les modules en poussières de la plaine, des vignes et des vergers. Les épisodes de sable saharien ensuite, plusieurs fois par an : leur argile forme avec une pluie faible une pellicule adhérente que l'averse suivante ne rince pas. L'environnement agricole enfin, avec les serres photovoltaïques et les hangars équipés de la plaine maraîchère et arboricole, exposés aux poussières de travail du sol, aux pollens et aux fientes. Nous nettoyons ces installations par robot ou par drone, à l'eau filtrée et sans détergent, sans que personne ne marche sur la couverture, une précaution indispensable sur une serre ou sur un hangar aux plaques fragiles.",
     ],
     facteurs: [
       {
@@ -328,6 +329,7 @@ export const VILLES: Record<string, VilleData> = {
     ],
     typologies: [
       "Centrales photovoltaïques au sol du secteur de Rivesaltes",
+      "Serres et hangars agricoles photovoltaïques de la plaine du Roussillon",
       "Toitures en tuile catalane",
       "Mas catalans et bâti rural du Roussillon",
       "Façades enduites du centre historique",
@@ -355,6 +357,14 @@ export const VILLES: Record<string, VilleData> = {
       {
         q: "Intervenez-vous sur les grandes centrales au sol ?",
         r: "Oui. C'est le domaine du robot plutôt que du drone : jusqu'à 1 200 m² par heure, brosse de 1,20 m, franchissement de pentes jusqu'à 25°. Sur une centrale de plusieurs hectares, nous établissons un planning par tables et un rapport de production avant / après.",
+      },
+      {
+        q: "Comment nettoyer des panneaux solaires à Perpignan après un épisode de sable saharien ?",
+        r: "Sans attendre la pluie, qui dans le 66 est rare et ne fait souvent que cimenter le dépôt d'argile. Nous travaillons à l'eau filtrée, avec une brosse rotative souple, sans détergent ni haute pression, ce qui retire la pellicule sans rayer le verre. Nous vérifions l'encrassement réel avant de recommander une intervention, plutôt que de nettoyer par principe après chaque épisode.",
+      },
+      {
+        q: "Nettoyez-vous les panneaux des serres et des hangars agricoles du Roussillon ?",
+        r: "Oui. Sur une serre photovoltaïque comme sur un hangar, personne ne monte sur la couverture : nous intervenons par robot ou par drone selon la pente et la structure, à l'eau filtrée et sans produit chimique. L'intervention est calée avec l'exploitant, hors récoltes et traitements, et plusieurs exploitations voisines peuvent être regroupées dans une même tournée.",
       },
     ],
   },
@@ -561,6 +571,7 @@ export const VILLES: Record<string, VilleData> = {
     intro: [
       "Narbonne se trouve dans l'un des couloirs de vent les plus constants de France : le cers et la tramontane, qui soufflent depuis le golfe du Lion, justifient d'ailleurs la forte densité de parcs éoliens sur les communes voisines. Cette même exposition explique pourquoi les toitures et les panneaux solaires du Narbonnais s'encrassent différemment du reste de l'Hérault, un dépôt de poussières fines et de sel remis en suspension en permanence, plutôt qu'un encrassement lent et régulier.",
       "L'arrière-pays narbonnais est aussi un vignoble à grande échelle, les Corbières et le massif de la Clape produisent une poussière calcaire et organique qui se dépose sur les hangars viticoles et les installations photovoltaïques posées sur leurs toitures. À cela s'ajoute la zone logistique du plateau de Montredon, au croisement des autoroutes A9 et A61, qui concentre des entrepôts de grande surface aux toitures et bardages typiquement adaptés à notre méthode robot.",
+      "À Narbonne, le nettoyage en hauteur concerne surtout trois familles de bâtiments. Les façades en pierre et en enduit du centre-ville, du Bourg et de la Cité, bordées de rues où un échafaudage suppose une autorisation de voirie et plusieurs semaines d'emprise. Les caves coopératives et les hangars viticoles, aux murs hauts et aux toitures souvent couvertes de plaques fragiles, sur lesquelles personne ne doit marcher. Enfin les bâtiments agricoles et les entrepôts logistiques du plateau de Montredon, dont les bardages et les toitures s'étendent sur des centaines de mètres. Sur ces trois cas, le drone nettoie façades, bardages et toitures depuis les airs, avec une pression et un produit réglés selon le matériau, et le robot prend en charge les panneaux solaires posés sur les grandes toitures. Aucune nacelle devant les quais ou dans la cour de la cave, aucun intervenant sur la couverture.",
     ],
     facteurs: [
       {
@@ -599,6 +610,18 @@ export const VILLES: Record<string, VilleData> = {
       {
         q: "La tramontane empêche-t-elle d'intervenir à Narbonne ?",
         r: "Elle impose une planification plus fine qu'ailleurs, pas un renoncement. Le golfe du Lion est l'une des zones les plus ventées de France, nos vols sont donc positionnés sur les fenêtres météo favorables. Sur les grandes surfaces planes, notre robot de nettoyage n'est de toute façon pas sensible au vent.",
+      },
+      {
+        q: "Comment se passe un nettoyage de façade à Narbonne ?",
+        r: "Par drone, sans échafaudage ni emprise sur la voirie : l'appareil décolle d'un point réduit et traite la façade depuis les airs. La méthode est choisie selon le matériau, et la pierre comme les enduits anciens du centre-ville sont nettoyés sans haute pression. Les vols en zone peuplée relèvent des scénarios STS-01 et STS-02, pour lesquels nos télépilotes sont certifiés, et sont déclarés à la DGAC.",
+      },
+      {
+        q: "Faites-vous du nettoyage en hauteur à Narbonne sur les caves et les hangars viticoles ?",
+        r: "Oui. Façades, bardages et toitures de caves coopératives, de hangars viticoles et de bâtiments agricoles sont traités par drone, sans nacelle ni échafaudage, et sans que personne ne monte sur des couvertures souvent fragiles. Nous calons l'intervention avec l'exploitation, en dehors des vendanges et des périodes où la cour est la plus occupée.",
+      },
+      {
+        q: "Nettoyage de panneaux solaires à Narbonne : robot ou drone ?",
+        r: "Cela dépend de l'installation. Sur les grandes toitures d'entrepôts et de hangars, c'est le robot : brosse rotative souple, eau filtrée, sans détergent, jusqu'à 1 200 m² par heure. Le drone prend le relais sur les toitures pentues ou difficiles d'accès. Dans les deux cas, personne ne marche sur les modules, et les vols sont planifiés sur les fenêtres où le cers et la tramontane le permettent.",
       },
       {
         q: "Quel délai pour intervenir à Narbonne ?",

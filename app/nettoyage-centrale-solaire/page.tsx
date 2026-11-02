@@ -3,14 +3,16 @@ import LandingPage from "@/components/LandingPage";
 
 /**
  * Page SEO cachée (absente du menu et du footer), cible « nettoyage centrale
- * solaire » et « nettoyage centrale photovoltaïque » (ICP 1 : exploitants et
- * propriétaires de centrales au sol). Maillée uniquement avec les autres pages
- * cachées.
+ * solaire », « nettoyage parc solaire », « nettoyage ferme solaire » et
+ * « nettoyage centrale photovoltaïque » (ICP 1 : exploitants et propriétaires
+ * de centrales au sol). Maillée uniquement avec les autres pages cachées.
  */
 const URL = "https://ellipsys-solutions.com/nettoyage-centrale-solaire";
-const TITRE = "Nettoyage de centrale solaire et photovoltaïque";
+const TITRE = "Nettoyage de centrale, parc et ferme solaire";
+/** Texte du H1 visible, inchangé (JSON-LD et fil d'Ariane) */
+const H1_TEXTE = "Nettoyage de centrale solaire et photovoltaïque";
 const DESCRIPTION =
-  "Nettoyage de centrales photovoltaïques au sol par robot : 1 200 m²/h, eau filtrée, sans arrêt de production. 83 000 m² déjà nettoyés. Devis 24 h.";
+  "Nettoyage de centrale, parc ou ferme solaire par robot ou drone : eau filtrée, sans arrêt de production. 83 000 m² déjà nettoyés. Devis sous 24 h.";
 
 export const metadata: Metadata = {
   title: TITRE,
@@ -40,14 +42,14 @@ export default function Page() {
       url={URL}
       service="solaire"
       serviceLabel="Nettoyage de centrale photovoltaïque"
-      h1Texte={TITRE}
+      h1Texte={H1_TEXTE}
       h1={
         <>
           Nettoyage de centrale solaire et photovoltaïque,{" "}
           <span className="text-brand-orange-400">sans arrêt de production</span>
         </>
       }
-      accroche="Pollen, poussière agricole, sable saharien, fientes : sur une centrale au sol, le dépôt s'installe rangée après rangée et la pluie ne suffit pas à l'éliminer. Notre robot nettoie vos tables à l'eau filtrée, sans détergent, pendant que la centrale continue d'injecter."
+      accroche="Pollen, poussière agricole, sable saharien, fientes : sur une centrale au sol, un parc ou une ferme solaire, le dépôt s'installe rangée après rangée et la pluie ne suffit pas à l'éliminer. Notre robot, relayé par le drone là où il ne passe pas, nettoie vos tables à l'eau filtrée, sans détergent, pendant que la centrale continue d'injecter."
       heroImage="/images/robot-franchissement.jpg"
       heroAlt="Robot Ellipsys en train de nettoyer une table de modules d'une centrale photovoltaïque au sol"
       badgeZone="Arc méditerranéen · Partout en France sur projet"
@@ -57,7 +59,7 @@ export default function Page() {
         "Équipe habilitée B0-H0-H0V",
         "83 000 m² de centrales déjà nettoyés",
       ]}
-      formTitre="Chiffrage de votre centrale sous 24 h"
+      formTitre="Chiffrage de votre centrale ou parc solaire sous 24 h"
       formSoustitre="Indiquez la surface ou la puissance du site et sa localisation."
       preuve={{
         image: "/images/avant-apres-fossat.jpg",
@@ -65,7 +67,7 @@ export default function Page() {
         legende: "Centrale de Lapeyrouse-Fossat (Haute-Garonne), 30 000 m² nettoyés en septembre 2026 : les mêmes modules avant et après",
         badges: ["AVANT", "APRÈS"],
       }}
-      referencesTitre="Nos dernières centrales nettoyées"
+      referencesTitre="Nos derniers parcs et fermes solaires nettoyés"
       references={[
         {
           chiffre: "30 000 m²",
@@ -92,39 +94,59 @@ export default function Page() {
       referencesLien={{ href: "/realisations", label: "Voir les photos avant et après de nos chantiers" }}
       benefices={[
         {
-          titre: "La centrale continue de produire",
+          titre: "Étape 1 · Repérage du parc solaire",
           texte:
-            "Le robot avance rangée par rangée pendant que le reste du site injecte. Seul le périmètre de sécurité immédiat est neutralisé, en coordination avec votre exploitant et votre mainteneur.",
+            "Un vol de drone cartographie le site : accès, entraxe entre les rangées, hauteur et inclinaison des tables, relief, point d'eau et zones à éviter. Ce relevé fixe la méthode, le phasage et la durée du chantier. Sur demande, une thermographie repère aussi les modules en point chaud pendant le même déplacement.",
+        },
+        {
+          titre: "Étape 2 · Plan de prévention avec l'exploitant",
+          texte:
+            "Avant le premier coup de brosse, un plan de prévention est établi avec l'exploitant et son mainteneur : interlocuteurs, circulation, consignes électriques, conduite à tenir en cas d'incident. Équipe habilitée B0-H0-H0V, RC professionnelle et RC aéronautique.",
+        },
+        {
+          titre: "Étape 3 · Nettoyage de la ferme solaire par zones, sans arrêt de production",
+          texte:
+            "Le site est traité zone après zone. Le robot avance rangée par rangée pendant que le reste de la centrale injecte : seul le périmètre de sécurité immédiat est neutralisé. L'ordre des zones tient compte de l'accès de la citerne et des contraintes du site, comme le pâturage sur un parc agrivoltaïque.",
+        },
+        {
+          titre: "Étape 4 · Contrôle de chaque zone",
+          texte:
+            "Une zone n'est close qu'après un contrôle visuel des tables traitées, et les reprises se font tant que l'équipe est sur place. Ce qui sort du nettoyage est signalé à l'exploitant : module fissuré, câble mal fixé, végétation qui ombre une rangée.",
+        },
+        {
+          titre: "Étape 5 · Rapport avant / après",
+          texte:
+            "En fin de chantier, un rapport d'intervention : zones et surfaces traitées, dates, photos avant et après des mêmes modules, observations. Une pièce pour votre carnet de maintenance, et le point de départ pour mesurer le gain sur vos propres données de production.",
+        },
+        {
+          titre: "Robot ou drone : l'entraxe, la hauteur et la pente décident",
+          texte:
+            "Le robot travaille sur les tables accessibles depuis le sol, jusqu'à 25° d'inclinaison, et l'équipe doit pouvoir circuler entre les rangées pour le déplacer. Quand l'entraxe est trop serré, les structures surélevées (agrivoltaïsme) ou la pente trop forte, le drone prend le relais, sans nacelle ni engin lourd. Le repérage tranche.",
         },
         {
           titre: "1 200 m² par heure, une brosse de 1,20 m",
           texte:
-            "Là où un opérateur à la perche traite 80 à 120 m² par heure, le robot télécommandé en traite jusqu'à 1 200 et franchit des pentes jusqu'à 25°. Sur plusieurs hectares, le chantier se compte en jours, pas en semaines.",
+            "Là où un opérateur à la perche traite 80 à 120 m² par heure, le robot télécommandé en traite jusqu'à 1 200. Sur plusieurs hectares, le chantier se compte en jours, pas en semaines, et la pression de brossage reste la même d'un bout à l'autre du site.",
         },
         {
           titre: "Eau filtrée, sans détergent ni haute pression",
           texte:
-            "Brosses rotatives souples et débit maîtrisé à 7 litres par minute : le verre n'est pas rayé, sa couche antireflet n'est pas agressée, et l'intervention reste compatible avec les garanties des fabricants de modules.",
+            "Brosses rotatives souples et débit maîtrisé à 7 litres par minute, soit environ 420 litres par heure : le verre et sa couche antireflet sont préservés, et l'intervention reste compatible avec les garanties des fabricants. L'eau est filtrée, et déminéralisée si l'eau disponible est trop calcaire, pour ne pas laisser de traces. Point d'eau du site, borne ou citerne d'appoint : l'approvisionnement est calé dès le repérage.",
         },
         {
-          titre: "Habilités, préparés, assurés",
+          titre: "Trackers et modules bifaciaux",
           texte:
-            "Équipe habilitée B0-H0-H0V pour travailler à proximité des installations électriques, plan de prévention établi avec l'exploitant avant chaque chantier, RC professionnelle et RC aéronautique.",
+            "Sur un parc à trackers, la position des rangées se règle avec l'exploitant : tables mises à plat pendant le passage du robot, puis rendues au suivi solaire, zone par zone. Sur des modules bifaciaux, la face arrière, tournée vers le sol, s'encrasse en général bien moins vite que la face avant ; son état est vérifié au repérage et son traitement se décide au cas par cas.",
         },
         {
-          titre: "Un repérage par drone avant le robot",
+          titre: "Une fréquence calée sur le site, une tournée pour plusieurs sites",
           texte:
-            "Un vol de repérage cartographie les accès, l'espacement des structures et les zones à éviter. Sur demande, la thermographie par drone repère aussi les modules en point chaud pendant le même déplacement.",
-        },
-        {
-          titre: "Plusieurs centrales, une seule tournée",
-          texte:
-            "Regrouper les sites d'un même portefeuille mutualise la mobilisation des équipes et du matériel. C'est ainsi que nous avons enchaîné Vitry et Montchanin pour le même exploitant.",
+            "Un à deux passages par an couvrent la plupart des centrales, davantage près des cultures, du littoral ou d'un axe routier. Regrouper les sites d'un même portefeuille mutualise la mobilisation des équipes et du matériel : c'est ainsi que nous avons enchaîné Vitry et Montchanin pour le même exploitant.",
         },
       ]}
       prix={[
         {
-          label: "Centrale au sol",
+          label: "Centrale ou ferme solaire",
           prix: "sur devis au m²",
           note: "Selon la surface, l'accès entre les rangées, l'approvisionnement en eau et le niveau d'encrassement.",
         },
@@ -142,8 +164,24 @@ export default function Page() {
       prixNote="Pour un exploitant ou un asset manager, la bonne question n'est pas le prix au mètre carré mais ce qu'il rapporte en énergie récupérée. Nous partons de vos données de production pour vérifier que l'intervention se justifie. Si elle ne se justifie pas, nous vous le disons."
       faq={[
         {
-          q: "À quelle fréquence faut-il nettoyer une centrale solaire au sol ?",
+          q: "Comment se déroule le nettoyage d'un parc solaire ?",
+          r: "En cinq temps : repérage par drone (accès, entraxe, hauteur et inclinaison des tables, point d'eau), plan de prévention avec l'exploitant, nettoyage zone par zone sans arrêter la centrale, contrôle de chaque zone, puis remise d'un rapport d'intervention avec photos avant et après.",
+        },
+        {
+          q: "À quelle fréquence faut-il nettoyer une centrale ou un parc solaire au sol ?",
           r: "Il n'existe pas de fréquence universelle : tout dépend de l'environnement immédiat. Une centrale entourée de cultures (poussières de semis et de récolte), proche du littoral (sel) ou d'un axe routier s'encrasse plus vite qu'un site isolé. Sur l'arc méditerranéen, les épisodes de sable saharien s'ajoutent au pollen du printemps. Un à deux passages par an couvrent la plupart des sites, et le bon rythme se déduit de l'écart entre la production attendue et la production réelle.",
+        },
+        {
+          q: "Comment nettoyer une ferme solaire équipée de trackers ?",
+          r: "En coordonnant la position des rangées avec l'exploitant, qui garde la main sur le pilotage des trackers. Les tables sont mises à plat pendant le passage du robot, puis rendues au suivi solaire, zone par zone, pour que le reste du parc continue de suivre le soleil. Le repérage vérifie la hauteur des tables à plat et l'espace entre les rangées.",
+        },
+        {
+          q: "Faut-il nettoyer la face arrière des panneaux bifaciaux ?",
+          r: "Rarement au même rythme que la face avant. Tournée vers le sol, la face arrière s'encrasse nettement moins vite d'après les études de terrain, sans rester propre pour autant, surtout sur tables fixes. L'intérêt de la nettoyer dépend de la poussière soulevée au sol et de la part de production venant de l'arrière : nous vérifions son état au repérage et ne proposons de la traiter que si l'écart le justifie.",
+        },
+        {
+          q: "Quelle eau utiliser pour nettoyer une centrale photovoltaïque ?",
+          r: "Une eau propre, sans additif et peu minéralisée, à basse pression, comme le recommandent les guides d'entretien des fabricants et des exploitants : une eau très calcaire laisse des dépôts blancs en séchant. Nous utilisons une eau filtrée, déminéralisée si l'eau disponible est trop dure, et prévoyons l'approvisionnement dès le repérage.",
         },
         {
           q: "Faut-il arrêter la centrale pendant le nettoyage ?",
@@ -204,6 +242,8 @@ export default function Page() {
         { href: "/nettoyage-centrale-agrivoltaique", label: "Centrales agrivoltaïques" },
         { href: "/nettoyage-centrale-photovoltaique-paca", label: "Centrales en PACA" },
         { href: "/nettoyage-robotise-centrale-photovoltaique", label: "Nettoyage robotisé de centrale" },
+        { href: "/blog/nettoyer-panneaux-solaires-karcher-eau-osmosee-methode", label: "Quelle eau pour nettoyer des panneaux solaires" },
+        { href: "/blog/nettoyage-centrale-solaire-saone-et-loire", label: "Chantier de centrales en Saône-et-Loire" },
       ]}
     />
   );

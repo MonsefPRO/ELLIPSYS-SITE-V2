@@ -160,6 +160,7 @@ export default function Page() {
         { href: "/nettoyage-panneaux-solaires-toiture-industrielle", label: "Panneaux solaires en toiture industrielle" },
         { href: "/thermographie-panneaux-photovoltaiques-drone", label: "Thermographie de panneaux photovoltaïques" },
         { href: "/nettoyage-centrale-solaire", label: "Nettoyage de centrale solaire" },
+        { href: "/nettoyage-toiture-agricole", label: "Nettoyage et démoussage de toiture agricole" },
       ]}
     />
   );
