@@ -27,7 +27,7 @@ const articles = [
   },
   {
     image: "/images/Bardage-facades.webp",
-    category: "Facades & Bardages",
+    category: "Façades & Bardages",
     date: "26 Octobre 2026",
     readTime: "7 min",
     title: "Nettoyage en hauteur par drone : plus rapide et plus sûr qu'un échafaudage ou une nacelle",
@@ -167,7 +167,7 @@ const articles = [
   },
   {
     image: "/images/Barda.webp",
-    category: "Facades & Bardages",
+    category: "Façades & Bardages",
     date: "25 Mars 2026",
     readTime: "5 min",
     title: "Nettoyage de façade industrielle : pourquoi le drone remplace l'échafaudage en 2026",

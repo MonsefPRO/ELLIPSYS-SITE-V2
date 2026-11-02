@@ -96,8 +96,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/intervention/avignon", priority: 0.8, changeFrequency: "monthly" },
     // Villes hors zone Occitanie : conservées mais non prioritaires, elles
     // captaient des impressions parisiennes sans jamais convertir.
+    // Lyon retiré : page orpheline hors zone, servie mais plus soumise.
     { path: "/intervention/paris", priority: 0.5, changeFrequency: "yearly" },
-    { path: "/intervention/lyon", priority: 0.5, changeFrequency: "yearly" },
 
     // Blog (index)
     { path: "/blog", priority: 0.8, changeFrequency: "weekly" },

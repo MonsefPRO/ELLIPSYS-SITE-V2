@@ -73,22 +73,11 @@ export default function LandingPage(p: LandingPageProps) {
         serviceType: p.serviceLabel,
         areaServed: p.areaServed ?? [
           { "@type": "City", name: "Montpellier" },
-          ...p.communes.map((c) => ({ "@type": "City", name: c })),
+          // Montpellier figure déjà ci-dessus : on évite le doublon.
+          ...p.communes.filter((c) => c !== "Montpellier").map((c) => ({ "@type": "City", name: c })),
         ],
-        provider: {
-          "@type": "LocalBusiness",
-          name: "Ellipsys Solutions",
-          telephone: "+33467209709",
-          url: "https://ellipsys-solutions.com",
-          address: {
-            "@type": "PostalAddress",
-            streetAddress: "159 Rue de Thor",
-            addressLocality: "Montpellier",
-            postalCode: "34000",
-            addressRegion: "Occitanie",
-            addressCountry: "FR",
-          },
-        },
+        // Renvoie à l'entité LocalBusiness déclarée une seule fois dans le layout.
+        provider: { "@id": "https://ellipsys-solutions.com/#business" },
         url: p.url,
       },
       {

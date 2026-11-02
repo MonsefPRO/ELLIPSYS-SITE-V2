@@ -1,9 +1,10 @@
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import Image from "next/image";
 import Link from "next/link";
 import { Calendar, Clock, ArrowLeft, ChevronRight, Phone } from "lucide-react";
-import { blogPosts, getBlogPost } from "@/lib/blogPosts";
+import { blogPosts, getBlogPost, type BlogPost } from "@/lib/blogPosts";
 
 const BASE = "https://ellipsys-solutions.com";
 
@@ -82,12 +83,19 @@ export default async function BlogPostPage({ params }: Props) {
   const post = getBlogPost(slug);
   if (!post) notFound();
 
-  // Articles liés : même thème d'abord, puis les plus récents.
+  // Articles liés : sélection manuelle (post.related) d'abord, puis même thème,
+  // puis les plus récents. Dédoublonné, 3 articles.
   const autres = blogPosts.filter((p) => p.slug !== slug);
+  const choisis = (post.related ?? [])
+    .map((s) => autres.find((p) => p.slug === s))
+    .filter((p): p is BlogPost => Boolean(p));
   const related = [
+    ...choisis,
     ...autres.filter((p) => p.category === post.category),
     ...autres.filter((p) => p.category !== post.category),
-  ].slice(0, 3);
+  ]
+    .filter((p, i, arr) => arr.findIndex((q) => q.slug === p.slug) === i)
+    .slice(0, 3);
 
   const datePublished = frDateToIso(post.date);
   const jsonLdArticle = {
@@ -135,10 +143,7 @@ export default async function BlogPostPage({ params }: Props) {
 
       {/* ── HERO ── */}
       <section className="relative h-72 md:h-96 overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url('${post.image}')` }}
-        />
+        <Image src={post.image} alt="" fill priority sizes="100vw" className="object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#0e2f52]/60 to-transparent" />
         <div className="relative z-10 h-full flex flex-col justify-end container mx-auto px-4 max-w-4xl pb-10">
@@ -253,7 +258,7 @@ export default async function BlogPostPage({ params }: Props) {
               {related.map((r) => (
                 <Link key={r.slug} href={`/blog/${r.slug}`} className="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 hover:shadow-md hover:-translate-y-0.5 transition-all group flex flex-col">
                   <div className="h-44 relative overflow-hidden">
-                    <div className="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500" style={{ backgroundImage: `url('${r.image}')` }} />
+                    <Image src={r.image} alt="" fill sizes="(min-width:768px) 33vw, 100vw" className="object-cover group-hover:scale-105 transition-transform duration-500" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                     <span className={`absolute top-3 left-3 px-2 py-0.5 rounded-full text-xs font-bold ${r.badge}`}>{r.category}</span>
                   </div>

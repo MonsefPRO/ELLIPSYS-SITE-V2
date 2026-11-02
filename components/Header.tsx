@@ -83,7 +83,7 @@ export default function Header() {
 
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <img src="/logo.png" alt="Ellipsys Solutions" className="h-16 w-auto" />
+            <img src="/logo-header.webp" alt="Ellipsys Solutions" width={427} height={128} className="h-16 w-auto" />
           </Link>
 
           {/* Menu Desktop */}

@@ -10,11 +10,18 @@ export interface BlogPost {
   metaTitle: string;
   metaDescription: string;
   content: string; // HTML content
+  /** Slugs d'articles liés choisis à la main, affichés avant le repli automatique. */
+  related?: string[];
 }
 
 export const blogPosts: BlogPost[] = [
   {
     slug: "thermographie-drone-hiver-bonne-saison",
+    related: [
+      "thermographie-drone-decret-tertiaire",
+      "apsad-d20-assurance-photovoltaique-ce-qui-change",
+      "reglementation-drone-sts-01-sts-02",
+    ],
     image: "/images/thermographie-industrie.webp",
     category: "Thermographie",
     date: "2 Novembre 2026",
@@ -90,6 +97,11 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "nettoyer-panneaux-solaires-karcher-eau-osmosee-methode",
+    related: [
+      "nettoyage-centrale-solaire-saone-et-loire",
+      "panneaux-solaires-rendement-perdu-apres-ete",
+      "sable-saharien-panneaux-solaires-rendement",
+    ],
     image: "/images/robot-brosse-action.jpg",
     category: "Énergie Solaire",
     date: "29 Octobre 2026",
@@ -479,8 +491,13 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "nettoyage-en-hauteur-drone",
+    related: [
+      "reglementation-drone-sts-01-sts-02",
+      "nettoyage-facade-drone-vs-echafaudage",
+      "nettoyage-bardage-panneaux-solaires-usine-2-en-1",
+    ],
     image: "/images/Bardage-facades.png",
-    category: "Facades & Bardages",
+    category: "Façades & Bardages",
     date: "26 Octobre 2026",
     readTime: "7 min",
     badge: "bg-emerald-50 text-emerald-600",
@@ -567,6 +584,11 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "prix-mwh-solaire-baisse-appel-offres-2026",
+    related: [
+      "prix-negatifs-electricite-seuil-arret-centrale-photovoltaique",
+      "apsad-d20-assurance-photovoltaique-ce-qui-change",
+      "agrivoltaisme-definition-loi-aper-entretien",
+    ],
     image: "/images/robot-franchissement.jpg",
     category: "Énergie Solaire",
     date: "12 Octobre 2026",
@@ -618,6 +640,11 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "apsad-d20-assurance-photovoltaique-ce-qui-change",
+    related: [
+      "prix-negatifs-electricite-seuil-arret-centrale-photovoltaique",
+      "nettoyage-centrale-solaire-saone-et-loire",
+      "thermographie-drone-hiver-bonne-saison",
+    ],
     image: "/images/avant-apres-panneaux-2.jpg",
     category: "Énergie Solaire",
     date: "28 Septembre 2026",
@@ -687,6 +714,11 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "prix-negatifs-electricite-seuil-arret-centrale-photovoltaique",
+    related: [
+      "prix-mwh-solaire-baisse-appel-offres-2026",
+      "panneaux-solaires-rendement-perdu-apres-ete",
+      "nettoyer-panneaux-solaires-karcher-eau-osmosee-methode",
+    ],
     image: "/images/robot-vue-aerienne.jpg",
     category: "Énergie Solaire",
     date: "22 Septembre 2026",
@@ -744,6 +776,11 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "panneaux-solaires-rendement-perdu-apres-ete",
+    related: [
+      "apsad-d20-assurance-photovoltaique-ce-qui-change",
+      "prix-negatifs-electricite-seuil-arret-centrale-photovoltaique",
+      "nettoyer-panneaux-solaires-karcher-eau-osmosee-methode",
+    ],
     image: "/images/robot-centrale-sol.jpg",
     category: "Énergie Solaire",
     date: "16 Septembre 2026",
@@ -1124,6 +1161,11 @@ export const blogPosts: BlogPost[] = [
 
   {
     slug: "sable-saharien-panneaux-solaires-rendement",
+    related: [
+      "nettoyage-centrale-solaire-saone-et-loire",
+      "panneaux-solaires-rendement-perdu-apres-ete",
+      "nettoyer-panneaux-solaires-karcher-eau-osmosee-methode",
+    ],
     image: "/images/solairebanner.png",
     category: "Énergie Solaire",
     date: "10 Avril 2026",
@@ -1208,8 +1250,13 @@ export const blogPosts: BlogPost[] = [
 
   {
     slug: "nettoyage-facade-drone-vs-echafaudage",
+    related: [
+      "reglementation-drone-sts-01-sts-02",
+      "thermographie-drone-decret-tertiaire",
+      "nettoyage-en-hauteur-drone",
+    ],
     image: "/images/Barda.png",
-    category: "Facades & Bardages",
+    category: "Façades & Bardages",
     date: "25 Mars 2026",
     readTime: "5 min",
     badge: "bg-emerald-50 text-emerald-600",

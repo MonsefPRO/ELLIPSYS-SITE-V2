@@ -140,6 +140,10 @@ export default async function MethodeGarantiesPage() {
               <a href="https://www.service-public.gouv.fr/particuliers/vosdroits/F34630" target="_blank" rel="noopener noreferrer" className="text-brand-orange-400 hover:underline">Service-Public.fr</a>
               {" · "}
               <a href="https://www.easa.europa.eu/en/domains/civil-drones" target="_blank" rel="noopener noreferrer" className="text-brand-orange-400 hover:underline">EASA (Civil Drones)</a>
+              {" · "}
+              <Link href="/blog/reglementation-drone-sts-01-sts-02" className="text-brand-orange-400 hover:underline">
+                {isEn ? "Our guide to STS-01 and STS-02 scenarios (FR)" : "Notre guide des scénarios STS-01 et STS-02"}
+              </Link>
             </p>
           </div>
         </div>

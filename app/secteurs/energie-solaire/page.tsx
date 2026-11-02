@@ -208,6 +208,18 @@ export default async function SolaireSecteurPage() {
             {isEn ? "Why Ellipsys for your solar array?" : "Pourquoi Ellipsys pour votre parc solaire ?"}
           </h2>
           <AccordionSection items={avantages} />
+          {!isEn && (
+            <p className="mt-10 text-center text-sm text-slate-500 leading-relaxed">
+              À lire aussi :{" "}
+              <Link href="/blog/apsad-d20-assurance-photovoltaique-ce-qui-change" className="font-semibold text-brand-orange-500 hover:underline">
+                ce que le référentiel APSAD D20 change pour l&apos;assurance photovoltaïque
+              </Link>{" "}
+              et{" "}
+              <Link href="/blog/prix-negatifs-electricite-seuil-arret-centrale-photovoltaique" className="font-semibold text-brand-orange-500 hover:underline">
+                ce que les prix négatifs changent pour votre centrale
+              </Link>.
+            </p>
+          )}
         </div>
       </section>
 

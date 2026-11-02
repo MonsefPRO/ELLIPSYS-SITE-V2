@@ -419,6 +419,8 @@ export default async function TraitementToiturePage() {
             { href: "/demoussage-toiture-montpellier", label: "Démoussage de toiture à Montpellier", sub: "Notre offre locale, devis gratuit sous 24 h" },
             { href: "/tarifs", label: "Tarifs & prix", sub: "Fourchettes de prix par prestation" },
             { href: "/zone-intervention", label: "Zones d'intervention", sub: "Montpellier, Hérault, Gard, Occitanie" },
+            { href: "/blog/demoussage-toiture-automne-bon-moment", label: "Pourquoi démousser en automne", sub: "À lire sur le blog : le bon moment pour agir" },
+            { href: "/blog/demoussage-toiture-karcher-erreur", label: "Démoussage au karcher : l'erreur à éviter", sub: "À lire sur le blog : ce que la haute pression abîme" },
           ]}
         />
       )}

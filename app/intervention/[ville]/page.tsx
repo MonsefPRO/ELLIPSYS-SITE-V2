@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
@@ -6,7 +7,8 @@ import {
   ShieldCheck, Sun, Users, Clock, Star, AlertTriangle, Landmark, HelpCircle,
 } from "lucide-react";
 import { getLang } from "@/lib/getLang";
-import { getVille, SEO_LEGACY, VILLES_AUTORISEES, VILLES_NOINDEX } from "@/lib/villes";
+import { getVille, SEO_LEGACY, VILLES_AUTORISEES, VILLES_ENRICHIES, VILLES_NOINDEX } from "@/lib/villes";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 
 type Props = { params: Promise<{ ville: string }> };
 
@@ -27,21 +29,38 @@ const cityImages: Record<string, string> = {
   "bordeaux": "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=1920&q=80",
   "toulouse": "/images/toulouse.webp",
   "nice": "https://images.unsplash.com/photo-1533104816931-20fa691ff6ca?auto=format&fit=crop&w=1920&q=80",
-  "avignon": "https://images.unsplash.com/photo-1547980695-33d0f48e53a1?auto=format&fit=crop&w=1920&q=80",
-  "aix-en-provence": "https://images.unsplash.com/photo-1602524816290-a4d4a0b9e5c6?auto=format&fit=crop&w=1920&q=80",
+  // Photos locales : les anciennes URL Unsplash d'Avignon, Aix, Perpignan,
+  // Montauban et Béziers renvoyaient 404, celle de Narbonne pesait 1,5 Mo.
+  "avignon": "/images/secteur-syndic.webp",
+  "aix-en-provence": "/images/drone-toiture-intervention.webp",
   "toulon": "https://images.unsplash.com/photo-1593529467220-9d721ceb9a78?auto=format&fit=crop&w=1920&q=80",
-  "perpignan": "https://images.unsplash.com/photo-1551882547-ff40c4a49f6d?auto=format&fit=crop&w=1920&q=80",
-  "montauban": "https://images.unsplash.com/photo-1558618047-3c8c76a4fd27?auto=format&fit=crop&w=1920&q=80",
+  "perpignan": "/images/thermographie-solaire.webp",
+  "montauban": "/images/Toiture.webp",
   "sete": "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?auto=format&fit=crop&w=1920&q=80",
-  "beziers": "https://images.unsplash.com/photo-1569510741685-af7ea56e9e56?auto=format&fit=crop&w=1920&q=80",
-  "narbonne": "https://images.unsplash.com/photo-1543716091-a840c05249ec?auto=format&fit=crop&w=1920&q=80",
+  "beziers": "/images/accueil.webp",
+  "narbonne": "/images/Bannerindustrie.webp",
   "ales": "https://images.unsplash.com/photo-1504214208698-ea1916a2195a?auto=format&fit=crop&w=1920&q=80",
   "arles": "https://images.unsplash.com/photo-1549144511-f099e773c147?auto=format&fit=crop&w=1920&q=80",
   "lunel": "https://images.unsplash.com/photo-1590073242678-70ee3fc28e8e?auto=format&fit=crop&w=1920&q=80",
   "agde": "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?auto=format&fit=crop&w=1920&q=80",
 };
 
-const DEFAULT_IMAGE = "https://images.unsplash.com/photo-1499856374071-01a4e6a11a85?auto=format&fit=crop&w=1920&q=80";
+const DEFAULT_IMAGE = "/images/Toiture.webp";
+
+// Maillage entre pages ville : uniquement des villes enrichies (indexables).
+const VILLES_VOISINES: Record<string, string[]> = {
+  "montpellier": ["sete", "nimes", "beziers", "ales"],
+  "nimes": ["avignon", "ales", "montpellier", "marseille"],
+  "beziers": ["narbonne", "sete", "montpellier", "perpignan"],
+  "sete": ["montpellier", "beziers", "nimes", "narbonne"],
+  "perpignan": ["narbonne", "beziers", "toulouse", "montpellier"],
+  "toulouse": ["narbonne", "perpignan", "beziers", "montpellier"],
+  "marseille": ["avignon", "nimes", "montpellier"],
+  "avignon": ["nimes", "marseille", "ales", "montpellier"],
+  "narbonne": ["beziers", "perpignan", "toulouse", "sete"],
+  "ales": ["nimes", "montpellier", "avignon"],
+};
+const VOISINES_DEFAUT = ["montpellier", "nimes", "marseille", "toulouse"];
 
 function formatVilleName(slug: string) {
   return slug.split("-").map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
@@ -84,6 +103,9 @@ export default async function VillePage({ params }: Props) {
   // françaises : on ne le rend pas en version EN plutôt que d'afficher une
   // traduction automatique de mauvaise qualité.
   const showLocal = Boolean(data) && !isEn;
+  const voisines = (VILLES_VOISINES[citySlug] ?? VOISINES_DEFAUT)
+    .filter((v) => v !== citySlug && VILLES_ENRICHIES.includes(v) && !VILLES_NOINDEX.includes(v))
+    .map((v) => ({ slug: v, nom: getVille(v)?.nom ?? formatVilleName(v) }));
 
   const jsonLd = data
     ? {
@@ -93,20 +115,8 @@ export default async function VillePage({ params }: Props) {
             "@type": "Service",
             "name": `Nettoyage par drone à ${data.nom}`,
             "serviceType": "Nettoyage de panneaux solaires, démoussage de toiture et nettoyage de façade par drone",
-            "provider": {
-              "@type": "LocalBusiness",
-              "name": "Ellipsys Solutions",
-              "telephone": "+33467209709",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "159 Rue de Thor",
-                "addressLocality": "Montpellier",
-                "postalCode": "34000",
-                "addressRegion": "Occitanie",
-                "addressCountry": "FR",
-              },
-              "url": "https://ellipsys-solutions.com",
-            },
+            // Renvoie à l'entité LocalBusiness déclarée une seule fois dans le layout.
+            "provider": { "@id": "https://ellipsys-solutions.com/#business" },
             "areaServed": [
               { "@type": "City", "name": data.nom },
               ...data.communes.map((c) => ({ "@type": "City", "name": c })),
@@ -127,6 +137,12 @@ export default async function VillePage({ params }: Props) {
 
   return (
     <main className="flex flex-col min-h-screen pt-24 pb-12 bg-slate-50">
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Zone d'intervention", path: "/zone-intervention" },
+          { name: villeName, path: `/intervention/${citySlug}` },
+        ]}
+      />
       {jsonLd && (
         <script
           type="application/ld+json"
@@ -136,7 +152,7 @@ export default async function VillePage({ params }: Props) {
 
       {/* HERO */}
       <section className="relative bg-[#0e2f52] text-white py-20 lg:py-28 text-center px-4 overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('${cityImage}')` }} />
+        <Image src={cityImage} alt="" fill priority sizes="100vw" className="object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
         <div className="relative z-10 max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-orange-500/20 text-brand-orange-400 font-bold text-sm mb-6">
@@ -284,8 +300,8 @@ export default async function VillePage({ params }: Props) {
               </div>
               <ul className="space-y-3 text-slate-600 text-sm flex-1">
                 <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" /><span>{isEn ? <><strong>Industrial cladding cleaning</strong> without interrupting operations</> : <><strong>Nettoyage de bardages industriels</strong> sans interruption d&apos;activité</>}</span></li>
-                <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" /><span>{isEn ? <><strong>Solar panel cleaning in {villeName}</strong>, recover up to 30% in output</> : <><strong>Nettoyage de panneaux solaires à {villeName}</strong>, récupérez jusqu&apos;à 30 % de rendement</>}</span></li>
-                <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" /><span>{isEn ? <><strong>Building thermal imaging</strong> by drone: thermal bridge and infiltration detection</> : <><strong>Thermographie bâtiment</strong> par drone : détection de ponts thermiques et infiltrations</>}</span></li>
+                <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" /><span>{isEn ? <><strong><Link href="/prestations/nettoyage-solaire" className="underline decoration-brand-orange-500/40 underline-offset-2 hover:text-brand-orange-500 transition-colors">Solar panel cleaning in {villeName}</Link></strong>, recover up to 30% in output</> : <><strong><Link href="/prestations/nettoyage-solaire" className="underline decoration-brand-orange-500/40 underline-offset-2 hover:text-brand-orange-500 transition-colors">Nettoyage de panneaux solaires à {villeName}</Link></strong>, récupérez jusqu&apos;à 30 % de rendement</>}</span></li>
+                <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" /><span>{isEn ? <><strong><Link href="/prestations/thermographie" className="underline decoration-brand-orange-500/40 underline-offset-2 hover:text-brand-orange-500 transition-colors">Building thermal imaging</Link></strong> by drone: thermal bridge and infiltration detection</> : <><strong><Link href="/prestations/thermographie" className="underline decoration-brand-orange-500/40 underline-offset-2 hover:text-brand-orange-500 transition-colors">Thermographie bâtiment</Link></strong> par drone : détection de ponts thermiques et infiltrations</>}</span></li>
                 <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" /><span>{isEn ? "Maintenance of datacenters, logistics warehouses, glazed facades" : "Entretien de datacenters, entrepôts logistiques, façades vitrées"}</span></li>
               </ul>
             </div>
@@ -299,8 +315,8 @@ export default async function VillePage({ params }: Props) {
                 <h3 className="text-xl font-bold text-slate-900">{isEn ? "Private Clients & Co-ownerships" : "Particuliers & Copropriétés"}</h3>
               </div>
               <ul className="space-y-3 text-slate-600 text-sm flex-1">
-                <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" /><span>{isEn ? <><strong>Roof demossing in {villeName}</strong>, no broken tiles, no fall risk</> : <><strong>Démoussage toiture à {villeName}</strong>, aucune tuile cassée, aucun risque de chute</>}</span></li>
-                <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" /><span>{isEn ? <><strong>Facade cleaning in {villeName}</strong>: render, stone, plaster, concrete</> : <><strong>Nettoyage façade à {villeName}</strong> : crépi, pierre, enduit, béton</>}</span></li>
+                <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" /><span>{isEn ? <><strong><Link href="/prestations/traitement-toiture" className="underline decoration-brand-orange-500/40 underline-offset-2 hover:text-brand-orange-500 transition-colors">Roof demossing in {villeName}</Link></strong>, no broken tiles, no fall risk</> : <><strong><Link href="/prestations/traitement-toiture" className="underline decoration-brand-orange-500/40 underline-offset-2 hover:text-brand-orange-500 transition-colors">Démoussage toiture à {villeName}</Link></strong>, aucune tuile cassée, aucun risque de chute</>}</span></li>
+                <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" /><span>{isEn ? <><strong><Link href="/prestations/nettoyage-facade" className="underline decoration-brand-orange-500/40 underline-offset-2 hover:text-brand-orange-500 transition-colors">Facade cleaning in {villeName}</Link></strong>: render, stone, plaster, concrete</> : <><strong><Link href="/prestations/nettoyage-facade" className="underline decoration-brand-orange-500/40 underline-offset-2 hover:text-brand-orange-500 transition-colors">Nettoyage façade à {villeName}</Link></strong> : crépi, pierre, enduit, béton</>}</span></li>
                 <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" /><span>{isEn ? "Anti-moss treatment and long-lasting waterproofing" : "Traitement anti-mousses et hydrofuge longue durée"}</span></li>
                 <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" /><span>{isEn ? <>Disinfection and <strong>pest</strong> treatment (pigeons, droppings, insects)</> : <>Désinfection et traitement <strong>nuisibles</strong> (pigeons, fientes, insectes)</>}</span></li>
               </ul>
@@ -472,6 +488,28 @@ export default async function VillePage({ params }: Props) {
         </>
       )}
 
+      {/* VILLES VOISINES */}
+      {voisines.length > 0 && (
+        <section className="py-14 bg-white">
+          <div className="container mx-auto px-4 max-w-5xl text-center">
+            <h2 className="text-2xl font-bold text-slate-900 mb-6">
+              {isEn ? "We also operate in nearby cities" : "Nous intervenons aussi dans les villes voisines"}
+            </h2>
+            <div className="flex flex-wrap justify-center gap-2.5">
+              {voisines.map((v) => (
+                <Link
+                  key={v.slug}
+                  href={`/intervention/${v.slug}`}
+                  className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-slate-100 text-slate-700 text-sm font-medium border border-slate-200 hover:border-brand-orange-500 hover:text-brand-orange-500 transition-colors"
+                >
+                  <MapPin className="w-3.5 h-3.5" /> {v.nom}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* CERTIFICATIONS */}
       <section className="bg-[#0e2f52] py-10">
         <div className="container mx-auto px-4 max-w-5xl text-center">
@@ -506,6 +544,12 @@ export default async function VillePage({ params }: Props) {
           <Link href="/devis" className="inline-flex items-center gap-2 px-10 py-5 bg-brand-orange-500 text-white rounded-xl font-bold hover:bg-brand-orange-600 transition-colors shadow-lg text-lg">
             {isEn ? `Get a free quote in ${villeName}` : `Obtenir un devis gratuit à ${villeName}`} <ChevronRight className="w-5 h-5" />
           </Link>
+          <p className="text-slate-400 text-sm mt-6">
+            {isEn ? "Want a first idea of the budget? " : "Besoin d'un premier ordre de prix ? "}
+            <Link href="/tarifs" className="text-brand-orange-500 font-semibold hover:underline">
+              {isEn ? "See our indicative prices" : "Consultez nos tarifs indicatifs"}
+            </Link>.
+          </p>
         </div>
       </section>
 

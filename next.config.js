@@ -30,7 +30,13 @@ const securityHeaders = [
 
 const nextConfig = {
   async headers() {
-    return [{ source: "/(.*)", headers: securityHeaders }];
+    return [
+      { source: "/(.*)", headers: securityHeaders },
+      // Les réponses RSC (navigation client) ne doivent pas être indexées
+      // comme des pages à part entière (URL ?_rsc=… vues dans la Search Console).
+      { source: "/:path*", has: [{ type: "query", key: "_rsc" }], headers: [{ key: "X-Robots-Tag", value: "noindex" }] },
+      { source: "/:path*", has: [{ type: "header", key: "rsc" }], headers: [{ key: "X-Robots-Tag", value: "noindex" }] },
+    ];
   },
 
   // ─── Reverse-proxy PostHog ───────────────────────────────────────────────

@@ -306,6 +306,18 @@ export default async function ThermographiePage() {
             {isEn ? "The strengths of aerial thermographic inspection" : "Les atouts de l'inspection thermographique aérienne"}
           </h2>
           <AccordionSection items={atouts} />
+          {!isEn && (
+            <p className="mt-10 text-center text-sm text-slate-500 leading-relaxed">
+              À lire aussi :{" "}
+              <Link href="/blog/thermographie-drone-hiver-bonne-saison" className="font-semibold text-brand-orange-500 hover:underline">
+                pourquoi l&apos;hiver est la bonne saison pour la thermographie
+              </Link>{" "}
+              et{" "}
+              <Link href="/blog/thermographie-drone-decret-tertiaire" className="font-semibold text-brand-orange-500 hover:underline">
+                comment la thermographie par drone aide à tenir le décret tertiaire
+              </Link>.
+            </p>
+          )}
         </div>
       </section>
 
