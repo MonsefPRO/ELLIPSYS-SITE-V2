@@ -13,8 +13,10 @@ import {
 import { getLang } from "../lib/getLang";
 
 export const metadata: Metadata = {
-  title: "Nettoyage panneaux solaires & toitures par drone",
-  description: "Nettoyage de panneaux solaires, toitures et façades par drone et robot. Jusqu'à +30 % de rendement, sans échafaudage. Devis 24 h ☎ 04 67 20 97 09.",
+  // Title absolu : le nom complet de la marque doit figurer sur l'accueil
+  // (requêtes « ellipsys » et « ellipsys-solutions.com » mal classées en GSC).
+  title: { absolute: "Nettoyage solaire et toiture par drone | Ellipsys Solutions" },
+  description: "Ellipsys Solutions nettoie panneaux solaires, toitures et façades par drone et robot, sans échafaudage. Pilotes DGAC, base à Montpellier. Devis 24 h.",
   alternates: {
     canonical: "https://ellipsys-solutions.com",
   },

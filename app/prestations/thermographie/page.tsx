@@ -6,8 +6,8 @@ import AccordionSection from "@/components/AccordionSection";
 import { getLang } from "@/lib/getLang";
 
 export const metadata: Metadata = {
-  title: "Thermographie et inspection de bâtiments par drone",
-  description: "Thermographie par drone : audits Décret Tertiaire, maintenance de parcs solaires, détection de ponts thermiques et d'infiltrations. DJI Matrice 4T.",
+  title: "Thermographie drone : bâtiment et photovoltaïque",
+  description: "Thermographie infrarouge par drone : audit Décret Tertiaire, ponts thermiques, infiltrations, modules photovoltaïques défaillants. Rapport PDF sous 48 h.",
   alternates: {
     canonical: "https://ellipsys-solutions.com/prestations/thermographie",
   },

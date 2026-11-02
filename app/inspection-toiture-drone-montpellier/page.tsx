@@ -8,7 +8,7 @@ import LandingPage from "@/components/LandingPage";
 export const metadata: Metadata = {
   title: "Inspection de toiture par drone à Montpellier",
   description:
-    "Inspection de toiture par drone à Montpellier : photos haute définition et thermographie, sans échafaudage ni personne sur le toit. Rapport sous 48 h.",
+    "Inspection de toiture par drone à Montpellier : photos HD de chaque versant et caméra thermique, personne ne monte sur le toit. Rapport remis sous 48 h.",
   alternates: { canonical: "https://ellipsys-solutions.com/inspection-toiture-drone-montpellier" },
 };
 

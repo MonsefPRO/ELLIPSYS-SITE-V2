@@ -14,6 +14,81 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "thermographie-drone-hiver-bonne-saison",
+    image: "/images/thermographie-industrie.webp",
+    category: "Thermographie",
+    date: "2 Novembre 2026",
+    readTime: "6 min",
+    badge: "bg-blue-50 text-blue-600",
+    title: "Thermographie par drone : pourquoi l'hiver est la bonne saison",
+    excerpt: "Une caméra thermique ne révèle une déperdition que s'il fait nettement plus chaud dedans que dehors. C'est pourquoi la thermographie des toitures et des façades se programme pendant la saison de chauffe. Conditions de mesure, cas particulier des panneaux solaires et intérêt pratique avant des travaux.",
+    metaTitle: "Thermographie par drone : pourquoi la faire en hiver",
+    metaDescription: "Toitures, façades, ponts thermiques : pourquoi la thermographie de bâtiment se programme en hiver. Conditions de mesure et cas des panneaux solaires.",
+    content: `
+<p><strong>La thermographie d'un bâtiment se programme pendant la saison de chauffe, en général de novembre à mars : les déperditions, les ponts thermiques et les zones humides ne ressortent sur l'image que s'il fait nettement plus chaud à l'intérieur qu'à l'extérieur. Les panneaux photovoltaïques obéissent à une autre règle : leur inspection demande un fort ensoleillement, que de belles journées d'hiver offrent souvent sur l'arc méditerranéen.</strong> Voici pourquoi.</p>
+
+<h2>Ce que mesure vraiment une caméra thermique</h2>
+<p>Une caméra infrarouge ne voit pas la chaleur qui s'échappe : elle capte le rayonnement émis par les surfaces et le traduit en température de surface. Un défaut d'isolation n'apparaît que si de la chaleur traverse la paroi, donc s'il fait nettement plus chaud d'un côté que de l'autre. Vue de l'extérieur, une zone mal isolée apparaît alors plus chaude que le reste de la paroi. Sans écart de température, l'image s'uniformise et ne dit presque rien.</p>
+<p>La méthode est encadrée par la norme NF EN ISO 6781-1 de 2023, qui remplace l'ancienne NF EN 13187 pour la détection par infrarouge des irrégularités de chaleur, d'air et d'humidité dans les bâtiments.</p>
+
+<h2>Pourquoi l'hiver : l'écart de température</h2>
+<p>Les guides pratiques recommandent généralement un écart d'au moins 10 °C entre l'intérieur et l'extérieur. En dessous, seuls les défauts francs restent visibles. Pour une prise de vue extérieure, notamment par drone, certains guides conseillent plutôt 15 °C ou plus pour obtenir des images plus lisibles.</p>
+<p>Un tel écart n'est atteint de façon fiable que lorsqu'il fait froid dehors. Sur le littoral méditerranéen, où l'hiver reste doux, les matinées de décembre à février s'y prêtent le plus souvent ; en novembre et en mars, il faut choisir les jours avec soin.</p>
+
+<h2>Les bonnes conditions de mesure</h2>
+<ul>
+  <li><strong>Chauffage en marche</strong> depuis plusieurs heures, à un régime stable, pour que les parois soient à l'équilibre. Un chauffage coupé le week-end fausse les images du lundi matin.</li>
+  <li><strong>Pas de soleil direct sur les parois</strong>, ni pendant la mesure ni dans les heures qui précèdent : une façade ensoleillée stocke de la chaleur et la restitue ensuite, ce qui masque les défauts. D'où les relevés avant le lever du soleil, ou en soirée, bien après son passage.</li>
+  <li><strong>Des parois sèches</strong> : pas de pluie pendant la mesure ni juste avant. L'eau qui s'évapore refroidit la surface et brouille la lecture.</li>
+  <li><strong>Un vent faible</strong> : le vent refroidit les surfaces exposées et atténue les contrastes. Les jours de mistral ou de tramontane sont à écarter.</li>
+  <li><strong>Une attention aux reflets</strong> : le verre et les métaux renvoient le rayonnement du ciel ou des bâtiments voisins, ce dont l'interprétation doit tenir compte.</li>
+</ul>
+<p>Il est d'usage de consigner les conditions de la prise de vue (températures intérieure et extérieure, vent, heure, état du ciel) : elles conditionnent la lecture des images et la comparaison avec un relevé ultérieur.</p>
+
+<h2>Ce que l'hiver permet de repérer</h2>
+<ul>
+  <li><strong>Les défauts d'isolation des toitures</strong> : isolant tassé, manquant ou mal jointif, zones de combles non isolées. Le drone couvre toute la toiture sans accès en hauteur.</li>
+  <li><strong>Les ponts thermiques</strong> : liaisons entre planchers et façades, nez de dalle, acrotères, tableaux de fenêtres.</li>
+  <li><strong>Les fuites d'air</strong> autour des menuiseries, des coffres de volets et des traversées de toiture.</li>
+  <li><strong>Les zones humides</strong> : un isolant ou une maçonnerie gorgés d'eau n'ont pas le même comportement thermique qu'une zone sèche.</li>
+</ul>
+<p>Pour l'humidité, l'hiver n'est pas la seule période possible. Sur les toitures-terrasses, la méthode classique repose sur l'inertie : après une journée ensoleillée et sèche, l'isolant mouillé garde sa chaleur et ressort plus chaud en début de nuit. Dans tous les cas, l'image localise une suspicion, que l'on confirme par un sondage ou une mesure d'humidité.</p>
+
+<h2>Panneaux photovoltaïques : il faut du soleil</h2>
+<p>Pour des panneaux solaires, la logique est inverse. Un défaut de module, comme une cellule fissurée, une diode de dérivation défaillante ou une connexion dégradée, chauffe d'autant plus que le courant est élevé, donc sous fort ensoleillement. La spécification technique IEC TS 62446-3 (édition 2017), qui encadre la thermographie des modules et des centrales en extérieur, demande une irradiance d'au moins 600 W/m² dans le plan des modules pendant la mesure, avec un ciel peu nuageux et un vent limité. Ces conditions se vérifient sur place par une mesure de l'irradiance.</p>
+<p>L'hiver n'est pas exclu pour autant. Sur l'arc méditerranéen, les journées claires sont fréquentes, et autour de midi l'irradiance sur des modules bien inclinés peut dépasser ce seuil. Mais la plage horaire utile est plus courte qu'au printemps, et sur des modules peu inclinés, le soleil bas du cœur de l'hiver peut ne pas suffire. Seule la mesure faite sur place permet de trancher.</p>
+<p>Enfin, un module encrassé peut lui-même produire un point chaud. Un relevé réalisé après un <a href="/prestations/nettoyage-solaire">nettoyage des panneaux</a> distingue une salissure d'un véritable défaut, comme nous l'expliquons dans notre article sur <a href="/blog/panneaux-solaires-rendement-perdu-apres-ete">le rendement perdu après l'été</a>.</p>
+
+<h2>Le froid aide-t-il à repérer les points chauds ?</h2>
+<p>On lit souvent qu'une température ambiante basse fait mieux ressortir les points chauds des panneaux. L'argument n'est pas décisif. L'échauffement d'une cellule défectueuse dépend d'abord du courant qui la traverse, donc de l'irradiance : c'est elle que l'IEC TS 62446-3 encadre, pas la température de l'air. Un temps froid et sec s'accompagne souvent d'un ciel dégagé, ce qui aide, mais le vent, fréquent l'hiver dans la région, refroidit les modules et atténue les contrastes. Pour comparer des relevés entre eux, il faut tenir compte de l'irradiance au moment de chaque prise de vue.</p>
+
+<h2>Pourquoi programmer la thermographie cet hiver</h2>
+<ul>
+  <li><strong>Préparer une rénovation énergétique</strong> : un relevé d'hiver localise les défauts et donne une base factuelle pour cibler les travaux, puis les programmer à la belle saison.</li>
+  <li><strong>Avancer sur le décret tertiaire</strong> : le dispositif Éco Énergie Tertiaire impose aux bâtiments à usage tertiaire de 1 000 m² ou plus de réduire leur consommation d'énergie finale de 40 % en 2030, 50 % en 2040 et 60 % en 2050 par rapport à une année de référence, ou d'atteindre un seuil en valeur absolue, avec des déclarations sur la plateforme OPERAT. La thermographie n'est pas obligatoire, mais elle aide à choisir les travaux utiles, comme nous l'expliquons dans notre article <a href="/blog/thermographie-drone-decret-tertiaire">thermographie par drone et décret tertiaire</a>.</li>
+  <li><strong>Repérer les infiltrations avant les pluies</strong> : sur l'arc méditerranéen, les épisodes de pluies intenses se concentrent à l'automne. Un défaut d'étanchéité repéré pendant l'hiver laisse le temps d'intervenir avant les pluies de printemps et l'automne suivant. Une toiture envahie de mousses relève aussi d'un <a href="/prestations/traitement-toiture">traitement de toiture</a> (voir notre article sur <a href="/blog/demoussage-toiture-automne-bon-moment">le démoussage d'automne</a>).</li>
+  <li><strong>Préparer une comparaison avec l'été</strong> : dans un bâtiment climatisé, l'écart s'inverse l'été et un relevé montre où la chaleur entre, mais l'écart est en général plus faible et le soleil complique la mesure. Pour suivre l'effet de travaux, on compare des relevés faits dans des conditions proches.</li>
+</ul>
+
+<h2>Questions fréquentes</h2>
+<h3>Quand faire une thermographie de bâtiment ?</h3>
+<p>Pendant la saison de chauffe, en général de novembre à mars, quand l'écart entre l'intérieur et l'extérieur est marqué (les guides pratiques recommandent généralement au moins 10 °C), tôt le matin ou en soirée, par temps sec, sans vent fort et sans soleil direct sur les parois.</p>
+<h3>Peut-on faire une thermographie en été ?</h3>
+<p>Pour l'isolation, rarement : l'écart de température est trop faible et le soleil perturbe la mesure. L'été convient en revanche aux panneaux photovoltaïques et à la recherche d'humidité sur certaines toitures-terrasses.</p>
+<h3>Quel écart de température pour une thermographie ?</h3>
+<p>Les guides pratiques recommandent généralement au moins 10 °C entre l'intérieur et l'extérieur, stable depuis plusieurs heures. Pour des images prises depuis l'extérieur, certains conseillent 15 °C ou plus.</p>
+<h3>Peut-on faire une thermographie de panneaux solaires en hiver ?</h3>
+<p>Oui, par temps clair, si l'irradiance mesurée dans le plan des modules atteint au moins 600 W/m², comme le demande l'IEC TS 62446-3. Sur l'arc méditerranéen, c'est souvent possible autour de midi, moins facilement sur des modules peu inclinés.</p>
+<h3>La thermographie détecte-t-elle les fuites de toiture ?</h3>
+<p>Elle localise les zones où l'isolant ou le support est humide, ce qui oriente la recherche de fuite. Le diagnostic se confirme par un sondage ou une mesure d'humidité.</p>
+
+<h2>Notre approche</h2>
+<p>Basés à Montpellier, nous réalisons des thermographies par drone de toitures, de façades et d'installations photovoltaïques, avec des pilotes certifiés DGAC, sur l'arc méditerranéen et partout en France sur projet. Découvrez notre offre de <a href="/prestations/thermographie">thermographie par drone</a>.</p>
+<p><strong>Un bâtiment ou une installation à contrôler cet hiver ? <a href="/devis">Demandez un devis</a> ou appelez le 04 67 20 97 09.</strong></p>
+<p><em>Sources : AFNOR, NF EN ISO 6781-1 (août 2023), remplaçant la NF EN 13187 ; IEC TS 62446-3:2017, thermographie infrarouge extérieure des modules et centrales photovoltaïques, et notes d'application d'opérateurs d'inspection ; ministère de la Transition écologique, dispositif Éco Énergie Tertiaire (loi ELAN, article 175, et décret n° 2019-771 du 23 juillet 2019) ; ASTM C1153 pour la recherche d'humidité en toiture-terrasse ; Météo-France, épisodes méditerranéens ; guides pratiques de fabricants de caméras et de collectivités pour les écarts de 10 °C et 15 °C.</em></p>
+`,
+  },
+  {
     slug: "nettoyer-panneaux-solaires-karcher-eau-osmosee-methode",
     image: "/images/robot-brosse-action.jpg",
     category: "Énergie Solaire",
@@ -550,7 +625,7 @@ export const blogPosts: BlogPost[] = [
     badge: "bg-amber-50 text-amber-600",
     title: "APSAD D20 : ce que le nouveau référentiel change pour l'assurance photovoltaïque",
     excerpt: "Le référentiel APSAD D20 s'applique depuis le 1er septembre 2026. Les assureurs passent d'une conformité déclarée à une conformité démontrée : thermographie, contrôle Q20 et documentation deviennent décisifs pour assurer une installation photovoltaïque.",
-    metaTitle: "APSAD D20 : ce qui change pour l'assurance photovoltaïque",
+    metaTitle: "APSAD D20 et Q20 : ce que l'assureur exige",
     metaDescription: "Le référentiel APSAD D20 s'applique depuis le 1er septembre 2026. Thermographie, contrôle Q20, documentation : ce que les assureurs regardent désormais.",
     content: `
 <h2>Un référentiel de prévention entré en application le 1er septembre 2026</h2>
@@ -824,8 +899,8 @@ export const blogPosts: BlogPost[] = [
     badge: "bg-orange-50 text-orange-600",
     title: "Nettoyer deux centrales solaires au sol en une seule tournée : comment on s'organise",
     excerpt: "Récemment, notre équipe s'est déplacée en Saône-et-Loire pour nettoyer deux centrales photovoltaïques au sol pour le compte d'un exploitant solaire, plus de 50 000 m² de panneaux au total. Retour sur ce déplacement.",
-    metaTitle: "Nettoyage de centrales solaires en Saône-et-Loire",
-    metaDescription: "Nettoyage par drone et robot de deux centrales photovoltaïques au sol en Saône-et-Loire (Vitry, Montchanin) : plus de 50 000 m² sans arrêt de production.",
+    metaTitle: "Nettoyage panneaux solaires en Saône-et-Loire",
+    metaDescription: "Entretien de panneaux photovoltaïques en Saône-et-Loire : deux centrales au sol (Vitry, Montchanin) nettoyées par robot et drone, plus de 50 000 m².",
     content: `
 <h2>Un déplacement, deux centrales, plus de 50 000 m² à traiter</h2>
 <p>Récemment, notre équipe s'est déplacée en Saône-et-Loire pour intervenir sur deux centrales photovoltaïques au sol, pour le compte d'un exploitant solaire : une première à <strong>Vitry (71)</strong>, sur 31 000 m², puis une seconde à <strong>Montchanin (71)</strong>, sur 22 000 m². Deux sites, une même mission : retirer le pollen, la poussière et les dépôts organiques accumulés au fil des mois d'ensoleillement, sans jamais interrompre la production.</p>
@@ -1377,8 +1452,8 @@ export const blogPosts: BlogPost[] = [
     badge: "bg-orange-50 text-orange-600",
     title: "Scénarios STS-01 et STS-02 : tout comprendre sur la réglementation européenne des drones",
     excerpt: "Depuis janvier 2024, les vols de drones en zone peuplée sont soumis aux scénarios européens STS. Nous détaillons les obligations déclaratives, les zones d'exclusion et comment Ellipsys gère l'intégralité de ces démarches.",
-    metaTitle: "Réglementation Drone STS-01 STS-02 : Guide Complet 2026",
-    metaDescription: "Scénarios STS-01 et STS-02, certification DGAC, zones interdites : la réglementation drone en France en 2026, et les démarches que nous prenons en charge.",
+    metaTitle: "Drone STS-01 et STS-02 : la réglementation 2026",
+    metaDescription: "STS-01, STS-02 : conditions de vol, déclaration, zone de sécurité, formation du télépilote. Ce que les scénarios européens imposent en France en 2026.",
     content: `
 <h2>La réglementation drone en France : un cadre européen harmonisé</h2>
 <p>Depuis le 1er janvier 2021, la réglementation relative aux drones civils est harmonisée à l'échelle européenne, sous l'égide de l'EASA (Agence de l'Union Européenne pour la Sécurité Aérienne). En France, la mise en application est supervisée par la DGAC (Direction Générale de l'Aviation Civile).</p>

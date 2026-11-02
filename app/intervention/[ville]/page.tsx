@@ -6,7 +6,7 @@ import {
   ShieldCheck, Sun, Users, Clock, Star, AlertTriangle, Landmark, HelpCircle,
 } from "lucide-react";
 import { getLang } from "@/lib/getLang";
-import { getVille, VILLES_AUTORISEES, VILLES_NOINDEX } from "@/lib/villes";
+import { getVille, SEO_LEGACY, VILLES_AUTORISEES, VILLES_NOINDEX } from "@/lib/villes";
 
 type Props = { params: Promise<{ ville: string }> };
 
@@ -57,11 +57,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   // Description unique par ville quand on a du contenu local, évite les
   // meta dupliquées sur 20 pages, que Google traite comme du contenu dupliqué.
+  // Priorité : snippet rédigé à la main (descriptionSeo / SEO_LEGACY), puis assemblage.
+  const legacy = SEO_LEGACY[citySlug];
   return {
-    title: data?.titreSeo ?? `Nettoyage solaire, toiture et façade à ${villeName}`,
+    title: data?.titreSeo ?? legacy?.titre ?? `Nettoyage solaire, toiture et façade à ${villeName}`,
     description: data
-      ? `${villeName} (${data.codeDept}) : ${data.accroche} Devis sous 24 h.`
-      : `Nettoyage de panneaux solaires, démoussage de toiture, nettoyage de façade et thermographie par drone à ${villeName}. Sans échafaudage. Devis sous 24 h.`,
+      ? data.descriptionSeo ?? `${villeName} (${data.codeDept}) : ${data.accroche} Devis sous 24 h.`
+      : legacy?.description ?? `Nettoyage de panneaux solaires, démoussage de toiture, nettoyage de façade et thermographie par drone à ${villeName}. Sans échafaudage. Devis sous 24 h.`,
     alternates: { canonical: `https://ellipsys-solutions.com/intervention/${citySlug}` },
     ...(VILLES_NOINDEX.includes(citySlug) && { robots: { index: false, follow: true } }),
   };

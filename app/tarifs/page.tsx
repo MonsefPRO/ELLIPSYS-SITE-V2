@@ -4,8 +4,8 @@ import Image from "next/image";
 import { CheckCircle2, ArrowRight, Phone, Info, ShieldCheck } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Tarifs du nettoyage par drone : toiture, façade, solaire",
-  description: "Comprendre le prix d'un nettoyage par drone : facteurs de coût, méthode de devis. Devis personnalisé gratuit sous 24 h, en Occitanie et partout en France.",
+  title: "Prix nettoyage drone : toiture, façade, solaire",
+  description: "Combien coûte un nettoyage de toiture, façade ou panneaux solaires par drone ? Les 6 critères qui font le prix, ce qui est inclus, devis gratuit en 24 h.",
   keywords: [
     "tarif nettoyage drone",
     "prix nettoyage toiture drone",
@@ -16,8 +16,8 @@ export const metadata: Metadata = {
     "prix m² nettoyage drone",
   ],
   openGraph: {
-    title: "Tarifs Nettoyage par Drone, Méthodologie & Devis Transparent",
-    description: "Notre approche transparente du tarif : facteurs réels, fourchettes du marché, devis personnalisé sous 24h.",
+    title: "Prix d'un nettoyage par drone : toiture, façade, solaire",
+    description: "Les 6 critères qui font le prix d'un nettoyage par drone, ce qui est toujours inclus, et un devis personnalisé gratuit sous 24 h.",
     url: "https://ellipsys-solutions.com/tarifs",
     images: [{ url: "/images/accueil.png", alt: "Tarifs du nettoyage par drone, Ellipsys Solutions" }],
   },

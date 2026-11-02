@@ -7,8 +7,8 @@ import { getLang } from "@/lib/getLang";
 import { LiensUtiles } from "@/components/LiensUtiles";
 
 export const metadata: Metadata = {
-  title: "Démoussage et hydrofuge de toiture par drone",
-  description: "Démoussage de toiture par drone en Occitanie : traitement Certibiocide + hydrofuge, sans échafaudage ni risque de chute, adapté aux tuiles canal. Devis 24 h.",
+  title: "Démoussage de toiture par drone, sans échafaudage",
+  description: "Démoussage et hydrofuge de toiture par drone : traitement Certibiocide, personne sur les tuiles, aucune haute pression. Possible en zone ABF. Devis 24 h.",
   alternates: {
     canonical: "https://ellipsys-solutions.com/prestations/traitement-toiture",
   },

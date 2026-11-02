@@ -23,8 +23,12 @@ export type VilleData = {
   delai: string;
   /** Accroche courte pour la meta description (150 car. max une fois assemblée) */
   accroche: string;
-  /** Title Google calé sur la requête qui amène réellement des impressions (GSC) */
+  /** Title Google calé sur la requête qui amène réellement des impressions (GSC).
+   *  50 caractères max : le gabarit du layout ajoute « | Ellipsys » (10 car.). */
   titreSeo?: string;
+  /** Meta description complète (140-155 car.), prioritaire sur l'assemblage
+   *  « Ville (dept) : accroche Devis sous 24 h. » */
+  descriptionSeo?: string;
   /** 2 paragraphes uniques, le cœur du contenu local */
   intro: string[];
   /** Ce qui dégrade spécifiquement les bâtiments ici */
@@ -49,6 +53,9 @@ export const VILLES: Record<string, VilleData> = {
     region: "Occitanie",
     delai: "Sous 48 h",
     accroche: "Base opérationnelle Ellipsys. Intervention sous 48 h sur Montpellier et les 31 communes de la Métropole.",
+    titreSeo: "Nettoyage toiture, façade, solaire à Montpellier",
+    descriptionSeo:
+      "Montpellier (34), notre base : démoussage de toiture, nettoyage de façade et de panneaux solaires par drone, sans échafaudage. Équipe sous 48 h.",
     intro: [
       "Montpellier est notre base opérationnelle : nos drones et notre robot de nettoyage partent du 159 rue de Thor, ce qui nous permet d'intervenir sur toute la Métropole sans frais de déplacement et de mobiliser une équipe sous 48 h. C'est aussi la ville où nous connaissons le mieux le bâti, et ses points faibles.",
       "Le parc immobilier montpelliérain pose trois problèmes très concrets. Les toitures en tuile canal des villas des années 1970-1990, majoritaires de Grabels à Vendargues, sont fragiles : elles ne supportent ni la circulation d'un couvreur ni le nettoyage haute pression. Les façades en béton architectonique d'Antigone et les résidences récentes de Port Marianne s'encrassent vite sous l'effet combiné de la pollution urbaine et des vents de sud-est. Enfin, l'Occitanie est la première région photovoltaïque de France : la densité d'installations résidentielles et de centrales au sol autour de Montpellier est telle que la perte de rendement liée à l'encrassement représente un manque à gagner mesurable dès la première année.",
@@ -110,6 +117,9 @@ export const VILLES: Record<string, VilleData> = {
     region: "Occitanie",
     delai: "Sous 72 h",
     accroche: "Pierre calcaire, secteur sauvegardé, épisodes cévenols : un nettoyage doux, sans échafaudage.",
+    titreSeo: "Nettoyage par drone à Nîmes, façades et toitures",
+    descriptionSeo:
+      "Nîmes (30) : façades en pierre calcaire et toitures en tuile romane nettoyées par drone, sans haute pression, même en secteur sauvegardé. Devis 24 h.",
     intro: [
       "Nîmes est à 50 minutes de notre base montpelliéraine : nous y intervenons régulièrement, avec une contrainte que peu de villes imposent aussi fortement, la pierre. Le calcaire nîmois, extrait historiquement des carrières de Barutel et de Lens, constitue l'essentiel du bâti ancien intra-muros. C'est un matériau tendre et poreux, incompatible avec tout nettoyage haute pression.",
       "L'autre spécificité nîmoise est réglementaire. Une grande partie du centre est en secteur sauvegardé et relève de l'avis des Architectes des Bâtiments de France. Les méthodes agressives y sont proscrites, et l'installation d'un échafaudage sur une rue étroite du quartier de l'Écusson relève souvent du parcours du combattant administratif. Un nettoyage par drone, sans emprise au sol et sans contact abrasif, répond aux deux contraintes en même temps.",
@@ -169,8 +179,10 @@ export const VILLES: Record<string, VilleData> = {
     codeDept: "34",
     region: "Occitanie",
     delai: "Sous 72 h",
-    titreSeo: "Nettoyage de panneaux solaires à Béziers, par drone",
     accroche: "Bâti vigneronne, grandes toitures agricoles et proximité du littoral : nettoyage drone et robot.",
+    titreSeo: "Nettoyage panneaux solaires à Béziers, par drone",
+    descriptionSeo:
+      "Béziers (34) : panneaux solaires de hangars agricoles et de caves, toitures et façades nettoyés par drone et robot, sans échafaudage. Équipe sous 72 h.",
     intro: [
       "Béziers combine deux environnements qui usent les bâtiments différemment : un centre urbain ancien, et un arrière-pays viticole aux très grandes surfaces bâties. Les maisons de maître vigneronnes et les caves coopératives du Biterrois présentent des toitures et des façades d'une ampleur qui rend l'échafaudage économiquement absurde, c'est précisément là que le drone change l'équation.",
       "La proximité de la mer, à moins de 15 km, ajoute une contrainte que l'on retrouve jusque dans les terres : l'air chargé en sel se dépose sur les enduits et les vitrages, et favorise sur les façades exposées au nord un encrassement biologique noir persistant. Sur les installations photovoltaïques posées sur hangars agricoles, très nombreuses dans le secteur, le sel se combine aux poussières de travaux viticoles pour former un dépôt que la pluie ne suffit pas à éliminer.",
@@ -231,6 +243,9 @@ export const VILLES: Record<string, VilleData> = {
     region: "Occitanie",
     delai: "Sous 48 h",
     accroche: "Front de mer, embruns et Mont Saint-Clair : l'environnement le plus agressif du département.",
+    titreSeo: "Nettoyage toiture et façade à Sète, par drone",
+    descriptionSeo:
+      "Sète (34) : toitures et façades exposées aux embruns nettoyées par drone, du front de mer au Mont Saint-Clair, sans échafaudage. Équipe sous 48 h.",
     intro: [
       "Sète est, de tout notre secteur d'intervention, l'environnement le plus agressif pour un bâtiment. Coincée entre la mer et l'étang de Thau, la ville subit une exposition saline permanente : ce n'est pas un épisode ponctuel comme le sable saharien, c'est une agression continue, toute l'année, sur toutes les faces exposées.",
       "Cette exposition produit des dégradations très reconnaissables. Les façades de front de mer se couvrent d'un voile blanchâtre de dépôt salin, doublé sur les orientations nord et est d'un encrassement biologique noir favorisé par l'humidité constante. Les menuiseries et fixations métalliques se corrodent. Les maisons de pêcheurs du Quartier Haut et les immeubles accrochés au Mont Saint-Clair posent en plus un problème d'accès : pentes fortes, ruelles étroites, impossibilité d'installer une nacelle. Le drone lève cette contrainte, et notre robot prend le relais sur les grandes surfaces planes.",
@@ -291,6 +306,8 @@ export const VILLES: Record<string, VilleData> = {
     delai: "Sous 72 h",
     accroche: "Tramontane, ensoleillement record et parc photovoltaïque dense : nettoyage drone et robot dans le 66.",
     titreSeo: "Nettoyage de panneaux solaires à Perpignan",
+    descriptionSeo:
+      "Perpignan (66) : nettoyage de panneaux solaires et photovoltaïques par robot et drone, des toitures aux centrales au sol. Équipe sous 72 h, devis 24 h.",
     intro: [
       "Perpignan cumule deux caractéristiques qui en font un terrain particulier : le département des Pyrénées-Orientales est l'un des plus ensoleillés de France, et l'un des plus ventés. Cet ensoleillement a fait du Roussillon un territoire à très forte densité photovoltaïque, des toitures résidentielles aux grandes centrales au sol du secteur de Rivesaltes et des Corbières.",
       "La tramontane, elle, est un facteur d'encrassement largement sous-estimé. Elle souffle fort et souvent, et transporte en permanence des particules fines : poussières de garrigue, sables, résidus agricoles. Sur un panneau photovoltaïque, cela signifie un réencrassement rapide entre deux pluies, et dans un département où les précipitations sont rares, la pluie ne joue pratiquement pas son rôle de nettoyage naturel. C'est le contexte où l'écart de rendement entre un parc entretenu et un parc laissé en l'état est le plus élevé.",
@@ -351,6 +368,9 @@ export const VILLES: Record<string, VilleData> = {
     region: "Occitanie",
     delai: "Sous 5 jours ouvrés",
     accroche: "Brique foraine poreuse et humidité de la Garonne : un nettoyage sans pression, adapté au bâti toulousain.",
+    titreSeo: "Nettoyage façade et toiture à Toulouse par drone",
+    descriptionSeo:
+      "Toulouse (31) : façades en brique foraine nettoyées sans haute pression, démoussage de toiture et bardages par drone, sans échafaudage. Devis 24 h.",
     intro: [
       "Toulouse impose une contrainte matériau que l'on ne rencontre nulle part ailleurs en Occitanie : la brique foraine. Cette brique de terre cuite plate, qui donne à la ville sa couleur, est extrêmement poreuse. Un nettoyage haute pression la décape en surface, ouvre ses pores et garantit un réencrassement plus rapide qu'avant l'intervention, c'est l'erreur la plus fréquente et la plus coûteuse sur le bâti toulousain.",
       "Le climat toulousain, plus humide et moins venté que celui du littoral méditerranéen, aggrave le problème. L'humidité entretenue par la Garonne et les précipitations plus régulières favorisent nettement les développements de mousses et d'algues, en particulier sur les toitures en tuile canal des versants nord et sur les soubassements de façade. Sur le plan professionnel, le bassin toulousain concentre par ailleurs un tissu aéronautique et logistique dense, Blagnac, Colomiers, Labège, dont les bardages et toitures de très grande surface relèvent typiquement de notre méthode.",
@@ -412,6 +432,8 @@ export const VILLES: Record<string, VilleData> = {
     delai: "Sous 5 jours ouvrés",
     accroche: "Pierre calcaire, mistral et pollution portuaire : croûtes noires et accès difficiles, traités par drone.",
     titreSeo: "Nettoyage de façade à Marseille, par drone",
+    descriptionSeo:
+      "Marseille (13) : croûtes noires sur pierre calcaire, immeubles en pente, entrepôts de Vitrolles. Façades nettoyées par drone, sans nacelle. Devis 24 h.",
     intro: [
       "Marseille présente une combinaison de facteurs de dégradation rarement réunie ailleurs : la pierre calcaire du bâti ancien, la pollution atmosphérique d'une grande métropole portuaire et industrielle, et une exposition marine directe. Le résultat est bien connu des propriétaires marseillais : les fameuses croûtes noires qui recouvrent les façades en pierre du centre et du Panier.",
       "Ces croûtes ne sont pas de la saleté déposée, mais le produit d'une réaction chimique entre les polluants soufrés et le calcaire. Elles ne partent ni au jet d'eau simple ni à la brosse, et un nettoyage trop agressif emporte avec elles une partie de la pierre. La topographie marseillaise ajoute sa propre difficulté : les immeubles accrochés aux pentes d'Endoume, du Roucas Blanc ou des quartiers surplombant les calanques sont souvent inaccessibles à une nacelle. C'est là que le drone devient non pas une alternative, mais la seule option raisonnable.",
@@ -471,6 +493,9 @@ export const VILLES: Record<string, VilleData> = {
     region: "Provence-Alpes-Côte d'Azur",
     delai: "Sous 5 jours ouvrés",
     accroche: "Intra-muros classé, pierre calcaire et mistral : nettoyage doux sans échafaudage ni emprise au sol.",
+    titreSeo: "Nettoyage de façade à Avignon, sans échafaudage",
+    descriptionSeo:
+      "Avignon (84) : façades en pierre calcaire de l'intra-muros nettoyées par drone, à basse pression et à l'eau filtrée, sans emprise au sol. Devis 24 h.",
     intro: [
       "Avignon pose un problème que la plupart des villes n'ont pas à cette échelle : la quasi-totalité du centre est intra-muros, classé, et soumise à l'avis des Architectes des Bâtiments de France. Les rues y sont étroites, souvent piétonnes, et l'implantation d'un échafaudage suppose une autorisation de voirie longue à obtenir et coûteuse à occuper.",
       "Le bâti avignonnais est majoritairement en pierre calcaire, avec un grand nombre d'hôtels particuliers et de façades anciennes qui ne tolèrent aucun nettoyage abrasif. À cela s'ajoute le mistral, qui souffle ici avec une constance particulière et transporte poussières et particules jusque dans les cours intérieures. Notre approche, drone, basse pression, eau filtrée, zéro emprise au sol, répond simultanément à la contrainte patrimoniale, à la contrainte matériau et à la contrainte d'accès.",
@@ -530,7 +555,9 @@ export const VILLES: Record<string, VilleData> = {
     region: "Occitanie",
     delai: "Sous 72 h",
     accroche: "Vent parmi les plus forts de France, vignoble des Corbières et zone logistique : nettoyage drone et robot dans l'Aude.",
-    titreSeo: "Nettoyage panneaux solaires et façades à Narbonne",
+    titreSeo: "Nettoyage panneaux solaires et façade à Narbonne",
+    descriptionSeo:
+      "Narbonne (11) : nettoyage en hauteur de panneaux solaires, façades et hangars viticoles par drone et robot, sans échafaudage. Équipe sous 72 h.",
     intro: [
       "Narbonne se trouve dans l'un des couloirs de vent les plus constants de France : le cers et la tramontane, qui soufflent depuis le golfe du Lion, justifient d'ailleurs la forte densité de parcs éoliens sur les communes voisines. Cette même exposition explique pourquoi les toitures et les panneaux solaires du Narbonnais s'encrassent différemment du reste de l'Hérault, un dépôt de poussières fines et de sel remis en suspension en permanence, plutôt qu'un encrassement lent et régulier.",
       "L'arrière-pays narbonnais est aussi un vignoble à grande échelle, les Corbières et le massif de la Clape produisent une poussière calcaire et organique qui se dépose sur les hangars viticoles et les installations photovoltaïques posées sur leurs toitures. À cela s'ajoute la zone logistique du plateau de Montredon, au croisement des autoroutes A9 et A61, qui concentre des entrepôts de grande surface aux toitures et bardages typiquement adaptés à notre méthode robot.",
@@ -656,6 +683,18 @@ export const VILLES_LEGACY = [
  * pas passer pour des pages satellites. Paris et Lyon restent indexables.
  */
 export const VILLES_NOINDEX = VILLES_LEGACY.filter((v) => v !== "paris" && v !== "lyon");
+
+/**
+ * Title et meta description des villes legacy indexables (sans contenu local
+ * enrichi). Métadonnées seulement : le contenu visible reste le gabarit.
+ */
+export const SEO_LEGACY: Record<string, { titre: string; description: string }> = {
+  paris: {
+    titre: "Nettoyage panneaux solaires et toiture à Paris",
+    description:
+      "Paris : nettoyage de panneaux solaires, démoussage de toiture, façades et thermographie par drone, sans échafaudage ni nacelle. Devis gratuit sous 24 h.",
+  },
+};
 
 /** Liste blanche complète, toute autre URL doit renvoyer un 404 */
 export const VILLES_AUTORISEES = [...VILLES_ENRICHIES, ...VILLES_LEGACY];

@@ -97,9 +97,11 @@ export default async function BlogPostPage({ params }: Props) {
     description: post.metaDescription,
     image: `${BASE}${post.image}`,
     ...(datePublished && { datePublished, dateModified: datePublished }),
-    author: { "@type": "Organization", name: "Ellipsys Solutions", url: BASE },
+    // Même @id que l'entité du layout : Google relie les articles à la marque.
+    author: { "@type": "Organization", "@id": `${BASE}/#business`, name: "Ellipsys Solutions", url: BASE },
     publisher: {
       "@type": "Organization",
+      "@id": `${BASE}/#business`,
       name: "Ellipsys Solutions",
       logo: { "@type": "ImageObject", url: `${BASE}/logo.png` },
     },

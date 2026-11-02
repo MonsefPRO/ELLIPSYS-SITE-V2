@@ -89,6 +89,9 @@ const jsonLd = {
       "@type": "LocalBusiness",
       "@id": "https://ellipsys-solutions.com/#business",
       "name": "Ellipsys Solutions",
+      // Variantes sous lesquelles la marque est recherchée (GSC : « ellipsys »,
+      // « ellipsys-solutions.com ») : aident Google à rattacher ces requêtes à l'entité.
+      "alternateName": ["Ellipsys", "ellipsys-solutions.com"],
       "description":
         "Spécialiste de la maintenance extérieure par drone et robot : nettoyage de panneaux solaires et de centrales photovoltaïques, démoussage de toiture, nettoyage de façades et de bardages industriels. Sur les sites industriels, bardage et panneaux solaires en toiture sont traités en une seule intervention. Sans échafaudage, partout en France. Adhérent UN Global Compact.",
       "url": "https://ellipsys-solutions.com",
@@ -114,7 +117,17 @@ const jsonLd = {
         "name": "United Nations Global Compact",
         "url": "https://unglobalcompact.org",
       },
-      "logo": "https://ellipsys-solutions.com/images/favicon.png",
+      // Logo officiel (celui du header, 1000 × 300) : l'ancien favicon 64 × 64
+      // était sous le minimum de 112 × 112 px exigé par Google pour un logo.
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://ellipsys-solutions.com/#logo",
+        "url": "https://ellipsys-solutions.com/logo.png",
+        "contentUrl": "https://ellipsys-solutions.com/logo.png",
+        "width": 1000,
+        "height": 300,
+        "caption": "Ellipsys Solutions",
+      },
       "image": "https://ellipsys-solutions.com/images/accueil.png",
       "priceRange": "€€",
       "currenciesAccepted": "EUR",
@@ -205,8 +218,11 @@ const jsonLd = {
     {
       "@type": "WebSite",
       "@id": "https://ellipsys-solutions.com/#website",
-      "url": "https://ellipsys-solutions.com",
+      // Nom de site affiché par Google dans les résultats : name + alternateName
+      // sur la page d'accueil, conformément à la documentation « site name ».
+      "url": "https://ellipsys-solutions.com/",
       "name": "Ellipsys Solutions",
+      "alternateName": ["Ellipsys", "ellipsys-solutions.com"],
       "description":
         "Nettoyage, Inspection et Maintenance par Drone et Robot en Europe",
       "publisher": { "@id": "https://ellipsys-solutions.com/#business" },

@@ -8,7 +8,7 @@ import LandingPage from "@/components/LandingPage";
 export const metadata: Metadata = {
   title: "Démoussage et nettoyage de toiture à Montpellier",
   description:
-    "Démoussage de toiture par drone à Montpellier et dans l'Hérault, sans échafaudage ni monter sur les tuiles. Traitement Certibiocide + hydrofuge. Devis 24 h.",
+    "Démoussage de toiture à Montpellier par drone : personne ne marche sur vos tuiles canal, aucun risque de chute. Hydrofuge en option. Devis sous 24 h.",
   alternates: { canonical: "https://ellipsys-solutions.com/demoussage-toiture-montpellier" },
 };
 
