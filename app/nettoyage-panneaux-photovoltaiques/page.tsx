@@ -34,19 +34,7 @@ const jsonLdService = {
   "@context": "https://schema.org",
   "@type": "Service",
   serviceType: "Nettoyage de centrales photovoltaïques par drone et robot",
-  provider: {
-    "@type": "LocalBusiness",
-    name: "Ellipsys Solutions",
-    url: "https://ellipsys-solutions.com",
-    telephone: "+33467209709",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "159 rue de Thor",
-      addressLocality: "Montpellier",
-      postalCode: "34000",
-      addressCountry: "FR",
-    },
-  },
+  provider: { "@id": "https://ellipsys-solutions.com/#business" },
   areaServed: { "@type": "Country", name: "France" },
   description:
     "Nettoyage professionnel de panneaux photovoltaïques par drone et robot pour centrales au sol, ombrières et toitures industrielles. Sans détergent, sans risque de microfissures.",

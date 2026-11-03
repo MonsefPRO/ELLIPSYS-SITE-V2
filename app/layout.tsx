@@ -101,12 +101,17 @@ const jsonLd = {
       "vatID": "FR74999957533",
       "taxID": "99995753300014",
       "legalName": "Ellipsys Solutions",
+      "foundingDate": "2026-01-15",
+      "identifier": { "@type": "PropertyValue", "propertyID": "SIREN", "value": "999957533" },
       "email": "contact@ellipsys-group.com",
       // Domaines d'expertise (entité) + appartenance RSE : aident Google et les
       // moteurs IA à comprendre et citer Ellipsys sur ces sujets (E-E-A-T / GSO).
       "knowsAbout": [
         "Nettoyage de panneaux solaires photovoltaïques",
         "Nettoyage de centrales solaires, ombrières et toitures industrielles",
+        "Nettoyage robotisé de centrales photovoltaïques au sol",
+        "Agrivoltaïsme : nettoyage de centrales agrivoltaïques et de serres photovoltaïques",
+        "Nettoyage d'ombrières photovoltaïques de parking",
         "Démoussage et hydrofuge de toiture",
         "Nettoyage de façades et de bardages industriels",
         "Thermographie infrarouge par drone",
@@ -147,7 +152,9 @@ const jsonLd = {
         "longitude": 3.9092,
       },
       "areaServed": [
+        { "@type": "Country", "name": "France" },
         { "@type": "State", "name": "Occitanie" },
+        { "@type": "State", "name": "Provence-Alpes-Côte d'Azur" },
         { "@type": "City", "name": "Montpellier" },
         { "@type": "City", "name": "Nîmes" },
         { "@type": "City", "name": "Béziers" },
@@ -163,6 +170,27 @@ const jsonLd = {
         "@type": "OfferCatalog",
         "name": "Services de maintenance par drone et robotique",
         "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Nettoyage de centrales photovoltaïques au sol par robot",
+            },
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Nettoyage de centrales agrivoltaïques et de serres photovoltaïques",
+            },
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Nettoyage d'ombrières photovoltaïques",
+            },
+          },
           {
             "@type": "Offer",
             "itemOffered": {
@@ -212,7 +240,8 @@ const jsonLd = {
         "https://www.linkedin.com/company/ellipsys-solutions-drones",
         "https://www.instagram.com/ellipsysolutionsdrone/",
         "https://www.tiktok.com/@ellipsyssolutions",
-        "https://www.facebook.com/profile.php?id=61588550468356"
+        "https://www.facebook.com/profile.php?id=61588550468356",
+        "https://annuaire-entreprises.data.gouv.fr/entreprise/ellipsys-solutions-999957533"
       ],
     },
     {

@@ -34,7 +34,7 @@ export default async function PolitiqueConfidentialitePage() {
             </h2>
             <div className="text-slate-600 space-y-2 text-sm leading-relaxed">
               <p><strong>{isEn ? "Company name:" : "Raison sociale :"}</strong> Ellipsys Solutions</p>
-              <p><strong>{isEn ? "Registered office:" : "Siège social :"}</strong> 42, place de la Lucque, 30470 Aimargues</p>
+              <p><strong>{isEn ? "Registered office:" : "Siège social :"}</strong> 42 Placette de la Lucque, 30470 Aimargues</p>
               <p><strong>{isEn ? "Offices:" : "Bureaux :"}</strong> 159 Rue de Thor, 34000 Montpellier</p>
               <p><strong>{isEn ? "Email:" : "Email :"}</strong> contact@ellipsys-group.com</p>
               <p><strong>{isEn ? "Telephone:" : "Telephone :"}</strong> 04 67 20 97 09</p>

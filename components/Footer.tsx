@@ -84,7 +84,7 @@ export default function Footer() {
             <ul className="space-y-4 text-sm">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-brand-orange-500 shrink-0" />
-                <span>{"Siège : 42, place de la Lucque, 30470 Aimargues"}<br />{"Bureaux : 159 Rue de Thor, 34000 Montpellier"}</span>
+                <span>{"Siège : 42 Placette de la Lucque, 30470 Aimargues"}<br />{"Bureaux : 159 Rue de Thor, 34000 Montpellier"}</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-brand-orange-500 shrink-0" />

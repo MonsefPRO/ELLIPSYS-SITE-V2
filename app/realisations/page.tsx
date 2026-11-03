@@ -9,12 +9,42 @@ export const metadata: Metadata = {
   description: "Découvrez nos derniers chantiers en images. Des résultats concrets avant/après pour résoudre les problématiques d'accès complexes.",
 };
 
+// Chantiers réels en données structurées : donne aux moteurs IA des références
+// datées et chiffrées, rattachées à l'entreprise par son @id.
+const CHANTIERS = [
+  { nom: "Nettoyage de la centrale solaire au sol de Miremont", lieu: "Miremont (31)", date: "2026-10", description: "Centrale photovoltaïque au sol de 60 000 m², nettoyée au robot par deux pilotes." },
+  { nom: "Nettoyage de la centrale solaire au sol de Lapeyrouse-Fossat", lieu: "Lapeyrouse-Fossat (31)", date: "2026-09", description: "Centrale photovoltaïque au sol de 30 000 m², nettoyée par deux pilotes." },
+  { nom: "Nettoyage de la centrale solaire au sol de Vitry", lieu: "Vitry (71)", description: "Centrale photovoltaïque au sol de 31 000 m², repérage par drone puis nettoyage au robot." },
+  { nom: "Nettoyage de la centrale solaire au sol de Montchanin", lieu: "Montchanin (71)", description: "Centrale photovoltaïque au sol de 22 000 m², nettoyée au robot sans détergent." },
+  { nom: "Nettoyage des vitrages de façade du Scutum par drone", lieu: "Montpellier (34)", description: "Vitrages de deux façades d'un bâtiment professionnel nettoyés par drone en 2 jours, sans nacelle." },
+  { nom: "Démoussage de toiture en tuiles canal", lieu: "Aimargues (30)", description: "Toiture d'un particulier démoussée en une journée : produit biocide homologué puis rinçage." },
+];
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Réalisations d'Ellipsys Solutions",
+  itemListElement: CHANTIERS.map((c, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    item: {
+      "@type": "CreativeWork",
+      name: c.nom,
+      description: c.description,
+      ...(c.date ? { dateCreated: c.date } : {}),
+      locationCreated: { "@type": "Place", name: c.lieu },
+      creator: { "@id": "https://ellipsys-solutions.com/#business" },
+    },
+  })),
+};
+
 export default async function RealisationsPage() {
   const lang = await getLang();
   const isEn = lang === "en";
 
   return (
     <main className="flex flex-col min-h-screen pt-24 pb-12 bg-slate-50">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <section className="relative bg-[#0e2f52] text-white py-20 lg:py-32 overflow-hidden">
         <div className="absolute inset-0 opacity-100 bg-cover bg-center" style={{ backgroundImage: `url('/images/accueil.webp')` }} />
         <div className="brand-tint" />

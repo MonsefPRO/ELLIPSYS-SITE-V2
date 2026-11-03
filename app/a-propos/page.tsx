@@ -131,7 +131,7 @@ export default async function AProposPage() {
               <div>
                 <MapPin className="w-8 h-8 text-brand-orange-400 mx-auto mb-3" />
                 <h4 className="font-bold text-white mb-1">{isEn ? "Registered Office" : "Siège Social"}</h4>
-                <p className="text-slate-400 text-sm">42 place de la Lucque<br />30470 Aimargues</p>
+                <p className="text-slate-400 text-sm">42 Placette de la Lucque<br />30470 Aimargues</p>
               </div>
               <div>
                 <MapPin className="w-8 h-8 text-brand-orange-400 mx-auto mb-3" />
