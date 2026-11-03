@@ -63,7 +63,7 @@ export default function Page() {
         {
           titre: "Calé sur le calendrier agricole",
           texte:
-            "Nous planifions l'intervention avec l'exploitant agricole : après une récolte, hors périodes de traitement ou de présence du troupeau, quand le passage gêne le moins la production. La zone témoin, qui sert de référence aux rendements agricoles depuis le décret du 8 avril 2024, est repérée et laissée intacte.",
+            "Nous planifions l'intervention avec l'exploitant agricole : après une récolte, hors périodes de traitement ou de présence du troupeau, quand le passage gêne le moins la production.",
         },
         {
           titre: "La bonne méthode pour chaque structure",
