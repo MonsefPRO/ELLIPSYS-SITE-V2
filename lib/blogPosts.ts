@@ -16,6 +16,196 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "agrivoltaisme-avantages-inconvenients",
+    related: [
+      "agrivoltaisme-definition-loi-aper-entretien",
+      "agrivoltaisme-ovin-bovin-vigne-serres-entretien-panneaux",
+      "serre-photovoltaique-agricole-regles-lumiere-entretien",
+    ],
+    image: "/images/robot-franchissement.jpg",
+    category: "Énergie Solaire",
+    date: "3 Novembre 2026",
+    readTime: "8 min",
+    badge: "bg-amber-50 text-amber-600",
+    title: "Agrivoltaïsme : avantages, inconvénients et points de vigilance pour l'exploitation",
+    excerpt: "Ombre contre les canicules, abri pour les troupeaux, revenu complémentaire : l'agrivoltaïsme a de vrais atouts. Il a aussi ses limites : perte de lumière pour les cultures, engagement sur quarante ans, contrôles, aides PAC et entretien plus contraignant qu'une centrale au sol. Le point, sources à l'appui.",
+    metaTitle: "Agrivoltaïsme : avantages et inconvénients",
+    metaDescription: "Agrivoltaïsme : avantages (ombre, bien-être animal, revenu) et inconvénients (rendement, contrôles, 40 ans, PAC, entretien), d'après l'INRAE et la loi.",
+    content: `
+<p><strong>L'agrivoltaïsme protège cultures et troupeaux de la chaleur et des aléas, et apporte un revenu complémentaire à l'exploitation. En contrepartie, l'ombre des panneaux peut réduire les rendements, l'installation engage la parcelle pour quarante ans, et la loi impose des contrôles et un rendement agricole d'au moins 90 % de celui d'une zone témoin.</strong> Voici les avantages et les inconvénients, tels que les décrivent la recherche et les textes, et ce qu'ils changent pour l'exploitation au quotidien.</p>
+
+<h2>Agrivoltaïsme ou centrale au sol : ce qui change</h2>
+<p>Une centrale agrivoltaïque doit rendre un service direct à la production agricole, qui reste l'activité principale de la parcelle. Une centrale au sol, elle, a pour seule fonction de produire de l'électricité. La définition légale figure à l'article L.314-36 du code de l'énergie, issu de la loi APER du 10 mars 2023, et ses critères ont été fixés par le décret n° 2024-318 du 8 avril 2024.</p>
+<p>Le Conseil d'État a validé ce décret par trois décisions du 16 mars 2026, en rejetant notamment les recours de la Confédération paysanne et de la région Normandie. Le cadre juridique est donc stabilisé. Pour le détail des règles (quatre services, zone témoin, taux de couverture), voir notre <a href="/blog/agrivoltaisme-definition-loi-aper-entretien">guide de l'agrivoltaïsme et de la loi APER</a>.</p>
+
+<h2>Les avantages de l'agrivoltaïsme</h2>
+<p>Le principal avantage est la protection : l'ombre des panneaux atténue les coups de chaleur, et certaines structures protègent aussi du gel ou de la grêle. S'y ajoutent le confort des animaux et un revenu complémentaire, la loi exigeant en outre que le revenu tiré de la production agricole reste durable.</p>
+<ul>
+  <li><strong>Moins de stress thermique sur la vigne</strong> : sur un essai de six ans (2019-2024) mené à Piolenc (Vaucluse) sur du grenache noir, avec l'INRAE et la chambre d'agriculture de Vaucluse, dans un essai mené par Sun'Agri, des panneaux pilotés ont retardé la véraison de 2 à 5 jours et la récolte jusqu'à 7 jours, avec un taux de sucre comparable au témoin et une acidité plus élevée (résultats présentés au congrès GiESCO 2025).</li>
+  <li><strong>Un abri pour les troupeaux</strong> : l'Institut de l'élevage (Idele) relève que des études montrent une amélioration du confort des animaux dans les conditions extrêmes, fortes chaleurs ou vents forts.</li>
+  <li><strong>Une herbe parfois mieux préservée en été</strong> : sur des prairies pâturées, des observations de l'INRAE suggèrent un effet favorable des panneaux sur la pousse de l'herbe en cas de forte chaleur ou de sécheresse, sans que cet effet soit encore confirmé.</li>
+  <li><strong>Un revenu complémentaire encadré</strong> : la centrale apporte un revenu supplémentaire, et le décret impose que le revenu issu de la production agricole reste durable (article R.314-117 du code de l'énergie), une exigence validée par le Conseil d'État en mars 2026.</li>
+  <li><strong>Des parcelles qui restent agricoles</strong> : depuis l'arrêté du 21 mai 2024, la zone d'implantation d'une installation reconnue agrivoltaïque reste admissible aux aides de la PAC, à l'exception de la surface artificialisée qui supporte les panneaux.</li>
+</ul>
+
+<h2>Les inconvénients et les limites</h2>
+<p>Le premier inconvénient est la lumière : ce que les panneaux captent ne parvient plus aux plantes, et le rendement baisse quand la couverture augmente. Viennent ensuite un engagement de longue durée, des obligations de contrôle et un entretien plus contraignant que sur une centrale au sol.</p>
+<ul>
+  <li><strong>Une baisse de rendement liée à l'ombre</strong> : une note de chercheurs de l'INRAE, citée dans des amendements déposés à l'Assemblée nationale en mars 2025, fait état d'une baisse moyenne d'environ 25 % des rendements agricoles pour un taux de couverture de 20 %, parcelles devenues incultivables comprises. Sur prairie, une chercheuse de l'INRAE observe que la biomasse sous panneaux est en général inférieure au témoin lorsque l'eau et l'azote ne manquent pas.</li>
+  <li><strong>Des résultats encore partiels</strong> : la filière est jeune. L'observatoire de l'agrivoltaïsme de l'ADEME recensait environ 230 installations début 2026, dont 2 seulement relevant du régime de la loi APER, et beaucoup d'essais portent sur quelques saisons ou quelques sites.</li>
+  <li><strong>Un engagement sur quarante ans</strong> : les installations agrivoltaïques sont autorisées pour une durée maximale de quarante ans, prorogeable de dix ans si elles présentent encore un rendement significatif (articles R.111-62 et R.111-63 du code de l'urbanisme).</li>
+  <li><strong>Des garanties de démantèlement</strong> : l'autorité qui délivre le permis peut exiger des garanties financières. Sous 10 MWc, le barème de l'arrêté du 5 juillet 2024 est de 1 000 € × P², P étant la puissance en MWc : 9 000 € pour une installation de 3 MWc.</li>
+  <li><strong>Des contrôles réguliers</strong> : contrôle avant la mise en service, puis la sixième année, puis à intervalles réguliers, avec une transmission annuelle des données de production agricole et électrique à l'ADEME. Pour les cultures, un rendement inférieur au seuil de 90 % d'une zone témoin ou d'un référentiel remet en cause la qualification agrivoltaïque.</li>
+  <li><strong>Une instruction exigeante</strong> : l'avis de la commission départementale de préservation des espaces naturels, agricoles et forestiers (CDPENAF) est conforme, c'est-à-dire qu'un avis défavorable s'impose à l'autorité qui délivre le permis.</li>
+  <li><strong>Un entretien plus contraignant</strong> : l'activité agricole peut encrasser les panneaux plus vite qu'une centrale au sol, et chaque intervention doit tenir compte des animaux, des cultures et de la zone témoin (voir plus bas).</li>
+</ul>
+
+<h2>Le bilan en un tableau</h2>
+<div style="overflow-x:auto"><table>
+  <thead>
+    <tr><th>Sujet</th><th>Avantage</th><th>Inconvénient ou point de vigilance</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Climat</td><td>Ombre contre les canicules, protection contre certains aléas</td><td>Moins de lumière pour les cultures</td></tr>
+    <tr><td>Rendement agricole</td><td>Maturité retardée sur vigne, herbe parfois mieux préservée en été</td><td>Baisse moyenne de 25 % à 20 % de couverture, selon une note INRAE citée par des députés</td></tr>
+    <tr><td>Élevage</td><td>Abri contre la chaleur et le vent</td><td>Biomasse de prairie souvent inférieure au témoin</td></tr>
+    <tr><td>Revenu</td><td>Revenu complémentaire ; revenu agricole qui doit rester durable</td><td>Partage des rôles à fixer entre propriétaire, agriculteur et exploitant de la centrale</td></tr>
+    <tr><td>Durée</td><td>Visibilité sur quarante ans</td><td>Parcelle engagée quarante ans, garanties de démantèlement</td></tr>
+    <tr><td>Contrôle</td><td>Cadre validé par le Conseil d'État en 2026</td><td>Contrôles réguliers, seuil de 90 % pour les cultures, avis conforme de la CDPENAF</td></tr>
+    <tr><td>Aides PAC</td><td>Zone d'implantation admissible si l'installation est agrivoltaïque</td><td>Surface artificialisée des supports exclue</td></tr>
+    <tr><td>Exploitation</td><td>Activité agricole maintenue sous les panneaux</td><td>Encrassement plus rapide, interventions à caler sur le calendrier agricole</td></tr>
+  </tbody>
+</table></div>
+
+<h2>Élevage, vigne, cultures : les règles ne sont pas les mêmes</h2>
+<p>La zone témoin n'est pas exigée partout. En élevage et sous serre, l'article R.314-116 du code de l'énergie dispense de zone témoin : sous serre, la comparaison se fait avec un référentiel local ; en élevage, le seuil de 90 % porte sur la biomasse fourragère et le taux de chargement. Le Conseil d'État a jugé en mars 2026 que, pour l'élevage, le pouvoir réglementaire pouvait s'en tenir à des critères d'appréciation sans fixer de paramètres chiffrés.</p>
+<p>Pour les cultures, le décret exige un rendement supérieur à 90 % de celui d'une zone témoin ou d'un référentiel, proportion que le préfet peut abaisser, et la zone témoin doit représenter au moins 5 % de la surface agrivoltaïque, dans la limite d'un hectare. Les serres photovoltaïques obéissent à un régime propre, détaillé dans notre article sur la <a href="/blog/serre-photovoltaique-agricole-regles-lumiere-entretien">serre photovoltaïque agricole</a>.</p>
+
+<h2>Ce que l'agrivoltaïsme change pour l'entretien des panneaux</h2>
+<p>Une centrale agrivoltaïque peut s'encrasser plus vite qu'une centrale au sol, l'activité agricole ajoutant des poussières sous les panneaux, et son nettoyage obéit à des contraintes que les textes ne traitent pas. Ces contraintes se préparent tôt : l'AIE recommande d'intégrer la prévention de l'encrassement dès la conception.</p>
+<ul>
+  <li><strong>Les animaux</strong> : on intervient quand le troupeau est sur une autre parcelle, jamais au milieu des bêtes.</li>
+  <li><strong>Les cultures</strong> : aucun produit ne doit retomber sur les plantes ; le nettoyage se fait à l'eau filtrée, sans détergent, hors périodes de traitement, de vendanges et de récolte.</li>
+  <li><strong>Les poussières agricoles</strong> : labour, semis, moisson et piétinement des troupeaux déposent de la terre fine sur les modules, d'où des passages calés après les travaux qui soulèvent le plus de poussière.</li>
+  <li><strong>La hauteur et la mobilité des structures</strong> : tables surélevées pour les engins ou les bovins, persiennes et trackers pilotés sur vigne et vergers. La position des panneaux pendant le nettoyage se coordonne avec l'exploitant.</li>
+  <li><strong>L'eau</strong> : une parcelle agricole n'a pas toujours de point d'eau à proximité des rangées, ce qui pèse sur le choix de la méthode et sur la logistique.</li>
+  <li><strong>La zone témoin</strong> : équipes et matériel la contournent, car ses rendements servent de référence lors des contrôles.</li>
+</ul>
+<p>Le détail par production (ovins, bovins, vigne, maraîchage, serres) figure dans notre article <a href="/blog/agrivoltaisme-ovin-bovin-vigne-serres-entretien-panneaux">entretenir les panneaux selon la production</a>, et notre méthode sur la page <a href="/nettoyage-centrale-agrivoltaique">nettoyage de centrale agrivoltaïque</a>.</p>
+
+<h2>Questions fréquentes</h2>
+<h3>Quels sont les avantages de l'agrivoltaïsme ?</h3>
+<p>L'ombre des panneaux protège les cultures et les animaux des fortes chaleurs, certaines structures protègent aussi du gel ou de la grêle, et l'installation apporte un revenu complémentaire. Sur vigne, un essai de six ans à Piolenc a retardé la récolte jusqu'à 7 jours.</p>
+<h3>Quels sont les inconvénients de l'agrivoltaïsme ?</h3>
+<p>La perte de lumière pour les cultures, un engagement de la parcelle pour quarante ans, des garanties de démantèlement, des contrôles réguliers avec, pour les cultures, un seuil de 90 % du rendement d'une zone témoin, et un entretien des panneaux plus contraignant qu'en centrale au sol.</p>
+<h3>L'agrivoltaïsme fait-il baisser les rendements agricoles ?</h3>
+<p>Souvent, dans une mesure qui dépend du taux de couverture et de la culture. Une note de chercheurs de l'INRAE, citée par des députés en mars 2025, évoque une baisse moyenne d'environ 25 % pour 20 % de couverture. Pour les cultures, le décret exige un rendement supérieur à 90 % de celui d'une zone témoin ou d'un référentiel, proportion que le préfet peut abaisser.</p>
+<h3>Faut-il une zone témoin en agrivoltaïsme d'élevage ?</h3>
+<p>Non. L'article R.314-116 du code de l'énergie dispense de zone témoin les installations sur élevage et sur serre. En élevage, le seuil de 90 % porte alors sur la biomasse fourragère et le taux de chargement ; sous serre, la comparaison se fait avec un référentiel local.</p>
+<h3>Combien de temps dure une installation agrivoltaïque ?</h3>
+<p>Elle est autorisée pour quarante ans au maximum, avec une prorogation possible de dix ans si elle présente encore un rendement significatif (articles R.111-62 et R.111-63 du code de l'urbanisme).</p>
+
+<h2>Notre approche</h2>
+<p>Basés à Montpellier, nous nettoyons les panneaux des centrales solaires avec un robot à brosse rotative souple et à l'eau filtrée, sans détergent, jusqu'à 1 200 m² par heure. Chaque intervention est précédée d'un repérage par drone, réalisé par nos pilotes certifiés DGAC. Sur une parcelle agrivoltaïque, le calendrier se construit avec l'exploitant de la centrale et l'exploitant agricole. Nos quatre chantiers de centrales au sol, 143 000 m² au total, sont présentés sur la page <a href="/realisations">réalisations</a>.</p>
+<p><strong>Une centrale agrivoltaïque à entretenir ? <a href="/devis">Demandez un devis</a>, établi sous 24 h selon la surface, l'accès et l'encrassement.</strong></p>
+<p><em>Sources : loi n° 2023-175 du 10 mars 2023, article 54 ; code de l'énergie, articles L.314-36 et R.314-108 à R.314-120 ; décret n° 2024-318 du 8 avril 2024 et arrêté du 5 juillet 2024 (Légifrance) ; instruction technique DGPE/SDPE/2025-93 du 18 février 2025 (ministères de l'Agriculture, de l'Énergie et du Logement) ; arrêté du 21 mai 2024 sur l'admissibilité des surfaces à la PAC ; Conseil d'État, 16 mars 2026, n° 494941, 494883 et 495025 ; D. Fumey et al., « Shading grapevines with dynamic agrivoltaics… », GiESCO 2025, IVES Conference Series ; Idele, guide de l'agrivoltaïsme appliqué aux ruminants ; INRAE, observations sur prairies pâturées, relayées par Réussir ; note de chercheurs de l'INRAE citée dans des amendements à l'Assemblée nationale (mars 2025) ; ADEME, observatoire de l'agrivoltaïsme (mars 2026) ; AIE PVPS, fiche Tasks 13 et 16 sur l'encrassement (2025).</em></p>
+`,
+  },
+  {
+    slug: "serre-photovoltaique-agricole-regles-lumiere-entretien",
+    related: [
+      "agrivoltaisme-avantages-inconvenients",
+      "agrivoltaisme-ovin-bovin-vigne-serres-entretien-panneaux",
+      "sable-saharien-panneaux-solaires-rendement",
+    ],
+    image: "/images/robot-centrale-sol.jpg",
+    category: "Énergie Solaire",
+    date: "3 Novembre 2026",
+    readTime: "8 min",
+    badge: "bg-amber-50 text-amber-600",
+    title: "Serre photovoltaïque agricole : règles, lumière pour les cultures et entretien de la toiture",
+    excerpt: "Une serre photovoltaïque peut relever de l'agrivoltaïsme ou d'un régime à part, selon qu'elle rend ou non un service à la culture. Ce que disent la loi APER et l'instruction ministérielle de 2025, pourquoi la lumière est le point clé, ce qu'il faut vérifier dans une offre de serre « gratuite » et comment nettoyer la toiture sans marcher dessus.",
+    metaTitle: "Serre photovoltaïque agricole : règles, entretien",
+    metaDescription: "Serre photovoltaïque agricole : agrivoltaïsme ou non, avis CDPENAF, lumière pour les cultures, offres « gratuites » et nettoyage de la toiture.",
+    content: `
+<p><strong>Une serre photovoltaïque est une serre agricole dont une partie de la toiture est remplacée par des panneaux solaires. Elle peut être autorisée comme installation agrivoltaïque si elle rend un service à la culture, ou comme serre nécessaire à l'exploitation ; dans les deux cas, la CDPENAF rend un avis conforme et le partage de la lumière entre panneaux et cultures est examiné.</strong> Voici les règles, les leçons des premières serres et la façon d'entretenir la toiture.</p>
+
+<h2>Qu'est-ce qu'une serre photovoltaïque ?</h2>
+<p>C'est une serre classique dont les modules photovoltaïques remplacent une partie des verres de toiture, le reste restant transparent pour laisser passer la lumière. C'est la définition retenue par l'instruction technique du 18 février 2025 des ministères de l'Agriculture, de l'Énergie et du Logement, qui précise l'application de la loi APER.</p>
+<p>La même instruction distingue la serre des autres structures agricoles : une serre est close, avec des parois latérales en verre horticole, en plastique ou en filets ; une ombrière n'a pas de parois verticales ; un hangar n'a pas vocation à surmonter des cultures ni des animaux.</p>
+
+<h2>Une serre photovoltaïque est-elle de l'agrivoltaïsme ?</h2>
+<p>Elle peut l'être, mais ce n'est pas automatique. Une serre qui remplit les conditions de l'article L.314-36 du code de l'énergie (service rendu à la culture, production agricole significative, revenu durable) est autorisée comme installation agrivoltaïque. Sinon, elle peut l'être au titre de l'article L.111-28 du code de l'urbanisme, si elle est nécessaire à l'exploitation et laisse assez de lumière pour une activité agricole significative.</p>
+<div style="overflow-x:auto"><table>
+  <thead>
+    <tr><th>Point</th><th>Serre agrivoltaïque (L.111-27)</th><th>Serre photovoltaïque non agrivoltaïque (L.111-28)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Condition principale</td><td>Rendre un service à la culture, au sens de l'article L.314-36 du code de l'énergie</td><td>Être nécessaire à une activité agricole effective et significative</td></tr>
+    <tr><td>Avis de la CDPENAF</td><td>Conforme</td><td>Conforme</td></tr>
+    <tr><td>Zone témoin</td><td>Non exigée pour les serres (R.314-116 du code de l'énergie) : comparaison à un référentiel local</td><td>Sans objet</td></tr>
+    <tr><td>Durée d'autorisation</td><td>Quarante ans au maximum, prorogeable de dix ans</td><td>Règle des quarante ans non applicable</td></tr>
+    <tr><td>Point examiné</td><td>Partage de la lumière entre production électrique et agricole</td><td>Partage de la lumière permettant l'activité agricole</td></tr>
+  </tbody>
+</table></div>
+<p>Deux précisions comptent. Le régime de l'article L.111-28 ne vise que la construction simultanée de la serre et des panneaux : équiper une serre existante n'en relève pas. Et l'instruction précise que la seule justification d'une nécessité économique (une ressource énergétique pour l'exploitation) ne démontre pas la nécessité agricole exigée par l'article L.111-28. Des panneaux destinés d'abord à produire de l'électricité relèvent du régime des installations dites compatibles (article L.111-29), autorisées seulement sur des terres incultes ou non exploitées depuis le 10 mars 2013, identifiées par un document-cadre.</p>
+
+<h2>La lumière, point faible des premières serres photovoltaïques</h2>
+<p>Les premières serres photovoltaïques ont souvent manqué de lumière pour les cultures, et c'est pourquoi le dossier doit désormais décrire le partage lumineux. Sur ces serres, les panneaux couvraient souvent la moitié de la toiture, côté sud.</p>
+<ul>
+  <li><strong>Une transmission lumineuse fortement réduite</strong> : des modélisations de l'INRA (2014) estimaient à 46 % seulement la transmission du rayonnement solaire sous une serre photovoltaïque de type venlo, et l'Aprel mesurait une transmission de 20 à 30 % dans une serre couverte à moitié de panneaux.</li>
+  <li><strong>Des cultures ralenties</strong> : sur une quarantaine d'espèces testées par l'Aprel, les cycles s'allongeaient, la récolte était retardée de trois à quatre semaines et les pertes de rendement atteignaient 50 à 70 % selon la culture.</li>
+  <li><strong>Une règle simple</strong> : pour le CTIFL, en culture sous abri, 1 % de lumière perdue correspond à environ 1 % de rendement perdu.</li>
+</ul>
+<p>Ces chiffres, relayés par la presse agricole en 2018, portent sur une génération de serres conçues avant la loi APER. Ils expliquent l'exigence actuelle : un projet doit démontrer que la lumière laissée aux cultures permet une production agricole significative. Ils montrent aussi que la propreté de la toiture compte pour les plantes comme pour les panneaux.</p>
+
+<h2>Serre photovoltaïque « gratuite » : ce qu'il faut vérifier</h2>
+<p>Une serre dite gratuite est en général financée par un producteur d'énergie, qui exploite en contrepartie la toiture photovoltaïque pendant la durée du contrat. Avant de signer, l'exploitant agricole a intérêt à vérifier ce que prévoit le contrat sur la lumière, la durée et l'entretien.</p>
+<ul>
+  <li><strong>La lumière</strong> : la part de toiture couverte de panneaux et la transmission lumineuse attendue, au regard des cultures prévues.</li>
+  <li><strong>La nécessité agricole</strong> : le projet doit répondre à un besoin réel de l'exploitation, faute de quoi la CDPENAF peut rendre un avis défavorable, qui s'impose.</li>
+  <li><strong>La durée et la fin de contrat</strong> : ce que deviennent la serre et les panneaux au terme du contrat, et qui démonte quoi.</li>
+  <li><strong>L'entretien</strong> : qui nettoie les panneaux, qui nettoie les parties transparentes, à quelle fréquence, et comment les interventions s'organisent avec le calendrier de culture.</li>
+  <li><strong>L'accès</strong> : les conditions d'accès des intervenants à la serre et aux abords, en particulier pendant les périodes de culture.</li>
+</ul>
+
+<h2>Pourquoi la toiture d'une serre photovoltaïque s'encrasse</h2>
+<p>Une toiture de serre reçoit les mêmes dépôts qu'une centrale au sol : poussière des parcelles voisines, pollen, fientes d'oiseaux et, dans le Sud, sable saharien. Ces dépôts réduisent la production des panneaux et, sur les parties transparentes, la lumière qui parvient aux cultures.</p>
+<p>Les fientes sont les plus pénalisantes pour la production électrique, car une tache sur une seule cellule peut limiter le courant de toute une chaîne de cellules et provoquer un point chaud. Après un épisode de sable, une pluie faible ne suffit pas : elle transforme souvent la poussière en boue collée au verre, comme nous l'expliquons dans notre article sur <a href="/blog/sable-saharien-panneaux-solaires-rendement">le sable saharien et les panneaux solaires</a>.</p>
+
+<h2>Comment nettoyer une serre photovoltaïque</h2>
+<p>Sans jamais marcher sur la couverture, à l'eau filtrée et sans détergent, avec une méthode choisie après repérage selon la pente, la structure et l'accès. Le verre horticole, le plastique et les modules ne sont pas conçus pour supporter le poids d'une personne, et une chute à travers une toiture est un risque grave.</p>
+<ul>
+  <li><strong>Un repérage avant tout</strong> : un vol de drone permet d'évaluer l'encrassement, la structure et les accès sans monter sur la serre.</li>
+  <li><strong>Drone ou robot</strong> : le choix dépend de la pente, de la portance de la structure et de l'accès aux rangées de toiture.</li>
+  <li><strong>Pas de produit au-dessus des cultures</strong> : l'eau filtrée, sans détergent, ne laisse ruisseler que la poussière retirée et rejoint les gouttières comme la pluie.</li>
+  <li><strong>Ouvrants fermés</strong> : l'intervention se fait ouvrants fermés, pour que l'eau de nettoyage ne tombe pas dans la serre.</li>
+  <li><strong>Pas de haute pression de près</strong> : elle peut forcer les joints et user le traitement de surface du verre. Les erreurs de méthode les plus courantes sont détaillées dans notre guide <a href="/blog/nettoyer-panneaux-solaires-karcher-eau-osmosee-methode">Kärcher, eau osmosée, savon : ce qui marche et ce qui abîme</a>.</li>
+</ul>
+
+<h2>Quand nettoyer une serre photovoltaïque ?</h2>
+<p>Après les épisodes qui salissent le plus, sable saharien, pollen ou travaux sur les parcelles voisines, et avant la période où la culture a le plus besoin de lumière. Le calendrier se fixe avec l'exploitant agricole, en évitant les plantations, les traitements et les récoltes.</p>
+<p>Un passage par an constitue une base. Sur une serre proche de cultures poussiéreuses, d'une route ou d'un site fréquenté par les oiseaux, un second passage se justifie souvent. Le plus fiable reste de comparer la production des panneaux d'une période à l'autre, à ensoleillement comparable.</p>
+
+<h2>Questions fréquentes</h2>
+<h3>Une serre photovoltaïque est-elle de l'agrivoltaïsme ?</h3>
+<p>Elle peut l'être si elle rend un service à la culture et remplit les conditions de l'article L.314-36 du code de l'énergie. Sinon, elle peut être autorisée au titre de l'article L.111-28 du code de l'urbanisme, à condition d'être nécessaire à une activité agricole significative. Dans les deux cas, l'avis de la CDPENAF est conforme.</p>
+<h3>Faut-il une zone témoin pour une serre photovoltaïque ?</h3>
+<p>Non. L'article R.314-116 du code de l'énergie dispense de zone témoin les installations agrivoltaïques sur serre et sur élevage. Sous serre, la production agricole est comparée à un référentiel local.</p>
+<h3>Que peut-on cultiver sous une serre photovoltaïque ?</h3>
+<p>Tout dépend de la lumière laissée aux cultures. Sur les premières serres, couvertes à moitié de panneaux, les essais de l'Aprel ont relevé des pertes de rendement de 50 à 70 % selon les espèces. Le dossier doit désormais démontrer un partage de la lumière compatible avec les cultures prévues.</p>
+<h3>Comment nettoyer les panneaux d'une serre photovoltaïque ?</h3>
+<p>Sans marcher sur la couverture : après un repérage par drone, le nettoyage se fait par drone ou par robot selon la pente et la structure, à l'eau filtrée, sans détergent, ouvrants fermés, et en accord avec le calendrier de culture.</p>
+<h3>Qui entretient une serre photovoltaïque financée par un tiers ?</h3>
+<p>C'est le contrat qui le fixe. L'exploitant des panneaux prend souvent en charge leur maintenance, mais le partage entre panneaux, parties transparentes et structure varie : il faut le vérifier avant de signer et avant de commander un nettoyage.</p>
+
+<h2>Notre approche</h2>
+<p>Basés à Montpellier, nous nettoyons les serres photovoltaïques : repérage par drone par nos pilotes certifiés DGAC, puis nettoyage par drone ou par robot à brosse rotative souple selon la structure, à l'eau filtrée et sans détergent. L'intervention se cale sur le calendrier de culture. Voir aussi notre page sur le <a href="/nettoyage-centrale-agrivoltaique">nettoyage de centrale agrivoltaïque</a> et nos chantiers de centrales au sol sur la page <a href="/realisations">réalisations</a>.</p>
+<p><strong>Des serres photovoltaïques à entretenir ? <a href="/devis">Demandez un devis</a>, établi sous 24 h selon la surface, l'accès et l'encrassement.</strong></p>
+<p><em>Sources : instruction technique DGPE/SDPE/2025-93 du 18 février 2025, « Application des dispositions réglementaires relatives aux installations agrivoltaïques et photovoltaïques au sol dans les espaces naturels, agricoles et forestiers » (ministère de l'Agriculture) ; code de l'énergie, articles L.314-36 et R.314-116 ; code de l'urbanisme, articles L.111-27, L.111-28, L.111-29, R.111-62 et R.111-63 ; décret n° 2024-318 du 8 avril 2024 ; « Serres photovoltaïques : entre l'ombre et la lumière », Réussir Fruits &amp; Légumes, repris par Pleinchamp (mai 2018), citant l'INRA, l'Aprel et le CTIFL ; AIE PVPS, rapport T13-21:2022 sur l'encrassement.</em></p>
+`,
+  },
+  {
     slug: "thermographie-drone-hiver-bonne-saison",
     related: [
       "thermographie-drone-decret-tertiaire",
@@ -238,7 +428,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>Questions fréquentes</h2>
 <h3>Une serre photovoltaïque est-elle de l'agrivoltaïsme ?</h3>
-<p>En principe non : le décret du 8 avril 2024 traite à part les serres, hangars et ombrières agricoles, qui doivent être nécessaires à l'activité agricole, sans relever des critères de l'agrivoltaïsme (services rendus à la parcelle, seuil de 90 %, zone témoin).</p>
+<p>Elle peut l'être. Une serre photovoltaïque peut être autorisée comme installation agrivoltaïque si elle rend un service à la culture au sens de l'article L.314-36 du code de l'énergie ; sinon, elle relève de l'article L.111-28 du code de l'urbanisme et doit être nécessaire à une activité agricole significative. Dans les deux cas, l'avis de la CDPENAF est conforme, et les serres agrivoltaïques sont dispensées de zone témoin (article R.314-116), selon l'instruction ministérielle du 18 février 2025.</p>
 <h3>Peut-on nettoyer les panneaux en présence des moutons ?</h3>
 <p>Ce n'est pas recommandé. On intervient quand le troupeau est sur une autre parcelle, ou sur des zones temporairement fermées en accord avec l'éleveur, pour la sécurité des animaux comme des équipes.</p>
 <h3>L'eau de nettoyage est-elle un risque pour les cultures ou les animaux ?</h3>
@@ -360,6 +550,7 @@ export const blogPosts: BlogPost[] = [
 <h3>Des contrôles réguliers</h3>
 <p>L'installation est contrôlée avant sa mise en service, puis la sixième année, puis à intervalles réguliers : tous les ans dans le cas général, tous les trois ans si le taux de couverture est inférieur à 40 %, tous les cinq ans pour les technologies éprouvées (article R.314-120). L'exploitant transmet aussi <strong>chaque année à l'ADEME</strong> ses données de production énergétique et agricole.</p>
 <p>Un arrêté du 5 juillet 2024 précise le contenu des rapports de contrôle et les garanties financières de démantèlement.</p>
+<p>Le Conseil d'État a validé le décret du 8 avril 2024 par trois décisions du 16 mars 2026 (n° 494941, 494883 et 495025), en rejetant notamment les recours de la Confédération paysanne et de la région Normandie : le seuil de 90 % du rendement d'une zone témoin, l'exigence d'un revenu agricole durable et celle d'une activité agricole principale sont jugés légaux. Les installations sont autorisées pour quarante ans au plus, prorogeables de dix ans. Les avantages et limites qui en découlent pour l'exploitation sont détaillés dans notre article <a href="/blog/agrivoltaisme-avantages-inconvenients">agrivoltaïsme : avantages et inconvénients</a>.</p>
 
 <h2>Où en est l'agrivoltaïsme en France</h2>
 <p>La filière est jeune. L'observatoire de l'agrivoltaïsme lancé par l'ADEME recensait 227 installations en mars 2026 : 191 antérieures à la loi APER, 42 démonstrateurs et seulement 2 relevant du nouveau régime. Les projets se multiplient pourtant, notamment dans le Sud, où l'ombrage des panneaux protège les cultures et les troupeaux des épisodes de chaleur de plus en plus fréquents.</p>
