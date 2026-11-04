@@ -12,6 +12,8 @@ export interface BlogPost {
   content: string; // HTML content
   /** Slugs d'articles liés choisis à la main, affichés avant le repli automatique. */
   related?: string[];
+  /** Date de la dernière mise à jour du contenu, même format que date. */
+  updated?: string;
 }
 
 export const blogPosts: BlogPost[] = [
@@ -375,6 +377,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "agrivoltaisme-ovin-bovin-vigne-serres-entretien-panneaux",
+    updated: "4 Novembre 2026",
     image: "/images/robot-centrale-sol.jpg",
     category: "Énergie Solaire",
     date: "29 Octobre 2026",
@@ -516,6 +519,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "agrivoltaisme-definition-loi-aper-entretien",
+    updated: "4 Novembre 2026",
     image: "/images/robot-franchissement.jpg",
     category: "Énergie Solaire",
     date: "27 Octobre 2026",

@@ -98,13 +98,14 @@ export default async function BlogPostPage({ params }: Props) {
     .slice(0, 3);
 
   const datePublished = frDateToIso(post.date);
+  const dateModified = post.updated ? frDateToIso(post.updated) : datePublished;
   const jsonLdArticle = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline: post.title,
     description: post.metaDescription,
     image: `${BASE}${post.image}`,
-    ...(datePublished && { datePublished, dateModified: datePublished }),
+    ...(datePublished && { datePublished, dateModified: dateModified ?? datePublished }),
     // Même @id que l'entité du layout : Google relie les articles à la marque.
     author: { "@type": "Organization", "@id": `${BASE}/#business`, name: "Ellipsys Solutions", url: BASE },
     publisher: {
@@ -155,6 +156,7 @@ export default async function BlogPostPage({ params }: Props) {
           </h1>
           <div className="flex items-center gap-5 mt-4 text-sm text-slate-300">
             <span className="flex items-center gap-1.5"><Calendar className="w-4 h-4" /> {post.date}</span>
+            {post.updated && <span>Mis à jour le {post.updated.toLowerCase()}</span>}
             <span className="flex items-center gap-1.5"><Clock className="w-4 h-4" /> {post.readTime} de lecture</span>
           </div>
         </div>

@@ -1,7 +1,11 @@
 import type { MetadataRoute } from "next";
 import { blogPosts } from "@/lib/blogPosts";
+// Dates de dernière modification réelle par page, recalculées depuis git par
+// scripts/maj-dates-sitemap.mjs (à relancer après chaque modification de page).
+import DATES from "@/lib/sitemap-dates.json";
 
 const BASE = "https://ellipsys-solutions.com";
+const DATE_PAR_DEFAUT = "2026-10-26";
 
 // Parse les dates FR du blog ("14 Avril 2026") → Date
 const MOIS: Record<string, number> = {
@@ -125,7 +129,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const staticEntries: MetadataRoute.Sitemap = pages.map((p) => ({
     url: `${BASE}${p.path}`,
-    lastModified: now,
+    // Le blog change à chaque nouvel article : sa date est celle de l'article le plus récent.
+    lastModified:
+      p.path === "/blog"
+        ? new Date(Math.min(Math.max(...blogPosts.map((b) => parseFrDate(b.date).getTime())), now.getTime()))
+        : new Date((DATES as Record<string, string>)[p.path] ?? DATE_PAR_DEFAUT),
     changeFrequency: p.changeFrequency,
     priority: p.priority,
     ...(imagesOf(p.path) ? { images: imagesOf(p.path) } : {}),
@@ -136,7 +144,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${BASE}/blog/${post.slug}`,
     // Les articles peuvent être datés en avance (calendrier éditorial). On plafonne
     // la date de modification à aujourd'hui pour ne jamais envoyer un lastmod futur.
-    lastModified: new Date(Math.min(parseFrDate(post.date).getTime(), now.getTime())),
+    lastModified: new Date(Math.min(parseFrDate(post.updated ?? post.date).getTime(), now.getTime())),
     changeFrequency: "monthly",
     priority: 0.75,
     images: [`${BASE}${encodeURI(post.image)}`],
