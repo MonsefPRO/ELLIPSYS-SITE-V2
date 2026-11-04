@@ -76,6 +76,17 @@ export default async function PanneauxPhotovoltaiquesPage() {
       acceptedAnswer: { "@type": "Answer", text: f.r },
     })),
   };
+  // Service rattaché à l'entité du layout par son @id : une seule entreprise pour Google et les IA.
+  const jsonLdService = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Nettoyage de panneaux solaires et de centrales photovoltaïques",
+    serviceType: "Nettoyage de centrales photovoltaïques au sol, d'ombrières et de toitures solaires par robot et drone",
+    url: "https://ellipsys-solutions.com/prestations/nettoyage-solaire",
+    provider: { "@id": "https://ellipsys-solutions.com/#business" },
+    areaServed: { "@type": "Country", name: "France" },
+    description: "Robot à brosse rotative souple et eau filtrée, sans détergent, jusqu'à 1 200 m² par heure, après repérage par drone. Références : Miremont (60 000 m²), Lapeyrouse-Fossat (30 000 m²), Vitry (31 000 m²), Montchanin (22 000 m²).",
+  };
 
   const agents = [
     { name: isEn ? "Dust / Pollution" : "Poussière / Pollution", nature: isEn ? "Global haze" : "Voile global", perte: "5 %, 15 %", risque: isEn ? "Low" : "Faible", risqueColor: "bg-slate-200 text-slate-700" },
@@ -416,6 +427,10 @@ export default async function PanneauxPhotovoltaiquesPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFaq) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdService) }}
       />
       <section className="py-20 bg-slate-50 border-t border-slate-100">
         <div className="container mx-auto px-4 max-w-4xl">
