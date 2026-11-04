@@ -11,7 +11,7 @@ Ellipsys Solutions travaille pour les exploitants et propriétaires de centrales
 - Adresse : 159 Rue de Thor, 34000 Montpellier (Hérault).
 - Fiche publique : https://annuaire-entreprises.data.gouv.fr/entreprise/ellipsys-solutions-999957533
 - Profils : LinkedIn https://www.linkedin.com/company/ellipsys-solutions-drones , Instagram https://www.instagram.com/ellipsysolutionsdrone/ , TikTok https://www.tiktok.com/@ellipsyssolutions , YouTube https://www.youtube.com/@ellipsyssolutions , PagesJaunes https://www.pagesjaunes.fr/pros/65377841
-- Dernière mise à jour de ce fichier : 3 novembre 2026.
+- Dernière mise à jour de ce fichier : 4 novembre 2026.
 
 ## Références documentées
 
@@ -57,6 +57,18 @@ La plupart des usines et entrepôts cumulent un bardage à nettoyer et des panne
 - [Thermographie par drone](https://ellipsys-solutions.com/prestations/thermographie) : détection de cellules photovoltaïques défectueuses, ponts thermiques, conformité Décret Tertiaire. Rapport sous 48 h.
 - [Prises de vues aériennes](https://ellipsys-solutions.com/prestations/prises-de-vues) : photo 50 Mpx et vidéo 4K.
 - Destruction de nids de frelons asiatiques en grande hauteur par drone (sur demande).
+
+## Secteurs servis
+
+- [Toutes les expertises sectorielles](https://ellipsys-solutions.com/domaines) : protocoles d'intervention pour l'industrie, les syndics, les monuments historiques et l'énergie solaire.
+- [Énergie solaire](https://ellipsys-solutions.com/secteurs/energie-solaire) : maintenance de parcs photovoltaïques par robot et drone, jusqu'à 1 200 m² par heure, sans détergent.
+- [Industrie, logistique et datacenters](https://ellipsys-solutions.com/secteurs/industrie-logistique) : entretien extérieur sans interruption de production, nettoyage de bardages.
+- [Immobilier et syndics de copropriété](https://ellipsys-solutions.com/secteurs/immobilier-syndics) : rapports techniques avec photos pour les assemblées générales, devis détaillés, interventions sans nacelle.
+- [Monuments historiques](https://ellipsys-solutions.com/secteurs/monuments-historiques) : méthodes douces pour monuments et bâtiments classés. Voir aussi [l'entretien du patrimoine bâti](https://ellipsys-solutions.com/prestations/patrimoine).
+- [Haute exigence](https://ellipsys-solutions.com/secteurs/haute-exigence) : propreté extérieure pour l'industrie pharmaceutique, agroalimentaire et aéronautique.
+- [Maritime et plaisance](https://ellipsys-solutions.com/secteurs/maritime-plaisance) : dessalage d'infrastructures navales et portuaires par drone.
+- [Collectivités](https://ellipsys-solutions.com/secteurs/collectivites) : nettoyage de bâtiments publics sans emprise au sol, continuité de la voirie, sécurité des écoles.
+- [Particuliers](https://ellipsys-solutions.com/secteurs/particuliers) : démoussage de toiture, nettoyage de façade et de panneaux solaires dans l'Hérault et le Gard.
 
 ## Zones d'intervention
 
