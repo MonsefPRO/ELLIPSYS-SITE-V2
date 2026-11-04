@@ -181,7 +181,7 @@ export default async function RealisationsPage() {
             <div className="p-6 md:p-8">
               <div className="flex items-center gap-3 mb-4">
                 <Building2 className="w-7 h-7 text-brand-orange-500 shrink-0" />
-                <h2 className="text-xl font-bold text-[#0e2f52]">{isEn ? "Glazing Cleaning, Scutum Montpellier" : "Nettoyage de Vitrages, Scutum Montpellier"}</h2>
+                <h2 className="text-xl font-bold text-[#0e2f52]">{isEn ? "Glazing Cleaning, Montpellier" : "Nettoyage de Vitrages, Montpellier"}</h2>
               </div>
               <div className="flex flex-wrap gap-4 mb-6 pb-6 border-b border-slate-100 text-sm">
                 <div className="flex items-center gap-2 text-slate-600"><MapPin className="w-4 h-4 text-slate-400" /> Montpellier (34)</div>

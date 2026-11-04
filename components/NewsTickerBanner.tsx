@@ -32,7 +32,7 @@ const news = [
   {
     tag: "Réalisation",
     location: "Montpellier (34)",
-    text: "Nettoyage Vitrages Façades, Scutum",
+    text: "Vitrages de 2 Façades Nettoyés par Drone",
     href: "/realisations",
   },
 ];

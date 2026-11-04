@@ -739,7 +739,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>Plus rapide : où se gagne vraiment le temps</h2>
 <p>Le gain se fait sur le chantier lui-même. Un échafaudage de façade passe par une visite préalable, un montage par des monteurs formés, un procès-verbal de réception, des contrôles quotidiens, puis un démontage. Pendant tout ce temps, il occupe le trottoir, le parking ou l'accès au bâtiment.</p>
-<p>Le drone, lui, s'installe le jour même et repart le soir. Sur les façades vitrées de Scutum à Montpellier, deux façades ont été nettoyées en <strong>deux jours</strong>, sans nacelle, sans bloquer les accès et sans interrompre l'activité des locaux.</p>
+<p>Le drone, lui, s'installe le jour même et repart le soir. Sur un bâtiment professionnel à Montpellier, deux façades vitrées ont été nettoyées en <strong>deux jours</strong>, sans nacelle, sans bloquer les accès et sans interrompre l'activité des locaux.</p>
 <p>Soyons honnêtes sur un point : <strong>l'administratif ne disparaît pas</strong>. En zone peuplée, un vol de drone professionnel se déclare à l'avance à la préfecture (10 jours ouvrables selon le guide de la DSAC). C'est du même ordre qu'une autorisation de voirie pour un échafaudage. La différence est ailleurs : une fois la date fixée, l'intervention dure quelques heures ou quelques jours, au lieu d'immobiliser le site pendant une ou deux semaines. Nous nous chargeons des déclarations.</p>
 
 <h2>Plus efficace : un résultat contrôlé sans monter</h2>
@@ -764,7 +764,7 @@ export const blogPosts: BlogPost[] = [
 <h3>Le drone remplace-t-il toujours la nacelle ou l'échafaudage ?</h3>
 <p>Non, mais dans la majorité des cas de nettoyage, oui. Il est moins adapté aux cours très étroites et aux surplombs importants. Dans ces cas, nous proposons une solution mixte ou nous vous le disons dès la visite.</p>
 <h3>Combien de temps faut-il prévoir ?</h3>
-<p>En zone peuplée, comptez environ deux semaines entre la commande et l'intervention, le temps de la déclaration en préfecture. L'intervention elle-même dure de quelques heures à quelques jours : deux jours pour les deux façades vitrées de Scutum à Montpellier.</p>
+<p>En zone peuplée, comptez environ deux semaines entre la commande et l'intervention, le temps de la déclaration en préfecture. L'intervention elle-même dure de quelques heures à quelques jours : deux jours pour les deux façades vitrées d'un bâtiment professionnel à Montpellier.</p>
 <h3>Peut-on nettoyer par vent ou par pluie ?</h3>
 <p>Non. Au-delà des limites de vent du drone ou sous la pluie, nous reportons l'intervention. C'est une règle de sécurité, et aussi une question de qualité du résultat.</p>
 <h3>Qui est responsable de la sécurité pendant l'intervention ?</h3>
@@ -1508,8 +1508,8 @@ export const blogPosts: BlogPost[] = [
 </ul>
 <p>Le pilote au sol gère l'intégralité de l'intervention depuis un poste de contrôle sécurisé, en respectant les scénarios de vol DGAC/EASA (STS-01 ou STS-02 selon les zones).</p>
 
-<h2>Exemple réel : les façades Scutum à Montpellier</h2>
-<p>Scutum Montpellier nous a confié le nettoyage des vitrages de deux façades de leur bâtiment professionnel B2B. Contraintes : activité continue dans les locaux, impossible de bloquer les accès, résultat impeccable requis pour la présentation client.</p>
+<h2>Exemple réel : deux façades vitrées à Montpellier</h2>
+<p>À Montpellier, on nous a confié le nettoyage des vitrages de deux façades d'un bâtiment professionnel B2B. Contraintes : activité continue dans les locaux, impossible de bloquer les accès, résultat impeccable requis pour la présentation client.</p>
 <p>Notre intervention par drone Chronos a duré <strong>2 jours</strong>, sans aucune nacelle, sans aucune emprise au sol, sans interruption de l'activité. Le responsable de site témoigne : <em>"Travail sérieux, équipe efficace et bien organisée."</em></p>
 
 <h2>Quand le drone est-il la meilleure solution ?</h2>
@@ -1528,7 +1528,7 @@ export const blogPosts: BlogPost[] = [
 <h3>À partir de quelle hauteur le drone devient-il intéressant ?</h3>
 <p>Surtout au-delà de 8 mètres, ou dès que l'installation d'un échafaudage ou d'une nacelle est compliquée : trottoir étroit, parking à garder ouvert, site en activité.</p>
 <h3>Faut-il interrompre l'activité du bâtiment ?</h3>
-<p>Non. Le drone n'occupe qu'une petite zone de décollage. Sur les façades vitrées de Scutum à Montpellier, l'intervention a duré deux jours sans fermer les locaux ni bloquer les accès.</p>
+<p>Non. Le drone n'occupe qu'une petite zone de décollage. Sur deux façades vitrées d'un bâtiment professionnel à Montpellier, l'intervention a duré deux jours sans fermer les locaux ni bloquer les accès.</p>
 <h3>Quelles façades peut-on nettoyer par drone ?</h3>
 <p>Les bardages métalliques, les vitrages et les façades de bâtiments professionnels ou industriels. Le drone est moins adapté aux façades en fort surplomb, où un cordiste reste parfois la meilleure option.</p>
 
