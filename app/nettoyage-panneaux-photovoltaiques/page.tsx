@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SURFACE_CENTRALES } from "@/lib/chiffres";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, TrendingDown, Zap, Shield, Award, ChevronRight, Phone } from "lucide-react";
@@ -152,7 +153,7 @@ export default function NettoyagePanneauxPhotovoltaiques() {
               <div className="w-14 h-14 rounded-2xl bg-emerald-100 mx-auto flex items-center justify-center mb-4">
                 <Award className="w-7 h-7 text-emerald-600" />
               </div>
-              <div className="text-4xl font-black text-emerald-700 mb-2">143 000 m²</div>
+              <div className="text-4xl font-black text-emerald-700 mb-2">{SURFACE_CENTRALES}</div>
               <p className="text-slate-600">De centrales au sol déjà nettoyées par nos équipes : Miremont, Lapeyrouse-Fossat, Vitry, Montchanin.</p>
             </div>
           </div>

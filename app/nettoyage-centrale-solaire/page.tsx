@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SURFACE_CENTRALES } from "@/lib/chiffres";
 import LandingPage from "@/components/LandingPage";
 
 /**
@@ -12,7 +13,7 @@ const TITRE = "Nettoyage de centrale, parc et ferme solaire";
 /** Texte du H1 visible, inchangé (JSON-LD et fil d'Ariane) */
 const H1_TEXTE = "Nettoyage de centrale solaire et photovoltaïque";
 const DESCRIPTION =
-  "Nettoyage de centrale, parc ou ferme solaire par robot ou drone : eau filtrée, sans arrêt de production. 143 000 m² déjà nettoyés. Devis sous 24 h.";
+  `Nettoyage de centrale, parc ou ferme solaire par robot ou drone : eau filtrée, sans arrêt de production. ${SURFACE_CENTRALES} déjà nettoyés. Devis sous 24 h.`;
 
 export const metadata: Metadata = {
   title: TITRE,
@@ -57,7 +58,7 @@ export default function Page() {
         "Robot jusqu'à 1 200 m² par heure",
         "Eau filtrée, sans détergent",
         "Équipe habilitée B0-H0-H0V",
-        "143 000 m² de centrales déjà nettoyés",
+        `${SURFACE_CENTRALES} de centrales déjà nettoyés`,
       ]}
       formTitre="Chiffrage de votre centrale ou parc solaire sous 24 h"
       formSoustitre="Indiquez la surface ou la puissance du site et sa localisation."

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SURFACE_CENTRALES, SURFACE_CENTRALES_EN } from "@/lib/chiffres";
 import Link from "next/link";
 import { Building2, Home, Sun, MapPin, Clock, Target, ChevronRight } from "lucide-react";
 import { getLang } from "@/lib/getLang";
@@ -65,8 +66,8 @@ export default async function RealisationsPage() {
             </p>
             <p className="text-base text-slate-200 leading-relaxed max-w-3xl">
               {isEn
-                ? "Ellipsys Solutions, based in Montpellier, has cleaned 143,000 m² of documented ground-mounted solar farms: Miremont (Haute-Garonne, 60,000 m², October 2026), Vitry (Saône-et-Loire, 31,000 m²), Lapeyrouse-Fossat (Haute-Garonne, 30,000 m², September 2026) and Montchanin (Saône-et-Loire, 22,000 m²). After a drone survey, our robot with a soft rotary brush, filtered water and no detergent cleans up to 1,200 m² per hour."
-                : "Ellipsys Solutions, basée à Montpellier, a nettoyé 143 000 m² de centrales photovoltaïques au sol documentées : Miremont (Haute-Garonne, 60 000 m², octobre 2026), Vitry (Saône-et-Loire, 31 000 m²), Lapeyrouse-Fossat (Haute-Garonne, 30 000 m², septembre 2026) et Montchanin (Saône-et-Loire, 22 000 m²). Après un repérage par drone, notre robot à brosse rotative souple, à l'eau filtrée et sans détergent, traite jusqu'à 1 200 m² par heure."}
+                ? `Ellipsys Solutions, based in Montpellier, has cleaned ${SURFACE_CENTRALES_EN} of documented ground-mounted solar farms: Miremont (Haute-Garonne, 60,000 m², October 2026), Vitry (Saône-et-Loire, 31,000 m²), Lapeyrouse-Fossat (Haute-Garonne, 30,000 m², September 2026) and Montchanin (Saône-et-Loire, 22,000 m²). After a drone survey, our robot with a soft rotary brush, filtered water and no detergent cleans up to 1,200 m² per hour.`
+                : `Ellipsys Solutions, basée à Montpellier, a nettoyé ${SURFACE_CENTRALES} de centrales photovoltaïques au sol documentées : Miremont (Haute-Garonne, 60 000 m², octobre 2026), Vitry (Saône-et-Loire, 31 000 m²), Lapeyrouse-Fossat (Haute-Garonne, 30 000 m², septembre 2026) et Montchanin (Saône-et-Loire, 22 000 m²). Après un repérage par drone, notre robot à brosse rotative souple, à l'eau filtrée et sans détergent, traite jusqu'à 1 200 m² par heure.`}
             </p>
           </div>
         </div>
@@ -80,7 +81,7 @@ export default async function RealisationsPage() {
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
             {[
-              { label: "143 000 m²", desc: isEn ? "Solar farms cleaned" : "De centrales photovoltaïques nettoyées" },
+              { label: isEn ? SURFACE_CENTRALES_EN : SURFACE_CENTRALES, desc: isEn ? "Solar farms cleaned" : "De centrales photovoltaïques nettoyées" },
               { label: "1 200 m²/h", desc: isEn ? "Robot cleaning capacity" : "De capacité de nettoyage robot" },
               { label: "≈ 90 %", desc: isEn ? "Water saved vs manual method" : "D'eau économisée vs méthode manuelle" },
               { label: "0", desc: isEn ? "Accident since our creation" : "Accident depuis notre création" },

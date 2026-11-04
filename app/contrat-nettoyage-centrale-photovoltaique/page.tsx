@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SURFACE_CENTRALES } from "@/lib/chiffres";
 import LandingPage from "@/components/LandingPage";
 
 /**
@@ -61,7 +62,7 @@ export default function Page() {
       referencesTitre="Ce que nous avons déjà réalisé"
       references={[
         {
-          chiffre: "143 000 m²",
+          chiffre: SURFACE_CENTRALES,
           titre: "De centrales au sol nettoyées",
           lieu: "Occitanie et Saône-et-Loire",
           texte: "Quatre centrales au sol documentées en photos : Miremont, Lapeyrouse-Fossat, Vitry et Montchanin.",
