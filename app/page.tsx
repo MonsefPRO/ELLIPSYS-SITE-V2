@@ -316,7 +316,7 @@ export default async function HomePage() {
         name: "Intervenez-vous dans toute la France ?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Oui, partout en France métropolitaine. Nous avons des bases opérationnelles à Montpellier (34) et Aimargues (30), et intervenons en priorité dans l'Hérault, le Gard, le Vaucluse, les Bouches-du-Rhône, l'Auvergne-Rhône-Alpes, l'Île-de-France et la Nouvelle-Aquitaine. Pour l'Europe, sur étude.",
+          text: "Oui, partout en France métropolitaine. Notre base opérationnelle est à Montpellier (34), et nous intervenons en priorité dans l'Hérault, le Gard, le Vaucluse, les Bouches-du-Rhône, l'Auvergne-Rhône-Alpes, l'Île-de-France et la Nouvelle-Aquitaine. Pour l'Europe, sur étude.",
         },
       },
       {

@@ -81,7 +81,7 @@ export default function Page() {
           titre: "Centrale au sol de Lapeyrouse-Fossat",
           lieu: "Haute-Garonne (31)",
           texte:
-            "Trois hectares de modules couverts d'un voile d'encrassement. Deux pilotes ont traité l'ensemble des rangées en septembre 2026.",
+            "Trois hectares de modules couverts d'un voile d'encrassement. Deux pilotes ont nettoyé l'ensemble des rangées au robot en septembre 2026.",
         },
         {
           chiffre: "53 000 m²",

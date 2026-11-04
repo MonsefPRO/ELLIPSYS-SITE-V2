@@ -45,7 +45,7 @@ const facteurs = [
   },
   {
     title: "La localisation",
-    desc: "Plus le site est proche de nos bases (Montpellier, Aimargues), plus le coût déplacement est faible. Nous intervenons partout en France mais le déplacement se facture au-delà de 100 km.",
+    desc: "Plus le site est proche de notre base de Montpellier, plus le coût déplacement est faible. Nous intervenons partout en France mais le déplacement se facture au-delà de 100 km.",
   },
   {
     title: "La récurrence",
@@ -97,7 +97,7 @@ const faqs = [
   },
   {
     q: "Les tarifs incluent-ils le déplacement ?",
-    a: "Oui, dans un rayon de 100 km autour de Montpellier ou Aimargues. Au-delà, nous ajoutons un forfait déplacement transparent dans le devis. Pour les missions multi-sites ou nationales, nous proposons des contrats cadres qui optimisent les coûts de déplacement.",
+    a: "Oui, dans un rayon de 100 km autour de Montpellier. Au-delà, nous ajoutons un forfait déplacement transparent dans le devis. Pour les missions multi-sites ou nationales, nous proposons des contrats cadres qui optimisent les coûts de déplacement.",
   },
   {
     q: "Acceptez-vous les paiements échelonnés ?",

@@ -13,10 +13,10 @@ export const metadata: Metadata = {
 // datées et chiffrées, rattachées à l'entreprise par son @id.
 const CHANTIERS = [
   { nom: "Nettoyage de la centrale solaire au sol de Miremont", lieu: "Miremont (31)", date: "2026-10", description: "Centrale photovoltaïque au sol de 60 000 m², nettoyée au robot par deux pilotes." },
-  { nom: "Nettoyage de la centrale solaire au sol de Lapeyrouse-Fossat", lieu: "Lapeyrouse-Fossat (31)", date: "2026-09", description: "Centrale photovoltaïque au sol de 30 000 m², nettoyée par deux pilotes." },
+  { nom: "Nettoyage de la centrale solaire au sol de Lapeyrouse-Fossat", lieu: "Lapeyrouse-Fossat (31)", date: "2026-09", description: "Centrale photovoltaïque au sol de 30 000 m², nettoyée au robot par deux pilotes." },
   { nom: "Nettoyage de la centrale solaire au sol de Vitry", lieu: "Vitry (71)", description: "Centrale photovoltaïque au sol de 31 000 m², repérage par drone puis nettoyage au robot." },
   { nom: "Nettoyage de la centrale solaire au sol de Montchanin", lieu: "Montchanin (71)", description: "Centrale photovoltaïque au sol de 22 000 m², nettoyée au robot sans détergent." },
-  { nom: "Nettoyage des vitrages de façade du Scutum par drone", lieu: "Montpellier (34)", description: "Vitrages de deux façades d'un bâtiment professionnel nettoyés par drone en 2 jours, sans nacelle." },
+  { nom: "Nettoyage des vitrages de façade d'un bâtiment professionnel par drone", lieu: "Montpellier (34)", description: "Vitrages de deux façades d'un bâtiment professionnel nettoyés par drone en 2 jours, sans nacelle." },
   { nom: "Démoussage de toiture en tuiles canal", lieu: "Aimargues (30)", description: "Toiture d'un particulier démoussée en une journée : produit biocide homologué puis rinçage." },
 ];
 
@@ -153,12 +153,12 @@ export default async function RealisationsPage() {
               <div className="flex flex-wrap gap-4 mb-6 pb-6 border-b border-slate-100 text-sm">
                 <div className="flex items-center gap-2 text-slate-600"><MapPin className="w-4 h-4 text-slate-400" /> Lapeyrouse-Fossat (31)</div>
                 <div className="flex items-center gap-2 text-slate-600"><Clock className="w-4 h-4 text-slate-400" /> 30 000 m²</div>
-                <div className="flex items-center gap-2 text-slate-600"><Target className="w-4 h-4 text-slate-400" /> {isEn ? "2 pilots" : "2 pilotes"}</div>
+                <div className="flex items-center gap-2 text-slate-600"><Target className="w-4 h-4 text-slate-400" /> {isEn ? "2 pilots + Robot" : "2 pilotes + Robot"}</div>
                 <div className="flex items-center gap-2 text-slate-600"><Clock className="w-4 h-4 text-slate-400" /> {isEn ? "September 2026" : "Septembre 2026"}</div>
               </div>
               <p className="text-sm text-slate-600 leading-relaxed mb-6">
                 <strong>{isEn ? "The challenge:" : "Le défi :"}</strong> {isEn ? "A 30,000 m² ground-mounted solar farm, 3 hectares of panels covered by a layer of soiling that reduced their transparency." : "Une centrale photovoltaïque au sol de 30 000 m², soit 3 hectares de panneaux recouverts d'un voile d'encrassement qui réduisait leur transparence."}<br /><br />
-                <strong>{isEn ? "Our approach:" : "Notre action :"}</strong> {isEn ? "Two pilots cleaned every row of the farm. The before/after speaks for itself: the modules are back to their original transparency." : "Deux pilotes ont nettoyé l'ensemble des rangées de la centrale. L'avant/après parle de lui-même : les modules retrouvent leur transparence d'origine."}
+                <strong>{isEn ? "Our approach:" : "Notre action :"}</strong> {isEn ? "Two pilots cleaned every row of the farm with our robot. The before/after speaks for itself: the modules are back to their original transparency." : "Deux pilotes ont nettoyé l'ensemble des rangées de la centrale avec notre robot. L'avant/après parle de lui-même : les modules retrouvent leur transparence d'origine."}
               </p>
               <Link href="/intervention/toulouse" className="inline-flex items-center gap-2 font-bold text-brand-orange-500 hover:gap-4 transition-all text-sm">
                 {isEn ? "Our work around Toulouse" : "Nos interventions autour de Toulouse"} <ChevronRight className="w-4 h-4" />
