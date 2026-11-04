@@ -132,7 +132,7 @@ export default async function ThermographiePage() {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             <div className="relative rounded-3xl overflow-hidden shadow-xl h-80 lg:h-[420px]">
-              <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('/images/4T.jpg')` }} />
+              <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('/images/4T.webp')` }} />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
               <div className="absolute bottom-5 left-5 right-5">
                 <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/15 border border-white/30 text-white text-sm font-bold backdrop-blur-sm">

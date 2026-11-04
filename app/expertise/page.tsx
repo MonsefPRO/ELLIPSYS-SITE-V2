@@ -20,7 +20,7 @@ export default async function ExpertisePage() {
       tagline: isEn
         ? "The solar maintenance specialist. Remote-controlled, engineered to operate on fragile glazed surfaces with zero risk of micro-scratching, dry or wet cleaning, no detergent."
         : "Le spécialiste de la maintenance solaire. Télécommandé, conçu pour intervenir sur surfaces vitrées fragiles sans risque de micro-rayures, nettoyage à sec ou humide, sans détergent.",
-      img: "/images/robot-produit.jpg",
+      img: "/images/robot-produit.webp",
       video: "/videos/robot-action.mp4",
       specs: [
         { label: isEn ? "Output" : "Rendement", value: "1 200 m²/h" },
@@ -89,7 +89,7 @@ export default async function ExpertisePage() {
 
       {/* BANNIÈRE */}
       <section className="relative bg-[#0e2f52] text-white py-24 lg:py-32 min-h-[500px] overflow-hidden">
-        <div className="absolute inset-0 opacity-100 bg-cover bg-center" style={{ backgroundImage: `url('/images/robot-produit.jpg')` }} />
+        <div className="absolute inset-0 opacity-100 bg-cover bg-center" style={{ backgroundImage: `url('/images/robot-produit.webp')` }} />
         <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/20 to-transparent" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl">

@@ -185,7 +185,7 @@ export default async function PrisesDeVuesPage() {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative rounded-3xl overflow-hidden shadow-xl h-80 lg:h-[440px]">
-              <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('/images/3s.png')` }} />
+              <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('/images/3s.webp')` }} />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <div className="absolute top-5 left-5">
                 <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-brand-orange-500/20 border border-brand-orange-400/40 text-brand-orange-200 text-xs font-bold backdrop-blur-sm">

@@ -136,7 +136,7 @@ export default async function RealisationsPage() {
           {/* PROJECT 0 : CENTRALE SOLAIRE LAPEYROUSE-FOSSAT */}
           <div className="bg-white rounded-[2rem] overflow-hidden shadow-xl border border-slate-100">
             <div className="relative h-52 md:h-64">
-              <div className="absolute inset-0 bg-[url('/images/avant-apres-fossat.jpg')] bg-cover bg-center"></div>
+              <div className="absolute inset-0 bg-[url('/images/avant-apres-fossat.webp')] bg-cover bg-center"></div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
               <div className="absolute top-3 left-3 flex gap-2">
                 <span className="bg-red-600 text-white px-3 py-1 rounded-full text-xs font-black tracking-widest shadow-md">{isEn ? "BEFORE" : "AVANT"}</span>
@@ -287,7 +287,7 @@ export default async function RealisationsPage() {
           {/* PROJECT 4 : NETTOYAGE CENTRALE SOLAIRE VITRY */}
           <div className="bg-white rounded-[2rem] overflow-hidden shadow-xl border border-slate-100">
             <div className="relative h-52 md:h-64">
-              <div className="absolute inset-0 bg-[url('/images/avant-apres-montchanin.jpg')] bg-cover bg-center"></div>
+              <div className="absolute inset-0 bg-[url('/images/avant-apres-montchanin.webp')] bg-cover bg-center"></div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
               <div className="absolute top-3 left-3 flex gap-2">
                 <span className="bg-red-600 text-white px-3 py-1 rounded-full text-xs font-black tracking-widest shadow-md">{isEn ? "BEFORE" : "AVANT"}</span>

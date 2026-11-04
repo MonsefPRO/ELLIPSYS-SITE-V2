@@ -179,7 +179,7 @@ export default async function PanneauxPhotovoltaiquesPage() {
             <div className="relative rounded-3xl overflow-hidden shadow-xl h-80 lg:h-[400px]">
               <div
                 className="absolute inset-0 bg-cover bg-center"
-                style={{ backgroundImage: "url('/images/avant-apres-montchanin.jpg')" }}
+                style={{ backgroundImage: "url('/images/avant-apres-montchanin.webp')" }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
               <div className="absolute top-4 left-4 flex gap-2">
