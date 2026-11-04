@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
   title: "Devis Gratuit Nettoyage par Drone, Réponse 24h",
@@ -13,5 +14,10 @@ export const metadata: Metadata = {
 };
 
 export default function DevisLayout({ children }: { children: React.ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      <BreadcrumbJsonLd items={[{ name: "Devis", path: "/devis" }]} />
+      {children}
+    </>
+  );
 }
