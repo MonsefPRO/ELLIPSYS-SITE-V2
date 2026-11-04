@@ -18,6 +18,259 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "centrale-solaire-au-sol-nettoyage-robot-methode-prestataire",
+    related: [
+      "nettoyage-centrale-solaire-saone-et-loire",
+      "nettoyage-ombrieres-parking-entreprise-collectivite-contraintes",
+      "nettoyer-panneaux-solaires-karcher-eau-osmosee-methode",
+    ],
+    image: "/images/robot-vue-aerienne.jpg",
+    category: "Énergie Solaire",
+    date: "4 Novembre 2026",
+    readTime: "9 min",
+    badge: "bg-amber-50 text-amber-600",
+    title: "Nettoyage robotisé d'une centrale solaire au sol : méthode, préparation du site et choix du prestataire",
+    excerpt: "Comment un robot nettoie une centrale photovoltaïque au sol, quand le préférer au nettoyage manuel ou à la brosse montée sur tracteur, quelle cadence attendre, comment préparer le site (accès, allées, eau) et quelles questions poser à un prestataire. Avec nos quatre chantiers documentés, 143 000 m² au total.",
+    metaTitle: "Centrale solaire au sol : nettoyage par robot",
+    metaDescription: "Nettoyage par robot d'une centrale solaire au sol en France : méthode, robot ou tracteur, cadence, eau, préparation du site, sécurité, prestataire.",
+    content: `
+<p><strong>Le nettoyage robotisé d'une centrale solaire au sol consiste à faire rouler un robot sur les tables de modules : une brosse rotative souple, alimentée en eau filtrée et sans détergent, retire poussière, pollen et fientes pendant que la centrale continue de produire. Il convient aux grandes surfaces et aux sites où un tracteur ne passe pas entre les rangées.</strong> Voici comment se déroule une intervention, comment préparer le site et comment choisir un prestataire, avec nos chantiers comme exemples.</p>
+
+<h2>Pourquoi nettoyer une centrale au sol</h2>
+<p>Parce que l'encrassement fait perdre de la production, de façon inégale d'un site à l'autre et d'une zone à l'autre d'une même centrale. Le programme photovoltaïque de l'Agence internationale de l'énergie (AIE PVPS, Task 13) estime qu'en 2018 l'encrassement a coûté 3 à 5 % de la production photovoltaïque annuelle mondiale, soit de l'ordre de 3 à 5 milliards d'euros (rapport T13-21:2022, mis en ligne en janvier 2023). Il souligne aussi que l'encrassement est très hétérogène, à l'échelle du module comme de la centrale.</p>
+<p>La pluie ne suffit pas toujours : elle rince la poussière sèche, mais laisse les fientes, les pollens collants et la boue formée après un épisode de sable saharien, comme nous l'expliquons dans notre article sur <a href="/blog/sable-saharien-panneaux-solaires-rendement">le sable saharien et les panneaux solaires</a>.</p>
+
+<h2>Comment fonctionne un nettoyage par robot</h2>
+<p>Le robot est posé en bout de table et avance le long de la rangée de modules, sous le contrôle d'un pilote. Sa brosse rotative souple décolle les dépôts, l'eau filtrée les entraîne, et rien d'autre ne touche le verre : ni détergent, ni haute pression, ni personne qui marche sur les panneaux.</p>
+<ul>
+  <li><strong>Avant</strong> : un repérage par drone cartographie le site (allées, espacement des rangées, zones sensibles, accès) et l'état d'encrassement.</li>
+  <li><strong>Pendant</strong> : le robot traite les tables une à une ; la centrale reste en production, aucune coupure n'est nécessaire pour le nettoyage.</li>
+  <li><strong>Après</strong> : contrôle visuel et photos avant/après, à comparer ensuite avec les données de production.</li>
+</ul>
+
+<h2>Robot, nettoyage manuel ou brosse sur tracteur : que choisir ?</h2>
+<p>L'AIE PVPS distingue quatre familles de méthodes : les outils manuels (brosses à eau, perches, lances), les dispositifs montés sur véhicule, les robots portables déplacés de rangée en rangée et les robots fixes installés à demeure sur une rangée. Le choix dépend surtout de la surface, de la configuration des allées et de la fréquence voulue.</p>
+<div style="overflow-x:auto"><table>
+  <thead>
+    <tr><th>Méthode</th><th>Convient à</th><th>Points de vigilance</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Manuel (perche et brosse à eau)</td><td>Petites surfaces, reprises localisées, tables isolées</td><td>Cadence limitée, fatigue des opérateurs, régularité du résultat sur de grandes surfaces</td></tr>
+    <tr><td>Brosse montée sur tracteur ou bras articulé</td><td>Grandes centrales aux allées larges, carrossables et dégagées</td><td>Allée continue nécessaire, sol porteur, risque de choc sur les structures, ornières sur sol détrempé</td></tr>
+    <tr><td>Robot portable</td><td>Grandes surfaces, allées étroites ou irrégulières, terrain en pente ou meuble</td><td>Tables continues et compatibles, déplacement d'une rangée à l'autre, point d'eau</td></tr>
+    <tr><td>Robot fixe par rangée</td><td>Sites très exposés nettoyés à haute fréquence</td><td>Investissement à l'installation, maintenance de chaque robot</td></tr>
+  </tbody>
+</table></div>
+<p>Le robot portable s'impose quand le tracteur ne peut pas circuler partout, ou quand on veut éviter tout engin lourd au pied des tables. Le nettoyage manuel reste utile pour les reprises ponctuelles.</p>
+
+<h2>Quelle cadence attendre ?</h2>
+<p>Notre robot traite jusqu'à 1 200 m² par heure. À cette cadence maximale, une centrale de 60 000 m² représente au moins 50 heures de brossage effectif, auxquelles s'ajoutent la mise en place, les changements de rangée et les aléas du site. Le rythme réel dépend :</p>
+<ul>
+  <li>du <strong>niveau d'encrassement</strong> : une boue de sable séchée demande plus de passages qu'une poussière légère ;</li>
+  <li>de la <strong>longueur des tables</strong> : des rangées longues limitent les manutentions ;</li>
+  <li>de l'<strong>état des allées</strong> et de la distance au point d'eau ;</li>
+  <li>du <strong>nombre de pilotes</strong> engagés : à Miremont (60 000 m²) comme à Lapeyrouse-Fossat (30 000 m²), nous avons travaillé à deux pilotes ;</li>
+  <li>de la <strong>météo</strong> : vent fort, pluie ou forte chaleur imposent d'adapter les créneaux, les panneaux se nettoyant de préférence froids.</li>
+</ul>
+
+<h2>Eau : quelle qualité et d'où vient-elle ?</h2>
+<p>On nettoie à l'eau filtrée, sans détergent. Une eau chargée en calcaire laisse des traces en séchant, et un produit mal rincé laisse un film qui retient la poussière. L'AIE PVPS rappelle de vérifier dans la notice du module la pression maximale admise : un dépassement peut annuler la garantie.</p>
+<p>La question pratique est l'approvisionnement : un point d'eau sur site, une borne à proximité ou une citerne. Le volume se chiffre au devis, selon la surface et l'encrassement. Le détail des erreurs à éviter (haute pression, savon, eau calcaire) figure dans notre guide <a href="/blog/nettoyer-panneaux-solaires-karcher-eau-osmosee-methode">Kärcher, eau osmosée, savon : ce qui marche et ce qui abîme</a>.</p>
+
+<h2>Préparer le site avant l'intervention</h2>
+<p>Une intervention bien préparée se joue avant l'arrivée du robot. Voici ce que l'exploitant ou le gestionnaire de site gagne à vérifier :</p>
+<ul>
+  <li><strong>L'accès</strong> : portail, clés ou badges, horaires autorisés, chemin praticable jusqu'aux rangées pour un véhicule de service.</li>
+  <li><strong>Les allées et l'espacement des rangées</strong> : un plan du site à jour, avec les allées praticables et les tables discontinues ou atypiques.</li>
+  <li><strong>La végétation</strong> : herbe fauchée sous et entre les tables. La norme IEC 62446-2:2020 sur la maintenance des systèmes photovoltaïques classe d'ailleurs l'entretien de la végétation, avec le nettoyage des modules, parmi les opérations qui maintiennent la performance.</li>
+  <li><strong>Le point d'eau</strong> : son emplacement, son débit, et l'endroit où stationner une citerne si besoin.</li>
+  <li><strong>Les points sensibles</strong> : modules cassés ou décollés, câbles apparents, boîtes de jonction ouvertes, zones humides ou protégées. Ils sont signalés avant l'intervention et contournés.</li>
+  <li><strong>Le planning d'exploitation</strong> : maintenance électrique, fauchage ou pâturage prévus sur la même période.</li>
+</ul>
+
+<h2>Sécurité électrique : ce qu'il faut savoir</h2>
+<p>Une centrale ne se met pas hors tension comme un bâtiment. Le BARPI, bureau du ministère de la Transition écologique chargé de l'analyse des accidents, le rappelle dans un Flash ARIA de septembre 2025 consacré au photovoltaïque en toiture : même mis hors tension, les panneaux continuent à produire de l'électricité en présence de rayonnement solaire. Le courant continu reste présent dans les modules, les câbles et les connecteurs pendant tout le nettoyage.</p>
+<ul>
+  <li>On ne touche ni câble, ni connecteur, ni module endommagé ; tout défaut repéré est signalé à l'exploitant.</li>
+  <li>L'intervention d'une entreprise extérieure sur le site donne lieu à une inspection commune préalable et à une analyse des risques, puis à un plan de prévention arrêté en commun (code du travail, articles R.4512-2 à R.4512-6). Ce plan est établi par écrit lorsque l'opération représente au moins 400 heures de travail prévisibles sur douze mois au plus, toutes entreprises extérieures confondues, ou relève des travaux dangereux listés par l'arrêté du 19 mars 1993 (article R.4512-7).</li>
+  <li>Le robot évite de faire monter ou marcher une personne sur les tables.</li>
+</ul>
+
+<h2>Plusieurs centrales : organiser une tournée</h2>
+<p>Pour un exploitant qui gère un portefeuille, l'enjeu est de mutualiser les déplacements. On regroupe les sites d'une même région sur un même déplacement, on fixe un ordre de passage selon l'encrassement et les contraintes de chaque site, et on garde le même format de compte rendu partout pour comparer les centrales entre elles. Nos deux centrales de Saône-et-Loire, Vitry (31 000 m²) et Montchanin (22 000 m²), ont été traitées ainsi, comme nous le racontons dans notre article <a href="/blog/nettoyage-centrale-solaire-saone-et-loire">deux centrales en une seule tournée</a>.</p>
+
+<h2>À quelle fréquence nettoyer ?</h2>
+<p>Il n'existe pas de fréquence universelle. Les travaux de l'AIE PVPS recommandent de mettre en balance le coût d'un nettoyage et la valeur de l'énergie perdue par encrassement entre deux passages, ce qui suppose de mesurer cet encrassement. Photovoltaique.info, le centre de ressources animé par l'association HESPUL, conseille d'observer le niveau de salissure pendant les deux premières années avant de fixer une périodicité. En pratique, on compare la production de la centrale d'une période à l'autre, à ensoleillement comparable, et on programme le passage avant la saison de forte production, après les épisodes de pollen ou de sable.</p>
+
+<h2>Qui nettoie les centrales solaires au sol par robot en France ?</h2>
+<p>Des prestataires spécialisés dans le nettoyage photovoltaïque, et parfois les sociétés de maintenance des centrales elles-mêmes. Pour choisir, les questions à poser sont les mêmes partout :</p>
+<ul>
+  <li><strong>Quels chantiers comparables avez-vous réalisés ?</strong> Surface, lieu, date, et si possible photos avant/après.</li>
+  <li><strong>Quelle méthode et quelle eau ?</strong> Brosse souple, eau filtrée ou déminéralisée, absence de détergent, pression compatible avec la notice des modules.</li>
+  <li><strong>Quelle cadence réaliste sur mon site</strong>, et avec combien d'opérateurs ?</li>
+  <li><strong>Qui fournit l'eau</strong>, et comment est-elle acheminée jusqu'aux rangées ?</li>
+  <li><strong>Comment se passe le repérage</strong>, et qu'est-ce qui est vérifié avant le nettoyage ?</li>
+  <li><strong>Quelles règles de sécurité</strong> : plan de prévention, conduite à tenir face à un module ou un câble endommagé, qualifications des intervenants.</li>
+  <li><strong>Quel compte rendu</strong> : photos, zones traitées, anomalies relevées.</li>
+  <li><strong>Pouvez-vous regrouper plusieurs sites</strong> sur un même déplacement ?</li>
+</ul>
+
+<h2>Nos chantiers de centrales au sol</h2>
+<div style="overflow-x:auto"><table>
+  <thead>
+    <tr><th>Centrale</th><th>Surface</th><th>Date</th><th>Organisation</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Miremont (31)</td><td>60 000 m²</td><td>Octobre 2026</td><td>Nettoyage au robot, deux pilotes</td></tr>
+    <tr><td>Lapeyrouse-Fossat (31)</td><td>30 000 m²</td><td>Septembre 2026</td><td>Nettoyage au robot, deux pilotes</td></tr>
+    <tr><td>Vitry (71)</td><td>31 000 m²</td><td></td><td>Repérage par drone puis nettoyage au robot</td></tr>
+    <tr><td>Montchanin (71)</td><td>22 000 m²</td><td></td><td>Nettoyage au robot, sans détergent</td></tr>
+    <tr><td><strong>Total</strong></td><td><strong>143 000 m²</strong></td><td></td><td></td></tr>
+  </tbody>
+</table></div>
+<p>Le détail et les photos sont sur notre page <a href="/realisations">réalisations</a>.</p>
+
+<h2>Questions fréquentes</h2>
+<h3>Comment nettoie-t-on une centrale solaire au sol par robot ?</h3>
+<p>Après un repérage par drone, un robot posé sur les tables de modules avance le long de chaque rangée, sous le contrôle d'un pilote. Sa brosse rotative souple, alimentée en eau filtrée et sans détergent, retire les dépôts sans haute pression et sans que personne ne marche sur les panneaux.</p>
+<h3>Faut-il arrêter la centrale pendant le nettoyage ?</h3>
+<p>Non, le nettoyage se fait centrale en production. Les modules restent sous tension tant qu'ils sont éclairés, ce qui impose de ne toucher ni câble, ni connecteur, ni module endommagé, et de formaliser les règles de sécurité dans un plan de prévention.</p>
+<h3>Combien de temps faut-il pour nettoyer une centrale au sol ?</h3>
+<p>Notre robot traite jusqu'à 1 200 m² par heure : comptez au moins 50 heures de brossage effectif pour 60 000 m², plus la mise en place et les changements de rangée. L'encrassement, la longueur des tables, l'accès à l'eau et la météo font varier ce rythme.</p>
+<h3>Robot ou tracteur : quelle méthode choisir pour une centrale au sol ?</h3>
+<p>Le tracteur à brosse demande des allées larges, continues et porteuses. Le robot portable convient aussi aux allées étroites, aux terrains en pente ou meubles, et évite tout engin lourd au pied des structures. Le repérage du site permet de trancher.</p>
+<h3>Quelle eau utiliser pour nettoyer une centrale photovoltaïque ?</h3>
+<p>Une eau filtrée, sans détergent, à une pression compatible avec la notice des modules. Une eau calcaire laisse des traces et un produit mal rincé retient la poussière. L'approvisionnement (point d'eau, borne ou citerne) se prévoit avant l'intervention.</p>
+
+<h2>Notre approche</h2>
+<p>Basés à Montpellier, nous nettoyons toutes nos centrales solaires au robot, avec une brosse rotative souple et de l'eau filtrée, sans détergent, jusqu'à 1 200 m² par heure. Chaque intervention est précédée d'un repérage par drone, réalisé par nos pilotes certifiés DGAC. Nous intervenons partout en France sur projet, en priorité en Occitanie et sur l'arc méditerranéen, et regroupons les sites d'un même portefeuille. Nos quatre chantiers de centrales au sol, 143 000 m² au total, sont présentés sur la page <a href="/realisations">réalisations</a>, et notre offre sur la page <a href="/prestations/nettoyage-solaire">nettoyage de panneaux solaires</a>.</p>
+<p><strong>Une centrale au sol à nettoyer ? <a href="/devis">Demandez un devis</a>, établi sous 24 h selon la surface, l'accès et l'encrassement.</strong></p>
+<p><em>Sources : AIE PVPS Task 13, rapport T13-21:2022 « Soiling Losses: Impact on the Performance of Photovoltaic Power Plants » (janvier 2023) ; norme IEC 62446-2:2020, maintenance des systèmes photovoltaïques raccordés au réseau ; BARPI, ministère de la Transition écologique, Flash ARIA « Photovoltaïque en toiture des installations industrielles et agricoles » (septembre 2025) ; code du travail, articles R.4512-2 à R.4512-7 ; photovoltaique.info (HESPUL), opérations de maintenance préventive (novembre 2024).</em></p>
+`,
+  },
+  {
+    slug: "nettoyage-ombrieres-parking-entreprise-collectivite-contraintes",
+    related: [
+      "ombriere-photovoltaique-entretien-nettoyage-duree-de-vie",
+      "ombrieres-photovoltaiques-parking-obligation-loi-aper",
+      "centrale-solaire-au-sol-nettoyage-robot-methode-prestataire",
+    ],
+    image: "/images/robot-intervention-structure.jpg",
+    category: "Énergie Solaire",
+    date: "4 Novembre 2026",
+    readTime: "8 min",
+    badge: "bg-amber-50 text-amber-600",
+    title: "Nettoyage d'ombrières photovoltaïques de parking d'entreprise ou de collectivité : organiser l'intervention sans bloquer le site",
+    excerpt: "Sur un parking d'entreprise, de collectivité ou de commerce, nettoyer des ombrières, c'est d'abord gérer ce qui se passe dessous : véhicules, piétons, horaires, eau qui ruisselle, gouttières. Comment préparer l'intervention, choisir entre nacelle et robot, fixer la fréquence et rédiger le cahier des charges, avec le rappel de l'obligation de solarisation vérifiée.",
+    metaTitle: "Ombrières de parking d'entreprise : nettoyage",
+    metaDescription: "Nettoyer les ombrières photovoltaïques d'un parking d'entreprise ou de collectivité : public, véhicules, horaires, balisage, gouttières, nacelle ou robot.",
+    content: `
+<p><strong>Nettoyer les ombrières d'un parking d'entreprise ou de collectivité, c'est surtout organiser ce qui se passe dessous : on traite le parking par zones, on neutralise seulement les places situées sous la zone en cours et celles qui reçoivent l'eau de ruissellement, on choisit des créneaux où le site est peu fréquenté, et l'on travaille à l'eau filtrée, sans détergent, sans personne sur les panneaux.</strong> Voici comment préparer l'intervention avec le gestionnaire du site, comparer nacelle et robot, et rédiger un cahier des charges.</p>
+
+<h2>Ce qui change par rapport à une centrale au sol</h2>
+<p>Sur une centrale au sol, le site est clos et personne ne circule sous les modules. Sur un parking, les panneaux sont en hauteur, au-dessus de voitures, de piétons, parfois de bornes de recharge, et le site reste en activité. La méthode de nettoyage est proche ; l'organisation, elle, est différente.</p>
+<div style="overflow-x:auto"><table>
+  <thead>
+    <tr><th>Point</th><th>Centrale au sol</th><th>Ombrière de parking</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Sous les panneaux</td><td>Végétation, parfois des animaux</td><td>Véhicules, piétons, bornes de recharge, mobilier</td></tr>
+    <tr><td>Accès</td><td>Site clos, allées entre les rangées</td><td>Site ouvert, circulation permanente, structure en hauteur</td></tr>
+    <tr><td>Horaires</td><td>Libres, selon la météo</td><td>Calés sur l'activité : ouverture, équipes, livraisons, événements</td></tr>
+    <tr><td>Eau de nettoyage</td><td>Retombe sur le sol</td><td>Retombe sur les places ou rejoint gouttières et chéneaux</td></tr>
+    <tr><td>Encrassement</td><td>Poussière, pollen, fientes</td><td>S'y ajoutent des dépôts liés à la circulation et une faible inclinaison qui rince mal</td></tr>
+    <tr><td>Interlocuteurs</td><td>Exploitant de la centrale</td><td>Exploitant des ombrières, propriétaire ou gestionnaire du parking, services généraux</td></tr>
+  </tbody>
+</table></div>
+
+<h2>Pourquoi une ombrière de parking se salit vite</h2>
+<p>Parce qu'elle est souvent peu inclinée, pour couvrir les places. Photovoltaique.info, le centre de ressources animé par l'association HESPUL, indique qu'un champ incliné à plus de 15° peut être nettoyé par les intempéries dans un environnement peu poussiéreux. Une ombrière moins inclinée, près d'une circulation dense, ne bénéficie pas de cet effet. Sur un parking s'ajoutent les fientes d'oiseaux et des dépôts liés aux véhicules, que nous décrivons dans notre article sur <a href="/blog/ombriere-photovoltaique-entretien-nettoyage-duree-de-vie">l'entretien et la durée de vie d'une ombrière</a>.</p>
+
+<h2>Préparer l'intervention avec le gestionnaire du site</h2>
+<p>Une entreprise extérieure qui intervient sur un site en activité doit, avec l'entreprise d'accueil, réaliser une inspection commune préalable et analyser les risques liés à l'interférence entre les activités, puis arrêter en commun un plan de prévention (code du travail, articles R.4512-2 à R.4512-6). Ce plan est établi par écrit lorsque l'opération représente au moins 400 heures de travail prévisibles sur douze mois au plus, toutes entreprises extérieures confondues, ou relève des travaux dangereux listés par l'arrêté du 19 mars 1993 (article R.4512-7). Sur un parking, ce plan porte concrètement sur :</p>
+<ul>
+  <li><strong>le plan de circulation</strong> : sens de passage, cheminements piétons maintenus, accès pompiers et livraisons laissés libres ;</li>
+  <li><strong>les zones neutralisées</strong> : places et allées interdites pendant le traitement de chaque travée, avec un ordre de passage connu à l'avance ;</li>
+  <li><strong>l'information des usagers</strong> : message aux salariés ou aux agents quelques jours avant, affichage aux entrées, demande de libérer certaines places la veille ;</li>
+  <li><strong>les équipements sous les ombrières</strong> : bornes de recharge, éclairage, caméras, signalétique, à protéger ou à mettre hors service si nécessaire ;</li>
+  <li><strong>le point d'eau</strong> et l'endroit où stationner le véhicule d'intervention sans gêner la circulation.</li>
+</ul>
+
+<h2>Véhicules et public dessous : balisage et ruissellement</h2>
+<p>La règle est simple : personne et aucun véhicule sous la zone en cours de traitement. On balise la travée traitée et sa zone de retombée, puis on avance travée par travée, le reste du parking restant ouvert.</p>
+<ul>
+  <li><strong>Le ruissellement sur les voitures</strong> : sans détergent, l'eau ne transporte que la poussière retirée, mais elle reste chargée et tache une carrosserie. On neutralise donc aussi les places situées sous les bords d'ombrière et sous les descentes d'eau, pas seulement celles sous les panneaux.</li>
+  <li><strong>Les gouttières et chéneaux</strong> : ils sont contrôlés avant le nettoyage. Bouchés par les feuilles ou les dépôts, ils débordent sur les places au lieu de conduire l'eau vers les descentes.</li>
+  <li><strong>Les sols</strong> : une eau chargée peut laisser une trace sur un revêtement clair ou rendre un passage glissant ; les cheminements piétons proches restent balisés jusqu'au séchage.</li>
+  <li><strong>Le risque électrique</strong> : le BARPI, bureau du ministère de la Transition écologique chargé de l'analyse des accidents, rappelle que même mis hors tension, les panneaux continuent à produire de l'électricité en présence de rayonnement solaire. On ne touche ni câble, ni connecteur, ni module endommagé, et tout défaut est signalé à l'exploitant.</li>
+</ul>
+
+<h2>Quels horaires choisir ?</h2>
+<p>Ceux où le parking est le moins rempli, en tenant compte du fait que les panneaux se nettoient de préférence froids, tôt le matin ou en fin de journée.</p>
+<ul>
+  <li><strong>Parking d'entreprise</strong> : week-end, jours de faible présence, ou tôt le matin avant l'arrivée des équipes ; attention aux équipes postées et aux livraisons.</li>
+  <li><strong>Parking de collectivité</strong> : hors jours de marché, d'événements et d'horaires d'entrée et de sortie des écoles voisines ; coordination avec les services techniques pour l'affichage.</li>
+  <li><strong>Parking commercial</strong> : avant l'ouverture, le soir après la fermeture ou les jours de fermeture.</li>
+</ul>
+
+<h2>Nacelle, perche ou robot ?</h2>
+<p>Le choix dépend de la hauteur, de la structure et de la place disponible entre les véhicules. Le repérage par drone permet de le faire avant de chiffrer.</p>
+<div style="overflow-x:auto"><table>
+  <thead>
+    <tr><th>Méthode</th><th>Atouts</th><th>Contraintes sur un parking</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Perche depuis le sol</td><td>Simple, pour des ombrières basses ou de petite taille</td><td>Portée limitée en hauteur et en profondeur, opérateur sous la zone de retombée</td></tr>
+    <tr><td>Nacelle (PEMP) avec brosse ou lance</td><td>Atteint les structures hautes</td><td>Places à libérer pour la circulation de l'engin, sol porteur, conducteur formé et autorisé par son employeur (code du travail, articles R.4323-55 et R.4323-56), risque de choc sur les poteaux et les véhicules</td></tr>
+    <tr><td>Robot sur la nappe de modules</td><td>Aucune personne sur les panneaux, pas d'engin à déplacer travée par travée, cadence élevée sur les grandes nappes</td><td>Structure et nappe de modules compatibles, à vérifier au repérage ; mise en place à organiser</td></tr>
+  </tbody>
+</table></div>
+<p>Dans tous les cas, on ne marche pas sur les modules, et l'on n'utilise pas de haute pression de près, dont les fabricants fixent la pression maximale, comme nous l'expliquons dans notre guide <a href="/blog/nettoyer-panneaux-solaires-karcher-eau-osmosee-methode">Kärcher, eau osmosée, savon</a>.</p>
+
+<h2>À quelle fréquence nettoyer des ombrières de parking ?</h2>
+<p>Photovoltaique.info conseille d'observer le niveau de salissure pendant les deux premières années avant de fixer une périodicité. Le plus fiable est de comparer la production d'une période à l'autre, à ensoleillement comparable, et de programmer le passage avant la saison de forte production. Les parkings proches d'un axe routier chargé, du littoral ou d'arbres très pollinisants demandent souvent un passage de plus. Le programme photovoltaïque de l'Agence internationale de l'énergie (AIE PVPS) estime qu'en 2018 l'encrassement a coûté 3 à 5 % de la production photovoltaïque annuelle mondiale.</p>
+
+<h2>Obligation de solarisation des parkings : le rappel</h2>
+<p>L'article 40 de la loi APER du 10 mars 2023, modifié par l'article 8 de la loi n° 2025-1129 du 26 novembre 2025 (version en vigueur depuis le 28 novembre 2025), impose aux parcs de stationnement extérieurs de plus de 1 500 m² d'être ombragés sur la moitié de leur surface, dont au moins 17,5 % par des ombrières produisant de l'énergie renouvelable, le reste pouvant être végétalisé.</p>
+<ul>
+  <li><strong>Échéances</strong> : 1<sup>er</sup> juillet 2026 pour les parkings de 10 000 m² et plus, 1<sup>er</sup> juillet 2028 pour ceux de 1 500 à 10 000 m².</li>
+  <li><strong>Reports possibles</strong> : jusqu'au 1<sup>er</sup> janvier 2028 pour les parkings d'au moins 10 000 m² ayant signé un contrat avec acompte avant le 30 juin 2026 et commandé avant le 31 décembre 2026 ; jusqu'au 1<sup>er</sup> janvier 2030 pour ceux de 1 500 à 10 000 m², avec un contrat avec acompte au plus tard le 30 juin 2027 et une commande avant le 31 décembre 2027. Les panneaux doivent répondre au décret n° 2026-842 du 7 septembre 2026, avec une attestation d'un organisme certificateur accrédité.</li>
+  <li><strong>Responsable</strong> : le propriétaire du parc, ou le concessionnaire, le délégataire ou le titulaire de l'autorisation d'occupation lorsque le parking est géré ainsi.</li>
+  <li><strong>Sanction</strong> : jusqu'à 20 000 € par an pour un parking de moins de 10 000 m², et 40 000 € par an à partir de 10 000 m² (article 40, V).</li>
+</ul>
+<p>La loi impose l'installation, pas l'entretien. Le détail des exonérations, du calcul de surface et des critères de report figure dans notre article <a href="/blog/ombrieres-photovoltaiques-parking-obligation-loi-aper">ombrières de parking et loi APER</a>.</p>
+
+<h2>Ce que doit contenir le cahier des charges</h2>
+<ul>
+  <li>le plan du parking, la surface de modules, la hauteur et le type de structure ;</li>
+  <li>les créneaux autorisés et les périodes à éviter ;</li>
+  <li>le phasage par zones et le nombre maximal de places neutralisées en même temps ;</li>
+  <li>la méthode : eau filtrée, sans détergent, pression compatible avec la notice des modules, personne sur les panneaux ;</li>
+  <li>le contrôle des gouttières et chéneaux avant intervention ;</li>
+  <li>les règles de sécurité : plan de prévention, balisage, conduite à tenir face à un défaut électrique ;</li>
+  <li>la répartition des rôles si les ombrières sont exploitées par un tiers-investisseur ;</li>
+  <li>le compte rendu attendu : photos avant/après, zones traitées, anomalies relevées.</li>
+</ul>
+
+<h2>Questions fréquentes</h2>
+<h3>Faut-il fermer le parking pour nettoyer les ombrières ?</h3>
+<p>Non. On traite le parking par zones, en neutralisant seulement les places et allées situées sous la travée en cours et dans la zone où l'eau retombe, le reste du parking restant ouvert. Sur les sites très fréquentés, l'intervention se fait hors des heures d'activité.</p>
+<h3>L'eau de nettoyage peut-elle salir les voitures garées dessous ?</h3>
+<p>Oui, si des véhicules restent sous la zone traitée ou sous les descentes d'eau. C'est pourquoi on libère ces places pendant le passage, et l'on vérifie les gouttières avant, pour que l'eau aille aux descentes et non sur les places.</p>
+<h3>Faut-il une nacelle pour nettoyer une ombrière de parking ?</h3>
+<p>Pas forcément. La nacelle atteint les structures hautes mais impose de libérer des places, un sol porteur et un conducteur formé et autorisé. Un robot posé sur la nappe de modules évite d'avoir une personne sur les panneaux et limite le recours à l'engin, quand la structure s'y prête, ce que vérifie le repérage.</p>
+<h3>Qui doit nettoyer les ombrières d'un parking d'entreprise ?</h3>
+<p>Celui que désigne le contrat. Quand les ombrières sont financées et exploitées par un tiers-investisseur, l'exploitant assure souvent la maintenance, mais le partage avec le propriétaire du parking varie : il faut le vérifier avant de commander un nettoyage.</p>
+<h3>Quels parkings doivent être équipés d'ombrières photovoltaïques ?</h3>
+<p>Les parcs de stationnement extérieurs de plus de 1 500 m², qui doivent être ombragés sur la moitié de leur surface, dont au moins 17,5 % par des ombrières produisant de l'énergie renouvelable (article 40 de la loi APER, modifié par la loi du 26 novembre 2025). Échéances : 1<sup>er</sup> juillet 2026 à partir de 10 000 m², 1<sup>er</sup> juillet 2028 entre 1 500 et 10 000 m², avec des reports possibles sous conditions.</p>
+
+<h2>Notre approche</h2>
+<p>Basés à Montpellier, nous nettoyons les panneaux solaires au robot, avec une brosse rotative souple et de l'eau filtrée, sans détergent, jusqu'à 1 200 m² par heure, après un repérage par drone réalisé par nos pilotes certifiés DGAC. Sur un parking, ce repérage sert aussi à vérifier que la structure se prête au robot et à préparer le phasage avec le gestionnaire du site. Nos références documentées à ce jour sont des centrales au sol, 143 000 m² au total, présentées sur la page <a href="/realisations">réalisations</a>. Voir aussi notre page <a href="/nettoyage-ombrieres-photovoltaiques">nettoyage d'ombrières photovoltaïques</a>.</p>
+<p><strong>Des ombrières de parking à entretenir ? <a href="/devis">Demandez un devis</a>, établi sous 24 h selon la surface, l'accès et l'encrassement.</strong></p>
+<p><em>Sources : loi n° 2023-175 du 10 mars 2023, article 40, dans sa version issue de l'article 8 de la loi n° 2025-1129 du 26 novembre 2025 (Légifrance) ; décret n° 2026-842 du 7 septembre 2026 ; direction générale des Entreprises, communiqué du 11 septembre 2026 sur la solarisation des parcs de stationnement ; ministère de la Transition écologique, FAQ « Parcs de stationnement » (avril 2025) ; photovoltaique.info (HESPUL), fiche sur l'obligation de solarisation des parcs de stationnement extérieurs (mise à jour du 16 septembre 2026) et page sur la maintenance préventive (novembre 2024) ; code du travail, articles R.4512-2 à R.4512-7, R.4323-55 et R.4323-56 ; BARPI, Flash ARIA « Photovoltaïque en toiture des installations industrielles et agricoles » (septembre 2025) ; AIE PVPS Task 13, rapport T13-21:2022 sur l'encrassement (janvier 2023).</em></p>
+`,
+  },
+  {
     slug: "agrivoltaisme-avantages-inconvenients",
     related: [
       "agrivoltaisme-definition-loi-aper-entretien",
