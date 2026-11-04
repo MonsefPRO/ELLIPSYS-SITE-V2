@@ -168,7 +168,7 @@ export default async function BlogPostPage({ params }: Props) {
           <div className="grid lg:grid-cols-[1fr_340px] gap-12 items-start">
 
             {/* Article */}
-            <article>
+            <article className="min-w-0">
               <Link href="/blog" className="inline-flex items-center gap-2 text-sm font-semibold text-slate-500 hover:text-brand-orange-500 transition-colors mb-8">
                 <ArrowLeft className="w-4 h-4" /> Retour au blog
               </Link>
