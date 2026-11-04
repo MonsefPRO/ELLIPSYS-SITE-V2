@@ -106,8 +106,8 @@ export default async function BlogPostPage({ params }: Props) {
     description: post.metaDescription,
     image: `${BASE}${post.image}`,
     ...(datePublished && { datePublished, dateModified: dateModified ?? datePublished }),
-    // Même @id que l'entité du layout : Google relie les articles à la marque.
-    author: { "@type": "Organization", "@id": `${BASE}/#business`, name: "Ellipsys Solutions", url: BASE },
+    // Auteur rattaché à l'entité du layout par son @id : Google relie les articles à la marque.
+    author: { "@type": "Person", name: "Msf", worksFor: { "@id": `${BASE}/#business` } },
     publisher: {
       "@type": "Organization",
       "@id": `${BASE}/#business`,
@@ -154,7 +154,8 @@ export default async function BlogPostPage({ params }: Props) {
           <h1 className="text-2xl md:text-4xl font-black text-white leading-tight max-w-3xl">
             {post.title}
           </h1>
-          <div className="flex items-center gap-5 mt-4 text-sm text-slate-300">
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-1 mt-4 text-sm text-slate-300">
+            <span>Par Msf, Ellipsys Solutions</span>
             <span className="flex items-center gap-1.5"><Calendar className="w-4 h-4" /> {post.date}</span>
             {post.updated && <span>Mis à jour le {post.updated.toLowerCase()}</span>}
             <span className="flex items-center gap-1.5"><Clock className="w-4 h-4" /> {post.readTime} de lecture</span>
