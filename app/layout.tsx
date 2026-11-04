@@ -241,7 +241,8 @@ const jsonLd = {
         "https://www.instagram.com/ellipsysolutionsdrone/",
         "https://www.tiktok.com/@ellipsyssolutions",
         "https://www.facebook.com/profile.php?id=61588550468356",
-        "https://annuaire-entreprises.data.gouv.fr/entreprise/ellipsys-solutions-999957533"
+        "https://annuaire-entreprises.data.gouv.fr/entreprise/ellipsys-solutions-999957533",
+        "https://www.pagesjaunes.fr/pros/65377841"
       ],
     },
     {
