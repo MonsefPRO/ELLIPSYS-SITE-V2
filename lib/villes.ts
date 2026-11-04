@@ -378,12 +378,13 @@ export const VILLES: Record<string, VilleData> = {
     region: "Occitanie",
     delai: "Sous 5 jours ouvrés",
     accroche: "Brique foraine poreuse et humidité de la Garonne : un nettoyage sans pression, adapté au bâti toulousain.",
-    titreSeo: "Nettoyage façade et toiture à Toulouse par drone",
+    titreSeo: "Nettoyage façade, toiture et panneaux solaires à Toulouse",
     descriptionSeo:
       "Toulouse (31) : façades en brique foraine nettoyées sans haute pression, démoussage de toiture et bardages par drone, sans échafaudage. Devis 24 h.",
     intro: [
       "Toulouse impose une contrainte matériau que l'on ne rencontre nulle part ailleurs en Occitanie : la brique foraine. Cette brique de terre cuite plate, qui donne à la ville sa couleur, est extrêmement poreuse. Un nettoyage haute pression la décape en surface, ouvre ses pores et garantit un réencrassement plus rapide qu'avant l'intervention, c'est l'erreur la plus fréquente et la plus coûteuse sur le bâti toulousain.",
       "Le climat toulousain, plus humide et moins venté que celui du littoral méditerranéen, aggrave le problème. L'humidité entretenue par la Garonne et les précipitations plus régulières favorisent nettement les développements de mousses et d'algues, en particulier sur les toitures en tuile canal des versants nord et sur les soubassements de façade. Sur le plan professionnel, le bassin toulousain concentre par ailleurs un tissu aéronautique et logistique dense, Blagnac, Colomiers, Labège, dont les bardages et toitures de très grande surface relèvent typiquement de notre méthode.",
+      "En Haute-Garonne, nous avons nettoyé au robot deux centrales photovoltaïques au sol : Lapeyrouse-Fossat (30 000 m², septembre 2026) et Miremont (60 000 m², octobre 2026), avec deux pilotes sur site, une brosse rotative souple et de l'eau filtrée, sans détergent.",
     ],
     facteurs: [
       {
