@@ -129,7 +129,7 @@ export default function Page() {
         "Hautes-Alpes",
         "Alpes-Maritimes",
       ]}
-      areaServed={[{ "@type": "AdministrativeArea", name: "Provence-Alpes-Côte d'Azur" }]}
+      areaServed={[{ "@type": "AdministrativeArea", name: "Provence-Alpes-Côte d'Azur" }, { "@type": "AdministrativeArea", name: "Alpes-de-Haute-Provence" }, { "@type": "AdministrativeArea", name: "Hautes-Alpes" }, { "@type": "AdministrativeArea", name: "Alpes-Maritimes" }, { "@type": "AdministrativeArea", name: "Bouches-du-Rhône" }, { "@type": "AdministrativeArea", name: "Var" }, { "@type": "AdministrativeArea", name: "Vaucluse" }]}
       pageDetail={{
         href: "/prestations/nettoyage-solaire",
         label: "Voir notre offre complète de nettoyage solaire",

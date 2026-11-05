@@ -113,8 +113,8 @@ export default async function VillePage({ params }: Props) {
         "@graph": [
           {
             "@type": "Service",
-            "name": `Nettoyage par drone à ${data.nom}`,
-            "serviceType": "Nettoyage de panneaux solaires, démoussage de toiture et nettoyage de façade par drone",
+            "name": `Nettoyage par drone et robot à ${data.nom}`,
+            "serviceType": "Nettoyage de panneaux solaires et de centrales photovoltaïques par robot et drone, démoussage de toiture et nettoyage de façade par drone",
             // Renvoie à l'entité LocalBusiness déclarée une seule fois dans le layout.
             "provider": { "@id": "https://ellipsys-solutions.com/#business" },
             "areaServed": [

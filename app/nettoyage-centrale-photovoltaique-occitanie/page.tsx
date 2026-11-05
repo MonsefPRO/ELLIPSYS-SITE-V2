@@ -145,7 +145,7 @@ export default function Page() {
         "Tarn-et-Garonne",
         "Hautes-Pyrénées",
       ]}
-      areaServed={[{ "@type": "AdministrativeArea", name: "Occitanie" }]}
+      areaServed={[{ "@type": "AdministrativeArea", name: "Occitanie" }, { "@type": "AdministrativeArea", name: "Ariège" }, { "@type": "AdministrativeArea", name: "Aude" }, { "@type": "AdministrativeArea", name: "Aveyron" }, { "@type": "AdministrativeArea", name: "Gard" }, { "@type": "AdministrativeArea", name: "Haute-Garonne" }, { "@type": "AdministrativeArea", name: "Gers" }, { "@type": "AdministrativeArea", name: "Hérault" }, { "@type": "AdministrativeArea", name: "Lot" }, { "@type": "AdministrativeArea", name: "Lozère" }, { "@type": "AdministrativeArea", name: "Hautes-Pyrénées" }, { "@type": "AdministrativeArea", name: "Pyrénées-Orientales" }, { "@type": "AdministrativeArea", name: "Tarn" }, { "@type": "AdministrativeArea", name: "Tarn-et-Garonne" }]}
       pageDetail={{
         href: "/prestations/nettoyage-solaire",
         label: "Voir notre offre complète de nettoyage solaire",

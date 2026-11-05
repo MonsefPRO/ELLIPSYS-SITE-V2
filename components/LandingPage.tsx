@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { CheckCircle2, ShieldCheck, Clock, MapPin, Phone, HelpCircle } from "lucide-react";
 import LandingLeadForm from "./LandingLeadForm";
+import DATES from "@/lib/sitemap-dates.json";
 
 /**
  * Gabarit commun aux landing pages Google Ads.
@@ -64,6 +65,7 @@ const POINTS_CLES_DEFAUT = [
 ];
 
 export default function LandingPage(p: LandingPageProps) {
+  const dateModifiee = (DATES as Record<string, string>)[p.url.replace("https://ellipsys-solutions.com", "")];
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -79,7 +81,10 @@ export default function LandingPage(p: LandingPageProps) {
         // Renvoie à l'entité LocalBusiness déclarée une seule fois dans le layout.
         provider: { "@id": "https://ellipsys-solutions.com/#business" },
         url: p.url,
+        description: p.accroche,
+        image: p.heroImage.startsWith("http") ? p.heroImage : `https://ellipsys-solutions.com${encodeURI(p.heroImage)}`,
       },
+      ...(dateModifiee ? [{ "@type": "WebPage", url: p.url, name: p.h1Texte, dateModified: dateModifiee }] : []),
       {
         "@type": "FAQPage",
         mainEntity: p.faq.map((f) => ({
