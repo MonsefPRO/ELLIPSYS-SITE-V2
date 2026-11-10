@@ -1,10 +1,16 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
 import { Resend } from "resend";
+import { emailStrict, prenomSur } from "@/lib/phishing-guard";
+
+function escapeHtml(s: string): string {
+  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+}
 
 /* ─── Helpers ─── */
 function isValidEmail(email: string): boolean {
-  return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email) && email.length <= 254;
+  // Format strict (pas de guillemets ni de chevrons) : voir lib/phishing-guard.ts.
+  return emailStrict(email);
 }
 
 const rateMap = new Map<string, { count: number; reset: number }>();
@@ -146,8 +152,10 @@ export async function POST(req: NextRequest) {
     catch { return NextResponse.json({ error: "Requête invalide." }, { status: 400 }); }
 
     const email     = typeof body.email     === "string" ? body.email.trim().toLowerCase() : "";
-    const firstName = typeof body.firstName === "string" ? body.firstName.trim().slice(0, 60) : "là";
-    const lang      = typeof body.lang      === "string" ? body.lang.slice(0, 5) : "fr";
+    // Le prénom est repris dans un e-mail envoyé à l'adresse saisie : s'il contient un
+    // lien, du HTML ou des caractères suspects, on ne l'affiche pas (anti-relais de phishing).
+    const firstName = escapeHtml(prenomSur(typeof body.firstName === "string" ? body.firstName : "", "là"));
+    const lang      = typeof body.lang      === "string" && /^[a-z]{2}$/i.test(body.lang) ? body.lang.toLowerCase() : "fr";
     const pdfSlug   = typeof body.pdfSlug   === "string" ? body.pdfSlug.replace(/[^a-z0-9-]/g, "") : "guide-ellipsys";
 
     if (!isValidEmail(email)) {

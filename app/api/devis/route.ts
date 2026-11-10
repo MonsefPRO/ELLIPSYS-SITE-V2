@@ -6,6 +6,9 @@ import { upsertContact, createDeal } from "@/lib/hubspot";
 import { captureServer, identifyServer } from "@/lib/posthog-server";
 import { uploadDevisAttachments } from "@/lib/supabase-storage";
 import { detectSolicitation } from "@/lib/spam-filter";
+import {
+  evaluerPhishing, desamorcerLiens, emailStrict, prenomSur, controlerFichier, SEUIL_BLOCAGE, SEUIL_SUSPECT,
+} from "@/lib/phishing-guard";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 
@@ -14,8 +17,9 @@ export const runtime = "nodejs";
 export const maxDuration = 30;
 
 // ── Validation ────────────────────────────────────────────────────────────
+// Format strict (pas de guillemets ni de chevrons) : voir lib/phishing-guard.ts.
 function isValidEmail(email: string): boolean {
-  return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email) && email.length <= 254;
+  return emailStrict(email);
 }
 
 // ── Rate limiting basique (in-memory, par IP) ─────────────────────────────
@@ -181,6 +185,47 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ ok: true, hubspotContactId: null, hubspotDealId: null, attachmentsUploaded: 0 });
     }
 
+    // ── Pare-feu anti-phishing (liens piégés, faux partages de fichiers) ──
+    // Voir lib/phishing-guard.ts. Pièces jointes : seuls photos et PDF sans code
+    // actif passent, d'après leurs vrais octets (pas l'extension annoncée).
+    let risqueFichiers = 0;
+    const liensFichiers: string[] = [];
+    const fichiersSurs: File[] = [];
+    for (const file of files) {
+      const octets = new Uint8Array(await file.arrayBuffer());
+      const controle = controlerFichier(octets);
+      risqueFichiers += controle.risque;
+      liensFichiers.push(...controle.liens);
+      if (controle.accepte && controle.mime) {
+        fichiersSurs.push(new File([octets], file.name, { type: controle.mime }));
+      } else {
+        console.warn(`[devis] Pièce jointe refusée (${controle.raison}) : ${file.name}`);
+      }
+    }
+    files = fichiersSurs;
+
+    const texteLibre = [message, ...Object.values(detailsObj).map(String), ...liensFichiers].join("\n");
+    const verdict = evaluerPhishing({ champsCourts: { name, city, phone, siret }, texteLibre });
+    if (risqueFichiers > 0) {
+      verdict.score += risqueFichiers;
+      verdict.raisons.push(`pieces_jointes (+${risqueFichiers})`);
+      verdict.bloquer = verdict.score >= SEUIL_BLOCAGE;
+      verdict.suspect = verdict.score >= SEUIL_SUSPECT;
+    }
+    if (verdict.bloquer) {
+      console.warn(`[devis] Phishing bloqué (score ${verdict.score} : ${verdict.raisons.join(", ")}) : ${email || phone}`);
+      await captureServer({
+        distinctId: email || phone || `blocked-${Date.now()}`,
+        event: "devis_blocked_phishing",
+        properties: { score: verdict.score, reasons: verdict.raisons.join(" | "), links: verdict.liens.map(desamorcerLiens).join(" | "), email, name, phone, service, page_uri: pageUri },
+      }).catch(() => {});
+      return NextResponse.json({ ok: true, hubspotContactId: null, hubspotDealId: null, attachmentsUploaded: 0 });
+    }
+    const suspect = verdict.suspect;
+    if (suspect) {
+      console.warn(`[devis] Demande suspecte transmise (score ${verdict.score} : ${verdict.raisons.join(", ")})`);
+    }
+
     // Validation
     // Validation, on accepte un lead « rappelez-moi » qui n'a qu'un téléphone.
     // Règle : un nom + AU MOINS un moyen de recontact (e-mail ou téléphone).
@@ -205,12 +250,18 @@ export async function POST(req: NextRequest) {
       attachments = await uploadDevisAttachments(files, devisRef);
     }
 
+    const messageAffiche = desamorcerLiens(message);
+    const detailsAffiches: Record<string, string> = Object.fromEntries(
+      Object.entries(detailsObj).map(([k, v]) => [k, desamorcerLiens(String(v))]),
+    );
     const devisData: DevisData = {
-      clientType, service, serviceLabel, name, email, phone, city, siret, message,
-      details: detailsObj,
+      clientType, service, serviceLabel, name, email, phone, city, siret, message: messageAffiche,
+      details: detailsAffiches,
       attachments: attachments.map(({ filename, url }) => ({ filename, url })),
     };
-    const fullDescription = buildDescription(devisData);
+    const fullDescription = (suspect
+      ? `⚠️ DEMANDE SUSPECTE (pare-feu anti-phishing, score ${verdict.score}) : ne cliquez sur aucun lien, ne saisissez jamais vos identifiants. Raisons : ${verdict.raisons.join(", ")}\n\n`
+      : "") + buildDescription(devisData);
 
     // ── 1) HubSpot (Contact + Deal avec description complète) ──────────
     const hsToken = process.env.HUBSPOT_ACCESS_TOKEN;
@@ -239,7 +290,7 @@ export async function POST(req: NextRequest) {
       hubspotContactId = contactRes.id;
       if (contactRes.error) hubspotError = `Contact: ${contactRes.error}`;
 
-      const dealName = [`Devis ${serviceLabel}`, city, name]
+      const dealName = [`${suspect ? "[SUSPECT] " : ""}Devis ${serviceLabel}`, city, name]
         .filter(Boolean)
         .join(", ")
         .slice(0, 200);
@@ -299,9 +350,11 @@ export async function POST(req: NextRequest) {
     if (resendKey && teamEmails.length) {
       try {
         const resend = new Resend(resendKey);
-        const subject = `🚀 Nouveau devis, ${serviceLabel}, ${city}`;
+        const subject = suspect
+          ? `⚠️ SUSPECT, ne cliquez sur aucun lien, devis ${serviceLabel}, ${city}`
+          : `🚀 Nouveau devis, ${serviceLabel}, ${city}`;
 
-        const detailsHtml = Object.entries(detailsObj)
+        const detailsHtml = Object.entries(detailsAffiches)
           .map(([k, v]) => `<tr><td style="padding:6px 12px;color:#64748b;width:40%">${escapeHtml(k)}</td><td style="padding:6px 12px"><strong>${escapeHtml(v)}</strong></td></tr>`)
           .join("");
 
@@ -319,6 +372,7 @@ export async function POST(req: NextRequest) {
 
         const html = `
           <div style="font-family:system-ui,sans-serif;max-width:680px;margin:auto;color:#0f172a">
+            ${suspect ? `<div style="background:#fef2f2;border:2px solid #dc2626;color:#991b1b;padding:12px 16px;border-radius:8px;margin:0 0 16px;font-size:14px"><strong>⚠️ Demande suspecte (pare-feu anti-phishing).</strong> Ne cliquez sur aucun lien et ne saisissez jamais vos identifiants. Vérifiez d'abord l'entreprise par téléphone.<br><span style="font-size:12px">Raisons : ${escapeHtml(verdict.raisons.join(", "))}</span></div>` : ""}
             <h2 style="color:#ea580c;margin:0 0 8px">Nouvelle demande de devis</h2>
             <p style="color:#64748b;margin:0 0 24px;font-size:13px">Reçue le ${new Date().toLocaleString("fr-FR", { timeZone: "Europe/Paris" })} · Réf. ${devisRef}</p>
 
@@ -343,7 +397,7 @@ export async function POST(req: NextRequest) {
 
             ${message ? `
               <h3 style="margin:24px 0 8px;color:#0e2f52">💬 Message du client</h3>
-              <div style="background:#fffbeb;border-left:4px solid #ea580c;padding:12px 16px;border-radius:0 8px 8px 0;font-size:14px;white-space:pre-wrap">${escapeHtml(message)}</div>
+              <div style="background:#fffbeb;border-left:4px solid #ea580c;padding:12px 16px;border-radius:0 8px 8px 0;font-size:14px;white-space:pre-wrap">${escapeHtml(messageAffiche)}</div>
             ` : ""}
 
             ${attachmentsHtml}
@@ -375,15 +429,16 @@ export async function POST(req: NextRequest) {
       // Demande de Nicolas Papin (09/09/2026) : transmettre systématiquement la
       // politique RSE à tous les clients. Uniquement si un e-mail est fourni
       // (un lead « rappelez-moi » n'en a pas toujours).
-      if (email) {
+      if (email && !suspect) {
         try {
           const resend = new Resend(resendKey);
+          const nomAffiche = prenomSur(name);
           const rsePath = path.join(process.cwd(), "public", "documents", "politique-rse-ellipsys-solutions.pdf");
           const rseBuffer = await readFile(rsePath);
 
           const clientHtml = `
             <div style="font-family:system-ui,sans-serif;max-width:600px;margin:auto;color:#0f172a">
-              <h2 style="color:#0e2f52;margin:0 0 8px">Merci pour votre demande, ${escapeHtml(name)} !</h2>
+              <h2 style="color:#0e2f52;margin:0 0 8px">Merci pour votre demande${nomAffiche ? `, ${escapeHtml(nomAffiche)}` : ""} !</h2>
               <p style="color:#475569;font-size:15px;line-height:1.6">
                 Nous avons bien reçu votre demande concernant <strong>${escapeHtml(serviceLabel)}</strong>.
                 Notre équipe revient vers vous sous 24 h avec une proposition personnalisée.
@@ -439,6 +494,8 @@ export async function POST(req: NextRequest) {
         service, service_label: serviceLabel, client_type: clientType, city,
         has_phone: !!phone, has_siret: !!siret,
         has_attachments: attachments.length > 0,
+        phishing_score: verdict.score,
+        suspect,
         attachments_count: attachments.length,
         hubspot_contact_id: hubspotContactId ?? undefined,
         hubspot_deal_id: hubspotDealId ?? undefined,

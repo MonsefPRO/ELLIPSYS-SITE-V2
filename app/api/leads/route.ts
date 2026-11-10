@@ -1,9 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
+import { emailStrict } from "@/lib/phishing-guard";
 
 // Validation email basique mais robuste
 function isValidEmail(email: string): boolean {
-  return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email) && email.length <= 254;
+  // Format strict (pas de guillemets ni de chevrons) : voir lib/phishing-guard.ts.
+  return emailStrict(email);
 }
 
 // Rate limiting simple en mémoire (par IP)

@@ -4,11 +4,13 @@ import { Resend } from "resend";
 import { upsertContact } from "@/lib/hubspot";
 import { getTeamNotifyEmails, getNotifyFromEmail } from "@/lib/notify";
 import { captureServer, identifyServer } from "@/lib/posthog-server";
+import { emailStrict } from "@/lib/phishing-guard";
 
 export const runtime = "nodejs";
 
 function isValidEmail(email: string): boolean {
-  return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email) && email.length <= 254;
+  // Format strict (pas de guillemets ni de chevrons) : voir lib/phishing-guard.ts.
+  return emailStrict(email);
 }
 
 const rateMap = new Map<string, { count: number; reset: number }>();
@@ -37,7 +39,7 @@ export async function POST(req: NextRequest) {
     catch { return NextResponse.json({ error: "Requête invalide." }, { status: 400 }); }
 
     const email = typeof body.email === "string" ? body.email.trim().toLowerCase() : "";
-    const lang  = typeof body.lang  === "string" ? body.lang.slice(0, 5)          : "fr";
+    const lang  = typeof body.lang  === "string" && /^[a-z]{2}$/i.test(body.lang) ? body.lang.toLowerCase() : "fr";
 
     if (!isValidEmail(email)) {
       return NextResponse.json({ error: "Adresse email invalide." }, { status: 422 });
